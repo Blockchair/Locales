@@ -1,0 +1,2242 @@
+{
+  "title": "Blockchair",
+  "description": "区块链浏览器和最强大的应用程序编程接口提供比特币、以太币、比特币现金、莱特币、达世币、BSV币和狗狗币的搜索、排序、交易过滤和定位",
+  "chain": {
+    "bitcoin": "比特币 ",
+    "bitcoin-cash": "比特币现金",
+    "bitcoin-sv": "比特币 SV",
+    "dogecoin": "狗狗币",
+    "dash": "达世币",
+    "litecoin": "莱特币",
+    "ethereum": "以太坊",
+    "ripple": "瑞波币",
+    "groestlcoin": "闪电币"
+  },
+  "ticker": {
+    "bitcoin": "BTC",
+    "bitcoin-cash": "BCH",
+    "bitcoin-sv": "BSV",
+    "dogecoin": "DOGE",
+    "dash": "DASH",
+    "litecoin": "LTC",
+    "ethereum": "ETH",
+    "ripple": "XRP",
+    "usd": "USD",
+    "groestlcoin": "GRS"
+  },
+  "homepage": {
+    "title": "Blockchair是一款通用区块链浏览器和搜索引擎",
+    "screen1": {
+      "placehodler": "在9个区块链中搜索",
+      "qrcode": {
+        "title": "扫描地址二维码",
+        "modal": {
+          "title": "扫描二维码"
+        }
+      },
+      "description": "Blockchair提供 {bitcoin}、{ethereum}、{ripple}、{bitcoin_cash}、{litecoin}、{bitcoin_sv}、{dash}、{groestlcoin}和{dogecoin}. 你可以搜索 {transactions}、{addresses}、{blocks}、以及 {embedded}.",
+      "scope": {
+        "transactions": "交易",
+        "addresses": "地址",
+        "blocks": "块",
+        "embedded": "嵌入文本数据",
+        "tooltip": "点击以在搜索框内粘贴随机案例"
+      }
+    },
+    "screen2": {
+      "explore_blockchains": "探索区块链",
+      "description": "深入应用过滤器和排序的区块链数据分析。 创建并提取自己的数据集。 数据库转储也可应用。",
+      "examples": {
+        "description": "试试你在Blockchair上可以找到的例子",
+        "show_examples": "显示案例",
+        "links": "{btc_largest_txs_link}、{etc_contract_creations_link}、{bch_biggest_blocks_link}.",
+        "btc_largest_txs": "比特币最大交易",
+        "etc_contract_creations": "创建以太币合同",
+        "bch_biggest_blocks": "最大比特币现金块"
+      },
+      "card": {
+        "bitcoin": {
+          "blocks": "区块:",
+          "transactions": "交易:",
+          "outputs": "输出:",
+          "mempool_txs": "未经证实的交易:",
+          "mempool_tps": "每秒交易:",
+          "best_block": "最新成交价:",
+          "hashrate": "散列 ({algorithm}):",
+          "footer_link": "搜索{chain}"
+        },
+        "ethereum": {
+          "calls": "调用:"
+        },
+        "ripple": {
+          "ledgers": "账本",
+          "transactions_24h": "24h成交量",
+          "circulation": "流通量",
+          "best_ledger": "最新分布式账本:",
+          "volume_24h": "链上体积:"
+        },
+        "services": {
+          "charts": "图表",
+          "nodes": "节点",
+          "omni": "Omni",
+          "wormhole": "虫洞",
+          "compare": "比较",
+          "feed": "饲料",
+          "stats": "统计",
+          "uncles": "Uncles"
+        }
+      }
+    },
+    "screen3": {
+      "features": "了解我们的功能",
+      "description": "使用加密数据的绝佳工具：请求Blockchair API获取区块链数据、探索趋势和相关性查看图表、分析市场和投资组合的市场趋势、广播交易、下载包含历史数据的转储等等。",
+      "api": {
+        "title": "专业API",
+        "description": "通过Blockchair API获取区块链数据",
+        "link": "审阅API文档"
+      },
+      "charts": {
+        "title": "图表",
+        "chart_name": "过去3个月中比特币价格",
+        "description": "通过查看120多个图表，了解最新数据趋势",
+        "link": "查看图表"
+      },
+      "markets": {
+        "title": "市场",
+        "description": "点击查看前1000个加密模块并开始构建您的投资组合",
+        "top1000": "热门-1000",
+        "portfolio": "我的投资组合",
+        "table": {
+          "name": "加密货币",
+          "price": "价格",
+          "price_change_24h": "24小时",
+          "mcap": "资本化",
+          "dominance": "霸主地位"
+        },
+        "link": "创建您的投资组合"
+      }
+    },
+    "old": {
+      "header": {
+        "placeholder": {
+          "full": "搜索 BTC、ETH、BCH、LTC、BSV、DASH、XRP、GRS、DOGE 区块链...",
+          "short": "搜索 BTC、ETH、BCH、LTC、BSV、DASH、XRP、GRS、DOGE"
+        },
+        "description1": "Blockchair提供 {比特币、，{以太坊}、{比特币现金}、{菜特币}、{比特币SV}、{达世币}和{狗狗币}区块链搜索的搜索引擎",
+        "description2": "你可以搜索 {交易}、{地址}、{区块} 以及{嵌入的文本数据}等",
+        "scope": {
+          "transactions": "交易",
+          "addresses": "地址",
+          "blocks": "块",
+          "embeded": "嵌入文本数据",
+          "tooltip": "点击以在搜索框内粘贴随机案例"
+        }
+      },
+      "content": {
+        "card": {
+          "mcap": {
+            "tooltip": "价格: {price}<br/>市场上限: {cap} 10亿<br/>显性 {dominance}"
+          },
+          "hints": {
+            "tps": "此图标表示交易加入内存池的速度/秒"
+          },
+          "bitcoin": {
+            "caption": "比特币",
+            "charts": {
+              "average_block_size": "小时(过去3个月)",
+              "hashrate_distribution": "散列率分布(过去2个星期）",
+              "segwit_usage": "隔离见证使用（过去3个月）",
+              "dairy_circulation": "日循环（过去3个月）",
+              "median_transaction_fee": "交易费用中数（过去3个月）",
+              "coindays_destroyed": "百万（过去3个月）",
+              "non_monetary_outputs": "非货币产出百分比(过去3个月）",
+              "distribution_of_outputs": "输出类型分布（上周)",
+              "average_fee": "平均K比特费用（过去3个月）"
+            },
+            "stats": {
+              "explore": "发现",
+              "mempool": "内存池",
+              "blocks": "区块",
+              "transactions": "交易",
+              "outputs": "输出",
+              "tps": "天",
+              "best_block": "最新成交价",
+              "hashrate": "散列",
+              "nodes": "结点",
+              "links": {
+                "broadcast": "广播交易 ",
+                "useful": "更多信息",
+                "empty_blocks": "空块",
+                "blocks_asc": "升序块",
+                "coinbase_txs": "coinbase交易",
+                "txs_cdd_total_0": "销毁0币天的交易 ",
+                "unspent_outputs": "UTXO 设置（未来输出)",
+                "nulldata_outputs": "OP_RETURN(空数据）输出",
+                "over_last_30_days": "过去30天",
+                "blocks_with_high_fee_per_kb_usd": "kB的块",
+                "blocks_with_most_cdd_total": "销毁最多币天的交易 ",
+                "txs_highest_fees_usd": "以美元为单位最高费用的交易",
+                "output_total": "{ticker}中最大交易金额",
+                "lifespan": "寿命最长",
+                "outputs_cdd": "最大币天销毁数"
+              }
+            }
+          },
+          "bitcoin-cash": {
+            "charts": {
+              "voting_of_scalability": "扩展性投票"
+            }
+          },
+          "ethereum": {
+            "charts": {
+              "average_gas_size": "按天和小时排序平均gas使用情况（过去3个月）",
+              "average_gas_limit": "平均gas限制（过去3个月）",
+              "mining_difficulty": "挖矿难度（过去3个月）",
+              "new_contract_count": "新合约数量（过去3个月）",
+              "distribution_of_tx_types": "tx种类分布(过去3个月）",
+              "average_gas_price": "平均gas价格（GWei)(过去3个月）"
+            },
+            "stats": {
+              "uncles": "uncles ",
+              "calls": "调用",
+              "links": {
+                "failed_txs": "交易失败",
+                "txs_with_high_calls": "交易最多的调用",
+                "contract_creations": "合约创建（CREATE）",
+                "contract_destructions": "合约破坏（SELFDESTRUCT)",
+                "blocks_with_biggest_size": "bytes中最大块",
+                "blocks_with_most_txs_count": "最大交易数额块",
+                "txs_with_highest_fees_usd": "最高USD交易费用",
+                "txs_with_largest_internal_values": "最大ETH内部交易额",
+                "calls_with_most_child_calls": "最多儿童调用                  ",
+                "calls_with_largest_value_usd": "最大USD数额调用"
+              }
+            }
+          },
+          "footer_link": "搜索{chain}"
+        }
+      },
+      "markets": {
+        "header": {
+          "caption": "市场",
+          "top": "前1000名",
+          "portfolio": "我的投资组合 ({total_profit})"
+        },
+        "infinitable": {
+          "head": {
+            "coin_name": "币种",
+            "price": "价格",
+            "search": "快速查找",
+            "mkt_cap": "市场上限",
+            "24h_change": "24小时",
+            "dominance": "显性",
+            "portfolio": {
+              "amount": "金额",
+              "profit": "美元价值"
+            }
+          },
+          "body": {
+            "portfolio": {
+              "total_profit": "总投资组合价值：",
+              "empty_list": "现在你还没有投资组合，请先把币种加入收藏以创建投资组合！"
+            },
+            "load_more": "加载更多内容"
+          }
+        },
+        "modal": {
+          "title": {
+            "edit": "编辑投资组合中的硬币",
+            "add": "把硬币添加到你的投资组合中"
+          },
+          "description": "此币种已被加入你的收藏。你现在可以输入金额或关闭此页面。",
+          "placeholder": "输入金额",
+          "buttons": {
+            "edit": "编辑",
+            "add": "添加",
+            "remove": "移除"
+          }
+        }
+      }
+    }
+  },
+  "search": {
+    "title": "Blockchair 搜索引擎",
+    "description": "搜索BTC，ETH，BCH，LTC，BSV，DOGE区块链",
+    "status": {
+      "empty_query": "空查询",
+      "empty_request": "对不起，我们目前只支持英文和俄语搜索",
+      "server_error": "出错啦！",
+      "showing": {
+        "no_results": "无结果（{time}秒）",
+        "only_result": "展示唯一结果（{time}秒）",
+        "many_results": "展示{total}结果中的{showing}（{time}秒）"
+      }
+    },
+    "results": {
+      "matches": {
+        "blocks": {
+          "title": "显示块{chain}",
+          "hint": "使用我们的引擎，{chain}区块可以分类大于30个设置"
+        },
+        "transactions": {
+          "title": "发现所有的{chain} 交易",
+          "hint": "使用我们的引擎，{chain}交易可以分类大于30个设置"
+        },
+        "calls": {
+          "title": "发现所有的以太坊调用",
+          "hint": "使用我们的引擎，以太坊调用可以分类大于30个设置"
+        },
+        "uncles": {
+          "title": "发现所有的以太坊uncles",
+          "hint": "使用我们的引擎，以太坊uncles可以分类大于30个设置"
+        },
+        "mempool": {
+          "title": "发现全{chain}内存池",
+          "hint": "使用我们的引擎，{chain}内存池交易可以分类大于30个设置"
+        },
+        "unknown_tnx": {
+          "title": "无名交易",
+          "hint1": "您已输入某些交易所使用的内部交易ID（例如HitBTC，ShapeShift等）",
+          "hint2": "这些交易不存在在区块链，我们无法提供任何数据"
+        }
+      },
+      "coin": {
+        "price": "价格：",
+        "mcap": "市场上限: {cap}"
+      },
+      "bitcoin": {
+        "coinbase": {
+          "row": {
+            "title": "{chain} 区块 #{id}",
+            "timestamp": "时间：",
+            "coinbase_data": "coinbase交易："
+          },
+          "more": {
+            "title": "发现{difference}更多块在{chain}区块链"
+          }
+        },
+        "outputs": {
+          "row": {
+            "title": "{chain} 交易",
+            "script_data": "输出 #{index} 脚本数据: "
+          },
+          "more": {
+            "title": "发现{difference}更多输出在{chain} 区块链",
+            "hint": "使用我们的引擎，{chain}输出可以分类大于20个设置"
+          }
+        },
+        "address": {
+          "title": "{chain} 地址 {recipient}",
+          "last_seen_receiving": "最近收到：",
+          "balance": "余额:"
+        },
+        "xpub": {
+          "title": "{chain} xpub 地址 {recipient}"
+        },
+        "block": {
+          "mined_on": "开采源",
+          "hash": "散列:"
+        },
+        "transaction": {
+          "timestamp": "时间:",
+          "included_in_block": "区块包括："
+        },
+        "whitepapers": {
+          "row": {
+            "size": "{size} kB"
+          }
+        }
+      },
+      "ethereum": {
+        "extra_data": {
+          "row": {
+            "extra_data": "额外数据："
+          },
+          "more": {
+            "title": "发现{difference}更多块在以太坊区块链",
+            "hint": "使用我们的引擎，以太坊区块可以分类大于30个设置"
+          }
+        },
+        "input_data": {
+          "row": {
+            "input_data": "输入数据："
+          },
+          "more": {
+            "title": "发现{difference}更多以太坊区块链交易",
+            "hint": "使用我们的引擎，以太坊交易可以分类大于20个设置"
+          }
+        },
+        "uncle": {
+          "title": "以太坊uncle",
+          "parent_block_height": "Parent block height:"
+        },
+        "address": {
+          "title": "以太坊地址"
+        }
+      },
+      "ripple": {
+        "transaction": {
+          "account": "账户",
+          "type": "Tx种类：{type}",
+          "fee": "费用:"
+        },
+        "account": {
+          "title": "瑞波币账户 {account}",
+          "balance": "余额"
+        }
+      }
+    }
+  },
+  "application": {
+    "header": {
+      "menu": {
+        "caption": "菜单",
+        "bitcoin": {
+          "blockchain": "{chain}区块链",
+          "layer_2": "第2层",
+          "mempool": "{chain}Mempool",
+          "misc": "小事一桩",
+          "object": {
+            "blocks": "块",
+            "transactions": "交易",
+            "outputs": "输出",
+            "omni": "全方位层",
+            "wormhole": "虫洞",
+            "nodes": "节点资源管理器",
+            "whitepaper": "白皮书"
+          }
+        },
+        "ethereum": {
+          "mempool": "以太坊mempool和最新的6块",
+          "last_6_blocks": "最后6块",
+          "txs_in_last_6_blocks": "在过去的6块交易",
+          "mempool_txs": "Mempool交易",
+          "object": {
+            "uncles": "叔叔",
+            "calls": "电话"
+          }
+        },
+        "object": {
+          "price": "价格",
+          "charts": "图表",
+          "broadcast": "广播"
+        }
+      },
+      "search": {
+        "desktop": {
+          "placeholder": "在9个区块链中搜索(BTC/ETH/XRP/BCH/LTC/BSV/DASH/DOGE/GRS)"
+        },
+        "mobile": {
+          "placeholder": "在9个区块链中搜索"
+        }
+      }
+    },
+    "navigation": {
+      "mempool": {
+        "bitcoin": {
+          "title": "内存池"
+        },
+        "ethereum": {
+          "title": "未确认",
+          "hint": "我们正在等待6个区块直到区块和交易进入我们的数据库。我们也不会为任何未确认的块处理调用和uncles。"
+        }
+      },
+      "object": {
+        "homepage": "首页",
+        "blocks": "区块",
+        "transactions": "交易",
+        "outputs": "输出",
+        "whitepaper": "白皮書",
+        "price": "价格",
+        "nodes": "节点浏览器",
+        "uncles": "Uncles",
+        "calls": "调用",
+        "omni": "全向层",
+        "wormhole": "虫洞",
+        "charts": "图表",
+        "addresses": "地址"
+      },
+      "type": {
+        "bitcoin": {
+          "block": "区块",
+          "transaction": "交易",
+          "address": "地址",
+          "xpub": "Xpub"
+        },
+        "ethereum": {
+          "uncle": "Uncle",
+          "address": "地址"
+        },
+        "ripple": {
+          "ledger": "账本",
+          "account": "账户"
+        }
+      },
+      "menu": {
+        "blockchains": "区块链",
+        "bitcoin": {
+          "blockchain": "区块链",
+          "mempool": "内存池",
+          "layer_2": "第二层",
+          "misc": "Misc"
+        },
+        "ethereum": {
+          "mempool": "以太坊内存池和最新六个区块",
+          "last_6_blocks": "最后六区块",
+          "txs_in_last_6_blocks": "最后6个区块中的交易",
+          "mempool_txs": "内存池交易"
+        }
+      }
+    },
+    "permalink": {
+      "caption": "永久链接",
+      "tooltip": "永久链接可以保存排序，条件和显示列的列表。 除非有时间条件，否则数据可能会发生变化。 如果您不需要保存显示列的列表，则只需从地址栏复制URL即可。"
+    },
+    "infinitable": {
+      "description": {
+        "bitcoin": {
+          "blocks": "通过高度、奖励、矿工等方式从比特币（BTC）区块链中探索，排序和过滤区块",
+          "transactions": "通过ID（哈希）、价值、大小、费用等来探索，排序和过滤来自比特币（BTC）区块链的交易",
+          "outputs": "通过价值、发件人、收件人、地址探索，排序和过滤比特币（BTC）区块链的输出、获取UTXO设置等",
+          "mempool": {
+            "transactions": "探索来自比特币（BTC）内存池的未确认交易",
+            "outputs": "探索比特币（BTC）内存池的未确认输出"
+          },
+          "addresses": ""
+        },
+        "bitcoin-cash": {
+          "blocks": "通过高度、奖励、矿工等方式从比特币现金（BCH）区块链中探索，排序和过滤区块",
+          "transactions": "通过ID（哈希）、费用、大小等来探索，排序和过滤来自比特币现金（BCH）区块链的交易",
+          "outputs": "按价值、收件人（地址）、获取UTXO设置等方式探索，排序和过滤比特币现金（BCH）区块链的输出",
+          "mempool": {
+            "transactions": "探索比特币现金（BCH）内存池中未确认的交易",
+            "outputs": "探索比特币现金（BCH）内存池中未确认的输出"
+          },
+          "addresses":""
+        },
+        "bitcoin-sv": {
+          "blocks": "通过高度、奖励、矿工等方式探索，排序和过滤比特币SV（BSV）区块链中的区块",
+          "transactions": "通过ID（哈希）、费用、大小等来探索，排序和过滤来自比特币SV（BSV）区块链的交易",
+          "outputs": "按价值、收件人（地址）、获取UTXO设置等方式探索，排序和过滤比特币SV（BSV）区块链的输出",
+          "mempool": {
+            "transactions": "探索比特币SV（BSV）内存池中未确认的交易",
+            "outputs": "探索比特币SV（BSV）内存池中未确认的输出"
+          },
+          "addresses":""
+        },
+        "dogecoin": {
+          "blocks": "通过高度、奖励、矿工等来探索，整理和过滤来自狗币（DOGE）区块链的区块",
+          "transactions": "通过ID（哈希）、价值、大小、费用等来探索，排序和过滤来自狗币（DOGE）区块链的交易",
+          "outputs": "通过价值、发件人、收件人、地址探索，排序和过滤来自狗币（DOGE）区块链的输出，获取UTXO设置等",
+          "mempool": {
+            "transactions": "探索狗币（DOGE）内存池的未确认的交易",
+            "outputs": "探索狗币（DOGE）内存池的未确认的输出"
+          },
+          "addresses":""
+        },
+        "dash": {
+          "blocks": "通过高度、奖励、矿工等来探索，排序和过滤达世币（DASH）区块链中的区块",
+          "transactions": "通过ID（哈希）、值、大小、费用等来探索，排序和过滤来自达世币（DASH）区块链的交易",
+          "outputs": "通过价值、发件人、收件人、地址探索，排序和过滤达世币（DASH）区块链的输出、获取UTXO设置等",
+          "mempool": {
+            "transactions": "探索达世币（DASH）内存池的未确认的交易",
+            "outputs": "探索达世币（DASH）内存池的未确认的输出"
+          },
+          "addresses":""
+        },
+        "litecoin": {
+          "blocks": "通过高度、奖励、矿工等对整个莱特币（LTC）区块链中的块进行探索，排序和过滤",
+          "transactions": "通过ID（哈希）、费用、大小等来浏览，排序和过滤整个莱特币（LTC）区块链中的交易",
+          "outputs": "通过值、收件人（地址）、获取UTXO设置等来浏览，排序，过滤整个莱特币（LTC）区块链的输出",
+          "mempool": {
+            "transactions": "浏览莱特币（LTC）内存池的交易信息",
+            "outputs": "浏览莱特币（LTC）内存池的输出"
+          },
+          "addresses":""
+        },
+        "groestlcoin": {
+          "blocks": "通过高度、奖励、矿工等对整个闪电币（GRS）区块链中的块进行探索，排序和过滤",
+          "transactions": "通过ID（哈希）、费用、大小等来浏览，排序和过滤整个闪电币（GRS）区块链中的交易",
+          "outputs": "通过值、收件人（地址）、获取UTXO设置等来浏览，排序，过滤整个闪电币（GRS）区块链的输出",
+          "mempool": {
+            "transactions": "浏览闪电币（GRS）内存池的交易",
+            "outputs": "浏览闪电币（GRS）内存池的输出"
+          },
+          "addresses":""
+        },
+        "ethereum": {
+          "blocks": "通过高度、奖励、矿工等对整个以太坊 (ETH)区块链中的块进行探索，排序和过滤",
+          "uncles": "通过高度、父块、矿工等来探索，排序和过滤以太坊（ETH）区块链中的uncles",
+          "transactions": "通过ID（哈希）、值、gas等来探索，排序和过滤来自以太坊（ETH）区块链的交易",
+          "calls": "通过价值、时间、发件人、收件人等来探索，排序和过滤来自以太坊（ETH）区块链的调用（内部转移）",
+          "mempool": {
+            "blocks": "探索以太坊（ETH）区块链中的最新6个区块",
+            "transactions": "探索以太坊（ETH）内存池中未确认的交易"
+          }
+        }
+      },
+      "foot": {
+        "server_error": "出错啦！",
+        "no_results": "无结果",
+        "no_more_results": "无更多结果",
+        "explore_list": "探索此列表（{difference}更多行）",
+        "load_more": "加载更多（{difference}结果）..."
+      },
+      "bitcoin": {
+        "blocks": {
+          "id": {
+            "short": "高度",
+            "full": "高度 （id）"
+          },
+          "hash": "哈希值",
+          "time": {
+            "full": "挖矿在",
+            "short": "时间",
+            "utc": "(UTC)"
+          },
+          "time_ago": {
+            "short": "过去",
+            "full": "流逝的时间"
+          },
+          "guessed_miner": {
+            "short": "矿工",
+            "full": "Guessed miner"
+          },
+          "miner_votes": {
+            "short": "投票",
+            "full": "矿工投票"
+          },
+          "coinbase_data_bin": {
+            "bin": "[bin]",
+            "short": "Coinbase数据",
+            "full": "Coinbase 数据 [bin]"
+          },
+          "coinbase_data_hex": {
+            "hex": "[hex]",
+            "full": "Coinbase 数据 [hex]"
+          },
+          "transaction_count": {
+            "short": "Tx #",
+            "full": "交易计数"
+          },
+          "witness_count": {
+            "short": "Witness Tx #",
+            "full": "tx计数见证"
+          },
+          "input_count": {
+            "short": "输入 #",
+            "full": "输入计数"
+          },
+          "output_count": {
+            "short": "输出 #",
+            "full": "输出计数"
+          },
+          "cdd_total": {
+            "short": "被破坏",
+            "full": "币天销毁数",
+            "cd": "(CD)",
+            "coindays": "(coindays)"
+          },
+          "input_total": {
+            "simple": "输入",
+            "full": "总输入 (satoshis)",
+            "short": "总输入"
+          },
+          "input_total_usd": "总输入（USD）",
+          "output_total": {
+            "simple": "输出",
+            "full": "总输出 (satoshis)",
+            "short": "总输出"
+          },
+          "output_total_usd": "总输出（USD）",
+          "fee_total": {
+            "simple": "费用",
+            "full": "总费用（satoshis)",
+            "short": "总费用"
+          },
+          "fee_total_usd": "总费用（USD）",
+          "fee_per_kb": {
+            "simple": "kB",
+            "full": "kB（satoshis)",
+            "short": "kB"
+          },
+          "fee_per_kb_usd": "kB（USD）",
+          "fee_per_kwu": {
+            "simple": "kWU",
+            "full": "kWU(satoshis)",
+            "short": "kWU"
+          },
+          "fee_per_kwu_usd": "kWU（USD）",
+          "generation": {
+            "short": "生成",
+            "full": "生成（satoshis）"
+          },
+          "generation_usd": "生成（USD）",
+          "reward": {
+            "short": "奖励",
+            "full": "矿工奖励（satoshis)"
+          },
+          "reward_usd": "矿工奖励（USD）",
+          "size": {
+            "short": "大小",
+            "full": "大小（字节)",
+            "kb": "(kB)"
+          },
+          "weight": {
+            "short": "重量",
+            "full": "重量（重量单位）",
+            "kwu": "(kWU)"
+          },
+          "stripped_size": {
+            "short": "未隔离见证交易大小",
+            "full": "未隔离见证交易大小(bytes) "
+          },
+          "version": {
+            "short": "版本",
+            "full": "版本[int]",
+            "int": "[int]"
+          },
+          "version_bits": {
+            "bits": "[bits]",
+            "full": "版本 [bits]"
+          },
+          "median_time": "中值时间",
+          "merkle_root": "梅克尔根",
+          "nonce": "随机数",
+          "bits": "比特",
+          "difficulty": "难度",
+          "chainwork": "链式加工"
+        },
+        "transactions": {
+          "block_id": {
+            "short": "区块 #",
+            "full": "区块 Id"
+          },
+          "time": "时间（UTC）",
+          "id": {
+            "short": "Id",
+            "full": "散列（txid)"
+          },
+          "is_coinbase": {
+            "short": "是否coinbase?",
+            "full": "是否coinbase交易？"
+          },
+          "has_witness": {
+            "short": "是否见证？",
+            "full": "有见证数据吗？"
+          },
+          "fee": {
+            "short": "费用",
+            "full": "费用(Satoshis)"
+          },
+          "fee_usd": "费用（USD）",
+          "fee_per_kvb": "kVB",
+          "lock_time": {
+            "short": "锁定时间",
+            "full": "锁定时间（区块高度或时间）"
+          }
+        },
+        "outputs": {
+          "transaction_id": {
+            "short": "交易 id",
+            "full": "交易 id"
+          },
+          "transaction_hash": {
+            "short": "交易散列",
+            "full": "交易散列"
+          },
+          "index": {
+            "short": "# ",
+            "full": "指数"
+          },
+          "is_from_coinbase": {
+            "short": "是否coinbase来源？",
+            "full": "是否coinbase交易？"
+          },
+          "value": {
+            "short": "价值",
+            "full": "价值 (satoshis)"
+          },
+          "value_usd": "价值（USD）",
+          "recipient": {
+            "short": "收件人",
+            "address": "（地址）",
+            "full": "收件人(地址)"
+          },
+          "script_bin": {
+            "short": "脚本",
+            "full": "脚本 [bin]"
+          },
+          "script_hex": "脚本  [hex]",
+          "type": {
+            "short": "型式",
+            "full": "输出型式"
+          },
+          "is_spendable": {
+            "short": "可消费？",
+            "full": "可消费？"
+          },
+          "is_spent": {
+            "short": "S?",
+            "full": "是否已消费？"
+          },
+          "spending_block_id": {
+            "short": "支出块",
+            "full": "支出块 id"
+          },
+          "spending_transaction_id": {
+            "short": "支出交易 id",
+            "full": "支出交易 id"
+          },
+          "spending_index": {
+            "short": "#",
+            "full": "支出索引"
+          },
+          "spending_transaction_hash": {
+            "short": "支出交易散列",
+            "full": "支出交易散列"
+          },
+          "spending_time": {
+            "short": "花费时间",
+            "full": "花费时间"
+          },
+          "spending_date": "消费日期",
+          "spending_time_ago": {
+            "short": "时间",
+            "ago": "(ago)"
+          },
+          "spending_value": {
+            "short": "支出价值",
+            "full": "支出价值"
+          },
+          "spending_value_usd": "支出价值 （USD）",
+          "spending_sequence": {
+            "short": "支出顺序",
+            "full": "支出顺序"
+          },
+          "spending_signature_bin": {
+            "short": "支出签名",
+            "full": "支出签名"
+          },
+          "spending_signature_hex": "支出签名 [hex]",
+          "spending_witness": {
+            "short": "消费见证",
+            "full": "消费见证"
+          },
+          "lifespan": {
+            "short": "寿命",
+            "full": "寿命(秒）",
+            "seconds": "(seconds)"
+          },
+          "left_link": "交易链接"
+        },
+        "addresses": {
+          "address": "地址",
+          "balance": {
+            "short": "平衡",
+            "full": "平衡(satoshis)"
+          }
+        }
+      },
+      "dogecoin": {
+        "blocks": {
+          "is_aux": "是否AuxPoW?"
+        }
+      },
+      "dash": {
+        "blocks": {
+          "cbtx": "CbTX "
+        },
+        "transactions": {
+          "is_special": "是否特殊？",
+          "special_json": "规格JSON",
+          "type": "形式",
+          "is_instant_lock": "是否即时锁？"
+        }
+      },
+      "ethereum": {
+        "blocks": {
+          "uncle_count": "Uncle计数",
+          "synthetic_transaction_count": {
+            "short": "综合交易计数",
+            "full": "综合交易计数"
+          },
+          "call_count": {
+            "short": "调用#",
+            "full": "调用计数"
+          },
+          "synthetic_call_count": {
+            "short": "综合调用 #",
+            "full": "综合调用计数"
+          },
+          "extra_data_bin": {
+            "short": "额外数据",
+            "full": "额外数据 [bin]"
+          },
+          "extra_data_hex": "[hex]",
+          "gas_used": "Gas消耗",
+          "gas_limit": "Gas 可用的上限",
+          "value_total": {
+            "short": "总价值",
+            "full": "总价值（ETH）"
+          },
+          "value_total_usd": "总价值（USD）",
+          "internal_value_total": {
+            "short": "内在价值",
+            "full": "总内在价值（ETH）"
+          },
+          "internal_value_total_usd": "总内在价值（USD）",
+          "generation": "世代（ETH）",
+          "uncle_generation": {
+            "short": "Uncle生成",
+            "full": "Uncle生成（ETH）"
+          },
+          "uncle_generation_usd": "Uncle生成（USD）",
+          "fee_total": "总费用（ETH）",
+          "reward": "矿工奖赏（ETH）",
+          "mix_hash": "散列混合",
+          "receipts_root": "收入根源",
+          "sha3_uncles": "SHA3 Uncles",
+          "state_root": "状态根",
+          "transactions_root": "交易根",
+          "logs_bloom": "Logs Bloom",
+          "total_difficulty": "总难度"
+        },
+        "transactions": {
+          "index": {
+            "short": "#",
+            "full": "区块索引"
+          },
+          "type": "形式",
+          "failed": "失败？",
+          "sender": {
+            "short": "从",
+            "full": "发件人"
+          },
+          "recipient": {
+            "short": "到",
+            "full": "收件人"
+          },
+          "value": {
+            "short": "价值",
+            "full": "价值（ETH）"
+          },
+          "value_usd": "价值（USD）",
+          "internal_value": {
+            "short": "内在价值",
+            "full": "内在价值（ETH）"
+          },
+          "internal_value_usd": "内在价值（USD）",
+          "fee": {
+            "short": "费用",
+            "full": "费用（ETH）"
+          },
+          "fee_usd": "费用（USD）",
+          "gas_price": "Gas价格",
+          "input_bin": {
+            "short": "输入数据",
+            "full": "输入数据 [bin]"
+          },
+          "input_hex": "输入数据 [hex]"
+        },
+        "uncles": {
+          "miner": "矿工",
+          "parent_block_id": {
+            "short": "父块 id",
+            "full": "父块高度"
+          },
+          "index": "父块索引"
+        },
+        "calls": {
+          "index": {
+            "short": "索引",
+            "full": "交易索引"
+          },
+          "depth": "深度",
+          "child_call_count": {
+            "short": "子调用",
+            "full": "子调用计数"
+          },
+          "fail_reason": "失败的原因",
+          "transferred": {
+            "short": "",
+            "full": "交易成功？"
+          },
+          "output_bin": "输出数据"
+        }
+      }
+    },
+    "chessboard": {
+      "buttons": {
+        "fields": "领域",
+        "show_default_fields": "显示默认字段",
+        "show_all": "全部显示",
+        "hide_all": "全部隐藏",
+        "reset_sorts": "复位排序",
+        "reset_conditions": "重置条件",
+        "reset_all": "全部重置",
+        "refresh": "刷新",
+        "settings": {
+          "without_expanding": "显示新结果而不展开表",
+          "table_condensed": "压缩表"
+        }
+      },
+      "conditions": {
+        "alert": {
+          "limit_of_sorts": "同时只能设置 {limit} 个排序 ",
+          "limit_of_conditions": "同时只能设置 {limit} 个条件"
+        },
+        "examples": "例如",
+        "notice": "注意："
+      },
+      "bitcoin": {
+        "columns": {
+          "general": "通用",
+          "monetary": "货币",
+          "technical": "技术",
+          "spending": {
+            "general": "花费",
+            "continuation": "已计算花费"
+          }
+        },
+        "blocks": {
+          "id": {
+            "examples": {
+              "first_100_blocks": "前100个区块",
+              "zero_block": "#0块"
+            }
+          },
+          "transaction_count": {
+            "examples": {
+              "big_blocks": "大块",
+              "coinbase_tx_only": "只包含一个coinbase tx的块"
+            }
+          },
+          "witness_count": {
+            "examples": {
+              "more_that_one": "一个以及更多",
+              "just_one": "一个"
+            }
+          },
+          "input_count": {
+            "examples": {
+              "over_10k_inputs": "超过10k输入",
+              "just_coinbase_input": "一个coinbase输入"
+            }
+          },
+          "output_count": {
+            "examples": {
+              "over_10k_outputs": "超过10k输出",
+              "just_coinbase_output": "1输出的coinbase交易"
+            }
+          },
+          "cdd_total": {
+            "examples": {
+              "largest_spendings": "最大消费",
+              "no_cd": "无币天销毁数"
+            }
+          },
+          "input_total": {
+            "title": {
+              "full": "总输入（{ticker}）"
+            },
+            "examples": {
+              "over_100": "超过100{ticker}",
+              "exactly_one": "正好1{ticker}"
+            },
+            "notice": "请输入satoshis值 （1{ticker}=100000000 sat.）"
+          },
+          "input_total_usd": {
+            "examples": {
+              "over_one_million_usd": "超过 1$ M",
+              "exactly_one_million_usd": "正好 $ 1"
+            }
+          },
+          "output_total": {
+            "title": {
+              "full": "总输出（{ticker}）"
+            }
+          },
+          "fee_total": {
+            "title": {
+              "full": "总费用（{ticker}）"
+            }
+          },
+          "fee_per_kb": {
+            "title": {
+              "full": "kb ({ticker})"
+            },
+            "examples": {
+              "exactly_one_hundredth": "正好 0.01 {ticker}"
+            }
+          },
+          "fee_per_kb_usd": {
+            "examples": {
+              "exactly_one_hundredth": "正好 $ 0.01"
+            }
+          },
+          "generation": {
+            "title": {
+              "full": "生成({ticker})"
+            }
+          },
+          "reward": {
+            "title": {
+              "full": "矿工奖励({ticker})"
+            },
+            "examples": {
+              "exactly_twelve_and_half": "正好12.5{ticker}"
+            }
+          },
+          "reward_usd": {
+            "examples": {
+              "over_25k": "超过 $25k"
+            }
+          },
+          "size": {
+            "examples": {
+              "small_blocks": "小块",
+              "exactly_one": "正好1{ticker}"
+            },
+            "notice": "请输入bytes值!"
+          },
+          "stripped_size": {
+            "examples": {
+              "almost_full_blocks": "近似完整块"
+            }
+          }
+        },
+        "transactions": {
+          "is_coinbase": {
+            "examples": {
+              "yes": "是",
+              "no": "否"
+            }
+          },
+          "fee": {
+            "title": {
+              "full": "费用({ticker})"
+            }
+          }
+        },
+        "outputs": {
+          "value": {
+            "title": {
+              "full": "价值({ticker})"
+            }
+          },
+          "is_spendable": {
+            "examples": {
+              "unknown": "未知"
+            }
+          }
+        }
+      },
+      "litecoin": {
+        "blocks": {
+          "input_total": {
+            "notice": "请输入litoshi值(1 {ticker} = 100000000 lit.)！"
+          }
+        }
+      }
+    },
+    "export": {
+      "title": "导出",
+      "description": {
+        "text1": "您可以使用其中一种支持的格式（CSV或TSV）导出整个结果集{hint}，以使用R或Statistica等各种工具处理和分析数据。",
+        "text2": "如果得到的单元格数小于1百万，您将自动获得数据并且是免费的。",
+        "hint": "原始二进制字段（coinbase数据，脚本和签名 - 请选择相应的十六进制字段），年龄字段和矿工投票字段除外）"
+      },
+      "summary": {
+        "rows": "行",
+        "columns": "列",
+        "cells": "{sum}单元格",
+        "free": "(FREE) "
+      },
+      "button": "导出",
+      "modal": {
+        "title": "导出",
+        "request": {
+          "text": "您要求导出超过100万个单元格。 截至目前，我们手动和付费处理此类请求（除非您正在进行学术研究 - 在这种情况下，可以免费获取数据）。 如果您有任何疑问，请通过{mailto}与我们联系。",
+          "button": "通过邮件索取"
+        }
+      }
+    },
+    "type": {
+      "bitcoin": {
+        "block": {
+          "description": "比特币（BTC）块{height}、哈希：{hash}、日期：{date}",
+          "general_info": "通用信息",
+          "counters_and_fees": "Counters & fees",
+          "technical_details": "技术细节",
+          "explorers": "其它区块链搜索引擎",
+          "last_transactions": "包括此区块的交易"
+        },
+        "transaction": {
+          "description": {
+            "general": "检查比特币（BTC）交易、价值：{output_total_btc}、日期：{date} ",
+            "coinbase": "检查比特币（BTC）交易、价值：{output_total_btc}、日期：{date}"
+          },
+          "priority": "{count}",
+          "confirmations": "未确认 | {count} 确认 | {count} 更多确认",
+          "protocol": {
+            "omni": "Omni Layer 交易"
+          },
+          "op_return": {
+            "title": "OP_RETURN",
+            "memopay_message": "Memopay 信息",
+            "protocol": {
+              "title": "{name}协议",
+              "details": "按{name}查看"
+            },
+            "bin": "解码"
+          },
+          "confirmed_notify": {
+            "button": "通知我",
+            "modal": {
+              "title": "此交易得到确认后通知我",
+              "description": "按下按钮，当此事务进入块时您将收到通知。 请不要离开此页面（但您可以最小化此窗口，使用浏览器中的其他选项卡等）。 如果您是第一次使用此功能，则您的浏览器可能会要求获得发送通知的权限。",
+              "enable": "此交易得到确认后通知我"
+            },
+            "notification": "您的{chain}交易已经确认！",
+            "leaving": "您不会收到交易已确认的通知。 你确定要离开这个页面吗？"
+          },
+          "raw_transaction": {
+            "title": "原始交易",
+            "form": {
+              "hex": "原始交易（十六进制):",
+              "decoded": "解码的原始交易（json）："
+            },
+            "empty": "无法检索此交易的数据（它是创世交易或此交易已从内存池中删除）"
+          },
+          "pdf_receipt": "PDF回执",
+          "inputs": "输入：",
+          "outputs": "输出："
+        },
+        "address": {
+          "description": "检查比特币（BTC）地址{地址}余额及其交易 ",
+          "type": "地址类型",
+          "formats": {
+            "legacy": "传统地址格式 ",
+            "cashaddr": "现金地址格式"
+          },
+          "script": {
+            "short": "脚本",
+            "bin": "脚本[bin]",
+            "hex": "脚本[hex]"
+          },
+          "unspent_output_count": "未用完的输出计数",
+          "monetary_info": "货币信息",
+          "first_seen": "最早查看",
+          "last_seen": "最后查看",
+          "receiving": "收入：",
+          "spending": "花费：",
+          "total_received": "总收入",
+          "total_spent": "总花费",
+          "total_unspent": "余额",
+          "usd_today": "今日",
+          "protocol": {
+            "omni": {
+              "title": "Omni tokens",
+              "token_name": "代币名称",
+              "balance": "余额"
+            },
+            "wormhole": {
+              "title": "虫洞通证"
+            }
+          },
+          "qr_code": "二维码",
+          "transactions": {
+            "title": "涉及地址的交易",
+            "id": "哈希值：",
+            "time": "时间戳：",
+            "no_transactions": "仍未有交易",
+            "protocol": {
+              "omni": "包含Omni Layer数据",
+              "wormhole": "包含虫洞数据"
+            }
+          },
+          "pagination": {
+            "first": "第一",
+            "previous": "上个",
+            "next": "下一个",
+            "last": "最后"
+          }
+        },
+        "xpub": {
+          "address_count": "地址计数",
+          "addresses": {
+            "caption": "地址",
+            "table": {
+              "unspent_output_count": "未花费的输出＃",
+              "last_seen_receiving": "最后查看收入",
+              "last_seen_spending": "最后查看花费"
+            }
+          },
+          "path": "路径"
+        }
+      },
+      "bitcoin-cash": {
+        "block": {
+          "description": "比特币现金（BCH）块{height}、哈希：{hash}、日期：{date}"
+        },
+        "transaction": {
+          "description": "比特币现金（BCH）交易{hash}、日期：{date}",
+          "protocol": {
+            "wormhole": "虫洞交易"
+          }
+        },
+        "address": {
+          "description": "检查比特币现金（BCH）地址{cash_address}（{legacy_address}），其余额和交易"
+        }
+      },
+      "bitcoin-sv": {
+        "block": {
+          "description": "比特币SV（BSV）块{height}、哈希：{hash}、日期：{date}"
+        },
+        "transaction": {
+          "description": "比特币SV（BSV）交易{hash}、日期：{date}"
+        },
+        "address": {
+          "description": "检查比特币SV（BSV）地址：{cash_address}（{legacy_address}），其余额和交易"
+        }
+      },
+      "dogecoin": {
+        "block": {
+          "description": "狗币（DOGE）块{height}、哈希：{hash}、日期：{date}"
+        },
+        "transaction": {
+          "description": {
+            "general": "检查狗币（DOGE）交易、价值：{output_total_doge}、日期：{date}",
+            "coinbase": "检查狗币（DOGE）coinbase交易、价值：{output_total_doge}、日期：{date}"
+          }
+        },
+        "address": {
+          "description": "检查狗币（DOGE）地址{address}余额及其交易"
+        }
+      },
+      "dash": {
+        "block": {
+          "description": "达世币（DASH）块{height}、哈希：{hash}、日期：{date}"
+        },
+        "transaction": {
+          "description": {
+            "general": "检查达世币（DASH）事务、值：{output_total_dash}、日期：{date}",
+            "coinbase": "检查达世币（DASH）coinbase事务、值：{output_total_dash}、日期：{date}"
+          }
+        },
+        "address": {
+          "description": "检查达世币（DASH）地址{address}余额及其交易"
+        }
+      },
+      "litecoin": {
+        "block": {
+          "description": "莱特币（LTC）块{height}、哈希：{hash}、日期：{date}"
+        },
+        "transaction": {
+          "description": "莱特币（LTC）交易{hash}、日期：{date}"
+        },
+        "address": {
+          "description": "莱特币（LTC）交易{hash}、日期：{date}"
+        }
+      },
+      "groestlcoin": {
+        "block": {
+          "description": "闪电币（GRS）块{height}、哈希：{hash}、日期：{date}"
+        },
+        "transaction": {
+          "description": "闪电币（GRS）交易{hash}、日期：{date}"
+        },
+        "address": {
+          "description": "检查闪电币（GRS）交易{hash}、日期：{date}"
+        }
+      },
+      "ethereum": {
+        "block": {
+          "description": "以太坊（ETH）块{height}、哈希：{hash}、日期：{date}",
+          "coinbase": "coinbase",
+          "transaction_count": "{transactions_link} + {coinbase_link} coinbase",
+          "value_total": "总额",
+          "internal_value_total": "转移的内部总金额",
+          "fee_total": "总费用"
+        },
+        "uncle": {
+          "description": "以太坊（ETH）uncle父块高度：{parent_block_height}、哈希：{hash}、日期：{date}"
+        },
+        "transaction": {
+          "description": "以太坊（ETH）交易{hash}、日期：{date}",
+          "included_calls": "此交易包含的调用"
+        },
+        "address": {
+          "description": "检查以太坊（ETH）（{address}），其余额和交易",
+          "type": "种类",
+          "call_count": "调用计数（包含错误）",
+          "contract_created": "是否已创建协议？",
+          "contract_destroyed": "是否已销毁协议？",
+          "contract_code": {
+            "bin": "协议码[bin]",
+            "hex": "协议码[hex]"
+          },
+          "balance": "余额（精准）",
+          "received": "收入（粗略值）",
+          "spent": "花费（粗略值）",
+          "fees": "已缴费用（粗略值）",
+          "involving_calls": "包含地址的调用"
+        }
+      },
+      "ripple": {
+        "ledger": {
+          "ledger_index": "账本",
+          "ledger_hash": "账本哈希",
+          "parent_hash": "父哈希",
+          "transaction_hash": "交易哈希",
+          "close_time": "关闭",
+          "total_coins": "总币数",
+          "last_transactions": "此分类帐中包含的交易"
+        },
+        "transaction": {
+          "transaction_index": "分类账索引",
+          "account": "账户",
+          "sequence": "排序",
+          "account_txn_id": "账户tx用户名",
+          "flags": "Flags",
+          "last_ledger_sequence": "最近分类账序列",
+          "source_tag": "分类标签",
+          "transaction_result": "结果",
+          "type": {
+            "caption": "输入数据",
+            "clear_flag": "清除flag",
+            "domain": "域",
+            "email_hash": "域哈希",
+            "message_key": "信息匙",
+            "set_flag": "设立flag",
+            "transfer_rate": "转换率",
+            "check_id": "检查用户名",
+            "amount": "数额",
+            "deliver_min": "送达分钟",
+            "destination": "目标地址",
+            "send_max": "最大发送",
+            "destination_tag": "目标地址标签",
+            "expiration": "有效期",
+            "invoice_id": "发票号码",
+            "authorize": "授权",
+            "unauthorize": "解除授权",
+            "owner": "拥有者",
+            "offer_sequence": "提供顺序",
+            "cancel_after": "稍后取消",
+            "finish_after": "稍后完成",
+            "condition": "状态",
+            "fulfillment": "实现",
+            "taker_gets": "吃单收益",
+            "taker_pays": "吃单花费",
+            "channel": "频道",
+            "balance": "余额",
+            "signature": "签名",
+            "public_key": "公共匙",
+            "settle_delay": "延误解决",
+            "regular_key": "普通匙",
+            "signer_quorum": "签名者法定人数",
+            "limit_amount": "限制数额",
+            "quality_in": "质量输入",
+            "quality_out": "质量输出"
+          }
+        },
+        "account": {
+          "account_summary": "账户总结",
+          "previous_txn": "最近tx",
+          "sequence": "下一序列",
+          "balances": {
+            "caption": "代币余额",
+            "account": "对手",
+            "limit": "限制"
+          },
+          "transactions": "最近账户交易"
+        }
+      }
+    },
+    "protocol": {
+      "bitcoin": {
+        "omni": {
+          "navigation": {
+            "properties": "属性",
+            "property": "属性"
+          },
+          "homepage": {
+            "title": "Omni Layer 搜索引擎",
+            "description": "探索Omni Layer（OMNI）交易和属性、例如Tether（USDT）、MaidSafeCoin（MAID）和Omni（Mastercoin）",
+            "stats": {
+              "title": "Omni Layer状态",
+              "properties": "属性",
+              "mainnet_properties": "主要属性",
+              "testnet_properties": "Testnet属性 ",
+              "transactions": "交易"
+            },
+            "newest_properties": "最新属性",
+            "latest_transactions": "最近交易"
+          },
+          "infinitable": {
+            "description": {
+              "properties": "探索所有Omni Layer属性、例如Tether（USDT）、MaidSafeCoin（MAID）和Omni（Mastercoin）"
+            },
+            "foot": {
+              "explore_list": "探索此列表"
+            },
+            "properties": {
+              "name": "名称",
+              "issuer": "发行者",
+              "creation_transaction_hash": "创建tx 哈希",
+              "creation_time": "创建时间",
+              "creation_block_id": "创建块id",
+              "is_issuance_fixed": "发行是否已修复？",
+              "is_issuance_managed": "发行是否已管理？",
+              "is_divisible": "是否可整除？",
+              "circulation": "循环",
+              "ecosystem": "生态环境",
+              "category": "目录",
+              "subcategory": "子目录",
+              "description": "描述",
+              "url": "URL"
+            },
+            "transactions": {
+              "type": "种类",
+              "sender": "发送人",
+              "recipient": "接受者",
+              "valid": "是否有效？",
+              "amount": "金额"
+            }
+          },
+          "type": {
+            "property": {
+              "navigation": "{name} (#{id})",
+              "description": "{ecosystem} Omni Layer 协议的{name}（#{id}）属性",
+              "id": {
+                "short": "Id",
+                "full": "属性Id"
+              }
+            }
+          }
+        }
+      },
+      "bitcoin-cash": {
+        "wormhole": {
+          "homepage": {
+            "title": "虫洞搜索引擎",
+            "description": "探索比特币现金（BCH）区块链中的虫洞（WHC）协议交易和属性",
+            "stats": {
+              "title": "虫洞状态"
+            }
+          },
+          "infinitable": {
+            "description": {
+              "properties": "探索所有虫洞（WHC）的属性"
+            }
+          },
+          "type": {
+            "property": {
+              "description": "{ecosystem}虫洞协议的{name}（#{id}）属性。网站：{url}"
+            }
+          }
+        }
+      }
+    },
+    "homepage": {
+      "stats": {
+        "market_data": {
+          "cap": "市值:{mcap}",
+          "dominance": "霸主地位:{dominance}"
+        },
+        "general": {
+          "caption": "统计",
+          "circulation": "循环:",
+          "difficulty": "难度:",
+          "blockchain_size": {
+            "caption": "区块链大小:",
+            "dimension": "GB"
+          }
+        },
+        "24h_stats": {
+          "caption": "24小时统计",
+          "volume_24h": "链上卷:",
+          "hashrate": {
+            "caption": "哈希率:",
+            "dimension": {
+              "bitcoin": "Eh/s",
+              "ethereum": "Th/s",
+              "dash": "Ph/s"
+            }
+          },
+          "tps": "每秒:",
+          "average_transaction_fee": "平均交易费:",
+          "median_transaction_fee": "中位数交易费:"
+        },
+        "mempool": {
+          "caption": "Mempool"
+        }
+      },
+      "charts": {
+        "caption": "图表",
+        "link": "查看所有图表"
+      },
+      "bitcoin": {
+        "title": "比特币搜索引擎",
+        "description": "查找比特币（BTC）块、交易、地址、余额、节点、OP_RETURN数据和协议、区块链统计数据和图表",
+        "stats": {
+          "blocks": "块",
+          "transactions": "交易",
+          "outputs": "输出",
+          "countdowns": {
+            "reward_halving": "奖励减半",
+            "upcoming_fork": "未来分叉"
+          },
+          "general": {
+            "next_difficulty_estimate": "Next estimated difficulty:",
+            "next_retarget_time_estimate": "Estimated readjustment time:",
+            "best_block": "最新区块:",
+            "best_block_hash": "最好的块哈希:",
+            "best_block_time": "最好的块时间:",
+            "nodes": "网络节点:"
+          },
+          "24h_stats": {
+            "blocks": "块:",
+            "average_block_time": {
+              "caption": "内幕消息 块之间的时间:",
+              "dimension": "s."
+            },
+            "transactions": "交易:"
+          },
+          "mempool": {
+            "suggested_transaction_fee": {
+              "caption": "推荐费:",
+              "dimension": "Sat/byte"
+            },
+            "total_fee": "在收费:",
+            "size": {
+              "caption": "尺寸:",
+              "dimension": "MB"
+            }
+          }
+        },
+        "latest_blocks": "最新区块",
+        "biggest_txs_24h": "每天最大的交易",
+        "menu": {
+          "caption": "{chain}菜单",
+          "blockchain": "区块链",
+          "mempool": "Mempool"
+        },
+        "charts": {
+          "average_block_size": "小时(过去3个月)",
+          "hashrate_distribution": "散列率分布(过去2个星期）",
+          "segwit_usage": "隔离见证使用（过去3个月）",
+          "dairy_circulation": "日循环（过去3个月）",
+          "median_transaction_fee": "交易费用中数（过去3个月）",
+          "coindays_destroyed": "百万（过去3个月）",
+          "non_monetary_outputs": "非货币产出百分比(过去3个月）",
+          "distribution_of_outputs": "输出类型分布（上周)",
+          "average_fee": "平均K比特费用（过去3个月）"
+        }
+      },
+      "ripple": {
+        "title": "波纹资源管理器",
+        "description": "",
+        "stats": {
+          "ledgers": "账簿",
+          "circulation": "循环",
+          "general": {
+            "best_ledger": "最新账本:",
+            "best_ledger_hash": "最佳分类帐哈希:",
+            "best_ledger_time": "最佳总账时间:"
+          },
+          "24h_stats": {
+            "ledgers": "账簿:",
+            "average_ledger_time": "内幕消息 分类帐之间的时间:"
+          }
+        }
+      },
+      "ethereum": {
+        "title": "以太坊搜索引擎",
+        "description": "查找以太坊（ETH）区块、交易、地址、智能合约、余额和区块链统计信息",
+        "stats": {
+          "uncles": "叔叔",
+          "calls": "电话",
+          "general": {
+            "median_gas_price": {
+              "caption": "天然气价格中位数:",
+              "dimension": "Gwei"
+            }
+          },
+          "24h_stats": {
+            "uncles": "叔叔:"
+          },
+          "mempool": {
+            "total_value": "值:"
+          }
+        },
+        "menu": {
+          "mempool": "Mempool和最后6块"
+        },
+        "charts": {
+          "average_gas_size": "按天和小时排序平均gas使用情况（过去3个月）",
+          "average_gas_limit": "平均gas限制（过去3个月）",
+          "mining_difficulty": "挖矿难度（过去3个月）",
+          "new_contract_count": "新合约数量（过去3个月）",
+          "distribution_of_tx_types": "tx种类分布(过去3个月）",
+          "average_gas_price": "平均gas价格（GWei)(过去3个月）"
+        }
+      },
+      "bitcoin-cash": {
+        "title": "比特币现金搜索引擎",
+        "description": "查找比特币现金（BCH）块、交易、地址、余额、节点、OP_RETURN数据和协议、区块链统计数据和图表",
+        "charts": {
+          "voting_of_scalability": "对可扩展性的投票"
+        }
+      },
+      "bitcoin-sv": {
+        "title": "比特币SV搜索引擎",
+        "description": "查找比特币SV（BSV）块、交易、地址、余额、节点、OP_RETURN数据和协议、区块链统计和图表"
+      },
+      "dogecoin": {
+        "title": "狗币搜索引擎",
+        "description": "查找狗币（DOGE）块、交易、地址、余额、节点、OP_RETURN数据和协议、区块链统计数据和图表"
+      },
+      "dash": {
+        "title": "达世币搜索引擎",
+        "description": "查找达世币（DASH）块、交易、地址、余额、OP_RETURN数据和协议、区块链统计信息和图表"
+      },
+      "litecoin": {
+        "title": "莱特币搜索引擎",
+        "description": "查找莱特币（LTC）块、交易、地址、余额、节点、区块链统计数据和图表"
+      },
+      "groestlcoin": {
+        "title": "Groestlcoin探险家",
+        "description": "查找Groestlcoin（GRS）块、交易、地址、余额、节点、区块链统计和图表"
+      },
+      "useful_links": {
+        "caption": "有用的链接",
+        "description": "已在其网站上使用我们服务的合作伙伴",
+        "wallets": "钱包",
+        "market_data": "市场数据",
+        "exchanges": "交流",
+        "mining_pools": "采矿池",
+        "explorers": "探险家"
+      }
+    },
+    "bitcoin": {
+      "nodes": {
+        "description": "地区、实施、版本和共识规则来探索比特币网络",
+        "last_updated": "最近更新：",
+        "versions": {
+          "caption": "节点版本：",
+          "user_agent": "用户经纪人",
+          "count": "计数"
+        },
+        "charts": {
+          "total_nodes": "总节点：{total}",
+          "by_countries": "按国家分类",
+          "by_implementations": "按贯彻度分类",
+          "api": "使用我们的API获取有关节点的IP地址和有用信息的完整列表：{api_link}",
+          "bitnodes": "此API调用使用{bitnodes_link}遍历节点。 试试看！"
+        }
+      },
+      "whitepaper": {
+        "description": "通过不同网站和比特币输出的哈希检查Satoshi Nakamoto的白皮书的一致性",
+        "last_check": "最近检查",
+        "icon": "图标",
+        "site": "网站",
+        "url": "URL",
+        "hash": "哈希值",
+        "status": "状态",
+        "footer": {
+          "what_is": {
+            "caption": "此页面是什么？",
+            "description1": "此页面显示不同的比特币网站是否提供原始比特币白皮书或其编辑版本。 一小时一次，我们计算文件的SHA-256哈希值，并将它们与原始白皮书的哈希值进行比较（即b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553）。",
+            "description2": "有一些建议要改变bitcoin.org上托管的白皮书（例如{github_issue_link}仍然开放）。 我们认为编辑学术论文并重写比特币历史以适应某人的商业利益是完全不可接受的。",
+            "github_issue": "GitHub Issue #1325"
+          },
+          "where_find": {
+            "caption": "我在哪里可以找到比特币区块链中的白皮书？",
+            "description1": "首先，有一些空数据输出包含作为明文的散列。 你可以找到它们{outputs_table_link}。 示例：{transaction1_link}，{transaction2_link}，{transaction3_link}",
+            "outputs_table": "在输出表上使用过滤器",
+            "description2": "还有一些空数据输出，其中包含六进制的哈希值。 我们的搜索引擎的当前版本还不支持按十六进制值过滤脚本，但由于十六进制值可以表示为二进制文本，因此我们可以对此文本进行{outputs_table_search_link}。 示例：{transaction1_link}，{transaction2_link}，{transaction3_link}",
+            "outputs_table_search": "按字母数字部分搜索",
+            "description3": "更重要的是，事务{transaction_link}包含pdf文件本身。 这是{bitcoin_stackexchange_link}。 可以在某些网站上编辑白皮书，但不可能改变区块链。",
+            "bitcoin_stackexchange": "关于如何解析它的说明"
+          }
+        }
+      }
+    },
+    "bitcoin-cash": {
+      "nodes": {
+        "description": "地区、实施、版本和共识规则来探索比特币现金网络"
+      }
+    },
+    "bitcoin-sv": {
+      "nodes": {
+        "description": "地区、实施、版本和共识规则来探索比特币SV网络"
+      }
+    },
+    "dogecoin": {
+      "nodes": {
+        "description": "地区、实施、版本和共识规则来探索狗币网络"
+      }
+    },
+    "litecoin": {
+      "nodes": {
+        "description": "地区、实施、版本和共识规则来探索莱特币网络"
+      }
+    },
+    "dash": {
+      "nodes": {
+        "description": "Dash研究的区域、销售和共识规则"
+      }
+    },
+    "groestlcoin":{
+      "nodes":{
+        "description":"Explore Groestlcoin network by looking for all the accessible nodes, their countries, implementations, versions and consensus rules"
+      }
+    },
+    "charts": {
+      "title": "图标",
+      "description": "{chain}图表、{ticker}价格、历史和实时图表以及其他加密货币可视化",
+      "content": {
+        "sections": {
+          "monetary_stats": "货币统计",
+          "blocks": "区块",
+          "transactions": "交易",
+          "misc": "杂项"
+        }
+      },
+      "bitcoin": {
+        "names": {
+          "blockchain-size": {
+            "title": "{chain}区块链大小图表",
+            "name": "区块链图表",
+            "description": "从创世区块到现在的{chain}全节点大小（千兆字节）的增长率"
+          },
+          "price-usd": {
+            "title": "{chain}价格（USD）",
+            "name": "{chain}价格（USD）",
+            "description": "USD价格，包括{chain}交易所的历史市场数据"
+          },
+          "circulation": {
+            "title": "{chain} 循环图表",
+            "name": "循环",
+            "description": "已经开采了多少{ticker}？ 察看{ticker}代表供应的图表"
+          },
+          "average-block-size": {
+            "title": "{chain}平均区块大小图表",
+            "name": "平均区块大小",
+            "description": "查看历史{chain}区块大小图表"
+          },
+          "median-block-size": {
+            "title": "{chain}中位数区块大小图表",
+            "name": "中位数区块大小",
+            "description": "获取历史中位数{chain}块大小图表"
+          },
+          "difficulty": {
+            "title": "{chain}难度图表",
+            "name": "难度",
+            "description": "{ticker}难度图表,取决于整体挖掘哈希值的一个参数"
+          },
+          "transaction-count": {
+            "title": "{chain}交易计数表",
+            "name": "交易计数",
+            "description": "月确认的{chain}交易数"
+          },
+          "total-transaction-count": {
+            "title": "{chain}总交易计数图表",
+            "name": "总交易计数",
+            "description": "进行了多少次{ticker}交易？ {chain}区块链中已确认交易的总数"
+          },
+          "transaction-volume": {
+            "title": "{chain}交易量表",
+            "name": "交易量（{ticker}）",
+            "description": "检查每天移动的{ticker}的数量"
+          },
+          "average-transaction-amount": {
+            "title": "{chain}平均交易金额图表",
+            "name": "平均交易金额（{ticker}）",
+            "description": "年排序"
+          },
+          "median-transaction-amount": {
+            "title": "{chain}中位数交易金额图表",
+            "name": "中位数交易金额（{ticker}）",
+            "description": "年排序"
+          },
+          "average-transaction-fee": {
+            "title": "{chain}平均交易费用表",
+            "name": "平均交易费（{ticker}）",
+            "description": "在{ticker}中查看{chain}平均tx费用"
+          },
+          "median-transaction-fee": {
+            "title": "{chain}中位数交易费用表",
+            "name": "中位数交易费（{ticker}）",
+            "description": "在{ticker}中查看{chain}中位数tx费用"
+          },
+          "transaction-volume-usd": {
+            "title": "{chain}交易量（USD）图表",
+            "name": "交易量（USD）",
+            "description": "检查每天移动的{ticker}USD的数量"
+          },
+          "average-transaction-fee-usd": {
+            "title": "{chain}平均交易费（USD）图表",
+            "name": "平均交易手续费（USD）",
+            "description": "以USD为单位检查{chain}平均tx费用"
+          },
+          "median-transaction-fee-usd": {
+            "title": "{chain}中位数交易费（USD）图表",
+            "name": "中位数交易手续费（USD）",
+            "description": "以USD为单位检查{chain}中位数tx费用"
+          },
+          "average-transaction-amount-usd": {
+            "title": "{chain}平均交易金额（USD）图表",
+            "name": "平均交易金额（USD）",
+            "description": "年为单位获取{chain}平均tx金额"
+          },
+          "median-transaction-amount-usd": {
+            "title": "{chain}中位数交易金额（USD）图表",
+            "name": "中位数交易金额（USD）",
+            "description": "年为单位获取{chain}中位数tx金额"
+          },
+          "inflation-usd": {
+            "title": "{chain}通胀（USD）图表",
+            "name": "通货膨胀（USD）",
+            "description": "生成的{ticker}数量。 {chain}通胀率曲线"
+          },
+          "transactions-in-block": {
+            "title": "{chain}区块图中的交易",
+            "name": "区块交易",
+            "description": "{chain}交易计数按块散点图"
+          },
+          "coindays-destroyed": {
+            "title": "{chain}币天销毁图表",
+            "name": "币天销毁数",
+            "description": "此图表展示了通过移动旧币销毁的{chain}币天数"
+          },
+          "hashrate-distribution": {
+            "title": "{chain}哈希值分布",
+            "name": "哈希值分布",
+            "description": "在哈希值分布饼图上找到最大的{chain}矿工和池"
+          },
+          "transactions-per-second": {
+            "title": "{chain}每秒事务图表",
+            "name": "每秒交易",
+            "description": "s是一个很好的{chain}可伸缩性度量。 检查它每天如何变化"
+          },
+          "segwit-usage": {
+            "title": "{chain} SegWit使用情况图表",
+            "name": "SegWit使用情况",
+            "description": "{chain}中SegWit交易的百分比"
+          },
+          "percentage-of-non-monetary-outputs": {
+            "title": "非货币{chain}输出图表的百分比",
+            "name": "非货币输出图表",
+            "description": "{ticker}输出的百分比没有移动任何{ticker}"
+          },
+          "distribution-of-outputs-types-over-two-weeks": {
+            "title": "{chain}输出类型图表的分布",
+            "name": "输出类型图表的分布",
+            "description": "在饼图中检查过去2周内最受欢迎的{chain}输出类型"
+          }
+        }
+      },
+      "dogecoin": {
+        "names": {
+          "aux-pow": {
+            "title": "狗币 AuxPow 使用情况图表",
+            "name": "AuxPow 使用情况",
+            "description": "通过合并采矿确认的狗币块的百分比"
+          }
+        }
+      },
+      "ethereum": {
+        "names": {
+          "number-of-new-contracts": {
+            "title": "新的以太坊合约数量图表",
+            "name": "新合约数量",
+            "description": "获取每日在以太坊创建的新智能合约的数量"
+          },
+          "number-of-destroyed-contracts": {
+            "title": "被破坏的以太坊合约数量图表",
+            "name": "被破坏的合约数量",
+            "description": "获取每日销毁的以太坊智能合约的数量"
+          },
+          "uncle-rate": {
+            "title": "以太坊uncle率",
+            "name": "Uncle率",
+            "description": "以太坊中uncle块的百分比"
+          },
+          "average-gas-price": {
+            "title": "以太坊平均gas价格走势图",
+            "name": "评价gas价格",
+            "description": "查看GWei的历史ETH平均gas价格"
+          },
+          "median-gas-price": {
+            "title": "以太坊中位数天gas价格走势图",
+            "name": "gas价格中位数",
+            "description": " 查看GWei的历史ETHgas价格中位数"
+          },
+          "average-gas-limit": {
+            "title": "以太坊平均gas限制图",
+            "name": "gas平均限制",
+            "description": "查看历史ETH平均gas限制"
+          },
+          "median-gas-limit": {
+            "title": "以太坊中位数gas限制图",
+            "name": "gas限制中位数",
+            "description": "查看历史上ETH gas限制中位数"
+          },
+          "new-contracts-ratio": {
+            "title": "以太坊新合约比率图表",
+            "name": "新合约比率",
+            "description": "以太坊新合约的比率与SELFDESTRUCT销毁的比率相比"
+          }
+        }
+      },
+      "name": {
+        "options": {
+          "compare": "比较",
+          "interval": {
+            "caption": "间隔",
+            "1m": "上个月",
+            "3m": "过去3个月",
+            "full": "从开始到现在"
+          },
+          "granularity": "粒度",
+          "export": "输出",
+          "related_charts": "相关图表",
+          "other_coins": "其他硬币的相同图表"
+        }
+      }
+    }
+  },
+  "about": {
+    "title": "关于",
+    "description": "Blockchair团队，合作伙伴和联系方式",
+    "navigation": "关于",
+    "what_is": {
+      "caption": "Blockchair是什么？",
+      "description1": "{service}是{bitcoin_link}、{ethereum_link}、{bitcoin_cash_link}、{litecoin_link}、{bitcoin_sv_link}、{dash_link}、{ripple_link}、{groestlcoin_link}和{dogecoin_link}的区块链搜索和分析引擎，或者您也可以说它是由区块链组成的引擎 类固醇的探测器。 您可以通过各种不同的标准对块，事务及其内容进行筛选和排序，以及对区块链执行全文搜索。",
+      "description2": "要了解我们的搜索引擎功能，您可以尝试搜索{search_bitcoin_link}，查看{largest_bitcoin_cash_blocks_link}，或尝试使用{homepage_link}上的任何其他示例。",
+      "biggest_bitcoin_cash_blocks": "最大的比特币现金块",
+      "homepage": "我们的主页",
+      "description3": "我们的目标是成为区块链的谷歌。 我们的下一个目标是提供搜索更多其他分散项目（如IPFS和SWARM）的能力。 此外，我们为研究人员提供了从区块链批量导出数据的方法。"
+    },
+    "our_team": "Our team",
+    "contacts": {
+      "caption": "联系我们",
+      "email": "Email:",
+      "twitter": "推特：",
+      "facebook": "Facebook: {facebook_link}",
+      "telegram": "电报聊天："
+    },
+    "partners": {
+      "caption": "Our partners and friends",
+      "general": "General partners",
+      "wallets": "Wallets featuring Blockchair",
+      "exchanges": "Exchanges featuring Blockchair",
+      "mining_pools": "Mining pools featuring Blockchair",
+      "explorers": "Explorers featuring Blockchair",
+      "market_data": "Market data providers featuring Blockchair",
+      "media": "Media partners",
+      "academic": "Academic partners"
+    }
+  },
+  "feed": {
+    "title": "信息来源",
+    "description": "读取存储在加密货币区块链中的编码消息",
+    "navigation": {
+      "title": "来源",
+      "hint": "Blockchair Feed显示比特币和比特币现金区块链中的OP_RETURN交易以及包含输入字段中可读数据的以太坊区块链交易",
+      "tps": {
+        "title": "三个区块链的新输入",
+        "bitcoin": "比特币在",
+        "bitcoin-cash": "比特币现金在",
+        "ethereum": "以太坊在"
+      }
+    },
+    "entries": {
+      "showing": "展示过去3小时的输入",
+      "time": "{time} (UTC)"
+    }
+  },
+  "compare": {
+    "title": "比较BTC、ETH、BCH、LTC、BSV、DASH、DOGE区块链统计数据",
+    "description": "比较加密货币与块之间的平均时间，每秒交易数，费用，哈希值，节点数等",
+    "navigation": "比较",
+    "blockchain_stats": {
+      "caption": "区块链统计数据",
+      "circulation": "循环",
+      "nodes": "区块链节点",
+      "blockchain_size": "区块链大小"
+    },
+    "24h_stats": {
+      "caption": "24小时统计数据",
+      "volume_24h": "链上体积",
+      "hashrate_24h": "哈希率",
+      "average_tx_fee": "平均交易费用",
+      "median_tx_fee": "交易费用中位数",
+      "average_block_time": {
+        "caption": "块间平均时间",
+        "dimension": "s."
+      },
+      "inflation_24h": "通货膨胀",
+      "cdd_24h": "币天销毁数"
+    },
+    "mempool_stats": {
+      "caption": "内存池统计数据",
+      "tps": "每秒交易",
+      "suggested_transaction_fee": "推荐费"
+    },
+    "market_stats": {
+      "caption": "市场统计数据",
+      "cap": "大写",
+      "price": "价格",
+      "dominance": "优势指数"
+    }
+  },
+  "charts": {
+    "title": "图表",
+    "description": "加密货币实时图表和图表、市场价格、挖掘哈希值分布、难度、区块链大小、费用等",
+    "navigation": {
+      "title": "图表"
+    },
+    "granularity": {
+      "date": "日期",
+      "week": "星期",
+      "month": "月",
+      "year": "年",
+      "time": "时间"
+    },
+    "functions": {
+      "count": "数量",
+      "sum": "总结",
+      "avg": "平均",
+      "median": "中值的",
+      "min": "最低限度",
+      "max": "最大值"
+    },
+    "dimensions": {
+      "count": "计数",
+      "bytes": "字节",
+      "kilobytes": "Kb",
+      "megabytes": "Mb",
+      "gigabytes": "Gb",
+      "dd": "销毁天数",
+      "usd": "USD",
+      "percentage": "百分比",
+      "gwei": "Gwei"
+    },
+    "content": {
+      "see_more": "发现更多图表"
+    }
+  },
+  "broadcast": {
+    "title": "广播原始交易",
+    "navigation": "广播",
+    "description": "以十六进制广播BTC、ETH、BCH、LTC、BSV、DOGE、GRS的原始签名交易",
+    "form": {
+      "chain": {
+        "label": "选择网络：",
+        "invalid": "您需要先选择一个区块链！"
+      },
+      "hex": {
+        "label": "在此以十六进制粘贴新的原始交易以通过指定网络广播",
+        "errors": {
+          "empty": "请先输入十六进制值！",
+          "invalid": "无效的十六进制！"
+        }
+      },
+      "button": "交易广播"
+    },
+    "transaction": "谢谢，您的交易已被广播到 {chain} 区块链哈希值 {hash}"
+  },
+  "notify": {
+    "title": "通知",
+    "navigation": {
+      "title": "通知"
+    },
+    "content": {
+      "enable": "已应用提醒",
+      "chains": "当在下列链中找到新区块时提醒我："
+    },
+    "notification": "已找到新区块"
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "navigation": "隐私政策",
+    "description": "了解你的隐私在使用加密服务时为何受到威胁，以及为什么Blockchair是您的安全之选。"
+  },
+  "dumps": {
+    "title": "加密数据货币集",
+    "navigation": "转储",
+    "description": "下载TSV格式的BTC、ETH、BCH、LTC、BSV、DOGE、GRS区块以及交易数据"
+  },
+  "markets": {
+    "title": "市场",
+    "navigation": {
+      "title": "市场"
+    },
+    "description": ""
+  },
+  "hints": {
+    "bitcoin-cash": "比特币现金或BCC或XBC",
+    "copy": "复制",
+    "copied": "已复制",
+    "mempool": "内存池"
+  },
+  "utils": {
+    "bool": {
+      "yes": "是",
+      "no": "否"
+    },
+    "coinbase": {
+      "full": "💰 Coinbase",
+      "short": "Coinbase"
+    },
+    "contract_creation": "创建协议",
+    "unspent": "比特币余额",
+    "thinking": {
+      "loading": "加载中...",
+      "progress": "正在处理...{progress}%"
+    }
+  },
+  "footer": {
+    "old": {
+      "explorers": "浏览器：",
+      "services": "服务：",
+      "privacy": "我们非常重视您的隐私，请阅读我们的隐私政策",
+      "layer_2": "二级浏览器：",
+      "omni": "Omni",
+      "contacts": "联系我们",
+      "twitter": "推特",
+      "telegram": "电报",
+      "issues": "服务协议"
+    },
+    "explorers": "浏览器",
+    "services": "服务",
+    "api": "API",
+    "sql": "SQL",
+    "charts": "图表",
+    "markets": "市场",
+    "feed": "来源",
+    "broadcast": "广播",
+    "dumps": "转储",
+    "compare": "比较",
+    "useful_links": "有用的链接",
+    "about": "关于",
+    "privacy": "请阅读我们的隐私政策",
+    "contacts": "联系我们",
+    "issues": "服务协议",
+    "status": "状态",
+    "social": "社会",
+    "language": "语言",
+    "copyright": "© {year} Blockchair",
+    "market_data": "市场数据由{coin_market_cap_link}以及{coin_gecko_link}"
+  },
+  "errors": {
+    "http": {
+      "payment_required": "系统繁忙，请稍后再试。",
+      "not_found": "您所搜索的信息无法找到"
+    }
+  }
+}
