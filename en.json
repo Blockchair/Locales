@@ -99,7 +99,7 @@
         "title": "Charts",
         "chart_name": "Bitcoin price over the last 3 months",
         "description": "Get an overview of latest data trends by looking at over 120 charts",
-        "link": "Go to Charts"
+        "link": "Go to charts"
       },
       "markets": {
         "title": "Markets & Portfolio",
@@ -154,33 +154,33 @@
               "average_fee":"Average fee per kB (USD) (last 3 mos.)"
             },
             "stats":{
-            "explore":"Explore:",
-            "mempool":"Mempool:",
-            "blocks":"blocks",
-            "transactions":"transactions",
-            "outputs":"outputs",
-            "tps":"txs per second",
-            "best_block":"Latest block:",
-            "hashrate":"Hashrate {algorithm}:",
-            "nodes": "Nodes",
-            "links":{
-              "broadcast":"Broadcast (push) transaction",
-              "useful":"Useful links",
-              "empty_blocks":"Empty blocks",
-              "blocks_asc":"Blocks in ascending order",
-              "coinbase_txs":"Coinbase transactions",
-              "txs_cdd_total_0":"Transactions which destroyed 0 coindays",
-              "unspent_outputs":"UTXO set (unspent outputs)",
-              "nulldata_outputs":"OP_RETURN (nulldata) outputs",
-              "over_last_30_days":"Over the last 30 days",
-              "blocks_with_high_fee_per_kb_usd":"Blocks with the highest fee/kB in USD",
-              "blocks_with_most_cdd_total":"Blocks with the most coindays destroyed",
-              "txs_highest_fees_usd":"Transactions with the highest fees in USD",
-              "output_total":"The largest tx amounts in {ticker}",
-              "lifespan":"With the longest lifespan",
-              "outputs_cdd":"With the largest coindays destroyed"
+              "explore":"Explore:",
+              "mempool":"Mempool:",
+              "blocks":"blocks",
+              "transactions":"transactions",
+              "outputs":"outputs",
+              "tps":"txs per second",
+              "best_block":"Latest block:",
+              "hashrate":"Hashrate {algorithm}:",
+              "nodes": "Nodes",
+              "links":{
+                "broadcast":"Broadcast (push) transaction",
+                "useful":"Useful links",
+                "empty_blocks":"Empty blocks",
+                "blocks_asc":"Blocks in ascending order",
+                "coinbase_txs":"Coinbase transactions",
+                "txs_cdd_total_0":"Transactions which destroyed 0 coindays",
+                "unspent_outputs":"UTXO set (unspent outputs)",
+                "nulldata_outputs":"OP_RETURN (nulldata) outputs",
+                "over_last_30_days":"Over the last 30 days",
+                "blocks_with_high_fee_per_kb_usd":"Blocks with the highest fee/kB in USD",
+                "blocks_with_most_cdd_total":"Blocks with the most coindays destroyed",
+                "txs_highest_fees_usd":"Transactions with the highest fees in USD",
+                "output_total":"The largest tx amounts in {ticker}",
+                "lifespan":"With the longest lifespan",
+                "outputs_cdd":"With the largest coindays destroyed"
+              }
             }
-          }
           },
           "bitcoin-cash":{
             "charts":{
@@ -188,31 +188,31 @@
             }
           },
           "ethereum":{
-          "charts":{
-            "average_gas_size":"Average gas usage by days and hours (last 3 mos.)",
-            "average_gas_limit":"Average gas limit (last 3 months)",
-            "mining_difficulty":"Mining difficulty (last 3 months)",
-            "new_contract_count":"New contract count (last 3 months)",
-            "distribution_of_tx_types":"Distribution of tx types (last 3 months)",
-            "average_gas_price":"Average gas price (GWei) (last 3 months)"
-          },
-          "stats":{
-            "uncles":"uncles",
-            "calls":"calls",
-            "links":{
-              "failed_txs":"Failed transactions",
-              "txs_with_high_calls":"Txs with the most number of calls",
-              "contract_creations":"Contract creations (CREATE)",
-              "contract_destructions":"Contract desctructions (SELFDESTRUCT)",
-              "blocks_with_biggest_size":"Blocks with the biggest size in bytes",
-              "blocks_with_most_txs_count":"Blocks with the most transaction count",
-              "txs_with_highest_fees_usd":"Transactions with the highest fees in USD",
-              "txs_with_largest_internal_values":"The largest tx internal amounts in ETH",
-              "calls_with_most_child_calls":"Calls with the most child calls",
-              "calls_with_largest_value_usd":"Calls with the largest amounts in USD"
+            "charts":{
+              "average_gas_size":"Average gas usage by days and hours (last 3 mos.)",
+              "average_gas_limit":"Average gas limit (last 3 months)",
+              "mining_difficulty":"Mining difficulty (last 3 months)",
+              "new_contract_count":"New contract count (last 3 months)",
+              "distribution_of_tx_types":"Distribution of tx types (last 3 months)",
+              "average_gas_price":"Average gas price (GWei) (last 3 months)"
+            },
+            "stats":{
+              "uncles":"uncles",
+              "calls":"calls",
+              "links":{
+                "failed_txs":"Failed transactions",
+                "txs_with_high_calls":"Txs with the most number of calls",
+                "contract_creations":"Contract creations (CREATE)",
+                "contract_destructions":"Contract desctructions (SELFDESTRUCT)",
+                "blocks_with_biggest_size":"Blocks with the biggest size in bytes",
+                "blocks_with_most_txs_count":"Blocks with the most transaction count",
+                "txs_with_highest_fees_usd":"Transactions with the highest fees in USD",
+                "txs_with_largest_internal_values":"The largest tx internal amounts in ETH",
+                "calls_with_most_child_calls":"Calls with the most child calls",
+                "calls_with_largest_value_usd":"Calls with the largest amounts in USD"
+              }
             }
-          }
-        },
+          },
           "footer_link":"Go to {chain} explorer 👉"
         }
       },
@@ -223,26 +223,26 @@
           "portfolio":"My portfolio ({total_profit})"
         },
         "infinitable":{
-        "head":{
-          "coin_name":"Coin name",
-          "price":"Price",
-          "search":"Quick lookup... 🔎",
-          "mkt_cap":"Market Cap",
-          "24h_change":"24h",
-          "dominance":"Dominance",
-          "portfolio":{
-            "amount":"Amount",
-            "profit":"USD value"
+          "head":{
+            "coin_name":"Coin name",
+            "price":"Price",
+            "search":"Quick lookup... 🔎",
+            "mkt_cap":"Market Cap",
+            "24h_change":"24h",
+            "dominance":"Dominance",
+            "portfolio":{
+              "amount":"Amount",
+              "profit":"USD value"
+            }
+          },
+          "body":{
+            "portfolio":{
+              "total_profit":"Total portfolio value:",
+              "empty_list":"You do not have a portfolio. Start a portfolio by adding coins to your favorites!"
+            },
+            "load_more":"Load more... 👉"
           }
         },
-        "body":{
-          "portfolio":{
-            "total_profit":"Total portfolio value:",
-            "empty_list":"You do not have a portfolio. Start a portfolio by adding coins to your favorites!"
-          },
-          "load_more":"Load more... 👉"
-        }
-      },
         "modal":{
           "title":{
             "edit":"Edit coin in your portfolio",
@@ -1166,8 +1166,9 @@
         "block":{
           "description":"Bitcoin (BTC) block {height}, hash: {hash}, date: {date}",
           "general_info":"General info",
-          "counters_and_fees": "Counters & fees",
           "technical_details":"Technical details",
+          "see_more": "Click to see more",
+          "hide_details": "Hide details",
           "explorers":"Other blockchain explorers",
           "last_transactions":"Transactions included in this block"
         },
@@ -1201,7 +1202,7 @@
             "leaving":"You will not receive a notification that the transaction is confirmed. Are you sure you want to leave this page?"
           },
           "raw_transaction":{
-            "title":"Raw transaction",
+            "title":"Raw txn",
             "form":{
               "hex":"Raw transaction (hex):",
               "decoded":"Decoded raw transaction (json):"
@@ -1209,8 +1210,8 @@
             "empty":"Couldn’t retrieve data for this transaction (it’s either a genesis transaction or this transaction has been dropped from the mempool)"
           },
           "pdf_receipt":"PDF receipt",
-          "inputs":"Inputs:",
-          "outputs":"Outputs:"
+          "senders":"Senders",
+          "recipients":"Recipients"
         },
         "address":{
           "description":"Check Bitcoin (BTC) address {address} balance and its transactions",
@@ -1226,14 +1227,16 @@
           },
           "unspent_output_count":"Unspent output count",
           "monetary_info":"Monetary info",
+          "last_seen_receiving": "Last seen receiving",
+          "first_last_seen_receiving": "First / last seen receiving",
+          "first_last_seen_spending": "First / last seen spending",
           "first_seen":"First seen",
           "last_seen":"Last seen",
-          "receiving":"Receiving:",
-          "spending":"Spending:",
+          "receiving": "Reveiving: {time}",
+          "spending": "Spending: {time}",
           "total_received":"Total received",
           "total_spent":"Total spent",
           "total_unspent":"Balance",
-          "usd_today":"today",
           "protocol":{
             "omni":{
               "title":"Omni tokens",
@@ -1369,10 +1372,13 @@
         "address":{
           "description":"Check Ethereum (ETH) ({address}), its balance and transactions",
           "type":"Type",
+          "receiving":"Receiving: {receiving_calls_link}",
+          "spending":"Spending: {spending_calls_link}",
           "call_count":"Call count (incl. failed)",
           "contract_created":"Contract created?",
           "contract_destroyed":"Contract destroyed?",
           "contract_code":{
+            "short": "Contract code",
             "bin":"Contract code [bin]",
             "hex":"Contract code [hex]"
           },
@@ -1380,7 +1386,9 @@
           "received":"Received (approx.)",
           "spent":"Spent (approx.)",
           "fees":"Paid in fees (approx.)",
-          "involving_calls":"Calls involving address"
+          "involving_calls":"Calls involving address",
+          "transferred": "Transferred",
+          "failed": "Failed"
         }
       },
       "ripple":{
