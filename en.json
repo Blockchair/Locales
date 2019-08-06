@@ -1230,10 +1230,6 @@
           "last_seen_receiving": "Last seen receiving",
           "first_last_seen_receiving": "First / last seen receiving",
           "first_last_seen_spending": "First / last seen spending",
-          "first_seen":"First seen",
-          "last_seen":"Last seen",
-          "receiving": "Reveiving: {time}",
-          "spending": "Spending: {time}",
           "total_received":"Total received",
           "total_spent":"Total spent",
           "total_unspent":"Balance",
@@ -1359,7 +1355,7 @@
           "coinbase":"coinbase",
           "transaction_count": "{transactions_link} + {coinbase_link} coinbase",
           "value_total":"Total amount",
-          "internal_value_total":"Total internal amount transferred",
+          "internal_value_total":"Total internal amount",
           "fee_total":"Fee total"
         },
         "uncle":{
