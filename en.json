@@ -1000,28 +1000,6 @@
         }
       }
     },
-    "export":{
-      "title":"Export",
-      "description":{
-        "text1":"You can export the entire result set {hint} in one of the supported formats (CSV or TSV) to process and analyse the data using various tools like R or Statistica.",
-        "text2":"If the resulting number of cells is less than 1 million, you'll get the data automatically and for free.",
-        "hint":"Except for raw binary fields (coinbase data, scripts and signatures - please select the corresponding hex fields), age field, and miner votes field)"
-      },
-      "summary":{
-        "rows":"rows",
-        "columns":"columns",
-        "cells":"{sum} cells",
-        "free":"(FREE)"
-      },
-      "button":"Export",
-      "modal":{
-        "title":"Export",
-        "request":{
-          "text":"You are requesting to export more than 1 million cells. As of now, we process such requests manually and on a paid basis (unless you're conducting an academic research — in that case it's possible to get the data for free). If you have any questions, please, contact us at {mailto}.",
-          "button":"Request by mail"
-        }
-      }
-    },
     "type":{
       "bitcoin":{
         "block":{
@@ -1118,12 +1096,6 @@
               "omni":"Contains Omni Layer data",
               "wormhole":"Contains Wormhole data"
             }
-          },
-          "pagination":{
-            "first":"First",
-            "previous":"Previous",
-            "next":"Next",
-            "last":"Last"
           }
         },
         "xpub":{
