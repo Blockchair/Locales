@@ -1,0 +1,2118 @@
+{
+  "title":"Blockchair",
+  "description":"Explorador de bloque y la más poderosa API para BTC, ETH, BCH, LTC, DASH, BSV y DOGE que te permite encontrar, ordenar y filtrar transacciones y direcciones.",
+  "chain":{
+    "bitcoin":"Bitcoin",
+    "bitcoin/testnet": "Testnet Bitcoin",
+    "bitcoin-cash":"Bitcoin Cash",
+    "bitcoin-sv":"Bitcoin SV",
+    "dogecoin":"Dogecoin",
+    "dash":"Dash",
+    "litecoin":"Litecoin",
+    "ethereum":"Ethereum",
+    "ripple":"Ripple",
+    "groestlcoin": "Groestlcoin"
+  },
+  "ticker":{
+    "bitcoin":"BTC",
+    "bitcoin/testnet": "TBTC",
+    "bitcoin-cash":"BCH",
+    "bitcoin-sv":"BSV",
+    "dogecoin":"DOGE",
+    "dash":"DASH",
+    "litecoin":"LTC",
+    "ethereum":"ETH",
+    "ripple":"XRP",
+    "usd":"USD",
+    "groestlcoin": "GRS"
+  },
+  "homepage":{
+    "title":"Blockchair - Motor de búsqueda y explorador de blockchain universal",
+    "screen1": {
+      "placehodler": "Busca en 9 blockchains...",
+      "qrcode": {
+        "title": "Escanea el código QR de una dirección",
+        "modal": {
+          "title": "Escanea código QR"
+        }
+      },
+      "description": "Blockchair es el motor de búsqueda con mayor privacidad para {bitcoin}, {ethereum}, {ripple}, {bitcoin_cash}, {litecoin}, {bitcoin_sv}, {dash}, {dogecoin} y {groestlcoin}. Busca {transactions}, {addresses}, {blocks}, e incluso {embedded}.",
+      "scope":{
+        "transactions":"transacciones",
+        "addresses":"direcciones",
+        "blocks":"bloques",
+        "embedded":"datos de texto embebidos",
+        "tooltip":"Click para pegar un ejemplo aleatorio en la barra de búsqueda"
+      }
+    },
+    "screen2": {
+      "explore_blockchains": "Explorar blockchains",
+      "description": "Sumérgete en el análisis de datos de blockchain ordenando y aplicando filtros. Crea y extrae tus propios conjuntos de datos. Los volcados de base de datos también están disponibles.",
+      "examples": {
+        "description": "Prueba ejemplos de lo que puedes encontrar en Blockchair:",
+        "show_examples": "Mostrar ejemplos",
+        "links": "{btc_largest_txs_link}, {etc_contract_creations_link}, {bch_biggest_blocks_link}.",
+        "btc_largest_txs": "mayores transacciones en Bitcoin",
+        "etc_contract_creations": "creaciones de contrato en Ethereum",
+        "bch_biggest_blocks": "mayores bloques en Bitcoin Cash"
+      },
+      "card": {
+        "bitcoin": {
+          "blocks": "Bloques:",
+          "transactions": "Transacciones:",
+          "outputs": "Salidas:",
+          "mempool_txs": "Txs no confirmadas:",
+          "mempool_tps": "Txs por segundo:",
+          "best_block": "Último bloque:",
+          "hashrate": "Hashrate ({algorithm}):",
+          "footer_link":"Explorador {chain}"
+        },
+        "ethereum": {
+          "calls": "Llamadas:"
+        },
+        "ripple": {
+          "ledgers": "Registros:",
+          "transactions_24h": "Transacciones 24h:",
+          "circulation": "Circulación:",
+          "best_ledger": "Último registro:",
+          "volume_24h": "Volumen 24h:"
+        },
+        "services": {
+          "charts": "Gráficos",
+          "nodes": "Nodos",
+          "omni": "Omni",
+          "wormhole": "Wormhole",
+          "compare": "Comparar",
+          "feed": "Feed",
+          "stats": "Estads.",
+          "uncles": "Tíos"
+        }
+      }
+    },
+    "screen3": {
+      "features": "Descubre nuestras funcionalidades",
+      "description": "Excelentes herramientas para trabajar con datos cripto: solicita la API Blockchair para obtener datos de blockchain, explora tendencias y correlaciones usando Gráficos, analiza tendencias de mercado con Mercados y Portafolio, transmite transacciones, descarga volcados con datos históricos y mucho más.",
+      "api": {
+        "title": "API profesional",
+        "description": "Accede a datos de blockchain con Blockchair API",
+        "link": "Leer documentación de API"
+      },
+      "charts": {
+        "title": "Gráficos",
+        "chart_name": "Precio de Bitcoin en los últimos 3 meses",
+        "description": "Obtén una visión general de las últimas tendencias de datos visualizando más de 120 gráficos",
+        "link": "Ir a gráficos"
+      },
+      "markets": {
+        "title": "Mercados y Portafolio",
+        "description": "Click para ver los 1000 mejores cripto activos y comenzar a construir tu portafolio",
+        "top1000": "Top 1000",
+        "portfolio": "Mi portafolio",
+        "table": {
+          "name": "Nombre",
+          "price": "Precio",
+          "price_change_24h": "24 h.",
+          "mcap": "MCap.",
+          "dominance": "Dominio"
+        },
+        "link": "Configura tu portafolio"
+      }
+    }
+  },
+  "search":{
+    "title":"Búsqueda Blockchair",
+    "description":"Busca por {query} en blockchains BTC, ETH, BCH, LTC, BSV y DOGE",
+    "status":{
+      "empty_query":"Vaciar consulta",
+      "empty_request":"Lo sentimos, solo soportamos búsquedas en inglés y en ruso",
+      "server_error":"Oh no! {error}",
+      "showing":{
+        "no_results":"Sin resultados ({time} segundos)",
+        "only_result":"Mostrando el único resultado ({time} segundos)",
+        "many_results":"Mostrando {showing} resultados de {total} ({time} segundos)"
+      }
+    },
+    "results":{
+      "matches":{
+        "blocks":{
+          "title":"Explora todo los bloques {chain}",
+          "hint":"Usando nuestro motor de búsqueda puedes filtrar bloques {chain} por más de 30 parámetros"
+        },
+        "transactions":{
+          "title":"Explora todas las transacciones {chain}",
+          "hint":"Usando nuestro motor de búsqueda puedes filtrar transacciones {chain} por más de 30 parámetros"
+        },
+        "calls":{
+          "title":"Explora todas las llamadas Ethereum",
+          "hint":"Usando nuestro motor de búsqueda puedes filtrar llamadas Ethereum por más de 30 parámetros"
+        },
+        "uncles":{
+          "title":"Explora todos los tíos Ethereum",
+          "hint":"Usando nuestro motor de búsqueda puedes filtrar tíos Ethereum por más de 30 parámetros"
+        },
+        "mempool":{
+          "title":"Explora todo el mempool {chain}",
+          "hint":"Usando nuestro motor de búsqueda puedes filtrar transacciones del mempool {chain} por más de 30 parámetros"
+        },
+        "unknown_tnx":{
+          "title":"Transacción desconocida: {query}",
+          "hint1":"Has ingresado un ID de transacción interna usado por algún sitio de cambio (p.e. HitBTC, ShapeShift, etc.)",
+          "hint2":"Estas transacciones no son almacenadas en blockchains, por lo que no podemos ofrecer dato alguno 😞"
+        }
+      },
+      "coin":{
+        "price":"Precio: {price} {price_change}",
+        "mcap":"Cap. de mercado: {cap}"
+      },
+      "bitcoin":{
+        "coinbase":{
+          "row":{
+            "title":"Bloque {chain} #{id}",
+            "timestamp":"Marca de tiempo: {time}",
+            "coinbase_data":"Datos basemoneda: {bin}"
+          }
+        },
+        "outputs":{
+          "row":{
+            "title":"Transacción {chain} {hash}",
+            "script_data":"Datos de script de salida #{index}: {bin}"
+          }
+        },
+        "address":{
+          "title":"Dirección {chain} {recipient}",
+          "last_seen_receiving":"Última recepción vista: {time}",
+          "balance":"Balance: {balance}"
+        },
+        "xpub":{
+          "title":"Dirección xpub {chain} {recipient}"
+        },
+        "block":{
+          "mined_on":"Minado en: {time}",
+          "hash":"Hash: {hash}"
+        },
+        "transaction":{
+          "timestamp":"Marca de tiempo: {time}",
+          "included_in_block":"Incluida en bloque: {block_id}"
+        },
+        "whitepapers":{
+          "row":{
+            "size":"{url} {size} KB"
+          }
+        }
+      },
+      "ethereum":{
+        "extra_data":{
+          "row":{
+            "extra_data":"Datos extra: {bin}"
+          }
+        },
+        "input_data":{
+          "row":{
+            "input_data":"Datos de entrada: {bin}"
+          }
+        },
+        "uncle":{
+          "title":"Tío Ethereum {hash}",
+          "parent_block_height":"Altura de bloque padre: {parent_block_id}"
+        },
+        "address":{
+          "title":"Dirección Ethereum {address}"
+        }
+      },
+      "ripple": {
+        "transaction": {
+          "account": "Cuenta Ripple: {account}",
+          "type": "Tipo de Tx: {type}",
+          "fee": "Tasa: {fee}"
+        },
+        "account": {
+          "title": "Cuenta Ripple {account}",
+          "balance":"Balance: {balance}"
+        }
+      }
+    }
+  },
+  "application":{
+    "header": {
+      "menu": {
+        "caption": "Menú:",
+        "bitcoin": {
+          "blockchain":"Blockchain {chain}",
+          "layer_2":"Capa 2",
+          "mempool":"Mempool {chain}",
+          "misc":"Misc",
+          "object": {
+            "blocks":"Bloques",
+            "transactions":"Transacciones",
+            "outputs":"Salidas",
+            "addresses": "Direcciones",
+            "omni":"Omni Layer",
+            "wormhole":"Wormhole",
+            "nodes":"Explorador de nodo",
+            "testnet": "Explorador testnet",
+            "whitepaper":"Whitepaper"
+          }
+        },
+        "ethereum": {
+          "mempool":"Mempool Ethereum y últimos 6 bloques",
+          "last_6_blocks":"Últimos 6 bloques",
+          "txs_in_last_6_blocks":"Transacciones en los últimos 6 bloques",
+          "mempool_txs":"Transacciones en mempool",
+          "object": {
+            "uncles":"Tíos",
+            "calls":"Llamadas"
+          }
+        },
+        "object": {
+          "price":"Precio",
+          "charts":"Gráficos",
+          "broadcast": "Transmisión"
+        }
+      },
+      "search": {
+        "desktop": {
+          "placeholder": "Busca en 9 blockchains (BTC/ETH/XRP/BCH/LTC/BSV/DASH/DOGE/GRS)"
+        },
+        "mobile": {
+          "placeholder": "Busca en 9 blockchains"
+        }
+      }
+    },
+    "navigation":{
+      "mempool":{
+        "bitcoin":{
+          "title":"Mempool"
+        },
+        "ethereum":{
+          "title":"No confirmadas",
+          "hint":"Estamos esperando por 6 bloques hasta que los bloques y las transacciones entren en nuestra base de datos principal. No procesamos llamadas ni tíos para bloques no confirmados."
+        }
+      },
+      "object":{
+        "homepage":"Inicio",
+        "blocks":"Bloques",
+        "transactions":"Transacciones",
+        "outputs":"Salidas",
+        "whitepaper":"Whitepaper",
+        "price":"Precio",
+        "nodes":"Explorador de nodo",
+        "uncles":"Tíos",
+        "calls":"Llamadas",
+        "omni":"Omni Layer",
+        "wormhole":"Wormhole",
+        "charts":"Gráficos",
+        "addresses": "Direcciones"
+      },
+      "type":{
+        "bitcoin":{
+          "testnet": "Testnet",
+          "block":"Bloque",
+          "transaction":"Transacción",
+          "address":"Dirección",
+          "xpub":"Xpub"
+        },
+        "ethereum":{
+          "uncle":"Tío",
+          "address":"Dirección"
+        },
+        "ripple":{
+          "ledger":"Registro",
+          "account":"Cuenta"
+        }
+      },
+      "menu":{
+        "blockchains":"Blockchains",
+        "bitcoin":{
+          "blockchain":"Blockchain {chain}",
+          "mempool":"Mempool {chain}",
+          "layer_2":"Capa 2",
+          "misc":"Misc"
+        },
+        "ethereum":{
+          "mempool":"Mempool Ethereum y últimos 6 bloques",
+          "last_6_blocks":"Últimos 6 bloques",
+          "txs_in_last_6_blocks":"Transacciones en los últimos 6 bloques",
+          "mempool_txs":"Transacciones en mempool"
+        }
+      }
+    },
+    "permalink":{
+      "caption":"Enlace permanente",
+      "tooltip":"Un enlace permanente guarda el orden, las condiciones y la lista de columnas mostradas. A menos que haya condiciones de tiempo, los datos pueden cambiar. Si no necesitas guardar la lista de columnas mostradas, puedes simplemente copiar la URL de la barra de direcciones."
+    },
+    "infinitable":{
+      "description":{
+        "bitcoin":{
+          "blocks":"Explora, ordena y filtra bloques del  blockchain Bitcoin (BTC) por altura, recompensa, minero y más",
+          "transactions":"Explora, ordena y filtra transacciones del blockchain Bitcoin (BTC) por ID (hash), valor, tamaño, tasa y más",
+          "outputs":"Explora, ordena y filtra las salidas del blockchain Bitcoin (BTC) por valor, emisor, receptor, direcciones, obtén el conjunto UTXO y más",
+          "mempool":{
+            "transactions":"Explora transacciones no confirmadas del mempool Bitcoin (BTC)",
+            "outputs":"Explora salidas no confirmadas del mempool Bitcoin (BTC)"
+          }},
+        "bitcoin/testnet":{
+          "blocks":"Explora, ordena y filtra bloques del blockchain Bitcoin Testnet (TBTC) por altura, recompensa, minero y más",
+          "transactions":"Explora, ordena y filtra transacciones del blockchain Bitcoin Testnet (TBTC) por ID (hash), valor, tamaño, tasa y más.",
+          "outputs":"Explora, ordena y filtra salidas del blockchain Bitcoin Testnet (TBTC) por valor, emisor, receptor, dirección, obtén el conjunto UTXO y más",
+          "mempool":{
+            "transactions":"Explora transacciones no confirmadas del mempool Bitcoin Testnet (TBTC)",
+            "outputs":"Explora salidas no confirmadas del mempool Bitcoin Testnet (TBTC)"
+          }},
+        "bitcoin-cash":{
+          "blocks":"Explora, ordena y filtra bloques del blockchain Bitcoin Cash (BCH) por altura, recompensa, minero y más",
+          "transactions":"Explora, ordena y filtra transacciones del blockchain Bitcoin Cash (BCH) por ID (hash), tasa, tamaño y más",
+          "outputs":"Explora, ordena y filtra salidas del blockchain Bitcoin Cash (BCH) por valor, receptor (dirección), obtén el conjunto UTXO y más.",
+          "mempool":{
+            "transactions":"Explora transacciones no confirmadas en el mempool Bitcoin Cash (BCH)",
+            "outputs":"Explora salidas no confirmadas en el mempool Bitcoin Cash (BCH)"
+          }},
+        "bitcoin-sv":{
+          "blocks":"Explora, ordena y filtra bloques del  blockchain Bitcoin SV (BSV) por altura, recompensa, minero y más",
+          "transactions":"Explorar, ordenar y filtrar transacciones del blockchain Bitcoin SV (BSV) por ID (hash), tasa, tamaño y más",
+          "outputs":"Explora, ordena y filtra salidas del blockchain Bitcoin SV (BSV) por valor, receptor (dirección), obtén el conjunto UTXO y más.",
+          "mempool":{
+            "transactions":"Explora transacciones no confirmadas en el mempool Bitcoin SV (BSV)",
+            "outputs":"Explora salidas no confirmadas en el mempool Bitcoin SV (BSV)"
+          }},
+        "dogecoin":{
+          "blocks":"Explora, ordena y filtra bloques del  blockchain Dogecoin (DOGE) por altura, recompensa, minero y más",
+          "transactions":"Explora, ordena y filtra transacciones del blockchain Dogecoin (DOGE) por ID (hash), valor, tamaño, tasa y más",
+          "outputs":"Explora, ordena y filtra salidas del blockchain Dogecoin (DOGE) por valor, emisor, receptor, direcciones, obtén el conjunto UTXO y más",
+          "mempool":{
+            "transactions":"Explora transacciones no confirmadas del mempool Dogecoin (DOGE)",
+            "outputs":"Explora salidas no confirmadas del mempool Dogecoin (DOGE)"
+          }},
+        "dash":{
+          "blocks":"Explora, ordena y filtra bloques del blockchain Dash (DASH) por altura, recompensa, minero y más",
+          "transactions":"Explora, ordena y filtra transacciones del blockchain Dash (DASH) por ID (hash), valor, tamaño, tasa y más",
+          "outputs":"Explora, ordena y filtra salidas del blockchain Dash (DASH) por valor, emisor, receptor, direcciones, obtén el conjunto UTXO y más",
+          "mempool":{
+            "transactions":"Explora transacciones no confirmadas del mempool Dash (DASH)",
+            "outputs":"Explora salidas no confirmadas del mempool Dash (DASH)"
+          }},
+        "litecoin":{
+          "blocks":"Explora, ordena y filtra bloques del blockchain Litecoin (LTC) por altura, recompensa, minero y más",
+          "transactions":"Explora, ordena y filtra transacciones de todo el blockchain Litecoin (LTC) por ID (hash), tasa, tamaño y más",
+          "outputs":"Explora, ordena y filtra salidas de todo el blockchain Litecoin (LTC) por valor, receptor (dirección), obtén el conjunto UTXO y más",
+          "mempool":{
+            "transactions":"Explora transacciones del mempool Litecoin (LTC)",
+            "outputs":"Explora salidas del mempool Litecoin (LTC)"
+          }
+        },
+        "groestlcoin":{
+          "blocks":"Explora, ordena y filtra bloques de todo el blockchain Groestlcoin (GRS) por altura, recompensa, minero y más",
+          "transactions":"Explora, ordena y filtra transacciones de todo el blockchain Groestlcoin (GRS) por ID (hash), tasa, tamaño y más",
+          "outputs":"Explora, ordena y filtra salidas de todo el blockchain Groestlcoin (GRS) por valor, receptor (dirección), obtén el conjunto UTXO y más",
+          "mempool":{
+            "transactions":"Explora transacciones del mempool Groestlcoin (GRS)",
+            "outputs":"Explora salidas del mempool Groestlcoin (GRS)"
+          }},
+        "ethereum":{
+          "blocks":"Explora, ordena y filtra bloques del blockchain Ethereum (ETH) por altura, gas, minero y más",
+          "uncles":"Explora, ordena y filtra bloques tíos del blockchain Ethereum (ETH) por altura, bloque padre, minero y más",
+          "transactions":"Explora, ordena y filtra transacciones del blockchain Ethereum (ETH) por ID (hash), valor, gas y más",
+          "calls":"Explora, ordena y filtra llamadas (transferencias internas) del blockchain Ethereum (ETH) por valor, tiempo, emisor, receptor y más",
+          "mempool":{
+            "blocks":"Explora los últimos 6 bloques en el blockchain Ethereum (ETH)",
+            "transactions":"Explora transacciones no confirmadas en el mempool Ethereum (ETH)"
+          }
+        }
+      },
+      "foot":{
+        "server_error":"Oh no! {error} 😯",
+        "no_results":"Sin resultados 😕",
+        "no_more_results":"Sin más resultados 👐",
+        "explore_list":"Explora esta lista ({difference} filas más)... 👐",
+        "load_more":"Cargar más ({difference} resultados restantes)... 👉"
+      },
+      "bitcoin":{
+        "blocks":{
+          "id":{
+            "short":"Altura",
+            "full":"Altura (id)"
+          },
+          "hash":"Hash",
+          "time":{
+            "full":"Minado en",
+            "short":"Tiempo",
+            "utc":"(UTC)"
+          },
+          "time_ago":{
+            "short":"Hace",
+            "full":"Tiempo transcurrido"
+          },
+          "guessed_miner":{
+            "short":"Minero",
+            "full":"Minero supuesto"
+          },
+          "miner_votes":{
+            "short":"Votos",
+            "full":"Votos de minero"
+          },
+          "coinbase_data_bin":{
+            "bin":"[bin]",
+            "short":"Datos basemoneda",
+            "full":"Datos basemoneda [bin]"
+          },
+          "coinbase_data_hex":{
+            "hex":"[hex]",
+            "full":"Datos basemoneda [hex]"
+          },
+          "transaction_count":{
+            "short":"Tx #",
+            "full":"Cant. de transacciones"
+          },
+          "witness_count":{
+            "short":"Tx testigo #",
+            "full":"Cant. de txs testigo"
+          },
+          "input_count":{
+            "short":"Entradas #",
+            "full":"Cant. de entradas"
+          },
+          "output_count":{
+            "short":"Salidas #",
+            "full":"Cant. de salidas"
+          },
+          "cdd_total":{
+            "short":"Destruídos",
+            "full":"Diasmoneda destruidos",
+            "cd":"(DM)",
+            "coindays":"(diasmoneda)"
+          },
+          "input_total":{
+            "simple":"Entrada",
+            "full":"Entrada total (satoshis)",
+            "short":"Entrada total"
+          },
+          "input_total_usd":"Entrada total (USD)",
+          "output_total":{
+            "simple":"Salida",
+            "full":"Salida total (satoshi)",
+            "short":"Salida total"
+          },
+          "output_total_usd":"Salida total (USD)",
+          "fee_total":{
+            "simple":"Tasa",
+            "full":"Tasa total (satoshis)",
+            "short":"Tasa total"
+          },
+          "fee_total_usd":"Tasa total (USD)",
+          "fee_per_kb":{
+            "simple":"Tasa/KB",
+            "full":"Tasa por KB (satoshis)",
+            "short":"Tasa por KB"
+          },
+          "fee_per_kb_usd":"Tasa por KB (USD)",
+          "fee_per_kwu":{
+            "simple":"Tasa/kWU",
+            "full":"Tasa por kWU (satoshis)",
+            "short":"Tasa por kWU"
+          },
+          "fee_per_kwu_usd":"Tasa por kWU (USD)",
+          "generation":{
+            "short":"Generación",
+            "full":"Generación (satoshis)"
+          },
+          "generation_usd":"Generación (USD)",
+          "reward":{
+            "short":"Recompensa",
+            "full":"Recompensa de minero (satoshis)"
+          },
+          "reward_usd":"Recompensa de minero (USD)",
+          "size":{
+            "short":"Tamaño",
+            "full":"Tamaño (bytes)",
+            "kb":"(KB)"
+          },
+          "weight":{
+            "short":"Peso",
+            "full":"Peso (weight units)",
+            "kwu":"(kWU)"
+          },
+          "stripped_size":{
+            "short":"Tamaño despojado",
+            "full":"Tamaño despojado (bytes)"
+          },
+          "version":{
+            "short":"Versión",
+            "full":"Versión [int]",
+            "int":"[int]"
+          },
+          "version_hex": "Versión [hex]",
+          "version_bits":{
+            "bits":"[bits]",
+            "full":"Versión [bits]"
+          },
+          "median_time":"Tiempo mediano",
+          "merkle_root":"Raíz merkle",
+          "nonce":"Nonce",
+          "bits":"Bits",
+          "difficulty":"Dificultad",
+          "chainwork":"Trabajo en cadena"
+        },
+        "transactions":{
+          "block_id":{
+            "short":"Bloque #",
+            "full":"Id de bloque"
+          },
+          "time":"Tiempo (UTC)",
+          "id":{
+            "short":"Id",
+            "full":"Hash (Id de tx)"
+          },
+          "is_coinbase":{
+            "short":"Es basemoneda?",
+            "full":"Es una transacción basemoneda?"
+          },
+          "has_witness":{
+            "short":"Testigo?",
+            "full":"Tiene datos testigo?"
+          },
+          "fee":{
+            "short":"Tasa",
+            "full":"Tasa (satoshis)"
+          },
+          "fee_usd":"Tasa (USD)",
+          "fee_per_kvb":"Tasa por kVB",
+          "lock_time":{
+            "short":"Tiempo de bloqueo",
+            "full":"Tiempo de bloqueo (altura de bloque o marca de tiempo)"
+          }
+        },
+        "outputs":{
+          "transaction_id":{
+            "short":"Id de tx",
+            "full":"Id de transacción"
+          },
+          "transaction_hash":{
+            "short":"Hash de tx",
+            "full":"Hash de transacción"
+          },
+          "index":{
+            "short":"#",
+            "full":"Índice"
+          },
+          "is_from_coinbase":{
+            "short":"Es de basemoneda?",
+            "full":"Es de transacción basemoneda?"
+          },
+          "value":{
+            "short":"Valor",
+            "full":"Valor (satoshis)"
+          },
+          "value_usd":"Valor (USD)",
+          "recipient":{
+            "short":"Receptor",
+            "address":"(dirección)",
+            "full":"Receptor (dirección)"
+          },
+          "script_bin":{
+            "short":"Script",
+            "full":"Script [bin]"
+          },
+          "script_hex":"Script [hex]",
+          "type":{
+            "short":"Tipo",
+            "full":"Tipo de salida"
+          },
+          "is_spendable":{
+            "short":"Gastable?",
+            "full":"Es gastable?"
+          },
+          "is_spent":{
+            "short":"G?",
+            "full":"Está gastada?"
+          },
+          "spending_block_id":{
+            "short":"Bloque de gasto #",
+            "full":"Id de bloque de gasto"
+          },
+          "spending_transaction_id":{
+            "short":"Id de tx de gasto",
+            "full":"Id de transacción de gasto"
+          },
+          "spending_index":{
+            "short":"#",
+            "full":"Índice de gasto"
+          },
+          "spending_transaction_hash":{
+            "short":"Hash de tx de gasto",
+            "full":"Hash de transacción de gasto"
+          },
+          "spending_time":{
+            "short":"Tiempo",
+            "full":"Tiempo de gasto"
+          },
+          "spending_date":"Fecha de gasto",
+          "spending_time_ago":{
+            "short":"Tiempo",
+            "ago":"(hace)",
+            "full": "Tiempo de gasto (ago)"
+          },
+          "spending_value":{
+            "short":"Valor",
+            "full":"Valor de gasto"
+          },
+          "spending_value_usd":"Valor de gasto (USD)",
+          "spending_sequence":{
+            "short":"Secuencia",
+            "full":"Secuencia de gasto"
+          },
+          "spending_signature_bin":{
+            "short":"Firma",
+            "full":"Firma de gasto"
+          },
+          "spending_signature_hex":"Firma de gasto [hex]",
+          "spending_witness":{
+            "short":"Testigo",
+            "full":"Testigo de gasto"
+          },
+          "lifespan":{
+            "short":"Tiempo de vida",
+            "full":"Tiempo de vida (segundos)",
+            "seconds":"(segundos)"
+          },
+          "left_link":"Enlaces a transacciones"
+        },
+        "addresses": {
+          "address": "Dirección",
+          "balance": {
+            "short": "Balance",
+            "full": "Balance (satoshis)"
+          }
+        }
+      },
+      "dogecoin":{
+        "blocks":{
+          "is_aux":"Es AuxPoW?"
+        }
+      },
+      "dash":{
+        "blocks":{
+          "cbtx":"CbTx"
+        },
+        "transactions":{
+          "is_special":"Es especial?",
+          "special_json":"JSON especial",
+          "type":"Tipo",
+          "is_instant_lock":"Bloqueo instantáneo?"
+        }
+      },
+      "ethereum":{
+        "blocks":{
+          "uncle_count":"Cant. de tíos",
+          "synthetic_transaction_count":{
+            "short":"Cant. de txs sintéticas",
+            "full":"Cant. de transacciones sintéticas"
+          },
+          "call_count":{
+            "short":"Llamadas #",
+            "full":"Cant. de llamadas"
+          },
+          "synthetic_call_count":{
+            "short":"Llamada sintética #",
+            "full":"Cant. de llamadas sintéticas"
+          },
+          "extra_data_bin":{
+            "short":"Datos extra",
+            "full":"Datos extra [bin]"
+          },
+          "extra_data_hex":"Datos extra [hex]",
+          "gas_used":"Gas usado",
+          "gas_limit":"Gas límite",
+          "value_total":{
+            "short":"Valor total",
+            "full":"Valor total (ETH)"
+          },
+          "value_total_usd":"Valor total (USD)",
+          "internal_value_total":{
+            "short":"Valor interno",
+            "full":"Valor interno total (ETH)"
+          },
+          "internal_value_total_usd":"Valor interno total (USD)",
+          "generation":"Generación (ETH)",
+          "uncle_generation":{
+            "short":"Generación de tíos",
+            "full":"Generación de tíos (ETH)"
+          },
+          "uncle_generation_usd":"Generación de tíos (USD)",
+          "fee_total":"Tasa total (ETH)",
+          "reward":"Recompensa de minero (ETH)",
+          "mix_hash":"Mix hash",
+          "receipts_root":"Raíz de recibos",
+          "sha3_uncles":"Tíos SHA3",
+          "state_root":"Raíz de estado",
+          "transactions_root":"Raíz de transacciones",
+          "logs_bloom":"Logs bloom",
+          "total_difficulty":"Dificultad total"
+        },
+        "transactions":{
+          "index":{
+            "short":"#",
+            "full":"Índice en bloque"
+          },
+          "type":"Tipo",
+          "failed":"Fallida?",
+          "sender":{
+            "short":"De",
+            "full":"Emisor"
+          },
+          "recipient":{
+            "short":"A",
+            "full":"Receptor"
+          },
+          "value":{
+            "short":"Valor",
+            "full":"Valor (ETH)"
+          },
+          "value_usd":"Valor (USD)",
+          "internal_value":{
+            "short":"Valor interno",
+            "full":"Valor interno (ETH)"
+          },
+          "internal_value_usd":"Valor interno (USD)",
+          "fee":{
+            "short":"Tasa",
+            "full":"Tasa (ETH)"
+          },
+          "fee_usd":"Tasa (USD)",
+          "gas_price":"Precio de gas",
+          "input_bin":{
+            "short":"Datos de entrada",
+            "full":"Datos de entrada [bin]"
+          },
+          "input_hex":"Datos de entrada [hex]"
+        },
+        "uncles":{
+          "miner":"Minero",
+          "parent_block_id":{
+            "short":"Id de bloque padre",
+            "full":"Altura de bloque padre"
+          },
+          "index":"Índice en bloque padre"
+        },
+        "calls":{
+          "index":{
+            "short":"Índice",
+            "full":"Índice en transacción"
+          },
+          "depth":"Profundidad",
+          "child_call_count":{
+            "short":"Llamadas Hijo",
+            "full":"Cant. de llamadas hijo"
+          },
+          "fail_reason":"Motivo de fallo",
+          "transferred":{
+            "short":"Transferidas?",
+            "full":"Transferidas?"
+          },
+          "output_bin":"Datos de salida [bin]",
+          "output_hex": "Datos de salida [hex]"
+        }
+      }
+    },
+    "chessboard":{
+      "buttons":{
+        "fields":"Campos",
+        "show_default_fields":"Mostrar Campos por Defecto",
+        "show_all":"Mostrar Todo",
+        "hide_all":"Ocultar Todo",
+        "reset_sorts":"Restablecer Orden",
+        "reset_conditions":"Restablecer Condiciones",
+        "reset_all":"Restablecer Todo",
+        "refresh":"Actualizar",
+        "settings":{
+          "without_expanding":"Mostrar nuevos resultados sin expandir la tabla",
+          "table_condensed":"Condensar la tabla"
+        }
+      },
+      "conditions":{
+        "alert":{
+          "limit_of_sorts":"Solo {limit} órdenes pueden ser establecidos al mismo tiempo :(",
+          "limit_of_conditions":"Solo {limit} condiciones pueden ser establecidas al mismo tiempo :("
+        },
+        "examples":"Ejemplos:",
+        "notice":"Nota:"
+      },
+      "bitcoin":{
+        "columns":{
+          "general":"General",
+          "monetary":"Monetario",
+          "technical":"Técnico",
+          "spending":{
+            "general":"Gasto...",
+            "continuation":"Gasto (cont.)..."
+          }
+        },
+        "blocks":{
+          "id":{
+            "examples":{
+              "first_100_blocks":"primeros 100 bloques",
+              "zero_block":"bloque #0"
+            }
+          },
+          "transaction_count":{
+            "examples":{
+              "big_blocks":"bloques grandes",
+              "coinbase_tx_only":"bloques conteniendo solo una tx basemoneda"
+            }
+          },
+          "witness_count":{
+            "examples":{
+              "more_that_one":"más de uno",
+              "just_one":"solo uno"
+            }
+          },
+          "input_count":{
+            "examples":{
+              "over_10k_inputs":"más de 10k entradas",
+              "just_coinbase_input":"solo una entrada basemoneda"
+            }
+          },
+          "output_count":{
+            "examples":{
+              "over_10k_outputs":"más de 10k salidas",
+              "just_coinbase_output":"transacciones basemoneda con 1 salida"
+            }
+          },
+          "cdd_total":{
+            "examples":{
+              "largest_spendings":"los mayores gastos",
+              "no_cd":"sin diasmoneda destruidos"
+            }
+          },
+          "input_total":{
+            "title":{
+              "full":"Entrada total ({ticker})"
+            },
+            "examples":{
+              "over_100":"más de 100 {ticker}",
+              "exactly_one":"1 {ticker} exacto"
+            },
+            "notice":"favor de ingresar valores en satoshis (1 {ticker} = 100000000 sat.)!"
+          },
+          "input_total_usd":{
+            "examples":{
+              "over_one_million_usd":"más de $ 1M",
+              "exactly_one_million_usd":"exactamente $ 1"
+            }
+          },
+          "output_total":{
+            "title":{
+              "full":"Salida total ({ticker})"
+            }
+          },
+          "fee_total":{
+            "title":{
+              "full":"Tasa total ({ticker})"
+            }
+          },
+          "fee_per_kb":{
+            "title":{
+              "full":"Tasa por KB ({ticker})"
+            },
+            "examples":{
+              "exactly_one_hundredth":"0.01 {ticker} exacto"
+            }
+          },
+          "fee_per_kb_usd":{
+            "examples":{
+              "exactly_one_hundredth":"$ 0.01 exacto"
+            }
+          },
+          "generation":{
+            "title":{
+              "full":"Generación ({ticker})"
+            }
+          },
+          "reward":{
+            "title":{
+              "full":"Recompensa de minero ({ticker})"
+            },
+            "examples":{
+              "exactly_twelve_and_half":"12.5 {ticker} exacto"
+            }
+          },
+          "reward_usd":{
+            "examples":{
+              "over_25k":"más de $25k"
+            }
+          },
+          "size":{
+            "examples":{
+              "small_blocks":"bloques pequeños",
+              "exactly_one":"1 {ticker} exacto"
+            },
+            "notice":"favor de ingresar valores en bytes!"
+          },
+          "stripped_size":{
+            "examples":{
+              "almost_full_blocks":"bloques casi llenos"
+            }
+          }
+        },
+        "transactions":{
+          "is_coinbase":{
+            "examples":{
+              "yes":"Si",
+              "no":"No"
+            }
+          },
+          "fee":{
+            "title":{
+              "full":"Tasa ({ticker})"
+            }
+          }
+        },
+        "outputs":{
+          "value":{
+            "title":{
+              "full":"Valor ({ticker})"
+            }
+          },
+          "is_spendable":{
+            "examples":{
+              "unknown":"desconocido"
+            }
+          }
+        }
+      },
+      "litecoin":{
+        "blocks":{
+          "input_total":{
+            "notice":"favor de ingresar valores en litoshi (1 {ticker} = 100000000 lit.)! "
+          }
+        }
+      }
+    },
+    "type":{
+      "bitcoin":{
+        "block":{
+          "description":"Bitcoin (BTC) bloque {height}, hash: {hash}, fecha: {date}",
+          "general_info":"Info general",
+          "technical_details":"Detalles técnicos",
+          "see_more": "Click para ver más",
+          "hide_details": "Ocultar detalles",
+          "explorers":"Otros exploradores de blockchain",
+          "last_transactions":"Transacciones incluidas en este bloque"
+        },
+        "transaction":{
+          "description":{
+            "general":"Verifica una transacción Bitcoin (BTC), valor: {output_total_btc}, fecha: {date}",
+            "coinbase":"Verifica una transacción basemoneda Bitcoin (BTC), valor: {output_total_btc}, fecha: {date}"
+          },
+          "priority":"Prioridad: {position}/{count}",
+          "confirmations":"No confirmadas | {count} confirmación | {count} confirmaciones",
+          "protocol":{
+            "omni":"Transacción Omni Layer"
+          },
+          "op_return":{
+            "title":"OP_RETURN",
+            "memopay_message":"Mensaje Memopay",
+            "protocol":{
+              "title":"Protocolo {name}",
+              "details":"Ver en {name}"
+            },
+            "bin":"Decodificado"
+          },
+          "confirmed_notify":{
+            "button":"Notificarme",
+            "modal":{
+              "title":"Notificarme cuando esta transacción sea confirmada",
+              "description":"Presiona el botón y recibirás una notificación cuando esta transacción sea incluida en un bloque. Favor de no cerrar esta página (puedes minimizarla, usar otras pestañas, etc.). Tu navegador puede solicitar permiso para enviar notificaciones en caso de utilizar esta función por primera vez.",
+              "enable":"Notificarme cuando esta transacción sea confirmada"
+            },
+            "notification":"Tu transacción {chain} ha sido confirmada!",
+            "leaving":"No recibirás una notificación cuando la transacción sea confirmada. Estás seguro de que quieres cerrar esta página?"
+          },
+          "fee_per_byte": {
+            "caption": "Tasa por byte",
+            "dimension": "satoshi"
+          },
+          "raw_transaction":{
+            "title":"Tx cruda",
+            "form":{
+              "hex":"Transacción cruda (hex):",
+              "decoded":"Transacción cruda decodificada (json):"
+            },
+            "empty":"No fue posible obtener datos de esta transacción (es una transacción génesis o esta transacción ha sido eliminada del mempool)"
+          },
+          "pdf_receipt":"Recibo PDF",
+          "senders":"Emisores",
+          "recipients":"Receptores"
+        },
+        "address":{
+          "description":"Verifica el balance de una dirección Bitcoin (BTC) {address} y sus transacciones",
+          "type":"Tipo de dirección",
+          "formats":{
+            "legacy":"Formato de dirección Legacy",
+            "cashaddr":"Formato de dirección CashAddr"
+          },
+          "script":{
+            "short":"Script",
+            "bin":"Script [bin]",
+            "hex":"Script [hex]"
+          },
+          "unspent_output_count":"Cant. de salidas no gastadas",
+          "monetary_info":"Info monetaria",
+          "last_seen_receiving": "Última recepción vista:",
+          "first_last_seen_receiving": "Primera / última recepción vista:",
+          "first_last_seen_spending": "Primer / último gasto visto:",
+          "total_received":"Total recibido",
+          "total_spent":"Total gastado",
+          "total_unspent":"Balance",
+          "protocol":{
+            "omni":{
+              "title":"Tokens Omni",
+              "token_name":"Nombre de token",
+              "balance":"Balance"
+            },
+            "wormhole":{
+              "title":"Tokens Wormhole"
+            }
+          },
+          "qr_code":"Código QR",
+          "transactions":{
+            "title":"Transacciones involucrando dirección",
+            "id":"Hash:",
+            "time":"Marca de tiempo:",
+            "no_transactions":"Sin transacciones aún",
+            "protocol":{
+              "omni":"Contiene datos Omni Layer",
+              "wormhole":"Contiene datos Wormhole"
+            }
+          }
+        },
+        "xpub":{
+          "address_count":"Cant. de direcciones",
+          "addresses":{
+            "caption":"Direcciones",
+            "table":{
+              "unspent_output_count":"Salidas no gastadas #",
+              "last_seen_receiving":"Última recepción vista:",
+              "last_seen_spending":"Último gasto visto:"
+            }
+          },
+          "path":"Ruta"
+        }
+      },
+      "bitcoin/testnet":{
+        "block":{
+          "description":"Bitcoin Testnet (TBTC) bloque {height}, hash: {hash}, fecha: {date}"
+        },
+        "transaction":{
+          "description":{
+            "general":"Verifica una transacción Bitcoin Testnet (TBTC), valor: {output_total_btc}, fecha: {date}",
+            "coinbase":"Verifica una transacción basemoneda Bitcoin Testnet (TBTC), valor: {output_total_btc}, fecha: {date}"
+          }
+        },
+        "address":{
+          "description":"Verifica el balance de una dirección Bitcoin Testnet (TBTC) {address} y sus transacciones"
+        }
+      },
+      "bitcoin-cash":{
+        "block":{
+          "description":"Bitcoin Cash (BCH) bloque {height}, hash: {hash}, fecha: {date}"
+        },
+        "transaction":{
+          "description":"Transacción Bitcoin Cash (BCH) {hash}, fecha: {date}",
+          "protocol":{
+            "wormhole":"Transacción Wormhole"
+          }
+        },
+        "address":{
+          "description":"Verifica una dirección Bitcoin Cash (BCH) {cash_address} ({legacy_address}), su balance y transacciones"
+        }
+      },
+      "bitcoin-sv":{
+        "block":{
+          "description":"Bitcoin SV (BSV) bloque {height}, hash: {hash}, fecha: {date}"
+        },
+        "transaction":{
+          "description":"Transacción Bitcoin SV BSV) {hash}, fecha: {date}"
+        },
+        "address":{
+          "description":"Verifica una dirección Bitcoin SV (BSV) {cash_address} ({legacy_address}), su balance y transacciones"
+        }
+      },
+      "dogecoin":{
+        "block":{
+          "description":"Dogecoin (DOGE) bloque {height}, hash: {hash}, fecha: {date}"
+        },
+        "transaction":{
+          "description":{
+            "general":"Verifica una transacción Dogecoin (DOGE), valor: {output_total_doge}, fecha: {date}",
+            "coinbase":"Verifica una transacción basemoneda Dogecoin (DOGE), valor: {output_total_doge}, fecha: {date}"
+          }
+        },
+        "address":{
+          "description":"Verifica el balance de una dirección Dogecoin (DOGE) {address} y sus transacciones"
+        }
+      },
+      "dash":{
+        "block":{
+          "description":"Dash (DASH) bloque {height}, hash: {hash}, fecha: {date}"
+        },
+        "transaction":{
+          "description":{
+            "general":"Verifica una transacción Dash (DASH), valor: {output_total_dash}, fecha: {date}",
+            "coinbase":"Verifica una transacción basemoneda Dash (DASH), valor: {output_total_dash}, fecha: {date}"
+          }
+        },
+        "address":{
+          "description":"Verifica el balance de una dirección Dash (DASH) {address} y sus transacciones"
+        }
+      },
+      "litecoin":{
+        "block":{
+          "description":"Litecoin (LTC) bloque {height}, hash: {hash}, fecha: {date}"
+        },
+        "transaction":{
+          "description":"Transacción Litecoin (LTC) {hash}, fecha: {date}"
+        },
+        "address":{
+          "description":"Verifica una dirección Litecoin (LTC) {address}, su balance y transacciones"
+        }
+      },
+      "groestlcoin":{
+        "block":{
+          "description":"Groestlcoin (GRS) bloque {height}, hash: {hash}, fecha: {date}"
+        },
+        "transaction":{
+          "description":"Transacción Groestlcoin (GRS) {hash}, fecha: {date}"
+        },
+        "address":{
+          "description":"Verifica una dirección Groestlcoin (GRS) {address}, su balance y transacciones"
+        }
+      },
+      "ethereum":{
+        "block":{
+          "description":"Ethereum (ETH) bloque {height}, hash: {hash}, fecha: {date}",
+          "coinbase":"basemoneda",
+          "transaction_count": "{transactions_link} + {coinbase_link} basemoneda",
+          "value_total":"Monto total",
+          "internal_value_total":"Monto interno total",
+          "fee_total":"Total de tasas"
+        },
+        "uncle":{
+          "description":"Altura de bloque tío Ethereum (ETH): {parent_block_height}, hash: {hash}, fecha: {date}"
+        },
+        "transaction":{
+          "description":"Transacción Ethereum (ETH) {hash}, fecha: {date}",
+          "included_calls":"Llamadas incluidas en esta transacción"
+        },
+        "address":{
+          "description":"Verifica una dirección  Ethereum (ETH) ({address}), su balance y transacciones",
+          "type":"Tipo",
+          "receiving":"Receptoras: {receiving_calls_link}",
+          "spending":"Gasto: {spending_calls_link}",
+          "call_count":"Cant. de llamadas (incl. fallidas)",
+          "contract_created":"Contrato creado?",
+          "contract_destroyed":"Contrato destruido?",
+          "contract_code":{
+            "short": "Código de contrato",
+            "bin":"Código de contrato [bin]",
+            "hex":"Código de contrato [hex]"
+          },
+          "balance":"Balance (preciso)",
+          "received":"Recibido (aprox.)",
+          "spent":"Gastado (aprox.)",
+          "fees":"Pago en tasas (aprox.)",
+          "involving_calls":"Llamadas involucrando dirección",
+          "transferred": "Transferido",
+          "failed": "Fallido"
+        }
+      },
+      "ripple":{
+        "ledger":{
+          "ledger_index":"Índice de registro",
+          "ledger_hash":"Hash de registro",
+          "parent_hash":"Hash padre",
+          "transaction_hash":"Hash de transacción",
+          "close_time":"Cerrado en",
+          "total_coins":"Monedas totales",
+          "last_transactions":"Transacciones incluidas en este registro"
+        },
+        "transaction":{
+          "transaction_index":"Índice en registro",
+          "account":"Cuenta",
+          "sequence":"Secuencia",
+          "account_txn_id":"Id de cuenta de transacción",
+          "flags":"Flags",
+          "last_ledger_sequence":"Última secuencia de registro",
+          "source_tag":"Tag fuente",
+          "transaction_result":"Resultado",
+          "type": {
+            "caption":"Tipo de datos",
+            "clear_flag":"Remover flag",
+            "domain":"Dominio",
+            "email_hash":"Hash de dominio",
+            "message_key":"Clave de mensaje",
+            "set_flag":"Configurar flag",
+            "transfer_rate":"Tasa de transferencia",
+            "check_id":"Verifica un Id",
+            "amount":"Monto",
+            "deliver_min":"Entregar min.",
+            "destination":"Destino",
+            "send_max":"Enviar max.",
+            "destination_tag":"Tag de destino",
+            "expiration":"Vencimiento",
+            "invoice_id":"Id de factura",
+            "authorize":"Autorizar",
+            "unauthorize":"Desautorizar",
+            "owner":"Propietario",
+            "offer_sequence":"Ofrecer secuencia",
+            "cancel_after":"Cancelar después",
+            "finish_after":"Finalizar después",
+            "condition":"Condición",
+            "fulfillment":"Cumplimiento",
+            "taker_gets":"Tomador obtiene",
+            "taker_pays":"Tomador paga",
+            "channel":"Canal",
+            "balance":"Balance",
+            "signature":"Firma",
+            "public_key":"Clave pública",
+            "settle_delay":"Resolver retraso",
+            "regular_key":"Clave regular",
+            "signer_quorum":"Quorum de firmantes",
+            "limit_amount":"Monto límite",
+            "quality_in":"Quality in",
+            "quality_out":"Quality out"
+          }
+        },
+        "account": {
+          "account_summary":"Sumario de cuenta",
+          "previous_txn":"Última tx",
+          "sequence":"Próxima secuencia",
+          "balances": {
+            "caption":"Balances de token",
+            "account":"Counterparty",
+            "limit":"Límite"
+          },
+          "transactions":"Últimas transacciones de la cuenta"
+        }
+      }
+    },
+    "protocol":{
+      "bitcoin":{
+        "omni":{
+          "navigation":{
+            "properties":"Propiedades",
+            "property":"Propiedad"
+          },
+          "homepage":{
+            "title":"Explorador Omni Layer",
+            "description":"Explora transacciones y propiedades Omni Layer, como Tether (USDT), MaidSafeCoin (MAID) y Omni (Mastercoin)",
+            "stats":{
+              "title":"Estads. Omni Layer",
+              "properties":"Propiedades",
+              "mainnet_properties":"Propiedades de mainnet",
+              "testnet_properties":"Propiedades de testnet",
+              "transactions":"Transacciones"
+            },
+            "newest_properties":"Propiedades más nuevas",
+            "latest_transactions":"Últimas transacciones"
+          },
+          "infinitable":{
+            "description":{
+              "properties":"Explora todas las propiedades Omni Layer, como Tether (USDT), MaidSafeCoin (MAID) y Omni (Mastercoin)"
+            },
+            "foot":{
+              "explore_list":"Explora esta lista... 👐"
+            },
+            "properties":{
+              "name":"Nombre",
+              "issuer":"Iniciador",
+              "creation_transaction_hash":"Creando hash de tx",
+              "creation_time":"Tiempo de creación",
+              "creation_block_id":"Id de bloque de creación",
+              "is_issuance_fixed":"La emisión es fija?",
+              "is_issuance_managed":"La emisión es gerenciada?",
+              "is_divisible":"Es divisible?",
+              "circulation":"Circulación",
+              "ecosystem":"Ecosistema",
+              "category":"Categoría",
+              "subcategory":"Subcategoría",
+              "description":"Descripción",
+              "url":"URL"
+            },
+            "transactions":{
+              "type":"Tipo",
+              "sender":"Emisor",
+              "recipient":"Receptor",
+              "valid":"Es válida?",
+              "amount":"Monto"
+            }
+          },
+          "type":{
+            "property":{
+              "navigation":"{name} (#{id})",
+              "description":"Propiedad {name} (#{id}) en protocolo Omni Layer {ecosystem}",
+              "id":{
+                "short":"Id",
+                "full":"Id de propiedad"
+              }
+            }
+          }
+        }
+      },
+      "bitcoin-cash":{
+        "wormhole":{
+          "homepage":{
+            "title":"Explorador Wormhole",
+            "description":"Explora transacciones y propiedades de protocolo Wormhole (WHC) en el blockchain Bitcoin Cash (BCH)",
+            "stats":{
+              "title":"Estads. Wormhole"
+            }
+          },
+          "infinitable":{
+            "description":{
+              "properties":"Explora todas las propiedades Wormhole (WHC)"
+            }
+          },
+          "type":{
+            "property":{
+              "description":"Propiedad {name} (#{id}) en protocolo Wormhole {ecosystem}. Website: {url}"
+            }
+          }
+        }
+      }
+    },
+    "homepage":{
+      "stats": {
+        "market_data": {
+          "cap": "Cap. de mercado: {mcap}",
+          "dominance": "Dominio: {dominance}"
+        },
+        "general": {
+          "caption": "Estads.",
+          "circulation": "Circulación:",
+          "difficulty": "Dificultad:",
+          "blockchain_size": {
+            "caption": "Tamaño de Blockchain:",
+            "dimension": "GB"
+          }
+        },
+        "24h_stats": {
+          "caption": "Estads. 24h",
+          "volume_24h": "Volumen en cadena:",
+          "hashrate": {
+            "caption": "Hashrate:",
+            "dimension": {
+              "bitcoin": "Eh/s",
+              "ethereum": "Th/s",
+              "dash": "Ph/s"
+            }
+          },
+          "tps": "Txs por segundo:",
+          "average_transaction_fee": "Tasa de transacción promedio:",
+          "median_transaction_fee": "Tasa de transacción mediana:"
+        },
+        "mempool": {
+          "caption": "Mempool"
+        }
+      },
+      "charts": {
+        "caption": "Gráficos",
+        "link": "Ver todos los gráficos"
+      },
+      "bitcoin": {
+        "title": "Explorador Bitcoin",
+        "description": "Busca bloques Bitcoin (BTC), transacciones, direcciones, balances, nodos, protocolos y datos OP_RETURN, gráficos y estadísticas de blockchain",
+        "stats": {
+          "blocks": "Bloques",
+          "transactions": "Transacciones",
+          "outputs": "Salidas",
+          "countdowns": {
+            "reward_halving": "Meitación de recompensa",
+            "upcoming_fork": "Próximo fork"
+          },
+          "general": {
+            "next_difficulty_estimate": "Próxima dificultad estimada:",
+            "next_retarget_time_estimate": "Próximo reajuste:",
+            "best_block": "Último bloque:",
+            "best_block_hash": "Hash del último bloque:",
+            "best_block_time": "Tiempo del último bloque:",
+            "nodes": "Nodos de red:"
+          },
+          "24h_stats": {
+            "blocks": "Bloques:",
+            "average_block_time": {
+              "caption": "Tiempo prom. entre bloques:",
+              "dimension": "s."
+            },
+            "transactions": "Transacciones:"
+          },
+          "mempool": {
+            "suggested_transaction_fee": {
+              "caption": "Tasa recomendada:",
+              "dimension": "satoshi por byte"
+            },
+            "total_fee": "En tasas:",
+            "size": {
+              "caption": "Tamaño:",
+              "dimension": "MB"
+            }
+          }
+        },
+        "latest_blocks": "Últimos bloques",
+        "biggest_txs_24h": "Mayores transacciones en las últimas 24 horas",
+        "menu": {
+          "caption": "Menú {chain}",
+          "blockchain": "Blockchain",
+          "mempool": "Mempool",
+          "mainnet_link": "Explorador mainnet"
+        },
+        "charts": {
+          "average_block_size":"Tamaño de bloque prom. por día y hora (últimos 3 meses)",
+          "hashrate_distribution":"Distribución de hashrate (últimas 2 semanas)",
+          "segwit_usage":"Uso de SegWit (últimos 3 meses)",
+          "dairy_circulation":"Circulación diaria (billones de USD) (últimos 3 meses)",
+          "median_transaction_fee":"Tasa de transacción mediana (USD) (últimos 3 meses)",
+          "coindays_destroyed":"Diasmoneda destruídos (millones) por día (últimos 3 meses)",
+          "non_monetary_outputs":"Porcentaje de salidas no-monetarias (últimos 3 meses)",
+          "distribution_of_outputs":"Distribución de tipo de salidas (última semana)",
+          "average_fee":"Tasa por KB promedio (USD) (últimos 3 meses)"
+        }
+      },
+      "ripple": {
+        "title": "Explorador Ripple",
+        "stats": {
+          "ledgers": "Registros",
+          "circulation": "Circulación",
+          "general": {
+            "best_ledger": "Ultimo registro:",
+            "best_ledger_hash": "Hash del mejor registro:",
+            "best_ledger_time": "Tiempo del mejor registro"
+          },
+          "24h_stats": {
+            "ledgers": "Registros:",
+            "average_ledger_time": "Tiempo prom. entre registros:"
+          }
+        }
+      },
+      "ethereum": {
+        "title": "Explorador Ethereum",
+        "description": "Busca bloques Ethereum (ETH), transacciones, direcciones, contratos inteligentes, balances y estadísticas de blockchain",
+        "stats": {
+          "uncles": "Tíos",
+          "calls": "Llamadas",
+          "general": {
+            "median_gas_price": {
+              "caption": "Precio de gas mediano:",
+              "dimension": "Gwei"
+            }
+          },
+          "24h_stats": {
+            "uncles": "Tíos:"
+          },
+          "mempool": {
+            "total_value": "En valor:"
+          }
+        },
+        "menu": {
+          "mempool": "Mempool y últimos 6 bloques"
+        },
+        "charts": {
+          "average_gas_size":"Uso de gas promedio por día y hora (últimos 3 meses)",
+          "average_gas_limit":"Gas límite promedio (últimos 3 meses)",
+          "mining_difficulty":"Dificultad de minado (últimos 3 meses)",
+          "new_contract_count":"Cant. de nuevos contratos (últimos 3 meses)",
+          "distribution_of_tx_types":"Distribución de tipo de tx (últimos 3 meses)",
+          "average_gas_price":"Precio de gas promedio (GWei) (últimos 3 meses)"
+        }
+      },
+      "bitcoin/testnet":{
+        "title": "Explorador Bitcoin Testnet",
+        "description": "Busca bloques Bitcoin Testnet (TBTC), transacciones, direcciones, balances, nodos, protocolos y datos OP_RETURN, gráficos y estadísticas de blockchain"
+      },
+      "bitcoin-cash":{
+        "title": "Explorador Bitcoin Cash",
+        "description": "Busca bloques Bitcoin Cash (BCH), transacciones, direcciones, balances, nodos, protocolos y datos OP_RETURN, gráficos y estadísticas de blockchain",
+        "charts":{
+          "voting_of_scalability":"Votos en escalabilidad"
+        }
+      },
+      "bitcoin-sv": {
+        "title": "Explorador Bitcoin SV",
+        "description": "Busca bloques Bitcoin SV (BSV), transacciones, direcciones, balances, nodos, protocolos y datos OP_RETURN, gráficos y estadísticas de blockchain"
+      },
+      "dogecoin": {
+        "title": "Explorador Dogecoin",
+        "description": "Busca bloques Dogecoin (DOGE), transacciones, direcciones, balances, nodos, protocolos y datos OP_RETURN, gráficos y estadísticas de blockchain"
+      },
+      "dash": {
+        "title": "Explorador Dash",
+        "description": "Busca bloques Dash (DASH), transacciones, direcciones, balances, datos OP_RETURN y protocolos, gráficos y estadísticas de blockchain"
+      },
+      "litecoin": {
+        "title": "Explorador Litecoin",
+        "description": "Busca bloques Litecoin (LTC), transacciones, direcciones, balances, nodos, gráficos y estadísticas de blockchain"
+      },
+      "groestlcoin": {
+        "title": "Explorador Groestlcoin",
+        "description": "Busca bloques Groestlcoin (GRS), transacciones, direcciones, balances, nodos, gráficos y estadísticas de blockchain"
+      },
+      "useful_links": {
+        "caption": "Enlaces útiles",
+        "description": "Socios que ya usan Blockchair en sus sitios web",
+        "wallets": "Carteras",
+        "market_data": "Datos de mercado",
+        "exchanges": "Sitios de cambio",
+        "mining_pools": "Pools de minería",
+        "explorers": "Exploradores"
+      }
+    },
+    "bitcoin":{
+      "nodes":{
+        "description":"Explora la red Bitcoin buscando por todos los nodos accesibles, sus paises, implementaciones, versiones y reglas de consenso",
+        "last_updated":"Últimos actualizados:",
+        "versions":{
+          "caption":"Versiones de nodo:",
+          "user_agent":"Agente de usuario",
+          "count":"Cantidad"
+        },
+        "heights": "Altura de bloques:",
+        "charts":{
+          "total_nodes":"Total de nodos: {total}",
+          "by_countries":"Por países",
+          "by_implementations":"Por implementaciones",
+          "by_heights": "Por altura"
+        }
+      },
+      "whitepaper":{
+        "description":"Consulta el whitepaper de Satoshi Nakamoto para obtener consistencia por hash en diferentes sitios web y salidas Bitcoin",
+        "last_check":"Última verificación:",
+        "icon":"Ícono",
+        "site":"Sitio",
+        "url":"URL",
+        "hash":"Hash",
+        "status":"Estado",
+        "footer":{
+          "what_is":{
+            "caption":"Qué es esta página?",
+            "description1":"Esta página muestra si diferentes sitios web relacionados a Bitcoin proveen el whitepaper Bitcoin original o una versión editada del mismo. Una vez por hora, calculamos los hashes SHA-256 de los archivos y los comparamos con el hash del whitepaper original (el que sería b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553).",
+            "description2":"Han habido algunas sugerencias para alterar el whitepaper alojado en bitcoin.org (p.e., {github_issue_link} todavía está abierto). Creemos que editar un artículo académico y reescribir la historia de Bitcoin para acomodar los intereses comerciales de alguien es totalmente inaceptable.",
+            "github_issue":"Issue GitHub #1325"
+          },
+          "where_find":{
+            "caption":"Dónde puedo encontrar el whitepaper en el blochchain Bitcoin?",
+            "description1":"En primer lugar, hay algunas salidas de datos nulos que contienen el hash como texto sin formato. Puedes encontrarlos {outputs_table_link}. Ejemplos: {transaction1_link}, {transaction2_link}, {transaction3_link}",
+            "outputs_table":"usando un filtro en la tabla de salidas",
+            "description2":"También hay salidas de datos nulos que contienen el hash como hex. La versión actual de nuestro motor de búsqueda aún no soporta filtrar scripts por valores hex, pero dado que el valor hex se puede representar como texto binario, podemos {outputs_table_search_link} de este texto. Ejemplos: {transaction1_link}, {transaction2_link}, {transaction3_link}",
+            "outputs_table_search":"busca por partes alfanuméricas",
+            "description3":"Más importante aún, hay una transacción {transacción_link} que contiene el archivo pdf en sí. Aquí está {bitcoin_stackexchange_link}. Sería posible editar el whitepaper en algunos sitios web, pero no es posible alterar el blockchain.",
+            "bitcoin_stackexchange":"una instrucción sobre cómo analizarlo"
+          }
+        }
+      }
+    },
+    "bitcoin-cash":{
+      "nodes":{
+        "description":"Explora la red Bitcoin Cash buscando por todos los nodos accesibles, sus paises, implementaciones, versiones y reglas de consenso"
+      }
+    },
+    "bitcoin-sv":{
+      "nodes":{
+        "description":"Explora la red Bitcoin SV buscando por todos los nodos accesibles, sus paises, implementaciones, versiones y reglas de consenso"
+      }
+    },
+    "dogecoin":{
+      "nodes":{
+        "description":"Explora la red Dogecoin buscando por todos los nodos accesibles, sus paises, implementaciones, versiones y reglas de consenso"
+      }
+    },
+    "litecoin":{
+      "nodes":{
+        "description":"Explora la red Litecoin buscando por todos los nodos accesibles, sus paises, implementaciones, versiones y reglas de consenso"
+      }
+    },
+    "dash":{
+      "nodes":{
+        "description":"Explora la red Dash buscando por todos los nodos accesibles, sus paises, implementaciones, versiones y reglas de consenso"
+      }
+    },
+    "groestlcoin":{
+      "nodes":{
+        "description":"Explora la red Groestlcoin buscando por todos los nodos accesibles, sus paises, implementaciones, versiones y reglas de consenso"
+      }
+    },
+    "charts":{
+      "title":"Gráficos",
+      "description":"Gráficos {chain}, precio {ticker}, datos históricos como en vivo, y otras visualizaciones de criptomonedas",
+      "content":{
+        "sections":{
+          "monetary_stats":"Estadísticas monetarias",
+          "blocks":"Bloques",
+          "transactions":"Transacciones",
+          "misc":"Misc"
+        }
+      },
+      "bitcoin":{
+        "names":{
+          "blockchain-size":{
+            "title":"Gráfico del tamaño de blockchain {chain}",
+            "name":"Tamaño de blockchain",
+            "description":"El crecimiento de tamaño del nodo pleno {chain} en gigabytes desde el bloque génesis hasta ahora"
+          },
+          "price-usd":{
+            "title":"Precio {chain} ({ticker}/USD)",
+            "name":"Precio {chain} (USD) ",
+            "description":"Obtén el gráfico de tipo de cambio {chain}, verifica el precio {ticker}/USD en vivo, incluyendo datos históricos del mercado a través de los sitios de cambio {chain}"
+          },
+          "circulation":{
+            "title":"Gráfico de la circulación de {chain}",
+            "name":"Circulación",
+            "description":"Cuántos {ticker} han sido ya minados? Mira el gráfico que representa la oferta de {ticker}"
+          },
+          "average-block-size":{
+            "title":"Gráfico del tamaño de bloque promedio {chain}",
+            "name":"Tamaño de bloque promedio",
+            "description":"Consulta el gráfico del tramaño de bloque promedio histórico {chain}"
+          },
+          "median-block-size":{
+            "title":"Gráfico del tamaño de bloque mediano {chain}",
+            "name":"Tamaño de bloque mediano",
+            "description":"Obtén el gráfico histórico del tamaño de bloque mediano (chain}"
+          },
+          "difficulty":{
+            "title":"Gráfico de dificultad {chain}",
+            "name":"Dificultad",
+            "description":"Gráfico de dificultad {ticker}, un parámetro que depende del hashrate general de minería"
+          },
+          "transaction-count":{
+            "title":"Gráfico de cantidad de transacciones {chain}",
+            "name":"Cant. de transacciones",
+            "description":"Cuántas transacciones {ticker} ocurren diariamente? El número de transacciones {chain} confirmadas por día/semana/mes"
+          },
+          "total-transaction-count":{
+            "title":"Gráfico de cantidad total de transacciones {chain}",
+            "name":"Cant. total de transacciones",
+            "description":"Cuántas transacciones {ticker} fueron realizadas? El número total de transacciones confirmadas en el blockchain {chain}"
+          },
+          "transaction-volume":{
+            "title":"Gráfico de volumen de transacción {chain}",
+            "name":"Volumen de transacción ({ticker})",
+            "description":"Consulta la cantidad diaria de {ticker} movido"
+          },
+          "average-transaction-amount":{
+            "title":"Gráfico del monto de transacción promedio {chain}",
+            "name":"Monto de transacción promedio ({ticker})",
+            "description":"Obtén el monto de transacción promedio {chain} en {ticker} por día/semana/mes/año"
+          },
+          "median-transaction-amount":{
+            "title":"Gráfico del monto de transacción mediano {chain}",
+            "name":"Monto de transacción mediano ({ticker})",
+            "description":"Obtén el monto de transacción mediano en {ticker} por día/semana/mes/año"
+          },
+          "average-transaction-fee":{
+            "title":"Gráfico de la tasa de transacción promedio {chain}",
+            "name":"Tasa de transacción promedio ({ticker})",
+            "description":"Consulta la tasa de tx promedio {chain} en {ticker}"
+          },
+          "median-transaction-fee":{
+            "title":"Gráfico de la tasa de transacción mediana {chain}",
+            "name":"Tasa de transacción mediana ({ticker})",
+            "description":"Consulta la tasa de tx mediana {chain} en {ticker}"
+          },
+          "transaction-volume-usd":{
+            "title":"Gráfico de volumen de transacción {chain} (USD)",
+            "name":"Volumen de transacción (USD)",
+            "description":"Consulta la cantidad diaria de {ticker} movido en USD"
+          },
+          "average-transaction-fee-usd":{
+            "title":"Gráfico de la tasa de transacción promedio {chain} (USD)",
+            "name":"Tasa de transacción promedio (USD)",
+            "description":"Consulta la tasa de tx promedio {chain} en USD"
+          },
+          "median-transaction-fee-usd":{
+            "title":"Gráfico de la tasa de transacción mediana {chain} (USD)",
+            "name":"Tasa de transacción mediana (USD)",
+            "description":"Consulta la tasa de tx mediana {chain} en USD"
+          },
+          "average-transaction-amount-usd":{
+            "title":"Gráfico del monto de transacción promedio {chain} (USD)",
+            "name":"Monto de transacción promedio (USD)",
+            "description":"Obtén el monto de tx promedio en USD por día/semana/mes/año"
+          },
+          "median-transaction-amount-usd":{
+            "title":"Gráfico del monto de transacción mediano {chain} (USD)",
+            "name":"Monto de transacción mediano (USD)",
+            "description":"Obtén el monto de tx mediano {chain} en USD por día/semana/mes/año"
+          },
+          "inflation-usd":{
+            "title":"Gráfico de inflación {chain} (USD)",
+            "name":"Inflación (USD)",
+            "description":"El número de {ticker} minados/generados diariamente en USD. Curva de inflación {chain}"
+          },
+          "transactions-in-block":{
+            "title":"Gráfico de transacciones en bloque {chain}",
+            "name":"Transacciones en bloque",
+            "description":"Gráfico de dispersión de cantidad de transacciones {chain} por bloque"
+          },
+          "coindays-destroyed":{
+            "title":"Gráfico de diasmoneda {chain} destruidos",
+            "name":"Diasmoneda destruidos",
+            "description":"Este gráfico muestra cuantos diasmoneda (chain} fueron destruidos al mover monedas antiguas"
+          },
+          "hashrate-distribution":{
+            "title":"Distribución de hashrate {chain}",
+            "name":"Distribución de hashrate",
+            "description":"Encuentra los mayores mineros y pools {chain} en el gráfico circular de distribución de hashrate"
+          },
+          "transactions-per-second":{
+            "title":"Gráfico de transacciones {chain} por segundo",
+            "name":"Transacciones por segundo",
+            "description":"Tx/s es una buena medida de escalabilidad. Consulta cómo varía diariamente"
+          },
+          "segwit-usage":{
+            "title":"Gráfico de uso de SegWit {chain}",
+            "name":"Uso de SegWit",
+            "description":"Porcentaje de transacciones SegWit en {chain}"
+          },
+          "percentage-of-non-monetary-outputs":{
+            "title":"Gráfico de % de salidas {chain} no monetarias",
+            "name":"% de salidas no monetarias",
+            "description":"Porcentaje de salidas {ticker} que no movieron ningún {ticker}"
+          },
+          "distribution-of-outputs-types-over-two-weeks":{
+            "title":"Gráfico de distribución de tipos de salida {chain}",
+            "name":"Distribución de tipos de salida",
+            "description":"Consulta los tipos de salida {chain} más populares en las últimas 2 semanas en un gráfico circular"
+          }
+        }
+      },
+      "dogecoin":{
+        "names":{
+          "aux-pow":{
+            "title":"Gráfico de uso de Dogecoin AuxPoW",
+            "name":"Uso de AuxPoW",
+            "description":"Porcentaje de bloques Dogecoin confirmados por minería fusionada"
+          }
+        }
+      },
+      "ethereum":{
+        "names":{
+          "number-of-new-contracts":{
+            "title":"Gráfico de nuevos contratos Ethereum",
+            "name":"Número de nuevos contratos",
+            "description":"Obtén el número de nuevos contratos inteligentes creados diariamente en Ethereum"
+          },
+          "number-of-destroyed-contracts":{
+            "title":"Gráfico de la cantidad de contratos Ethereum destruidos",
+            "name":"Número de contratos destruidos",
+            "description":"Obtén la cantidad de contratos inteligentes Ethereum destruidos diariamente"
+          },
+          "uncle-rate":{
+            "title":"Proporción de tío Ethereum",
+            "name":"Proporción tío",
+            "description":"Porcentaje de bloques tío en Ethereum"
+          },
+          "average-gas-price":{
+            "title":"Gráfico del precio de gas promedio Ethereum",
+            "name":"Precio de gas promedio",
+            "description":"Consulta el precio de gas promedio histórico ETH en GWei"
+          },
+          "median-gas-price":{
+            "title":"Gráfico del precio de gas mediano Ethereum",
+            "name":"Precio de gas mediano",
+            "description":"Obtén el precio de gas mediano histórico ETH en GWei"
+          },
+          "average-gas-limit":{
+            "title":"Gráfico del precio de gas límite promedio Ethereum",
+            "name":"Gas límite promedio",
+            "description":"Consulta el gas límite promedio histórico ETH"
+          },
+          "median-gas-limit":{
+            "title":"Gráfico del gas límite mediano Ethereum",
+            "name":"Gas límite mediano",
+            "description":"Obtén el gas límite mediano histórico ETH"
+          },
+          "new-contracts-ratio":{
+            "title":"Gráfico de proporción de nuevos contratos",
+            "name":"Proporción de nuevos contratos",
+            "description":"Proporción de nuevos contratos Ethereum comparados a los destruidos por AUTODESTRUCCIÓN"
+          }
+        }
+      },
+      "name":{
+        "options":{
+          "compare":"Comparar con",
+          "interval":{
+            "caption":"Intervalo",
+            "1m":"Último mes",
+            "3m":"Últimos 3 meses",
+            "full":"Desde el comienzo"
+          },
+          "granularity":"Granularidad",
+          "export":"Exportar",
+          "related_charts":"Gráficos relacionados",
+          "other_coins":"El mismo gráfico para otras monedas"
+        }
+      }
+    }
+  },
+  "nodes": {
+    "title": "Nodos",
+    "navigation": "Nodos",
+    "card": {
+      "bitcoin": {
+        "total_nodes": "Total de nodos: {total_count}",
+        "footer_link":"Explorador de nodo {chain}"
+      }
+    }
+  },
+  "about":{
+    "title":"Acerca",
+    "description":"Equipo Blockchair, socios y contactos",
+    "navigation":"Acerca",
+    "what_is":{
+      "caption":"Qué es Blockchair?",
+      "description1":"{service} es un motor de búsqueda y análisis de blockchain para {bitcoin_link}, {ethereum_link}, {bitcoin_cash_link}, {litecoin_link}, {bitcoin_sv_link}, {dash_link}, {ripple_link}, {dogecoin_link} y {groestlcoin_link} o también puedes decir que es un motor de búsqueda que consiste en exploradores de blockchain con esteroides. Puedes filtrar y ordenar bloques, transacciones y su contenido por una variedad de criterios diferentes, así como realizar búsquedas de texto completo en los blockchains.",
+      "description2":"Para comprender de lo que nuestro motor de búsqueda es capaz, puedes intentar buscar {search_bitcoin_link}, observar {greatest_bitcoin_cash_blocks_link}, o probar cualquiera de los otros ejemplos que aparecen en {homepage_link}.",
+      "biggest_bitcoin_cash_blocks":"los mayores bloques Bitcoin Cash",
+      "homepage":"nuestra página de inicio",
+      "description3":"Nuestro objetivo es convertirnos en Google para blockchains. Nuestra siguiente prioridad es brindar la capacidad de realizar búsquedas en otros proyectos descentralizados como IPFS y SWARM. Además, brindamos a los investigadores una forma de exportar datos por lotes de los blockchains."
+    },
+    "our_team": "Nuestro equipo",
+    "contacts":{
+      "caption":"Contacto",
+      "email":"Email: {email}",
+      "twitter":"Twitter: {twitter_link}",
+      "facebook": "Facebook: {facebook_link}",
+      "telegram":"Chat Telegram: {telegram_link}"
+    },
+    "partners": {
+      "caption": "Nuestros socios y amigos",
+      "general": "Socios generales",
+      "wallets": "Carteras que ofrecen Blockchair",
+      "exchanges": "Sitios de cambio que ofrecen Blockchair",
+      "mining_pools": "Pools de minería que ofrecen Blockchair",
+      "explorers": "Exploradores que ofrecen Blockchair",
+      "market_data": "Proveedores de datos de mercado que ofrecen Blockchair",
+      "media": "Socios de medios",
+      "academic": "Socios académicos"
+    }
+  },
+  "feed":{
+    "title":"Feed de mensajes",
+    "description":"Lee los mensajes codificados almacenados en blockchains de criptomonedas",
+    "navigation":{
+      "title":"Feed",
+      "hint":"Blockchair Feed muestra las transacciones OP_RETURN en los blockchains Bitcoin y Bitcoin Cash, así como transacciones en el blockchain Ethereum que contengan datos legibles en el campo de entrada.",
+      "tps":{
+        "title":"Monitoreando tres blockchains por nuevas entradas",
+        "bitcoin":"Bitcoin a {tps} txs por segundo",
+        "bitcoin-cash":"Bitcoin Cash a {tps} txs por segundo",
+        "ethereum":"Ethereum a {tps} txs por segundo"
+      }
+    },
+    "entry": {
+      "time": "{time} (UTC)"
+    },
+    "showing":"Mostrando entradas de las últimas 3 horas..."
+  },
+  "compare":{
+    "title":"Compara estads. de los blockchains BTC, ETH, BCH, LTC, BSV, DASH y DOGE",
+    "description":"Compara criptomonedas por tiempo promedio entre bloques, transacciones por segundo, tasas, hashrate, cantidad de nodos y más",
+    "navigation":"Comparar",
+    "blockchain_stats":{
+      "caption":"Estad. de Blockchain",
+      "circulation":"Circulación",
+      "nodes":"Nodos de red",
+      "blockchain_size":"Tamaño de Blockchain"
+    },
+    "24h_stats":{
+      "caption":"Estads. 24h",
+      "volume_24h":"Volumen en cadena",
+      "hashrate_24h":"Hashrate",
+      "average_tx_fee":"Tasa de transacción promedio",
+      "median_tx_fee":"Tasa de transacción mediana",
+      "average_block_time":{
+        "caption":"Tiempo entre bloques promedio",
+        "dimension":"s."
+      },
+      "inflation_24h":"Inflación",
+      "cdd_24h":"Diasmoneda destruidos"
+    },
+    "mempool_stats":{
+      "caption":"Estad. de mempool",
+      "tps":"Transacciones por segundo",
+      "suggested_transaction_fee": "Tasa recomendada"
+    },
+    "market_stats":{
+      "caption":"Estad. de mercado",
+      "cap":"Capitalización",
+      "price":"Precio",
+      "dominance":"Índice de dominio"
+    }
+  },
+  "charts":{
+    "title":"Gráficos",
+    "description":"Tablas y gráficos de criptomonedas en vivo, precio de mercado, distribución de hashrate de minería, dificultad, tamaño de blockchain, tasas y más",
+    "navigation":"Gráficos",
+    "granularity":{
+      "date":"Fecha",
+      "week":"Semana",
+      "month":"Mes",
+      "year":"Año",
+      "time":"Tiempo"
+    },
+    "functions":{
+      "count":"Cantidad",
+      "sum":"Suma",
+      "avg":"Promedio",
+      "median":"Mediana",
+      "min":"Mínimo",
+      "max":"Máximo"
+    },
+    "dimensions":{
+      "count":"Cantidad",
+      "bytes":"Bytes",
+      "kilobytes":"KB",
+      "megabytes":"MB",
+      "gigabytes":"GB",
+      "dd":"Días destruidos",
+      "usd":"USD",
+      "percentage":"Porcentaje",
+      "gwei":"GWei"
+    },
+    "content":{
+      "see_more":"Ver {count} gráficos más"
+    }
+  },
+  "broadcast":{
+    "title":"Envía y transmite una transacción cruda",
+    "navigation":"Transmisión",
+    "description":"Transmitir privadamente transacciones BTC, ETH, BCH, LTC, BSV, DOGE, y GRS firmadas crudas en hex",
+    "form":{
+      "chain":{
+        "label":"Seleccionar red:",
+        "invalid":"Debes seleccionar un blockchain primero!"
+      },
+      "hex":{
+        "label":"Pega una transacción cruda aquí en formato hex para transmitirla a través de la red especificada:",
+        "errors": {
+          "empty": "Debes ingresar un valor hex!",
+          "invalid": "Hex inválido!"
+        }
+      },
+      "button":"Transmitir transacción"
+    },
+    "transaction": "Gracias, tu transacción ha sido transmitida al blockchain {chain}, su hash: {hash}"
+  },
+  "notify":{
+    "title":"Notificar",
+    "navigation":{
+      "title":"Notificar"
+    },
+    "content":{
+      "enable":"Habilitar notificaciones",
+      "chains":"Notificarme cuando nuevos bloques sean encontrados en las siguientes cadenas:"
+    },
+    "notification":"Nuevo bloque {chain} ha sido encontrado #{id}"
+  },
+  "privacy":{
+    "title":"Política de Privacidad",
+    "navigation":"Política de Privacidad",
+    "description":"Descubre por qué tu privacidad está en riesgo al usar servicios cripto, y por qué Blockchair es la opción más segura"
+  },
+  "dumps":{
+    "title":"Conjunto de datos de criptomonedas",
+    "navigation":"Volcados",
+    "description":"Descarga datos de bloques y transacciones de los blockchains BTC, ETH, BCH, LTC, BSV, DOGE y GRS en formato TSV"
+  },
+  "markets":{
+    "title":"Mercados",
+    "navigation":"Mercados",
+    "coins": "Top 1000",
+    "my_portfolio":"Mi portafolio ({total_profit})",
+    "table":{
+      "head":{
+        "coin_name":"Nombre de Moneda",
+        "price":"Precio",
+        "search":"Búsqueda rápida",
+        "mkt_cap":"Cap. de mercado",
+        "24h_change":"24h",
+        "dominance":"Dominio",
+        "portfolio":{
+          "amount":"Monto",
+          "profit":"Valor USD"
+        }
+      },
+      "body":{
+        "portfolio":{
+          "total_profit":"Valor total del portafolio: {total_profit} {profit_change_24h}",
+          "empty_list":"No tienes un portafolio. Crea un portafolio agregando monedas a tus favoritos!"
+        },
+        "load_more":"Cargar más"
+      }
+    },
+    "modal":{
+      "title":{
+        "edit":"Editar monedas en tu portafolio",
+        "add":"Agregar monedas a tu portafolio"
+      },
+      "description":"Esta moneda ha sido agregada a tus favoritos. Ahora puedes ingresar la cantidad de monedas que tienes o cerrar esta ventana.",
+      "placeholder":"Ingresar monto",
+      "buttons":{
+        "edit":"Editar",
+        "add":"Agregar",
+        "remove":"Remover"
+      }
+    }
+  },
+  "hints":{
+    "bitcoin-cash":"Bitcoin Cash - también conocido como BCC y XBC",
+    "copy":"Copiar",
+    "copied":"Copiado",
+    "mempool":"Mempool"
+  },
+  "utils":{
+    "bool":{
+      "yes":"SI",
+      "no":"NO"
+    },
+    "coinbase":{
+      "full":"💰 Basemoneda",
+      "short":"Basemoneda"
+    },
+    "contract_creation":"Creación de contrato",
+    "unspent":"No gastada",
+    "thinking":{
+      "loading":"Cargando...",
+      "progress":"Pensando lo más rápido que puedo... ({progress}%)"
+    }
+  },
+  "footer":{
+    "explorers":"Exploradores",
+    "services":"Servicios",
+    "api":"API",
+    "sql":"SQL",
+    "charts":"Gráficos",
+    "markets":"Mercados y Portafolio",
+    "nodes": "Nodos",
+    "feed":"Feed",
+    "broadcast":"Transmisión",
+    "dumps":"Volcados",
+    "compare": "Comparar",
+    "useful_links": "Enlaces útiles",
+    "about": "Acerca",
+    "about_blockchair": "Acerca de Blockchair",
+    "privacy": "Nuestra política de privacidad",
+    "contacts":"Contacto",
+    "issues":"Enviar solicitud / reportar error",
+    "status":"Estado",
+    "social": "Social",
+    "language": "Idiomas",
+    "copyright":"© {year} Blockchair",
+    "market_data":"Datos de mercado por {coin_market_cap_link} y {coin_gecko_link}"
+  },
+  "errors":{
+    "http":{
+      "payment_required":"Estás enviando demasiadas solicitudes. Favor de intentar nuevamente.",
+      "not_found":"No encontrado en ningún blockchain"
+    }
+  }
+}
