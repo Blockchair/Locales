@@ -1933,6 +1933,7 @@
     "title":"Compare BTC, ETH, BCH, LTC, BSV, DASH and DOGE blockchain stats",
     "description":"Compare cryptocurrencies by average time between blocks, transactions per second, fees, hashrate, node count and more",
     "navigation":"Compare",
+    "comparison": "Add to comparison",
     "blockchain_stats":{
       "caption":"Blockchain stats",
       "circulation":"Circulation",
