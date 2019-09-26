@@ -85,13 +85,14 @@
           "compare": "Compare",
           "feed": "Feed",
           "stats": "Stats",
-          "uncles": "Uncles"
+          "uncles": "Uncles",
+          "erc-20": "ERC-20"
         }
       }
     },
     "screen3": {
       "features": "Discover our features",
-      "description": "Great tools to work with crypto data: request Blockchair API to get blockchain data, explore trends and correlations looking at Charts, analyze market trends with Markets & portfolio, broadcast transactions, download dumps with historical data and so much more.",
+      "description": "Great tools to work with crypto data: request Blockchair API to get blockchain data, explore trends and correlations looking at Charts, analyze market trends with Markets & Portfolio, broadcast transactions, download dumps with historical data and so much more.",
       "api": {
         "title": "Professional API",
         "description": "Access blockchain data with Blockchair API",
@@ -254,10 +255,11 @@
           }
         },
         "ethereum": {
-          "mempool":"Ethereum mempool and latest 6 blocks",
-          "last_6_blocks":"Last 6 blocks",
-          "txs_in_last_6_blocks":"Transactions in last 6 blocks",
-          "mempool_txs":"Mempool transactions",
+          "erc-20": {
+            "homepage": "ERC-20 explorer",
+            "tokens": "ERC-20 tokens",
+            "transactions": "ERC-20 transactions"
+          },
           "object": {
             "uncles":"Uncles",
             "calls":"Calls"
@@ -267,11 +269,12 @@
           "price":"Price",
           "charts":"Charts",
           "broadcast": "Broadcast"
-        }
+        },
+        "token_explorers": "Token explorers"
       },
       "search": {
         "desktop": {
-          "placeholder": "Search in 9 blockchains   (BTC/ETH/XRP/BCH/LTC/BSV/DASH/DOGE/GRS)"
+          "placeholder": "Search in 9 blockchains (BTC/ETH/XRP/BCH/LTC/BSV/DASH/DOGE/GRS)"
         },
         "mobile": {
           "placeholder": "Search in 9 blockchains"
@@ -299,6 +302,7 @@
         "uncles":"Uncles",
         "calls":"Calls",
         "omni":"Omni Layer",
+        "erc-20": "ERC-20",
         "wormhole":"Wormhole",
         "charts":"Charts",
         "addresses": "Addresses"
@@ -327,12 +331,6 @@
           "mempool":"{chain} Mempool",
           "layer_2":"Layer 2",
           "misc":"Misc"
-        },
-        "ethereum":{
-          "mempool":"Ethereum mempool and latest 6 blocks",
-          "last_6_blocks":"Last 6 blocks",
-          "txs_in_last_6_blocks":"Transactions in last 6 blocks",
-          "mempool_txs":"Mempool transactions"
         }
       }
     },
@@ -1214,7 +1212,13 @@
         },
         "transaction":{
           "description":"Ethereum (ETH) transaction {hash}, date: {date}",
-          "included_calls":"Calls included in this transaction"
+          "included_calls":"Calls included in this transaction",
+          "erc-20": {
+            "caption": "ERC-20 Token transfers",
+            "sender": "From: {sender_address}",
+            "recipient": "To: {recipient_address}",
+            "value": "Value: {value_token}"
+          }
         },
         "address":{
           "description":"Check Ethereum (ETH) ({address}), its balance and transactions",
@@ -1235,7 +1239,11 @@
           "fees":"Paid in fees (approx.)",
           "involving_calls":"Calls involving address",
           "transferred": "Transferred",
-          "failed": "Failed"
+          "failed": "Failed",
+          "erc-20": {
+            "caption": "ERC-20 Token balances",
+            "balance": "Balance"
+          }
         }
       },
       "ripple":{
@@ -1513,6 +1521,9 @@
         "stats": {
           "uncles": "Uncles",
           "calls": "Calls",
+          "erc-20": {
+            "tokens": "ERC-20 tokens"
+          },
           "general": {
             "median_gas_price": {
               "caption": "Median gas price:",
@@ -1576,7 +1587,8 @@
         "market_data": "Market data",
         "exchanges": "Exchanges",
         "mining_pools": "Mining pools",
-        "explorers": "Explorers"
+        "explorers": "Explorers",
+        "crypto_processors": "Processors"
       }
     },
     "bitcoin":{
@@ -1651,6 +1663,69 @@
     "groestlcoin":{
       "nodes":{
         "description":"Explore Groestlcoin network by looking for all the accessible nodes, their countries, implementations, versions and consensus rules"
+      }
+    },
+    "ethereum": {
+      "erc-20": {
+        "navigation": {
+          "object": {
+            "tokens": "Tokens",
+            "transactions": "Transactions"
+          }
+        },
+        "homepage": {
+          "title": "Ethereum ERC-20 Explorer",
+          "description": "",
+          "stats":{
+            "title":"ERC-20 stats",
+            "tokens":"Total tokens",
+            "transactions":"Total transactions",
+            "tokens_24h": "New tokens 24h",
+            "transactions_24h": "New transactions 24h"
+          },
+          "most_used_tokens": "Most used tokens over the last month",
+          "latest_tokens":"Newest tokens",
+          "latest_transactions":"Latest transactions"
+        },
+        "infinitable": {
+          "description": {
+            "tokens": "",
+            "transactions": ""
+          },
+          "tokens": {
+            "address": "Address",
+            "id": "Id",
+            "time": "Created at",
+            "name": "Name",
+            "symbol": "Symbol",
+            "decimals": "Decimals",
+            "creating_block_id": "Creating block id",
+            "creating_transaction_hash": "Creating tx hash"
+          },
+          "transactions": {
+            "block_id": "Block Id",
+            "id": "Transaction Id",
+            "transaction_hash": "Transaction hash",
+            "token_address": "Token address",
+            "token_name": "Token name",
+            "token_symbol": "Token symbol",
+            "token_decimals": "Token decimals",
+            "value": "Value"
+          }
+        },
+        "token": {
+          "description": "",
+          "navigation": "Token",
+          "stats": {
+            "time": "Created at:",
+            "creating_block_id": "Creating block id:",
+            "creating_transaction_hash": "Creating transaction hash:",
+            "transactions": "Transactions:",
+            "transactions_24h": "Transactions 24h:",
+            "volume_24h": "Volume 24h:"
+          },
+          "latest_transactions":"Latest token transactions"
+        }
       }
     },
     "charts":{
@@ -1907,6 +1982,8 @@
       "mining_pools": "Mining pools featuring Blockchair",
       "explorers": "Explorers featuring Blockchair",
       "market_data": "Market data providers featuring Blockchair",
+      "crypto_processors": "Crypto processors featuring Blockchair",
+      "dapps": "dApps featuring Blockchair",
       "media": "Media partners",
       "academic": "Academic partners"
     }
@@ -2109,7 +2186,7 @@
     "api":"API",
     "sql":"SQL",
     "charts":"Charts",
-    "markets":"Markets & portfolio",
+    "markets":"Markets & Portfolio",
     "nodes": "Nodes",
     "feed":"Feed",
     "broadcast":"Broadcast transaction",
