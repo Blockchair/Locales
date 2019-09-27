@@ -252,13 +252,17 @@
             "nodes":"Node explorer",
             "testnet": "Testnet explorer",
             "whitepaper":"Whitepaper"
+          },
+          "omni": {
+            "most_used_properties": "Most used properties"
           }
         },
         "ethereum": {
           "erc-20": {
             "homepage": "ERC-20 explorer",
             "tokens": "ERC-20 tokens",
-            "transactions": "ERC-20 transactions"
+            "transactions": "ERC-20 transactions",
+            "most_used_tokens": "Most used tokens"
           },
           "object": {
             "uncles":"Uncles",
@@ -1215,9 +1219,9 @@
           "included_calls":"Calls included in this transaction",
           "erc-20": {
             "caption": "ERC-20 Token transfers",
-            "sender": "From: {sender_address}",
-            "recipient": "To: {recipient_address}",
-            "value": "Value: {value_token}"
+            "sender": "From:",
+            "recipient": "To:",
+            "value": "Value:"
           }
         },
         "address":{
