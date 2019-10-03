@@ -1,6 +1,6 @@
 {
   "title":"Blockchair",
-  "description":"Explorador de bloque y la más poderosa API para BTC, ETH, BCH, LTC, DASH, BSV y DOGE que te permite encontrar, ordenar y filtrar transacciones y direcciones.",
+  "description":"Explorador de bloques y la más poderosa API para BTC, ETH, BCH, LTC, DASH, BSV y DOGE que te permite encontrar, ordenar y filtrar transacciones y direcciones.",
   "chain":{
     "bitcoin":"Bitcoin",
     "bitcoin/testnet": "Testnet Bitcoin",
@@ -47,7 +47,7 @@
     },
     "screen2": {
       "explore_blockchains": "Explorar blockchains",
-      "description": "Sumérgete en el análisis de datos de blockchain ordenando y aplicando filtros. Crea y extrae tus propios conjuntos de datos. Los volcados de base de datos también están disponibles.",
+      "description": "Sumérgete en el análisis de datos blockchain ordenando y aplicando filtros. Crea y extrae tus propios conjuntos de datos. Los volcados de base de datos también están disponibles.",
       "examples": {
         "description": "Prueba ejemplos de lo que puedes encontrar en Blockchair:",
         "show_examples": "Mostrar ejemplos",
@@ -85,13 +85,14 @@
           "compare": "Comparar",
           "feed": "Feed",
           "stats": "Estads.",
-          "uncles": "Tíos"
+          "uncles": "Tíos",
+          "erc-20": "ERC-20"
         }
       }
     },
     "screen3": {
       "features": "Descubre nuestras funcionalidades",
-      "description": "Excelentes herramientas para trabajar con datos cripto: solicita la API Blockchair para obtener datos de blockchain, explora tendencias y correlaciones usando Gráficos, analiza tendencias de mercado con Mercados y Portafolio, transmite transacciones, descarga volcados con datos históricos y mucho más.",
+      "description": "Excelentes herramientas para trabajar con datos cripto: solicita la API Blockchair para obtener datos blockchain, explora tendencias y correlaciones usando Gráficos, analiza tendencias de mercado con Mercados y Portafolio, transmite transacciones, descarga volcados con datos históricos y mucho más.",
       "api": {
         "title": "API profesional",
         "description": "Accede a datos de blockchain con Blockchair API",
@@ -123,7 +124,7 @@
     "title":"Búsqueda Blockchair",
     "description":"Busca por {query} en blockchains BTC, ETH, BCH, LTC, BSV y DOGE",
     "status":{
-      "empty_query":"Vaciar consulta",
+      "empty_query":"Consulta vacia",
       "empty_request":"Lo sentimos, solo soportamos búsquedas en inglés y en ruso",
       "server_error":"Oh no! {error}",
       "showing":{
@@ -135,7 +136,7 @@
     "results":{
       "matches":{
         "blocks":{
-          "title":"Explora todo los bloques {chain}",
+          "title":"Explora todos los bloques {chain}",
           "hint":"Usando nuestro motor de búsqueda puedes filtrar bloques {chain} por más de 30 parámetros"
         },
         "transactions":{
@@ -235,7 +236,7 @@
   "application":{
     "header": {
       "menu": {
-        "caption": "Menú:",
+        "caption": "Menú",
         "bitcoin": {
           "blockchain":"Blockchain {chain}",
           "layer_2":"Capa 2",
@@ -251,13 +252,18 @@
             "nodes":"Explorador de nodo",
             "testnet": "Explorador testnet",
             "whitepaper":"Whitepaper"
+          },
+          "omni": {
+            "most_used_properties": "Propiedades más usadas"
           }
         },
         "ethereum": {
-          "mempool":"Mempool Ethereum y últimos 6 bloques",
-          "last_6_blocks":"Últimos 6 bloques",
-          "txs_in_last_6_blocks":"Transacciones en los últimos 6 bloques",
-          "mempool_txs":"Transacciones en mempool",
+          "erc-20": {
+            "homepage": "Explorador ERC-20",
+            "tokens": "Tokens ERC-20",
+            "transactions": "Transacciones ERC-20",
+            "most_used_tokens": "Tokens más usados"
+          },
           "object": {
             "uncles":"Tíos",
             "calls":"Llamadas"
@@ -267,7 +273,8 @@
           "price":"Precio",
           "charts":"Gráficos",
           "broadcast": "Transmisión"
-        }
+        },
+        "token_explorers": "Exploradores de token"
       },
       "search": {
         "desktop": {
@@ -299,6 +306,7 @@
         "uncles":"Tíos",
         "calls":"Llamadas",
         "omni":"Omni Layer",
+        "erc-20": "ERC-20",
         "wormhole":"Wormhole",
         "charts":"Gráficos",
         "addresses": "Direcciones"
@@ -327,12 +335,6 @@
           "mempool":"Mempool {chain}",
           "layer_2":"Capa 2",
           "misc":"Misc"
-        },
-        "ethereum":{
-          "mempool":"Mempool Ethereum y últimos 6 bloques",
-          "last_6_blocks":"Últimos 6 bloques",
-          "txs_in_last_6_blocks":"Transacciones en los últimos 6 bloques",
-          "mempool_txs":"Transacciones en mempool"
         }
       }
     },
@@ -361,7 +363,7 @@
         "bitcoin-cash":{
           "blocks":"Explora, ordena y filtra bloques del blockchain Bitcoin Cash (BCH) por altura, recompensa, minero y más",
           "transactions":"Explora, ordena y filtra transacciones del blockchain Bitcoin Cash (BCH) por ID (hash), tasa, tamaño y más",
-          "outputs":"Explora, ordena y filtra salidas del blockchain Bitcoin Cash (BCH) por valor, receptor (dirección), obtén el conjunto UTXO y más.",
+          "outputs":"Explora, ordena y filtra salidas del blockchain Bitcoin Cash (BCH) por valor, receptor (dirección), obtén el conjunto UTXO y más",
           "mempool":{
             "transactions":"Explora transacciones no confirmadas en el mempool Bitcoin Cash (BCH)",
             "outputs":"Explora salidas no confirmadas en el mempool Bitcoin Cash (BCH)"
@@ -369,7 +371,7 @@
         "bitcoin-sv":{
           "blocks":"Explora, ordena y filtra bloques del  blockchain Bitcoin SV (BSV) por altura, recompensa, minero y más",
           "transactions":"Explorar, ordenar y filtrar transacciones del blockchain Bitcoin SV (BSV) por ID (hash), tasa, tamaño y más",
-          "outputs":"Explora, ordena y filtra salidas del blockchain Bitcoin SV (BSV) por valor, receptor (dirección), obtén el conjunto UTXO y más.",
+          "outputs":"Explora, ordena y filtra salidas del blockchain Bitcoin SV (BSV) por valor, receptor (dirección), obtén el conjunto UTXO y más",
           "mempool":{
             "transactions":"Explora transacciones no confirmadas en el mempool Bitcoin SV (BSV)",
             "outputs":"Explora salidas no confirmadas en el mempool Bitcoin SV (BSV)"
@@ -475,7 +477,7 @@
             "full":"Cant. de salidas"
           },
           "cdd_total":{
-            "short":"Destruídos",
+            "short":"Destruidos",
             "full":"Diasmoneda destruidos",
             "cd":"(DM)",
             "coindays":"(diasmoneda)"
@@ -488,7 +490,7 @@
           "input_total_usd":"Entrada total (USD)",
           "output_total":{
             "simple":"Salida",
-            "full":"Salida total (satoshi)",
+            "full":"Salida total (satoshis)",
             "short":"Salida total"
           },
           "output_total_usd":"Salida total (USD)",
@@ -559,7 +561,7 @@
           "time":"Tiempo (UTC)",
           "id":{
             "short":"Id",
-            "full":"Hash (Id de tx)"
+            "full":"Hash (id de tx)"
           },
           "is_coinbase":{
             "short":"Es basemoneda?",
@@ -799,7 +801,7 @@
           },
           "depth":"Profundidad",
           "child_call_count":{
-            "short":"Llamadas Hijo",
+            "short":"Llamadas hijo",
             "full":"Cant. de llamadas hijo"
           },
           "fail_reason":"Motivo de fallo",
@@ -999,8 +1001,8 @@
         },
         "transaction":{
           "description":{
-            "general":"Verifica una transacción Bitcoin (BTC), valor: {output_total_btc}, fecha: {date}",
-            "coinbase":"Verifica una transacción basemoneda Bitcoin (BTC), valor: {output_total_btc}, fecha: {date}"
+            "general":"Verifica la transacción Bitcoin (BTC), valor: {output_total_btc}, fecha: {date}",
+            "coinbase":"Verifica la transacción basemoneda Bitcoin (BTC), valor: {output_total_btc}, fecha: {date}"
           },
           "priority":"Prioridad: {position}/{count}",
           "confirmations":"No confirmadas | {count} confirmación | {count} confirmaciones",
@@ -1043,7 +1045,7 @@
           "recipients":"Receptores"
         },
         "address":{
-          "description":"Verifica el balance de una dirección Bitcoin (BTC) {address} y sus transacciones",
+          "description":"Verifica el balance de la dirección Bitcoin (BTC) {address} y sus transacciones",
           "type":"Tipo de dirección",
           "formats":{
             "legacy":"Formato de dirección Legacy",
@@ -1103,12 +1105,12 @@
         },
         "transaction":{
           "description":{
-            "general":"Verifica una transacción Bitcoin Testnet (TBTC), valor: {output_total_btc}, fecha: {date}",
-            "coinbase":"Verifica una transacción basemoneda Bitcoin Testnet (TBTC), valor: {output_total_btc}, fecha: {date}"
+            "general":"Verifica la transacción Bitcoin Testnet (TBTC), valor: {output_total_btc}, fecha: {date}",
+            "coinbase":"Verifica la transacción basemoneda Bitcoin Testnet (TBTC), valor: {output_total_btc}, fecha: {date}"
           }
         },
         "address":{
-          "description":"Verifica el balance de una dirección Bitcoin Testnet (TBTC) {address} y sus transacciones"
+          "description":"Verifica el balance de la dirección Bitcoin Testnet (TBTC) {address} y sus transacciones"
         }
       },
       "bitcoin-cash":{
@@ -1122,7 +1124,7 @@
           }
         },
         "address":{
-          "description":"Verifica una dirección Bitcoin Cash (BCH) {cash_address} ({legacy_address}), su balance y transacciones"
+          "description":"Verifica la dirección Bitcoin Cash (BCH) {cash_address} ({legacy_address}), su balance y transacciones"
         }
       },
       "bitcoin-sv":{
@@ -1130,10 +1132,10 @@
           "description":"Bitcoin SV (BSV) bloque {height}, hash: {hash}, fecha: {date}"
         },
         "transaction":{
-          "description":"Transacción Bitcoin SV BSV) {hash}, fecha: {date}"
+          "description":"Transacción Bitcoin SV (BSV) {hash}, fecha: {date}"
         },
         "address":{
-          "description":"Verifica una dirección Bitcoin SV (BSV) {cash_address} ({legacy_address}), su balance y transacciones"
+          "description":"Verifica la dirección Bitcoin SV (BSV) {cash_address} ({legacy_address}), su balance y transacciones"
         }
       },
       "dogecoin":{
@@ -1142,12 +1144,12 @@
         },
         "transaction":{
           "description":{
-            "general":"Verifica una transacción Dogecoin (DOGE), valor: {output_total_doge}, fecha: {date}",
-            "coinbase":"Verifica una transacción basemoneda Dogecoin (DOGE), valor: {output_total_doge}, fecha: {date}"
+            "general":"Verifica la transacción Dogecoin (DOGE), valor: {output_total_doge}, fecha: {date}",
+            "coinbase":"Verifica la transacción basemoneda Dogecoin (DOGE), valor: {output_total_doge}, fecha: {date}"
           }
         },
         "address":{
-          "description":"Verifica el balance de una dirección Dogecoin (DOGE) {address} y sus transacciones"
+          "description":"Verifica el balance de la dirección Dogecoin (DOGE) {address} y sus transacciones"
         }
       },
       "dash":{
@@ -1156,12 +1158,12 @@
         },
         "transaction":{
           "description":{
-            "general":"Verifica una transacción Dash (DASH), valor: {output_total_dash}, fecha: {date}",
-            "coinbase":"Verifica una transacción basemoneda Dash (DASH), valor: {output_total_dash}, fecha: {date}"
+            "general":"Verifica la transacción Dash (DASH), valor: {output_total_dash}, fecha: {date}",
+            "coinbase":"Verifica la transacción basemoneda Dash (DASH), valor: {output_total_dash}, fecha: {date}"
           }
         },
         "address":{
-          "description":"Verifica el balance de una dirección Dash (DASH) {address} y sus transacciones"
+          "description":"Verifica el balance de la dirección Dash (DASH) {address} y sus transacciones"
         }
       },
       "litecoin":{
@@ -1172,7 +1174,7 @@
           "description":"Transacción Litecoin (LTC) {hash}, fecha: {date}"
         },
         "address":{
-          "description":"Verifica una dirección Litecoin (LTC) {address}, su balance y transacciones"
+          "description":"Verifica la dirección Litecoin (LTC) {address}, su balance y transacciones"
         }
       },
       "groestlcoin":{
@@ -1183,7 +1185,7 @@
           "description":"Transacción Groestlcoin (GRS) {hash}, fecha: {date}"
         },
         "address":{
-          "description":"Verifica una dirección Groestlcoin (GRS) {address}, su balance y transacciones"
+          "description":"Verifica la dirección Groestlcoin (GRS) {address}, su balance y transacciones"
         }
       },
       "ethereum":{
@@ -1200,10 +1202,16 @@
         },
         "transaction":{
           "description":"Transacción Ethereum (ETH) {hash}, fecha: {date}",
-          "included_calls":"Llamadas incluidas en esta transacción"
+          "included_calls":"Llamadas incluidas en esta transacción",
+          "erc-20": {
+            "caption": "Transferencias de token ERC-20",
+            "sender": "De:",
+            "recipient": "Para:",
+            "value": "Valor:"
+          }
         },
         "address":{
-          "description":"Verifica una dirección  Ethereum (ETH) ({address}), su balance y transacciones",
+          "description":"Verifica la dirección  Ethereum (ETH) ({address}), su balance y transacciones",
           "type":"Tipo",
           "receiving":"Receptoras: {receiving_calls_link}",
           "spending":"Gasto: {spending_calls_link}",
@@ -1221,7 +1229,11 @@
           "fees":"Pago en tasas (aprox.)",
           "involving_calls":"Llamadas involucrando dirección",
           "transferred": "Transferido",
-          "failed": "Fallido"
+          "failed": "Fallido",
+          "erc-20": {
+            "caption": "Balances de token ERC-20",
+            "balance": "Balance"
+          }
         }
       },
       "ripple":{
@@ -1250,8 +1262,8 @@
             "email_hash":"Hash de dominio",
             "message_key":"Clave de mensaje",
             "set_flag":"Configurar flag",
-            "transfer_rate":"Tasa de transferencia",
-            "check_id":"Verifica un Id",
+            "transfer_rate":"Razón de transferencia",
+            "check_id":"Verificar id",
             "amount":"Monto",
             "deliver_min":"Entregar min.",
             "destination":"Destino",
@@ -1498,6 +1510,9 @@
         "stats": {
           "uncles": "Tíos",
           "calls": "Llamadas",
+          "erc-20": {
+            "tokens": "Tokens ERC-20"
+          },
           "general": {
             "median_gas_price": {
               "caption": "Precio de gas mediano:",
@@ -1561,7 +1576,8 @@
         "market_data": "Datos de mercado",
         "exchanges": "Sitios de cambio",
         "mining_pools": "Pools de minería",
-        "explorers": "Exploradores"
+        "explorers": "Exploradores",
+        "crypto_processors": "Procesadores"
       }
     },
     "bitcoin":{
@@ -1573,7 +1589,7 @@
           "user_agent":"Agente de usuario",
           "count":"Cantidad"
         },
-        "heights": "Altura de bloques:",
+        "heights": "Altura de bloque:",
         "charts":{
           "total_nodes":"Total de nodos: {total}",
           "by_countries":"Por países",
@@ -1638,6 +1654,63 @@
         "description":"Explora la red Groestlcoin buscando por todos los nodos accesibles, sus paises, implementaciones, versiones y reglas de consenso"
       }
     },
+    "ethereum": {
+      "erc-20": {
+        "navigation": {
+          "object": {
+            "tokens": "Tokens",
+            "transactions": "Transacciones"
+          }
+        },
+        "homepage": {
+          "title": "Explorador Ethereum ERC-20",
+          "stats":{
+            "title":"ERC-20 estads.",
+            "tokens":"Total de tokens",
+            "transactions":"Total de transacciones",
+            "tokens_24h": "Nuevos tokens 24h",
+            "transactions_24h": "Nuevas transacciones 24h"
+          },
+          "most_used_tokens": "Tokens más usados en el último mes",
+          "latest_tokens":"Tokens más recientes",
+          "latest_transactions":"Últimas transacciones"
+        },
+        "infinitable": {
+          "tokens": {
+            "address": "Dirección",
+            "id": "Id",
+            "time": "Creado en",
+            "name": "Nombre",
+            "symbol": "Símbolo",
+            "decimals": "Decimales",
+            "creating_block_id": "Id de bloque creador",
+            "creating_transaction_hash": "Creando hash de tx"
+          },
+          "transactions": {
+            "block_id": "Id de bloque",
+            "id": "Id de transacción",
+            "transaction_hash": "Hash de transacción",
+            "token_address": "Dirección de token",
+            "token_name": "Nombre de token",
+            "token_symbol": "Símbolo de token",
+            "token_decimals": "Decimales de token",
+            "value": "Valor"
+          }
+        },
+        "token": {
+          "navigation": "Token",
+          "stats": {
+            "time": "Creado en:",
+            "creating_block_id": "Id de bloque creador",
+            "creating_transaction_hash": "Hash de transacción creadora:",
+            "transactions": "Transacciones:",
+            "transactions_24h": "Transacciones 24h:",
+            "volume_24h": "Volumen 24h:"
+          },
+          "latest_transactions":"Últimas transacciones de token"
+        }
+      }
+    },
     "charts":{
       "title":"Gráficos",
       "description":"Gráficos {chain}, precio {ticker}, datos históricos como en vivo, y otras visualizaciones de criptomonedas",
@@ -1674,7 +1747,7 @@
           "median-block-size":{
             "title":"Gráfico del tamaño de bloque mediano {chain}",
             "name":"Tamaño de bloque mediano",
-            "description":"Obtén el gráfico histórico del tamaño de bloque mediano (chain}"
+            "description":"Obtén el gráfico histórico del tamaño de bloque mediano {chain}"
           },
           "difficulty":{
             "title":"Gráfico de dificultad {chain}",
@@ -1754,7 +1827,7 @@
           "coindays-destroyed":{
             "title":"Gráfico de diasmoneda {chain} destruidos",
             "name":"Diasmoneda destruidos",
-            "description":"Este gráfico muestra cuantos diasmoneda (chain} fueron destruidos al mover monedas antiguas"
+            "description":"Este gráfico muestra cuantos diasmoneda {chain} fueron destruidos al mover monedas antiguas"
           },
           "hashrate-distribution":{
             "title":"Distribución de hashrate {chain}",
@@ -1830,7 +1903,7 @@
             "description":"Obtén el gas límite mediano histórico ETH"
           },
           "new-contracts-ratio":{
-            "title":"Gráfico de proporción de nuevos contratos",
+            "title":"Gráfico de proporción de nuevos contratos Ethereum",
             "name":"Proporción de nuevos contratos",
             "description":"Proporción de nuevos contratos Ethereum comparados a los destruidos por AUTODESTRUCCIÓN"
           }
@@ -1891,6 +1964,8 @@
       "mining_pools": "Pools de minería que ofrecen Blockchair",
       "explorers": "Exploradores que ofrecen Blockchair",
       "market_data": "Proveedores de datos de mercado que ofrecen Blockchair",
+      "crypto_processors": "Procesadores cripto que ofrecen Blockchair",
+      "dapps": "dApps que ofrecen Blockchair",
       "media": "Socios de medios",
       "academic": "Socios académicos"
     }
@@ -1917,6 +1992,7 @@
     "title":"Compara estads. de los blockchains BTC, ETH, BCH, LTC, BSV, DASH y DOGE",
     "description":"Compara criptomonedas por tiempo promedio entre bloques, transacciones por segundo, tasas, hashrate, cantidad de nodos y más",
     "navigation":"Comparar",
+    "comparison": "Agregar a la comparación",
     "blockchain_stats":{
       "caption":"Estad. de Blockchain",
       "circulation":"Circulación",
@@ -2011,7 +2087,7 @@
       "enable":"Habilitar notificaciones",
       "chains":"Notificarme cuando nuevos bloques sean encontrados en las siguientes cadenas:"
     },
-    "notification":"Nuevo bloque {chain} ha sido encontrado #{id}"
+    "notification":"Nuevo bloque {chain} encontrado #{id}"
   },
   "privacy":{
     "title":"Política de Privacidad",
@@ -2112,7 +2188,7 @@
   "errors":{
     "http":{
       "payment_required":"Estás enviando demasiadas solicitudes. Favor de intentar nuevamente.",
-      "not_found":"No encontrado en ningún blockchain"
+      "not_found":"No encontrado en ningún blockchain 😞"
     }
   }
 }
