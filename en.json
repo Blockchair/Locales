@@ -88,6 +88,10 @@
           "uncles": "Uncles",
           "erc-20": "ERC-20"
         }
+      },
+      "erc-20": {
+        "tokens": "Tokens:",
+        "explore_all": "Explore all tokens"
       }
     },
     "screen3": {
@@ -1218,10 +1222,11 @@
           "description":"Ethereum (ETH) transaction {hash}, date: {date}",
           "included_calls":"Calls included in this transaction",
           "erc-20": {
-            "caption": "ERC-20 Token transfers",
+            "caption": "ERC-20 token transfers",
             "sender": "From:",
             "recipient": "To:",
-            "value": "Value:"
+            "value": "Value:",
+            "wait": "Potential ERC-20 transfers for this transaction may still be processed and shown later"
           }
         },
         "address":{
@@ -1588,6 +1593,7 @@
         "caption": "Useful links",
         "description": "Partners that already use Blockchair on their websites",
         "wallets": "Wallets",
+        "hardware_wallets": "Hardware wallets",
         "market_data": "Market data",
         "exchanges": "Exchanges",
         "mining_pools": "Mining pools",
@@ -1982,6 +1988,7 @@
       "caption": "Our partners and friends",
       "general": "General partners",
       "wallets": "Wallets featuring Blockchair",
+      "hardware_wallets": "Hardware wallets featuring Blockchair",
       "exchanges": "Exchanges featuring Blockchair",
       "mining_pools": "Mining pools featuring Blockchair",
       "explorers": "Explorers featuring Blockchair",
@@ -1990,6 +1997,15 @@
       "dapps": "dApps featuring Blockchair",
       "media": "Media partners",
       "academic": "Academic partners"
+    }
+  },
+  "terms": {
+    "title": "Terms of service",
+    "description": "",
+    "navigation":"Terms of service",
+    "content": {
+      "caption": "Blockchair terms of service",
+      "api": "API terms of service"
     }
   },
   "feed":{
@@ -2141,6 +2157,7 @@
         }
       },
       "body":{
+        "stablecoin": "Stablecoin",
         "portfolio":{
           "total_profit":"Total portfolio value: {total_profit} {profit_change_24h}",
           "empty_list":"You do not have a portfolio. Start a portfolio by adding coins to your favorites!"
@@ -2160,6 +2177,18 @@
         "add":"Add",
         "remove":"Remove"
       }
+    }
+  },
+  "api": {
+    "navigation":"API",
+    "homepage": {
+      "title": "Blockchair API Services",
+      "description": ""
+    },
+    "docs": {
+      "title": "Blockchair API Docs",
+      "description": "",
+      "navigation": "Docs"
     }
   },
   "hints":{
@@ -2198,6 +2227,7 @@
     "compare": "Compare",
     "useful_links": "Useful links",
     "about": "About",
+    "terms": "Terms of service",
     "about_blockchair": "About Blockchair",
     "privacy": "Our privacy policy",
     "contacts":"Contact us",
