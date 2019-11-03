@@ -2,7 +2,7 @@
   "title":"Blockchair",
   "description":"区块链浏览器，提供最强大的应用程序编程接口给比特币、以太币、比特币现金、莱特币、达世币、BSV币和狗币的搜索、排序、交易过滤和定位",
   "chain":{
-    "bitcoin":"比特币 ",
+    "bitcoin":"比特币",
     "bitcoin/testnet": "比特币测试网路",
     "bitcoin-cash":"比特币现金",
     "bitcoin-sv":"比特币 SV",
@@ -85,8 +85,13 @@
           "compare": "比较",
           "feed": "feed",
           "stats": "统计",
-          "uncles": "Uncles"
+          "uncles": "Uncles",
+          "erc-20": "ERC-20"
         }
+      },
+      "erc-20": {
+        "tokens": "代币",
+        "explore_all": "搜索所有代币"
       }
     },
     "screen3": {
@@ -196,7 +201,7 @@
         },
         "whitepapers":{
           "row":{
-            "size":"{url} {size} kB"
+            "size":"{url} {size} KB"
           }
         }
       },
@@ -251,13 +256,18 @@
             "nodes":"节点浏览器",
             "testnet": "Testnet 浏览器",
             "whitepaper":"白皮书"
+          },
+          "omni": {
+            "most_used_properties": "最常用属性"
           }
         },
         "ethereum": {
-          "mempool":"以太坊内存池和最新的6区块",
-          "last_6_blocks":"最近6区块",
-          "txs_in_last_6_blocks":"过去6区块的交易",
-          "mempool_txs":"内存池交易",
+          "erc-20": {
+            "homepage": "ERC-20浏览器",
+            "tokens": "ERC-20代币",
+            "transactions": "ERC-20交易",
+            "most_used_tokens": "最常用代币"
+          },
           "object": {
             "uncles":"Uncles",
             "calls":"调用"
@@ -267,7 +277,8 @@
           "price":"价格",
           "charts":"图表",
           "broadcast": "广播"
-        }
+        },
+        "token_explorers": "代币浏览器"
       },
       "search": {
         "desktop": {
@@ -299,6 +310,7 @@
         "uncles":"Uncles",
         "calls":"调用",
         "omni":"Omni Layer",
+        "erc-20": "ERC-20",
         "wormhole":"虫洞",
         "charts":"图表",
         "addresses": "地址"
@@ -327,12 +339,6 @@
           "mempool":"{chain} 内存池",
           "layer_2":"第二层",
           "misc":"其他"
-        },
-        "ethereum":{
-          "mempool":"以太坊内存池和最新六个区块",
-          "last_6_blocks":"最后六区块",
-          "txs_in_last_6_blocks":"最后6个区块中的交易",
-          "mempool_txs":"内存池交易"
         }
       }
     },
@@ -499,11 +505,11 @@
           },
           "fee_total_usd":"总费用（USD）",
           "fee_per_kb":{
-            "simple":"每kB费用",
-            "full":"每kB费用（satoshis)",
-            "short":"每kB费用"
+            "simple":"每KB费用",
+            "full":"每KB费用（satoshis)",
+            "short":"每KB费用"
           },
-          "fee_per_kb_usd":"每kB费用（USD）",
+          "fee_per_kb_usd":"每KB费用（USD）",
           "fee_per_kwu":{
             "simple":"每kWU费用",
             "full":"每kWU费用(satoshis)",
@@ -910,7 +916,7 @@
           },
           "fee_per_kb":{
             "title":{
-              "full":"每kB费用 ({ticker})"
+              "full":"每KB费用 ({ticker})"
             },
             "examples":{
               "exactly_one_hundredth":"正好 0.01 {ticker}"
@@ -1200,7 +1206,14 @@
         },
         "transaction":{
           "description":"以太坊（ETH）交易{hash}、日期：{date}",
-          "included_calls":"此交易包含的调用"
+          "included_calls":"此交易包含的调用",
+          "erc-20": {
+            "caption": "ERC-20代币转账",
+            "sender": "从:",
+            "recipient": "到:",
+            "value": "价值:",
+            "wait": "这笔ERC-20交易可能还在进行中，不排除稍后显示"
+          }
         },
         "address":{
           "description":"检查以太坊（ETH）（{address}），其余额和交易",
@@ -1221,7 +1234,11 @@
           "fees":"已缴费用（粗略值）",
           "involving_calls":"包含地址的调用",
           "transferred": "已转移",
-          "failed": "已失败"
+          "failed": "已失败",
+          "erc-20": {
+            "caption": "ERC-20代币余额",
+            "balance": "余额"
+          }
         }
       },
       "ripple":{
@@ -1473,7 +1490,7 @@
           "coindays_destroyed":"每天币天销毁数(百万)（过去3个月）",
           "non_monetary_outputs":"非货币输出百分比(过去3个月）",
           "distribution_of_outputs":"输出类型分布（上周)",
-          "average_fee":"平均每kB费用（过去3个月, USD）"
+          "average_fee":"平均每KB费用（过去3个月, USD）"
         }
       },
       "ripple": {
@@ -1498,6 +1515,9 @@
         "stats": {
           "uncles": "Uncles",
           "calls": "调用",
+          "erc-20": {
+            "tokens": "ERC-20代币"
+          },
           "general": {
             "median_gas_price": {
               "caption": "Gas价格中位数:",
@@ -1558,10 +1578,12 @@
         "caption": "有用的链接",
         "description": "已在其网站上使用我们服务的合作伙伴",
         "wallets": "钱包",
+        "hardware_wallets": "硬件钱包",
         "market_data": "市场数据",
         "exchanges": "交流",
         "mining_pools": "采矿池",
-        "explorers": "探险家"
+        "explorers": "探险家",
+        "crypto_processors": "处理器"
       }
     },
     "bitcoin":{
@@ -1636,6 +1658,63 @@
     "groestlcoin":{
       "nodes":{
         "description":"通过检索节点的地区、软件、版本和共识规则来探索闪电币网路"
+      }
+    },
+    "ethereum": {
+      "erc-20": {
+        "navigation": {
+          "object": {
+            "tokens": "代币",
+            "transactions": "交易"
+          }
+        },
+        "homepage": {
+          "title": "以太坊ERC-20浏览器",
+          "stats":{
+            "title":"ERC-20统计",
+            "tokens":"总代币",
+            "transactions":"总交易",
+            "tokens_24h": "24小时内新代币",
+            "transactions_24h": "24小时内新交易"
+          },
+          "most_used_tokens": "一个月内最常用代币",
+          "latest_tokens":"最新代币",
+          "latest_transactions":"最近交易"
+        },
+        "infinitable": {
+          "tokens": {
+            "address": "地址",
+            "id": "Id",
+            "time": "创建于",
+            "name": "名称",
+            "symbol": "标记",
+            "decimals": "个小数",
+            "creating_block_id": "创建区块id",
+            "creating_transaction_hash": "创建tx 哈希"
+          },
+          "transactions": {
+            "block_id": "区块 Id",
+            "id": "交易 id",
+            "transaction_hash": "交易哈希",
+            "token_address": "代币地址",
+            "token_name": "代币名称",
+            "token_symbol": "代币标记",
+            "token_decimals": "代币个小数",
+            "value": "价值"
+          }
+        },
+        "token": {
+          "navigation": "代币",
+          "stats": {
+            "time": "创建于",
+            "creating_block_id": "创建区块id",
+            "creating_transaction_hash": "创建交易哈希",
+            "transactions": "交易:",
+            "transactions_24h": "24小时内交易",
+            "volume_24h": "24小时链上交易量:"
+          },
+          "latest_transactions":"最近代币交易"
+        }
       }
     },
     "charts":{
@@ -1887,12 +1966,23 @@
       "caption": "我们的合作伙伴及朋友",
       "general": "合作伙伴",
       "wallets": "Blockchair合作钱包",
+      "hardware_wallets": "Blockchair合作硬件钱包",
       "exchanges": "Blockchair合作交易所",
       "mining_pools": "Blockchair合作矿池",
       "explorers": "Blockchair合作搜索引擎",
       "market_data": "Blockchair市场数据提供者伙伴",
+      "crypto_processors": "Blockchair合作加密货币收款服务",
+      "dapps": "Blockchair合作dApps",
       "media": "媒体伙伴",
       "academic": "学术伙伴"
+    }
+  },
+  "terms": {
+    "title": "服务条款",
+    "navigation":"服务条款",
+    "content": {
+      "caption": "Blockchair服务条款",
+      "api": "API服务条款"
     }
   },
   "feed":{
@@ -1917,6 +2007,7 @@
     "title":"比较BTC、ETH、BCH、LTC、BSV、DASH、DOGE区块链统计数据",
     "description":"比较加密货币与块之间的平均时间，每秒交易数，费用，哈希值，节点数等",
     "navigation":"比较",
+    "comparison": "加到比对",
     "blockchain_stats":{
       "caption":"区块链统计数据",
       "circulation":"流通",
@@ -1970,7 +2061,7 @@
     "dimensions":{
       "count":"计数",
       "bytes":"字节",
-      "kilobytes":"Kb",
+      "kilobytes":"KB",
       "megabytes":"Mb",
       "gigabytes":"Gb",
       "dd":"销毁天数",
@@ -2042,6 +2133,7 @@
         }
       },
       "body":{
+        "stablecoin": "稳定币",
         "portfolio":{
           "total_profit":"投资组合总值: {total_profit} {profit_change_24h}",
           "empty_list":"现在你还没有投资组合，请先把币种加入收藏以创建投资组合！"
@@ -2061,6 +2153,15 @@
         "add":"添加",
         "remove":"移除"
       }
+    }
+  },
+  "api": {
+    "navigation":"API",
+    "homepage": {
+      "title": "Blockchair API服务"},
+    "docs": {
+      "title": "Blockchair API说明",
+      "navigation": "说明文件"
     }
   },
   "hints":{
@@ -2099,6 +2200,7 @@
     "compare": "比较",
     "useful_links": "有用的链接",
     "about": "关于",
+    "terms": "服务条款",
     "about_blockchair": "关于 Blockchair",
     "privacy": "请阅读我们的隐私政策",
     "contacts":"联系我们",
