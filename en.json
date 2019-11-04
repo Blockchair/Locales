@@ -1,6 +1,6 @@
 {
   "title":"Blockchair",
-  "description":"Block explorer and the most powerful API for BTC, ETH, BCH, LTC, DASH, BSV and DOGE that allow you to find, sort and filter transactions and addresses.",
+  "description":"Block explorer and the most powerful API for BTC, ETH, XRP, XLM, BCH, LTC, DASH, BSV, DOGE and GRS that allow you to find, sort and filter transactions and addresses.",
   "chain":{
     "bitcoin":"Bitcoin",
     "bitcoin/testnet": "Bitcoin Testnet",
@@ -11,7 +11,8 @@
     "litecoin":"Litecoin",
     "ethereum":"Ethereum",
     "ripple":"Ripple",
-    "groestlcoin": "Groestlcoin"
+    "groestlcoin": "Groestlcoin",
+    "stellar": "Stellar"
   },
   "ticker":{
     "bitcoin":"BTC",
@@ -24,19 +25,20 @@
     "ethereum":"ETH",
     "ripple":"XRP",
     "usd":"USD",
-    "groestlcoin": "GRS"
+    "groestlcoin": "GRS",
+    "stellar": "XLM"
   },
   "homepage":{
     "title":"Blockchair — Universal blockchain explorer and search engine",
     "screen1": {
-      "placehodler": "Search in 9 blockchains…",
+      "placehodler": "Search in 10 blockchains…",
       "qrcode": {
         "title": "Scan QR-code of an address",
         "modal": {
           "title": "Scan QR-code"
         }
       },
-      "description": "Blockchair is the most private search engine for {bitcoin}, {ethereum}, {ripple}, {bitcoin_cash}, {litecoin}, {bitcoin_sv}, {dash}, {dogecoin} and {groestlcoin}. Search for {transactions}, {addresses}, {blocks}, and even {embedded}.",
+      "description": "Blockchair is the most private search engine for {bitcoin}, {ethereum}, {ripple}, {bitcoin_cash}, {litecoin}, {bitcoin_sv}, {stellar}, {dash}, {dogecoin} and {groestlcoin}. Search for {transactions}, {addresses}, {blocks}, and even {embedded}.",
       "scope":{
         "transactions":"transactions",
         "addresses":"addresses",
@@ -76,6 +78,10 @@
           "circulation": "Circulation:",
           "best_ledger": "Latest ledger:",
           "volume_24h": "Volume 24h:"
+        },
+        "stellar": {
+          "operations_24h": "Operations 24h:",
+          "failed_transactions_24h": "Failed txs 24h:"
         },
         "services": {
           "charts": "Charts",
@@ -282,10 +288,10 @@
       },
       "search": {
         "desktop": {
-          "placeholder": "Search in 9 blockchains (BTC/ETH/XRP/BCH/LTC/BSV/DASH/DOGE/GRS)"
+          "placeholder": "Search in 10 blockchains (BTC/ETH/XRP/BCH/LTC/BSV/XLM/DASH/DOGE/GRS)"
         },
         "mobile": {
-          "placeholder": "Search in 9 blockchains"
+          "placeholder": "Search in 10 blockchains"
         }
       }
     },
@@ -542,7 +548,7 @@
           "reward_usd":"Miner reward (USD)",
           "size":{
             "short":"Size",
-            "full":"Size (bytes)",
+            "full":"Size (kB)",
             "kb":"(kB)"
           },
           "weight":{
@@ -552,7 +558,7 @@
           },
           "stripped_size":{
             "short":"Stripped size",
-            "full":"Stripped size (bytes)"
+            "full":"Stripped size (kB)"
           },
           "version":{
             "short":"Version",
@@ -1323,6 +1329,59 @@
           },
           "transactions":"Latest account transactions"
         }
+      },
+      "stellar": {
+        "ledger": {
+          "height": "Height",
+          "hash": "Hash",
+          "closed_at": "Closed at",
+          "transaction_count": "Transaction count",
+          "successful": "Successful: {transaction_count}",
+          "failed": "Failed: {transaction_count}",
+          "operation_count": "Operation count",
+          "fee_pool": "Fee pool",
+          "base_fee": "Base fee",
+          "base_reserve": "Base reserve",
+          "protocol_version": "Protocol version"
+        },
+        "transaction": {
+          "hash": "Transaction hash",
+          "created_at": "Created at",
+          "successful": "Successful?",
+          "ledger": "Included in ledger",
+          "source_account": "Source account",
+          "source_account_sequence": "Source account sequence",
+          "fee_paid": "Fee paid",
+          "operations": {
+            "caption": "Operations",
+            "type": "Type",
+            "id": "Id",
+            "from": "From",
+            "to": "To",
+            "amount": "Amount",
+            "offer_id": "Offer id",
+            "account": "Account",
+            "funder": "Funder",
+            "starting_balance": "Starting balance",
+            "selling_asset_code": "Selling asset code",
+            "selling_asset_issuer": "Selling asset issuer",
+            "price": "Price",
+            "buying_asset_code": "Buying asset code",
+            "buying_asset_issuer": "Buying asset issuer",
+            "asset_code": "Asset code",
+            "asset_issuer": "Asset issuer",
+            "trustee": "Trustee account",
+            "trustor": "Trustor account",
+            "limit": "Limit",
+            "home_domain": "Home domain"
+          }
+        },
+        "account": {
+          "id": "Account id",
+          "subentry_count": "Subentry count",
+          "inflation_destination": "Inflation destination",
+          "last_modified_ledger": "Last modified ledger"
+        }
       }
     },
     "protocol":{
@@ -1521,6 +1580,17 @@
           "24h_stats": {
             "ledgers": "Ledgers:",
             "average_ledger_time": "Avg. time between ledgers:"
+          }
+        }
+      },
+      "stellar": {
+        "title": "Stellar Explorer",
+        "description": "",
+        "stats": {
+          "24h_stats": {
+            "successful_transactions": "Successful transactions:",
+            "failed_transactions": "Failed transactions:",
+            "operations": "Operations:"
           }
         }
       },
@@ -1970,7 +2040,7 @@
     "navigation":"About",
     "what_is":{
       "caption":"What is Blockchair?",
-      "description1":"{service} is a blockchain search and analytics engine for {bitcoin_link}, {ethereum_link}, {bitcoin_cash_link}, {litecoin_link}, {bitcoin_sv_link}, {dash_link}, {ripple_link}, {dogecoin_link} and {groestlcoin_link} or you can also say it's an engine that consists of blockchain explorers on steroids. You can filter and sort blocks, transactions, and their content by a variety of different criteria, as well as perform full-text search over the blockchains.",
+      "description1":"{service} is a blockchain search and analytics engine for {bitcoin_link}, {ethereum_link}, {ripple_link}, {bitcoin_cash_link}, {litecoin_link}, {bitcoin_sv_link}, {stellar_link}, {dash_link}, {dogecoin_link} and {groestlcoin_link} or you can also say it's an engine that consists of blockchain explorers on steroids. You can filter and sort blocks, transactions, and their content by a variety of different criteria, as well as perform full-text search over the blockchains.",
       "description2":"To understand what our search engine is capable of you can try to search for {search_bitcoin_link}, look at {biggest_bitcoin_cash_blocks_link}, or try any of other examples featured on {homepage_link}.",
       "biggest_bitcoin_cash_blocks":"the biggest Bitcoin Cash blocks",
       "homepage":"our homepage",
@@ -2158,6 +2228,7 @@
       },
       "body":{
         "stablecoin": "Stablecoin",
+        "explore": "Explore",
         "portfolio":{
           "total_profit":"Total portfolio value: {total_profit} {profit_change_24h}",
           "empty_list":"You do not have a portfolio. Start a portfolio by adding coins to your favorites!"
