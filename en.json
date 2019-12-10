@@ -1,6 +1,6 @@
 {
   "title":"Blockchair",
-  "description":"Block explorer and the most powerful API for BTC, ETH, XRP, XLM, BCH, LTC, DASH, BSV, DOGE and GRS that allow you to find, sort and filter transactions and addresses.",
+  "description":"Block explorer and the most powerful API for BTC, ETH, XRP, XLM, BCH, LTC, DASH, BSV, DOGE, GRS and TON that allow you to find, sort and filter transactions and addresses.",
   "chain":{
     "bitcoin":"Bitcoin",
     "bitcoin/testnet": "Bitcoin Testnet",
@@ -12,7 +12,8 @@
     "ethereum":"Ethereum",
     "ripple":"Ripple",
     "groestlcoin": "Groestlcoin",
-    "stellar": "Stellar"
+    "stellar": "Stellar",
+    "ton": "Telegram Open Network"
   },
   "ticker":{
     "bitcoin":"BTC",
@@ -26,7 +27,8 @@
     "ripple":"XRP",
     "usd":"USD",
     "groestlcoin": "GRS",
-    "stellar": "XLM"
+    "stellar": "XLM",
+    "ton": "GRAM"
   },
   "homepage":{
     "title":"Blockchair — Universal blockchain explorer and search engine",
@@ -34,14 +36,14 @@
       "my_portfolio":"My portfolio: {total_profit}"
     },
     "screen1": {
-      "placehodler": "Search in 10 blockchains…",
+      "placehodler": "Search in {count} blockchains…",
       "qrcode": {
         "title": "Scan QR-code of an address",
         "modal": {
           "title": "Scan QR-code"
         }
       },
-      "description": "Blockchair is the most private search engine for {bitcoin}, {ethereum}, {ripple}, {bitcoin_cash}, {litecoin}, {bitcoin_sv}, {stellar}, {dash}, {dogecoin} and {groestlcoin}. Search for {transactions}, {addresses}, {blocks}, and even {embedded}.",
+      "description": "Blockchair is the most private search engine for {blockchains}. Search for {transactions}, {addresses}, {blocks}, and even {embedded}.",
       "scope":{
         "transactions":"transactions",
         "addresses":"addresses",
@@ -64,6 +66,7 @@
       "card": {
         "bitcoin": {
           "blocks": "Blocks:",
+          "blocks_24h": "24h blocks:",
           "transactions": "Transactions:",
           "outputs": "Outputs:",
           "mempool_txs": "Unconfirmed txs:",
@@ -85,6 +88,9 @@
         "stellar": {
           "operations_24h": "Operations 24h:",
           "failed_transactions_24h": "Failed txs 24h:"
+        },
+        "ton": {
+          "first_block_time": "Current testnet was launched on:"
         },
         "services": {
           "charts": "Charts",
@@ -305,10 +311,10 @@
       },
       "search": {
         "desktop": {
-          "placeholder": "Search in 10 blockchains (BTC/ETH/XRP/BCH/LTC/BSV/XLM/DASH/DOGE/GRS)"
+          "placeholder": "Search in {count} blockchains ({tickers})"
         },
         "mobile": {
-          "placeholder": "Search in 10 blockchains"
+          "placeholder": "Search in {count} blockchains"
         }
       }
     },
@@ -465,8 +471,8 @@
         "server_error":"Oh noez! {error} 😯",
         "no_results":"No results 😕",
         "no_more_results":"No more results 👐",
-        "explore_list":"Explore this list ({difference} more rows)... 👐",
-        "load_more":"Load more ({difference} results left)... 👉"
+        "explore_list":"Explore this list ({difference} more rows)",
+        "load_more":"Load more ({difference} results left)"
       },
       "bitcoin":{
         "blocks":{
@@ -1038,6 +1044,7 @@
           "see_more": "Click to see more",
           "hide_details": "Hide details",
           "explorers":"Other blockchain explorers",
+          "api_docs": "Read API documentation",
           "last_transactions":"Transactions included in this block"
         },
         "transaction":{
@@ -1402,6 +1409,52 @@
             "caption":"Account balances"
           }
         }
+      },
+      "ton": {
+        "block": {
+          "shard_tooltip": "Shard: ({workchain},{shard})",
+          "shards_count": "Shards count",
+          "shard": "Shard",
+          "time": "Created",
+          "created": "Created",
+          "minted": "Minted",
+          "imported": "Imported",
+          "exported": "Exported",
+          "recovered": "Recovered",
+          "fees_collected": "Fees collected",
+          "gram_flow": "Gram flow",
+          "roothash": "Roothash",
+          "filehash": "Filehash",
+          "lt": "Logical time",
+          "userfriendly_address": "Address",
+          "transactions": "Transactions included in this block"
+        },
+        "transaction": {
+          "prev_transaction": "Previous transaction",
+          "total_fee": "Total fee",
+          "account": "Account",
+          "status_change": "Status change",
+          "state_update": {
+            "old_hash": "Old hash",
+            "new_hash": "New hash"
+          },
+          "included_messages": "Messages included in this transaction"
+        },
+        "messages": {
+          "index": "Index",
+          "total_fee": "Total fee",
+          "source": "Source",
+          "destination": "Destination",
+          "value_gram": "Value (GRAM)"
+        },
+        "account": {
+          "last_trans": "Last transaction",
+          "storage_stats": "Storage stats",
+          "bits": "Bits",
+          "cells": "Cells",
+          "last_paid": "Last paid",
+          "public_cells": "Public cells"
+        }
       }
     },
     "protocol":{
@@ -1611,6 +1664,16 @@
             "successful_transactions": "Successful transactions:",
             "failed_transactions": "Failed transactions:",
             "operations": "Operations:"
+          }
+        }
+      },
+      "ton": {
+        "title": "Telegram Open Network Explorer",
+        "description": "",
+        "stats": {
+          "general": {
+            "best_block_file_hash": "Best block file hash:",
+            "best_block_root_hash": "Best block root hash:"
           }
         }
       },
@@ -2061,7 +2124,7 @@
     "navigation":"About",
     "what_is":{
       "caption":"What is Blockchair?",
-      "description1":"{service} is a blockchain search and analytics engine for {bitcoin_link}, {ethereum_link}, {ripple_link}, {bitcoin_cash_link}, {litecoin_link}, {bitcoin_sv_link}, {stellar_link}, {dash_link}, {dogecoin_link} and {groestlcoin_link} or you can also say it's an engine that consists of blockchain explorers on steroids. You can filter and sort blocks, transactions, and their content by a variety of different criteria, as well as perform full-text search over the blockchains.",
+      "description1":"{service} is a blockchain search and analytics engine for {blockchains_links} or you can also say it's an engine that consists of blockchain explorers on steroids. You can filter and sort blocks, transactions, and their content by a variety of different criteria, as well as perform full-text search over the blockchains.",
       "description2":"To understand what our search engine is capable of you can try to search for {search_bitcoin_link}, look at {biggest_bitcoin_cash_blocks_link}, or try any of other examples featured on {homepage_link}.",
       "biggest_bitcoin_cash_blocks":"the biggest Bitcoin Cash blocks",
       "homepage":"our homepage",
@@ -2290,7 +2353,7 @@
     "description": "",
     "form": {
       "placeholder": "Enter transaction hash",
-      "supported_blockchains": "Supported blockchains: {bitcoin_link}, {bitcoin_cash_link}, {litecoin_link}, {bitcoin_sv_link}, {dash_link}, {dogecoin_link} and {groestlcoin_link}"
+      "supported_blockchains": "Supported blockchains: {bitcoin_link}, {ethereum_link}, {bitcoin_cash_link}, {litecoin_link}, {bitcoin_sv_link}, {dash_link}, {dogecoin_link} and {groestlcoin_link}"
     },
     "receipt": {
       "download_link": "Download link: {pdf_link}",
@@ -2343,12 +2406,18 @@
     "social": "Social",
     "language": "Languages",
     "copyright":"© {year} Blockchair",
-    "market_data":"Market data by {coin_market_cap_link} and {coin_gecko_link}"
+    "market_data":"Market data by {coin_market_cap_link} and {coin_gecko_link}",
+    "faq":"FAQ"
   },
   "errors":{
     "http":{
       "payment_required":"You're sending too many requests. Please try again.",
       "not_found":"Not found in any blockchain 😞"
     }
+  },
+  "faq":{
+    "title":"FAQ — Frequently Asked Questions",
+    "description":"",
+    "navigation":"FAQ"
   }
 }
