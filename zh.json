@@ -1,6 +1,6 @@
 {
   "title":"Blockchair",
-  "description":"区块链浏览器，提供最强大的应用程序编程接口给比特币、以太币、比特币现金、莱特币、达世币、BSV币和狗币的搜索、排序、交易过滤和定位",
+  "description":"区块链浏览器，提供最强大的应用程序编程接口给比特币、以太币、比特币现金、瑞波币、XLM、莱特币、达世币、BSV币和狗币的搜索、排序、交易和地址过滤",
   "chain":{
     "bitcoin":"比特币",
     "bitcoin/testnet": "比特币测试网路",
@@ -11,7 +11,9 @@
     "litecoin":"莱特币",
     "ethereum":"以太坊",
     "ripple":"瑞波币",
-    "groestlcoin": "闪电币"
+    "groestlcoin": "闪电币",
+    "stellar": "Stellar",
+    "ton": "Telegram 开放网路"
   },
   "ticker":{
     "bitcoin":"BTC",
@@ -24,19 +26,24 @@
     "ethereum":"ETH",
     "ripple":"XRP",
     "usd":"USD",
-    "groestlcoin": "GRS"
+    "groestlcoin": "GRS",
+    "stellar": "XLM",
+    "ton": "GRAM"
   },
   "homepage":{
     "title":"Blockchair是一款通用区块链浏览器和搜索引擎",
+    "portfolio_widget": {
+      "my_portfolio":"我的投资组合: {total_profit}"
+    },
     "screen1": {
-      "placehodler": "在9个区块链中搜索",
+      "placehodler": "在 {count} 个区块链中搜索",
       "qrcode": {
         "title": "扫描地址二维码",
         "modal": {
           "title": "扫描二维码"
         }
       },
-      "description": "Blockchair提供 {bitcoin}、{ethereum}、{ripple}、{bitcoin_cash}、{litecoin}、{bitcoin_sv}、{dash}、{groestlcoin}和{dogecoin}. 你可以搜索 {transactions}、{addresses}、{blocks}、以及 {embedded}.",
+      "description": "Blockchair 是 {blockchains} 隐私最好的搜索引擎。可搜索{transactions}, {addresses}, {blocks} 以及 {embedded}",
       "scope":{
         "transactions":"交易",
         "addresses":"地址",
@@ -59,6 +66,7 @@
       "card": {
         "bitcoin": {
           "blocks": "区块:",
+          "blocks_24h": "24小时区块",
           "transactions": "交易:",
           "outputs": "输出:",
           "mempool_txs": "未经证实的交易:",
@@ -76,6 +84,13 @@
           "circulation": "流通量",
           "best_ledger": "最新账本:",
           "volume_24h": "24小时链上交易量:"
+        },
+        "stellar": {
+          "operations_24h": "24小时操作",
+          "failed_transactions_24h": "24小时失败交易"
+        },
+        "ton": {
+          "first_block_time": "现测试网路上线于:"
         },
         "services": {
           "charts": "图表",
@@ -222,6 +237,9 @@
         },
         "address":{
           "title":"以太坊地址: {address}"
+        },
+        "erc_20": {
+          "transaction_count_30d": "过去一个月的交易: {transactions_link}"
         }
       },
       "ripple": {
@@ -233,6 +251,16 @@
         "account": {
           "title": "瑞波币账户 {account}",
           "balance":"余额: {balance}"
+        }
+      },
+      "stellar": {
+        "transaction": {
+          "created_at": "创建于: {created_at}",
+          "ledger": "包括于账本: {ledger}",
+          "fee_paid": "已交费用: {fee_paid}"
+        },
+        "account": {
+          "title": "Stellar 账户 {account}"
         }
       }
     }
@@ -278,14 +306,15 @@
           "charts":"图表",
           "broadcast": "广播"
         },
-        "token_explorers": "代币浏览器"
+        "erc_20_tokens": "ERC-20代币",
+        "omni_layer_tokens": "Omni Layer代币"
       },
       "search": {
         "desktop": {
-          "placeholder": "在9个区块链中搜索(BTC/ETH/XRP/BCH/LTC/BSV/DASH/DOGE/GRS)"
+          "placeholder": "在 {count} 个区块链中搜索 ({tickers})"
         },
         "mobile": {
-          "placeholder": "在9个区块链中搜索"
+          "placeholder": "在 {count} 个区块链中搜索"
         }
       }
     },
@@ -428,8 +457,8 @@
         "server_error":"出错啦！{error} 😯",
         "no_results":"无结果 😕",
         "no_more_results":"无更多结果 👐",
-        "explore_list":"探索此列表（{difference}更多行）... 👐",
-        "load_more":"加载更多（{difference}结果）... 👉"
+        "explore_list":"探索此列表（{difference}更多行）",
+        "load_more":"加载更多（尚余{difference}结果）... 👉"
       },
       "bitcoin":{
         "blocks":{
@@ -528,7 +557,7 @@
           "reward_usd":"矿工奖励（USD）",
           "size":{
             "short":"大小",
-            "full":"大小（字节)",
+            "full":"大小 (kB)",
             "kb":"(KB)"
           },
           "weight":{
@@ -538,7 +567,7 @@
           },
           "stripped_size":{
             "short":"除隔离见证交易大小",
-            "full":"除隔离见证交易大小(bytes) "
+            "full":"除隔离见证交易大小 (kB)"
           },
           "version":{
             "short":"版本",
@@ -1001,6 +1030,7 @@
           "see_more": "点此查看更多",
           "hide_details": "隐藏细节",
           "explorers":"其它区块链搜索引擎",
+          "api_docs": "阅读API说明",
           "last_transactions":"此区块包括的交易"
         },
         "transaction":{
@@ -1309,6 +1339,108 @@
           },
           "transactions":"最近账户交易"
         }
+      },
+      "stellar": {
+        "ledger": {
+          "height": "高度",
+          "hash": "哈希值",
+          "closed_at": "关闭于",
+          "transaction_count": "交易计数",
+          "successful": "成功: {transaction_count}",
+          "failed": "失败: {transaction_count}",
+          "operation_count": "操作计数",
+          "fee_pool": "费用池",
+          "base_fee": "基本费",
+          "base_reserve": "基本储备",
+          "protocol_version": "协议版本"
+        },
+        "transaction": {
+          "hash": "交易哈希",
+          "created_at": "创建于",
+          "successful": "成功?",
+          "ledger": "包括于账本",
+          "source_account": "来源账户",
+          "source_account_sequence": "来源账户序列",
+          "fee_paid": "已缴费用",
+          "operations": {
+            "caption": "操作",
+            "type": "形式",
+            "id": "Id",
+            "from": "从",
+            "to": "到",
+            "amount": "金额",
+            "offer_id": "Offer id",
+            "account": "账户",
+            "funder": "付费方",
+            "starting_balance": "起始金额",
+            "selling_asset_code": "卖方资产序号",
+            "selling_asset_issuer": "卖方资产发行者",
+            "price": "价格",
+            "buying_asset_code": "买方资产序号",
+            "buying_asset_issuer": "买方资产发行者",
+            "asset_code": "资产序号",
+            "asset_issuer": "资产发行者",
+            "trustee": "受托人账户",
+            "trustor": "委讬人账户",
+            "limit": "限制",
+            "home_domain": "主域"
+          }
+        },
+        "account": {
+          "id": "账户id",
+          "subentry_count": "子项目计数",
+          "inflation_destination": "通膨目标地址",
+          "last_modified_ledger": "最后修改账本",
+          "balances": {
+            "caption":"账户余额"
+          }
+        }
+      },
+      "ton": {
+        "block": {
+          "shard_tooltip": "分片: ({workchain},{shard}) ",
+          "shards_count": "分片数",
+          "shard": "分片",
+          "time": "创建",
+          "created": "创建",
+          "minted": "铸造",
+          "imported": "输入",
+          "exported": "输出",
+          "recovered": "回收",
+          "fees_collected": "获得费用",
+          "gram_flow": "Gram 流动",
+          "roothash": "根哈希",
+          "filehash": "档案哈希",
+          "lt": "逻辑时间",
+          "userfriendly_address": "地址",
+          "transactions": "此区块包括的交易"
+        },
+        "transaction": {
+          "prev_transaction": "上笔交易",
+          "total_fee": "总费用",
+          "account": "账户",
+          "status_change": "状态变更",
+          "state_update": {
+            "old_hash": "旧哈希",
+            "new_hash": "新哈希"
+          },
+          "included_messages": "此交易包含的信息"
+        },
+        "messages": {
+          "index": "指数",
+          "total_fee": "总费用",
+          "source": "来源",
+          "destination": "目标地址",
+          "value_gram": "价值（GRAM）"
+        },
+        "account": {
+          "last_trans": "最新交易",
+          "storage_stats": "存储数据",
+          "bits": "比特",
+          "cells": "单元格",
+          "last_paid": "最新付费",
+          "public_cells": "公共单元格"
+        }
       }
     },
     "protocol":{
@@ -1509,6 +1641,25 @@
           }
         }
       },
+      "stellar": {
+        "title": "Stellar搜索引擎",
+        "stats": {
+          "24h_stats": {
+            "successful_transactions": "成功交易:",
+            "failed_transactions": "失败交易:",
+            "operations": "操作"
+          }
+        }
+      },
+      "ton": {
+        "title": "Telegram 开放网路搜索引擎",
+        "stats": {
+          "general": {
+            "best_block_file_hash": "最好的区块档案哈希:",
+            "best_block_root_hash": "最好的区块根哈希:"
+          }
+        }
+      },
       "ethereum": {
         "title": "以太坊搜索引擎",
         "description": "查找以太坊（ETH）区块、交易、地址、智能合约、余额和区块链统计信息",
@@ -1589,6 +1740,7 @@
     "bitcoin":{
       "nodes":{
         "description":"以节点地区、软件、版本和共识规则来探索比特币网络",
+        "other_nodes":"其他节点",
         "last_updated":"最近更新：",
         "versions":{
           "caption":"节点版本：",
@@ -1948,7 +2100,7 @@
     "navigation":"关于",
     "what_is":{
       "caption":"Blockchair是什么？",
-      "description1":"{service}是{bitcoin_link}、{ethereum_link}、{bitcoin_cash_link}、{litecoin_link}、{bitcoin_sv_link}、{dash_link}、{ripple_link}、{groestlcoin_link}和{dogecoin_link}的区块链搜索和分析引擎，或者您也可以说它是超级区块链搜索引擎。 您可以通过各种不同的标准对块，事务及其内容进行筛选和排序，以及对区块链执行全文搜索。",
+      "description1":"{service}是{blockchains_link}的区块链搜索和分析引擎，或者您也可以说它是超级区块链搜索引擎。 您可以通过各种不同的标准对区块，交易及其内容进行筛选和排序，以及对区块链执行全文搜索。",
       "description2":"要了解我们的搜索引擎功能，您可以尝试搜索{search_bitcoin_link}，查看{largest_bitcoin_cash_blocks_link}，或尝试使用{homepage_link}上的任何其他示例。",
       "biggest_bitcoin_cash_blocks":"最大的比特币现金块",
       "homepage":"我们的主页",
@@ -2118,7 +2270,7 @@
     "title":"市场",
     "navigation":"市场",
     "coins": "前1000名",
-    "my_portfolio":"我的投资组合 ({total_profit})",
+    "my_portfolio":"我的投资组合: ({total_profit})",
     "table":{
       "head":{
         "coin_name":"币种",
@@ -2134,9 +2286,11 @@
       },
       "body":{
         "stablecoin": "稳定币",
+        "explore": "探索",
         "portfolio":{
           "total_profit":"投资组合总值: {total_profit} {profit_change_24h}",
-          "empty_list":"现在你还没有投资组合，请先把币种加入收藏以创建投资组合！"
+          "empty_list":"您没有投资组合",
+          "start_portfolio": "请把币种加入收藏以创建投资组合！"
         },
         "load_more":"加载更多"
       }
@@ -2162,6 +2316,18 @@
     "docs": {
       "title": "Blockchair API说明",
       "navigation": "说明文件"
+    }
+  },
+  "pdf": {
+    "navigation": "PDF收据",
+    "title": "取得交易PDF收据",
+    "form": {
+      "placeholder": "输入交易哈希",
+      "supported_blockchains": "支持区块链: {bitcoin_link}, {ethereum_link}, {bitcoin_cash_link}, {litecoin_link}, {bitcoin_sv_link}, {dash_link}, {dogecoin_link} 与 {groestlcoin_link}"
+    },
+    "receipt": {
+      "download_link": "下载链结: {pdf_link}",
+      "no_transaction": "找不到带此哈希的交易"
     }
   },
   "hints":{
@@ -2197,6 +2363,7 @@
     "feed":"Feed",
     "broadcast":"广播交易",
     "dumps":"转储",
+    "pdf": "取得PDF收据",
     "compare": "比较",
     "useful_links": "有用的链接",
     "about": "关于",
@@ -2209,12 +2376,17 @@
     "social": "社会",
     "language": "语言",
     "copyright":"© {year} Blockchair",
-    "market_data":"市场数据由{coin_market_cap_link}以及{coin_gecko_link}"
+    "market_data":"市场数据由{coin_market_cap_link}以及{coin_gecko_link}",
+    "faq":"常见问题"
   },
   "errors":{
     "http":{
       "payment_required":"请求过于频繁，请稍后再试。",
       "not_found":"在所有区块链上都找不到"
     }
+  },
+  "faq":{
+    "title":"常见问题",
+    "navigation":"常见问题"
   }
 }
