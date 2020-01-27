@@ -13,7 +13,9 @@
     "ripple":"Ripple",
     "groestlcoin": "Groestlcoin",
     "stellar": "Stellar",
-    "ton": "Telegram Open Network"
+    "ton": "Telegram Open Network",
+    "monero": "Monero",
+    "cardano": "Cardano"
   },
   "ticker":{
     "bitcoin":"BTC",
@@ -28,7 +30,9 @@
     "usd":"USD",
     "groestlcoin": "GRS",
     "stellar": "XLM",
-    "ton": "GRAM"
+    "ton": "GRAM",
+    "monero":"XMR",
+    "cardano": "ADA"
   },
   "homepage":{
     "title":"Blockchair — Universal blockchain explorer and search engine",
@@ -96,7 +100,6 @@
           "charts": "Charts",
           "nodes": "Nodes",
           "omni": "Omni",
-          "wormhole": "Wormhole",
           "compare": "Compare",
           "feed": "Feed",
           "stats": "Stats",
@@ -262,6 +265,11 @@
         "account": {
           "title": "Stellar account {account}"
         }
+      },
+      "ton": {
+        "created_at": "Created at: {time}",
+        "workchain": "Workchain: {workchain}",
+        "shard": "Shard: {shard}"
       }
     }
   },
@@ -280,7 +288,6 @@
             "outputs":"Outputs",
             "addresses": "Addresses",
             "omni":"Omni Layer",
-            "wormhole":"Wormhole",
             "nodes":"Node explorer",
             "testnet": "Testnet explorer",
             "whitepaper":"Whitepaper"
@@ -340,7 +347,6 @@
         "calls":"Calls",
         "omni":"Omni Layer",
         "erc-20": "ERC-20",
-        "wormhole":"Wormhole",
         "charts":"Charts",
         "addresses": "Addresses"
       },
@@ -970,6 +976,11 @@
               "exactly_one_hundredth":"exactly $ 0.01"
             }
           },
+          "fee_per_b":{
+            "title":{
+              "full":"Fee per byte ({ticker})"
+            }
+          },
           "generation":{
             "title":{
               "full":"Generation ({ticker})"
@@ -1043,8 +1054,9 @@
           "technical_details":"Technical details",
           "see_more": "Click to see more",
           "hide_details": "Hide details",
-          "explorers":"Other blockchain explorers",
-          "api_docs": "Read API documentation",
+          "explorers":"Alternative explorers",
+          "for_developers": "For developers",
+          "api_docs": "API docs",
           "last_transactions":"Transactions included in this block"
         },
         "transaction":{
@@ -1081,7 +1093,7 @@
             "dimension": "satoshi"
           },
           "raw_transaction":{
-            "title":"Raw txn",
+            "title":"Raw tx",
             "form":{
               "hex":"Raw transaction (hex):",
               "decoded":"Decoded raw transaction (json):"
@@ -1090,7 +1102,8 @@
           },
           "pdf_receipt":"PDF receipt",
           "senders":"Senders",
-          "recipients":"Recipients"
+          "recipients":"Recipients",
+          "senders_and_recipients": "Senders and recipients"
         },
         "address":{
           "description":"Check Bitcoin (BTC) address {address} balance and its transactions",
@@ -1117,9 +1130,6 @@
               "title":"Omni tokens",
               "token_name":"Token name",
               "balance":"Balance"
-            },
-            "wormhole":{
-              "title":"Wormhole tokens"
             }
           },
           "qr_code":"QR code",
@@ -1129,8 +1139,7 @@
             "time":"Timestamp:",
             "no_transactions":"No transactions yet",
             "protocol":{
-              "omni":"Contains Omni Layer data",
-              "wormhole":"Contains Wormhole data"
+              "omni":"Contains Omni Layer data"
             }
           }
         },
@@ -1166,10 +1175,7 @@
           "description":"Bitcoin Cash (BCH) block {height}, hash: {hash}, date: {date}"
         },
         "transaction":{
-          "description":"Bitcoin Cash (BCH) transaction {hash}, date: {date}",
-          "protocol":{
-            "wormhole":"Wormhole transaction"
-          }
+          "description":"Bitcoin Cash (BCH) transaction {hash}, date: {date}"
         },
         "address":{
           "description":"Check Bitcoin Cash (BCH) address {cash_address} ({legacy_address}), its balance and transactions"
@@ -1287,6 +1293,7 @@
       },
       "ripple":{
         "ledger":{
+          "description": "Ripple (XRP) ledger: {ledger_id}, hash: {ledger_hash}, date: {time}",
           "ledger_index":"Ledger index",
           "ledger_hash":"Ledger hash",
           "parent_hash":"Parent hash",
@@ -1295,7 +1302,8 @@
           "total_coins":"Total coins",
           "last_transactions":"Transactions included in this ledger"
         },
-        "transaction":{
+        "transaction": {
+          "description": "Ripple (XRP) transaction: {tx_hash}, date: {time}",
           "transaction_index":"Index in ledger",
           "account":"Account",
           "sequence":"Sequence",
@@ -1343,6 +1351,7 @@
           }
         },
         "account": {
+          "description": "Ripple (XRP) account: {account}, balance: {balance}",
           "account_summary":"Account summary",
           "previous_txn":"Last tx",
           "sequence":"Next sequence",
@@ -1356,6 +1365,7 @@
       },
       "stellar": {
         "ledger": {
+          "description": "Stellar (XLM) ledger: {ledger_id}, hash: {ledger_hash}, date: {time}",
           "height": "Height",
           "hash": "Hash",
           "closed_at": "Closed at",
@@ -1369,6 +1379,7 @@
           "protocol_version": "Protocol version"
         },
         "transaction": {
+          "description": "Stellar (XLM) transaction: {tx_hash}, date: {time}",
           "hash": "Transaction hash",
           "created_at": "Created at",
           "successful": "Successful?",
@@ -1398,9 +1409,12 @@
             "trustor": "Trustor account",
             "limit": "Limit",
             "home_domain": "Home domain"
-          }
+          },
+          "memo_type": "Memo type",
+          "memo": "Memo"
         },
         "account": {
+          "description": "Stellar (XLM) account: {account}, balance: {balance}",
           "id": "Account id",
           "subentry_count": "Subentry count",
           "inflation_destination": "Inflation destination",
@@ -1412,8 +1426,11 @@
       },
       "ton": {
         "block": {
+          "description": "Telegram Open Network block: {block_id}, workchain: {workchain_id}, shard: {shard}, date: {time} – TON Explorer",
+          "seqno": "Seqno",
           "shard_tooltip": "Shard: ({workchain},{shard})",
-          "shards_count": "Shards count",
+          "shards_count": "Shard count",
+          "workchain": "Workchain",
           "shard": "Shard",
           "time": "Created",
           "created": "Created",
@@ -1430,6 +1447,7 @@
           "transactions": "Transactions included in this block"
         },
         "transaction": {
+          "description": "Telegram Open Network transaction {transaction_hash}, account: {userfriendly_account}, shard: {shard}",
           "prev_transaction": "Previous transaction",
           "total_fee": "Total fee",
           "account": "Account",
@@ -1445,15 +1463,48 @@
           "total_fee": "Total fee",
           "source": "Source",
           "destination": "Destination",
-          "value_gram": "Value (GRAM)"
+          "value_gram": "Value (GRAM)",
+          "type": "Type"
         },
         "account": {
+          "description": "Telegram Open Network account: {hex_account}, GRAM balance: {balance}",
           "last_trans": "Last transaction",
           "storage_stats": "Storage stats",
           "bits": "Bits",
           "cells": "Cells",
           "last_paid": "Last paid",
           "public_cells": "Public cells"
+        }
+      },
+      "monero": {
+        "block": {
+          "description": "Monero block: {block_id}, hash: {hash} – Monero Explorer"
+        },
+        "transaction": {
+          "description": "Monero transaction: {hash} – Monero Explorer",
+          "mixin": "Signers",
+          "payment_id": "Payment Id",
+          "tx_fee": "Fee (XMR)",
+          "size": "Size (B)",
+          "xmr_outputs": "Outputs",
+          "rct_type": "RingCT Type"
+        },
+        "check_transaction": {
+          "title": "Prove transaction",
+          "decode_outputs": "Decode outputs",
+          "prove_sending": "Prove sending",
+          "proved": "Proved",
+          "transaction_key": "Transaction key",
+          "view_key": "View key"
+        },
+        "stats": {
+          "suggested_transaction_fee_dimension": "piconero per byte"
+        }
+      },
+      "cardano": {
+        "block": {
+          "epoch": "Epoch",
+          "slot": "Slot"
         }
       }
     },
@@ -1519,27 +1570,6 @@
             }
           }
         }
-      },
-      "bitcoin-cash":{
-        "wormhole":{
-          "homepage":{
-            "title":"Wormhole Explorer",
-            "description":"Explore Wormhole (WHC) protocol transactions and properties in the Bitcoin Cash (BCH) blockchain",
-            "stats":{
-              "title":"Wormhole stats"
-            }
-          },
-          "infinitable":{
-            "description":{
-              "properties":"Explore all Wormhole (WHC) properties"
-            }
-          },
-          "type":{
-            "property":{
-              "description":"{name} (#{id}) property in {ecosystem} Wormhole protocol. Website: {url}"
-            }
-          }
-        }
       }
     },
     "homepage":{
@@ -1565,7 +1595,8 @@
             "dimension": {
               "bitcoin": "Eh/s",
               "ethereum": "Th/s",
-              "dash": "Ph/s"
+              "dash": "Ph/s",
+              "monero": "Gh/s"
             }
           },
           "tps": "Txs per second:",
@@ -1641,7 +1672,7 @@
       },
       "ripple": {
         "title": "Ripple Explorer",
-        "description": "",
+        "description": "Look up Ripple (XRP) ledgers, transactions, addresses and balances, blockchain stats and charts",
         "stats": {
           "ledgers": "Ledgers",
           "circulation": "Circulation",
@@ -1654,11 +1685,12 @@
             "ledgers": "Ledgers:",
             "average_ledger_time": "Avg. time between ledgers:"
           }
-        }
+        },
+        "latest_ledgers": "Latest ledgers"
       },
       "stellar": {
         "title": "Stellar Explorer",
-        "description": "",
+        "description": "Look up Stellar (XLM) ledgers, transactions, addresses and balances, blockchain stats and charts",
         "stats": {
           "24h_stats": {
             "successful_transactions": "Successful transactions:",
@@ -1668,12 +1700,31 @@
         }
       },
       "ton": {
-        "title": "Telegram Open Network Explorer",
-        "description": "",
+        "title": "Telegram Open Network (TON) Explorer",
+        "description": "TON blockchain explorer, blocks, GRAM balances, transactions and addresses",
         "stats": {
           "general": {
             "best_block_file_hash": "Best block file hash:",
             "best_block_root_hash": "Best block root hash:"
+          }
+        }
+      },
+      "monero": {
+        "title": "Monero Explorer",
+        "description": "Monero blockchain explorer, blocks, transactions and addresses",
+        "stats": {
+          "general": {
+            "best_block_file_hash": "Best block file hash:",
+            "best_block_root_hash": "Best block root hash:"
+          }
+        }
+      },
+      "cardano": {
+        "title": "Cardano Explorer",
+        "description": "Cardano blockchain explorer, blocks, transactions and addresses",
+        "stats": {
+          "general": {
+            
           }
         }
       },
@@ -1839,7 +1890,7 @@
         },
         "homepage": {
           "title": "Ethereum ERC-20 Explorer",
-          "description": "",
+          "description": "Look up ERC-20 (as USDT) tokens, transactions, balances, new contracts list",
           "stats":{
             "title":"ERC-20 stats",
             "tokens":"Total tokens",
@@ -1852,9 +1903,13 @@
           "latest_transactions":"Latest transactions"
         },
         "infinitable": {
+          "title": {
+            "tokens": "ERC-20 Tokens List",
+            "transactions": "ERC-20 Transactions List"
+          },
           "description": {
-            "tokens": "",
-            "transactions": ""
+            "tokens": "Look up ERC-20 (as USDT) most popular and newest tokens, sort and filter them by age, block ID and name",
+            "transactions": "Look up ERC-20 (as USDT) latest transactions, sort and filter them by age, block ID and value"
           },
           "tokens": {
             "address": "Address",
@@ -1878,7 +1933,8 @@
           }
         },
         "token": {
-          "description": "",
+          "title": "{token_name} ({token_symbol}) Explorer",
+          "description": "Look up {token_name} ({token_symbol}) latest transactions, addresses and balances",
           "navigation": "Token",
           "stats": {
             "time": "Created at:",
@@ -2109,7 +2165,7 @@
   },
   "nodes": {
     "title": "Nodes",
-    "description": "",
+    "description": "Look up blockchains nodes distribution by implementations, versions and countries",
     "navigation": "Nodes",
     "card": {
       "bitcoin": {
@@ -2154,12 +2210,13 @@
     }
   },
   "terms": {
-    "title": "Terms of service",
-    "description": "",
+    "title": "Terms of Service",
+    "description": "The Services are provided by Blockchair Legal agreement",
     "navigation":"Terms of service",
     "content": {
       "caption": "Blockchair terms of service",
-      "api": "API terms of service"
+      "api": "API terms of service",
+      "ads": "Advertisement terms of service"
     }
   },
   "feed":{
@@ -2294,7 +2351,7 @@
   "markets":{
     "title":"Markets",
     "navigation":"Markets",
-    "description":"",
+    "description":"Live cryptocurrencies prices and market cap, build and track your own portfolio",
     "coins": "Top 1000",
     "my_portfolio":"My portfolio: ({total_profit})",
     "table":{
@@ -2338,19 +2395,19 @@
   "api": {
     "navigation":"API",
     "homepage": {
-      "title": "Blockchair API Services",
-      "description": ""
+      "title": "Blockchain API",
+      "description": "Blockchain API"
     },
     "docs": {
-      "title": "Blockchair API Docs",
-      "description": "",
+      "title": "Blockchain API Documentation",
+      "description": "API for developers gives access to data in 12 blockchains (BTC, ETH, BCH, TON, BSV, XRP, XLM, ERC tokens etc)",
       "navigation": "Docs"
     }
   },
   "pdf": {
+    "title": "Transaction PDF receipt",
     "navigation": "PDF receipts",
-    "title": "Get transaction PDF receipt",
-    "description": "",
+    "description": "Generate beautiful bank-like PDF receipt of your crypto transaction",
     "form": {
       "placeholder": "Enter transaction hash",
       "supported_blockchains": "Supported blockchains: {bitcoin_link}, {ethereum_link}, {bitcoin_cash_link}, {litecoin_link}, {bitcoin_sv_link}, {dash_link}, {dogecoin_link} and {groestlcoin_link}"
@@ -2393,6 +2450,7 @@
     "feed":"Feed",
     "broadcast":"Broadcast transaction",
     "dumps":"Database dumps",
+    "dumps_node":"Full node dumps",
     "pdf": "Get PDF receipt",
     "compare": "Compare",
     "useful_links": "Useful links",
@@ -2407,7 +2465,9 @@
     "language": "Languages",
     "copyright":"© {year} Blockchair",
     "market_data":"Market data by {coin_market_cap_link} and {coin_gecko_link}",
-    "faq":"FAQ"
+    "faq":"FAQ",
+    "referral_program": "Referral program",
+    "advertise": "Advertise with us"
   },
   "errors":{
     "http":{
@@ -2416,8 +2476,23 @@
     }
   },
   "faq":{
-    "title":"FAQ — Frequently Asked Questions",
-    "description":"",
+    "title":"Frequently Asked Questions",
+    "description":"We only provide blockchain search and analytics services, not an exchange, bank or a wallet",
     "navigation":"FAQ"
+  },
+  "advertise":{
+    "title":"Advertise",
+    "description":"Promote your own product on Blockchair with banners, buttons and native text",
+    "navigation":"Advertise"
+  },
+  "language-proposal": {
+    "title": "This site is available in English, switch the language?",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "referral_program": {
+    "title": "Referral program",
+    "navigation": "Referral program",
+    "description": ""
   }
 }
