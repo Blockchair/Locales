@@ -1,5 +1,6 @@
 {
   "title":"Blockchair",
+  "subtitle":"区块链搜索引擎",
   "description":"区块链浏览器，提供最强大的应用程序编程接口给比特币、以太币、比特币现金、瑞波币、XLM、莱特币、达世币、BSV币和狗币的搜索、排序、交易和地址过滤",
   "chain":{
     "bitcoin":"比特币",
@@ -13,7 +14,10 @@
     "ripple":"瑞波币",
     "groestlcoin": "闪电币",
     "stellar": "Stellar",
-    "ton": "Telegram 开放网路"
+    "ton": "Telegram 开放网路",
+    "monero": "门罗币",
+    "cardano": "艾达币",
+    "zcash": "大零币"
   },
   "ticker":{
     "bitcoin":"BTC",
@@ -28,7 +32,10 @@
     "usd":"USD",
     "groestlcoin": "GRS",
     "stellar": "XLM",
-    "ton": "GRAM"
+    "ton": "GRAM",
+    "monero":"XMR",
+    "cardano": "ADA",
+    "zcash": "ZEC"
   },
   "homepage":{
     "title":"Blockchair是一款通用区块链浏览器和搜索引擎",
@@ -96,13 +103,13 @@
           "charts": "图表",
           "nodes": "节点",
           "omni": "Omni",
-          "wormhole": "虫洞",
           "compare": "比较",
           "feed": "feed",
           "stats": "统计",
           "uncles": "Uncles",
           "erc-20": "ERC-20"
-        }
+        },
+        "coming_soon": "敬请期待"
       },
       "erc-20": {
         "tokens": "代币",
@@ -262,6 +269,11 @@
         "account": {
           "title": "Stellar 账户 {account}"
         }
+      },
+      "ton": {
+        "created_at": "创建于: {time}",
+        "workchain": "工作链: {workchain}",
+        "shard": "分片: {shard)"
       }
     }
   },
@@ -280,7 +292,6 @@
             "outputs":"输出",
             "addresses": "地址",
             "omni":"Omni Layer",
-            "wormhole":"虫洞",
             "nodes":"节点浏览器",
             "testnet": "Testnet 浏览器",
             "whitepaper":"白皮书"
@@ -340,7 +351,6 @@
         "calls":"调用",
         "omni":"Omni Layer",
         "erc-20": "ERC-20",
-        "wormhole":"虫洞",
         "charts":"图表",
         "addresses": "地址"
       },
@@ -458,7 +468,8 @@
         "no_results":"无结果 😕",
         "no_more_results":"无更多结果 👐",
         "explore_list":"探索此列表（{difference}更多行）",
-        "load_more":"加载更多（尚余{difference}结果）... 👉"
+        "load_more":"加载更多（尚余{difference}结果）... 👉",
+        "show_next": "显示下一个 {limit} 项目 ({difference} 结果)"
       },
       "bitcoin":{
         "blocks":{
@@ -956,6 +967,11 @@
               "exactly_one_hundredth":"正好 $ 0.01"
             }
           },
+          "fee_per_b":{
+            "title":{
+              "full":"每字节费用 ({ticker})"
+            }
+          },
           "generation":{
             "title":{
               "full":"生成({ticker})"
@@ -1030,6 +1046,7 @@
           "see_more": "点此查看更多",
           "hide_details": "隐藏细节",
           "explorers":"其它区块链搜索引擎",
+          "for_developers": "开发人员使用",
           "api_docs": "阅读API说明",
           "last_transactions":"此区块包括的交易"
         },
@@ -1076,7 +1093,8 @@
           },
           "pdf_receipt":"PDF回执",
           "senders":"发送者",
-          "recipients":"接收者"
+          "recipients":"接收者",
+          "senders_and_recipients": "发送者与接受者"
         },
         "address":{
           "description":"检查比特币（BTC）地址{地址}余额及其交易 ",
@@ -1103,9 +1121,6 @@
               "title":"Omni代币",
               "token_name":"代币名称",
               "balance":"余额"
-            },
-            "wormhole":{
-              "title":"虫洞代币"
             }
           },
           "qr_code":"二维码",
@@ -1115,8 +1130,7 @@
             "time":"时间戳：",
             "no_transactions":"仍未有交易",
             "protocol":{
-              "omni":"包含Omni Layer数据",
-              "wormhole":"包含虫洞数据"
+              "omni":"包含Omni Layer数据"
             }
           }
         },
@@ -1152,10 +1166,7 @@
           "description":"比特币现金（BCH）块{height}、哈希：{hash}、日期：{date}"
         },
         "transaction":{
-          "description":"比特币现金（BCH）交易{hash}、日期：{date}",
-          "protocol":{
-            "wormhole":"虫洞交易"
-          }
+          "description":"比特币现金（BCH）交易{hash}、日期：{date}"
         },
         "address":{
           "description":"检查比特币现金（BCH）地址{cash_address}（{legacy_address}），其余额和交易"
@@ -1273,6 +1284,7 @@
       },
       "ripple":{
         "ledger":{
+          "description": "瑞波币(XRP) 账本: {ledger_id}, 哈希: {ledger_hash}, 日期: {time}",
           "ledger_index":"账本索引",
           "ledger_hash":"账本哈希",
           "parent_hash":"父哈希",
@@ -1281,7 +1293,8 @@
           "total_coins":"总币数",
           "last_transactions":"此分类帐中包含的交易"
         },
-        "transaction":{
+        "transaction": {
+          "description": "瑞波币（XRP）交易: {tx_hash}, 日期:{time}",
           "transaction_index":"分类账索引",
           "account":"账户",
           "sequence":"顺序",
@@ -1329,6 +1342,7 @@
           }
         },
         "account": {
+          "description": "瑞波币 (XRP) 账户: {account}, 余额: {balance}",
           "account_summary":"账户总结",
           "previous_txn":"最近tx",
           "sequence":"下一序列",
@@ -1342,6 +1356,7 @@
       },
       "stellar": {
         "ledger": {
+          "description": "恒星币 (XLM) 账本: {ledger_id}, 哈希: {ledger_hash}, 日期: {time}",
           "height": "高度",
           "hash": "哈希值",
           "closed_at": "关闭于",
@@ -1355,6 +1370,7 @@
           "protocol_version": "协议版本"
         },
         "transaction": {
+          "description": "恒星币 (XLM) 交易: {tx_hash}, 日期: {time}",
           "hash": "交易哈希",
           "created_at": "创建于",
           "successful": "成功?",
@@ -1384,9 +1400,12 @@
             "trustor": "委讬人账户",
             "limit": "限制",
             "home_domain": "主域"
-          }
+          },
+          "memo_type": "备忘录类型",
+          "memo": "备忘录"
         },
         "account": {
+          "description": "恒星币（XLM）账户: {account}, 余额: {balance}",
           "id": "账户id",
           "subentry_count": "子项目计数",
           "inflation_destination": "通膨目标地址",
@@ -1398,8 +1417,11 @@
       },
       "ton": {
         "block": {
+          "description": "电报开放网络 区块: {block_id}, 工作链: {workchain_id}, 分片: {shard}, 日期: {time} – 电报开放网络浏览器",
+          "seqno": "序列号",
           "shard_tooltip": "分片: ({workchain},{shard}) ",
           "shards_count": "分片数",
+          "workchain": "工作链",
           "shard": "分片",
           "time": "创建",
           "created": "创建",
@@ -1416,6 +1438,7 @@
           "transactions": "此区块包括的交易"
         },
         "transaction": {
+          "description": "电报开放网络 交易 {transaction_hash}, 账户: {userfriendly_account}, 分片: {shard}",
           "prev_transaction": "上笔交易",
           "total_fee": "总费用",
           "account": "账户",
@@ -1431,15 +1454,84 @@
           "total_fee": "总费用",
           "source": "来源",
           "destination": "目标地址",
-          "value_gram": "价值（GRAM）"
+          "value_gram": "价值（GRAM）",
+          "type": "类型"
         },
         "account": {
+          "description": "电报开放网络 账户: {hex_account}, GRAM 余额: {balance}",
           "last_trans": "最新交易",
           "storage_stats": "存储数据",
           "bits": "比特",
           "cells": "单元格",
           "last_paid": "最新付费",
           "public_cells": "公共单元格"
+        }
+      },
+      "monero": {
+        "block": {
+          "description": "门罗币 区块: {block_id}, 哈希: {hash} – 门罗币浏览器"
+        },
+        "transaction": {
+          "description": "门罗币 交易: {hash} – 门罗币浏览器",
+          "mixin": "签名人",
+          "payment_id": "支付ID",
+          "tx_fee": "费用（XMR）",
+          "size": "大小 (B)",
+          "xmr_outputs": "价值 (XMR)",
+          "rct_type": "环签交易类型"
+        },
+        "check_transaction": {
+          "title": "交易证明",
+          "decode_outputs": "解码输出",
+          "prove_sending": "发送证明",
+          "proved": "已证明",
+          "transaction_key": "交易密匙",
+          "view_key": "查看密匙"
+        },
+        "stats": {
+          "suggested_transaction_fee_dimension": "piconero/byte"
+        }
+      },
+      "cardano": {
+        "block": {
+          "description": "艾达币区块: {block_id}, 哈希: {hash} – 艾达币浏览器",
+          "epoch": "时段",
+          "slot": "时隙",
+          "total_sent": "ADA总发送",
+          "fees": "费用"
+        },
+        "transaction": {
+          "description": "艾达币交易: {hash} – 艾达币浏览器",
+          "output_total": "总输出 (ADA)",
+          "input_total": "总输入 (ADA)",
+          "fee_total": "总费用 (ADA)"
+        },
+        "address": {
+           "description": "艾达币地址: {hash} / 余额: {balance} – 艾达币浏览器"
+        }
+      },
+      "zcash": {
+        "block": {
+          "description": "大零币区块: {block_id}, 哈希: {hash} – 大零币浏览器"
+        },
+        "transaction": {
+          "description": "大零币交易: {hash} – 大零币浏览器",
+          "senders_and_recipients": "发送者与接受者<small>(公共)</small>",
+          "shielded_transfers": "屏蔽传输 <small>(私人)</small>",
+          "join_split": "JoinSplit",
+          "shielded_inputs": "隐私输入",
+          "shielded_outputs": "隐私输出",
+          "transfered_from": "传输来自屏蔽池",
+          "transfered_to": "传输到屏蔽池",
+          "validate": {
+            "title": "查看屏蔽交易",
+            "paymentdisclosure": "支付信息公开",
+            "submit": "提交",
+            "disclosed": "披露交易"
+          }
+        },
+        "address": {
+          "description": "大零币: {hash} / 余额: {balance} – 大零币浏览器"
         }
       }
     },
@@ -1505,27 +1597,6 @@
             }
           }
         }
-      },
-      "bitcoin-cash":{
-        "wormhole":{
-          "homepage":{
-            "title":"虫洞搜索引擎",
-            "description":"探索比特币现金（BCH）区块链中的虫洞（WHC）协议交易和属性",
-            "stats":{
-              "title":"虫洞状态"
-            }
-          },
-          "infinitable":{
-            "description":{
-              "properties":"探索所有虫洞（WHC）的属性"
-            }
-          },
-          "type":{
-            "property":{
-              "description":"{ecosystem}虫洞协议的{name}（#{id}）属性。网站：{url}"
-            }
-          }
-        }
       }
     },
     "homepage":{
@@ -1551,7 +1622,9 @@
             "dimension": {
               "bitcoin": "Eh/s",
               "ethereum": "Th/s",
-              "dash": "Ph/s"
+              "dash": "Ph/s",
+              "monero": "Gh/s",
+              "zcash": "Gs/s"
             }
           },
           "tps": "每秒交易:",
@@ -1627,6 +1700,7 @@
       },
       "ripple": {
         "title": "瑞波币搜索引擎",
+        "description": "查找瑞波币（XRP）账本、交易、地址、余额、区块链统计数据和图表",
         "stats": {
           "ledgers": "账簿",
           "circulation": "流通",
@@ -1639,10 +1713,12 @@
             "ledgers": "账簿:",
             "average_ledger_time": "账本平均间隔:"
           }
-        }
+        },
+        "latest_ledgers": "最新账本"
       },
       "stellar": {
         "title": "Stellar搜索引擎",
+        "description": "查找恒星币（XLM）账本、交易、地址、余额、区块链统计数据和图表",
         "stats": {
           "24h_stats": {
             "successful_transactions": "成功交易:",
@@ -1652,11 +1728,33 @@
         }
       },
       "ton": {
-        "title": "Telegram 开放网路搜索引擎",
+        "title": "Telegram开放网路（TON）搜索引擎",
+        "description": "电报开放网络区块链搜索引擎、区块、GRAM余额、交易和地址",
         "stats": {
           "general": {
             "best_block_file_hash": "最好的区块档案哈希:",
             "best_block_root_hash": "最好的区块根哈希:"
+          }
+        }
+      },
+      "monero": {
+        "title": "门罗币搜索引擎",
+        "description": "门罗币区块链搜索引擎、区块、交易和地址",
+        "stats": {
+          "general": {
+            "best_block_file_hash": "最好的区块档案哈希:",
+            "best_block_root_hash": "最好的区块根哈希:"
+          },
+          "mempool_dimension": "kB"
+        }
+      },
+      "cardano": {
+        "title": "艾达币搜索引擎",
+        "description": "艾达币区块链搜索引擎、区块、交易和地址",
+        "stats": {
+          "general": {
+            "current_epoch": "当前纪元:",
+            "current_slot": "当前时段:"
           }
         }
       },
@@ -1725,6 +1823,18 @@
         "title": "闪电币搜索引擎",
         "description": "查找闪电币（GRS）块、交易、地址、余额、节点、区块链统计和图表"
       },
+      "zcash": {
+        "title": "大零币浏览器",
+        "description": "查找大零币（ZEC）块、交易、地址、余额、节点和协议、区块链统计数据和图表",
+        "stats": {
+          "mempool": {
+            "suggested_transaction_fee": {
+              "dimension": "ZEC每笔交易",
+              "dimension_short": "zatoshi"
+            }
+          }
+        }
+      },
       "useful_links": {
         "caption": "有用的链接",
         "description": "已在其网站上使用我们服务的合作伙伴",
@@ -1766,7 +1876,7 @@
         "footer":{
           "what_is":{
             "caption":"此页面是什么？",
-            "description1":"此页面显示不同的比特币网站是否提供原始比特币白皮书或其编辑版本。 一小时一次，我们计算文件的SHA-256哈希值，并将它们与原始白皮书的哈希值进行比较（即b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553）。",
+            "description1":"此页面显示不同的比特币网站是否提供原始比特币白皮书或其编辑版本。 一小时一次，我们计算文件的SHA-256哈希值，并将它们与原始白皮书的哈希值进行比较（即 <span class='word--break'>b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553</span>).",
             "description2":"有一些建议要改变bitcoin.org上托管的白皮书（例如{github_issue_link}仍然开放）。 我们认为编辑学术论文并重写比特币历史以适应某人的商业利益是完全不可接受的。",
             "github_issue":"GitHub Issue #1325"
           },
@@ -1812,6 +1922,11 @@
         "description":"通过检索节点的地区、软件、版本和共识规则来探索闪电币网路"
       }
     },
+    "zcash":{
+      "nodes":{
+        "description":"通过检索节点的地区、软件、版本和共识规则来探索大零币网路"
+      }
+    },
     "ethereum": {
       "erc-20": {
         "navigation": {
@@ -1822,6 +1937,7 @@
         },
         "homepage": {
           "title": "以太坊ERC-20浏览器",
+          "description": "查找ERC-20（例如泰达币USDT）代币、交易、余额、新合约清单",
           "stats":{
             "title":"ERC-20统计",
             "tokens":"总代币",
@@ -1834,6 +1950,14 @@
           "latest_transactions":"最近交易"
         },
         "infinitable": {
+          "title": {
+            "tokens": "ERC-20代币清单",
+            "transactions": "ERC-20交易清单"
+          },
+          "description": {
+            "tokens": "查找ERC-20（例如泰达币USDT）最受欢迎和最新的代币，根据发行时间、区块ID和名称对它们进行筛选和分类",
+            "transactions": "查找ERC-20（例如泰达币USDT）最新的交易，根据发行时间、区块ID和价值对它们进行分类和筛选"
+          },
           "tokens": {
             "address": "地址",
             "id": "Id",
@@ -1856,6 +1980,8 @@
           }
         },
         "token": {
+          "title": "{token_name} ({token_symbol}) 浏览器",
+          "description": "查找{token_name} ({token_symbol})最新的交易、交易地址以及余额",
           "navigation": "代币",
           "stats": {
             "time": "创建于",
@@ -2086,6 +2212,7 @@
   },
   "nodes": {
     "title": "节点",
+    "description": "根据应用、版本和国家查看区块链节点分布",
     "navigation": "节点",
     "card": {
       "bitcoin": {
@@ -2131,10 +2258,12 @@
   },
   "terms": {
     "title": "服务条款",
+    "description": "该服务由Blockchair法律条款提供",
     "navigation":"服务条款",
     "content": {
       "caption": "Blockchair服务条款",
-      "api": "API服务条款"
+      "api": "API服务条款",
+      "ads": "广告服务条款"
     }
   },
   "feed":{
@@ -2269,6 +2398,7 @@
   "markets":{
     "title":"市场",
     "navigation":"市场",
+    "description":"加密货币的实时价格和市值，创建并追踪自己的资产组合",
     "coins": "前1000名",
     "my_portfolio":"我的投资组合: ({total_profit})",
     "table":{
@@ -2312,18 +2442,22 @@
   "api": {
     "navigation":"API",
     "homepage": {
-      "title": "Blockchair API服务"},
+      "title": "Blockchain API服务",
+      "description": "Blockchain API"
+    },
     "docs": {
-      "title": "Blockchair API说明",
+      "title": "Blockchain API文档",
+      "description": "API密匙可给予开发者们获得12个不同的区块链数据的权限（BTC、ETH、BCH、TON、BSV、XRP、XLM、ERC代币等）",
       "navigation": "说明文件"
     }
   },
   "pdf": {
+    "title": "交易PDF收据",
     "navigation": "PDF收据",
-    "title": "取得交易PDF收据",
+    "description": "为加密交易生成漂亮美观的银行式PDF收据",
     "form": {
       "placeholder": "输入交易哈希",
-      "supported_blockchains": "支持区块链: {bitcoin_link}, {ethereum_link}, {bitcoin_cash_link}, {litecoin_link}, {bitcoin_sv_link}, {dash_link}, {dogecoin_link} 与 {groestlcoin_link}"
+      "supported_blockchains": "支持区块链: {bitcoin_link}, {ethereum_link}, {bitcoin_cash_link}, {litecoin_link}, {bitcoin_sv_link}, {dash_link}, {zcash_link}, {dogecoin_link} 以及 {groestlcoin_link}"
     },
     "receipt": {
       "download_link": "下载链结: {pdf_link}",
@@ -2345,6 +2479,10 @@
       "full":"💰 Coinbase",
       "short":"Coinbase"
     },
+    "shielded":{
+      "full":"屏蔽的",
+      "short":"屏蔽的"
+    },
     "contract_creation":"创建协议",
     "unspent":"余额",
     "thinking":{
@@ -2359,12 +2497,13 @@
     "sql":"SQL",
     "charts":"图表",
     "markets":"市场及投资组合",
-    "nodes": "节点",
+    "nodes": "节点浏览器",
     "feed":"Feed",
     "broadcast":"广播交易",
     "dumps":"转储",
+    "dumps_node":"完整节点转储",
     "pdf": "取得PDF收据",
-    "compare": "比较",
+    "compare": "比较加密货币",
     "useful_links": "有用的链接",
     "about": "关于",
     "terms": "服务条款",
@@ -2377,7 +2516,23 @@
     "language": "语言",
     "copyright":"© {year} Blockchair",
     "market_data":"市场数据由{coin_market_cap_link}以及{coin_gecko_link}",
-    "faq":"常见问题"
+    "faq":"常见问题",
+    "referral_program": "推荐计划",
+    "advertise": "广告合作",
+    "tools": {
+      "title": "工具",
+      "release-monitor": "更新监视器",
+      "halving-countdown": "减半倒计时"
+    },
+    "cryptoanarchyst_corner": "无政府加密主义",
+    "theme": {
+      "on": "切换到夜间模式",
+      "off": "切换到日间模式"
+    },
+    "ads": {
+      "on": "关闭网站广告三天",
+      "off": "打开广告"
+    }
   },
   "errors":{
     "http":{
@@ -2386,7 +2541,59 @@
     }
   },
   "faq":{
-    "title":"常见问题",
+    "title":"常见问题解答",
+    "description":"我们只提供区块链数据搜索和分析服务，不提供交易所、银行或钱包服务",
     "navigation":"常见问题"
+  },
+  "advertise":{
+    "title":"广告",
+    "description":"在Blockchair上用横幅、按钮以及文本推广自己的产品",
+    "navigation":"广告"
+  },
+  "language-proposal": {
+    "title": "本网站支持英语版，需要切换吗？",
+    "yes": "是",
+    "no": "否"
+  },
+  "referral_program": {
+    "title": "推荐计划",
+    "navigation": "推荐计划"},
+  "tools": {
+    "title": "工具",
+    "release-monitor": {
+      "title": "更新监视器",
+      "description": "追踪最新版的加密货币客户端：比特币核心以及以太坊、瑞波、Bitcoin ABC和其他的客户端",
+      "button": "加入我们的电报频道接收最新消息",
+      "version": "版本",
+      "time": "时间",
+      "link": "链接",
+      "show_all": "展示全部",
+      "filter_title": "筛选链"
+    },
+    "halving-countdown": {
+      "title": "减半倒计时",
+      "meta_title": "比特币2020减半倒计时",
+      "description": "查看比特币(BTC), 比特币现金(BCH)和比特币SV(BSV)的减半时间以及对市场价格的影响",
+      "item": {
+        "title": "减半倒计时",
+        "current_block": "当前区块",
+        "current_reward": "当前区块奖励",
+        "halvening_block": "减半区块",
+        "halvening_reward": "减半后区块奖励",
+        "halvening_time_approximate": "预计减半时间",
+        "seconds_left": "剩下的秒",
+        "blocks_left": "距减半还有多少区块",
+        "button_explorer": "前往 {title} 浏览器"
+      },
+      "time": {
+        "days": "天数",
+        "hours": "小时数",
+        "minutes": "分钟数"
+      }
+    }
+  },
+  "nojs": {
+    "disabled_functions": "此功能仅在启用JavaScript的情况下可用",
+    "extended_functions": "拓展功能仅在启用JavaScript的情况下可用"
   }
 }
