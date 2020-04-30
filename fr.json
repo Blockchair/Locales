@@ -1,5 +1,6 @@
 {
   "title":"Blockchair",
+  "subtitle":"Explorateur de Blocs",
   "description":"Un explorateur de blocs et la plus puissante API pour BTC, ETH, XRP, XLM, BCH, LTC, DASH, BSV, DOGE, GRS et TON vous permettant de trouver, trier et filtrer les transactions et adresses.",
   "chain":{
     "bitcoin":"Bitcoin",
@@ -15,7 +16,8 @@
     "stellar": "Stellar",
     "ton": "Telegram Open Network",
     "monero": "Monero",
-    "cardano": "Cardano"
+    "cardano": "Cardano",
+    "zcash": "Zcash"
   },
   "ticker":{
     "bitcoin":"BTC",
@@ -32,7 +34,8 @@
     "stellar": "XLM",
     "ton": "GRAM",
     "monero":"XMR",
-    "cardano": "ADA"
+    "cardano": "ADA",
+    "zcash": "ZEC"
   },
   "homepage":{
     "title":"Blockchair — Explorateur de blocs et moteur de recherche blockchain universel",
@@ -40,7 +43,7 @@
       "my_portfolio":"Mon portefeuille : {total_profit}"
     },
     "screen1": {
-      "placehodler": "Recherche en cours sur {count} blockchains...",
+      "placehodler": "Recherchez dans {count} blockchains...",
       "qrcode": {
         "title": "Scanner le QR-code d'une adresse",
         "modal": {
@@ -62,7 +65,7 @@
       "examples": {
         "description": "Voici des exemples de données que l'on peut trouver sur Blockchair :",
         "show_examples": "Voir des exemples",
-        "links": "{btc_largest_txs_link}, {etc_contract_creations_link}, {bch_biggest_blocks_link}.",
+        "links": "{btc_largest_txs_link} {etc_contract_creations_link} {bch_biggest_blocks_link}.",
         "btc_largest_txs": "Les plus grosses transactions en Bitcoin",
         "etc_contract_creations": "Les contrats Ethereum créés",
         "bch_biggest_blocks": "Les plus gros blocs Bitcoin Cash"
@@ -105,11 +108,12 @@
           "stats": "Statistiques",
           "uncles": "Oncles",
           "erc-20": "ERC-20"
-        }
+        },
+        "coming_soon": "Bientôt disponible"
       },
       "erc-20": {
         "tokens": "Tokens :",
-        "explore_all": "Explorer tous les tokens :"
+        "explore_all": "Explorer tous les tokens"
       }
     },
     "screen3": {
@@ -135,7 +139,7 @@
           "name": "Nom",
           "price": "Prix",
           "price_change_24h": "24h.",
-          "mcap": "Capitalisation du marché.",
+          "mcap": "MCap.",
           "dominance": "Dominance"
         },
         "link": "Paramétrer votre portefeuille"
@@ -464,7 +468,8 @@
         "no_results":"Aucun résultat 😕",
         "no_more_results":"Nous plus de résultats 👐",
         "explore_list":"Explorer cette liste ({difference} plus de ligne)",
-        "load_more":"Voir plus ({difference} résultats restants)"
+        "load_more":"Voir plus ({difference} résultats restants)",
+        "show_next": "Afficher les {limit} éléments suivants ({difference} résultats restants)"
       },
       "bitcoin":{
         "blocks":{
@@ -857,7 +862,7 @@
       "buttons":{
         "fields":"Champs",
         "show_default_fields":"Montrer les champs par défaut",
-        "show_all":"Tout montrer",
+        "show_all":"Tout Montrer",
         "hide_all":"Tout cacher",
         "reset_sorts":"Réinitialiser les tris",
         "reset_conditions":"Réinitialiser les conditions ",
@@ -1472,7 +1477,7 @@
           "payment_id": "Id du paiement",
           "tx_fee": "Frais (XMR)",
           "size": "Taille (B)",
-          "xmr_outputs": "Sorties",
+          "xmr_outputs": "Valeur (XMR)",
           "rct_type": "Type RingCT"
         },
         "check_transaction": {
@@ -1489,8 +1494,44 @@
       },
       "cardano": {
         "block": {
+          "description": "Bloc Cardono : {block_id}, hash : {hash} – Explorateur Cardano",
           "epoch": "Époque",
-          "slot": "Créneau"
+          "slot": "Créneau",
+          "total_sent": "Total ADA envoyés",
+          "fees": "Frais"
+        },
+        "transaction": {
+          "description": "Transaction Cardano : {hash} – Explorateur Cardano",
+          "output_total": "Total des sorties (ADA)",
+          "input_total": "Total des entrées (ADA)",
+          "fee_total": "Total des frais (ADA)"
+        },
+        "address": {
+           "description": "Adresse Cardano : {hash} / Solde: {balance} - Explorateur Cardano"
+        }
+      },
+      "zcash": {
+        "block": {
+          "description": "Bloc Zcash : {block_id}, hash : {hash} – Explorateur Zcash"
+        },
+        "transaction": {
+          "description": "Transaction Zcash : {hash} – Explorateur Zcash",
+          "senders_and_recipients": "Expéditeurs et bénéficiaires <small>(publiques)</small>",
+          "shielded_transfers": "Transferts protégés <small>(privés)</small>",
+          "join_split": "JoinSplit",
+          "shielded_inputs": "Entrées protégées",
+          "shielded_outputs": "Sorties protégées",
+          "transfered_from": "Transféré depuis la pool protégée",
+          "transfered_to": "Transféré vers la pool protégée",
+          "validate": {
+            "title": "Voir les transferts protégés",
+            "paymentdisclosure": "Divulgation du paiement",
+            "submit": "Soumettre",
+            "disclosed": "Transaction divulguée"
+          }
+        },
+        "address": {
+          "description": "Adresse Zcash : {hash} / Solde : {balance} - Explorateur Zcash"
         }
       }
     },
@@ -1582,7 +1623,8 @@
               "bitcoin": "Eh/s",
               "ethereum": "Th/s",
               "dash": "Ph/s",
-              "monero": "Gh/s"
+              "monero": "Gh/s",
+              "zcash": "Gs/s"
             }
           },
           "tps": "Transactions par seconde :",
@@ -1702,12 +1744,20 @@
           "general": {
             "best_block_file_hash": "Meilleur hash de fichier de bloc :",
             "best_block_root_hash": "Meilleur root hash de bloc :"
-          }
+          },
+          "mempool_dimension": "kB"
         }
       },
       "cardano": {
         "title": "Explorateur Cardano",
-        "description": "Explorateur de la blockchain Cardano, blocs, transactions et adresses"},
+        "description": "Explorateur de la blockchain Cardano, blocs, transactions et adresses",
+        "stats": {
+          "general": {
+            "current_epoch": "Epoque actuelle :",
+            "current_slot": "Emplacement actuel :"
+          }
+        }
+      },
       "ethereum": {
         "title": "Explorateur Ethereum",
         "description": "Chercher les blocs Ethereum (ETH), transactions, adresses, smart contracts, soldes et statistiques de la blockchain",
@@ -1773,6 +1823,18 @@
         "title": "Explorateur Groestlcoin",
         "description": "Chercher les blocs Groestlcoin (GRS), transactions, adresses, soldes, noeuds, statistiques et graphiques de la blockchain"
       },
+      "zcash": {
+        "title": "Explorateur Zcash",
+        "description": "Explorer les blocs, transactions, adresses, soldes, nœuds et protocoles de Zcash (ZEC), les statistiques et les graphiques de la blockchain",
+        "stats": {
+          "mempool": {
+            "suggested_transaction_fee": {
+              "dimension": "ZEC par transaction",
+              "dimension_short": "zatoshi"
+            }
+          }
+        }
+      },
       "useful_links": {
         "caption": "Liens utiles",
         "description": "Partenaires qui utilisent déjà Blockchair sur leur site internet",
@@ -1814,7 +1876,7 @@
         "footer":{
           "what_is":{
             "caption":"Quelle est cette page?",
-            "description1":"Cette page indique si les différents sites proposent le whitepaper Bitcoin original ou une version modifiée de celui-ci. Une fois par heure, nous calculons les hachages SHA-256 des fichiers et les comparons avec le hash du whitepaper d'origine (celui-ci est b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553).",
+            "description1":"Cette page indique si les différents sites proposent le whitepaper Bitcoin original ou une version modifiée de celui-ci. Une fois par heure, nous calculons les hachages SHA-256 des fichiers et les comparons avec le hash du whitepaper d'origine (celui-ci est <span class='word--break'>b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553</span>).",
             "description2":"Il y a pu avoir des appels à modifier le whitepaper présent sur bitcoin.org (par ex. {github_issue_link}, toujours ouvert). Nous pensons qu'éditer un article académique et réécrire l'histoire du Bitcoin pour répondre à des intérêts commerciaux est inacceptable.",
             "github_issue":"Erreur GitHub #1325"
           },
@@ -1858,6 +1920,11 @@
     "groestlcoin":{
       "nodes":{
         "description":"Explorer le réseau Groestlcoin en regardant tous les nœuds accessibles, leurs pays, implémentations, versions et règles de consensus"
+      }
+    },
+    "zcash":{
+      "nodes":{
+        "description":"Explorer le réseau Zcash en regardant tous les nœuds accessibles, leurs pays, implémentations, versions et règles de consensus"
       }
     },
     "ethereum": {
@@ -2182,8 +2249,8 @@
       "exchanges": "Plateformes d'échange avec Blockchair",
       "mining_pools": "Mining pools avec Blockchair",
       "explorers": "Explorateurs avec Blockchair",
-      "market_data": "Fournisseurs de données de marchés avec Blockchair",
-      "crypto_processors": "Les possesseurs de crypto avec Blockchair",
+      "market_data": "Fournisseurs de données de marché avec Blockchair",
+      "crypto_processors": "Processeurs de crypto avec Blockchair",
       "dapps": "dApps avec Blockchair",
       "media": "Medias partenaires",
       "academic": "Partenaires académiques"
@@ -2390,7 +2457,7 @@
     "description": "Générer un beau reçu PDF de type bancaire d'une transaction crypto",
     "form": {
       "placeholder": "Renseigner le hash d'une transaction",
-      "supported_blockchains": "Blockchains supportées : {bitcoin_link}, {ethereum_link}, {bitcoin_cash_link}, {litecoin_link}, {bitcoin_sv_link}, {dash_link}, {dogecoin_link} et {groestlcoin_link}"
+      "supported_blockchains": "Blockchains supportées : {bitcoin_link}, {ethereum_link}, {bitcoin_cash_link}, {litecoin_link}, {bitcoin_sv_link}, {zcash_link}, {dash_link}, {dogecoin_link} et {groestlcoin_link}"
     },
     "receipt": {
       "download_link": "Lien de téléchargement : {pdf_link}",
@@ -2412,6 +2479,10 @@
       "full":"💰 Coinbase",
       "short":"Coinbase"
     },
+    "shielded":{
+      "full":"🛡 Protégé",
+      "short":"Protégé"
+    },
     "contract_creation":"Création de contrat",
     "unspent":"Non dépensé",
     "thinking":{
@@ -2426,13 +2497,13 @@
     "sql":"SQL",
     "charts":"Graphiques",
     "markets":"Marchés & Portefeuilles",
-    "nodes": "Noeuds",
+    "nodes": "Explorateurs de nœuds",
     "feed":"Flux",
     "broadcast":"Diffusion des transactions",
     "dumps":"Export des base de données",
     "dumps_node":"Exports complets de nos bases de données",
     "pdf": "Voir le PDF",
-    "compare": "Comparer",
+    "compare": "Comparer les crypto",
     "useful_links": "Liens utiles",
     "about": "À propos",
     "terms": "Conditions d'utilisations",
@@ -2447,7 +2518,21 @@
     "market_data":"Données des marchés par {coin_market_cap_link} et {coin_gecko_link}",
     "faq":"FAQ",
     "referral_program": "Programme de parrainage",
-    "advertise": "Faire votre publicité avec nous"
+    "advertise": "Faire votre publicité avec nous",
+    "tools": {
+      "title": "Outils",
+      "release-monitor": "Moniteur de versions",
+      "halving-countdown": "Décompte du Halving"
+    },
+    "cryptoanarchyst_corner": "Coin crypto-anarchist",
+    "theme": {
+      "on": "Passer au mode nuit",
+      "off": "Passer au mode jour"
+    },
+    "ads": {
+      "on": "Désactiver pour 3 jours les annonces sur le site",
+      "off": "Activer les annonces"
+    }
   },
   "errors":{
     "http":{
@@ -2466,11 +2551,49 @@
     "navigation":"Publicité"
   },
   "language-proposal": {
-    "title": "Ce site est disponible en Anglais, voulez-vous changer de langue ?",
+    "title": "Ce site est disponible en Français, voulez-vous changer de langue ?",
     "yes": "Yes",
     "no": "Non"
   },
   "referral_program": {
     "title": "Programme de parrainage",
-    "navigation": "Programme de parrainage"}
+    "navigation": "Programme de parrainage"},
+  "tools": {
+    "title": "Outils",
+    "release-monitor": {
+      "title": "Moniteur de versions",
+      "description": "Suivre les dernières versions des clients de crypto-monnaie : Bitcoin Core, Geth, rippled, Bitcoin ABC et autres",
+      "button": "Rejoindre notre chaîne Telegram pour recevoir des mises à jour",
+      "version": "Version",
+      "time": "Heure",
+      "link": "Lien",
+      "show_all": "Tout montrer",
+      "filter_title": "Filtrer les chaînes"
+    },
+    "halving-countdown": {
+      "title": "Décompte du Halving",
+      "meta_title": "Décompte 2020 du Halving Bitcoin",
+      "description": "Voir la date à laquelle le Halving se produira pour Bitcoin (BTC), Bitcoin Cash (BCH) et Bitcoin SV (BSV) et l'effet du Halving sur leur prix",
+      "item": {
+        "title": "Décompte du Halving",
+        "current_block": "Bloc actuel",
+        "current_reward": "Récompense actuelle par bloc",
+        "halvening_block": "Bloc du Halving",
+        "halvening_reward": "Récompense par bloc après le Halving",
+        "halvening_time_approximate": "Temps approximatif du Halving",
+        "seconds_left": "Secondes restantes",
+        "blocks_left": "Blocs restants avant le Halving",
+        "button_explorer": "Aller à l'explorateur {title]"
+      },
+      "time": {
+        "days": "jours",
+        "hours": "heures",
+        "minutes": "minutes"
+      }
+    }
+  },
+  "nojs": {
+    "disabled_functions": "Cette fonctionnalité est disponible avec JavaScript activé uniquement",
+    "extended_functions": "Fonctionnalité étendue disponible uniquement avec JavaScript activé"
+  }
 }
