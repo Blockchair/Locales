@@ -18,7 +18,8 @@
     "monero" : "Monero",
     "cardano" : "Cardano",
     "zcash" : "Zcash",
-    "mixin" : "Mixin"
+    "mixin" : "Mixin",
+    "tezos" : "Tezos"
   },
   "ticker" : {
     "bitcoin" : "BTC",
@@ -37,7 +38,8 @@
     "monero" : "XMR",
     "cardano" : "ADA",
     "zcash" : "ZEC",
-    "mixin" : "XIN"
+    "mixin" : "XIN",
+    "tezos" : "XTZ"
   },
   "homepage" : {
     "title" : "Blockchair — Universal blockchain explorer and search engine",
@@ -1652,6 +1654,9 @@
           "description" : "Mixin (XIN) round {number}, {hash}",
           "round_snapshots" : "Round snapshots"
         }
+      },
+      "tezos" : {
+        "operations" : "Operations"
       }
     },
     "protocol" : {
@@ -2678,9 +2683,9 @@
       "payment_required" : "You're sending too many requests. Please try again later.",
       "not_found" : "Not found in any blockchain 😞"
     },
-    "ban": {
-      "row1": "Wow! You are such an active user, that it looks like you are a robot 🤖.",
-      "row2": "Please verify that you are not a robot by solving the captcha."
+    "ban" : {
+      "row1" : "Wow! You are such an active user, that it looks like you are a robot 🤖.",
+      "row2" : "Please verify that you are not a robot by solving the captcha."
     }
   },
   "faq" : {
@@ -2740,5 +2745,24 @@
   "nojs" : {
     "disabled_functions" : "This functionality available with JavaScript enabled only",
     "extended_functions" : "Extended functionality available with JavaScript enabled only"
+  },
+  "news": {
+    "title": "News", 
+    "description": "An aggregation of blockchain and cryptocurrency news of the most prominent media outlets",
+    "most_recent": "Most recent",
+    "more_news": "More news",
+    "homepage_link": "More",
+    "shortcuts": {
+      "title": "Keyboard shortcuts",
+      "close": "Close",
+      "next": "Next",
+      "prev": "Previous"
+    },
+    "unable_to_load": "Unable to load the article",
+    "try_to_read_on": "Try to read it on",
+    "read_on": "Read on",
+    "yesterday": "Yesterday",
+    "share_title": "Share this article",
+    "share": "Share"
   }
 }
