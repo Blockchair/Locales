@@ -18,7 +18,8 @@
     "monero" : "Monero",
     "cardano" : "Cardano",
     "zcash" : "Zcash",
-    "mixin" : "Mixin"
+    "mixin" : "Mixin",
+    "tezos" : "Tezos"
   },
   "ticker" : {
     "bitcoin" : "BTC",
@@ -37,7 +38,8 @@
     "monero" : "XMR",
     "cardano" : "ADA",
     "zcash" : "ZEC",
-    "mixin" : "XIN"
+    "mixin" : "XIN",
+    "tezos" : "XTZ"
   },
   "homepage" : {
     "title" : "Blockchair — Motor de busca e explorador de blockchain universal",
@@ -1638,6 +1640,9 @@
           "description" : "Rodada Mixin (XIN) {number}, {hash}",
           "round_snapshots" : "Instantânea de rodadas"
         }
+      },
+      "tezos" : {
+        "operations" : "Operações"
       }
     },
     "protocol" : {
@@ -2662,9 +2667,9 @@
       "payment_required" : "Você está enviando muitas solicitações. Por favor, tente novamente mais tarde.",
       "not_found" : "Não encontrado em nenhum blockchain 😞"
     },
-    "ban": {
-      "row1": "Uau! Você é um usuário tão ativo que parece um robô 🤖.",
-      "row2": "Verifique se você não é um robô resolvendo o captcha."
+    "ban" : {
+      "row1" : "Uau! Você é um usuário tão ativo que parece um robô 🤖.",
+      "row2" : "Verifique se você não é um robô resolvendo o captcha."
     }
   },
   "faq" : {
@@ -2722,5 +2727,24 @@
   "nojs" : {
     "disabled_functions" : "Esta funcionalidade só está disponível com JavaScript habilitado.",
     "extended_functions" : "Funcionalidade estendida só disponível com JavaScript ativado"
+  },
+  "news": {
+    "title": "Notícias", 
+    "description": "Uma seleção de notícias sobre blockchain e criptomoedas dos principais meios de comunicação",
+    "most_recent": "Mais recentes",
+    "more_news": "Mais notícias",
+    "homepage_link": "Mais",
+    "shortcuts": {
+      "title": "Atalhos de teclado",
+      "close": "Fechar",
+      "next": "Seguinte",
+      "prev": "Anterior"
+    },
+    "unable_to_load": "Não foi possível carregar o artigo",
+    "try_to_read_on": "Tentar ler em",
+    "read_on": "Ler em",
+    "yesterday": "Ontem",
+    "share_title": "Compartilhar artigo",
+    "share": "Compartilhar"
   }
 }
