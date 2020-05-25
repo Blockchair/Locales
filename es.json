@@ -18,7 +18,8 @@
     "monero" : "Monero",
     "cardano" : "Cardano",
     "zcash" : "Zcash",
-    "mixin" : "Mixin"
+    "mixin" : "Mixin",
+    "tezos" : "Tezos"
   },
   "ticker" : {
     "bitcoin" : "BTC",
@@ -37,7 +38,8 @@
     "monero" : "XMR",
     "cardano" : "ADA",
     "zcash" : "ZEC",
-    "mixin" : "XIN"
+    "mixin" : "XIN",
+    "tezos" : "XTZ"
   },
   "homepage" : {
     "title" : "Blockchair — Motor de búsqueda y explorador de blockchain universal",
@@ -1638,6 +1640,9 @@
           "description" : "Ronda Mixin (XIN) {number}, {hash}",
           "round_snapshots" : "Instantánea de rondas"
         }
+      },
+      "tezos" : {
+        "operations" : "Operaciones"
       }
     },
     "protocol" : {
@@ -2662,9 +2667,9 @@
       "payment_required" : "Estás enviando demasiadas solicitaciones. Por favor intenta más tarde.",
       "not_found" : "No encontrado en ningún blockchain 😞"
     },
-    "ban": {
-      "row1": "Uauu! Eres un usuario tan activo que parece que eres un robot 🤖.",
-      "row2": "Por favor comprueba que no eres un robot resolviendo el captcha."
+    "ban" : {
+      "row1" : "Uauu! Eres un usuario tan activo que parece que eres un robot 🤖.",
+      "row2" : "Por favor comprueba que no eres un robot resolviendo el captcha."
     }
   },
   "faq" : {
@@ -2722,5 +2727,24 @@
   "nojs" : {
     "disabled_functions" : "Esta funcionalidad está disponible solo con JavaScript habilitado",
     "extended_functions" : "Funcionalidad extendida disponible solo con JavaScript habilitado"
+  },
+  "news": {
+    "title": "Noticias", 
+    "description": "Una selección de noticias relacionadas a blockchain y criptomonedas de los medios de comunicación más destacados",
+    "most_recent": "Más recientes",
+    "more_news": "Más noticias",
+    "homepage_link": "Más",
+    "shortcuts": {
+      "title": "Atajos de teclado",
+      "close": "Cerrar",
+      "next": "Siguiente",
+      "prev": "Anterior"
+    },
+    "unable_to_load": "No se pudo cargar el artículo",
+    "try_to_read_on": "Intenta leerlo en",
+    "read_on": "Leer en",
+    "yesterday": "Ayer",
+    "share_title": "Compartir artículo",
+    "share": "Compartir"
   }
 }
