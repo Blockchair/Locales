@@ -1,2135 +1,2768 @@
 {
-  "title":"Blockchair",
-  "description":"Block explorer and the most powerful API for BTC, ETH, BCH, LTC, DASH, BSV and DOGE that allow you to find, sort and filter transactions and addresses.",
-  "chain":{
-    "bitcoin":"Bitcoin",
-    "bitcoin/testnet": "Bitcoin Testnet",
-    "bitcoin-cash":"Bitcoin Cash",
-    "bitcoin-sv":"Bitcoin SV",
-    "dogecoin":"Dogecoin",
-    "dash":"Dash",
-    "litecoin":"Litecoin",
-    "ethereum":"Ethereum",
-    "ripple":"Ripple",
-    "groestlcoin": "Groestlcoin"
+  "title" : "Blockchair",
+  "subtitle" : "Blockchain Explorer",
+  "description" : "Block explorer and the most powerful API for BTC, ETH, XRP, XLM, BCH, LTC, DASH, BSV, DOGE, GRS and TON that allow you to find, sort and filter transactions and addresses.",
+  "chain" : {
+    "bitcoin" : "Bitcoin",
+    "bitcoin/testnet" : "Bitcoin Testnet",
+    "bitcoin-cash" : "Bitcoin Cash",
+    "bitcoin-sv" : "Bitcoin SV",
+    "dogecoin" : "Dogecoin",
+    "dash" : "Dash",
+    "litecoin" : "Litecoin",
+    "ethereum" : "Ethereum",
+    "ripple" : "Ripple",
+    "groestlcoin" : "Groestlcoin",
+    "stellar" : "Stellar",
+    "ton" : "Telegram Open Network",
+    "monero" : "Monero",
+    "cardano" : "Cardano",
+    "zcash" : "Zcash",
+    "mixin" : "Mixin",
+    "tezos" : "Tezos"
   },
-  "ticker":{
-    "bitcoin":"BTC",
-    "bitcoin/testnet": "TBTC",
-    "bitcoin-cash":"BCH",
-    "bitcoin-sv":"BSV",
-    "dogecoin":"DOGE",
-    "dash":"DASH",
-    "litecoin":"LTC",
-    "ethereum":"ETH",
-    "ripple":"XRP",
-    "usd":"USD",
-    "groestlcoin": "GRS"
+  "ticker" : {
+    "bitcoin" : "BTC",
+    "bitcoin/testnet" : "TBTC",
+    "bitcoin-cash" : "BCH",
+    "bitcoin-sv" : "BSV",
+    "dogecoin" : "DOGE",
+    "dash" : "DASH",
+    "litecoin" : "LTC",
+    "ethereum" : "ETH",
+    "ripple" : "XRP",
+    "usd" : "USD",
+    "groestlcoin" : "GRS",
+    "stellar" : "XLM",
+    "ton" : "GRAM",
+    "monero" : "XMR",
+    "cardano" : "ADA",
+    "zcash" : "ZEC",
+    "mixin" : "XIN",
+    "tezos" : "XTZ"
   },
-  "homepage":{
-    "title":"Blockchair — Universal blockchain explorer and search engine",
-    "screen1": {
-      "placehodler": "Search in 9 blockchains…",
-      "qrcode": {
-        "title": "Scan QR-code of an address",
-        "modal": {
-          "title": "Scan QR-code"
+  "homepage" : {
+    "title" : "Blockchair — Universal blockchain explorer and search engine",
+    "portfolio_widget" : {
+      "my_portfolio" : "My portfolio: {total_profit}"
+    },
+    "screen1" : {
+      "placehodler" : "Search in {count} blockchains…",
+      "qrcode" : {
+        "title" : "Scan QR-code of an address",
+        "modal" : {
+          "title" : "Scan QR-code"
         }
       },
-      "description": "Blockchair is the most private search engine for {bitcoin}, {ethereum}, {ripple}, {bitcoin_cash}, {litecoin}, {bitcoin_sv}, {dash}, {dogecoin} and {groestlcoin}. Search for {transactions}, {addresses}, {blocks}, and even {embedded}.",
-      "scope":{
-        "transactions":"transactions",
-        "addresses":"addresses",
-        "blocks":"blocks",
-        "embedded":"embedded text data",
-        "tooltip":"Click to paste a random example into the search box"
+      "description" : "Blockchair is the most private search engine for {blockchains}. Search for {transactions}, {addresses}, {blocks}, and even {embedded}.",
+      "scope" : {
+        "transactions" : "transactions",
+        "addresses" : "addresses",
+        "blocks" : "blocks",
+        "embedded" : "embedded text data",
+        "tooltip" : "Click to paste a random example into the search box"
       }
     },
-    "screen2": {
-      "explore_blockchains": "Explore blockchains",
-      "description": "Dive into blockchain data analysis applying filters and sorting. Create and extract your own datasets. Database dumps are also available.",
-      "examples": {
-        "description": "Try out examples of what you can find on Blockchair:",
-        "show_examples": "Show examples",
-        "links": "{btc_largest_txs_link}, {etc_contract_creations_link}, {bch_biggest_blocks_link}.",
-        "btc_largest_txs": "largest transactions in Bitcoin",
-        "etc_contract_creations": "contract creations in Ethereum",
-        "bch_biggest_blocks": "biggest Bitcoin Cash blocks"
+    "screen2" : {
+      "explore_blockchains" : "Explore blockchains",
+      "description" : "Dive into blockchain data analysis applying filters and sorting. Create and extract your own datasets. Database dumps are also available.",
+      "examples" : {
+        "description" : "Try out examples of what you can find on Blockchair:",
+        "show_examples" : "Show examples",
+        "links" : "{btc_largest_txs_link} {etc_contract_creations_link} {bch_biggest_blocks_link}.",
+        "btc_largest_txs" : "largest transactions in Bitcoin",
+        "etc_contract_creations" : "contract creations in Ethereum",
+        "bch_biggest_blocks" : "biggest Bitcoin Cash blocks"
       },
-      "card": {
-        "bitcoin": {
-          "blocks": "Blocks:",
-          "transactions": "Transactions:",
-          "outputs": "Outputs:",
-          "mempool_txs": "Unconfirmed txs:",
-          "mempool_tps": "Txs per second:",
-          "best_block": "Latest block:",
-          "hashrate": "Hashrate ({algorithm}):",
-          "footer_link":"Go to {chain} explorer"
+      "card" : {
+        "bitcoin" : {
+          "blocks" : "Blocks:",
+          "blocks_24h" : "24h blocks:",
+          "transactions" : "Transactions:",
+          "outputs" : "Outputs:",
+          "mempool_txs" : "Unconfirmed txs:",
+          "mempool_tps" : "Txs per second:",
+          "best_block" : "Latest block:",
+          "hashrate" : "Hashrate ({algorithm}):",
+          "footer_link" : "Go to {chain} explorer"
         },
-        "ethereum": {
-          "calls": "Calls:"
+        "ethereum" : {
+          "calls" : "Calls:"
         },
-        "ripple": {
-          "ledgers": "Ledgers:",
-          "transactions_24h": "24h transactions:",
-          "circulation": "Circulation:",
-          "best_ledger": "Latest ledger:",
-          "volume_24h": "Volume 24h:"
+        "ripple" : {
+          "ledgers" : "Ledgers:",
+          "transactions_24h" : "24h transactions:",
+          "circulation" : "Circulation:",
+          "best_ledger" : "Latest ledger:",
+          "volume_24h" : "Volume 24h:"
         },
-        "services": {
-          "charts": "Charts",
-          "nodes": "Nodes",
-          "omni": "Omni",
-          "wormhole": "Wormhole",
-          "compare": "Compare",
-          "feed": "Feed",
-          "stats": "Stats",
-          "uncles": "Uncles"
+        "stellar" : {
+          "operations_24h" : "Operations 24h:",
+          "failed_transactions_24h" : "Failed txs 24h:"
+        },
+        "ton" : {
+          "first_block_time" : "Current testnet was launched on:"
+        },
+        "services" : {
+          "charts" : "Charts",
+          "nodes" : "Nodes",
+          "omni" : "Omni",
+          "compare" : "Compare",
+          "feed" : "Feed",
+          "stats" : "Stats",
+          "uncles" : "Uncles",
+          "erc-20" : "ERC-20"
+        },
+        "coming_soon" : "Coming soon",
+        "mixin" : {
+          "latest_snapshot" : "Latest snapshot"
         }
+      },
+      "erc-20" : {
+        "tokens" : "Tokens:",
+        "explore_all" : "Explore all tokens"
       }
     },
-    "screen3": {
-      "features": "Discover our features",
-      "description": "Great tools to work with crypto data: request Blockchair API to get blockchain data, explore trends and correlations looking at Charts, analyze market trends with Markets & portfolio, broadcast transactions, download dumps with historical data and so much more.",
-      "api": {
-        "title": "Professional API",
-        "description": "Access blockchain data with Blockchair API",
-        "link": "Read API documentation"
+    "screen3" : {
+      "features" : "Discover our features",
+      "description" : "Great tools to work with crypto data: request Blockchair API to get blockchain data, explore trends and correlations looking at Charts, analyze market trends with Markets & Portfolio, broadcast transactions, download dumps with historical data and so much more.",
+      "api" : {
+        "title" : "Professional API",
+        "description" : "Access blockchain data with Blockchair API",
+        "link" : "Read API documentation"
       },
-      "charts": {
-        "title": "Charts",
-        "chart_name": "Bitcoin price over the last 3 months",
-        "description": "Get an overview of latest data trends by looking at over 120 charts",
-        "link": "Go to charts"
+      "charts" : {
+        "title" : "Charts",
+        "chart_name" : "Bitcoin price over the last 3 months",
+        "description" : "Get an overview of latest data trends by looking at over 120 charts",
+        "link" : "Go to charts"
       },
-      "markets": {
-        "title": "Markets & Portfolio",
-        "description": "Click to see top 1000 cryptoassets and start building your portfolio",
-        "top1000": "Top 1000",
-        "portfolio": "My portfolio",
-        "table": {
-          "name": "Name",
-          "price": "Price",
-          "price_change_24h": "24 h.",
-          "mcap": "MCap.",
-          "dominance": "Dominance"
+      "markets" : {
+        "title" : "Markets & Portfolio",
+        "description" : "Click to see top 1000 cryptoassets and start building your portfolio",
+        "top1000" : "Top 1000",
+        "portfolio" : "My portfolio",
+        "table" : {
+          "name" : "Name",
+          "price" : "Price",
+          "price_change_24h" : "24 h.",
+          "mcap" : "MCap.",
+          "dominance" : "Dominance"
         },
-        "link": "Set up your portfolio"
+        "link" : "Set up your portfolio"
+      }
+    },
+    "halving_widget" : {
+      "halving" : "Halving {value}"
+    }
+  },
+  "search" : {
+    "title" : "Blockchair Search",
+    "description" : "Search for {query} in BTC, ETH, BCH, LTC, BSV and DOGE blockchains",
+    "status" : {
+      "empty_query" : "Empty query",
+      "empty_request" : "Sorry, we support searching in English and in Russian only",
+      "server_error" : "Oh noez! {error}",
+      "showing" : {
+        "no_results" : "No results ({time} seconds)",
+        "only_result" : "Showing the only result ({time} seconds)",
+        "many_results" : "Showing {showing} results out of {total} ({time} seconds)"
+      }
+    },
+    "results" : {
+      "matches" : {
+        "blocks" : {
+          "title" : "Explore all {chain} blocks",
+          "hint" : "Using our engine you can filter {chain} blocks by over 30 parameters"
+        },
+        "transactions" : {
+          "title" : "Explore all {chain} transactions",
+          "hint" : "Using our engine you can filter {chain} transactions by over 30 parameters"
+        },
+        "calls" : {
+          "title" : "Explore all Ethereum calls",
+          "hint" : "Using our engine you can filter Ethereum calls by over 30 parameters"
+        },
+        "uncles" : {
+          "title" : "Explore all Ethereum uncles",
+          "hint" : "Using our engine you can filter Ethereum uncles by over 30 parameters"
+        },
+        "mempool" : {
+          "title" : "Explore the entire {chain} mempool",
+          "hint" : "Using our engine you can filter {chain} mempool transactions by over 30 parameters"
+        },
+        "unknown_tnx" : {
+          "title" : "Unknown transaction: {query}",
+          "hint1" : "You've entered an internal transaction id used by some exchanges (e.g. HitBTC, ShapeShift, etc.)",
+          "hint2" : "These transactions are not stored in blockchains, so we are not able to give you any data 😞"
+        }
+      },
+      "coin" : {
+        "price" : "Price: {price} {price_change}",
+        "mcap" : "Market cap: {cap}"
+      },
+      "bitcoin" : {
+        "coinbase" : {
+          "row" : {
+            "title" : "{chain} block #{id}",
+            "timestamp" : "Timestamp: {time}",
+            "coinbase_data" : "Coinbase data: {bin}"
+          }
+        },
+        "outputs" : {
+          "row" : {
+            "title" : "{chain} transaction {hash}",
+            "script_data" : "Output #{index} script data: {bin}"
+          }
+        },
+        "address" : {
+          "title" : "{chain} address {recipient}",
+          "last_seen_receiving" : "Last seen receiving: {time}",
+          "balance" : "Balance: {balance}"
+        },
+        "xpub" : {
+          "title" : "{chain} xpub address {recipient}"
+        },
+        "block" : {
+          "mined_on" : "Mined on: {time}",
+          "hash" : "Hash: {hash}"
+        },
+        "transaction" : {
+          "timestamp" : "Timestamp: {time}",
+          "included_in_block" : "Included in block: {block_id}"
+        },
+        "whitepapers" : {
+          "row" : {
+            "size" : "{url} {size} kB"
+          }
+        }
+      },
+      "ethereum" : {
+        "extra_data" : {
+          "row" : {
+            "extra_data" : "Extra data: {bin}"
+          }
+        },
+        "input_data" : {
+          "row" : {
+            "input_data" : "Input data: {bin}"
+          }
+        },
+        "uncle" : {
+          "title" : "Ethereum uncle {hash}",
+          "parent_block_height" : "Parent block height: {parent_block_id}"
+        },
+        "address" : {
+          "title" : "Ethereum address {address}"
+        },
+        "erc_20" : {
+          "transaction_count_30d" : "Transactions over the last month: {transactions_link}"
+        }
+      },
+      "ripple" : {
+        "transaction" : {
+          "account" : "Ripple account: {account}",
+          "type" : "Tx type: {type}",
+          "fee" : "Fee: {fee}"
+        },
+        "account" : {
+          "title" : "Ripple account {account}",
+          "balance" : "Balance: {balance}"
+        }
+      },
+      "stellar" : {
+        "transaction" : {
+          "created_at" : "Created at: {created_at}",
+          "ledger" : "Included in ledger: {ledger}",
+          "fee_paid" : "Fee paid: {fee_paid}"
+        },
+        "account" : {
+          "title" : "Stellar account {account}"
+        }
+      },
+      "ton" : {
+        "created_at" : "Created at: {time}",
+        "workchain" : "Workchain: {workchain}",
+        "shard" : "Shard: {shard}"
+      },
+      "mixin" : {
+        "snapshot" : {
+          "title" : "{chain} snapshot #{id}"
+        },
+        "round" : {
+          "title" : "{chain} round #{id}"
+        }
       }
     }
   },
-  "search":{
-    "title":"Blockchair Search",
-    "description":"Search for {query} in BTC, ETH, BCH, LTC, BSV and DOGE blockchains",
-    "status":{
-      "empty_query":"Empty query",
-      "empty_request":"Sorry, we support searching in English and in Russian only",
-      "server_error":"Oh noez! {error}",
-      "showing":{
-        "no_results":"No results ({time} seconds)",
-        "only_result":"Showing the only result ({time} seconds)",
-        "many_results":"Showing {showing} results out of {total} ({time} seconds)"
-      }
-    },
-    "results":{
-      "matches":{
-        "blocks":{
-          "title":"Explore all {chain} blocks",
-          "hint":"Using our engine you can filter {chain} blocks by over 30 parameters"
+  "application" : {
+    "header" : {
+      "menu" : {
+        "caption" : "Menu",
+        "bitcoin" : {
+          "blockchain" : "{chain} Blockchain",
+          "layer_2" : "Layer 2",
+          "mempool" : "{chain} Mempool",
+          "misc" : "Misc",
+          "object" : {
+            "blocks" : "Blocks",
+            "transactions" : "Transactions",
+            "outputs" : "Outputs",
+            "addresses" : "Addresses",
+            "omni" : "Omni Layer",
+            "nodes" : "Node explorer",
+            "testnet" : "Testnet explorer",
+            "whitepaper" : "Whitepaper",
+            "snapshots" : "Snapshots",
+            "rounds" : "Rounds",
+            "graph" : "Graph",
+            "mintings" : "Mintings"
+          },
+          "omni" : {
+            "most_used_properties" : "Most used properties"
+          }
         },
-        "transactions":{
-          "title":"Explore all {chain} transactions",
-          "hint":"Using our engine you can filter {chain} transactions by over 30 parameters"
+        "ethereum" : {
+          "erc-20" : {
+            "homepage" : "ERC-20 explorer",
+            "tokens" : "ERC-20 tokens",
+            "transactions" : "ERC-20 transactions",
+            "most_used_tokens" : "Most used tokens"
+          },
+          "object" : {
+            "uncles" : "Uncles",
+            "calls" : "Calls"
+          }
         },
-        "calls":{
-          "title":"Explore all Ethereum calls",
-          "hint":"Using our engine you can filter Ethereum calls by over 30 parameters"
+        "object" : {
+          "price" : "Price",
+          "charts" : "Charts",
+          "broadcast" : "Broadcast"
         },
-        "uncles":{
-          "title":"Explore all Ethereum uncles",
-          "hint":"Using our engine you can filter Ethereum uncles by over 30 parameters"
-        },
-        "mempool":{
-          "title":"Explore the entire {chain} mempool",
-          "hint":"Using our engine you can filter {chain} mempool transactions by over 30 parameters"
-        },
-        "unknown_tnx":{
-          "title":"Unknown transaction: {query}",
-          "hint1":"You've entered an internal transaction id used by some exchanges (e.g. HitBTC, ShapeShift, etc.)",
-          "hint2":"These transactions are not stored in blockchains, so we are not able to give you any data 😞"
-        }
+        "erc_20_tokens" : "ERC-20 tokens",
+        "omni_layer_tokens" : "Omni Layer tokens"
       },
-      "coin":{
-        "price":"Price: {price} {price_change}",
-        "mcap":"Market cap: {cap}"
-      },
-      "bitcoin":{
-        "coinbase":{
-          "row":{
-            "title":"{chain} block #{id}",
-            "timestamp":"Timestamp: {time}",
-            "coinbase_data":"Coinbase data: {bin}"
-          }
+      "search" : {
+        "desktop" : {
+          "placeholder" : "Search in {count} blockchains ({tickers})"
         },
-        "outputs":{
-          "row":{
-            "title":"{chain} transaction {hash}",
-            "script_data":"Output #{index} script data: {bin}"
-          }
-        },
-        "address":{
-          "title":"{chain} address {recipient}",
-          "last_seen_receiving":"Last seen receiving: {time}",
-          "balance":"Balance: {balance}"
-        },
-        "xpub":{
-          "title":"{chain} xpub address {recipient}"
-        },
-        "block":{
-          "mined_on":"Mined on: {time}",
-          "hash":"Hash: {hash}"
-        },
-        "transaction":{
-          "timestamp":"Timestamp: {time}",
-          "included_in_block":"Included in block: {block_id}"
-        },
-        "whitepapers":{
-          "row":{
-            "size":"{url} {size} kB"
-          }
-        }
-      },
-      "ethereum":{
-        "extra_data":{
-          "row":{
-            "extra_data":"Extra data: {bin}"
-          }
-        },
-        "input_data":{
-          "row":{
-            "input_data":"Input data: {bin}"
-          }
-        },
-        "uncle":{
-          "title":"Ethereum uncle {hash}",
-          "parent_block_height":"Parent block height: {parent_block_id}"
-        },
-        "address":{
-          "title":"Ethereum address {address}"
-        }
-      },
-      "ripple": {
-        "transaction": {
-          "account": "Ripple account: {account}",
-          "type": "Tx type: {type}",
-          "fee": "Fee: {fee}"
-        },
-        "account": {
-          "title": "Ripple account {account}",
-          "balance":"Balance: {balance}"
-        }
-      }
-    }
-  },
-  "application":{
-    "header": {
-      "menu": {
-        "caption": "Menu",
-        "bitcoin": {
-          "blockchain":"{chain} Blockchain",
-          "layer_2":"Layer 2",
-          "mempool":"{chain} Mempool",
-          "misc":"Misc",
-          "object": {
-            "blocks":"Blocks",
-            "transactions":"Transactions",
-            "outputs":"Outputs",
-            "addresses": "Addresses",
-            "omni":"Omni Layer",
-            "wormhole":"Wormhole",
-            "nodes":"Node explorer",
-            "testnet": "Testnet explorer",
-            "whitepaper":"Whitepaper"
-          }
-        },
-        "ethereum": {
-          "mempool":"Ethereum mempool and latest 6 blocks",
-          "last_6_blocks":"Last 6 blocks",
-          "txs_in_last_6_blocks":"Transactions in last 6 blocks",
-          "mempool_txs":"Mempool transactions",
-          "object": {
-            "uncles":"Uncles",
-            "calls":"Calls"
-          }
-        },
-        "object": {
-          "price":"Price",
-          "charts":"Charts",
-          "broadcast": "Broadcast"
-        }
-      },
-      "search": {
-        "desktop": {
-          "placeholder": "Search in 9 blockchains   (BTC/ETH/XRP/BCH/LTC/BSV/DASH/DOGE/GRS)"
-        },
-        "mobile": {
-          "placeholder": "Search in 9 blockchains"
+        "mobile" : {
+          "placeholder" : "Search in {count} blockchains"
         }
       }
     },
-    "navigation":{
-      "mempool":{
-        "bitcoin":{
-          "title":"Mempool"
+    "navigation" : {
+      "mempool" : {
+        "bitcoin" : {
+          "title" : "Mempool"
         },
-        "ethereum":{
-          "title":"Unconfirmed",
-          "hint":"We're waiting for 6 blocks until blocks and transactions get into our main database. We also don't process neither calls nor uncles for unconfirmed blocks."
+        "ethereum" : {
+          "title" : "Unconfirmed",
+          "hint" : "We're waiting for 6 blocks until blocks and transactions get into our main database. We also don't process neither calls nor uncles for unconfirmed blocks."
         }
       },
-      "object":{
-        "homepage":"Homepage",
-        "blocks":"Blocks",
-        "transactions":"Transactions",
-        "outputs":"Outputs",
-        "whitepaper":"Whitepaper",
-        "price":"Price",
-        "nodes":"Node explorer",
-        "uncles":"Uncles",
-        "calls":"Calls",
-        "omni":"Omni Layer",
-        "wormhole":"Wormhole",
-        "charts":"Charts",
-        "addresses": "Addresses"
+      "object" : {
+        "homepage" : "Homepage",
+        "blocks" : "Blocks",
+        "transactions" : "Transactions",
+        "outputs" : "Outputs",
+        "whitepaper" : "Whitepaper",
+        "price" : "Price",
+        "nodes" : "Node explorer",
+        "uncles" : "Uncles",
+        "calls" : "Calls",
+        "omni" : "Omni Layer",
+        "erc-20" : "ERC-20",
+        "charts" : "Charts",
+        "addresses" : "Addresses",
+        "snapshots" : "Snapshots",
+        "rounds" : "Rounds",
+        "mintings" : "Mintings",
+        "graph" : "Graph"
       },
-      "type":{
-        "bitcoin":{
-          "testnet": "Testnet",
-          "block":"Block",
-          "transaction":"Transaction",
-          "address":"Address",
-          "xpub":"Xpub"
+      "type" : {
+        "bitcoin" : {
+          "testnet" : "Testnet",
+          "block" : "Block",
+          "transaction" : "Transaction",
+          "address" : "Address",
+          "xpub" : "Xpub"
         },
-        "ethereum":{
-          "uncle":"Uncle",
-          "address":"Address"
+        "ethereum" : {
+          "uncle" : "Uncle",
+          "address" : "Address"
         },
-        "ripple":{
-          "ledger":"Ledger",
-          "account":"Account"
+        "ripple" : {
+          "ledger" : "Ledger",
+          "account" : "Account"
+        },
+        "mixin" : {
+          "snapshot" : "Snapshot",
+          "node" : "Node",
+          "round" : "Round"
         }
       },
-      "menu":{
-        "blockchains":"Blockchains",
-        "bitcoin":{
-          "blockchain":"{chain} Blockchain",
-          "mempool":"{chain} Mempool",
-          "layer_2":"Layer 2",
-          "misc":"Misc"
-        },
-        "ethereum":{
-          "mempool":"Ethereum mempool and latest 6 blocks",
-          "last_6_blocks":"Last 6 blocks",
-          "txs_in_last_6_blocks":"Transactions in last 6 blocks",
-          "mempool_txs":"Mempool transactions"
-        }
-      }
-    },
-    "permalink":{
-      "caption":"Permalink",
-      "tooltip":"A permalink saves sorting, conditions, and the list of shown columns. Unless there are time conditions, the data can change. If you don't need to save the list of shown columns, you can just copy the URL from the address bar."
-    },
-    "infinitable":{
-      "description":{
-        "bitcoin":{
-          "blocks":"Explore, sort and filter blocks from Bitcoin (BTC) blockchain by height, reward, miner and more",
-          "transactions":"Explore, sort and filter transactions from Bitcoin (BTC) blockchain by ID (hash), value, size, fee and more",
-          "outputs":"Explore, sort and filter outputs from Bitcoin (BTC) blockchain by value, sender, recipient, addresses, get UTXO set and more",
-          "mempool":{
-            "transactions":"Explore unconfirmed transactions from Bitcoin (BTC) mempool",
-            "outputs":"Explore unconfirmed outputs from Bitcoin (BTC) mempool"
-          },
-          "addresses": ""
-        },
-        "bitcoin/testnet":{
-          "blocks":"Explore, sort and filter blocks from Bitcoin Testnet (TBTC) blockchain by height, reward, miner and more",
-          "transactions":"Explore, sort and filter transactions from Bitcoin Testnet (TBTC) blockchain by ID (hash), value, size, fee and more",
-          "outputs":"Explore, sort and filter outputs from Bitcoin Testnet (TBTC) blockchain by value, sender, recipient, addresses, get UTXO set and more",
-          "mempool":{
-            "transactions":"Explore unconfirmed transactions from Bitcoin Testnet (TBTC) mempool",
-            "outputs":"Explore unconfirmed outputs from Bitcoin Testnet (TBTC) mempool"
-          },
-          "addresses": ""
-        },
-        "bitcoin-cash":{
-          "blocks":"Explore, sort and filter blocks from Bitcoin Cash (BCH) blockchain by height, reward, miner and more",
-          "transactions":"Explore, sort and filter transactions from Bitcoin Cash (BCH) blockchain by ID (hash), fee, size and more",
-          "outputs":"Explore, sort and filter outputs from Bitcoin Cash (BCH) blockchain by value, recipient (address), get UTXO set and more",
-          "mempool":{
-            "transactions":"Explore unconfirmed transactions in Bitcoin Cash (BCH) mempool",
-            "outputs":"Explore unconfirmed outputs in Bitcoin Cash (BCH) mempool"
-          },
-          "addresses": ""
-        },
-        "bitcoin-sv":{
-          "blocks":"Explore, sort and filter blocks from Bitcoin SV (BSV) blockchain by height, reward, miner and more",
-          "transactions":"Explore, sort and filter transactions from Bitcoin SV (BSV) blockchain by ID (hash), fee, size and more",
-          "outputs":"Explore, sort and filter outputs from Bitcoin SV (BSV) blockchain by value, recipient (address), get UTXO set and more",
-          "mempool":{
-            "transactions":"Explore unconfirmed transactions in Bitcoin SV (BSV) mempool",
-            "outputs":"Explore unconfirmed outputs in Bitcoin SV (BSV) mempool"
-          },
-          "addresses": ""
-        },
-        "dogecoin":{
-          "blocks":"Explore, sort and filter blocks from Dogecoin (DOGE) blockchain by height, reward, miner and more",
-          "transactions":"Explore, sort and filter transactions from Dogecoin (DOGE) blockchain by ID (hash), value, size, fee and more",
-          "outputs":"Explore, sort and filter outputs from Dogecoin (DOGE) blockchain by value, sender, recipient, addresses, get UTXO set and more",
-          "mempool":{
-            "transactions":"Explore unconfirmed transactions from Dogecoin (DOGE) mempool",
-            "outputs":"Explore unconfirmed outputs from Dogecoin (DOGE) mempool"
-          },
-          "addresses": ""
-        },
-        "dash":{
-          "blocks":"Explore, sort and filter blocks from Dash (DASH) blockchain by height, reward, miner and more",
-          "transactions":"Explore, sort and filter transactions from Dash (DASH) blockchain by ID (hash), value, size, fee and more",
-          "outputs":"Explore, sort and filter outputs from Dash (DASH) blockchain by value, sender, recipient, addresses, get UTXO set and more",
-          "mempool":{
-            "transactions":"Explore unconfirmed transactions from Dash (DASH) mempool",
-            "outputs":"Explore unconfirmed outputs from Dash (DASH) mempool"
-          },
-          "addresses": ""
-        },
-        "litecoin":{
-          "blocks":"Explore, sort, filter blocks from the entire Litecoin (LTC) blockchain by height, reward, miner and more",
-          "transactions":"Explore, sort, filter transactions from the entire Litecoin (LTC) blockchain by ID (hash), fee, size and more",
-          "outputs":"Explore, sort, filter outputs from the entire Litecoin (LTC) blockchain by value, recipient (address), get UTXO set and more",
-          "mempool":{
-            "transactions":"Explore transactions from Litecoin (LTC) mempool",
-            "outputs":"Explore outputs from Litecoin (LTC) mempool"
-          }
-        },
-        "groestlcoin":{
-          "blocks":"Explore, sort, filter blocks from the entire Groestlcoin (GRS) blockchain by height, reward, miner and more",
-          "transactions":"Explore, sort, filter transactions from the entire Groestlcoin (GRS) blockchain by ID (hash), fee, size and more",
-          "outputs":"Explore, sort, filter outputs from the entire Groestlcoin (GRS) blockchain by value, recipient (address), get UTXO set and more",
-          "mempool":{
-            "transactions":"Explore transactions from Groestlcoin (GRS) mempool",
-            "outputs":"Explore outputs from Groestlcoin (GRS) mempool"
-          },
-          "addresses": ""
-        },
-        "ethereum":{
-          "blocks":"Explore, sort and filter blocks from Ethereum (ETH) blockchain by height, gas, miner and more",
-          "uncles":"Explore, sort and filter uncles from Ethereum (ETH) blockchain by height, parent block, miner and more",
-          "transactions":"Explore, sort and filter transactions from Ethereum (ETH) blockchain by ID (hash), value, gas and more",
-          "calls":"Explore, sort and filter calls (internal transfers) from Ethereum (ETH) blockchain by value, time, sender, recipient and more",
-          "mempool":{
-            "blocks":"Explore latest 6 blocks in Ethereum (ETH) blockchain",
-            "transactions":"Explore unconfirmed transactions in Ethereum (ETH) mempool"
-          }
-        }
-      },
-      "foot":{
-        "server_error":"Oh noez! {error} 😯",
-        "no_results":"No results 😕",
-        "no_more_results":"No more results 👐",
-        "explore_list":"Explore this list ({difference} more rows)... 👐",
-        "load_more":"Load more ({difference} results left)... 👉"
-      },
-      "bitcoin":{
-        "blocks":{
-          "id":{
-            "short":"Height",
-            "full":"Height (id)"
-          },
-          "hash":"Hash",
-          "time":{
-            "full":"Mined on",
-            "short":"Time",
-            "utc":"(UTC)"
-          },
-          "time_ago":{
-            "short":"Ago",
-            "full":"Time elapsed"
-          },
-          "guessed_miner":{
-            "short":"Miner",
-            "full":"Guessed miner"
-          },
-          "miner_votes":{
-            "short":"Votes",
-            "full":"Miner votes"
-          },
-          "coinbase_data_bin":{
-            "bin":"[bin]",
-            "short":"Coinbase data",
-            "full":"Coinbase data [bin]"
-          },
-          "coinbase_data_hex":{
-            "hex":"[hex]",
-            "full":"Coinbase data [hex]"
-          },
-          "transaction_count":{
-            "short":"Tx #",
-            "full":"Transaction count"
-          },
-          "witness_count":{
-            "short":"Witness Tx #",
-            "full":"Witness tx count"
-          },
-          "input_count":{
-            "short":"Inputs #",
-            "full":"Input count"
-          },
-          "output_count":{
-            "short":"Outputs #",
-            "full":"Output count"
-          },
-          "cdd_total":{
-            "short":"Destroyed",
-            "full":"Coindays destroyed",
-            "cd":"(CD)",
-            "coindays":"(coindays)"
-          },
-          "input_total":{
-            "simple":"Input",
-            "full":"Total input (satoshis)",
-            "short":"Input total"
-          },
-          "input_total_usd":"Total input (USD)",
-          "output_total":{
-            "simple":"Output",
-            "full":"Total output (satoshis)",
-            "short":"Output total"
-          },
-          "output_total_usd":"Total output (USD)",
-          "fee_total":{
-            "simple":"Fees",
-            "full":"Total fee (satoshis)",
-            "short":"Fee total"
-          },
-          "fee_total_usd":"Total fee (USD)",
-          "fee_per_kb":{
-            "simple":"Fee/kB",
-            "full":"Fee per kB (satoshis)",
-            "short":"Fee per kB"
-          },
-          "fee_per_kb_usd":"Fee per kB (USD)",
-          "fee_per_kwu":{
-            "simple":"Fee/kWU",
-            "full":"Fee per kWU (satoshis)",
-            "short":"Fee per kWU"
-          },
-          "fee_per_kwu_usd":"Fee per kWU (USD)",
-          "generation":{
-            "short":"Generation",
-            "full":"Generation (satoshis)"
-          },
-          "generation_usd":"Generation (USD)",
-          "reward":{
-            "short":"Reward",
-            "full":"Miner reward (satoshis)"
-          },
-          "reward_usd":"Miner reward (USD)",
-          "size":{
-            "short":"Size",
-            "full":"Size (bytes)",
-            "kb":"(kB)"
-          },
-          "weight":{
-            "short":"Weight",
-            "full":"Weight (weight units)",
-            "kwu":"(kWU)"
-          },
-          "stripped_size":{
-            "short":"Stripped size",
-            "full":"Stripped size (bytes)"
-          },
-          "version":{
-            "short":"Version",
-            "full":"Version [int]",
-            "int":"[int]"
-          },
-          "version_hex": "Version [hex]",
-          "version_bits":{
-            "bits":"[bits]",
-            "full":"Version [bits]"
-          },
-          "median_time":"Median time",
-          "merkle_root":"Merkle root",
-          "nonce":"Nonce",
-          "bits":"Bits",
-          "difficulty":"Difficulty",
-          "chainwork":"Chainwork"
-        },
-        "transactions":{
-          "block_id":{
-            "short":"Block #",
-            "full":"Block Id"
-          },
-          "time":"Time (UTC)",
-          "id":{
-            "short":"Id",
-            "full":"Hash (txid)"
-          },
-          "is_coinbase":{
-            "short":"Is coinbase?",
-            "full":"Is it a coinbase transaction?"
-          },
-          "has_witness":{
-            "short":"Witness?",
-            "full":"Has witness data?"
-          },
-          "fee":{
-            "short":"Fee",
-            "full":"Fee (Satoshis)"
-          },
-          "fee_usd":"Fee (USD)",
-          "fee_per_kvb":"Fee per kVB",
-          "lock_time":{
-            "short":"Lock time",
-            "full":"Locktime (block height or timestamp)"
-          }
-        },
-        "outputs":{
-          "transaction_id":{
-            "short":"Tx id",
-            "full":"Transaction id"
-          },
-          "transaction_hash":{
-            "short":"Tx hash",
-            "full":"Transaction hash"
-          },
-          "index":{
-            "short":"#",
-            "full":"Index"
-          },
-          "is_from_coinbase":{
-            "short":"Is from coinbase?",
-            "full":"Is from coinbase tx?"
-          },
-          "value":{
-            "short":"Value",
-            "full":"Value (satoshis)"
-          },
-          "value_usd":"Value (USD)",
-          "recipient":{
-            "short":"Recipient",
-            "address":"(address)",
-            "full":"Recipient (address)"
-          },
-          "script_bin":{
-            "short":"Script",
-            "full":"Script [bin]"
-          },
-          "script_hex":"Script [hex]",
-          "type":{
-            "short":"Type",
-            "full":"Output type"
-          },
-          "is_spendable":{
-            "short":"Spendable?",
-            "full":"Is spendable?"
-          },
-          "is_spent":{
-            "short":"S?",
-            "full":"Is spent?"
-          },
-          "spending_block_id":{
-            "short":"Spending block #",
-            "full":"Spending block id"
-          },
-          "spending_transaction_id":{
-            "short":"Spending tx id",
-            "full":"Spending transaction id"
-          },
-          "spending_index":{
-            "short":"#",
-            "full":"Spending index"
-          },
-          "spending_transaction_hash":{
-            "short":"Spending tx hash",
-            "full":"Spending transaction hash"
-          },
-          "spending_time":{
-            "short":"Sp. time",
-            "full":"Spending time"
-          },
-          "spending_date":"Spending date",
-          "spending_time_ago":{
-            "short":"Time",
-            "ago":"(ago)",
-            "full": "Spending time (ago)"
-          },
-          "spending_value":{
-            "short":"Sp. value",
-            "full":"Spending value"
-          },
-          "spending_value_usd":"Spending value (USD)",
-          "spending_sequence":{
-            "short":"Sp. sequence",
-            "full":"Spending sequence"
-          },
-          "spending_signature_bin":{
-            "short":"Sp. signature",
-            "full":"Spending signature"
-          },
-          "spending_signature_hex":"Spending signature [hex]",
-          "spending_witness":{
-            "short":"Sp. witness",
-            "full":"Spending witness"
-          },
-          "lifespan":{
-            "short":"Lifespan",
-            "full":"Lifespan (seconds)",
-            "seconds":"(seconds)"
-          },
-          "left_link":"Links to transactions"
-        },
-        "addresses": {
-          "address": "Address",
-          "balance": {
-            "short": "Balance",
-            "full": "Balance (satoshis)"
-          }
-        }
-      },
-      "dogecoin":{
-        "blocks":{
-          "is_aux":"Is AuxPoW?"
-        }
-      },
-      "dash":{
-        "blocks":{
-          "cbtx":"CbTX"
-        },
-        "transactions":{
-          "is_special":"Is special?",
-          "special_json":"Specian JSON",
-          "type":"Type",
-          "is_instant_lock":" Is instant lock?"
-        }
-      },
-      "ethereum":{
-        "blocks":{
-          "uncle_count":"Uncle Count",
-          "synthetic_transaction_count":{
-            "short":"Synthetic tx count",
-            "full":"Synthetic transaction count"
-          },
-          "call_count":{
-            "short":"Calls #",
-            "full":"Call count"
-          },
-          "synthetic_call_count":{
-            "short":"Synthetic Call #",
-            "full":"Synthetic call count"
-          },
-          "extra_data_bin":{
-            "short":"Extra Data",
-            "full":"Extra data [bin]"
-          },
-          "extra_data_hex":"Extra data [hex]",
-          "gas_used":"Gas used",
-          "gas_limit":"Gas limit",
-          "value_total":{
-            "short":"Total Value",
-            "full":"Total value (ETH)"
-          },
-          "value_total_usd":"Total value (USD)",
-          "internal_value_total":{
-            "short":"Internal Value",
-            "full":"Total internal value (ETH)"
-          },
-          "internal_value_total_usd":"Total internal value (USD)",
-          "generation":"Generation (ETH)",
-          "uncle_generation":{
-            "short":"Uncle Generation",
-            "full":"Uncle generation (ETH)"
-          },
-          "uncle_generation_usd":"Uncle generation (USD)",
-          "fee_total":"Total fee (ETH)",
-          "reward":"Miner reward (ETH)",
-          "mix_hash":"Mix Hash",
-          "receipts_root":"Receipts Root",
-          "sha3_uncles":"SHA3 Uncles",
-          "state_root":"State Root",
-          "transactions_root":"Transactions root",
-          "logs_bloom":"Logs Bloom",
-          "total_difficulty":"Total Difficulty"
-        },
-        "transactions":{
-          "index":{
-            "short":"#",
-            "full":"Index in block"
-          },
-          "type":"Type",
-          "failed":"Failed?",
-          "sender":{
-            "short":"From",
-            "full":"Sender"
-          },
-          "recipient":{
-            "short":"To",
-            "full":"Recipient"
-          },
-          "value":{
-            "short":"Value",
-            "full":"Value (ETH)"
-          },
-          "value_usd":"Value (USD)",
-          "internal_value":{
-            "short":"Internal Value",
-            "full":"Internal value (ETH)"
-          },
-          "internal_value_usd":"Internal value (USD)",
-          "fee":{
-            "short":"Fee",
-            "full":"Fee (ETH)"
-          },
-          "fee_usd":"Fee (USD)",
-          "gas_price":"Gas price",
-          "input_bin":{
-            "short":"Input data",
-            "full":"Input data [bin]"
-          },
-          "input_hex":"Input data [hex]"
-        },
-        "uncles":{
-          "miner":"Miner",
-          "parent_block_id":{
-            "short":"Parent block id",
-            "full":"Parent block height"
-          },
-          "index":"Index in parent block"
-        },
-        "calls":{
-          "index":{
-            "short":"Index",
-            "full":"Index in transaction"
-          },
-          "depth":"Depth",
-          "child_call_count":{
-            "short":"Child Calls",
-            "full":"Child call count"
-          },
-          "fail_reason":"Fail reason",
-          "transferred":{
-            "short":"Xferred?",
-            "full":"Transferred?"
-          },
-          "output_bin":"Output data [bin]",
-          "output_hex": "Output data [hex]"
+      "menu" : {
+        "blockchains" : "Blockchains",
+        "bitcoin" : {
+          "blockchain" : "{chain} Blockchain",
+          "mempool" : "{chain} Mempool",
+          "layer_2" : "Layer 2",
+          "misc" : "Misc"
         }
       }
     },
-    "chessboard":{
-      "buttons":{
-        "fields":"Fields",
-        "show_default_fields":"Show Default Fields",
-        "show_all":"Show All",
-        "hide_all":"Hide All",
-        "reset_sorts":"Reset sorts",
-        "reset_conditions":"Reset Conditions",
-        "reset_all":"Reset All",
-        "refresh":"Refresh",
-        "settings":{
-          "without_expanding":"Show new results without expanding the table",
-          "table_condensed":"Condense the table"
+    "permalink" : {
+      "caption" : "Permalink",
+      "tooltip" : "A permalink saves sorting, conditions, and the list of shown columns. Unless there are time conditions, the data can change. If you don't need to save the list of shown columns, you can just copy the URL from the address bar."
+    },
+    "infinitable" : {
+      "description" : {
+        "bitcoin" : {
+          "blocks" : "Explore, sort and filter blocks from Bitcoin (BTC) blockchain by height, reward, miner and more",
+          "transactions" : "Explore, sort and filter transactions from Bitcoin (BTC) blockchain by ID (hash), value, size, fee and more",
+          "outputs" : "Explore, sort and filter outputs from Bitcoin (BTC) blockchain by value, sender, recipient, addresses, get UTXO set and more",
+          "mempool" : {
+            "transactions" : "Explore unconfirmed transactions from Bitcoin (BTC) mempool",
+            "outputs" : "Explore unconfirmed outputs from Bitcoin (BTC) mempool"
+          },
+          "addresses" : ""
+        },
+        "bitcoin/testnet" : {
+          "blocks" : "Explore, sort and filter blocks from Bitcoin Testnet (TBTC) blockchain by height, reward, miner and more",
+          "transactions" : "Explore, sort and filter transactions from Bitcoin Testnet (TBTC) blockchain by ID (hash), value, size, fee and more",
+          "outputs" : "Explore, sort and filter outputs from Bitcoin Testnet (TBTC) blockchain by value, sender, recipient, addresses, get UTXO set and more",
+          "mempool" : {
+            "transactions" : "Explore unconfirmed transactions from Bitcoin Testnet (TBTC) mempool",
+            "outputs" : "Explore unconfirmed outputs from Bitcoin Testnet (TBTC) mempool"
+          },
+          "addresses" : ""
+        },
+        "bitcoin-cash" : {
+          "blocks" : "Explore, sort and filter blocks from Bitcoin Cash (BCH) blockchain by height, reward, miner and more",
+          "transactions" : "Explore, sort and filter transactions from Bitcoin Cash (BCH) blockchain by ID (hash), fee, size and more",
+          "outputs" : "Explore, sort and filter outputs from Bitcoin Cash (BCH) blockchain by value, recipient (address), get UTXO set and more",
+          "mempool" : {
+            "transactions" : "Explore unconfirmed transactions in Bitcoin Cash (BCH) mempool",
+            "outputs" : "Explore unconfirmed outputs in Bitcoin Cash (BCH) mempool"
+          },
+          "addresses" : ""
+        },
+        "bitcoin-sv" : {
+          "blocks" : "Explore, sort and filter blocks from Bitcoin SV (BSV) blockchain by height, reward, miner and more",
+          "transactions" : "Explore, sort and filter transactions from Bitcoin SV (BSV) blockchain by ID (hash), fee, size and more",
+          "outputs" : "Explore, sort and filter outputs from Bitcoin SV (BSV) blockchain by value, recipient (address), get UTXO set and more",
+          "mempool" : {
+            "transactions" : "Explore unconfirmed transactions in Bitcoin SV (BSV) mempool",
+            "outputs" : "Explore unconfirmed outputs in Bitcoin SV (BSV) mempool"
+          },
+          "addresses" : ""
+        },
+        "dogecoin" : {
+          "blocks" : "Explore, sort and filter blocks from Dogecoin (DOGE) blockchain by height, reward, miner and more",
+          "transactions" : "Explore, sort and filter transactions from Dogecoin (DOGE) blockchain by ID (hash), value, size, fee and more",
+          "outputs" : "Explore, sort and filter outputs from Dogecoin (DOGE) blockchain by value, sender, recipient, addresses, get UTXO set and more",
+          "mempool" : {
+            "transactions" : "Explore unconfirmed transactions from Dogecoin (DOGE) mempool",
+            "outputs" : "Explore unconfirmed outputs from Dogecoin (DOGE) mempool"
+          },
+          "addresses" : ""
+        },
+        "dash" : {
+          "blocks" : "Explore, sort and filter blocks from Dash (DASH) blockchain by height, reward, miner and more",
+          "transactions" : "Explore, sort and filter transactions from Dash (DASH) blockchain by ID (hash), value, size, fee and more",
+          "outputs" : "Explore, sort and filter outputs from Dash (DASH) blockchain by value, sender, recipient, addresses, get UTXO set and more",
+          "mempool" : {
+            "transactions" : "Explore unconfirmed transactions from Dash (DASH) mempool",
+            "outputs" : "Explore unconfirmed outputs from Dash (DASH) mempool"
+          },
+          "addresses" : ""
+        },
+        "litecoin" : {
+          "blocks" : "Explore, sort, filter blocks from the entire Litecoin (LTC) blockchain by height, reward, miner and more",
+          "transactions" : "Explore, sort, filter transactions from the entire Litecoin (LTC) blockchain by ID (hash), fee, size and more",
+          "outputs" : "Explore, sort, filter outputs from the entire Litecoin (LTC) blockchain by value, recipient (address), get UTXO set and more",
+          "mempool" : {
+            "transactions" : "Explore transactions from Litecoin (LTC) mempool",
+            "outputs" : "Explore outputs from Litecoin (LTC) mempool"
+          }
+        },
+        "groestlcoin" : {
+          "blocks" : "Explore, sort, filter blocks from the entire Groestlcoin (GRS) blockchain by height, reward, miner and more",
+          "transactions" : "Explore, sort, filter transactions from the entire Groestlcoin (GRS) blockchain by ID (hash), fee, size and more",
+          "outputs" : "Explore, sort, filter outputs from the entire Groestlcoin (GRS) blockchain by value, recipient (address), get UTXO set and more",
+          "mempool" : {
+            "transactions" : "Explore transactions from Groestlcoin (GRS) mempool",
+            "outputs" : "Explore outputs from Groestlcoin (GRS) mempool"
+          },
+          "addresses" : ""
+        },
+        "ethereum" : {
+          "blocks" : "Explore, sort and filter blocks from Ethereum (ETH) blockchain by height, gas, miner and more",
+          "uncles" : "Explore, sort and filter uncles from Ethereum (ETH) blockchain by height, parent block, miner and more",
+          "transactions" : "Explore, sort and filter transactions from Ethereum (ETH) blockchain by ID (hash), value, gas and more",
+          "calls" : "Explore, sort and filter calls (internal transfers) from Ethereum (ETH) blockchain by value, time, sender, recipient and more",
+          "mempool" : {
+            "blocks" : "Explore latest 6 blocks in Ethereum (ETH) blockchain",
+            "transactions" : "Explore unconfirmed transactions in Ethereum (ETH) mempool"
+          }
+        },
+        "mixin" : {
+          "snapshots" : "Explore and sort snapshots from Mixin (XIN) blockchain by topology (height)",
+          "mintings" : "Explore Mixin (XIN) kernel nodes mintings (rewards) by snapshots",
+          "nodes" : "Explore Mixin (XIN) kernel nodes. Each node needs to promise 10,000 XIN, so about 50 kernel nodes might be found",
+          "graph" : "Explore Mixin (XIN) DAG. Graph can used to build ledgers that bypass the needs of PoW and blocks"
         }
       },
-      "conditions":{
-        "alert":{
-          "limit_of_sorts":"Only {limit} sorts can be set at the same time :(",
-          "limit_of_conditions":"Only {limit} conditions can be set at the same time :("
-        },
-        "examples":"Examples:",
-        "notice":"Notice:"
+      "foot" : {
+        "server_error" : "Oh noez! {error} 😯",
+        "no_results" : "No results 😕",
+        "no_more_results" : "No more results 👐",
+        "explore_list" : "Explore this list ({difference} more rows)",
+        "load_more" : "Load more ({difference} results left)",
+        "show_next" : "Show next {limit} items ({difference} results left)"
       },
-      "bitcoin":{
-        "columns":{
-          "general":"General",
-          "monetary":"Monetary",
-          "technical":"Technical",
-          "spending":{
-            "general":"Spending...",
-            "continuation":"Spending (cont’d)..."
+      "bitcoin" : {
+        "blocks" : {
+          "id" : {
+            "short" : "Height",
+            "full" : "Height (id)"
+          },
+          "hash" : "Hash",
+          "time" : {
+            "full" : "Mined on",
+            "short" : "Time",
+            "utc" : "(UTC)"
+          },
+          "time_ago" : {
+            "short" : "Ago",
+            "full" : "Time elapsed"
+          },
+          "guessed_miner" : {
+            "short" : "Miner",
+            "full" : "Guessed miner"
+          },
+          "miner_votes" : {
+            "short" : "Votes",
+            "full" : "Miner votes"
+          },
+          "coinbase_data_bin" : {
+            "bin" : "[bin]",
+            "short" : "Coinbase data",
+            "full" : "Coinbase data [bin]"
+          },
+          "coinbase_data_hex" : {
+            "hex" : "[hex]",
+            "full" : "Coinbase data [hex]"
+          },
+          "transaction_count" : {
+            "short" : "Tx #",
+            "full" : "Transaction count"
+          },
+          "witness_count" : {
+            "short" : "Witness Tx #",
+            "full" : "Witness tx count"
+          },
+          "input_count" : {
+            "short" : "Inputs #",
+            "full" : "Input count"
+          },
+          "output_count" : {
+            "short" : "Outputs #",
+            "full" : "Output count"
+          },
+          "cdd_total" : {
+            "short" : "Destroyed",
+            "full" : "Coindays destroyed",
+            "cd" : "(CD)",
+            "coindays" : "(coindays)"
+          },
+          "input_total" : {
+            "simple" : "Input",
+            "full" : "Total input (satoshis)",
+            "short" : "Input total"
+          },
+          "input_total_usd" : "Total input (USD)",
+          "output_total" : {
+            "simple" : "Output",
+            "full" : "Total output (satoshis)",
+            "short" : "Output total"
+          },
+          "output_total_usd" : "Total output (USD)",
+          "fee_total" : {
+            "simple" : "Fees",
+            "full" : "Total fee (satoshis)",
+            "short" : "Fee total"
+          },
+          "fee_total_usd" : "Total fee (USD)",
+          "fee_per_kb" : {
+            "simple" : "Fee/kB",
+            "full" : "Fee per kB (satoshis)",
+            "short" : "Fee per kB"
+          },
+          "fee_per_kb_usd" : "Fee per kB (USD)",
+          "fee_per_kwu" : {
+            "simple" : "Fee/kWU",
+            "full" : "Fee per kWU (satoshis)",
+            "short" : "Fee per kWU"
+          },
+          "fee_per_kwu_usd" : "Fee per kWU (USD)",
+          "generation" : {
+            "short" : "Generation",
+            "full" : "Generation (satoshis)"
+          },
+          "generation_usd" : "Generation (USD)",
+          "reward" : {
+            "short" : "Reward",
+            "full" : "Miner reward (satoshis)"
+          },
+          "reward_usd" : "Miner reward (USD)",
+          "size" : {
+            "short" : "Size",
+            "full" : "Size (kB)",
+            "kb" : "(kB)"
+          },
+          "weight" : {
+            "short" : "Weight",
+            "full" : "Weight (weight units)",
+            "kwu" : "(kWU)"
+          },
+          "stripped_size" : {
+            "short" : "Stripped size",
+            "full" : "Stripped size (kB)"
+          },
+          "version" : {
+            "short" : "Version",
+            "full" : "Version [int]",
+            "int" : "[int]"
+          },
+          "version_hex" : "Version [hex]",
+          "version_bits" : {
+            "bits" : "[bits]",
+            "full" : "Version [bits]"
+          },
+          "median_time" : "Median time",
+          "merkle_root" : "Merkle root",
+          "nonce" : "Nonce",
+          "bits" : "Bits",
+          "difficulty" : "Difficulty",
+          "chainwork" : "Chainwork"
+        },
+        "transactions" : {
+          "block_id" : {
+            "short" : "Block #",
+            "full" : "Block Id"
+          },
+          "time" : "Time (UTC)",
+          "id" : {
+            "short" : "Id",
+            "full" : "Hash (txid)"
+          },
+          "is_coinbase" : {
+            "short" : "Is coinbase?",
+            "full" : "Is it a coinbase transaction?"
+          },
+          "has_witness" : {
+            "short" : "Witness?",
+            "full" : "Has witness data?"
+          },
+          "fee" : {
+            "short" : "Fee",
+            "full" : "Fee (Satoshis)"
+          },
+          "fee_usd" : "Fee (USD)",
+          "fee_per_kvb" : "Fee per kVB",
+          "lock_time" : {
+            "short" : "Lock time",
+            "full" : "Locktime (block height or timestamp)"
           }
         },
-        "blocks":{
-          "id":{
-            "examples":{
-              "first_100_blocks":"first 100 blocks",
-              "zero_block":"block #0"
+        "outputs" : {
+          "transaction_id" : {
+            "short" : "Tx id",
+            "full" : "Transaction id"
+          },
+          "transaction_hash" : {
+            "short" : "Tx hash",
+            "full" : "Transaction hash"
+          },
+          "index" : {
+            "short" : "#",
+            "full" : "Index"
+          },
+          "is_from_coinbase" : {
+            "short" : "Is from coinbase?",
+            "full" : "Is from coinbase tx?"
+          },
+          "value" : {
+            "short" : "Value",
+            "full" : "Value (satoshis)"
+          },
+          "value_usd" : "Value (USD)",
+          "recipient" : {
+            "short" : "Recipient",
+            "address" : "(address)",
+            "full" : "Recipient (address)"
+          },
+          "script_bin" : {
+            "short" : "Script",
+            "full" : "Script [bin]"
+          },
+          "script_hex" : "Script [hex]",
+          "type" : {
+            "short" : "Type",
+            "full" : "Output type"
+          },
+          "is_spendable" : {
+            "short" : "Spendable?",
+            "full" : "Is spendable?"
+          },
+          "is_spent" : {
+            "short" : "S?",
+            "full" : "Is spent?"
+          },
+          "spending_block_id" : {
+            "short" : "Spending block #",
+            "full" : "Spending block id"
+          },
+          "spending_transaction_id" : {
+            "short" : "Spending tx id",
+            "full" : "Spending transaction id"
+          },
+          "spending_index" : {
+            "short" : "#",
+            "full" : "Spending index"
+          },
+          "spending_transaction_hash" : {
+            "short" : "Spending tx hash",
+            "full" : "Spending transaction hash"
+          },
+          "spending_time" : {
+            "short" : "Sp. time",
+            "full" : "Spending time"
+          },
+          "spending_date" : "Spending date",
+          "spending_time_ago" : {
+            "short" : "Time",
+            "ago" : "(ago)",
+            "full" : "Spending time (ago)"
+          },
+          "spending_value" : {
+            "short" : "Sp. value",
+            "full" : "Spending value"
+          },
+          "spending_value_usd" : "Spending value (USD)",
+          "spending_sequence" : {
+            "short" : "Sp. sequence",
+            "full" : "Spending sequence"
+          },
+          "spending_signature_bin" : {
+            "short" : "Sp. signature",
+            "full" : "Spending signature"
+          },
+          "spending_signature_hex" : "Spending signature [hex]",
+          "spending_witness" : {
+            "short" : "Sp. witness",
+            "full" : "Spending witness"
+          },
+          "lifespan" : {
+            "short" : "Lifespan",
+            "full" : "Lifespan (seconds)",
+            "seconds" : "(seconds)"
+          },
+          "left_link" : "Links to transactions"
+        },
+        "addresses" : {
+          "address" : "Address",
+          "balance" : {
+            "short" : "Balance",
+            "full" : "Balance (satoshis)"
+          }
+        }
+      },
+      "dogecoin" : {
+        "blocks" : {
+          "is_aux" : "Is AuxPoW?"
+        }
+      },
+      "dash" : {
+        "blocks" : {
+          "cbtx" : "CbTX"
+        },
+        "transactions" : {
+          "is_special" : "Is special?",
+          "special_json" : "Specian JSON",
+          "type" : "Type",
+          "is_instant_lock" : " Is instant lock?"
+        }
+      },
+      "ethereum" : {
+        "blocks" : {
+          "uncle_count" : "Uncle Count",
+          "synthetic_transaction_count" : {
+            "short" : "Synthetic tx count",
+            "full" : "Synthetic transaction count"
+          },
+          "call_count" : {
+            "short" : "Calls #",
+            "full" : "Call count"
+          },
+          "synthetic_call_count" : {
+            "short" : "Synthetic Call #",
+            "full" : "Synthetic call count"
+          },
+          "extra_data_bin" : {
+            "short" : "Extra Data",
+            "full" : "Extra data [bin]"
+          },
+          "extra_data_hex" : "Extra data [hex]",
+          "gas_used" : "Gas used",
+          "gas_limit" : "Gas limit",
+          "value_total" : {
+            "short" : "Total Value",
+            "full" : "Total value (ETH)"
+          },
+          "value_total_usd" : "Total value (USD)",
+          "internal_value_total" : {
+            "short" : "Internal Value",
+            "full" : "Total internal value (ETH)"
+          },
+          "internal_value_total_usd" : "Total internal value (USD)",
+          "generation" : "Generation (ETH)",
+          "uncle_generation" : {
+            "short" : "Uncle Generation",
+            "full" : "Uncle generation (ETH)"
+          },
+          "uncle_generation_usd" : "Uncle generation (USD)",
+          "fee_total" : "Total fee (ETH)",
+          "reward" : "Miner reward (ETH)",
+          "mix_hash" : "Mix Hash",
+          "receipts_root" : "Receipts Root",
+          "sha3_uncles" : "SHA3 Uncles",
+          "state_root" : "State Root",
+          "transactions_root" : "Transactions root",
+          "logs_bloom" : "Logs Bloom",
+          "total_difficulty" : "Total Difficulty"
+        },
+        "transactions" : {
+          "index" : {
+            "short" : "#",
+            "full" : "Index in block"
+          },
+          "type" : "Type",
+          "failed" : "Failed?",
+          "sender" : {
+            "short" : "From",
+            "full" : "Sender"
+          },
+          "recipient" : {
+            "short" : "To",
+            "full" : "Recipient"
+          },
+          "value" : {
+            "short" : "Value",
+            "full" : "Value (ETH)"
+          },
+          "value_usd" : "Value (USD)",
+          "internal_value" : {
+            "short" : "Internal Value",
+            "full" : "Internal value (ETH)"
+          },
+          "internal_value_usd" : "Internal value (USD)",
+          "fee" : {
+            "short" : "Fee",
+            "full" : "Fee (ETH)"
+          },
+          "fee_usd" : "Fee (USD)",
+          "gas_price" : "Gas price",
+          "input_bin" : {
+            "short" : "Input data",
+            "full" : "Input data [bin]"
+          },
+          "input_hex" : "Input data [hex]"
+        },
+        "uncles" : {
+          "miner" : "Miner",
+          "parent_block_id" : {
+            "short" : "Parent block id",
+            "full" : "Parent block height"
+          },
+          "index" : "Index in parent block"
+        },
+        "calls" : {
+          "index" : {
+            "short" : "Index",
+            "full" : "Index in transaction"
+          },
+          "depth" : "Depth",
+          "child_call_count" : {
+            "short" : "Child Calls",
+            "full" : "Child call count"
+          },
+          "fail_reason" : "Fail reason",
+          "transferred" : {
+            "short" : "Xferred?",
+            "full" : "Transferred?"
+          },
+          "output_bin" : "Output data [bin]",
+          "output_hex" : "Output data [hex]"
+        }
+      },
+      "mixin" : {
+        "snapshots" : {
+          "topology" : "Topology",
+          "round" : "Round",
+          "round_self" : "Self previous round",
+          "round_external" : "External round",
+          "timestamp" : "Timestamp",
+          "node" : "Node",
+          "hash" : "Hash",
+          "signatures" : "Signatures",
+          "version" : "Version"
+        },
+        "transactions" : {
+          "snapshot" : "Snapshot",
+          "asset" : "Asset",
+          "extra" : "Extra"
+        },
+        "mintings" : {
+          "amount" : "Amount",
+          "batch" : "Batch",
+          "group" : "Group",
+          "snapshot" : "Snapshot",
+          "transaction" : "Transaction",
+          "timestamp" : "Timestamp"
+        },
+        "nodes" : {
+          "id" : "Id",
+          "payee" : "Payee",
+          "signer" : "Signer",
+          "state" : "State",
+          "transaction" : "Transaction",
+          "timestamp" : "Timestamp",
+          "graph" : "Graph"
+        },
+        "round" : {
+          "start" : "Start",
+          "end" : "End",
+          "hash" : "Hash",
+          "node" : "Node",
+          "number" : "Number",
+          "references" : "References",
+          "snapshots" : "Snapshots"
+        }
+      }
+    },
+    "chessboard" : {
+      "buttons" : {
+        "fields" : "Fields",
+        "show_default_fields" : "Show Default Fields",
+        "show_all" : "Show All",
+        "hide_all" : "Hide All",
+        "reset_sorts" : "Reset sorts",
+        "reset_conditions" : "Reset Conditions",
+        "reset_all" : "Reset All",
+        "refresh" : "Refresh",
+        "settings" : {
+          "without_expanding" : "Show new results without expanding the table",
+          "table_condensed" : "Condense the table"
+        }
+      },
+      "conditions" : {
+        "alert" : {
+          "limit_of_sorts" : "Only {limit} sorts can be set at the same time :(",
+          "limit_of_conditions" : "Only {limit} conditions can be set at the same time :("
+        },
+        "examples" : "Examples:",
+        "notice" : "Notice:"
+      },
+      "bitcoin" : {
+        "columns" : {
+          "general" : "General",
+          "monetary" : "Monetary",
+          "technical" : "Technical",
+          "spending" : {
+            "general" : "Spending...",
+            "continuation" : "Spending (cont’d)..."
+          }
+        },
+        "blocks" : {
+          "id" : {
+            "examples" : {
+              "first_100_blocks" : "first 100 blocks",
+              "zero_block" : "block #0"
             }
           },
-          "transaction_count":{
-            "examples":{
-              "big_blocks":"big blocks",
-              "coinbase_tx_only":"blocks containing a coinbase tx only"
+          "transaction_count" : {
+            "examples" : {
+              "big_blocks" : "big blocks",
+              "coinbase_tx_only" : "blocks containing a coinbase tx only"
             }
           },
-          "witness_count":{
-            "examples":{
-              "more_that_one":"more that one",
-              "just_one":"just one"
+          "witness_count" : {
+            "examples" : {
+              "more_that_one" : "more that one",
+              "just_one" : "just one"
             }
           },
-          "input_count":{
-            "examples":{
-              "over_10k_inputs":"over 10k inputs",
-              "just_coinbase_input":"just a coinbase input"
+          "input_count" : {
+            "examples" : {
+              "over_10k_inputs" : "over 10k inputs",
+              "just_coinbase_input" : "just a coinbase input"
             }
           },
-          "output_count":{
-            "examples":{
-              "over_10k_outputs":"over 10k outputs",
-              "just_coinbase_output":"coinbase transactions with 1 output"
+          "output_count" : {
+            "examples" : {
+              "over_10k_outputs" : "over 10k outputs",
+              "just_coinbase_output" : "coinbase transactions with 1 output"
             }
           },
-          "cdd_total":{
-            "examples":{
-              "largest_spendings":"the largest spendings",
-              "no_cd":"no coindays destroyed"
+          "cdd_total" : {
+            "examples" : {
+              "largest_spendings" : "the largest spendings",
+              "no_cd" : "no coindays destroyed"
             }
           },
-          "input_total":{
-            "title":{
-              "full":"Total input ({ticker})"
+          "input_total" : {
+            "title" : {
+              "full" : "Total input ({ticker})"
             },
-            "examples":{
-              "over_100":"over 100 {ticker}",
-              "exactly_one":"exactly 1 {ticker}"
+            "examples" : {
+              "over_100" : "over 100 {ticker}",
+              "exactly_one" : "exactly 1 {ticker}"
             },
-            "notice":"please enter values in satoshis (1 {ticker} = 100000000 sat.)!"
+            "notice" : "please enter values in satoshis (1 {ticker} = 100000000 sat.)!"
           },
-          "input_total_usd":{
-            "examples":{
-              "over_one_million_usd":"over 1$ M",
-              "exactly_one_million_usd":"exactly $ 1"
+          "input_total_usd" : {
+            "examples" : {
+              "over_one_million_usd" : "over 1$ M",
+              "exactly_one_million_usd" : "exactly $ 1"
             }
           },
-          "output_total":{
-            "title":{
-              "full":"Total output ({ticker})"
+          "output_total" : {
+            "title" : {
+              "full" : "Total output ({ticker})"
             }
           },
-          "fee_total":{
-            "title":{
-              "full":"Total fee ({ticker})"
+          "fee_total" : {
+            "title" : {
+              "full" : "Total fee ({ticker})"
             }
           },
-          "fee_per_kb":{
-            "title":{
-              "full":"Fee per kB ({ticker})"
+          "fee_per_kb" : {
+            "title" : {
+              "full" : "Fee per kB ({ticker})"
             },
-            "examples":{
-              "exactly_one_hundredth":"exactly 0.01 {ticker}"
+            "examples" : {
+              "exactly_one_hundredth" : "exactly 0.01 {ticker}"
             }
           },
-          "fee_per_kb_usd":{
-            "examples":{
-              "exactly_one_hundredth":"exactly $ 0.01"
+          "fee_per_kb_usd" : {
+            "examples" : {
+              "exactly_one_hundredth" : "exactly $ 0.01"
             }
           },
-          "generation":{
-            "title":{
-              "full":"Generation ({ticker})"
+          "fee_per_b" : {
+            "title" : {
+              "full" : "Fee per byte ({ticker})"
             }
           },
-          "reward":{
-            "title":{
-              "full":"Miner reward ({ticker})"
+          "generation" : {
+            "title" : {
+              "full" : "Generation ({ticker})"
+            }
+          },
+          "reward" : {
+            "title" : {
+              "full" : "Miner reward ({ticker})"
             },
-            "examples":{
-              "exactly_twelve_and_half":"exactly 12.5 {ticker}"
+            "examples" : {
+              "exactly_twelve_and_half" : "exactly 12.5 {ticker}"
             }
           },
-          "reward_usd":{
-            "examples":{
-              "over_25k":"over $25k"
+          "reward_usd" : {
+            "examples" : {
+              "over_25k" : "over $25k"
             }
           },
-          "size":{
-            "examples":{
-              "small_blocks":"small blocks",
-              "exactly_one":"exactly 1 {ticker}"
+          "size" : {
+            "examples" : {
+              "small_blocks" : "small blocks",
+              "exactly_one" : "exactly 1 {ticker}"
             },
-            "notice":"please enter values in bytes!"
+            "notice" : "please enter values in bytes!"
           },
-          "stripped_size":{
-            "examples":{
-              "almost_full_blocks":"almost full blocks"
+          "stripped_size" : {
+            "examples" : {
+              "almost_full_blocks" : "almost full blocks"
             }
           }
         },
-        "transactions":{
-          "is_coinbase":{
-            "examples":{
-              "yes":"Yes",
-              "no":"No"
+        "transactions" : {
+          "is_coinbase" : {
+            "examples" : {
+              "yes" : "Yes",
+              "no" : "No"
             }
           },
-          "fee":{
-            "title":{
-              "full":"Fee ({ticker})"
+          "fee" : {
+            "title" : {
+              "full" : "Fee ({ticker})"
             }
           }
         },
-        "outputs":{
-          "value":{
-            "title":{
-              "full":"Value ({ticker})"
+        "outputs" : {
+          "value" : {
+            "title" : {
+              "full" : "Value ({ticker})"
             }
           },
-          "is_spendable":{
-            "examples":{
-              "unknown":"unknown"
+          "is_spendable" : {
+            "examples" : {
+              "unknown" : "unknown"
             }
           }
         }
       },
-      "litecoin":{
-        "blocks":{
-          "input_total":{
-            "notice":"please enter values in litoshi (1 {ticker} = 100000000 lit.)!"
+      "litecoin" : {
+        "blocks" : {
+          "input_total" : {
+            "notice" : "please enter values in litoshi (1 {ticker} = 100000000 lit.)!"
           }
         }
       }
     },
-    "type":{
-      "bitcoin":{
-        "block":{
-          "description":"Bitcoin (BTC) block {height}, hash: {hash}, date: {date}",
-          "general_info":"General info",
-          "technical_details":"Technical details",
-          "see_more": "Click to see more",
-          "hide_details": "Hide details",
-          "explorers":"Other blockchain explorers",
-          "last_transactions":"Transactions included in this block"
+    "type" : {
+      "bitcoin" : {
+        "block" : {
+          "description" : "Bitcoin (BTC) block {height}, hash: {hash}, date: {date}",
+          "general_info" : "General info",
+          "technical_details" : "Technical details",
+          "see_more" : "Click to see more",
+          "hide_details" : "Hide details",
+          "explorers" : "Alternative explorers",
+          "for_developers" : "For developers",
+          "api_docs" : "API docs",
+          "last_transactions" : "Transactions included in this block"
         },
-        "transaction":{
-          "description":{
-            "general":"Check Bitcoin (BTC) transaction, value: {output_total_btc}, date: {date}",
-            "coinbase":"Check Bitcoin (BTC) coinbase transaction, value: {output_total_btc}, date: {date}"
+        "transaction" : {
+          "description" : {
+            "general" : "Check Bitcoin (BTC) transaction, value: {output_total_btc}, date: {date}",
+            "coinbase" : "Check Bitcoin (BTC) coinbase transaction, value: {output_total_btc}, date: {date}"
           },
-          "priority":"Priority: {position}/{count}",
-          "confirmations":"Unconfirmed | {count} confirmation | {count} confirmations",
-          "protocol":{
-            "omni":"Omni Layer transaction"
+          "priority" : "Priority: {position}/{count}",
+          "confirmations" : "Unconfirmed | {count} confirmation | {count} confirmations",
+          "protocol" : {
+            "omni" : "Omni Layer transaction"
           },
-          "op_return":{
-            "title":"OP_RETURN",
-            "memopay_message":"Memopay message",
-            "protocol":{
-              "title":"{name} protocol",
-              "details":"View on {name}"
+          "op_return" : {
+            "title" : "OP_RETURN",
+            "memopay_message" : "Memopay message",
+            "protocol" : {
+              "title" : "{name} protocol",
+              "details" : "View on {name}"
             },
-            "bin":"Decoded"
+            "bin" : "Decoded"
           },
-          "confirmed_notify":{
-            "button":"Notify me",
-            "modal":{
-              "title":"Notify me when this transaction gets confirmed",
-              "description":"Push the button and you will receive a notification when this transaction gets into a block. Please don’t leave this page (but you can minimize this window, use other tabs in your browser, etc.). Your browser may ask for permission to send notifications if you use this feature for the first time.",
-              "enable":"Notify me when this transaction gets confirmed"
+          "confirmed_notify" : {
+            "button" : "Notify me",
+            "modal" : {
+              "title" : "Notify me when this transaction gets confirmed",
+              "description" : "Push the button and you will receive a notification when this transaction gets into a block. Please don’t leave this page (but you can minimize this window, use other tabs in your browser, etc.). Your browser may ask for permission to send notifications if you use this feature for the first time.",
+              "enable" : "Notify me when this transaction gets confirmed"
             },
-            "notification":"Your {chain} transaction has been confirmed!",
-            "leaving":"You will not receive a notification that the transaction is confirmed. Are you sure you want to leave this page?"
+            "notification" : "Your {chain} transaction has been confirmed!",
+            "leaving" : "You will not receive a notification that the transaction is confirmed. Are you sure you want to leave this page?"
           },
-          "fee_per_byte": {
-            "caption": "Fee per byte",
-            "dimension": "satoshi"
+          "fee_per_byte" : {
+            "caption" : "Fee per byte",
+            "dimension" : "satoshi"
           },
-          "raw_transaction":{
-            "title":"Raw txn",
-            "form":{
-              "hex":"Raw transaction (hex):",
-              "decoded":"Decoded raw transaction (json):"
+          "raw_transaction" : {
+            "title" : "Raw tx",
+            "form" : {
+              "hex" : "Raw transaction (hex):",
+              "decoded" : "Decoded raw transaction (json):"
             },
-            "empty":"Couldn’t retrieve data for this transaction (it’s either a genesis transaction or this transaction has been dropped from the mempool)"
+            "empty" : "Couldn’t retrieve data for this transaction (it’s either a genesis transaction or this transaction has been dropped from the mempool)"
           },
-          "pdf_receipt":"PDF receipt",
-          "senders":"Senders",
-          "recipients":"Recipients"
+          "pdf_receipt" : "PDF receipt",
+          "senders" : "Senders",
+          "recipients" : "Recipients",
+          "senders_and_recipients" : "Senders and recipients"
         },
-        "address":{
-          "description":"Check Bitcoin (BTC) address {address} balance and its transactions",
-          "type":"Address type",
-          "formats":{
-            "legacy":"Legacy address format",
-            "cashaddr":"Cash address format"
+        "address" : {
+          "description" : "Check Bitcoin (BTC) address {address} balance and its transactions",
+          "type" : "Address type",
+          "formats" : {
+            "legacy" : "Legacy address format",
+            "cashaddr" : "Cash address format"
           },
-          "script":{
-            "short":"Script",
-            "bin":"Script [bin]",
-            "hex":"Script [hex]"
+          "script" : {
+            "short" : "Script",
+            "bin" : "Script [bin]",
+            "hex" : "Script [hex]"
           },
-          "unspent_output_count":"Unspent output count",
-          "monetary_info":"Monetary info",
-          "last_seen_receiving": "Last seen receiving",
-          "first_last_seen_receiving": "First / last seen receiving",
-          "first_last_seen_spending": "First / last seen spending",
-          "total_received":"Total received",
-          "total_spent":"Total spent",
-          "total_unspent":"Balance",
-          "protocol":{
-            "omni":{
-              "title":"Omni tokens",
-              "token_name":"Token name",
-              "balance":"Balance"
-            },
-            "wormhole":{
-              "title":"Wormhole tokens"
+          "unspent_output_count" : "Unspent output count",
+          "monetary_info" : "Monetary info",
+          "last_seen_receiving" : "Last seen receiving",
+          "first_last_seen_receiving" : "First / last seen receiving",
+          "first_last_seen_spending" : "First / last seen spending",
+          "total_received" : "Total received",
+          "total_spent" : "Total spent",
+          "total_unspent" : "Balance",
+          "protocol" : {
+            "omni" : {
+              "title" : "Omni tokens",
+              "token_name" : "Token name",
+              "balance" : "Balance"
             }
           },
-          "qr_code":"QR code",
-          "transactions":{
-            "title":"Transactions involving address",
-            "id":"Hash:",
-            "time":"Timestamp:",
-            "no_transactions":"No transactions yet",
-            "protocol":{
-              "omni":"Contains Omni Layer data",
-              "wormhole":"Contains Wormhole data"
+          "qr_code" : "QR code",
+          "transactions" : {
+            "title" : "Transactions involving address",
+            "id" : "Hash:",
+            "time" : "Timestamp:",
+            "no_transactions" : "No transactions yet",
+            "protocol" : {
+              "omni" : "Contains Omni Layer data"
             }
           }
         },
-        "xpub":{
-          "address_count":"Address count",
-          "addresses":{
-            "caption":"Addresses",
-            "table":{
-              "unspent_output_count":"Unspent outputs #",
-              "last_seen_receiving":"Last seen receiving",
-              "last_seen_spending":"Last seen spending"
+        "xpub" : {
+          "address_count" : "Address count",
+          "addresses" : {
+            "caption" : "Addresses",
+            "table" : {
+              "unspent_output_count" : "Unspent outputs #",
+              "last_seen_receiving" : "Last seen receiving",
+              "last_seen_spending" : "Last seen spending"
             }
           },
-          "path":"Path"
+          "path" : "Path"
         }
       },
-      "bitcoin/testnet":{
-        "block":{
-          "description":"Bitcoin Testnet (TBTC) block {height}, hash: {hash}, date: {date}"
+      "bitcoin/testnet" : {
+        "block" : {
+          "description" : "Bitcoin Testnet (TBTC) block {height}, hash: {hash}, date: {date}"
         },
-        "transaction":{
-          "description":{
-            "general":"Check Bitcoin Testnet (TBTC) transaction, value: {output_total_btc}, date: {date}",
-            "coinbase":"Check Bitcoin Testnet (TBTC) coinbase transaction, value: {output_total_btc}, date: {date}"
+        "transaction" : {
+          "description" : {
+            "general" : "Check Bitcoin Testnet (TBTC) transaction, value: {output_total_btc}, date: {date}",
+            "coinbase" : "Check Bitcoin Testnet (TBTC) coinbase transaction, value: {output_total_btc}, date: {date}"
           }
         },
-        "address":{
-          "description":"Check Bitcoin Testnet (TBTC) address {address} balance and its transactions"
+        "address" : {
+          "description" : "Check Bitcoin Testnet (TBTC) address {address} balance and its transactions"
         }
       },
-      "bitcoin-cash":{
-        "block":{
-          "description":"Bitcoin Cash (BCH) block {height}, hash: {hash}, date: {date}"
+      "bitcoin-cash" : {
+        "block" : {
+          "description" : "Bitcoin Cash (BCH) block {height}, hash: {hash}, date: {date}"
         },
-        "transaction":{
-          "description":"Bitcoin Cash (BCH) transaction {hash}, date: {date}",
-          "protocol":{
-            "wormhole":"Wormhole transaction"
+        "transaction" : {
+          "description" : "Bitcoin Cash (BCH) transaction {hash}, date: {date}"
+        },
+        "address" : {
+          "description" : "Check Bitcoin Cash (BCH) address {cash_address} ({legacy_address}), its balance and transactions"
+        }
+      },
+      "bitcoin-sv" : {
+        "block" : {
+          "description" : "Bitcoin SV (BSV) block {height}, hash: {hash}, date: {date}"
+        },
+        "transaction" : {
+          "description" : "Bitcoin SV (BSV) transaction {hash}, date: {date}"
+        },
+        "address" : {
+          "description" : "Check Bitcoin SV (BSV) address: {cash_address} ({legacy_address}), its balance and transactions"
+        }
+      },
+      "dogecoin" : {
+        "block" : {
+          "description" : "Dogecoin (DOGE) block {height}, hash: {hash}, date: {date}"
+        },
+        "transaction" : {
+          "description" : {
+            "general" : "Check Dogecoin (DOGE) transaction, value: {output_total_doge}, date: {date}",
+            "coinbase" : "Check Dogecoin (DOGE) coinbase transaction, value: {output_total_doge}, date: {date}"
           }
         },
-        "address":{
-          "description":"Check Bitcoin Cash (BCH) address {cash_address} ({legacy_address}), its balance and transactions"
+        "address" : {
+          "description" : "Check Dogecoin (DOGE) address {address} balance and its transactions"
         }
       },
-      "bitcoin-sv":{
-        "block":{
-          "description":"Bitcoin SV (BSV) block {height}, hash: {hash}, date: {date}"
+      "dash" : {
+        "block" : {
+          "description" : "Dash (DASH) block {height}, hash: {hash}, date: {date}"
         },
-        "transaction":{
-          "description":"Bitcoin SV (BSV) transaction {hash}, date: {date}"
-        },
-        "address":{
-          "description":"Check Bitcoin SV (BSV) address: {cash_address} ({legacy_address}), its balance and transactions"
-        }
-      },
-      "dogecoin":{
-        "block":{
-          "description":"Dogecoin (DOGE) block {height}, hash: {hash}, date: {date}"
-        },
-        "transaction":{
-          "description":{
-            "general":"Check Dogecoin (DOGE) transaction, value: {output_total_doge}, date: {date}",
-            "coinbase":"Check Dogecoin (DOGE) coinbase transaction, value: {output_total_doge}, date: {date}"
+        "transaction" : {
+          "description" : {
+            "general" : "Check Dash (DASH) transaction, value: {output_total_dash}, date: {date}",
+            "coinbase" : "Check Dash (DASH) coinbase transaction, value: {output_total_dash}, date: {date}"
           }
         },
-        "address":{
-          "description":"Check Dogecoin (DOGE) address {address} balance and its transactions"
+        "address" : {
+          "description" : "Check Dash (DASH) address {address} balance and its transactions"
         }
       },
-      "dash":{
-        "block":{
-          "description":"Dash (DASH) block {height}, hash: {hash}, date: {date}"
+      "litecoin" : {
+        "block" : {
+          "description" : "Litecoin (LTC) block {height}, hash: {hash}, date: {date}"
         },
-        "transaction":{
-          "description":{
-            "general":"Check Dash (DASH) transaction, value: {output_total_dash}, date: {date}",
-            "coinbase":"Check Dash (DASH) coinbase transaction, value: {output_total_dash}, date: {date}"
+        "transaction" : {
+          "description" : "Litecoin (LTC) transaction {hash}, date: {date}"
+        },
+        "address" : {
+          "description" : "Check Litecoin (LTC) address {address}, its balance and transactions"
+        }
+      },
+      "groestlcoin" : {
+        "block" : {
+          "description" : "Groestlcoin (GRS) block {height}, hash: {hash}, date: {date}"
+        },
+        "transaction" : {
+          "description" : "Groestlcoin (GRS) transaction {hash}, date: {date}"
+        },
+        "address" : {
+          "description" : "Check Groestlcoin (GRS) address {address}, its balance and transactions"
+        }
+      },
+      "ethereum" : {
+        "block" : {
+          "description" : "Ethereum (ETH) block {height}, hash: {hash}, date: {date}",
+          "coinbase" : "coinbase",
+          "transaction_count" : "{transactions_link} + {coinbase_link} coinbase",
+          "value_total" : "Total amount",
+          "internal_value_total" : "Total internal amount",
+          "fee_total" : "Fee total"
+        },
+        "uncle" : {
+          "description" : "Ethereum (ETH) uncle parent block height: {parent_block_height}, hash: {hash}, date: {date}"
+        },
+        "transaction" : {
+          "description" : "Ethereum (ETH) transaction {hash}, date: {date}",
+          "included_calls" : "Calls included in this transaction",
+          "erc-20" : {
+            "caption" : "ERC-20 token transfers",
+            "sender" : "From:",
+            "recipient" : "To:",
+            "value" : "Value:",
+            "wait" : "Potential ERC-20 transfers for this transaction may still be processed and shown later"
           }
         },
-        "address":{
-          "description":"Check Dash (DASH) address {address} balance and its transactions"
-        }
-      },
-      "litecoin":{
-        "block":{
-          "description":"Litecoin (LTC) block {height}, hash: {hash}, date: {date}"
-        },
-        "transaction":{
-          "description":"Litecoin (LTC) transaction {hash}, date: {date}"
-        },
-        "address":{
-          "description":"Check Litecoin (LTC) address {address}, its balance and transactions"
-        }
-      },
-      "groestlcoin":{
-        "block":{
-          "description":"Groestlcoin (GRS) block {height}, hash: {hash}, date: {date}"
-        },
-        "transaction":{
-          "description":"Groestlcoin (GRS) transaction {hash}, date: {date}"
-        },
-        "address":{
-          "description":"Check Groestlcoin (GRS) address {address}, its balance and transactions"
-        }
-      },
-      "ethereum":{
-        "block":{
-          "description":"Ethereum (ETH) block {height}, hash: {hash}, date: {date}",
-          "coinbase":"coinbase",
-          "transaction_count": "{transactions_link} + {coinbase_link} coinbase",
-          "value_total":"Total amount",
-          "internal_value_total":"Total internal amount",
-          "fee_total":"Fee total"
-        },
-        "uncle":{
-          "description":"Ethereum (ETH) uncle parent block height: {parent_block_height}, hash: {hash}, date: {date}"
-        },
-        "transaction":{
-          "description":"Ethereum (ETH) transaction {hash}, date: {date}",
-          "included_calls":"Calls included in this transaction"
-        },
-        "address":{
-          "description":"Check Ethereum (ETH) ({address}), its balance and transactions",
-          "type":"Type",
-          "receiving":"Receiving: {receiving_calls_link}",
-          "spending":"Spending: {spending_calls_link}",
-          "call_count":"Call count (incl. failed)",
-          "contract_created":"Contract created?",
-          "contract_destroyed":"Contract destroyed?",
-          "contract_code":{
-            "short": "Contract code",
-            "bin":"Contract code [bin]",
-            "hex":"Contract code [hex]"
+        "address" : {
+          "description" : "Check Ethereum (ETH) ({address}), its balance and transactions",
+          "type" : "Type",
+          "receiving" : "Receiving: {receiving_calls_link}",
+          "spending" : "Spending: {spending_calls_link}",
+          "call_count" : "Call count (incl. failed)",
+          "contract_created" : "Contract created?",
+          "contract_destroyed" : "Contract destroyed?",
+          "contract_code" : {
+            "short" : "Contract code",
+            "bin" : "Contract code [bin]",
+            "hex" : "Contract code [hex]"
           },
-          "balance":"Balance (precise)",
-          "received":"Received (approx.)",
-          "spent":"Spent (approx.)",
-          "fees":"Paid in fees (approx.)",
-          "involving_calls":"Calls involving address",
-          "transferred": "Transferred",
-          "failed": "Failed"
+          "balance" : "Balance (precise)",
+          "received" : "Received (approx.)",
+          "spent" : "Spent (approx.)",
+          "fees" : "Paid in fees (approx.)",
+          "involving_calls" : "Calls involving address",
+          "transferred" : "Transferred",
+          "failed" : "Failed",
+          "erc-20" : {
+            "caption" : "ERC-20 Token balances",
+            "balance" : "Balance"
+          }
         }
       },
-      "ripple":{
-        "ledger":{
-          "ledger_index":"Ledger index",
-          "ledger_hash":"Ledger hash",
-          "parent_hash":"Parent hash",
-          "transaction_hash":"Transaction hash",
-          "close_time":"Closed on",
-          "total_coins":"Total coins",
-          "last_transactions":"Transactions included in this ledger"
+      "ripple" : {
+        "ledger" : {
+          "description" : "Ripple (XRP) ledger: {ledger_id}, hash: {ledger_hash}, date: {time}",
+          "ledger_index" : "Ledger index",
+          "ledger_hash" : "Ledger hash",
+          "parent_hash" : "Parent hash",
+          "transaction_hash" : "Transaction hash",
+          "close_time" : "Closed on",
+          "total_coins" : "Total coins",
+          "last_transactions" : "Transactions included in this ledger"
         },
-        "transaction":{
-          "transaction_index":"Index in ledger",
-          "account":"Account",
-          "sequence":"Sequence",
-          "account_txn_id":"Account tx id",
-          "flags":"Flags",
-          "last_ledger_sequence":"Last ledger sequence",
-          "source_tag":"Source tag",
-          "transaction_result":"Result",
-          "type": {
-            "caption":"Type data",
-            "clear_flag":"Clear flag",
-            "domain":"Domain",
-            "email_hash":"Domain hash",
-            "message_key":"Message key",
-            "set_flag":"Set flag",
-            "transfer_rate":"Transfer rate",
-            "check_id":"Check id",
-            "amount":"Amount",
-            "deliver_min":"Deliver min",
-            "destination":"Destination",
-            "send_max":"Send max",
-            "destination_tag":"Destination tag",
-            "expiration":"Expiration",
-            "invoice_id":"Invoice id",
-            "authorize":"Authorize",
-            "unauthorize":"Unauthorize",
-            "owner":"Owner",
-            "offer_sequence":"Offer sequence",
-            "cancel_after":"Cancel after",
-            "finish_after":"Finish after",
-            "condition":"Condition",
-            "fulfillment":"Fulfillment",
-            "taker_gets":"Taker gets",
-            "taker_pays":"Taker pays",
-            "channel":"Channel",
-            "balance":"Balance",
-            "signature":"Signature",
-            "public_key":"Public key",
-            "settle_delay":"Settle delay",
-            "regular_key":"Regular key",
-            "signer_quorum":"Signer quorum",
-            "limit_amount":"Limit amount",
-            "quality_in":"Quality in",
-            "quality_out":"Quality out"
+        "transaction" : {
+          "description" : "Ripple (XRP) transaction: {tx_hash}, date: {time}",
+          "transaction_index" : "Index in ledger",
+          "account" : "Account",
+          "sequence" : "Sequence",
+          "account_txn_id" : "Account tx id",
+          "flags" : "Flags",
+          "last_ledger_sequence" : "Last ledger sequence",
+          "source_tag" : "Source tag",
+          "transaction_result" : "Result",
+          "type" : {
+            "caption" : "Type data",
+            "clear_flag" : "Clear flag",
+            "domain" : "Domain",
+            "email_hash" : "Domain hash",
+            "message_key" : "Message key",
+            "set_flag" : "Set flag",
+            "transfer_rate" : "Transfer rate",
+            "check_id" : "Check id",
+            "amount" : "Amount",
+            "deliver_min" : "Deliver min",
+            "destination" : "Destination",
+            "send_max" : "Send max",
+            "destination_tag" : "Destination tag",
+            "expiration" : "Expiration",
+            "invoice_id" : "Invoice id",
+            "authorize" : "Authorize",
+            "unauthorize" : "Unauthorize",
+            "owner" : "Owner",
+            "offer_sequence" : "Offer sequence",
+            "cancel_after" : "Cancel after",
+            "finish_after" : "Finish after",
+            "condition" : "Condition",
+            "fulfillment" : "Fulfillment",
+            "taker_gets" : "Taker gets",
+            "taker_pays" : "Taker pays",
+            "channel" : "Channel",
+            "balance" : "Balance",
+            "signature" : "Signature",
+            "public_key" : "Public key",
+            "settle_delay" : "Settle delay",
+            "regular_key" : "Regular key",
+            "signer_quorum" : "Signer quorum",
+            "limit_amount" : "Limit amount",
+            "quality_in" : "Quality in",
+            "quality_out" : "Quality out"
           }
         },
-        "account": {
-          "account_summary":"Account summary",
-          "previous_txn":"Last tx",
-          "sequence":"Next sequence",
-          "balances": {
-            "caption":"Token balances",
-            "account":"Counterparty",
-            "limit":"Limit"
+        "account" : {
+          "description" : "Ripple (XRP) account: {account}, balance: {balance}",
+          "account_summary" : "Account summary",
+          "previous_txn" : "Last tx",
+          "sequence" : "Next sequence",
+          "balances" : {
+            "caption" : "Token balances",
+            "account" : "Counterparty",
+            "limit" : "Limit"
           },
-          "transactions":"Latest account transactions"
+          "transactions" : "Latest account transactions"
         }
+      },
+      "stellar" : {
+        "ledger" : {
+          "description" : "Stellar (XLM) ledger: {ledger_id}, hash: {ledger_hash}, date: {time}",
+          "height" : "Height",
+          "hash" : "Hash",
+          "closed_at" : "Closed at",
+          "transaction_count" : "Transaction count",
+          "successful" : "Successful: {transaction_count}",
+          "failed" : "Failed: {transaction_count}",
+          "operation_count" : "Operation count",
+          "fee_pool" : "Fee pool",
+          "base_fee" : "Base fee",
+          "base_reserve" : "Base reserve",
+          "protocol_version" : "Protocol version"
+        },
+        "transaction" : {
+          "description" : "Stellar (XLM) transaction: {tx_hash}, date: {time}",
+          "hash" : "Transaction hash",
+          "created_at" : "Created at",
+          "successful" : "Successful?",
+          "ledger" : "Included in ledger",
+          "source_account" : "Source account",
+          "source_account_sequence" : "Source account sequence",
+          "fee_paid" : "Fee paid",
+          "operations" : {
+            "caption" : "Operations",
+            "type" : "Type",
+            "id" : "Id",
+            "from" : "From",
+            "to" : "To",
+            "amount" : "Amount",
+            "offer_id" : "Offer id",
+            "account" : "Account",
+            "funder" : "Funder",
+            "starting_balance" : "Starting balance",
+            "selling_asset_code" : "Selling asset code",
+            "selling_asset_issuer" : "Selling asset issuer",
+            "price" : "Price",
+            "buying_asset_code" : "Buying asset code",
+            "buying_asset_issuer" : "Buying asset issuer",
+            "asset_code" : "Asset code",
+            "asset_issuer" : "Asset issuer",
+            "trustee" : "Trustee account",
+            "trustor" : "Trustor account",
+            "limit" : "Limit",
+            "home_domain" : "Home domain"
+          },
+          "memo_type" : "Memo type",
+          "memo" : "Memo"
+        },
+        "account" : {
+          "description" : "Stellar (XLM) account: {account}, balance: {balance}",
+          "id" : "Account id",
+          "subentry_count" : "Subentry count",
+          "inflation_destination" : "Inflation destination",
+          "last_modified_ledger" : "Last modified ledger",
+          "balances" : {
+            "caption" : "Account balances"
+          }
+        }
+      },
+      "ton" : {
+        "block" : {
+          "description" : "Telegram Open Network block: {block_id}, workchain: {workchain_id}, shard: {shard}, date: {time} – TON Explorer",
+          "seqno" : "Seqno",
+          "shard_tooltip" : "Shard: ({workchain},{shard})",
+          "shards_count" : "Shard count",
+          "workchain" : "Workchain",
+          "shard" : "Shard",
+          "time" : "Created",
+          "created" : "Created",
+          "minted" : "Minted",
+          "imported" : "Imported",
+          "exported" : "Exported",
+          "recovered" : "Recovered",
+          "fees_collected" : "Fees collected",
+          "gram_flow" : "Gram flow",
+          "roothash" : "Roothash",
+          "filehash" : "Filehash",
+          "lt" : "Logical time",
+          "userfriendly_address" : "Address",
+          "transactions" : "Transactions included in this block"
+        },
+        "transaction" : {
+          "description" : "Telegram Open Network transaction {transaction_hash}, account: {userfriendly_account}, shard: {shard}",
+          "prev_transaction" : "Previous transaction",
+          "total_fee" : "Total fee",
+          "account" : "Account",
+          "status_change" : "Status change",
+          "state_update" : {
+            "old_hash" : "Old hash",
+            "new_hash" : "New hash"
+          },
+          "included_messages" : "Messages included in this transaction"
+        },
+        "messages" : {
+          "index" : "Index",
+          "total_fee" : "Total fee",
+          "source" : "Source",
+          "destination" : "Destination",
+          "value_gram" : "Value (GRAM)",
+          "type" : "Type"
+        },
+        "account" : {
+          "description" : "Telegram Open Network account: {hex_account}, GRAM balance: {balance}",
+          "last_trans" : "Last transaction",
+          "storage_stats" : "Storage stats",
+          "bits" : "Bits",
+          "cells" : "Cells",
+          "last_paid" : "Last paid",
+          "public_cells" : "Public cells"
+        }
+      },
+      "monero" : {
+        "block" : {
+          "description" : "Monero block: {block_id}, hash: {hash} – Monero Explorer"
+        },
+        "transaction" : {
+          "description" : "Monero transaction: {hash} - Monero Explorer",
+          "mixin" : "Signers",
+          "payment_id" : "Payment Id",
+          "tx_fee" : "Fee (XMR)",
+          "size" : "Size (B)",
+          "xmr_outputs" : "Value (XMR)",
+          "rct_type" : "RingCT Type"
+        },
+        "check_transaction" : {
+          "title" : "Prove transaction",
+          "decode_outputs" : "Decode outputs",
+          "prove_sending" : "Prove sending",
+          "proved" : "Proved",
+          "transaction_key" : "Transaction key",
+          "view_key" : "View key"
+        },
+        "stats" : {
+          "suggested_transaction_fee_dimension" : "piconero per byte"
+        }
+      },
+      "cardano" : {
+        "block" : {
+          "description" : "Cardano block: {block_id}, hash: {hash} - Cardano Explorer",
+          "epoch" : "Epoch",
+          "slot" : "Slot",
+          "total_sent" : "Total ADA sent",
+          "fees" : "Fees"
+        },
+        "transaction" : {
+          "description" : "Cardano transaction: {hash} - Cardano Explorer",
+          "output_total" : "Total output (ADA)",
+          "input_total" : "Total input (ADA)",
+          "fee_total" : "Total fee (ADA)"
+        },
+        "address" : {
+          "description" : "Cardano address: {hash} / Balance: {balance} – Cardano Explorer"
+        }
+      },
+      "zcash" : {
+        "block" : {
+          "description" : "Zcash block: {block_id}, hash: {hash} - Zcash Explorer"
+        },
+        "transaction" : {
+          "description" : "Zcash transaction: {hash} – Zcash Explorer",
+          "senders_and_recipients" : "Senders and recipients <small>(public)</small>",
+          "shielded_transfers" : "Shielded transfers <small>(private)</small>",
+          "join_split" : "JoinSplit",
+          "shielded_inputs" : "Shielded inputs",
+          "shielded_outputs" : "Shielded outputs",
+          "transfered_from" : "Transferred from shielded pool",
+          "transfered_to" : "Transferred to shielded pool",
+          "validate" : {
+            "title" : "View shielded transfers",
+            "paymentdisclosure" : "Payment disclosure",
+            "submit" : "Submit",
+            "disclosed" : "Disclosed transaction"
+          }
+        },
+        "address" : {
+          "description" : "Zcash address: {hash} / Balance: {balance} - Zcash Explorer"
+        }
+      },
+      "mixin" : {
+        "snapshot" : {
+          "snapshot_info" : "Snapshot info",
+          "references" : "References",
+          "description" : "Mixin (XIN) snapshot {topology}, hash: {hash}, node: {node}"
+        },
+        "transaction" : {
+          "description" : "Check Mixin (XIN) transaction {hash}, asset: {asset}",
+          "transaction_info" : "Transaction info",
+          "outputs_title" : "Transaction inputs & outputs",
+          "keys" : "Keys",
+          "mask" : "Mask",
+          "type" : "Output type",
+          "script" : "Script",
+          "withdrawal" : "Withdrawal"
+        },
+        "node" : {
+          "node_info" : "Node info",
+          "description" : "Mixin (XIN) kernel node {id}"
+        },
+        "round" : {
+          "round_info" : "Round info",
+          "description" : "Mixin (XIN) round {number}, {hash}",
+          "round_snapshots" : "Round snapshots"
+        }
+      },
+      "tezos" : {
+        "operations" : "Operations"
       }
     },
-    "protocol":{
-      "bitcoin":{
-        "omni":{
-          "navigation":{
-            "properties":"Properties",
-            "property":"Property"
+    "protocol" : {
+      "bitcoin" : {
+        "omni" : {
+          "navigation" : {
+            "properties" : "Properties",
+            "property" : "Property"
           },
-          "homepage":{
-            "title":"Omni Layer Explorer",
-            "description":"Explore Omni Layer (OMNI) transactions and properties, such as Tether (USDT), MaidSafeCoin (MAID) and Omni (Mastercoin)",
-            "stats":{
-              "title":"Omni Layer stats",
-              "properties":"Properties",
-              "mainnet_properties":"Mainnet properties",
-              "testnet_properties":"Testnet properties",
-              "transactions":"Transactions"
+          "homepage" : {
+            "title" : "Omni Layer Explorer",
+            "description" : "Explore Omni Layer (OMNI) transactions and properties, such as Tether (USDT), MaidSafeCoin (MAID) and Omni (Mastercoin)",
+            "stats" : {
+              "title" : "Omni Layer stats",
+              "properties" : "Properties",
+              "mainnet_properties" : "Mainnet properties",
+              "testnet_properties" : "Testnet properties",
+              "transactions" : "Transactions"
             },
-            "newest_properties":"Newest properties",
-            "latest_transactions":"Latest transactions"
+            "newest_properties" : "Newest properties",
+            "latest_transactions" : "Latest transactions"
           },
-          "infinitable":{
-            "description":{
-              "properties":"Explore all Omni Layer properties, such as Tether (USDT), MaidSafeCoin (MAID) and Omni (Mastercoin)"
+          "infinitable" : {
+            "description" : {
+              "properties" : "Explore all Omni Layer properties, such as Tether (USDT), MaidSafeCoin (MAID) and Omni (Mastercoin)"
             },
-            "foot":{
-              "explore_list":"Explore this list... 👐"
+            "foot" : {
+              "explore_list" : "Explore this list... 👐"
             },
-            "properties":{
-              "name":"Name",
-              "issuer":"Issuer",
-              "creation_transaction_hash":"Creating tx hash",
-              "creation_time":"Creation time",
-              "creation_block_id":"Creation block id",
-              "is_issuance_fixed":"Is issuance fixed?",
-              "is_issuance_managed":"Is issuance managed?",
-              "is_divisible":"Is divisible?",
-              "circulation":"Circulation",
-              "ecosystem":"Ecosystem",
-              "category":"Category",
-              "subcategory":"Subcategory",
-              "description":"Description",
-              "url":"URL"
+            "properties" : {
+              "name" : "Name",
+              "issuer" : "Issuer",
+              "creation_transaction_hash" : "Creating tx hash",
+              "creation_time" : "Creation time",
+              "creation_block_id" : "Creation block id",
+              "is_issuance_fixed" : "Is issuance fixed?",
+              "is_issuance_managed" : "Is issuance managed?",
+              "is_divisible" : "Is divisible?",
+              "circulation" : "Circulation",
+              "ecosystem" : "Ecosystem",
+              "category" : "Category",
+              "subcategory" : "Subcategory",
+              "description" : "Description",
+              "url" : "URL"
             },
-            "transactions":{
-              "type":"Type",
-              "sender":"Sender",
-              "recipient":"Recipient",
-              "valid":"Is valid?",
-              "amount":"Amount"
+            "transactions" : {
+              "type" : "Type",
+              "sender" : "Sender",
+              "recipient" : "Recipient",
+              "valid" : "Is valid?",
+              "amount" : "Amount"
             }
           },
-          "type":{
-            "property":{
-              "navigation":"{name} (#{id})",
-              "description":"{name} (#{id}) property in {ecosystem} Omni Layer protocol",
-              "id":{
-                "short":"Id",
-                "full":"Property Id"
+          "type" : {
+            "property" : {
+              "navigation" : "{name} (#{id})",
+              "description" : "{name} (#{id}) property in {ecosystem} Omni Layer protocol",
+              "id" : {
+                "short" : "Id",
+                "full" : "Property Id"
               }
             }
           }
         }
-      },
-      "bitcoin-cash":{
-        "wormhole":{
-          "homepage":{
-            "title":"Wormhole Explorer",
-            "description":"Explore Wormhole (WHC) protocol transactions and properties in the Bitcoin Cash (BCH) blockchain",
-            "stats":{
-              "title":"Wormhole stats"
-            }
-          },
-          "infinitable":{
-            "description":{
-              "properties":"Explore all Wormhole (WHC) properties"
-            }
-          },
-          "type":{
-            "property":{
-              "description":"{name} (#{id}) property in {ecosystem} Wormhole protocol. Website: {url}"
-            }
-          }
-        }
       }
     },
-    "homepage":{
-      "stats": {
-        "market_data": {
-          "cap": "Market cap: {mcap}",
-          "dominance": "Dominance: {dominance}"
+    "homepage" : {
+      "stats" : {
+        "market_data" : {
+          "cap" : "Market cap: {mcap}",
+          "dominance" : "Dominance: {dominance}"
         },
-        "general": {
-          "caption": "Stats",
-          "circulation": "Circulation:",
-          "difficulty": "Difficulty:",
-          "blockchain_size": {
-            "caption": "Blockchain size:",
-            "dimension": "GB"
+        "general" : {
+          "caption" : "Stats",
+          "circulation" : "Circulation:",
+          "difficulty" : "Difficulty:",
+          "blockchain_size" : {
+            "caption" : "Blockchain size:",
+            "dimension" : "GB"
           }
         },
-        "24h_stats": {
-          "caption": "24h stats",
-          "volume_24h": "On-chain volume:",
-          "hashrate": {
-            "caption": "Hashrate:",
-            "dimension": {
-              "bitcoin": "Eh/s",
-              "ethereum": "Th/s",
-              "dash": "Ph/s"
+        "24h_stats" : {
+          "caption" : "24h stats",
+          "volume_24h" : "On-chain volume:",
+          "hashrate" : {
+            "caption" : "Hashrate:",
+            "dimension" : {
+              "bitcoin" : "Eh/s",
+              "ethereum" : "Th/s",
+              "dash" : "Ph/s",
+              "monero" : "Gh/s",
+              "zcash" : "Gs/s"
             }
           },
-          "tps": "Txs per second:",
-          "average_transaction_fee": "Average transaction fee:",
-          "median_transaction_fee": "Median transaction fee:"
+          "tps" : "Txs per second:",
+          "average_transaction_fee" : "Average transaction fee:",
+          "median_transaction_fee" : "Median transaction fee:"
         },
-        "mempool": {
-          "caption": "Mempool"
+        "mempool" : {
+          "caption" : "Mempool"
         }
       },
-      "charts": {
-        "caption": "Charts",
-        "link": "See all charts"
+      "charts" : {
+        "caption" : "Charts",
+        "link" : "See all charts"
       },
-      "bitcoin": {
-        "title": "Bitcoin Explorer",
-        "description": "Look up Bitcoin (BTC) blocks, transactions, addresses, balances, nodes, OP_RETURN data and protocols, blockchain stats and charts",
-        "stats": {
-          "blocks": "Blocks",
-          "transactions": "Transactions",
-          "outputs": "Outputs",
-          "countdowns": {
-            "reward_halving": "Reward halving",
-            "upcoming_fork": "Upcoming fork"
+      "bitcoin" : {
+        "title" : "Bitcoin Explorer",
+        "description" : "Look up Bitcoin (BTC) blocks, transactions, addresses, balances, nodes, OP_RETURN data and protocols, blockchain stats and charts",
+        "stats" : {
+          "blocks" : "Blocks",
+          "transactions" : "Transactions",
+          "outputs" : "Outputs",
+          "countdowns" : {
+            "reward_halving" : "Reward halving",
+            "upcoming_fork" : "Upcoming fork"
           },
-          "general": {
-            "next_difficulty_estimate": "Next estimated difficulty:",
-            "next_retarget_time_estimate": "Next readjustment:",
-            "best_block": "Latest block:",
-            "best_block_hash": "Best block hash:",
-            "best_block_time": "Best block time:",
-            "nodes": "Network nodes:"
+          "general" : {
+            "next_difficulty_estimate" : "Next estimated difficulty:",
+            "next_retarget_time_estimate" : "Next readjustment:",
+            "best_block" : "Latest block:",
+            "best_block_hash" : "Best block hash:",
+            "best_block_time" : "Best block time:",
+            "nodes" : "Network nodes:"
           },
-          "24h_stats": {
-            "blocks": "Blocks:",
-            "average_block_time": {
-              "caption": "Avg. time between blocks:",
-              "dimension": "s."
+          "24h_stats" : {
+            "blocks" : "Blocks:",
+            "average_block_time" : {
+              "caption" : "Avg. time between blocks:",
+              "dimension" : "s."
             },
-            "transactions": "Transactions:"
+            "transactions" : "Transactions:"
           },
-          "mempool": {
-            "suggested_transaction_fee": {
-              "caption": "Recommended fee:",
-              "dimension": "satoshi per byte"
+          "mempool" : {
+            "suggested_transaction_fee" : {
+              "caption" : "Recommended fee:",
+              "dimension" : "satoshi per byte"
             },
-            "total_fee": "In fees:",
-            "size": {
-              "caption": "Size:",
-              "dimension": "MB"
+            "total_fee" : "In fees:",
+            "size" : {
+              "caption" : "Size:",
+              "dimension" : "MB"
             }
           }
         },
-        "latest_blocks": "Latest blocks",
-        "biggest_txs_24h": "The biggest transactions over the last 24 hours",
-        "menu": {
-          "caption": "{chain} menu",
-          "blockchain": "Blockchain",
-          "mempool": "Mempool",
-          "mainnet_link": "Go to mainnet explorer"
+        "latest_blocks" : "Latest blocks",
+        "biggest_txs_24h" : "The biggest transactions over the last 24 hours",
+        "menu" : {
+          "caption" : "{chain} menu",
+          "blockchain" : "Blockchain",
+          "mempool" : "Mempool",
+          "mainnet_link" : "Go to mainnet explorer",
+          "dag" : "DAG"
         },
-        "charts": {
-          "average_block_size":"Avg. block size by days and hours (last 3 mos.)",
-          "hashrate_distribution":"Hashrate distribution (last 2 weeks)",
-          "segwit_usage":"SegWit usage (last 3 months)",
-          "dairy_circulation":"Daily circulation (billions USD) (last 3 mos.)",
-          "median_transaction_fee":"Median transaction fee (USD) (last 3 mos.)",
-          "coindays_destroyed":"Coindays destroyed (millions) by day (last 3 mos.)",
-          "non_monetary_outputs":"Percentage of non-monetary outputs (last 3 mos.)",
-          "distribution_of_outputs":"Distribution of output types (last week)",
-          "average_fee":"Average fee per kB (USD) (last 3 mos.)"
+        "charts" : {
+          "average_block_size" : "Avg. block size by days and hours (last 3 mos.)",
+          "hashrate_distribution" : "Hashrate distribution (last 2 weeks)",
+          "segwit_usage" : "SegWit usage (last 3 months)",
+          "dairy_circulation" : "Daily circulation (billions USD) (last 3 mos.)",
+          "median_transaction_fee" : "Median transaction fee (USD) (last 3 mos.)",
+          "coindays_destroyed" : "Coindays destroyed (millions) by day (last 3 mos.)",
+          "non_monetary_outputs" : "Percentage of non-monetary outputs (last 3 mos.)",
+          "distribution_of_outputs" : "Distribution of output types (last week)",
+          "average_fee" : "Average fee per kB (USD) (last 3 mos.)"
         }
       },
-      "ripple": {
-        "title": "Ripple Explorer",
-        "description": "",
-        "stats": {
-          "ledgers": "Ledgers",
-          "circulation": "Circulation",
-          "general": {
-            "best_ledger": "Latest ledger:",
-            "best_ledger_hash": "Best ledger hash:",
-            "best_ledger_time": "Best ledger time:"
+      "ripple" : {
+        "title" : "Ripple Explorer",
+        "description" : "Look up Ripple (XRP) ledgers, transactions, addresses and balances, blockchain stats and charts",
+        "stats" : {
+          "ledgers" : "Ledgers",
+          "circulation" : "Circulation",
+          "general" : {
+            "best_ledger" : "Latest ledger:",
+            "best_ledger_hash" : "Best ledger hash:",
+            "best_ledger_time" : "Best ledger time:"
           },
-          "24h_stats": {
-            "ledgers": "Ledgers:",
-            "average_ledger_time": "Avg. time between ledgers:"
+          "24h_stats" : {
+            "ledgers" : "Ledgers:",
+            "average_ledger_time" : "Avg. time between ledgers:"
+          }
+        },
+        "latest_ledgers" : "Latest ledgers"
+      },
+      "stellar" : {
+        "title" : "Stellar Explorer",
+        "description" : "Look up Stellar (XLM) ledgers, transactions, addresses and balances, blockchain stats and charts",
+        "stats" : {
+          "24h_stats" : {
+            "successful_transactions" : "Successful transactions:",
+            "failed_transactions" : "Failed transactions:",
+            "operations" : "Operations:"
           }
         }
       },
-      "ethereum": {
-        "title": "Ethereum Explorer",
-        "description": "Look up Ethereum (ETH) blocks, transactions, addresses, smart contracts, balances and blockchain stats",
-        "stats": {
-          "uncles": "Uncles",
-          "calls": "Calls",
-          "general": {
-            "median_gas_price": {
-              "caption": "Median gas price:",
-              "dimension": "Gwei"
+      "ton" : {
+        "title" : "Telegram Open Network (TON) Explorer",
+        "description" : "TON blockchain explorer, blocks, GRAM balances, transactions and addresses",
+        "stats" : {
+          "general" : {
+            "best_block_file_hash" : "Best block file hash:",
+            "best_block_root_hash" : "Best block root hash:"
+          }
+        }
+      },
+      "monero" : {
+        "title" : "Monero Explorer",
+        "description" : "Monero blockchain explorer, blocks, transactions and addresses",
+        "stats" : {
+          "general" : {
+            "best_block_file_hash" : "Best block file hash:",
+            "best_block_root_hash" : "Best block root hash:"
+          },
+          "mempool_dimension" : "kB"
+        }
+      },
+      "cardano" : {
+        "title" : "Cardano Explorer",
+        "description" : "Cardano blockchain explorer, blocks, transactions and addresses",
+        "stats" : {
+          "general" : {
+            "current_epoch" : "Current epoch:",
+            "current_slot" : "Current slot:"
+          }
+        }
+      },
+      "ethereum" : {
+        "title" : "Ethereum Explorer",
+        "description" : "Look up Ethereum (ETH) blocks, transactions, addresses, smart contracts, balances and blockchain stats",
+        "stats" : {
+          "uncles" : "Uncles",
+          "calls" : "Calls",
+          "erc-20" : {
+            "tokens" : "ERC-20 tokens"
+          },
+          "general" : {
+            "median_gas_price" : {
+              "caption" : "Median gas price:",
+              "dimension" : "Gwei"
             }
           },
-          "24h_stats": {
-            "uncles": "Uncles:"
+          "24h_stats" : {
+            "uncles" : "Uncles:"
           },
-          "mempool": {
-            "total_value": "In value:"
+          "mempool" : {
+            "total_value" : "In value:"
           }
         },
-        "menu": {
-          "mempool": "Mempool and last 6 blocks"
+        "menu" : {
+          "mempool" : "Mempool and last 6 blocks"
         },
-        "charts": {
-          "average_gas_size":"Average gas usage by days and hours (last 3 mos.)",
-          "average_gas_limit":"Average gas limit (last 3 months)",
-          "mining_difficulty":"Mining difficulty (last 3 months)",
-          "new_contract_count":"New contract count (last 3 months)",
-          "distribution_of_tx_types":"Distribution of tx types (last 3 months)",
-          "average_gas_price":"Average gas price (GWei) (last 3 months)"
+        "charts" : {
+          "average_gas_size" : "Average gas usage by days and hours (last 3 mos.)",
+          "average_gas_limit" : "Average gas limit (last 3 months)",
+          "mining_difficulty" : "Mining difficulty (last 3 months)",
+          "new_contract_count" : "New contract count (last 3 months)",
+          "distribution_of_tx_types" : "Distribution of tx types (last 3 months)",
+          "average_gas_price" : "Average gas price (GWei) (last 3 months)"
         }
       },
-      "bitcoin/testnet":{
-        "title": "Bitcoin Testnet Explorer",
-        "description": "Look up Bitcoin Testnet (TBTC) blocks, transactions, addresses, balances, nodes, OP_RETURN data and protocols, blockchain stats and charts"
+      "bitcoin/testnet" : {
+        "title" : "Bitcoin Testnet Explorer",
+        "description" : "Look up Bitcoin Testnet (TBTC) blocks, transactions, addresses, balances, nodes, OP_RETURN data and protocols, blockchain stats and charts"
       },
-      "bitcoin-cash":{
-        "title": "Bitcoin Cash Explorer",
-        "description": "Look up Bitcoin Cash (BCH) blocks, transactions, addresses, balances, nodes, OP_RETURN data and protocols, blockchain stats and charts",
-        "charts":{
-          "voting_of_scalability":"Voting on scalability"
+      "bitcoin-cash" : {
+        "title" : "Bitcoin Cash Explorer",
+        "description" : "Look up Bitcoin Cash (BCH) blocks, transactions, addresses, balances, nodes, OP_RETURN data and protocols, blockchain stats and charts",
+        "charts" : {
+          "voting_of_scalability" : "Voting on scalability"
         }
       },
-      "bitcoin-sv": {
-        "title": "Bitcoin SV Explorer",
-        "description": "Look up Bitcoin SV (BSV) blocks, transactions, addresses, balances, nodes, OP_RETURN data and protocols, blockchain stats and charts"
+      "bitcoin-sv" : {
+        "title" : "Bitcoin SV Explorer",
+        "description" : "Look up Bitcoin SV (BSV) blocks, transactions, addresses, balances, nodes, OP_RETURN data and protocols, blockchain stats and charts"
       },
-      "dogecoin": {
-        "title": "Dogecoin Explorer",
-        "description": "Look up Dogecoin (DOGE) blocks, transactions, addresses, balances, nodes, OP_RETURN data and protocols, blockchain stats and charts"
+      "dogecoin" : {
+        "title" : "Dogecoin Explorer",
+        "description" : "Look up Dogecoin (DOGE) blocks, transactions, addresses, balances, nodes, OP_RETURN data and protocols, blockchain stats and charts"
       },
-      "dash": {
-        "title": "Dash Explorer",
-        "description": "Look up Dash (DASH) blocks, transactions, addresses, balances, OP_RETURN data and protocols, blockchain stats and charts"
+      "dash" : {
+        "title" : "Dash Explorer",
+        "description" : "Look up Dash (DASH) blocks, transactions, addresses, balances, OP_RETURN data and protocols, blockchain stats and charts"
       },
-      "litecoin": {
-        "title": "Litecoin Explorer",
-        "description": "Look up Litecoin (LTC) blocks, transactions, addresses, balances, nodes, blockchain stats and charts"
+      "litecoin" : {
+        "title" : "Litecoin Explorer",
+        "description" : "Look up Litecoin (LTC) blocks, transactions, addresses, balances, nodes, blockchain stats and charts"
       },
-      "groestlcoin": {
-        "title": "Groestlcoin Explorer",
-        "description": "Look up Groestlcoin (GRS) blocks, transactions, addresses, balances, nodes, blockchain stats and charts"
+      "groestlcoin" : {
+        "title" : "Groestlcoin Explorer",
+        "description" : "Look up Groestlcoin (GRS) blocks, transactions, addresses, balances, nodes, blockchain stats and charts"
       },
-      "useful_links": {
-        "caption": "Useful links",
-        "description": "Partners that already use Blockchair on their websites",
-        "wallets": "Wallets",
-        "market_data": "Market data",
-        "exchanges": "Exchanges",
-        "mining_pools": "Mining pools",
-        "explorers": "Explorers"
-      }
-    },
-    "bitcoin":{
-      "nodes":{
-        "description":"Explore Bitcoin network by looking for all accessible nodes, their countries, implementations, versions and consensus rules",
-        "last_updated":"Last updated:",
-        "versions":{
-          "caption":"Node versions:",
-          "user_agent":"User agent",
-          "count":"Count"
+      "zcash" : {
+        "title" : "Zcash Explorer",
+        "description" : "Explore Zcash (ZEC) blocks, transactions, addresses, balances, nodes and protocols, blockchain stats and charts",
+        "stats" : {
+          "mempool" : {
+            "suggested_transaction_fee" : {
+              "dimension" : "ZEC per transaction",
+              "dimension_short" : "zatoshi"
+            }
+          }
+        }
+      },
+      "mixin" : {
+        "title" : "Mixin Explorer",
+        "description" : "Look up Mixin (XIN) snapshots, transactions, assets, nodes and blockchain (DAG) stats",
+        "stats" : {
+          "best_snapshot_height" : "Best snapshot height",
+          "best_snapshot_time" : "Best snapshot time",
+          "best_snapshot_hash" : "Best snapshot hash",
+          "snapshots" : "Snapshots",
+          "mintings" : "Mintings",
+          "accepted_nodes" : "Active nodes"
         },
-        "heights": "Block heights:",
-        "charts":{
-          "total_nodes":"Total nodes: {total}",
-          "by_countries":"By countries",
-          "by_implementations":"By implementations",
-          "by_heights": "By heights"
-        }
-      },
-      "whitepaper":{
-        "description":"Check Satoshi Nakamoto's whitepaper for consistency by hash on different websites and from Bitcoin outputs",
-        "last_check":"Last check:",
-        "icon":"Icon",
-        "site":"Site",
-        "url":"URL",
-        "hash":"Hash",
-        "status":"Status",
-        "footer":{
-          "what_is":{
-            "caption":"What is this page?",
-            "description1":"This page shows whether different Bitcoin sites serve the original Bitcoin whitepaper or an edited version of it. Once an hour we calculate SHA-256 hashes of the files and compare them with the hash of the original whitepaper (that would be b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553).",
-            "description2":"There have been some suggestions to alter the whitepaper hosted on bitcoin.org (e.g. {github_issue_link} is still open). We believe that editing an academic paper and rewriting the Bitcoin history in order to accommodate someone's business interests is downright unacceptable.",
-            "github_issue":"GitHub Issue #1325"
-          },
-          "where_find":{
-            "caption":"Where can I find the whitepaper in the Bitcoin blockchain?",
-            "description1":"First of all, there are some null-data outputs containing the hash as plaintext. You can find them {outputs_table_link}. Examples: {transaction1_link}, {transaction2_link}, {transaction3_link}",
-            "outputs_table":"using a filter on the outputs table",
-            "description2":"Also there are null-data outputs which contain the hash as hex. The current version of our search engine doesn't yet have support for filtering scripts by hex values, but since the hex value can be represented as binary text, we can {outputs_table_search_link} of this text. Examples: {transaction1_link}, {transaction2_link}, {transaction3_link}",
-            "outputs_table_search":"search by alphanumerical parts",
-            "description3":"More importantly, there's transaction {transaction_link} which contains the pdf file itself. Here's {bitcoin_stackexchange_link}. It may be possible to edit the whitepaper on some websites, but it's not possible to alter the blockchain.",
-            "bitcoin_stackexchange":"an instruction on how to parse it"
-          }
-        }
-      }
-    },
-    "bitcoin-cash":{
-      "nodes":{
-        "description":"Explore Bitcoin Cash network by looking for all the accessible nodes, their countries, implementations, versions and consensus rules"
-      }
-    },
-    "bitcoin-sv":{
-      "nodes":{
-        "description":"Explore Bitcoin SV network by looking for all the accessible nodes, their countries, implementations, versions and consensus rules"
-      }
-    },
-    "dogecoin":{
-      "nodes":{
-        "description":"Explore Dogecoin network by looking for all the accessible nodes, their countries, implementations, versions and consensus rules"
-      }
-    },
-    "litecoin":{
-      "nodes":{
-        "description":"Explore Litecoin network by looking for all the accessible nodes, their countries, implementations, versions and consensus rules"
-      }
-    },
-    "dash":{
-      "nodes":{
-        "description":"Explore Dash network by looking for all the accessible nodes, their countries, implementations, versions and consensus rules"
-      }
-    },
-    "groestlcoin":{
-      "nodes":{
-        "description":"Explore Groestlcoin network by looking for all the accessible nodes, their countries, implementations, versions and consensus rules"
-      }
-    },
-    "charts":{
-      "title":"Charts",
-      "description":"{chain} charts, {ticker} price, historical and live graph and other cryptocurrency visualizations",
-      "content":{
-        "sections":{
-          "monetary_stats":"Monetary statistics",
-          "blocks":"Blocks",
-          "transactions":"Transactions",
-          "misc":"Misc"
-        }
-      },
-      "bitcoin":{
-        "names":{
-          "blockchain-size":{
-            "title":"{chain} blockchain size chart",
-            "name":"Blockchain size",
-            "description":"The growth rate of {chain} full node size in gigabytes from the genesis block till now"
-          },
-          "price-usd":{
-            "title":"{chain} price ({ticker}/USD)",
-            "name":"{chain} price (USD)",
-            "description":"Get {chain} exchange rate chart, check live {ticker}/USD price, including historical market data across {chain} exchanges"
-          },
-          "circulation":{
-            "title":"{chain} circulation chart",
-            "name":"Circulation",
-            "description":"How many {ticker} have been already mined? Watch the chart representing {ticker} supply"
-          },
-          "average-block-size":{
-            "title":"{chain} average block size chart",
-            "name":"Average block size",
-            "description":"Check out historical average {chain} block size chart"
-          },
-          "median-block-size":{
-            "title":"{chain} median block size chart",
-            "name":"Median block size",
-            "description":"Get historical median {chain} block size chart"
-          },
-          "difficulty":{
-            "title":"{chain} difficulty chart",
-            "name":"Difficulty",
-            "description":"{ticker} difficulty chart, a parameter depending on overall mining hashrate"
-          },
-          "transaction-count":{
-            "title":"{chain} transaction count chart",
-            "name":"Transaction count",
-            "description":"How many {ticker} transactions happen daily? The number of confirmed {chain} transactions by day/week/month"
-          },
-          "total-transaction-count":{
-            "title":"{chain} total transaction count chart",
-            "name":"Total transaction count",
-            "description":"How many {ticker} transactions were proceeded? The total number of confirmed transactions in {chain} blockchain"
-          },
-          "transaction-volume":{
-            "title":"{chain} transaction volume chart",
-            "name":"Transaction volume ({ticker})",
-            "description":"Check the number of {ticker} moved daily"
-          },
-          "average-transaction-amount":{
-            "title":"{chain} average transaction amount chart",
-            "name":"Average transaction amount ({ticker})",
-            "description":"Get {chain} average transaction amount in {ticker} by day/week/month/year"
-          },
-          "median-transaction-amount":{
-            "title":"{chain} median transaction amount chart",
-            "name":"Median transaction amount ({ticker})",
-            "description":"Get {chain} median transaction amount in {ticker} by day/week/month/year"
-          },
-          "average-transaction-fee":{
-            "title":"{chain} average transaction fee chart",
-            "name":"Average transaction fee ({ticker})",
-            "description":"Check {chain} average tx fee in {ticker}"
-          },
-          "median-transaction-fee":{
-            "title":"{chain} median transaction fee chart",
-            "name":"Median transaction fee ({ticker})",
-            "description":"Check {chain} median tx fee in {ticker}"
-          },
-          "transaction-volume-usd":{
-            "title":"{chain} transaction volume (USD) chart",
-            "name":"Transaction volume (USD)",
-            "description":"Check the number of {ticker} moved daily in USD"
-          },
-          "average-transaction-fee-usd":{
-            "title":"{chain} average transaction fee (USD) chart",
-            "name":"Average transaction fee (USD)",
-            "description":"Check {chain} average tx fee in USD"
-          },
-          "median-transaction-fee-usd":{
-            "title":"{chain} median transaction fee (USD) chart",
-            "name":"Median transaction fee (USD)",
-            "description":"Check {chain} median tx fee in USD"
-          },
-          "average-transaction-amount-usd":{
-            "title":"{chain} average transaction amount (USD) chart",
-            "name":"Average transaction amount (USD)",
-            "description":"Get {chain} average tx amount in USD by day/week/month/year"
-          },
-          "median-transaction-amount-usd":{
-            "title":"{chain} median transaction amount (USD) chart",
-            "name":"Median transaction amount (USD)",
-            "description":"Get {chain} median tx amount in USD by day/week/month/year"
-          },
-          "inflation-usd":{
-            "title":"{chain} inflation (USD) chart",
-            "name":"Inflation (USD)",
-            "description":"The number of {ticker} mined/generated daily in USD. {chain} inflation rate curve"
-          },
-          "transactions-in-block":{
-            "title":"Transactions in {chain} block chart",
-            "name":"Transactions in block",
-            "description":"{chain} transaction count by block scatter plot"
-          },
-          "coindays-destroyed":{
-            "title":"{chain} coindays destroyed chart",
-            "name":"Coindays destroyed",
-            "description":"The chart shows how many {chain} coindays were destroyed by moving old coins"
-          },
-          "hashrate-distribution":{
-            "title":"{chain} hashrate distribution",
-            "name":"Hashrate distribution",
-            "description":"Find the biggest {chain} miners and pools on the hashrate distribution pie chart"
-          },
-          "transactions-per-second":{
-            "title":"{chain} transactions per second chart",
-            "name":"Transactions per second",
-            "description":"Tx/s is a good {chain} scalability measure. Check how it changes daily"
-          },
-          "segwit-usage":{
-            "title":"{chain} SegWit usage chart",
-            "name":"SegWit usage",
-            "description":"Percentage of SegWit transactions in {chain}"
-          },
-          "percentage-of-non-monetary-outputs":{
-            "title":"% of non monetary {chain} outputs chart",
-            "name":"% of non monetary outputs",
-            "description":"Percentage of {ticker} outputs which have not moved any {ticker}"
-          },
-          "distribution-of-outputs-types-over-two-weeks":{
-            "title":"Distribution of {chain} outputs types chart",
-            "name":"Distribution of outputs types",
-            "description":"Check the most popular {chain} output types for the past 2 weeks in a pie chart"
-          }
-        }
-      },
-      "dogecoin":{
-        "names":{
-          "aux-pow":{
-            "title":"Dogecoin AuxPoW usage chart",
-            "name":"AuxPoW usage",
-            "description":"Percentage of Dogecoin blocks confirmed by merged mining"
-          }
-        }
-      },
-      "ethereum":{
-        "names":{
-          "number-of-new-contracts":{
-            "title":"Number of new Ethereum contracts chart",
-            "name":"Number of new contracts",
-            "description":"Get the number of new smart contracts created daily in Ethereum"
-          },
-          "number-of-destroyed-contracts":{
-            "title":"Number of destroyed Ethereum contracts chart",
-            "name":"Number of destroyed contracts",
-            "description":"Get the number of daily destroyed Ethereum smart contracts"
-          },
-          "uncle-rate":{
-            "title":"Ethereum uncle rate",
-            "name":"Uncle rate",
-            "description":"Percentage of uncles blocks in Ethereum"
-          },
-          "average-gas-price":{
-            "title":"Ethereum average gas price chart",
-            "name":"Average gas price",
-            "description":"Check historical ETH average gas price in GWei"
-          },
-          "median-gas-price":{
-            "title":"Ethereum median gas price chart",
-            "name":"Median gas price",
-            "description":"Check historical ETH median gas price in GWei"
-          },
-          "average-gas-limit":{
-            "title":"Ethereum average gas limit chart",
-            "name":"Average gas limit",
-            "description":"Check historical ETH average gas limit"
-          },
-          "median-gas-limit":{
-            "title":"Ethereum median gas limit chart",
-            "name":"Median gas limit",
-            "description":"Check historical ETH median gas limit"
-          },
-          "new-contracts-ratio":{
-            "title":"Ethereum new contracts ratio chart",
-            "name":"New contracts ratio",
-            "description":"Ratio of Ethereum new contracts compared to destroyed by SELFDESTRUCT"
-          }
-        }
-      },
-      "name":{
-        "options":{
-          "compare":"Compare with",
-          "interval":{
-            "caption":"Interval",
-            "1m":"Last month",
-            "3m":"Last 3 months",
-            "full":"Since the beginning"
-          },
-          "granularity":"Granularity",
-          "export":"Export",
-          "related_charts":"Related charts",
-          "other_coins":"The same chart for other coins"
-        }
-      }
-    }
-  },
-  "nodes": {
-    "title": "Nodes",
-    "description": "",
-    "navigation": "Nodes",
-    "card": {
-      "bitcoin": {
-        "total_nodes": "Total nodes: {total_count}",
-        "footer_link":"Go to {chain} node explorer"
-      }
-    }
-  },
-  "about":{
-    "title":"About",
-    "description":"Blockchair team, partners and contacts",
-    "navigation":"About",
-    "what_is":{
-      "caption":"What is Blockchair?",
-      "description1":"{service} is a blockchain search and analytics engine for {bitcoin_link}, {ethereum_link}, {bitcoin_cash_link}, {litecoin_link}, {bitcoin_sv_link}, {dash_link}, {ripple_link}, {dogecoin_link} and {groestlcoin_link} or you can also say it's an engine that consists of blockchain explorers on steroids. You can filter and sort blocks, transactions, and their content by a variety of different criteria, as well as perform full-text search over the blockchains.",
-      "description2":"To understand what our search engine is capable of you can try to search for {search_bitcoin_link}, look at {biggest_bitcoin_cash_blocks_link}, or try any of other examples featured on {homepage_link}.",
-      "biggest_bitcoin_cash_blocks":"the biggest Bitcoin Cash blocks",
-      "homepage":"our homepage",
-      "description3":"We aim to become Google for blockchains. Our next priority is to bring the ability to search over more other decentralized projects like IPFS and SWARM. In addition, we provide researchers with a way to batch export data from blockchains."
-    },
-    "our_team": "Our team",
-    "contacts":{
-      "caption":"Contact us",
-      "email":"Email: {email}",
-      "twitter":"Twitter: {twitter_link}",
-      "facebook": "Facebook: {facebook_link}",
-      "telegram":"Telegram chat: {telegram_link}"
-    },
-    "partners": {
-      "caption": "Our partners and friends",
-      "general": "General partners",
-      "wallets": "Wallets featuring Blockchair",
-      "exchanges": "Exchanges featuring Blockchair",
-      "mining_pools": "Mining pools featuring Blockchair",
-      "explorers": "Explorers featuring Blockchair",
-      "market_data": "Market data providers featuring Blockchair",
-      "media": "Media partners",
-      "academic": "Academic partners"
-    }
-  },
-  "feed":{
-    "title":"Message feed",
-    "description":"Read encoded messages stored in cryptocurrency blockchains",
-    "navigation":{
-      "title":"Feed",
-      "hint":"Blockchair Feed shows OP_RETURN transactions in both Bitcoin and Bitcoin Cash blockchains as well as transactions on Ethereum blockchain containing readable data in the input field.",
-      "tps":{
-        "title":"Listening three blockchains for new entries",
-        "bitcoin":"Bitcoin at {tps} txs per second",
-        "bitcoin-cash":"Bitcoin Cash at {tps} txs per second",
-        "ethereum":"Ethereum at {tps} txs per second"
-      }
-    },
-    "entry": {
-      "time": "{time} (UTC)"
-    },
-    "showing":"Showing entries for the last 3 hours..."
-  },
-  "compare":{
-    "title":"Compare BTC, ETH, BCH, LTC, BSV, DASH and DOGE blockchain stats",
-    "description":"Compare cryptocurrencies by average time between blocks, transactions per second, fees, hashrate, node count and more",
-    "navigation":"Compare",
-    "blockchain_stats":{
-      "caption":"Blockchain stats",
-      "circulation":"Circulation",
-      "nodes":"Network nodes",
-      "blockchain_size":"Blockchain size"
-    },
-    "24h_stats":{
-      "caption":"24h stats",
-      "volume_24h":"On-chain volume",
-      "hashrate_24h":"Hashrate",
-      "average_tx_fee":"Average transaction fee",
-      "median_tx_fee":"Median transaction fee",
-      "average_block_time":{
-        "caption":"Average time between blocks",
-        "dimension":"s."
-      },
-      "inflation_24h":"Inflation",
-      "cdd_24h":"Coindays destroyed"
-    },
-    "mempool_stats":{
-      "caption":"Mempool stats",
-      "tps":"Transactions per second",
-      "suggested_transaction_fee": "Recommended fee"
-    },
-    "market_stats":{
-      "caption":"Market stats",
-      "cap":"Capitalization",
-      "price":"Price",
-      "dominance":"Dominance index"
-    }
-  },
-  "charts":{
-    "title":"Charts",
-    "description":"Cryptocurrency live charts and graphs, market price, mining hashrate distribution, difficulty, blockchain size, fees and more",
-    "navigation":"Charts",
-    "granularity":{
-      "date":"Date",
-      "week":"Week",
-      "month":"Month",
-      "year":"Year",
-      "time":"Time"
-    },
-    "functions":{
-      "count":"Count",
-      "sum":"Sum",
-      "avg":"Average",
-      "median":"Median",
-      "min":"Minimum",
-      "max":"Maximum"
-    },
-    "dimensions":{
-      "count":"Count",
-      "bytes":"Bytes",
-      "kilobytes":"Kb",
-      "megabytes":"Mb",
-      "gigabytes":"Gb",
-      "dd":"Destroyed days",
-      "usd":"USD",
-      "percentage":"Percentage",
-      "gwei":"GWei"
-    },
-    "content":{
-      "see_more":"See {count} more charts"
-    }
-  },
-  "broadcast":{
-    "title":"Push and broadcast raw transaction",
-    "navigation":"Broadcast",
-    "description":"Privately broadcast BTC, ETH, BCH, LTC, BSV, DOGE and GRS raw signed transaction in hex",
-    "form":{
-      "chain":{
-        "label":"Select network:",
-        "invalid":"You need to select a blockchain first!"
-      },
-      "hex":{
-        "label":"Paste a raw transaction here in hex format to broadcast it over the specified network:",
-        "errors": {
-          "empty": "You need to enter a hex value!",
-          "invalid": "Invalid hex!"
-        }
-      },
-      "button":"Broadcast transaction"
-    },
-    "transaction": "Thanks, your transaction has been broadcast to the {chain} blockchain, its hash: {hash}"
-  },
-  "notify":{
-    "title":"Notify",
-    "navigation":{
-      "title":"Notify"
-    },
-    "content":{
-      "enable":"Enable notifications",
-      "chains":"Notify me when new blocks are found in the following chains:"
-    },
-    "notification":"New {chain} block has been found #{id}"
-  },
-  "privacy":{
-    "title":"Privacy policy",
-    "navigation":"Privacy policy",
-    "description":"Learn why your privacy is at risk while using crypto services, and why Blockchair is the safer option"
-  },
-  "dumps":{
-    "title":"Cryptocurrency datasets",
-    "navigation":"Dumps",
-    "description":"Download block and transaction data from BTC, ETH, BCH, LTC, BSV, DOGE and GRS blockchains in TSV format"
-  },
-  "markets":{
-    "title":"Markets",
-    "navigation":"Markets",
-    "description":"",
-    "coins": "Top 1000",
-    "my_portfolio":"My portfolio ({total_profit})",
-    "table":{
-      "head":{
-        "coin_name":"Coin name",
-        "price":"Price",
-        "search":"Quick lookup",
-        "mkt_cap":"Market Cap",
-        "24h_change":"24h",
-        "dominance":"Dominance",
-        "portfolio":{
-          "amount":"Amount",
-          "profit":"USD value"
-        }
-      },
-      "body":{
-        "portfolio":{
-          "total_profit":"Total portfolio value: {total_profit} {profit_change_24h}",
-          "empty_list":"You do not have a portfolio. Start a portfolio by adding coins to your favorites!"
+        "24h_stats" : {
+          "snapshots" : "Snapshots:"
         },
-        "load_more":"Load more"
-      }
-    },
-    "modal":{
-      "title":{
-        "edit":"Edit coin in your portfolio",
-        "add":"Add coin to your portfolio"
+        "latest_snapshots" : "Latest snapshots"
       },
-      "description":"This coin has been added to your favorites. You can now enter the amount of coins you have or close this window.",
-      "placeholder":"Enter amount",
-      "buttons":{
-        "edit":"Edit",
-        "add":"Add",
-        "remove":"Remove"
+      "useful_links" : {
+        "caption" : "Useful links",
+        "description" : "Partners that already use Blockchair on their websites",
+        "wallets" : "Wallets",
+        "hardware_wallets" : "Hardware wallets",
+        "market_data" : "Market data",
+        "exchanges" : "Exchanges",
+        "mining_pools" : "Mining pools",
+        "explorers" : "Explorers",
+        "crypto_processors" : "Processors"
+      }
+    },
+    "bitcoin" : {
+      "nodes" : {
+        "description" : "Explore Bitcoin network by looking for all accessible nodes, their countries, implementations, versions and consensus rules",
+        "other_nodes" : "Other nodes",
+        "last_updated" : "Last updated:",
+        "versions" : {
+          "caption" : "Node versions:",
+          "user_agent" : "User agent",
+          "count" : "Count"
+        },
+        "heights" : "Block heights:",
+        "charts" : {
+          "total_nodes" : "Total nodes: {total}",
+          "by_countries" : "By countries",
+          "by_implementations" : "By implementations",
+          "by_heights" : "By heights"
+        }
+      },
+      "whitepaper" : {
+        "description" : "Check Satoshi Nakamoto's whitepaper for consistency by hash on different websites and from Bitcoin outputs",
+        "last_check" : "Last check:",
+        "icon" : "Icon",
+        "site" : "Site",
+        "url" : "URL",
+        "hash" : "Hash",
+        "status" : "Status",
+        "footer" : {
+          "what_is" : {
+            "caption" : "What is this page?",
+            "description1" : "This page shows whether different Bitcoin sites serve the original Bitcoin whitepaper or an edited version of it. Once an hour we calculate SHA-256 hashes of the files and compare them with the hash of the original whitepaper (that would be <span class='word--break'>b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553</span>).",
+            "description2" : "There have been some suggestions to alter the whitepaper hosted on bitcoin.org (e.g. {github_issue_link} is still open). We believe that editing an academic paper and rewriting the Bitcoin history in order to accommodate someone's business interests is downright unacceptable.",
+            "github_issue" : "GitHub Issue #1325"
+          },
+          "where_find" : {
+            "caption" : "Where can I find the whitepaper in the Bitcoin blockchain?",
+            "description1" : "First of all, there are some null-data outputs containing the hash as plaintext. You can find them {outputs_table_link}. Examples: {transaction1_link}, {transaction2_link}, {transaction3_link}",
+            "outputs_table" : "using a filter on the outputs table",
+            "description2" : "Also there are null-data outputs which contain the hash as hex. The current version of our search engine doesn't yet have support for filtering scripts by hex values, but since the hex value can be represented as binary text, we can {outputs_table_search_link} of this text. Examples: {transaction1_link}, {transaction2_link}, {transaction3_link}",
+            "outputs_table_search" : "search by alphanumerical parts",
+            "description3" : "More importantly, there's transaction {transaction_link} which contains the pdf file itself. Here's {bitcoin_stackexchange_link}. It may be possible to edit the whitepaper on some websites, but it's not possible to alter the blockchain.",
+            "bitcoin_stackexchange" : "an instruction on how to parse it"
+          }
+        }
+      }
+    },
+    "bitcoin-cash" : {
+      "nodes" : {
+        "description" : "Explore Bitcoin Cash network by looking for all the accessible nodes, their countries, implementations, versions and consensus rules"
+      }
+    },
+    "bitcoin-sv" : {
+      "nodes" : {
+        "description" : "Explore Bitcoin SV network by looking for all the accessible nodes, their countries, implementations, versions and consensus rules"
+      }
+    },
+    "dogecoin" : {
+      "nodes" : {
+        "description" : "Explore Dogecoin network by looking for all the accessible nodes, their countries, implementations, versions and consensus rules"
+      }
+    },
+    "litecoin" : {
+      "nodes" : {
+        "description" : "Explore Litecoin network by looking for all the accessible nodes, their countries, implementations, versions and consensus rules"
+      }
+    },
+    "dash" : {
+      "nodes" : {
+        "description" : "Explore Dash network by looking for all the accessible nodes, their countries, implementations, versions and consensus rules"
+      }
+    },
+    "groestlcoin" : {
+      "nodes" : {
+        "description" : "Explore Groestlcoin network by looking for all the accessible nodes, their countries, implementations, versions and consensus rules"
+      }
+    },
+    "zcash" : {
+      "nodes" : {
+        "description" : "Explore Zcash network by looking for all the accessible nodes, their countries, implementations, versions and consensus rules"
+      }
+    },
+    "ethereum" : {
+      "erc-20" : {
+        "navigation" : {
+          "object" : {
+            "tokens" : "Tokens",
+            "transactions" : "Transactions"
+          }
+        },
+        "homepage" : {
+          "title" : "Ethereum ERC-20 Explorer",
+          "description" : "Look up ERC-20 (as USDT) tokens, transactions, balances, new contracts list",
+          "stats" : {
+            "title" : "ERC-20 stats",
+            "tokens" : "Total tokens",
+            "transactions" : "Total transactions",
+            "tokens_24h" : "New tokens 24h",
+            "transactions_24h" : "New transactions 24h"
+          },
+          "most_used_tokens" : "Most used tokens over the last month",
+          "latest_tokens" : "Newest tokens",
+          "latest_transactions" : "Latest transactions"
+        },
+        "infinitable" : {
+          "title" : {
+            "tokens" : "ERC-20 Tokens List",
+            "transactions" : "ERC-20 Transactions List"
+          },
+          "description" : {
+            "tokens" : "Look up ERC-20 (as USDT) most popular and newest tokens, sort and filter them by age, block ID and name",
+            "transactions" : "Look up ERC-20 (as USDT) latest transactions, sort and filter them by age, block ID and value"
+          },
+          "tokens" : {
+            "address" : "Address",
+            "id" : "Id",
+            "time" : "Created at",
+            "name" : "Name",
+            "symbol" : "Symbol",
+            "decimals" : "Decimals",
+            "creating_block_id" : "Creating block id",
+            "creating_transaction_hash" : "Creating tx hash"
+          },
+          "transactions" : {
+            "block_id" : "Block Id",
+            "id" : "Transaction Id",
+            "transaction_hash" : "Transaction hash",
+            "token_address" : "Token address",
+            "token_name" : "Token name",
+            "token_symbol" : "Token symbol",
+            "token_decimals" : "Token decimals",
+            "value" : "Value"
+          }
+        },
+        "token" : {
+          "title" : "{token_name} ({token_symbol}) Explorer",
+          "description" : "Look up {token_name} ({token_symbol}) latest transactions, addresses and balances",
+          "navigation" : "Token",
+          "stats" : {
+            "time" : "Created at:",
+            "creating_block_id" : "Creating block id:",
+            "creating_transaction_hash" : "Creating transaction hash:",
+            "transactions" : "Transactions:",
+            "transactions_24h" : "Transactions 24h:",
+            "volume_24h" : "Volume 24h:"
+          },
+          "latest_transactions" : "Latest token transactions"
+        }
+      }
+    },
+    "charts" : {
+      "title" : "Charts",
+      "description" : "{chain} charts, {ticker} price, historical and live graph and other cryptocurrency visualizations",
+      "content" : {
+        "sections" : {
+          "monetary_stats" : "Monetary statistics",
+          "blocks" : "Blocks",
+          "transactions" : "Transactions",
+          "misc" : "Misc"
+        }
+      },
+      "bitcoin" : {
+        "names" : {
+          "blockchain-size" : {
+            "title" : "{chain} blockchain size chart",
+            "name" : "Blockchain size",
+            "description" : "The growth rate of {chain} full node size in gigabytes from the genesis block till now"
+          },
+          "price-usd" : {
+            "title" : "{chain} price ({ticker}/USD)",
+            "name" : "{chain} price (USD)",
+            "description" : "Get {chain} exchange rate chart, check live {ticker}/USD price, including historical market data across {chain} exchanges"
+          },
+          "circulation" : {
+            "title" : "{chain} circulation chart",
+            "name" : "Circulation",
+            "description" : "How many {ticker} have been already mined? Watch the chart representing {ticker} supply"
+          },
+          "average-block-size" : {
+            "title" : "{chain} average block size chart",
+            "name" : "Average block size",
+            "description" : "Check out historical average {chain} block size chart"
+          },
+          "median-block-size" : {
+            "title" : "{chain} median block size chart",
+            "name" : "Median block size",
+            "description" : "Get historical median {chain} block size chart"
+          },
+          "difficulty" : {
+            "title" : "{chain} difficulty chart",
+            "name" : "Difficulty",
+            "description" : "{ticker} difficulty chart, a parameter depending on overall mining hashrate"
+          },
+          "transaction-count" : {
+            "title" : "{chain} transaction count chart",
+            "name" : "Transaction count",
+            "description" : "How many {ticker} transactions happen daily? The number of confirmed {chain} transactions by day/week/month"
+          },
+          "total-transaction-count" : {
+            "title" : "{chain} total transaction count chart",
+            "name" : "Total transaction count",
+            "description" : "How many {ticker} transactions were proceeded? The total number of confirmed transactions in {chain} blockchain"
+          },
+          "transaction-volume" : {
+            "title" : "{chain} transaction volume chart",
+            "name" : "Transaction volume ({ticker})",
+            "description" : "Check the number of {ticker} moved daily"
+          },
+          "average-transaction-amount" : {
+            "title" : "{chain} average transaction amount chart",
+            "name" : "Average transaction amount ({ticker})",
+            "description" : "Get {chain} average transaction amount in {ticker} by day/week/month/year"
+          },
+          "median-transaction-amount" : {
+            "title" : "{chain} median transaction amount chart",
+            "name" : "Median transaction amount ({ticker})",
+            "description" : "Get {chain} median transaction amount in {ticker} by day/week/month/year"
+          },
+          "average-transaction-fee" : {
+            "title" : "{chain} average transaction fee chart",
+            "name" : "Average transaction fee ({ticker})",
+            "description" : "Check {chain} average tx fee in {ticker}"
+          },
+          "median-transaction-fee" : {
+            "title" : "{chain} median transaction fee chart",
+            "name" : "Median transaction fee ({ticker})",
+            "description" : "Check {chain} median tx fee in {ticker}"
+          },
+          "transaction-volume-usd" : {
+            "title" : "{chain} transaction volume (USD) chart",
+            "name" : "Transaction volume (USD)",
+            "description" : "Check the number of {ticker} moved daily in USD"
+          },
+          "average-transaction-fee-usd" : {
+            "title" : "{chain} average transaction fee (USD) chart",
+            "name" : "Average transaction fee (USD)",
+            "description" : "Check {chain} average tx fee in USD"
+          },
+          "median-transaction-fee-usd" : {
+            "title" : "{chain} median transaction fee (USD) chart",
+            "name" : "Median transaction fee (USD)",
+            "description" : "Check {chain} median tx fee in USD"
+          },
+          "average-transaction-amount-usd" : {
+            "title" : "{chain} average transaction amount (USD) chart",
+            "name" : "Average transaction amount (USD)",
+            "description" : "Get {chain} average tx amount in USD by day/week/month/year"
+          },
+          "median-transaction-amount-usd" : {
+            "title" : "{chain} median transaction amount (USD) chart",
+            "name" : "Median transaction amount (USD)",
+            "description" : "Get {chain} median tx amount in USD by day/week/month/year"
+          },
+          "inflation-usd" : {
+            "title" : "{chain} inflation (USD) chart",
+            "name" : "Inflation (USD)",
+            "description" : "The number of {ticker} mined/generated daily in USD. {chain} inflation rate curve"
+          },
+          "transactions-in-block" : {
+            "title" : "Transactions in {chain} block chart",
+            "name" : "Transactions in block",
+            "description" : "{chain} transaction count by block scatter plot"
+          },
+          "coindays-destroyed" : {
+            "title" : "{chain} coindays destroyed chart",
+            "name" : "Coindays destroyed",
+            "description" : "The chart shows how many {chain} coindays were destroyed by moving old coins"
+          },
+          "hashrate-distribution" : {
+            "title" : "{chain} hashrate distribution",
+            "name" : "Hashrate distribution",
+            "description" : "Find the biggest {chain} miners and pools on the hashrate distribution pie chart"
+          },
+          "transactions-per-second" : {
+            "title" : "{chain} transactions per second chart",
+            "name" : "Transactions per second",
+            "description" : "Tx/s is a good {chain} scalability measure. Check how it changes daily"
+          },
+          "segwit-usage" : {
+            "title" : "{chain} SegWit usage chart",
+            "name" : "SegWit usage",
+            "description" : "Percentage of SegWit transactions in {chain}"
+          },
+          "percentage-of-non-monetary-outputs" : {
+            "title" : "% of non monetary {chain} outputs chart",
+            "name" : "% of non monetary outputs",
+            "description" : "Percentage of {ticker} outputs which have not moved any {ticker}"
+          },
+          "distribution-of-outputs-types-over-two-weeks" : {
+            "title" : "Distribution of {chain} outputs types chart",
+            "name" : "Distribution of outputs types",
+            "description" : "Check the most popular {chain} output types for the past 2 weeks in a pie chart"
+          }
+        }
+      },
+      "dogecoin" : {
+        "names" : {
+          "aux-pow" : {
+            "title" : "Dogecoin AuxPoW usage chart",
+            "name" : "AuxPoW usage",
+            "description" : "Percentage of Dogecoin blocks confirmed by merged mining"
+          }
+        }
+      },
+      "ethereum" : {
+        "names" : {
+          "number-of-new-contracts" : {
+            "title" : "Number of new Ethereum contracts chart",
+            "name" : "Number of new contracts",
+            "description" : "Get the number of new smart contracts created daily in Ethereum"
+          },
+          "number-of-destroyed-contracts" : {
+            "title" : "Number of destroyed Ethereum contracts chart",
+            "name" : "Number of destroyed contracts",
+            "description" : "Get the number of daily destroyed Ethereum smart contracts"
+          },
+          "uncle-rate" : {
+            "title" : "Ethereum uncle rate",
+            "name" : "Uncle rate",
+            "description" : "Percentage of uncles blocks in Ethereum"
+          },
+          "average-gas-price" : {
+            "title" : "Ethereum average gas price chart",
+            "name" : "Average gas price",
+            "description" : "Check historical ETH average gas price in GWei"
+          },
+          "median-gas-price" : {
+            "title" : "Ethereum median gas price chart",
+            "name" : "Median gas price",
+            "description" : "Check historical ETH median gas price in GWei"
+          },
+          "average-gas-limit" : {
+            "title" : "Ethereum average gas limit chart",
+            "name" : "Average gas limit",
+            "description" : "Check historical ETH average gas limit"
+          },
+          "median-gas-limit" : {
+            "title" : "Ethereum median gas limit chart",
+            "name" : "Median gas limit",
+            "description" : "Check historical ETH median gas limit"
+          },
+          "new-contracts-ratio" : {
+            "title" : "Ethereum new contracts ratio chart",
+            "name" : "New contracts ratio",
+            "description" : "Ratio of Ethereum new contracts compared to destroyed by SELFDESTRUCT"
+          }
+        }
+      },
+      "name" : {
+        "options" : {
+          "compare" : "Compare with",
+          "interval" : {
+            "caption" : "Interval",
+            "1m" : "Last month",
+            "3m" : "Last 3 months",
+            "full" : "Since the beginning"
+          },
+          "granularity" : "Granularity",
+          "export" : "Export",
+          "related_charts" : "Related charts",
+          "other_coins" : "The same chart for other coins"
+        }
+      }
+    },
+    "mixin" : {}
+  },
+  "nodes" : {
+    "title" : "Nodes",
+    "description" : "Look up blockchains nodes distribution by implementations, versions and countries",
+    "navigation" : "Nodes",
+    "card" : {
+      "bitcoin" : {
+        "total_nodes" : "Total nodes: {total_count}",
+        "footer_link" : "Go to {chain} node explorer"
       }
     }
   },
-  "hints":{
-    "bitcoin-cash":"Bitcoin Cash — also known as BCC and XBC",
-    "copy":"Copy",
-    "copied":"Copied",
-    "mempool":"Mempool"
-  },
-  "utils":{
-    "bool":{
-      "yes":"YES",
-      "no":"NO"
+  "about" : {
+    "title" : "About",
+    "description" : "Blockchair team, partners and contacts",
+    "navigation" : "About",
+    "what_is" : {
+      "caption" : "What is Blockchair?",
+      "description1" : "{service} is a blockchain search and analytics engine for {blockchains_links} or you can also say it's an engine that consists of blockchain explorers on steroids. You can filter and sort blocks, transactions, and their content by a variety of different criteria, as well as perform full-text search over the blockchains.",
+      "description2" : "To understand what our search engine is capable of you can try to search for {search_bitcoin_link}, look at {biggest_bitcoin_cash_blocks_link}, or try any of other examples featured on {homepage_link}.",
+      "biggest_bitcoin_cash_blocks" : "the biggest Bitcoin Cash blocks",
+      "homepage" : "our homepage",
+      "description3" : "We aim to become Google for blockchains. Our next priority is to bring the ability to search over more other decentralized projects like IPFS and SWARM. In addition, we provide researchers with a way to batch export data from blockchains."
     },
-    "coinbase":{
-      "full":"💰 Coinbase",
-      "short":"Coinbase"
+    "our_team" : "Our team",
+    "contacts" : {
+      "caption" : "Contact us",
+      "email" : "Email: {email}",
+      "twitter" : "Twitter: {twitter_link}",
+      "facebook" : "Facebook: {facebook_link}",
+      "telegram" : "Telegram chat: {telegram_link}"
     },
-    "contract_creation":"Contract creation",
-    "unspent":"Unspent",
-    "thinking":{
-      "loading":"Loading...",
-      "progress":"Thinking as fast as I can... ({progress}%)"
+    "partners" : {
+      "caption" : "Our partners and friends",
+      "general" : "General partners",
+      "wallets" : "Wallets featuring Blockchair",
+      "hardware_wallets" : "Hardware wallets featuring Blockchair",
+      "exchanges" : "Exchanges featuring Blockchair",
+      "mining_pools" : "Mining pools featuring Blockchair",
+      "explorers" : "Explorers featuring Blockchair",
+      "market_data" : "Market data providers featuring Blockchair",
+      "crypto_processors" : "Crypto processors featuring Blockchair",
+      "dapps" : "dApps featuring Blockchair",
+      "media" : "Media partners",
+      "academic" : "Academic partners"
     }
   },
-  "footer":{
-    "explorers":"Explorers",
-    "services":"Services",
-    "api":"API",
-    "sql":"SQL",
-    "charts":"Charts",
-    "markets":"Markets & portfolio",
-    "nodes": "Nodes",
-    "feed":"Feed",
-    "broadcast":"Broadcast transaction",
-    "dumps":"Database dumps",
-    "compare": "Compare",
-    "useful_links": "Useful links",
-    "about": "About",
-    "about_blockchair": "About Blockchair",
-    "privacy": "Our privacy policy",
-    "contacts":"Contact us",
-    "issues":"Submit a bug / request",
-    "status":"Status",
-    "social": "Social",
-    "language": "Languages",
-    "copyright":"© {year} Blockchair",
-    "market_data":"Market data by {coin_market_cap_link} and {coin_gecko_link}"
-  },
-  "errors":{
-    "http":{
-      "payment_required":"You're sending too many requests. Please try again.",
-      "not_found":"Not found in any blockchain 😞"
+  "terms" : {
+    "title" : "Terms of Service",
+    "description" : "The Services are provided by Blockchair Legal agreement",
+    "navigation" : "Terms of service",
+    "content" : {
+      "caption" : "Blockchair terms of service",
+      "api" : "API terms of service",
+      "ads" : "Advertisement terms of service"
     }
+  },
+  "feed" : {
+    "title" : "Message feed",
+    "description" : "Read encoded messages stored in cryptocurrency blockchains",
+    "navigation" : {
+      "title" : "Feed",
+      "hint" : "Blockchair Feed shows OP_RETURN transactions in both Bitcoin and Bitcoin Cash blockchains as well as transactions on Ethereum blockchain containing readable data in the input field.",
+      "tps" : {
+        "title" : "Listening three blockchains for new entries",
+        "bitcoin" : "Bitcoin at {tps} txs per second",
+        "bitcoin-cash" : "Bitcoin Cash at {tps} txs per second",
+        "ethereum" : "Ethereum at {tps} txs per second"
+      }
+    },
+    "entry" : {
+      "time" : "{time} (UTC)"
+    },
+    "showing" : "Showing entries for the last 3 hours..."
+  },
+  "compare" : {
+    "title" : "Compare BTC, ETH, BCH, LTC, BSV, DASH and DOGE blockchain stats",
+    "description" : "Compare cryptocurrencies by average time between blocks, transactions per second, fees, hashrate, node count and more",
+    "navigation" : "Compare",
+    "comparison" : "Add to comparison",
+    "blockchain_stats" : {
+      "caption" : "Blockchain stats",
+      "circulation" : "Circulation",
+      "nodes" : "Network nodes",
+      "blockchain_size" : "Blockchain size"
+    },
+    "24h_stats" : {
+      "caption" : "24h stats",
+      "volume_24h" : "On-chain volume",
+      "hashrate_24h" : "Hashrate",
+      "average_tx_fee" : "Average transaction fee",
+      "median_tx_fee" : "Median transaction fee",
+      "average_block_time" : {
+        "caption" : "Average time between blocks",
+        "dimension" : "s."
+      },
+      "inflation_24h" : "Inflation",
+      "cdd_24h" : "Coindays destroyed"
+    },
+    "mempool_stats" : {
+      "caption" : "Mempool stats",
+      "tps" : "Transactions per second",
+      "suggested_transaction_fee" : "Recommended fee"
+    },
+    "market_stats" : {
+      "caption" : "Market stats",
+      "cap" : "Capitalization",
+      "price" : "Price",
+      "dominance" : "Dominance index"
+    }
+  },
+  "charts" : {
+    "title" : "Charts",
+    "description" : "Cryptocurrency live charts and graphs, market price, mining hashrate distribution, difficulty, blockchain size, fees and more",
+    "navigation" : "Charts",
+    "granularity" : {
+      "date" : "Date",
+      "week" : "Week",
+      "month" : "Month",
+      "year" : "Year",
+      "time" : "Time"
+    },
+    "functions" : {
+      "count" : "Count",
+      "sum" : "Sum",
+      "avg" : "Average",
+      "median" : "Median",
+      "min" : "Minimum",
+      "max" : "Maximum"
+    },
+    "dimensions" : {
+      "count" : "Count",
+      "bytes" : "Bytes",
+      "kilobytes" : "Kb",
+      "megabytes" : "Mb",
+      "gigabytes" : "Gb",
+      "dd" : "Destroyed days",
+      "usd" : "USD",
+      "percentage" : "Percentage",
+      "gwei" : "GWei"
+    },
+    "content" : {
+      "see_more" : "See {count} more charts"
+    }
+  },
+  "broadcast" : {
+    "title" : "Push and broadcast raw transaction",
+    "navigation" : "Broadcast",
+    "description" : "Privately broadcast BTC, ETH, BCH, LTC, BSV, DOGE and GRS raw signed transaction in hex",
+    "form" : {
+      "chain" : {
+        "label" : "Select network:",
+        "invalid" : "You need to select a blockchain first!"
+      },
+      "hex" : {
+        "label" : "Paste a raw transaction here in hex format to broadcast it over the specified network:",
+        "errors" : {
+          "empty" : "You need to enter a hex value!",
+          "invalid" : "Invalid hex!"
+        }
+      },
+      "button" : "Broadcast transaction"
+    },
+    "transaction" : "Thanks, your transaction has been broadcast to the {chain} blockchain, its hash: {hash}"
+  },
+  "notify" : {
+    "title" : "Notify",
+    "navigation" : {
+      "title" : "Notify"
+    },
+    "content" : {
+      "enable" : "Enable notifications",
+      "chains" : "Notify me when new blocks are found in the following chains:"
+    },
+    "notification" : "New {chain} block has been found #{id}"
+  },
+  "privacy" : {
+    "title" : "Privacy policy",
+    "navigation" : "Privacy policy",
+    "description" : "Learn why your privacy is at risk while using crypto services, and why Blockchair is the safer option"
+  },
+  "dumps" : {
+    "title" : "Cryptocurrency datasets",
+    "navigation" : "Dumps",
+    "description" : "Download block and transaction data from BTC, ETH, BCH, LTC, BSV, DOGE and GRS blockchains in TSV format"
+  },
+  "markets" : {
+    "title" : "Markets",
+    "navigation" : "Markets",
+    "description" : "Live cryptocurrencies prices and market cap, build and track your own portfolio",
+    "coins" : "Top 1000",
+    "my_portfolio" : "My portfolio: ({total_profit})",
+    "table" : {
+      "head" : {
+        "coin_name" : "Coin name",
+        "price" : "Price",
+        "search" : "Quick lookup",
+        "mkt_cap" : "Market Cap",
+        "24h_change" : "24h",
+        "dominance" : "Dominance",
+        "portfolio" : {
+          "amount" : "Amount",
+          "profit" : "USD value"
+        }
+      },
+      "body" : {
+        "stablecoin" : "Stablecoin",
+        "explore" : "Explore",
+        "portfolio" : {
+          "total_profit" : "Total portfolio value: {total_profit} {profit_change_24h}",
+          "empty_list" : "You do not have a portfolio.",
+          "start_portfolio" : "Start a portfolio by adding coins to your favorites!"
+        },
+        "load_more" : "Load more"
+      }
+    },
+    "modal" : {
+      "title" : {
+        "edit" : "Edit coin in your portfolio",
+        "add" : "Add coin to your portfolio"
+      },
+      "description" : "This coin has been added to your favorites. You can now enter the amount of coins you have or close this window.",
+      "placeholder" : "Enter amount",
+      "buttons" : {
+        "edit" : "Edit",
+        "add" : "Add",
+        "remove" : "Remove"
+      }
+    }
+  },
+  "api" : {
+    "navigation" : "API",
+    "homepage" : {
+      "title" : "Blockchain API",
+      "description" : "Blockchain API"
+    },
+    "docs" : {
+      "title" : "Blockchain API Documentation",
+      "description" : "API for developers gives access to data in 12 blockchains (BTC, ETH, BCH, TON, BSV, XRP, XLM, ERC tokens etc)",
+      "navigation" : "Docs"
+    }
+  },
+  "pdf" : {
+    "title" : "Transaction PDF receipt",
+    "navigation" : "PDF receipts",
+    "description" : "Generate beautiful bank-like PDF receipt of your crypto transaction",
+    "form" : {
+      "placeholder" : "Enter transaction hash",
+      "supported_blockchains" : "Supported blockchains: {bitcoin_link}, {ethereum_link}, {bitcoin_cash_link}, {litecoin_link}, {bitcoin_sv_link}, {dash_link}, {zcash_link}, {dogecoin_link} and {groestlcoin_link}"
+    },
+    "receipt" : {
+      "download_link" : "Download link: {pdf_link}",
+      "no_transaction" : "No transaction with such hash has been found"
+    }
+  },
+  "hints" : {
+    "bitcoin-cash" : "Bitcoin Cash — also known as BCC and XBC",
+    "copy" : "Copy",
+    "copied" : "Copied",
+    "mempool" : "Mempool"
+  },
+  "utils" : {
+    "bool" : {
+      "yes" : "YES",
+      "no" : "NO"
+    },
+    "coinbase" : {
+      "full" : "💰 Coinbase",
+      "short" : "Coinbase"
+    },
+    "shielded" : {
+      "full" : "🛡 Shielded",
+      "short" : "Shielded"
+    },
+    "contract_creation" : "Contract creation",
+    "unspent" : "Unspent",
+    "thinking" : {
+      "loading" : "Loading...",
+      "progress" : "Thinking as fast as I can... ({progress}%)"
+    },
+    "genesis" : "💰 Genesis"
+  },
+  "footer" : {
+    "explorers" : "Explorers",
+    "services" : "Services",
+    "api" : "API",
+    "sql" : "SQL",
+    "charts" : "Charts",
+    "markets" : "Markets & Portfolio",
+    "nodes" : "Node explorers",
+    "feed" : "Feed",
+    "broadcast" : "Broadcast transaction",
+    "dumps" : "Database dumps",
+    "dumps_node" : "Full node dumps",
+    "pdf" : "Get PDF receipt",
+    "compare" : "Compare crypto",
+    "useful_links" : "Useful links",
+    "about" : "About",
+    "terms" : "Terms of service",
+    "about_blockchair" : "About Blockchair",
+    "privacy" : "Our privacy policy",
+    "contacts" : "Contact us",
+    "issues" : "Submit a bug / request",
+    "status" : "Status",
+    "social" : "Social",
+    "language" : "Languages",
+    "copyright" : "© {year} Blockchair",
+    "market_data" : "Market data by {coin_market_cap_link} and {coin_gecko_link}",
+    "faq" : "FAQ",
+    "referral_program" : "Referral program",
+    "advertise" : "Advertise with us",
+    "whitepaper" : "Whitepaper",
+    "tools" : {
+      "title" : "Tools",
+      "release-monitor" : "Release monitor",
+      "halving-countdown" : "Halving countdown"
+    },
+    "cryptoanarchyst_corner" : "Crypto-anarchist corner",
+    "theme" : {
+      "on" : "Switch to the night mode",
+      "off" : "Switch to the day mode"
+    },
+    "ads" : {
+      "on" : "Turn off ads across the website for 3 days",
+      "off" : "Turn on ads"
+    }
+  },
+  "errors" : {
+    "http" : {
+      "payment_required" : "You're sending too many requests. Please try again later.",
+      "not_found" : "Not found in any blockchain 😞"
+    },
+    "ban" : {
+      "row1" : "Wow! You are such an active user, that it looks like you are a robot 🤖.",
+      "row2" : "Please verify that you are not a robot by solving the captcha."
+    }
+  },
+  "faq" : {
+    "title" : "Frequently Asked Questions",
+    "description" : "We only provide blockchain search and analytics services, not an exchange, bank or a wallet",
+    "navigation" : "FAQ"
+  },
+  "advertise" : {
+    "title" : "Advertise",
+    "description" : "Promote your own product on Blockchair with banners, buttons and native text",
+    "navigation" : "Advertise"
+  },
+  "language-proposal" : {
+    "title" : "This site is available in English, switch the language?",
+    "yes" : "Yes",
+    "no" : "No"
+  },
+  "referral_program" : {
+    "title" : "Referral program",
+    "navigation" : "Referral program",
+    "description" : ""
+  },
+  "tools" : {
+    "title" : "Tools",
+    "release-monitor" : {
+      "title" : "Release monitor",
+      "description" : "Track latest versions of cryptocurrency clients: Bitcoin Core, Geth, rippled, Bitcoin ABC, and others",
+      "button" : "Join our Telegram channel to receive updates",
+      "version" : "Version",
+      "time" : "Time",
+      "link" : "Link",
+      "show_all" : "Show all",
+      "filter_title" : "Filter chains"
+    },
+    "halving-countdown" : {
+      "title" : "Halving countdown",
+      "meta_title" : "Bitcoin 2020 Halving Countdown",
+      "description" : "Check the date when halving will happen in Bitcoin (BTC), Bitcoin Cash (BCH) and Bitcoin SV (BSV) and its effect on the price",
+      "item" : {
+        "title" : "halving countdown",
+        "current_block" : "Current block",
+        "current_reward" : "Current block reward",
+        "halvening_block" : "Halving block",
+        "halvening_reward" : "Block reward after halving",
+        "halvening_time_approximate" : "Approximate halving time",
+        "seconds_left" : "Seconds left",
+        "blocks_left" : "Blocks remaining until halving",
+        "button_explorer" : "Go to {title} explorer"
+      },
+      "time" : {
+        "days" : "days",
+        "hours" : "hours",
+        "minutes" : "minutes"
+      }
+    }
+  },
+  "nojs" : {
+    "disabled_functions" : "This functionality available with JavaScript enabled only",
+    "extended_functions" : "Extended functionality available with JavaScript enabled only"
+  },
+  "news": {
+    "title": "News", 
+    "description": "An aggregation of blockchain and cryptocurrency news of the most prominent media outlets",
+    "most_recent": "Most recent",
+    "more_news": "More news",
+    "homepage_link": "More",
+    "shortcuts": {
+      "title": "Keyboard shortcuts",
+      "close": "Close",
+      "next": "Next",
+      "prev": "Previous"
+    },
+    "unable_to_load": "Unable to load the article",
+    "try_to_read_on": "Try to read it on",
+    "read_on": "Read on",
+    "yesterday": "Yesterday",
+    "share_title": "Share this article",
+    "share": "Share"
   }
 }
