@@ -11,6 +11,7 @@
     "dash" : "Dash",
     "litecoin" : "Litecoin",
     "ethereum" : "Ethereum",
+    "ethereum/testnet" : "Ethereum Testnet",
     "ripple" : "Ripple",
     "groestlcoin" : "Groestlcoin",
     "stellar" : "Stellar",
@@ -31,6 +32,7 @@
     "dash" : "DASH",
     "litecoin" : "LTC",
     "ethereum" : "ETH",
+    "ethereum/testnet" : "TETH",
     "ripple" : "XRP",
     "usd" : "USD",
     "groestlcoin" : "GRS",
@@ -132,7 +134,7 @@
       "api" : {
         "title" : "Professional API",
         "description" : "Access blockchain data with Blockchair API",
-        "link" : "Read API documentation"
+        "link" : "Read more about API"
       },
       "charts" : {
         "title" : "Charts",
@@ -393,7 +395,8 @@
         },
         "ethereum" : {
           "uncle" : "Uncle",
-          "address" : "Address"
+          "address" : "Address",
+          "contract" : "Contract"
         },
         "ripple" : {
           "ledger" : "Ledger",
@@ -1506,7 +1509,8 @@
           }
         },
         "address" : {
-          "description" : "Check Ethereum (ETH) ({address}), its balance and transactions",
+          "description" : "Check Ethereum (ETH) address {address}, its balance and transactions",
+          "description_contract" : "Check Ethereum (ETH) contract {address}, its balance and transactions",
           "type" : "Type",
           "receiving" : "Receiving: {receiving_calls_link}",
           "spending" : "Spending: {spending_calls_link}",
@@ -2186,6 +2190,10 @@
       "bitcoin/testnet" : {
         "title" : "Bitcoin Testnet Explorer",
         "description" : "Look up Bitcoin Testnet (TBTC) blocks, transactions, addresses, balances, nodes, OP_RETURN data and protocols, blockchain stats and charts"
+      },
+      "ethereum/testnet" : {
+        "title" : "Ethereum Testnet Explorer",
+        "description" : "Look up Ethereum Testnet (ETH) blocks, transactions, addresses, smart contracts, balances and blockchain stats"
       },
       "bitcoin-cash" : {
         "title" : "Bitcoin Cash Explorer",
@@ -2868,6 +2876,11 @@
       "title" : "Blockchain API Documentation",
       "description" : "API for developers gives access to data in 12 blockchains (BTC, ETH, BCH, TON, BSV, XRP, XLM, ERC tokens etc)",
       "navigation" : "Docs"
+    },
+    "plans" : {
+      "title" : "Pricing plans",
+      "description" : "",
+      "navigation" : "Pricing plans"
     }
   },
   "pdf" : {
@@ -2940,6 +2953,7 @@
     "referral_program" : "Referral program",
     "advertise" : "Advertise with us",
     "whitepaper" : "Whitepaper",
+    "bugbounty" : "Bug bounty program",
     "tools" : {
       "title" : "Tools",
       "release-monitor" : "Release monitor",
@@ -3024,7 +3038,7 @@
     "extended_functions" : "Extended functionality available with JavaScript enabled only"
   },
   "news" : {
-    "title" : "News",
+    "title" : "Blockchair News",
     "description" : "An aggregation of blockchain and cryptocurrency news of the most prominent media outlets",
     "menu_description" : "Catch up with the latest crypto news enhanced with the BTC price chart",
     "most_recent" : "Most recent",
@@ -3066,5 +3080,9 @@
       "title" : "{title} - Donate crypto at Blockchair Donut",
       "description" : ""
     }
+  },
+  "bugbounty" : {
+    "title" : "Bug bounty program",
+    "description" : ""
   }
 }
