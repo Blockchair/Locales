@@ -1,0 +1,3060 @@
+{
+  "title" : "Blockchair",
+  "subtitle" : "Blockchain Zoekmachine",
+  "description" : "Blok-verkenner en de meest krachtige API voor BTC, ETH, XRP, XLM, BCH, LTC, DASH, BSV, DOGE, GRS en TON waarmee u transacties en adressen kunt opzoeken, sorteren en filteren.",
+  "chain" : {
+    "bitcoin" : "Bitcoin",
+    "bitcoin/testnet" : "Bitcoin Testnet",
+    "bitcoin-cash" : "Bitcoin Cash",
+    "bitcoin-sv" : "Bitcoin SV",
+    "dogecoin" : "Dogecoin",
+    "dash" : "Dash",
+    "litecoin" : "Litecoin",
+    "ethereum" : "Ethereum",
+    "ethereum/testnet" : "Ethereum Testnet",
+    "ripple" : "Ripple",
+    "groestlcoin" : "Groestlcoin",
+    "stellar" : "Stellar",
+    "ton" : "Telegram Open Network",
+    "monero" : "Monero",
+    "cardano" : "Cardano",
+    "zcash" : "Zcash",
+    "mixin" : "Mixin",
+    "tezos" : "Tezos",
+    "eos" : "EOS"
+  },
+  "ticker" : {
+    "bitcoin" : "BTC",
+    "bitcoin/testnet" : "TBTC",
+    "bitcoin-cash" : "BCH",
+    "bitcoin-sv" : "BSV",
+    "dogecoin" : "DOGE",
+    "dash" : "DASH",
+    "litecoin" : "LTC",
+    "ethereum" : "ETH",
+    "ethereum/testnet" : "TETH",
+    "ripple" : "XRP",
+    "usd" : "USD",
+    "groestlcoin" : "GRS",
+    "stellar" : "XLM",
+    "ton" : "GRAM",
+    "monero" : "XMR",
+    "cardano" : "ADA",
+    "zcash" : "ZEC",
+    "mixin" : "XIN",
+    "tezos" : "XTZ",
+    "eos" : "EOS"
+  },
+  "homepage" : {
+    "title" : "Blockchair — Universele blockchain-verkenner en zoekmachine",
+    "portfolio_widget" : {
+      "my_portfolio" : "Mijn portfolio: {total_profit}"
+    },
+    "screen1" : {
+      "placehodler" : "Zoek in {count} blockchains...",
+      "qrcode" : {
+        "title" : "Scan de QR-code van een adres",
+        "modal" : {
+          "title" : "Scan QR-code"
+        }
+      },
+      "description" : "Blockchair is dé zoekmachine met de meeste privacy voor {blockchains}.",
+      "description_line2" : "Zoek naar {transactions}, {addresses}, {blocks}, en zelfs {embedded}.",
+      "scope" : {
+        "transactions" : "transacties",
+        "addresses" : "adressen",
+        "blocks" : "blokken",
+        "embedded" : "ingesloten tekstdata",
+        "tooltip" : "Klik om een willekeurig voorbeeld in het zoekvak te plakken"
+      }
+    },
+    "screen2" : {
+      "explore_blockchains" : "Verken blockchains",
+      "description" : "Duik in blockchain data-analyse met filters en sortering. Maak en download uw eigen datasets. Database dumps zijn ook beschikbaar.",
+      "examples" : {
+        "description" : "Probeer voorbeelden uit van wat u kunt vinden op Blockchair:",
+        "show_examples" : "Toon voorbeelden",
+        "links" : "{btc_largest_txs_link} {etc_contract_creations_link} {bch_biggest_blocks_link}.",
+        "btc_largest_txs" : "grootste transacties in Bitcoin",
+        "etc_contract_creations" : "contract creaties in Ethereum",
+        "bch_biggest_blocks" : "grootste Bitcoin Cash blokken"
+      },
+      "card" : {
+        "bitcoin" : {
+          "blocks" : "Blokken:",
+          "blocks_24h" : "24u blokken:",
+          "transactions" : "Transacties:",
+          "outputs" : "Outputs:",
+          "mempool_txs" : "Onbevestigde txs:",
+          "mempool_tps" : "Txs per seconde:",
+          "best_block" : "Laatste blok:",
+          "hashrate" : "Hashrate ({algorithm}):",
+          "footer_link" : "Ga naar {chain}-verkenner"
+        },
+        "ethereum" : {
+          "calls" : "Calls:"
+        },
+        "ripple" : {
+          "ledgers" : "Grootboeken:",
+          "transactions_24h" : "24u transacties:",
+          "circulation" : "In omloop:",
+          "best_ledger" : "Laatste grootboek:",
+          "volume_24h" : "Volume 24 u:"
+        },
+        "stellar" : {
+          "operations_24h" : "Operaties 24u:",
+          "failed_transactions_24h" : "Mislukte txs 24u:"
+        },
+        "ton" : {
+          "first_block_time" : "Huidige testnet is gelanceerd op:"
+        },
+        "services" : {
+          "charts" : "Grafieken",
+          "nodes" : "Nodes",
+          "omni" : "Omni",
+          "compare" : "Vergelijk",
+          "feed" : "Feed",
+          "stats" : "Statistieken",
+          "uncles" : "Uncles",
+          "erc-20" : "ERC-20"
+        },
+        "coming_soon" : "Binnenkort beschikbaar",
+        "mixin" : {
+          "latest_snapshot" : "Laatste snapshot"
+        }
+      },
+      "erc-20" : {
+        "tokens" : "Tokens:",
+        "explore_all" : "Verken alle tokens"
+      }
+    },
+    "screen3" : {
+      "features" : "Ontdek onze features",
+      "description" : "Geweldige tools om met crypto-data te werken: vraag Blockchair API aan om blockchain-data te verkrijgen, verken trends en correlaties door naar grafieken te kijken, analyseer markttrends met Markten & Portfolio, verstuur transacties, download Data Dumps en nog veel meer.",
+      "api" : {
+        "title" : "Professionele API",
+        "description" : "Krijg toegang tot blockchain-data met Blockchairs API",
+        "link" : "Lees API-documentatie"
+      },
+      "charts" : {
+        "title" : "Grafieken",
+        "chart_name" : "Bitcoin prijs over de laatste 3 maanden",
+        "description" : "Overzicht van de laatste data-trends via 120 grafieken",
+        "link" : "Naar grafieken"
+      },
+      "markets" : {
+        "title" : "Markten & Portfolio",
+        "description" : "Bekijk de top 1000 crypto-activa en start met het samenstellen van je portfolio",
+        "top1000" : "Top 1000",
+        "portfolio" : "Mijn portfolio",
+        "table" : {
+          "name" : "Naam",
+          "price" : "Prijs",
+          "price_change_24h" : "24 u.",
+          "mcap" : "MCap.",
+          "dominance" : "Dominantie"
+        },
+        "link" : "Zet uw portfolio op"
+      }
+    },
+    "halving_widget" : {
+      "halving" : "Halvering {value}"
+    }
+  },
+  "search" : {
+    "title" : "Blockchair Zoeken",
+    "description" : "Zoek voor {query} in BTC, ETH, BCH, LTC, BSV en DOGE blockchains",
+    "status" : {
+      "empty_query" : "Leeg verzoek",
+      "empty_request" : "Sorry, we ondersteunen zoeken alleen in het Engels en Russisch",
+      "server_error" : "Oh nee! {error}",
+      "showing" : {
+        "no_results" : "Geen resultaat ({time} seconden)",
+        "only_result" : "Het enige resultaat ({time} seconden)",
+        "many_results" : "{showing} van de {total} resultaten worden weergegeven ({time} seconden)"
+      }
+    },
+    "results" : {
+      "matches" : {
+        "blocks" : {
+          "title" : "Verken alle {chain}-blokken",
+          "hint" : "Met onze zoekmachine kunt u {chain}-blokken filteren op meer dan 30 parameters"
+        },
+        "transactions" : {
+          "title" : "Verken alle {chain}-transacties",
+          "hint" : "Met onze zoekmachine kunt u {chain}-transacties filteren op meer dan 30 parameters"
+        },
+        "calls" : {
+          "title" : "Verken alle Ethereum calls",
+          "hint" : "Met onze zoekmachine kunt u Ethereum calls filteren op meer dan 30 parameters"
+        },
+        "uncles" : {
+          "title" : "Verken alle Ethereum uncles",
+          "hint" : "Met onze zoekmachine kunt u Ethereum uncles filteren op meer dan 30 parameters"
+        },
+        "mempool" : {
+          "title" : "Verken de gehele {chain}-mempool",
+          "hint" : "Met onze zoekmachine kunt u {chain}-mempool transacties filteren op meer dan 30 parameters"
+        },
+        "unknown_tnx" : {
+          "title" : "Onbekende transactie: {query}",
+          "hint1" : "Je hebt een interne transactie-ID ingevoerd die door sommige exchanges wordt gebruikt (bijvoorbeeld HitBTC, ShapeShift, etc.)",
+          "hint2" : "Deze transacties zijn niet opgeslagen in een blockchain dus wij kunnen u geen data weergeven 😞"
+        }
+      },
+      "coin" : {
+        "price" : "Prijs: {price} {price_change}",
+        "mcap" : "Marktkapitalisatie: {cap}"
+      },
+      "bitcoin" : {
+        "coinbase" : {
+          "row" : {
+            "title" : "{chain} blok #{id}",
+            "timestamp" : "Tijdstempel: {time}",
+            "coinbase_data" : "Coinbase data: {bin}"
+          }
+        },
+        "outputs" : {
+          "row" : {
+            "title" : "{chain}-transactie {hash}",
+            "script_data" : "Output #{index} script data: {bin}"
+          }
+        },
+        "address" : {
+          "title" : "{chain}-adres {recipient}",
+          "last_seen_receiving" : "Voor het laatst ontvangen: {time}",
+          "balance" : "Saldo: {balance}"
+        },
+        "xpub" : {
+          "title" : "{chain} xpub-adres {recipient}"
+        },
+        "block" : {
+          "mined_on" : "Gemined op: {time}",
+          "hash" : "Hash: {hash}"
+        },
+        "transaction" : {
+          "timestamp" : "Tijdstempel: {time}",
+          "included_in_block" : "Opgenomen in blok: {block_id}"
+        },
+        "whitepapers" : {
+          "row" : {
+            "size" : "{url} {size} kB"
+          }
+        }
+      },
+      "ethereum" : {
+        "extra_data" : {
+          "row" : {
+            "extra_data" : "Extra data: {bin}"
+          }
+        },
+        "input_data" : {
+          "row" : {
+            "input_data" : "Input data: {bin}"
+          }
+        },
+        "uncle" : {
+          "title" : "Ethereum uncle {hash}",
+          "parent_block_height" : "Blokhoogte van voorgaande {parent_block_id}"
+        },
+        "address" : {
+          "title" : "Ethereum-adres {address}"
+        },
+        "erc_20" : {
+          "transaction_count_30d" : "Transacties van de afgelopen maand: {transactions_link}"
+        }
+      },
+      "ripple" : {
+        "transaction" : {
+          "account" : "Ripple-account: {account}",
+          "type" : "Tx type: {type}",
+          "fee" : "Vergoeding: {fee}"
+        },
+        "account" : {
+          "title" : "Ripple-account {account}",
+          "balance" : "Saldo: {balance}"
+        }
+      },
+      "stellar" : {
+        "transaction" : {
+          "created_at" : "Gecreëerd op: {created_at}",
+          "ledger" : "Opgenomen in grootboek: {ledger}",
+          "fee_paid" : "Betaalde vergoeding: {fee_paid}"
+        },
+        "account" : {
+          "title" : "Stellar account {account}"
+        }
+      },
+      "ton" : {
+        "created_at" : "Gecreëerd op: {created_at}",
+        "workchain" : "Werkchain: {workchain}",
+        "shard" : "Shard: {shard}"
+      },
+      "mixin" : {
+        "snapshot" : {
+          "title" : "{chain} snapshot #{id}"
+        },
+        "round" : {
+          "title" : "{chain} ronde #{id}"
+        }
+      }
+    }
+  },
+  "application" : {
+    "header" : {
+      "menu" : {
+        "caption" : "Menu",
+        "bitcoin" : {
+          "blockchain" : "{chain} Blockchain",
+          "layer_2" : "Layer 2",
+          "mempool" : "{chain} Mempool",
+          "misc" : "Diversen",
+          "object" : {
+            "blocks" : "Blokken",
+            "transactions" : "Transacties",
+            "outputs" : "Outputs",
+            "addresses" : "Adressen",
+            "omni" : "Omni Layer",
+            "nodes" : "Node-verkenner",
+            "testnet" : "Testnet-verkenner",
+            "whitepaper" : "Whitepaper",
+            "snapshots" : "Snapshots",
+            "rounds" : "Rondes",
+            "graph" : "Grafiek",
+            "mintings" : "Mintings"
+          },
+          "omni" : {
+            "most_used_properties" : "Meest gebruikte attributen"
+          }
+        },
+        "ethereum" : {
+          "erc-20" : {
+            "homepage" : "ERC-20 verkenner",
+            "tokens" : "ERC-20 tokens",
+            "transactions" : "ERC-20 transacties",
+            "most_used_tokens" : "Meest gebruikte tokens"
+          },
+          "object" : {
+            "uncles" : "Uncles",
+            "calls" : "Calls"
+          }
+        },
+        "object" : {
+          "price" : "Prijs",
+          "charts" : "Grafieken",
+          "broadcast" : "Versturen"
+        },
+        "erc_20_tokens" : "ERC-20 tokens",
+        "omni_layer_tokens" : "Omni Layer tokens"
+      },
+      "search" : {
+        "desktop" : {
+          "placeholder" : "Zoek in {count} blockchains ({tickers})"
+        },
+        "mobile" : {
+          "placeholder" : "Zoek in {count} blockchains"
+        }
+      }
+    },
+    "navigation" : {
+      "mempool" : {
+        "bitcoin" : {
+          "title" : "Mempool"
+        },
+        "ethereum" : {
+          "title" : "Onbevestigd",
+          "hint" : "We wachten 6 blokken voordat blokken en transacties worden verwerkt in onze database. We verwerken ook geen calls en uncles voor onbevestigde blokken. "
+        }
+      },
+      "object" : {
+        "homepage" : "Startpagina",
+        "blocks" : "Blokken",
+        "transactions" : "Transacties",
+        "outputs" : "Outputs",
+        "whitepaper" : "Whitepaper",
+        "price" : "Prijs",
+        "nodes" : "Node-verkenner",
+        "uncles" : "Uncles",
+        "calls" : "Calls",
+        "omni" : "Omni Layer",
+        "erc-20" : "ERC-20",
+        "charts" : "Grafieken",
+        "addresses" : "Adressen",
+        "snapshots" : "Snapshots",
+        "rounds" : "Rondes",
+        "mintings" : "Mintings",
+        "graph" : "Grafiek"
+      },
+      "type" : {
+        "bitcoin" : {
+          "testnet" : "Testnet",
+          "block" : "Blok",
+          "transaction" : "Transactie",
+          "address" : "Adres",
+          "xpub" : "Xpub"
+        },
+        "ethereum" : {
+          "uncle" : "Uncle",
+          "address" : "Adres",
+          "contract" : "Contract"
+        },
+        "ripple" : {
+          "ledger" : "Grootboek",
+          "account" : "Account"
+        },
+        "mixin" : {
+          "snapshot" : "Snapshot",
+          "node" : "Node",
+          "round" : "Ronde"
+        }
+      },
+      "menu" : {
+        "blockchains" : "Blockchains",
+        "bitcoin" : {
+          "blockchain" : "{chain} Blockchain",
+          "mempool" : "{chain} Mempool",
+          "layer_2" : "Layer 2",
+          "misc" : "Diversen"
+        }
+      }
+    },
+    "permalink" : {
+      "caption" : "Permalink",
+      "tooltip" : "Een permalink slaat sortering, voorwaarden en de lijst met getoonde kolommen op. Tenzij er tijdsvoorwaarden zijn, kunnen de gegevens veranderen. Als u de lijst met weergegeven kolommen niet hoeft op te slaan, kunt u de URL gewoon uit de adresbalk kopiëren."
+    },
+    "infinitable" : {
+      "description" : {
+        "bitcoin" : {
+          "blocks" : "Verken, sorteer en filter blokken van de Bitcoin (BTC) blockchain op hoogte, beloning, miner en meer",
+          "transactions" : "Verken, sorteer en filter transacties van de Bitcoin (BTC) blockchain op ID (hash), waarde, grootte, vergoeding en meer",
+          "outputs" : "Verken, sorteer en filter outputs van de Bitcoin (BTC) blockchain op waarde, zender, ontvanger, adressen, UTXO en meer",
+          "mempool" : {
+            "transactions" : "Verken onbevestigde transacties in de Bitcoin (BTC) mempool",
+            "outputs" : "Verken onbevestigde outputs in de Bitcoin (BTC) mempool"
+          }},
+        "bitcoin/testnet" : {
+          "blocks" : "Verken, sorteer en filter blokken van de Bitcoin Testnet (TBTC) blockchain op hoogte, beloning, miner en meer",
+          "transactions" : "Verken, sorteer en filter transacties van de Bitcoin Testnet (TBTC) blockchain op ID (hash), waarde, grootte, vergoeding en meer",
+          "outputs" : "Verken, sorteer en filter outputs van de Bitcoin Testnet (BTC) blockchain op waarde, zender, ontvanger, adressen, UTXO en meer",
+          "mempool" : {
+            "transactions" : "Verken onbevestigde transacties in de Bitcoin Testnet (TBTC) mempool",
+            "outputs" : "Verken onbevestigde outputs in de Bitcoin Testnet (TBTC) mempool"
+          }},
+        "bitcoin-cash" : {
+          "blocks" : "Verken, sorteer en filter blokken van de Bitcoin Cash (BCH) blockchain op hoogte, beloning, miner en meer",
+          "transactions" : "Verken, sorteer en filter transacties van de Bitcoin Cash (BCH) blockchain op ID (hash), waarde, grootte, vergoeding en meer",
+          "outputs" : "Verken, sorteer en filter outputs van de Bitcoin Cash (BCH) blockchain op waarde, zender, ontvanger (adres), UTXO en meer",
+          "mempool" : {
+            "transactions" : "Verken onbevestigde transacties in de Bitcoin Cash (BCH) mempool",
+            "outputs" : "Verken onbevestigde outputs in de Bitcoin Cash (BCH) mempool"
+          }},
+        "bitcoin-sv" : {
+          "blocks" : "Verken, sorteer en filter blokken van de Bitcoin SV (BSV) blockchain op hoogte, beloning, miner en meer",
+          "transactions" : "Verken, sorteer en filter transacties van de Bitcoin SV (BSV) blockchain op ID (hash), vergoeding, grootte en meer",
+          "outputs" : "Verken, sorteer en filter outputs van de Bitcoin SV (BSV) blockchain op waarde, ontvanger (adres), UTXO en meer",
+          "mempool" : {
+            "transactions" : "Verken onbevestigde transacties in de Bitcoin SV (BSV) mempool",
+            "outputs" : "Verken onbevestigde outputs in de Bitcoin SV (BSV) mempool"
+          }},
+        "dogecoin" : {
+          "blocks" : "Verken, sorteer en filter blokken van de Dogecoin (DOGE) blockchain op hoogte, beloning, miner en meer",
+          "transactions" : "Verken, sorteer en filter transacties van de Dogecoin (DOGE) blockchain op ID (hash), waarde, grootte, vergoeding en meer",
+          "outputs" : "Verken, sorteer en filter outputs van de Dogecoin (DOGE) blockchain op waarde, zender, ontvanger, adressen, UTXO en meer",
+          "mempool" : {
+            "transactions" : "Verken onbevestigde transacties in de Dogecoin (DOGE) mempool",
+            "outputs" : "Verken onbevestigde outputs in de Dogecoin (DOGE) mempool"
+          }},
+        "dash" : {
+          "blocks" : "Verken, sorteer en filter blokken van de Dash (DASH) blockchain op hoogte, beloning, miner en meer",
+          "transactions" : "Verken, sorteer en filter transacties van de Dash (DASH) blockchain op ID (hash), waarde, grootte, vergoeding en meer",
+          "outputs" : "Verken, sorteer en filter outputs van de Dash (DASH) blockchain op waarde, zender, ontvanger, adressen, UTXO en meer",
+          "mempool" : {
+            "transactions" : "Verken onbevestigde transacties in de Dash (DASH) mempool",
+            "outputs" : "Verken onbevestigde outputs in de Dash (DASH) mempool"
+          }},
+        "litecoin" : {
+          "blocks" : "Verken, sorteer en filter blokken van de gehele Litecoin (LTC) blockchain op hoogte, beloning, miner en meer",
+          "transactions" : "Verken, sorteer en filter transacties van de gehele Litecoin (LTC) blockchain op ID (hash), vergoeding, grootte en meer",
+          "outputs" : "Verken, sorteer en filter outputs van de gehele Litecoin (LTC) blockchain op waarde, ontvanger (adres), UTXO en meer",
+          "mempool" : {
+            "transactions" : "Verken transacties in de Litecoin (LTC) mempool",
+            "outputs" : "Verken outputs in de Litecoin (LTC) mempool"
+          }
+        },
+        "groestlcoin" : {
+          "blocks" : "Verken, sorteer en filter blokken van de gehele Groestlcoin (GRS) blockchain op hoogte, beloning, miner en meer",
+          "transactions" : "Verken, sorteer en filter transacties van de gehele Groestlcoin (GRS) blockchain op ID (hash), vergoeding, grootte en meer",
+          "outputs" : "Verken, sorteer, en filter outputs van de gehele Groestlcoin (LTC) blockchain op waarde, ontvanger (adres), UTXO en meer",
+          "mempool" : {
+            "transactions" : "Verken transacties in de Groestlcoin (GRS) mempool",
+            "outputs" : "Verken outputs in de Groestlcoin (GRS) mempool"
+          }},
+        "ethereum" : {
+          "blocks" : "Verken, sorteer en filter blokken van de Ethereum (ETH) blockchain op hoogte, gas, miner en meer",
+          "uncles" : "Verken, sorteer en filter uncles van de Ethereum (ETH) blockchain op hoogte, ouder blok, miner en meer",
+          "transactions" : "Verken, sorteer en filter transacties van de Ethereum (ETH) blockchain op ID (hash), waarde, gas en meer",
+          "calls" : "Verken, sorteer en filter calls (interne transfers) van de Ethereum (ETH) blockchain op waarde, tijd, zender, ontvanger en meer",
+          "mempool" : {
+            "blocks" : "Verken de laatste 6 blokken in de Ethereum (ETH) blockchain",
+            "transactions" : "Verken onbevestigde transacties in de Ethereum (ETH) mempool"
+          }
+        },
+        "mixin" : {
+          "snapshots" : "Verken en sorteer snapshots van de Mixin (XIN) blockchain op topologie (hoogte)",
+          "mintings" : "Verken Mixin (XIN) kernel node mintings (vergoedingen) op snapshots",
+          "nodes" : "Verken Mixin (XIN) kernel nodes. Iedere node verpand 10,000 XIN, dus ongeveer 50 kernel nodes kunnen worden gevonden",
+          "graph" : "Verken de Mixin (XIN) DAG. De DAG kan gebruikt worden om grootboeken te creëren die het gebruik van PoW en blokken omzeilen"
+        },
+        "zcash" : {
+          "blocks" : "Verken, sorteer en filter blokken van de Zcash (ZEC) blockchain op hoogte, beloning, miner en meer",
+          "transactions" : "Verken, sorteer en filter transacties van de Zcash (ZEC) blockchain op ID (hash), waarde, grootte, vergoeding en meer",
+          "outputs" : "Verken, sorteer en filter outputs van de Zcash (ZEC) blockchain op waarde, zender, ontvanger, adressen, UTXO en meer",
+          "addresses" : "Verken, sorteer en filter adressen van de Zcash (ZEC) blockchain"
+        }
+      },
+      "foot" : {
+        "server_error" : "Oh nee! {error} 😯",
+        "no_results" : "Geen resultaten 😕",
+        "no_more_results" : "Geen andere resultaten 👐 ",
+        "explore_list" : "Verken deze lijst (nog {difference} rijen)",
+        "load_more" : "Laad meer (nog {difference} resultaten)",
+        "show_next" : "Toon volgende {limit} items (nog {difference} resultaten)"
+      },
+      "bitcoin" : {
+        "blocks" : {
+          "id" : {
+            "short" : "Hoogte",
+            "full" : "Hoogte (id)"
+          },
+          "hash" : "Hash",
+          "time" : {
+            "full" : "Gemined op",
+            "short" : "Tijd",
+            "utc" : "(UTC)"
+          },
+          "time_ago" : {
+            "short" : "Geleden",
+            "full" : "Verstreken tijd"
+          },
+          "guessed_miner" : {
+            "short" : "Miner",
+            "full" : "Vermoedelijke miner"
+          },
+          "miner_votes" : {
+            "short" : "Stemmen",
+            "full" : "Miner stemmen"
+          },
+          "coinbase_data_bin" : {
+            "bin" : "[bin]",
+            "short" : "Coinbase data",
+            "full" : "Coinbase data [bin]"
+          },
+          "coinbase_data_hex" : {
+            "hex" : "[hex]",
+            "full" : "Coinbase data [hex]"
+          },
+          "transaction_count" : {
+            "short" : "Tx #",
+            "full" : "Aantal transacties"
+          },
+          "witness_count" : {
+            "short" : "Getuige Tx #",
+            "full" : "Aantal getuigen Txs"
+          },
+          "input_count" : {
+            "short" : "Inputs #",
+            "full" : "Aantal inputs"
+          },
+          "output_count" : {
+            "short" : "Outputs #",
+            "full" : "Aantal outputs"
+          },
+          "cdd_total" : {
+            "short" : "Vernietigd",
+            "full" : "Coindays destroyed",
+            "cd" : "(CD)",
+            "coindays" : "(coindays)"
+          },
+          "input_total" : {
+            "simple" : "Input",
+            "full" : "Totale input (satoshis)",
+            "short" : "Input totaal"
+          },
+          "input_total_usd" : "Totale input (USD)",
+          "output_total" : {
+            "simple" : "Output",
+            "full" : "Totale output (satoshis)",
+            "short" : "Output totaal"
+          },
+          "output_total_usd" : "Totale output (USD)",
+          "fee_total" : {
+            "simple" : "Vergoedingen",
+            "full" : "Totale vergoeding (satoshis)",
+            "short" : "Totale vergoeding"
+          },
+          "fee_total_usd" : "Totale vergoeding (USD)",
+          "fee_per_kb" : {
+            "simple" : "Vergoeding/kB",
+            "full" : "Vergoeding per kB (satoshis)",
+            "short" : "Vergoeding per kB"
+          },
+          "fee_per_kb_usd" : "Vergoeding per kB (USD)",
+          "fee_per_kwu" : {
+            "simple" : "Vergoeding/kWU",
+            "full" : "Vergoeding per kWU (satoshis)",
+            "short" : "Vergoeding per kWU"
+          },
+          "fee_per_kwu_usd" : "Vergoeding per kWU (USD)",
+          "generation" : {
+            "short" : "Creatie",
+            "full" : "Creatie (satoshis)"
+          },
+          "generation_usd" : "Creatie (USD)",
+          "reward" : {
+            "short" : "Beloning",
+            "full" : "Miner-beloning (satoshis)"
+          },
+          "reward_usd" : "Miner-beloning (USD)",
+          "size" : {
+            "short" : "Grootte",
+            "full" : "Grootte (kB)",
+            "kb" : "(kB)"
+          },
+          "weight" : {
+            "short" : "Gewicht",
+            "full" : "Gewicht (gewichteenheden)",
+            "kwu" : "(kWU)"
+          },
+          "stripped_size" : {
+            "short" : "Gestripte grootte",
+            "full" : "Gestripte grootte (kB)"
+          },
+          "version" : {
+            "short" : "Versie",
+            "full" : "Versie [int]",
+            "int" : "[int]"
+          },
+          "version_hex" : "Versie [hex]",
+          "version_bits" : {
+            "bits" : "[bits]",
+            "full" : "Versie [bits]"
+          },
+          "median_time" : "Mediane tijd",
+          "merkle_root" : "Merkle wortel",
+          "nonce" : "Nonce",
+          "bits" : "Bits",
+          "difficulty" : "Moeilijkheidsgraad",
+          "chainwork" : "Chainwerk"
+        },
+        "transactions" : {
+          "block_id" : {
+            "short" : "Blok #",
+            "full" : "Blok Id"
+          },
+          "time" : "Tijd (UTC)",
+          "id" : {
+            "short" : "Id",
+            "full" : "Hash (txid)"
+          },
+          "is_coinbase" : {
+            "short" : "Is coinbase?",
+            "full" : "Is het een coinbase-transactie?"
+          },
+          "has_witness" : {
+            "short" : "Getuige?",
+            "full" : "Bevat getuigen data?"
+          },
+          "fee" : {
+            "short" : "Vergoeding",
+            "full" : "Vergoeding (Satoshis)"
+          },
+          "fee_usd" : "Vergoeding (USD)",
+          "fee_per_kvb" : "Vergoeding per kVB",
+          "is_rbf" : "Replace-by-fee (RBF) ingeschakeld?",
+          "lock_time" : {
+            "short" : "Lock-tijd",
+            "full" : "Lock-tijd (blokhoogte of tijdstempel)"
+          }
+        },
+        "outputs" : {
+          "transaction_id" : {
+            "short" : "Tx-id",
+            "full" : "Transactie-id"
+          },
+          "transaction_hash" : {
+            "short" : "Tx-hash",
+            "full" : "Transactie-hash"
+          },
+          "index" : {
+            "short" : "#",
+            "full" : "Index"
+          },
+          "is_from_coinbase" : {
+            "short" : "Is van coinbase?",
+            "full" : "Is van coinbase tx?"
+          },
+          "value" : {
+            "short" : "Waarde",
+            "full" : "Waarde (satoshis)"
+          },
+          "value_usd" : "Waarde (USD)",
+          "recipient" : {
+            "short" : "Ontvanger",
+            "address" : "(adres)",
+            "full" : "Ontvanger (adres)"
+          },
+          "script_bin" : {
+            "short" : "Script",
+            "full" : "Script [bin]"
+          },
+          "script_hex" : "Script [hex]",
+          "type" : {
+            "short" : "Type",
+            "full" : "Output-type"
+          },
+          "is_spendable" : {
+            "short" : "Besteedbaar?",
+            "full" : "Is besteedbaar?"
+          },
+          "is_spent" : {
+            "short" : "S?",
+            "full" : "Is besteed?"
+          },
+          "spending_block_id" : {
+            "short" : "Bestedend blok #",
+            "full" : "Bestedend blok-id"
+          },
+          "spending_transaction_id" : {
+            "short" : "Bestedend tx-id",
+            "full" : "Bestedend transactie-id"
+          },
+          "spending_index" : {
+            "short" : "#",
+            "full" : "Bestedende index"
+          },
+          "spending_transaction_hash" : {
+            "short" : "Bestedende tx-hash",
+            "full" : "Bestedende transactie-hash"
+          },
+          "spending_time" : {
+            "short" : "Tijd van besteden",
+            "full" : "Tijd van besteden"
+          },
+          "spending_date" : "Datum van besteden",
+          "spending_time_ago" : {
+            "short" : "Tijd",
+            "ago" : "(geleden)",
+            "full" : "Tijd van besteden (geleden)"
+          },
+          "spending_value" : {
+            "short" : "Bestede waarde",
+            "full" : "Bestede waarde"
+          },
+          "spending_value_usd" : "Bestede waarde (USD)",
+          "spending_sequence" : {
+            "short" : "Volgorde van besteden",
+            "full" : "Volgorde van besteden"
+          },
+          "spending_signature_bin" : {
+            "short" : "Bestedende handtekening",
+            "full" : "Bestedende handtekening"
+          },
+          "spending_signature_hex" : "Bestedende handtekening [hex]",
+          "spending_witness" : {
+            "short" : "Getuige van besteden",
+            "full" : "Getuige van besteden"
+          },
+          "lifespan" : {
+            "short" : "Levensduur",
+            "full" : "Levensduur (seconden)",
+            "seconds" : "(seconden)"
+          },
+          "left_link" : "Links naar transacties"
+        },
+        "addresses" : {
+          "address" : "Adres",
+          "balance" : {
+            "short" : "Saldo",
+            "full" : "Saldo (satoshis)"
+          }
+        }
+      },
+      "dogecoin" : {
+        "blocks" : {
+          "is_aux" : "Is AuxPoW?"
+        }
+      },
+      "dash" : {
+        "blocks" : {
+          "cbtx" : "CbTX"
+        },
+        "transactions" : {
+          "is_special" : "Is speciaal?",
+          "special_json" : "Speciale JSON",
+          "type" : "Type",
+          "is_instant_lock" : "Is direct gelockt?"
+        }
+      },
+      "ethereum" : {
+        "blocks" : {
+          "uncle_count" : "Aantal Uncles",
+          "synthetic_transaction_count" : {
+            "short" : "Aantal synthetische txs",
+            "full" : "Aantal synthetische transacties"
+          },
+          "call_count" : {
+            "short" : "Calls #",
+            "full" : "Aantal calls"
+          },
+          "synthetic_call_count" : {
+            "short" : "Synthetische Calls #",
+            "full" : "Aantal synthetische calls"
+          },
+          "extra_data_bin" : {
+            "short" : "Extra Data",
+            "full" : "Extra data [bin]"
+          },
+          "extra_data_hex" : "Extra data [hex]",
+          "gas_used" : "Gas gebruikt",
+          "gas_limit" : "Gas limiet",
+          "value_total" : {
+            "short" : "Totale Waarde",
+            "full" : "Totale waarde (ETH)"
+          },
+          "value_total_usd" : "Totale waarde (USD)",
+          "internal_value_total" : {
+            "short" : "Interne Waarde",
+            "full" : "Totale interne waarde (ETH)"
+          },
+          "internal_value_total_usd" : "Totale interne waarde (USD)",
+          "generation" : "Creatie (ETH)",
+          "uncle_generation" : {
+            "short" : "Uncle Creatie",
+            "full" : "Uncle creatie (ETH)"
+          },
+          "uncle_generation_usd" : "Uncle creatie (USD)",
+          "fee_total" : "Totale vergoeding (ETH)",
+          "reward" : "Miner beloning (ETH)",
+          "mix_hash" : "Mix Hash",
+          "receipts_root" : "Oorsprong van ontvangsten",
+          "sha3_uncles" : "SHA3 Uncles",
+          "state_root" : "Oorsprong van staat",
+          "transactions_root" : "Oorsprong van transacties",
+          "logs_bloom" : "Logs Bloom filter",
+          "total_difficulty" : "Totale Moeilijkheidsgraad"
+        },
+        "transactions" : {
+          "index" : {
+            "short" : "#",
+            "full" : "Index in blok"
+          },
+          "type" : "Type",
+          "failed" : "Mislukt?",
+          "sender" : {
+            "short" : "Van",
+            "full" : "Zender"
+          },
+          "recipient" : {
+            "short" : "Naar",
+            "full" : "Ontvanger"
+          },
+          "value" : {
+            "short" : "Waarde",
+            "full" : "Waarde (ETH)"
+          },
+          "value_usd" : "Waarde (USD)",
+          "internal_value" : {
+            "short" : "Interne Waarde",
+            "full" : "Interne waarde (ETH)"
+          },
+          "internal_value_usd" : "Interne waarde (USD)",
+          "fee" : {
+            "short" : "Vergoeding",
+            "full" : "Vergoeding (ETH)"
+          },
+          "fee_usd" : "Vergoeding (USD)",
+          "gas_price" : "Gas prijs",
+          "input_bin" : {
+            "short" : "Input data",
+            "full" : "Input data [bin]"
+          },
+          "input_hex" : "Input data [hex]"
+        },
+        "uncles" : {
+          "miner" : "Miner",
+          "parent_block_id" : {
+            "short" : "Voorgaand blok-id",
+            "full" : "Hoogte van voorgaand blok"
+          },
+          "index" : "Index in voorgaand blok"
+        },
+        "calls" : {
+          "index" : {
+            "short" : "Index",
+            "full" : "Index in transactie"
+          },
+          "depth" : "Diepte",
+          "child_call_count" : {
+            "short" : "Child Calls",
+            "full" : "Aantal child calls"
+          },
+          "fail_reason" : "Reden van mislukken",
+          "transferred" : {
+            "short" : "Xferred?",
+            "full" : "Getransfereerd?"
+          },
+          "output_bin" : "Output data [bin]",
+          "output_hex" : "Output data [hex]"
+        }
+      },
+      "mixin" : {
+        "snapshots" : {
+          "topology" : "Topologie",
+          "round" : "Ronde",
+          "round_self" : "Zelf vorige ronde",
+          "round_external" : "Externe ronde",
+          "timestamp" : "Tijdstempel",
+          "node" : "Node",
+          "hash" : "Hash",
+          "signatures" : "Handtekeningen",
+          "version" : "Versie"
+        },
+        "transactions" : {
+          "snapshot" : "Snapshot",
+          "asset" : "Activa",
+          "extra" : "Extra"
+        },
+        "mintings" : {
+          "amount" : "Bedrag",
+          "batch" : "Batch",
+          "group" : "Groep",
+          "snapshot" : "Snapshot",
+          "transaction" : "Transactie",
+          "timestamp" : "Tijdstempel"
+        },
+        "nodes" : {
+          "id" : "Id",
+          "payee" : "Begunstigde",
+          "signer" : "Ondertekenaar",
+          "state" : "Staat",
+          "transaction" : "Transactie",
+          "timestamp" : "Tijdstempel",
+          "graph" : "Grafiek"
+        },
+        "round" : {
+          "start" : "Start",
+          "end" : "Einde",
+          "hash" : "Hash",
+          "node" : "Node",
+          "number" : "Nummer",
+          "references" : "Referenties",
+          "snapshots" : "Snapshots"
+        }
+      }
+    },
+    "chessboard" : {
+      "buttons" : {
+        "fields" : "Velden",
+        "show_default_fields" : "Standaard Waarden Weergeven",
+        "show_all" : "Toon Alles",
+        "hide_all" : "Verberg Alles",
+        "reset_sorts" : "Sorteringen resetten",
+        "reset_conditions" : "Voorwaarden Resetten",
+        "reset_all" : "Alles Resetten",
+        "refresh" : "Vernieuwen",
+        "settings" : {
+          "without_expanding" : "Toon nieuwe resultaten zonder de tabel uit te vouwen",
+          "table_condensed" : "Verkort de tabel"
+        }
+      },
+      "conditions" : {
+        "alert" : {
+          "limit_of_sorts" : "Slechts {limiet} sorteringen kunnen tegelijk worden ingesteld :(",
+          "limit_of_conditions" : "Slechts {limiet} voorwaarden kunnen tegelijk worden ingesteld :("
+        },
+        "examples" : "Voorbeelden:",
+        "notice" : "Opmerking:"
+      },
+      "bitcoin" : {
+        "columns" : {
+          "general" : "Algemeen",
+          "monetary" : "Monetair",
+          "technical" : "Technisch",
+          "spending" : {
+            "general" : "Besteding...",
+            "continuation" : "Besteding (vervolg)..."
+          }
+        },
+        "blocks" : {
+          "id" : {
+            "examples" : {
+              "first_100_blocks" : "eerste 100 blokken",
+              "zero_block" : "blok #0"
+            }
+          },
+          "transaction_count" : {
+            "examples" : {
+              "big_blocks" : "grote blokken",
+              "coinbase_tx_only" : "blokken die alleen een coinbase-tx bevatten"
+            }
+          },
+          "witness_count" : {
+            "examples" : {
+              "more_that_one" : "meer dan één",
+              "just_one" : "precies één"
+            }
+          },
+          "input_count" : {
+            "examples" : {
+              "over_10k_inputs" : "meer dan 10k inputs",
+              "just_coinbase_input" : "alleen een coinbase-input"
+            }
+          },
+          "output_count" : {
+            "examples" : {
+              "over_10k_outputs" : "meer dan 10k outputs",
+              "just_coinbase_output" : "coinbase-transacties met 1 output"
+            }
+          },
+          "cdd_total" : {
+            "examples" : {
+              "largest_spendings" : "de grootste bestedingen",
+              "no_cd" : "geen coindays destroyed"
+            }
+          },
+          "input_total" : {
+            "title" : {
+              "full" : "Totale input ({ticker})"
+            },
+            "examples" : {
+              "over_100" : "meer dan 100 {ticker}",
+              "exactly_one" : "precies 1 {ticker}"
+            },
+            "notice" : "Waarden invullen in satoshis (1 {ticker} = 100000000 sat.)!"
+          },
+          "input_total_usd" : {
+            "examples" : {
+              "over_one_million_usd" : "meer dan 1$ M",
+              "exactly_one_million_usd" : "precies $ 1"
+            }
+          },
+          "output_total" : {
+            "title" : {
+              "full" : "Totale output ({ticker})"
+            }
+          },
+          "fee_total" : {
+            "title" : {
+              "full" : "Totale vergoeding ({ticker})"
+            }
+          },
+          "fee_per_kb" : {
+            "title" : {
+              "full" : "Vergoeding per kB ({ticker})"
+            },
+            "examples" : {
+              "exactly_one_hundredth" : "precies 0.01 {ticker}"
+            }
+          },
+          "fee_per_kb_usd" : {
+            "examples" : {
+              "exactly_one_hundredth" : "precies $ 0.01"
+            }
+          },
+          "fee_per_b" : {
+            "title" : {
+              "full" : "Vergoeding per byte ({ticker})"
+            }
+          },
+          "generation" : {
+            "title" : {
+              "full" : "Creatie ({ticker})"
+            }
+          },
+          "reward" : {
+            "title" : {
+              "full" : "Miner-beloning ({ticker})"
+            },
+            "examples" : {
+              "exactly_twelve_and_half" : "precies 12.5 {ticker}"
+            }
+          },
+          "reward_usd" : {
+            "examples" : {
+              "over_25k" : "meer dan $25k"
+            }
+          },
+          "size" : {
+            "examples" : {
+              "small_blocks" : "kleine blokken",
+              "exactly_one" : "precies 1 {ticker}"
+            },
+            "notice" : "waarden invullen in bytes!"
+          },
+          "stripped_size" : {
+            "examples" : {
+              "almost_full_blocks" : "bijna volle blokken"
+            }
+          }
+        },
+        "transactions" : {
+          "is_coinbase" : {
+            "examples" : {
+              "yes" : "Ja",
+              "no" : "Nee"
+            }
+          },
+          "fee" : {
+            "title" : {
+              "full" : "Vergoeding ({ticker})"
+            }
+          }
+        },
+        "outputs" : {
+          "value" : {
+            "title" : {
+              "full" : "Waarde ({ticker})"
+            }
+          },
+          "is_spendable" : {
+            "examples" : {
+              "unknown" : "onbekend"
+            }
+          }
+        }
+      },
+      "litecoin" : {
+        "blocks" : {
+          "input_total" : {
+            "notice" : "waarden invullen in litoshi (1 {ticker} = 100000000 lit.)!"
+          }
+        }
+      }
+    },
+    "type" : {
+      "bitcoin" : {
+        "block" : {
+          "description" : "Bitcoin (BTC) blok {height}, hash: {hash}, datum: {date}",
+          "general_info" : "Algemene info",
+          "technical_details" : "Technische details",
+          "see_more" : "Klik om meer te zien",
+          "hide_details" : "Verberg details",
+          "explorers" : "Alternatieve zoekmachines",
+          "for_developers" : "Voor developers",
+          "api_docs" : "API documentatie",
+          "last_transactions" : "Transacties opgenomen in dit blok"
+        },
+        "transaction" : {
+          "description" : {
+            "general" : "Controleer Bitcoin (BTC) transactie, waarde {output_total_btc}, datum: {date}",
+            "coinbase" : "Controleer Bitcoin (BTC) coinbase transactie, waarde {output_total_btc}, datum: {date}"
+          },
+          "priority" : "Prioriteit: {position}/{count}",
+          "confirmations" : "Onbevestigd | {count} bevestiging | {count} bevestigingen",
+          "protocol" : {
+            "omni" : "Omni Layer transactie"
+          },
+          "op_return" : {
+            "title" : "OP_RETURN",
+            "memopay_message" : "Memopay bericht",
+            "protocol" : {
+              "title" : "{name} protocol",
+              "details" : "Bekijk op {name}"
+            },
+            "bin" : "Gedecodeerd"
+          },
+          "confirmed_notify" : {
+            "button" : "Informeer mij ",
+            "modal" : {
+              "title" : "Informeer mij wanneer deze transactie is bevestigd",
+              "description" : "Klik op de knop en u ontvangt een melding wanneer deze transactie in een blok is opgenomen. Verlaat deze pagina niet (maar u kunt dit venster minimaliseren, andere tabbladen in uw browser gebruiken, enz.). Uw browser kan toestemming vragen om meldingen te verzenden als u deze functie voor het eerst gebruikt.",
+              "enable" : "Informeer mij wanneer deze transactie is bevestigd"
+            },
+            "notification" : "Uw {chain} transactie is bevestigd!",
+            "leaving" : "U zult geen notificatie krijgen als deze transactie bevestigd is. Weet u zeker dat u deze pagina wilt verlaten?"
+          },
+          "fee_per_byte" : {
+            "caption" : "Vergoeding per byte",
+            "dimension" : "satoshi"
+          },
+          "fee_per_vbyte" : {
+            "caption" : "Vergoeding per vbyte"
+          },
+          "raw_transaction" : {
+            "title" : "Ruwe tx",
+            "form" : {
+              "hex" : "Ruwe transactie (hex):",
+              "decoded" : "Gedecodeerde ruwe transactie (json):"
+            },
+            "empty" : "Kan gegevens voor deze transactie niet ophalen (het is een genesis-transactie of deze transactie is uit de mempool verwijderd)"
+          },
+          "pdf_receipt" : "PDF-ontvangstbewijs",
+          "senders" : "Zenders",
+          "recipients" : "Ontvangers",
+          "senders_and_recipients" : "Zenders en ontvangers",
+          "privacy-o-meter" : {
+            "title" : "Privacy-o-meter",
+            "heuristic_names" : {
+              "inputs" : "Co-bestedend",
+              "script_types" : "Script-types",
+              "p2sh_types" : "P2SH multisig-types",
+              "p2wsh_types" : "P2WSH multisig-types",
+              "round_value" : "Ronde waarde",
+              "recipient_by_value" : "Ontvanger op grotere waarde",
+              "t1-2_bigger_value_25" : "Output waarde x25",
+              "t1-2_bigger_value_100" : "Output waarde x100",
+              "t1-2_bigger_value_250" : "Output waarde x250",
+              "t1-2_bigger_value_1000" : "Output waarde x1000",
+              "coinbase_known" : "Bekende miner",
+              "coinbase_unknown" : "Onbekende miner",
+              "coinjoin" : "Coinjoin",
+              "round_fee" : "Ronde vergoeding",
+              "asc_output_values" : "Oplopende output-waarden",
+              "desc_output_values" : "Aflopende output-waarden",
+              "asc_output_addresses" : "Output-adressen oplopend",
+              "desc_output_addresses" : "Output-adressen aflopend",
+              "asc_input_values" : "Oplopende input-waarden",
+              "desc_input_values" : "Aflopende input-waarden",
+              "asc_input_addresses" : "Input-adressen oplopend",
+              "desc_input_addresses" : "Input-adressen aflopend",
+              "asc_input_timestamps" : "Oplopende tijdstempel-inputs",
+              "desc_input_timestamps" : "Aflopende tijdstempel-inputs",
+              "asc_output_values_except_first" : "Output-waarden oplopend, behalve de eerste",
+              "asc_output_values_except_last" : "Output-waarden oplopend, behalve de laatste",
+              "asc_output_addresses_except_first" : "Output-adressen oplopend, behalve de eerste",
+              "asc_output_addresses_except_last" : "Output-adressen oplopend, behalve de laatste",
+              "desc_output_values_except_first" : "Output-waarden aflopend, behalve de eerste",
+              "desc_output_values_except_last" : "Output-waarden aflopend, behalve de laatste",
+              "desc_output_addresses_except_last" : "Output-adressen aflopend, behalve de laatste",
+              "desc_output_addresses_except_first" : "Output-adressen aflopend, behalve de eerste",
+              "simple_reuse_1-2" : "Hergebruik van adres",
+              "simple_reuse_N-2" : "Hergebruik van adres",
+              "simple_reuse_1-N" : "Hergebruik van adres",
+              "simple_reuse_same_address_in_inputs" : "Zelfde adres in inputs",
+              "sweep_1-1" : "Overzetten (1-1)",
+              "sweep_1-1_to_another_type" : "Overzetten naar een ander type (1-1)",
+              "sweep_N-1" : "Overzetten",
+              "sweep_N-1_to_another_type" : "Overzetten naar een ander type",
+              "discrepancy_unnecessary_inputs" : "Discrepantie: onnodige input",
+              "discrepancy_various_input_types" : "Discrepantie: meerdere input-types",
+              "discrepancy_script_types_and_round_value" : "Discrepantie tussen Script types en afgeronde waarde",
+              "discrepancy_script_types_and_recipient_by_value" : "Discrepantie tussen script types en ontvanger op waarde",
+              "discrepancy_round_value_and_recipient_by_value" : "Discrepantie tussen afgeronde waarde en ontvanger op waarde",
+              "discrepancy_p2sh_various_input_types" : "Discrepantie: meerdere P2SH input-types",
+              "discrepancy_p2wsh_various_input_types" : "Discrepantie: meerdere P2WSH input-types",
+              "discrepancy_same_address_in_outputs" : "Discrepantie: duplicaten van output-adres",
+              "discrepancy_no_output_of_the_same_type_as_inputs" : "Discrepantie: geen outputs van hetzelfde type als de inputs",
+              "rare_fingerprint" : "Zeldzame vingerafdruk"
+            },
+            "heuristic_descriptions" : {
+              "inputs" : "Tenzij het een CoinJoin-transactie betreft, is het veilig om aan te nemen dat alle input-adressen van één persoon zijn",
+              "script_types" : "Als alle inputs van hetzelfde type zijn en precies een van de outputs niet van hetzelfde type is, dan kan deze output worden beschouwd als de ontvanger",
+              "p2sh_types" : "Als alle inputs m van n multisig P2SH zijn, en alle outputs multisig P2SH zijn, maar precies een van de outputs een andere m van n structuur heeft, dan kan deze output worden beschouwd als de ontvanger",
+              "p2wsh_types" : "Als alle inputs m van n multisig P2WSH zijn en alle outputs multisig P2WSH zijn, maar precies een van de outputs een andere m van n structuur heeft, dan kan deze output als de ontvanger worden beschouwd",
+              "round_value" : "Als een van de outputs een rond getal is (zoals precies 1 BTC), dan kan deze output worden beschouwd als de ontvanger",
+              "recipient_by_value" : "Als de ontvanger de kleinere output is, dan zijn sommige van de inputs overbodig",
+              "t1-2_bigger_value_25" : "Een van de twee outputs is 25 keer groter dan de andere, wat betekent dat het mogelijk de output van het wisselgeld is",
+              "t1-2_bigger_value_100" : "Een van de twee outputs is 100 keer groter dan de andere, wat betekent dat het mogelijk de output van het wisselgeld is",
+              "t1-2_bigger_value_250" : "Een van de twee outputs is 250 keer groter dan de andere, wat betekent dat het mogelijk de output van het wisselgeld is",
+              "t1-2_bigger_value_1000" : "Een van de twee outputs is 1000 keer groter dan de andere, wat betekent dat het mogelijk de output van het wisselgeld is",
+              "coinbase_known" : "De ontvanger is een bekende miner",
+              "coinbase_unknown" : "De ontvanger is een onbekende miner",
+              "coinjoin" : "Dit is een CoinJoin-transactie. Dit annuleert alle andere heuristieken.",
+              "round_fee" : "De transactie heeft een rond vergoedingsbedrag, de afzender gebruikt waarschijnlijk specifieke software",
+              "asc_output_values" : "Voor transacties met meer dan 5 outputs — die zijn gerangschikt op oplopende waarde — kan dat te wijten zijn aan specifiek softwaregebruik",
+              "desc_output_values" : "Voor transacties met meer dan 5 outputs — die zijn gerangschikt op aflopende waarde — kan dat te wijten zijn aan specifiek softwaregebruik",
+              "asc_output_addresses" : "Voor transacties met meer dan 5 outputs — die zijn geordend op adres in alfabetische volgorde — kan dat te wijten zijn aan specifiek softwaregebruik",
+              "desc_output_addresses" : "Voor transacties met meer dan 5 outputs — die zijn geordend op adres in alfabetische volgorde — kan dat te wijten zijn aan specifiek softwaregebruik",
+              "asc_input_values" : "Voor transacties met meer dan 5 inputs — die zijn gerangschikt op oplopende waarde — kan dat te wijten zijn aan specifiek softwaregebruik",
+              "desc_input_values" : "Voor transacties met meer dan 5 inputs — die zijn gerangschikt op aflopende waarde — kan dat te wijten zijn aan specifiek softwaregebruik",
+              "asc_input_addresses" : "Voor transacties met meer dan 5 inputs — die zijn geordend op adres in alfabetische volgorde — kan dat te wijten zijn aan specifiek softwaregebruik",
+              "desc_input_addresses" : "Voor transacties met meer dan 5 inputs — die zijn geordend op adres in alfabetische volgorde — kan dat te wijten zijn aan specifiek softwaregebruik",
+              "asc_input_timestamps" : "Voor transacties met meer dan 5 inputs — die zijn geordend op ouderdom — kan dat te wijten zijn aan specifiek softwaregebruik",
+              "desc_input_timestamps" : "Voor transacties met meer dan 5 inputs — die zijn geordend op ouderdom — kan dat te wijten zijn aan specifiek softwaregebruik",
+              "asc_output_values_except_first" : "Alle outputs zijn gesorteerd op oplopende waarde behalve de eerste: dit kan betekenen dat de eerste output het wisselgeld-adres is.",
+              "asc_output_values_except_last" : "Alle outputs zijn gesorteerd op oplopende waarde behalve de laatste: dit kan betekenen dat de laatste output het wisselgeld-adres is.",
+              "asc_output_addresses_except_first" : "Alle outputs zijn gesorteerd op adres in alfabetische volgorde, behalve de eerste: dit kan betekenen dat de eerste output het wisselgeld-adres is.",
+              "asc_output_addresses_except_last" : "Alle outputs zijn gesorteerd op adres in alfabetische volgorde behalve de laatste: dit kan betekenen dat de laatste output het wisselgeld-adres is.",
+              "desc_output_values_except_first" : "Alle outputs zijn gesorteerd op aflopende waarde behalve de eerste, dat kan betekenen dat de eerste output het wisselgeld-adres is\nAlle outputs zijn gesorteerd op aflopende waarde behalve de eerste, dat kan betekenen dat de eerste output het wisselgeld-adres is. Alle outputs worden gesorteerd op aflopende waarde behalve de eerste, dat kan betekenen dat de eerste output het wisselgeld-adres is\n",
+              "desc_output_values_except_last" : "Alle outputs zijn gesorteerd op oplopende waarde behalve de laatste: dit kan betekenen dat de laatste output het wisselgeld-adres is",
+              "desc_output_addresses_except_last" : "Alle outputs zijn in alfabetische volgorde gesorteerd op adres, behalve de laatste: dit kan betekenen dat de laatste output het wisselgeld-adres is",
+              "desc_output_addresses_except_first" : "Alle outputs zijn in alfabetische volgorde gesorteerd op adres, behalve de eerste: dit kan betekenen dat de eerste output het wisselgeld-adres is",
+              "simple_reuse_1-2" : "De zender gebruikt hetzelfde adres voor ontvangen en voor wisselgeld",
+              "simple_reuse_N-2" : "De zender gebruikt hetzelfde adres voor ontvangen en voor wisselgeld",
+              "simple_reuse_1-N" : "De zender (vermoedelijk een exchange) gebruikt hetzelfde adres voor ontvangen en voor wisselgeld",
+              "simple_reuse_same_address_in_inputs" : "Hetzelfde input adres wordt meerdere keren gebruikt",
+              "sweep_1-1" : "De zender gebruikt de optie 'alles verzenden' om iemand te betalen (bijv. een exchange) of om het geld gewoon naar een andere wallet te verplaatsen (1 input)",
+              "sweep_1-1_to_another_type" : "De zender gebruikt de optie \"alles verzenden\" om iemand te betalen of om het geld over te zetten naar een nieuw wallet-type (1 input)",
+              "sweep_N-1" : "De zender gebruikt de optie \"alles verzenden\" om iemand te betalen (bijv. een exchange) of om het geld gewoon naar een andere wallet te verplaatsen",
+              "sweep_N-1_to_another_type" : "De zender gebruikt de optie \"alles verzenden\" om iemand te betalen (bijv. een exchange) of om het geld gewoon te verplaatsen naar een wallet van een ander type dan die van de oorspronkelijke adressen",
+              "discrepancy_unnecessary_inputs" : "De kleinere input is overbodig: welke van de outputs dan ook de ontvanger is, het is onnodig om de kleinere input op te nemen",
+              "discrepancy_various_input_types" : "De inputs zijn verschillende typen. Dit betekent dat de zender waarschijnlijk software gebruikt die, in een poging om de heuristische script_types te omzeilen, het mogelijk maakt om hetzelfde adrestype voor het wisselgeld-adres aan te maken als van de ontvanger",
+              "discrepancy_script_types_and_round_value" : "script_types en round_value heuristieken leveren verschillende resultaten op",
+              "discrepancy_script_types_and_recipient_by_value" : "script_types en ontvanger-op-waarde heuristieken leveren verschillende resultaten op",
+              "discrepancy_round_value_and_recipient_by_value" : "round_value en ontvanger-op-waarde heuristieken leveren verschillende resultaten op",
+              "discrepancy_p2sh_various_input_types" : "De P2SH input-types zijn verschillend (de ene is bijvoorbeeld 2-van-2 en de andere is 2-van-3 multisig)",
+              "discrepancy_p2wsh_various_input_types" : "De P2WSH input-types zijn verschillend (de ene is bijvoorbeeld 2-van-2 en de andere is 2-van-3 multisig)",
+              "discrepancy_same_address_in_outputs" : "Er zijn outputs met hetzelfde adres — dat is economisch onlogisch",
+              "discrepancy_no_output_of_the_same_type_as_inputs" : "Waarschijnlijk gebruikt de zender software die hetzelfde type wisselgeld-adres genereert als het adres van de ontvanger",
+              "rare_fingerprint" : "Deze transactie heeft vrij unieke technische kenmerken"
+            },
+            "transaction_types" : {
+              "CB" : "Coinbase-transactie",
+              "N1" : "Transactie met slechts 1 output (ofwel overzetten naar een ander adres door dezelfde eigenaar, of een overboeking met de optie 'alles verzenden wat ik heb')",
+              "N2" : "Transactie met 2 outputs — meest gebruikelijk in wallets — waarbij een van de outputs de ontvanger is en de andere het wisselgeld-adres",
+              "NN" : "Transactie met meer dan 2 outputs — meest gebruikelijk bij exchanges en services die gebruik maken van batch-uitbetalingen"
+            },
+            "highlight_clusterized" : "Markeer afzender-adressen (inclusief wisselgeld-adres) en adres van de ontvanger",
+            "transaction_type" : "Type",
+            "is_finalized_description" : "Geeft aan of de transactie de uiteindelijke score heeft (alle outputs zijn besteed)",
+            "clusterized_description" : "Adressen die mogelijk tot één entiteit behoren op basis van de toepasselijke heuristieken",
+            "privacy_score" : {
+              "title" : "Privacy score",
+              "high" : "Hoog",
+              "moderate" : "Gemiddeld",
+              "low" : "Laag"
+            },
+            "fingerprint" : "Transactie vingerafdruk",
+            "info" : {
+              "title" : "Wat is dit?",
+              "text" : "<p>Hoewel Bitcoin wordt beschouwd als een op privacy gericht systeem, kan de blockchain door iedereen worden geanalyseerd.</p><p>Privacy-o-meter van Blockchair laat zien of uw transactie vatbaar is voor enkele van de heuristieken die worden gebruikt door tal van transactietraceringstools.</p><p>Hoe hoger de score, hoe groter de kans dat ze niets nuttigs kunnen vinden. Een lage score betekent dat het waarschijnlijk gemakkelijk is om bijvoorbeeld het wisselgeld-adres te onderscheiden van het adres van de ontvanger.</p>"
+            },
+            "heuristics" : "Indicatoren",
+            "lock_time" : {
+              "rare" : "Zeldzaam",
+              "block_id" : "Blokhoogte",
+              "big_value" : "Grote waarde",
+              "timestamp" : "Tijdstempel"
+            },
+            "legend" : {
+              "sender" : "Adressen van zender",
+              "recipient" : "Adres van ontvanger"
+            },
+            "none" : "Geen",
+            "read_doc" : "Lees de documentatie"
+          }
+        },
+        "address" : {
+          "description" : "Controleer Bitcoin (BTC) adres {address} saldo en transacties",
+          "type" : "Adres-type",
+          "formats" : {
+            "legacy" : "Geërfd adres-formaat",
+            "cashaddr" : "Cash adres-formaat"
+          },
+          "script" : {
+            "short" : "Script",
+            "bin" : "Script [bin]",
+            "hex" : "Script [hex]"
+          },
+          "unspent_output_count" : "Aantal niet-bestede outputs",
+          "monetary_info" : "Monetaire info",
+          "last_seen_receiving" : "Voor het laatst ontvangen",
+          "first_last_seen_receiving" : "Eerst / laatst ontvangen",
+          "first_last_seen_spending" : "Eerst / laatst besteed",
+          "total_received" : "Totaal ontvangen",
+          "total_spent" : "Totaal besteed",
+          "total_unspent" : "Saldo",
+          "protocol" : {
+            "omni" : {
+              "title" : "Omni-tokens",
+              "token_name" : "Token-naam",
+              "balance" : "Saldo"
+            }
+          },
+          "qr_code" : "QR code",
+          "transactions" : {
+            "title" : "Transacties met adres",
+            "id" : "Hash:",
+            "time" : "Tijdstempel:",
+            "no_transactions" : "Nog geen transacties",
+            "protocol" : {
+              "omni" : "Bevat Omni Layer data"
+            }
+          }
+        },
+        "xpub" : {
+          "address_count" : "Aantal adressen",
+          "addresses" : {
+            "caption" : "Adressen",
+            "table" : {
+              "unspent_output_count" : "Niet-bestede outputs",
+              "last_seen_receiving" : "Voor het laatst ontvangen",
+              "last_seen_spending" : "Voor het laatst besteed"
+            }
+          },
+          "path" : "Pad"
+        }
+      },
+      "bitcoin/testnet" : {
+        "block" : {
+          "description" : "Bitcoin Testnet (TBTC) blok {height}, hash: {hash}, datum: {date}"
+        },
+        "transaction" : {
+          "description" : {
+            "general" : "Controleer Bitcoin Testnet (TBTC) transactie, waarde: {output_total_btc}, datum: {date}",
+            "coinbase" : "Controleer Bitcoin Testnet (TBTC) Coinbase transactie, waarde {output_total_btc}, datum: {date}"
+          }
+        },
+        "address" : {
+          "description" : "Controleer Bitcoin Testnet (TBTC) adres {address} saldo en transacties"
+        }
+      },
+      "bitcoin-cash" : {
+        "block" : {
+          "description" : "Bitcoin Cash (BCH) blok {height}, hash: {hash}, datum: {date}"
+        },
+        "transaction" : {
+          "description" : "Bitcoin Cash (BCH) transactie {hash}, datum: {date}"
+        },
+        "address" : {
+          "description" : "Controleer Bitcoin Cash (BCH) adres {cash_address} ({legacy_address}), saldo en transacties"
+        }
+      },
+      "bitcoin-sv" : {
+        "block" : {
+          "description" : "Bitcoin SV (BSV) blok {height}, hash: {hash}, datum: {date}"
+        },
+        "transaction" : {
+          "description" : "Bitcoin SV (BSV) transactie {hash}, datum: {date}"
+        },
+        "address" : {
+          "description" : "Controleer Bitcoin SV (BSV) adres: {cash_address} ({legacy_address}), saldo en transacties"
+        }
+      },
+      "dogecoin" : {
+        "block" : {
+          "description" : "Dogecoin (DOGE) blok {height}, hash: {hash}, datum: {date}"
+        },
+        "transaction" : {
+          "description" : {
+            "general" : "Controleer Dogecoin (DOGE) transactie, waarde: {output_total_doge}, datum: {date}",
+            "coinbase" : "Controleer Dogecoin (DOGE) coinbase-transactie, waarde: {output_total_doge}, datum: {date}"
+          }
+        },
+        "address" : {
+          "description" : "Controleer Dogecoin (DOGE) adres {address} saldo en transacties"
+        }
+      },
+      "dash" : {
+        "block" : {
+          "description" : "Dash (DASH) blok {height}, hash: {hash}, datum: {date}"
+        },
+        "transaction" : {
+          "description" : {
+            "general" : "Controleer Dash (DASH) transactie, waarde: {output_total_dash}, datum: {date}",
+            "coinbase" : "Controleer Dash (DASH) coinbase-transactie, waarde: {output_total_dash}, datum: {date}"
+          }
+        },
+        "address" : {
+          "description" : "Controleer Dash (DASH) adres {address} saldo en transacties"
+        }
+      },
+      "litecoin" : {
+        "block" : {
+          "description" : "Litecoin (LTC) blok {height}, hash: {hash}, datum: {date}"
+        },
+        "transaction" : {
+          "description" : "Litecoin (LTC) transactie {hash}, datum: {date}"
+        },
+        "address" : {
+          "description" : "Controleer Litecoin (LTC) adres {address}, saldo en transacties"
+        }
+      },
+      "groestlcoin" : {
+        "block" : {
+          "description" : "Groestlcoin (GRS) blok {height}, hash: {hash}, datum: {date}"
+        },
+        "transaction" : {
+          "description" : "Groestlcoin (GRS) transactie {hash}, datum: {date}"
+        },
+        "address" : {
+          "description" : "Check Groestlcoin (GRS) adres {address}, saldo en transacties"
+        }
+      },
+      "ethereum" : {
+        "block" : {
+          "description" : "Ethereum (ETH) blok {height}, hash: {hash}, datum: {date}",
+          "coinbase" : "coinbase",
+          "transaction_count" : "{transactions_link} + {coinbase_link} coinbase",
+          "value_total" : "Totaalbedrag",
+          "internal_value_total" : "Totale interne bedrag",
+          "fee_total" : "Totale vergoeding"
+        },
+        "uncle" : {
+          "description" : "Ethereum (ETH) uncle voorgaande blok hoogte: {parent_block_height}, hash: {hash}, datum: {date}"
+        },
+        "transaction" : {
+          "description" : "Ethereum (ETH) transactie {hash}, datum: {date}",
+          "included_calls" : "Calls opgenomen in deze transactie",
+          "erc-20" : {
+            "caption" : "ERC-20 token transfers",
+            "sender" : "Van:",
+            "recipient" : "Naar:",
+            "value" : "Waarde:",
+            "wait" : "Potentiële ERC-20 transfers voor deze transactie kunnen nog steeds worden verwerkt en later worden weergegeven"
+          }
+        },
+        "address" : {
+          "description" : "Controleer Ethereum (ETH) adres {address}, saldo en transacties",
+          "description_contract" : "Controleer Ethereum (ETH) contract {address}, saldo en transacties",
+          "type" : "Type",
+          "receiving" : "Ontvangend: {receiving_calls_link}",
+          "spending" : "Bestedend: {spending_calls_link}",
+          "call_count" : "Aantal calls (incl. mislukte)",
+          "contract_created" : "Contract gecreëerd?",
+          "contract_destroyed" : "Contract vernietigd?",
+          "contract_code" : {
+            "short" : "Contract code",
+            "bin" : "Contract code [bin]",
+            "hex" : "Contract code [hex]"
+          },
+          "balance" : "Saldo (precies)",
+          "received" : "Ontvangen (ong.)",
+          "spent" : "Besteed (ong.)",
+          "fees" : "Betaald in vergoedingen (ong.)",
+          "involving_calls" : "Calls met adres",
+          "transferred" : "Getransfereerd",
+          "failed" : "Mislukt",
+          "erc-20" : {
+            "caption" : "ERC-20 Token saldi",
+            "balance" : "Saldo"
+          }
+        }
+      },
+      "ripple" : {
+        "ledger" : {
+          "description" : "Ripple (XRP) grootboek: {ledger_id}, hash: {ledger_hash}, datum: {time}",
+          "ledger_index" : "Grootboek-index",
+          "ledger_hash" : "Grootboek-hash",
+          "parent_hash" : "Hash van voorgaande",
+          "transaction_hash" : "Transactie-hash",
+          "close_time" : "Gesloten op",
+          "total_coins" : "Totale aantal coins",
+          "last_transactions" : "Transacties opgenomen in dit grootboek"
+        },
+        "transaction" : {
+          "description" : "Ripple (XRP) transactie: {tx_hash}, datum: {time}",
+          "transaction_index" : "Index in grootboek",
+          "account" : "Account",
+          "sequence" : "Volgorde",
+          "account_txn_id" : "Account tx-id",
+          "flags" : "Vlaggen",
+          "last_ledger_sequence" : "Laatste grootboek volgorde",
+          "source_tag" : "Bron-tag",
+          "transaction_result" : "Resultaat",
+          "transaction_status" : "Status",
+          "type" : {
+            "caption" : "Type data",
+            "clear_flag" : "Wis vlag",
+            "domain" : "Domein",
+            "email_hash" : "Domein-hash",
+            "message_key" : "Bericht-sleutel",
+            "set_flag" : "Zet vlag",
+            "transfer_rate" : "Overdrachtssnelheid",
+            "check_id" : "Controleer id",
+            "amount" : "Bedrag",
+            "deliver_min" : "Min. geleverd",
+            "destination" : "Bestemming",
+            "send_max" : "Verstuur max",
+            "destination_tag" : "Bestemmings-tag",
+            "expiration" : "Vervaldatum",
+            "invoice_id" : "Factuur id",
+            "authorize" : "Autoriseer",
+            "unauthorize" : "Hef autorisatie op",
+            "owner" : "Eigenaar",
+            "offer_sequence" : "Volgorde van aanbod",
+            "cancel_after" : "Annuleer na",
+            "finish_after" : "Eindig na",
+            "condition" : "Voorwaarde",
+            "fulfillment" : "Volbrenging",
+            "taker_gets" : "Nemer krijgt",
+            "taker_pays" : "Nemer betaalt",
+            "channel" : "Kanaal",
+            "balance" : "Saldo",
+            "signature" : "Handtekening",
+            "public_key" : "Publieke sleutel",
+            "settle_delay" : "Verwerkingsvertraging",
+            "regular_key" : "Reguliere sleutel",
+            "signer_quorum" : "Ondertekenaars quorom",
+            "limit_amount" : "Limietbedrag",
+            "quality_in" : "Quality in",
+            "quality_out" : "Quality out"
+          }
+        },
+        "account" : {
+          "description" : "Ripple (XRP) account: {account}, saldo: {balance}",
+          "account_summary" : "Account-samenvatting",
+          "previous_txn" : "Laatste tx",
+          "sequence" : "Volgende reeks",
+          "balances" : {
+            "caption" : "Token-saldi",
+            "account" : "Tegenpartij",
+            "limit" : "Limiet"
+          },
+          "transactions" : "Laatste account transacties"
+        }
+      },
+      "stellar" : {
+        "ledger" : {
+          "description" : "Stellar (XLM) grootboek: {ledger_id}, hash: {ledger_hash}, datum: {time}",
+          "height" : "Hoogte",
+          "hash" : "Hash",
+          "closed_at" : "Gesloten op",
+          "transaction_count" : "Aantal transacties",
+          "successful" : "Succesvol: {transaction_count}",
+          "failed" : "Mislukt: {transaction_count}",
+          "operation_count" : "Aantal operaties",
+          "fee_pool" : "Vergoedingen pool",
+          "base_fee" : "Basisvergoeding",
+          "base_reserve" : "Basisreserve",
+          "protocol_version" : "Protocol versie"
+        },
+        "transaction" : {
+          "description" : "Stellar (XLM) transactie: {tx_hash}, datum: {time}",
+          "hash" : "Transactie-hash",
+          "created_at" : "Gecreëerd op",
+          "successful" : "Succesvol?",
+          "ledger" : "Opgenomen in grootboek",
+          "source_account" : "Bron-account",
+          "source_account_sequence" : "Bron-account volgorde",
+          "fee_paid" : "Betaalde vergoeding",
+          "operations" : {
+            "caption" : "Operaties",
+            "type" : "Type",
+            "id" : "Id",
+            "from" : "Van",
+            "to" : "Naar",
+            "amount" : "Bedrag",
+            "offer_id" : "Aanbod id",
+            "account" : "Account",
+            "funder" : "Financier",
+            "starting_balance" : "Startsaldo",
+            "selling_asset_code" : "Code van verkochte activa",
+            "selling_asset_issuer" : "Uitgever van verkochte activa",
+            "price" : "Prijs",
+            "buying_asset_code" : "Code van gekochte activa",
+            "buying_asset_issuer" : "Uitgever van gekochte activa",
+            "asset_code" : "Code van activa",
+            "asset_issuer" : "Uitgever van activa",
+            "trustee" : "Beheerdersaccount",
+            "trustor" : "Account van vertrouwenspersoon",
+            "limit" : "Limiet",
+            "home_domain" : "Thuisdomein"
+          },
+          "memo_type" : "Memo-type",
+          "memo" : "Memo"
+        },
+        "account" : {
+          "description" : "Stellar (XLM) account: {account}, saldo: {balance}",
+          "id" : "Account-id",
+          "subentry_count" : "Aantal subinschrijvingen",
+          "inflation_destination" : "Inflatiebestemming",
+          "last_modified_ledger" : "Laatst aangepaste grootboek",
+          "balances" : {
+            "caption" : "Account-saldi"
+          }
+        }
+      },
+      "ton" : {
+        "block" : {
+          "description" : "Telegram Open Network blok: {block_id}, werkchain: {workchain_id}, shard: {shard}, datum: {time} – TON Zoekmachine",
+          "seqno" : "Seqno",
+          "shard_tooltip" : "Shard: ({workchain},{shard})",
+          "shards_count" : "Aantal shards",
+          "workchain" : "Werkchain",
+          "shard" : "Shard",
+          "time" : "Gecreëerd",
+          "created" : "Gecreëerd",
+          "minted" : "Gemint",
+          "imported" : "Geïmporteerd",
+          "exported" : "Geëxporteerd",
+          "recovered" : "Hersteld",
+          "fees_collected" : "Ontvangen vergoedingen",
+          "gram_flow" : "Gram-stroom",
+          "roothash" : "Root-hash",
+          "filehash" : "Bestandshash",
+          "lt" : "Logische tijd",
+          "userfriendly_address" : "Adres",
+          "transactions" : "Transacties opgenomen in dit blok"
+        },
+        "transaction" : {
+          "description" : "Telegram Open Network transactie {transaction_hash}, account: {userfriendly_account}, shard: {shard}",
+          "prev_transaction" : "Vorige transactie",
+          "total_fee" : "Totale vergoeding",
+          "account" : "Account",
+          "status_change" : "Status verandering",
+          "state_update" : {
+            "old_hash" : "Oude hash",
+            "new_hash" : "Nieuwe hash"
+          },
+          "included_messages" : "Berichten opgenomen in deze transactie"
+        },
+        "messages" : {
+          "index" : "Index",
+          "total_fee" : "Totale vergoeding",
+          "source" : "Bron",
+          "destination" : "Bestemming",
+          "value_gram" : "Waarde (GRAM)",
+          "type" : "Type"
+        },
+        "account" : {
+          "description" : "Telegram Open Network account: {hex_account}, GRAM saldo: {balance}",
+          "last_trans" : "Laatste transactie",
+          "storage_stats" : "Opslagstatistieken",
+          "bits" : "Bits",
+          "cells" : "Cellen",
+          "last_paid" : "Laatst betaald",
+          "public_cells" : "Publieke cellen"
+        }
+      },
+      "monero" : {
+        "block" : {
+          "description" : "Monero-blok: {block_id}, hash: {hash} – Monero Zoekmachine"
+        },
+        "transaction" : {
+          "description" : "Monero-transactie: {hash} - Monero Zoekmachine",
+          "mixin" : "Ondertekenaars",
+          "payment_id" : "Betalings-id",
+          "tx_fee" : "Vergoeding (XMR)",
+          "size" : "Grootte (B)",
+          "xmr_outputs" : "Waarde (XMR)",
+          "rct_type" : "RingCT Type"
+        },
+        "check_transaction" : {
+          "title" : "Bewijs transactie",
+          "decode_outputs" : "Gedecodeerde outputs",
+          "prove_sending" : "Bewijs verzenden",
+          "proved" : "Bewezen",
+          "transaction_key" : "Transactie-sleutel",
+          "view_key" : "Bekijk-sleutel"
+        },
+        "stats" : {
+          "suggested_transaction_fee_dimension" : "piconero per byte"
+        }
+      },
+      "cardano" : {
+        "block" : {
+          "description" : "Cardano-blok: {block_id}, hash: {hash} - Cardano Zoekmachine",
+          "epoch" : "Epoch",
+          "slot" : "Slot",
+          "total_sent" : "Totaal verstuurde ADA",
+          "fees" : "Vergoedingen"
+        },
+        "transaction" : {
+          "description" : "Cardano-transactie: {hash} - Cardano Zoekmachine",
+          "output_total" : "Totale output (ADA)",
+          "input_total" : "Totale input (ADA)",
+          "fee_total" : "Totale vergoeding (ADA)"
+        },
+        "address" : {
+          "description" : "Cardano-adres: {hash} / Saldo: {balance} – Cardano Zoekmachine"
+        }
+      },
+      "zcash" : {
+        "block" : {
+          "description" : "Zcash-blok: {block_id}, hash: {hash} - Zcash Zoekmachine"
+        },
+        "transaction" : {
+          "description" : "Zcash-transactie: {hash} – Zcash Zoekmachine",
+          "senders_and_recipients" : "Zenders en ontvangers <small>(publiek)</small>",
+          "shielded_transfers" : "Afgeschermde transacties <small>(privé)</small>",
+          "join_split" : "JoinSplit",
+          "shielded_inputs" : "Afgeschermde inputs",
+          "shielded_outputs" : "Afgeschermde outputs",
+          "transfered_from" : "Getransfereerd van afgeschermde pool",
+          "transfered_to" : "Getransfereerd naar afgeschermde pool",
+          "validate" : {
+            "title" : "Bekijk afgeschermde transfers",
+            "paymentdisclosure" : "Openbaarmaking van betaling",
+            "submit" : "Indienen",
+            "disclosed" : "Openbaar gemaakte transactie"
+          }
+        },
+        "address" : {
+          "description" : "Zcash-adres: {hash} / Saldo: {balance} - Zcash Zoekmachine"
+        }
+      },
+      "mixin" : {
+        "snapshot" : {
+          "snapshot_info" : "Snapshot-info",
+          "references" : "Referenties",
+          "description" : "Mixin (XIN) snapshot {topology}, hash: {hash}, node: {node}"
+        },
+        "transaction" : {
+          "description" : "Controleer Mixin (XIN) transactie {hash}, activa: {asset}",
+          "transaction_info" : "Transactie-info",
+          "outputs_title" : "Transactie-inputs & outputs",
+          "keys" : "Sleutels",
+          "mask" : "Masker",
+          "type" : "Output-type",
+          "script" : "Script",
+          "withdrawal" : "Opname"
+        },
+        "node" : {
+          "node_info" : "Node-info",
+          "description" : "Mixin (XIN) kernel-node {id}"
+        },
+        "round" : {
+          "round_info" : "Ronde-info",
+          "description" : "Mixin (XIN) ronde {number}, {hash}",
+          "round_snapshots" : "Ronde-snapshots"
+        }
+      },
+      "tezos" : {
+        "operations" : "Operaties:",
+        "endorsement" : "Endorsement",
+        "delegation" : "Delegatie",
+        "reveal" : "Onthul",
+        "bulk_transaction" : "Bulktransactie",
+        "block" : {
+          "baker" : "Baker",
+          "cycle" : "Cycle",
+          "level_in_cycle" : "Level in cycle",
+          "solvetime" : "Solvetime",
+          "fitness" : "Fitness",
+          "transaction_volume" : "Transactievolume",
+          "baker_reward" : "Blokvergoeding",
+          "baker_fees" : "Baker-vergoedingen",
+          "burned" : "Burned",
+          "activated_supply" : "Geactiveerde aanbod",
+          "accounts" : "Nieuw / Gefinancierd / Vrijgemaakte accounts",
+          "token_days" : "Tokendagen",
+          "days_destroyed" : "Token days destroyed",
+          "priority" : "Prioriteit",
+          "is_cycle_snapshot" : "Is cycle-snapshot",
+          "predecessor" : "Voorganger",
+          "successor" : "Opvolger",
+          "block_endorsements" : "Blok-endorsements",
+          "endorsements" : "Endorsements",
+          "delegations" : "Delegaties",
+          "reveals" : "Onthullingen",
+          "block_operations" : "Blok-operaties",
+          "description" : "Tezos-blok: {height}, hash: {hash} - Tezos Zoekmachine"
+        },
+        "operation" : {
+          "amount_reward" : "Volume / Vergoeding",
+          "title" : "Operatie",
+          "general_info" : "Operatie",
+          "volume" : "Volume",
+          "volume_total" : "Totale volume",
+          "reward" : "Beloning",
+          "deposit" : "Storting"
+        },
+        "account" : {
+          "delegated_balance" : "Gedelegeerde saldo",
+          "spendable_balance" : "Besteedbare saldo",
+          "total_delegations" : "Totale delegaties",
+          "active_delegations" : "Actieve delegaties",
+          "rolls_owned" : "Rollen in bezit",
+          "rank" : "Rang",
+          "operations" : "Operaties",
+          "title" : "Baker"
+        }
+      },
+      "eos" : {
+        "card" : {
+          "irreversible_block" : "Onomkeerbaar blok:",
+          "ram_allocated" : "RAM toegewezen:",
+          "eos_staked" : "EOS gestaked:",
+          "latest_block_producer" : "Laatste producent:"
+        },
+        "homepage" : {
+          "irreversible_block" : "Onomkeerbaar blok",
+          "network_stats" : "Netwerk-statistieken"
+        },
+        "updated_tooltip" : "Laatst bijgewerkt",
+        "account" : {
+          "account_name" : "Account-naam",
+          "liquid_balance" : "Liquide saldo",
+          "head_block_num" : "Hoofdblok",
+          "head_block_time" : "Hoofdblok-tijd",
+          "privileged" : "Is bevoorrecht",
+          "net_usage" : "Netwerk-gebruik",
+          "cpu_usage" : "CPU-gebruik",
+          "ram_usage" : "RAM-gebruik",
+          "kb" : "kB",
+          "created" : "Gecreëerd",
+          "staked_tokens" : "Tokens gestaked",
+          "cpu_staked" : "CPU gestaked",
+          "net_staked" : "Gestaked in het netwerk",
+          "others_staked" : "Gestaked door anderen",
+          "total_rex" : "Totaal REX",
+          "account_actions" : "Account-acties",
+          "permissions" : "Account-toestemmingen (sleutels)",
+          "accounts" : "Accounts",
+          "title" : "Producent (account)",
+          "description" : "Bekijk EOS producent-account {account} saldo en transacties"
+        },
+        "transaction" : {
+          "action" : "Actie",
+          "actions" : "Acties",
+          "expiration" : "Vervaldatum",
+          "expired" : "Verlopen",
+          "quantity_actions" : "Hoeveelheid acties",
+          "show_expired" : "Toon verlopen transacties",
+          "volume_actions" : "Actie-volume",
+          "last_irreversible_block" : "Laatste onomkeerbare blok",
+          "contract" : "Contract",
+          "authorization" : "Autorisatie",
+          "title" : "Operatie (Transactie)",
+          "description" : "Controleer EOS-operatie {hash} details"
+        },
+        "block" : {
+          "producer" : "Producent",
+          "producer_signature" : "Handtekening van producent",
+          "schedule_version" : "Schema-versie",
+          "transaction_mroot" : "Transactie merkle-wortel",
+          "action_mroot" : "Actie merkle-wortel",
+          "confirmed" : "Bevestigd",
+          "description" : "EOS-blok: {height}, hash: {hash} - EOS Zoekmachine"
+        }
+      }
+    },
+    "protocol" : {
+      "bitcoin" : {
+        "omni" : {
+          "navigation" : {
+            "properties" : "Attributen",
+            "property" : "Attribuut"
+          },
+          "homepage" : {
+            "title" : "Omni Layer Zoekmachine",
+            "description" : "Verken Omni Layer (OMNI) transacties en attributen zoals Tether (USDT), MaidsafeCoin (MAID) en Omni (Mastercoin)",
+            "stats" : {
+              "title" : "Omni Layer statistieken",
+              "properties" : "Attributen",
+              "mainnet_properties" : "Mainnet-attributen",
+              "testnet_properties" : "Testnet-attributen",
+              "transactions" : "Transacties"
+            },
+            "newest_properties" : "Nieuwste attributen",
+            "latest_transactions" : "Laatste transacties"
+          },
+          "infinitable" : {
+            "description" : {
+              "properties" : "Verken alle Omni Layer-attributen, zoals Tether (USDT), MaidSafeCoin (MAID) en Omni (Mastercoin)"
+            },
+            "foot" : {
+              "explore_list" : "Verken deze lijst... 👐"
+            },
+            "properties" : {
+              "name" : "Naam",
+              "issuer" : "Uitgever",
+              "creation_transaction_hash" : "Creërende tx-hash",
+              "creation_time" : "Tijd van creatie",
+              "creation_block_id" : "Creërend blok-id",
+              "is_issuance_fixed" : "Staat de uitgifte vast?",
+              "is_issuance_managed" : "Wordt uitgifte beheerd?",
+              "is_divisible" : "Is deelbaar?",
+              "circulation" : "Circulatie",
+              "ecosystem" : "Ecosysteem",
+              "category" : "Categorie",
+              "subcategory" : "Subcategorie",
+              "description" : "Beschrijving",
+              "url" : "URL"
+            },
+            "transactions" : {
+              "type" : "Type",
+              "sender" : "Zender",
+              "recipient" : "Ontvanger",
+              "valid" : "Is geldig?",
+              "valid_unknown" : "Onbekend. Wacht op een bevestiging!",
+              "amount" : "Bedrag"
+            }
+          },
+          "type" : {
+            "property" : {
+              "navigation" : "{name} (#{id})",
+              "description" : "{name} (#{id}) attribuut in {ecosystem} Omni Layer protocol",
+              "danger_fraud" : "Waarschuwing! Dit is niet de echte {name}-token! Pas op voor fraude!",
+              "id" : {
+                "short" : "Id",
+                "full" : "Id van attribuut"
+              }
+            }
+          }
+        }
+      }
+    },
+    "homepage" : {
+      "stats" : {
+        "market_data" : {
+          "cap" : "Marktkapitalisatie: {mcap}",
+          "dominance" : "Dominantie: {dominance}"
+        },
+        "general" : {
+          "caption" : "Statistieken",
+          "circulation" : "In omloop:",
+          "circulation_limit" : "Limiet circulatietoevoer:",
+          "difficulty" : "Moeilijkheidsgraad:",
+          "blockchain_size" : {
+            "caption" : "Blockchain-grootte:",
+            "dimension" : "GB"
+          }
+        },
+        "24h_stats" : {
+          "caption" : "24u statistieken",
+          "volume_24h" : "On-chain volume:",
+          "hashrate" : {
+            "caption" : "Hashrate:",
+            "dimension" : {
+              "bitcoin" : "Eh/s",
+              "ethereum" : "Th/s",
+              "dash" : "Ph/s",
+              "monero" : "Gh/s",
+              "zcash" : "Gs/s"
+            }
+          },
+          "tps" : "Txs per seconde:",
+          "average_transaction_fee" : "Gemiddelde transactievergoeding:",
+          "median_transaction_fee" : "Mediane transactievergoeding:",
+          "inflation_24h" : "Inflatie 24u:"
+        },
+        "mempool" : {
+          "caption" : "Mempool"
+        }
+      },
+      "charts" : {
+        "caption" : "Grafieken",
+        "link" : "Bekijk alle grafieken"
+      },
+      "bitcoin" : {
+        "title" : "Bitcoin Zoekmachine",
+        "description" : "Bekijk Bitcoin (BTC) blokken, transacties, adressen, saldi, nodes, OP_RETURN data en protocollen, blockchain statistieken en grafieken",
+        "stats" : {
+          "blocks" : "Blokken",
+          "transactions" : "Transacties",
+          "outputs" : "Outputs",
+          "countdowns" : {
+            "reward_halving" : "Beloningshalvering",
+            "upcoming_fork" : "Aankomende fork"
+          },
+          "general" : {
+            "next_difficulty_estimate" : "Volgende geschatte moeilijkheidsgraad:",
+            "next_retarget_time_estimate" : "Volgende aanpassing:",
+            "best_block" : "Laatste blok:",
+            "best_block_hash" : "Hash van laatst gevonden blok:",
+            "best_block_time" : "Tijd van laatst gevonden blok:",
+            "nodes" : "Netwerk-nodes:"
+          },
+          "24h_stats" : {
+            "blocks" : "Blokken:",
+            "average_block_time" : {
+              "caption" : "Gemiddelde tijd tussen blokken:",
+              "dimension" : "s."
+            },
+            "transactions" : "Transacties:"
+          },
+          "mempool" : {
+            "suggested_transaction_fee" : {
+              "caption" : "Aangeraden vergoeding:",
+              "dimension" : "satoshi per byte"
+            },
+            "total_fee" : "In vergoedingen:",
+            "size" : {
+              "caption" : "Grootte:",
+              "dimension" : "MB"
+            }
+          }
+        },
+        "latest_blocks" : "Laatste blokken",
+        "biggest_txs_24h" : "De grootste transacties van de laatste 24 uur",
+        "menu" : {
+          "caption" : "{chain}-menu",
+          "blockchain" : "Blockchain",
+          "mempool" : "Mempool",
+          "mainnet_link" : "Ga naar mainnet-verkenner",
+          "dag" : "DAG"
+        },
+        "charts" : {
+          "average_block_size" : "Gemiddelde blokgrootte op dagen en uren (laatste 3 maanden)",
+          "hashrate_distribution" : "Hashrate-distributie (laatste 2 weken)",
+          "segwit_usage" : "SegWit-gebruik (laatste 3 maanden)",
+          "dairy_circulation" : "Dagelijkse circulatie (miljarden USD) (laatste 3 maanden)",
+          "median_transaction_fee" : "Mediane transactievergoeding (USD) (laatste 3 maanden)",
+          "coindays_destroyed" : "Coindays destroyed (miljoenen) per dag (laatste 3 maanden)",
+          "non_monetary_outputs" : "Percentage niet-monetaire outputs (laatste 3 maanden)",
+          "distribution_of_outputs" : "Distributie van output-types (laatste week)",
+          "average_fee" : "Gemiddelde vergoeding per kB (USD) (laatste 3 maanden)"
+        }
+      },
+      "ripple" : {
+        "title" : "Ripple Zoekmachine",
+        "description" : "Bekijk Ripple (XRP) grootboeken, transacties, adressen en saldi, blockchain-statistieken and grafieken",
+        "stats" : {
+          "ledgers" : "Grootboeken",
+          "circulation" : "Circulatie",
+          "general" : {
+            "best_ledger" : "Laatste grootboek:",
+            "best_ledger_hash" : "Hash van laatste grootboek:",
+            "best_ledger_time" : "Tijd van laatste grootboek:"
+          },
+          "24h_stats" : {
+            "ledgers" : "Grootboeken:",
+            "average_ledger_time" : "Gemiddelde tijd tussen grootboeken:"
+          }
+        },
+        "latest_ledgers" : "Laatste grootboeken"
+      },
+      "stellar" : {
+        "title" : "Stellar Zoekmachine",
+        "description" : "Bekijk Stellar (XLM)  grootboeken, transacties, adressen en saldi, blockchain statistieken and grafieken",
+        "stats" : {
+          "24h_stats" : {
+            "successful_transactions" : "Succesvolle transacties:",
+            "failed_transactions" : "Mislukte transacties:",
+            "operations" : "Operaties:"
+          }
+        }
+      },
+      "ton" : {
+        "title" : "Telegram Open Network (TON) Zoekmachine",
+        "description" : "TON blockchain zoekmachine, blokken, GRAM saldi, transacties en adressen",
+        "stats" : {
+          "general" : {
+            "best_block_file_hash" : "Bestandshash van laatste blok:",
+            "best_block_root_hash" : "Root-hash van laatst gevonden blok:"
+          }
+        }
+      },
+      "monero" : {
+        "title" : "Monero Zoekmachine",
+        "description" : "Monero blockchain zoekmachine, blokken, transacties en adressen",
+        "stats" : {
+          "general" : {
+            "best_block_file_hash" : "Bestandshash van laatste blok:",
+            "best_block_root_hash" : "Root-hash van laatst gevonden blok:"
+          },
+          "mempool_dimension" : "kB"
+        }
+      },
+      "cardano" : {
+        "title" : "Cardano Zoekmachine",
+        "description" : "Cardano blockchain zoekmachine, blokken, transacties en adressen",
+        "stats" : {
+          "general" : {
+            "current_epoch" : "Huidige epoch:",
+            "current_slot" : "Huidige slot:"
+          }
+        }
+      },
+      "ethereum" : {
+        "title" : "Ethereum Zoekmachine",
+        "description" : "Bekijk Ethereum (ETH) blokken, transacties, adressen, smart contracts, saldi en blockchain statistieken",
+        "stats" : {
+          "uncles" : "Uncles",
+          "calls" : "Calls",
+          "erc-20" : {
+            "tokens" : "ERC-20 tokens"
+          },
+          "general" : {
+            "median_gas_price" : {
+              "caption" : "Mediane gas prijs:",
+              "dimension" : "Gwei"
+            }
+          },
+          "24h_stats" : {
+            "uncles" : "Uncles:"
+          },
+          "mempool" : {
+            "total_value" : "In waarde:"
+          }
+        },
+        "menu" : {
+          "mempool" : "Mempool en laatste 6 blokken"
+        },
+        "charts" : {
+          "average_gas_size" : "Gemiddelde gas-gebruik op dagen en uren (laatste 3 maanden) ",
+          "average_gas_limit" : "Gemiddelde gas-limiet (laatste 3 maanden)",
+          "mining_difficulty" : "Mining moeilijkheidsgraad (laatste 3 maanden)",
+          "new_contract_count" : "Aantal nieuwe contracten (laatste 3 maanden)",
+          "distribution_of_tx_types" : "Distributie van tx-types (laatste 3 maanden)",
+          "average_gas_price" : "Gemiddelde gas-prijs (GWei) (laatste 3 maanden)"
+        }
+      },
+      "bitcoin/testnet" : {
+        "title" : "Bitcoin Testnet Zoekmachine",
+        "description" : "Bekijk Bitcoin Testnet (TBTC) blokken, transacties, adressen, saldi, nodes, OP_RETURN data en protocollen, blockchain statistieken en grafieken"
+      },
+      "ethereum/testnet" : {
+        "title" : "Ethereum Testnet Verkenner",
+        "description" : "Bekijk Ethereum Testnet (ETH) blokken, transacties, adressen, smart contracts, saldi en blockchain statistieken"
+      },
+      "bitcoin-cash" : {
+        "title" : "Bitcoin Cash Zoekmachine",
+        "description" : "Bekijk Bitcoin Cash (BCH) blokken, transacties, adressen, saldi, nodes, OP_RETURN data en protocollen, blockchain-statistieken en grafieken",
+        "charts" : {
+          "voting_of_scalability" : "Stemmen op schaalbaarheid"
+        }
+      },
+      "bitcoin-sv" : {
+        "title" : "Bitcoin SV Zoekmachine",
+        "description" : "Bekijk Bitcoin SV (BSV) blokken, transacties, adressen, saldi, nodes, OP_RETURN data en protocollen, blockchain-statistieken en grafieken"
+      },
+      "dogecoin" : {
+        "title" : "Dogecoin Zoekmachine",
+        "description" : "Bekijk Dogecoin (DOGE) blokken, transacties, adressen, saldi, nodes, OP_RETURN data en protocollen, blockchain-statistieken en grafieken"
+      },
+      "dash" : {
+        "title" : "Dash Zoekmachine",
+        "description" : "Bekijk Dash (DASH) blokken, transacties, adressen, saldi, OP_RETURN data en protocollen, blockchain-statistieken en grafieken"
+      },
+      "litecoin" : {
+        "title" : "Litecoin Zoekmachine",
+        "description" : "Bekijk Litecoin (LTC) blokken, transacties, adressen, saldi, nodes, blockchain-statistieken en grafieken"
+      },
+      "groestlcoin" : {
+        "title" : "Groestlcoin Zoekmachine",
+        "description" : "Bekijk Groestlcoin (GRS) blokken, transacties, adressen, saldi, nodes, blockchain-statistieken en grafieken"
+      },
+      "zcash" : {
+        "title" : "Zcash Zoekmachine",
+        "description" : "Bekijk Zcash (ZEC) blokken, transacties, adressen, saldi, nodes en protocollen, blockchain-statistieken en grafieken",
+        "stats" : {
+          "mempool" : {
+            "suggested_transaction_fee" : {
+              "dimension" : "ZEC per transactie",
+              "dimension_short" : "zatoshi"
+            }
+          }
+        }
+      },
+      "mixin" : {
+        "title" : "Mixin Zoekmachine",
+        "description" : "Bekijk Mixin (XIN) snapshots, transacties, activa, nodes en blockchain (DAG) statistieken",
+        "stats" : {
+          "best_snapshot_height" : "Laatste snapshot-hoogte",
+          "best_snapshot_time" : "Laatste snapshot-tijd",
+          "best_snapshot_hash" : "Laatste snapshot-hash",
+          "snapshots" : "Snapshots",
+          "mintings" : "Mintings",
+          "accepted_nodes" : "Actieve nodes"
+        },
+        "24h_stats" : {
+          "snapshots" : "Snapshots:"
+        },
+        "latest_snapshots" : "Laatste snapshots"
+      },
+      "useful_links" : {
+        "caption" : "Handige links",
+        "description" : "Partners die Blockchair al gebruiken op hun website",
+        "wallets" : "Wallets",
+        "hardware_wallets" : "Hardware wallets",
+        "market_data" : "Marktdata",
+        "exchanges" : "Exchanges",
+        "mining_pools" : "Mining pools",
+        "explorers" : "Zoekmachines",
+        "crypto_processors" : "Betalingsverwerkers",
+        "dapps" : "dApps"
+      },
+      "tezos" : {
+        "title" : "Tezos Zoekmachine",
+        "description" : "Bekijk Tezos (XTZ) blokken, transacties, accounts (bakers) en saldi, blockchain statistieken"
+      },
+      "eos" : {
+        "title" : "EOS Zoekmachine",
+        "description" : "Bekijk EOS blokken, transacties, accounts (producenten) en saldi, blockchain-statistieken, onomkeerbare blokken"
+      }
+    },
+    "bitcoin" : {
+      "nodes" : {
+        "description" : "Verken het Bitcoin-netwerk door te zoeken naar alle beschikbare nodes, hun land van vestiging, implementaties, versies en consensus regels",
+        "other_nodes" : "Andere nodes",
+        "last_updated" : "Laatste update:",
+        "versions" : {
+          "caption" : "Node versies:",
+          "user_agent" : "User-agent",
+          "count" : "Aantal"
+        },
+        "heights" : "Blok-hoogtes:",
+        "charts" : {
+          "total_nodes" : "Totale aantal nodes: {total}",
+          "by_countries" : "Per land",
+          "by_implementations" : "Per implementatie",
+          "by_heights" : "Per hoogte"
+        }
+      },
+      "whitepaper" : {
+        "description" : "Controleer de whitepaper van Satoshi Nakamoto op consistentie, op hash, via verschillende websites en Bitcoin-outputs",
+        "last_check" : "Laatste controle:",
+        "icon" : "Icoon",
+        "site" : "Site",
+        "url" : "URL",
+        "hash" : "Hash",
+        "status" : "Status",
+        "footer" : {
+          "what_is" : {
+            "caption" : "Waarom deze pagina?",
+            "description1" : "Deze pagina laat zien of verschillende Bitcoin-sites de originele Bitcoin-whitepaper of een bewerkte versie ervan weergeven. Eens per uur berekenen we SHA-256 hashes van de bestanden en vergelijken ze met de hash van de originele whitepaper (dat zou  <span class='word--break'>b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553</span> moeten zijn).",
+            "description2" : "Er zijn enkele suggesties geweest om de whitepaper die op bitcoin.org wordt gehost te wijzigen (bijv. {Github_issue_link} is nog open). Wij zijn van mening dat het absoluut onaanvaardbaar is om een academisch artikel te bewerken en de geschiedenis van Bitcoin te herschrijven om tegemoet te komen aan iemands zakelijke belangen.",
+            "github_issue" : "GitHub Issue #1325"
+          },
+          "where_find" : {
+            "caption" : "Waar kan ik de whitepaper vinden in de Bitcoin blockchain?",
+            "description1" : "Allereerst zijn er enkele null-data outputs die de hash als platte tekst bevatten. Je kunt ze vinden {outputs_table_link}. Voorbeelden: {transaction1_link}, {transaction2_link}, {transaction3_link}",
+            "outputs_table" : "met behulp van een filter op de outputs tabel",
+            "description2" : "Er zijn ook outputs met null-data die de hash als hex bevatten. De huidige versie van onze zoekmachine ondersteunt nog niet het filteren van scripts op hex-waarden, maar aangezien de hex-waarde kan worden weergegeven als binaire tekst, kunnen we {outputs_table_search_link} van deze tekst. Voorbeelden: {transaction1_link}, {transaction2_link}, {transaction3_link}",
+            "outputs_table_search" : "zoeken op alfanumerieke delen",
+            "description3" : "Nog belangrijker, er is transactie {transaction_link} die het pdf-bestand zelf bevat. Hier is {bitcoin_stackexchange_link}. Het is op sommige websites misschien mogelijk om de whitepaper te bewerken, maar het is niet mogelijk om de blockchain te wijzigen.",
+            "bitcoin_stackexchange" : "een instructie over hoe het te parsen"
+          }
+        }
+      }
+    },
+    "bitcoin-cash" : {
+      "nodes" : {
+        "description" : "Verken het Bitcoin Cash netwerk door te zoeken naar alle beschikbare nodes, hun land van vestiging, implementaties, versies en consensus regels"
+      }
+    },
+    "bitcoin-sv" : {
+      "nodes" : {
+        "description" : "Verken het Bitcoin SV netwerk door te zoeken naar alle beschikbare nodes, hun land van vestiging, implementaties, versies en consensus regels"
+      }
+    },
+    "dogecoin" : {
+      "nodes" : {
+        "description" : "Verken het Dogecoin netwerk door te zoeken naar alle beschikbare nodes, hun land van vestiging, implementaties, versies en consensus regels"
+      }
+    },
+    "litecoin" : {
+      "nodes" : {
+        "description" : "Verken het Litecoin netwerk door te zoeken naar alle beschikbare nodes, hun land van vestiging, implementaties, versies en consensus regels"
+      }
+    },
+    "dash" : {
+      "nodes" : {
+        "description" : "Verken het Dash netwerk door te zoeken naar alle beschikbare nodes, hun land van vestiging, implementaties, versies en consensus regels"
+      }
+    },
+    "groestlcoin" : {
+      "nodes" : {
+        "description" : "Verken het Groestlcoin netwerk door te zoeken naar alle beschikbare nodes, hun land van vestiging, implementaties, versies en consensus regels"
+      }
+    },
+    "zcash" : {
+      "nodes" : {
+        "description" : "Verken het Zcash netwerk door te zoeken naar alle beschikbare nodes, hun land van vestiging, implementaties, versies en consensus regels"
+      }
+    },
+    "ethereum" : {
+      "erc-20" : {
+        "navigation" : {
+          "object" : {
+            "tokens" : "Tokens",
+            "transactions" : "Transacties"
+          }
+        },
+        "homepage" : {
+          "title" : "Ethereum ERC-20 Zoekmachine",
+          "description" : "Bekijk ERC-20 (zoals USDT) tokens, transacties, saldi en nieuwe contracten",
+          "stats" : {
+            "title" : "ERC-20 statistieken",
+            "tokens" : "Totale aantal tokens",
+            "transactions" : "Totale aantal transacties",
+            "tokens_24h" : "Nieuwe tokens 24u",
+            "transactions_24h" : "Nieuwe transacties 24u"
+          },
+          "most_used_tokens" : "Meest gebruikte tokens van de afgelopen maand",
+          "latest_tokens" : "Nieuwste tokens",
+          "latest_transactions" : "Laatste transacties"
+        },
+        "infinitable" : {
+          "title" : {
+            "tokens" : "ERC-20 Token Overzicht",
+            "transactions" : "ERC-20 Transactie Overzicht"
+          },
+          "description" : {
+            "tokens" : "Bekijk de meest populaire en nieuwste ERC-20 tokens (zoals USDT), sorteer en filter ze op leeftijd, blok ID en naam",
+            "transactions" : "Bekijk de laatste ERC-20 (zoals USDT) transacties, sorteer en filter ze op leeftijd, blok ID en waarde"
+          },
+          "tokens" : {
+            "address" : "Adres",
+            "id" : "Id",
+            "time" : "Gecreëerd op",
+            "name" : "Naam",
+            "symbol" : "Symbool",
+            "decimals" : "Decimalen",
+            "creating_block_id" : "Creërende blok-id",
+            "creating_transaction_hash" : "Creërende tx-hash"
+          },
+          "transactions" : {
+            "block_id" : "Blok-id",
+            "id" : "Transactie-id",
+            "transaction_hash" : "Transactie-hash",
+            "token_address" : "Token-adres",
+            "token_name" : "Token-naam",
+            "token_symbol" : "Token-symbool",
+            "token_decimals" : "Token-decimalen",
+            "value" : "Waarde"
+          }
+        },
+        "token" : {
+          "title" : "{token_name} ({token_symbol}) Zoekmachine",
+          "description" : "Bekijk {token_name} ({token_symbol}) laatste transacties, adressen en saldi",
+          "navigation" : "Token",
+          "stats" : {
+            "time" : "Gecreëerd op:",
+            "creating_block_id" : "Creërende blok-id:",
+            "creating_transaction_hash" : "Creërende transactie-hash:",
+            "transactions" : "Transacties:",
+            "transactions_24h" : "Transacties 24u:",
+            "volume_24h" : "Volume 24u:"
+          },
+          "latest_transactions" : "Laatste token transacties"
+        }
+      }
+    },
+    "charts" : {
+      "title" : "Grafieken",
+      "description" : "{chain}-grafieken, {ticker}-prijs, historische en live grafieken en andere cryptocurrency visualisaties",
+      "content" : {
+        "sections" : {
+          "monetary_stats" : "Monetaire statistieken",
+          "blocks" : "Blokken",
+          "transactions" : "Transacties",
+          "misc" : "Diversen"
+        }
+      },
+      "bitcoin" : {
+        "names" : {
+          "blockchain-size" : {
+            "title" : "{chain} blockchain-grootte grafiek",
+            "name" : "Blockchain grootte",
+            "description" : "De groei van een volledige {chain} node-grootte in gigabytes vanaf het genesis blok tot nu"
+          },
+          "price-usd" : {
+            "title" : "{chain} prijs ({ticker}/USD)",
+            "name" : "{chain} prijs (USD)",
+            "description" : "Bekijk de {chain} wisselkoersgrafiek, controleer de live {ticker}/USD prijs, inclusief historische marktgegevens van {chain} exchanges"
+          },
+          "circulation" : {
+            "title" : "{chain} circulatie-grafiek",
+            "name" : "Circulatie",
+            "description" : "Hoeveel {ticker} is er al gemined? Bekijk de grafiek die de circulatie van {ticker} vertegenwoordigt"
+          },
+          "average-block-size" : {
+            "title" : "{chain} gemiddelde blokgrootte-grafiek",
+            "name" : "Gemiddelde blokgrootte",
+            "description" : "Bekijk de historische gemiddelde {chain}-blokgrootte grafiek"
+          },
+          "median-block-size" : {
+            "title" : "{chain} mediane blokgrootte-grafiek",
+            "name" : "Mediane blokgrootte",
+            "description" : "Verkrijg de historisch gemiddelde {chain}-blokgrootte grafiek"
+          },
+          "difficulty" : {
+            "title" : "{chain} moeilijkheidsgraad-grafiek",
+            "name" : "Moeilijkheidsgraad",
+            "description" : "{ticker} moeilijkheidsgraad-grafiek, een parameter afhankelijk van de totale mining hashrate"
+          },
+          "transaction-count" : {
+            "title" : "{chain} transactie-aantal grafiek",
+            "name" : "Aantal transacties",
+            "description" : "Hoeveel {ticker}-transacties vinden er dagelijks plaats? Het aantal bevestigde {chain}-transacties per dag/week/maand"
+          },
+          "total-transaction-count" : {
+            "title" : "{chain} totaal aantal transacties grafiek",
+            "name" : "Totale aantal transacties",
+            "description" : "Hoeveel {ticker}-transacties zijn er verwerkt? Het totaal aantal bevestigde transacties in de {chain}-blockchain"
+          },
+          "transaction-volume" : {
+            "title" : "{chain} transactievolume grafiek",
+            "name" : "Transactievolume ({ticker})",
+            "description" : "Bekijk het aantal {ticker} dat dagelijks wordt verplaatst"
+          },
+          "average-transaction-amount" : {
+            "title" : "{chain} gemiddelde transactiebedrag grafiek",
+            "name" : "Gemiddelde transactiebedrag ({ticker})",
+            "description" : "Verkrijg het gemiddelde {chain}-transactiebedrag in {ticker} per dag/week/maand/jaar"
+          },
+          "median-transaction-amount" : {
+            "title" : "{chain} mediane transactiebedrag grafiek",
+            "name" : "Mediane transactiebedrag ({ticker})",
+            "description" : "Verkrijg het mediane {chain}-transactiebedrag in {ticker} per dag/week/maand/jaar"
+          },
+          "average-transaction-fee" : {
+            "title" : "{chain} gemiddelde transactievergoeding grafiek",
+            "name" : "Gemiddelde transactievergoeding ({ticker})",
+            "description" : "Controleer gemiddelde {chain} tx-vergoeding in {ticker}"
+          },
+          "median-transaction-fee" : {
+            "title" : "{chain} mediane transactievergoeding grafiek",
+            "name" : "Mediane transactievergoeding ({ticker})",
+            "description" : "Controleer mediane {chain} tx-vergoeding in {ticker}"
+          },
+          "transaction-volume-usd" : {
+            "title" : "{chain} transactievolume (USD) grafiek",
+            "name" : "Transactievolume (USD)",
+            "description" : "Bekijk het aantal {ticker} dat dagelijks wordt verplaatst in USD"
+          },
+          "average-transaction-fee-usd" : {
+            "title" : "{chain} gemiddelde transactievergoeding (USD) grafiek",
+            "name" : "Gemiddelde transactievergoeding (USD)",
+            "description" : "Controleer gemiddelde {chain} tx-vergoeding in USD"
+          },
+          "median-transaction-fee-usd" : {
+            "title" : "{chain} mediane transactievergoeding (USD) grafiek",
+            "name" : "Mediane transactievergoeding (USD)",
+            "description" : "Controleer mediane {chain} tx-vergoeding in USD"
+          },
+          "average-transaction-amount-usd" : {
+            "title" : "{chain} gemiddelde transactiebedrag (USD) grafiek",
+            "name" : "Gemiddelde transactiebedrag (USD)",
+            "description" : "Verkrijg het gemiddelde {chain} tx-bedrag in USD per dag/week/maand/jaar"
+          },
+          "median-transaction-amount-usd" : {
+            "title" : "{chain} mediane transactiebedrag (USD) grafiek",
+            "name" : "Mediane transactiebedrag (USD)",
+            "description" : "Verkrijg het mediane {chain} tx-bedrag in USD per dag/week/maand/jaar"
+          },
+          "inflation-usd" : {
+            "title" : "{chain} inflatiegrafiek (USD)",
+            "name" : "Inflatie (USD)",
+            "description" : "Het aantal {ticker} dat dagelijks wordt gemined/gegenereerd in USD. {chain} inflatiecurve"
+          },
+          "transactions-in-block" : {
+            "title" : "Transacties per {chain} blok grafiek",
+            "name" : "Transacties per blok",
+            "description" : "Spreidingsdiagram van het aantal {chain}-transacties per blok"
+          },
+          "coindays-destroyed" : {
+            "title" : "{chain} coindays destroyed grafiek",
+            "name" : "Coindays destroyed",
+            "description" : "De grafiek toont hoeveel {chain} coindays destroyed er waren bij het verplaatsen van oude coins"
+          },
+          "hashrate-distribution" : {
+            "title" : "{chain} hashrate-distributie",
+            "name" : "Hashrate-distributie",
+            "description" : "Vind de grootste {chain} miners en pools via de hashrate-distributie cirkeldiagram"
+          },
+          "transactions-per-second" : {
+            "title" : "{chain} transacties per seconde grafiek",
+            "name" : "Transacties per seconde",
+            "description" : "Tx/s is een goede {chain} schaalbaarheidsmaatstaf. Bekijk hoe het dagelijks verandert"
+          },
+          "segwit-usage" : {
+            "title" : "{chain} SegWit-gebruik grafiek",
+            "name" : "SegWit-gebruik",
+            "description" : "Percentage SegWit-transacties in {chain}"
+          },
+          "percentage-of-non-monetary-outputs" : {
+            "title" : "% niet-monetaire {chain}-outputs grafiek",
+            "name" : "% niet-monetaire outputs",
+            "description" : "Percentage {ticker} outputs welke geen {ticker} heeft bewogen"
+          },
+          "distribution-of-outputs-types-over-two-weeks" : {
+            "title" : "Distributie van {chain} output-types grafiek",
+            "name" : "Distributie van output-types",
+            "description" : "Bekijk de meest populaire {chain} output-types van de laatste 2 weken in een cirkeldiagram"
+          }
+        }
+      },
+      "dogecoin" : {
+        "names" : {
+          "aux-pow" : {
+            "title" : "Dogecoin AuxPoW-gebruik grafiek",
+            "name" : "AuxPoW-gebruik",
+            "description" : "Percentage Dogecoin-blokken bevestigd door merged mining"
+          }
+        }
+      },
+      "ethereum" : {
+        "names" : {
+          "number-of-new-contracts" : {
+            "title" : "Aantal nieuwe Ethereumcontracten grafiek",
+            "name" : "Aantal nieuwe contracten",
+            "description" : "Toon het aantal nieuwe smart-contracts dat dagelijks in Ethereum wordt aangemaakt"
+          },
+          "number-of-destroyed-contracts" : {
+            "title" : "Aantal vernietigde Ethereumcontracten grafiek",
+            "name" : "Aantal vernietigde contracten",
+            "description" : "Toon het aantal dagelijks vernietigde Ethereum smart-contracts "
+          },
+          "uncle-rate" : {
+            "title" : "Ethereum uncle-verhouding",
+            "name" : "Percentage uncle-blokken",
+            "description" : "Percentage uncle-blokken in Ethereum"
+          },
+          "average-gas-price" : {
+            "title" : "Gemiddelde Ethereum-gasprijs grafiek",
+            "name" : "Gemiddelde gasprijs",
+            "description" : "Bekijk de historisch gemiddelde ETH gasprijs in GWei"
+          },
+          "median-gas-price" : {
+            "title" : "Ethereum mediane gasprijs grafiek",
+            "name" : "Mediane gasprijs",
+            "description" : "Bekijk de historisch mediane ETH gasprijs in GWei"
+          },
+          "average-gas-limit" : {
+            "title" : "Ethereum gemiddelde gaslimiet grafiek",
+            "name" : "Gemiddelde gaslimiet",
+            "description" : "Bekijk historisch gemiddelde ETH gaslimiet"
+          },
+          "median-gas-limit" : {
+            "title" : "Ethereum mediane gaslimiet grafiek",
+            "name" : "Mediane gaslimiet",
+            "description" : "Bekijk de historisch mediane ETH gaslimiet"
+          },
+          "new-contracts-ratio" : {
+            "title" : "Verhouding nieuwe Ethereumcontracten grafiek",
+            "name" : "Verhouding nieuwe contracten",
+            "description" : "Verhouding tussen nieuwe en door SELFDESTRUCT vernietigde Ethereumcontracten"
+          }
+        }
+      },
+      "name" : {
+        "options" : {
+          "compare" : "Vergelijk met",
+          "interval" : {
+            "caption" : "Interval",
+            "1m" : "Laatste maand",
+            "3m" : "Laatste 3 maanden",
+            "full" : "Vanaf het begin"
+          },
+          "granularity" : "Granulariteit",
+          "export" : "Exporteer",
+          "related_charts" : "Gerelateerde grafieken",
+          "other_coins" : "Dezelfde grafiek voor andere munten"
+        }
+      }
+    }},
+  "nodes" : {
+    "title" : "Nodes",
+    "description" : "Bekijk de distributie van blockchain nodes per implementatie, versie en land",
+    "navigation" : "Nodes",
+    "card" : {
+      "bitcoin" : {
+        "total_nodes" : "Totaal aantal nodes: {total_count}",
+        "footer_link" : "Ga naar {chain} node-verkenner"
+      }
+    }
+  },
+  "about" : {
+    "title" : "Over ons",
+    "description" : "Blockchair team, partners en contactgegevens",
+    "navigation" : "Over ons",
+    "what_is" : {
+      "caption" : "Wat is Blockchair?",
+      "description1" : "{service} is een blockchain analyse- en zoekmachine voor {blockchains_links}. Of u kunt ook zeggen dat het een machine is die bestaat uit blockchain-verkenners op steroïden. U kunt blokken, transacties en hun inhoud filteren en sorteren op verschillende criteria en zoeken door de volledige tekst opgenomen in de blockchains.",
+      "description2" : "Om te begrijpen waar onze zoekmachine toe in staat is, kunt u proberen te zoeken naar {search_bitcoin_link}, kijken naar {biggest_bitcoin_cash_blocks_link} of een van de andere voorbeelden proberen die op {homepage_link} staan.",
+      "biggest_bitcoin_cash_blocks" : "de grootste Bitcoin Cash blokken",
+      "homepage" : "onze startpagina",
+      "description3" : "Wij willen de Google voor blockchains worden. Onze volgende prioriteit is om de mogelijkheid te bieden om te zoeken in andere gedecentraliseerde projecten zoals IPFS en SWARM. Daarnaast bieden we onderzoekers aan om batchgegevens uit blockchains te exporteren."
+    },
+    "our_team" : "Ons team",
+    "contacts" : {
+      "caption" : "Neem contact op",
+      "email" : "Email: {email}",
+      "twitter" : "Twitter: {twitter_link}",
+      "facebook" : "Facebook: {facebook_link}",
+      "telegram" : "Telegram: {telegram_link}"
+    },
+    "partners" : {
+      "caption" : "Onze partners en vrienden",
+      "general" : "Algemene partners",
+      "wallets" : "Wallets met Blockchair geïntegreerd",
+      "hardware_wallets" : "Hardware wallets met Blockchair geïntegreerd",
+      "exchanges" : "Exchanges met Blockchair geïntegreerd",
+      "mining_pools" : "Mining pools met Blockchair geïntegreerd",
+      "explorers" : "Zoekmachines met Blockchair geïntegreerd",
+      "market_data" : "Marktinformatie providers met Blockchair geïntegreerd",
+      "crypto_processors" : "Crypto betalingsverwerkers met Blockchair geïntegreerd",
+      "dapps" : "dApps met Blockchair geïntegreerd",
+      "media" : "Media partners",
+      "academic" : "Academische partners"
+    }
+  },
+  "terms" : {
+    "title" : "Servicevoorwaarden",
+    "description" : "De Diensten worden verleend onder de Blockchair Legal overeenkomst",
+    "navigation" : "Servicevoorwaarden",
+    "content" : {
+      "caption" : "Blockchair servicevoorwaarden",
+      "api" : "API servicevoorwaarden",
+      "ads" : "Advertentie servicevoorwaarden"
+    }
+  },
+  "feed" : {
+    "title" : "Berichten feed",
+    "description" : "Lees gecodeerde berichten opgeslagen in cryptocurrency blockchains",
+    "navigation" : {
+      "title" : "Feed",
+      "hint" : "Blockchair Feed toont OP_RETURN transacties in zowel Bitcoin- als Bitcoin Cash blockchains, evenals transacties op de Ethereum-blockchain die leesbare gegevens bevatten in het invoer veld.",
+      "tps" : {
+        "title" : "Drie blockchains beluisteren voor nieuwe opnames",
+        "bitcoin" : "Bitcoin met {tps} txs per seconde",
+        "bitcoin-cash" : "Bitcoin Cash met {tps} txs per seconde",
+        "ethereum" : "Ethereum met {tps} txs per seconde"
+      }
+    },
+    "entry" : {
+      "time" : "{time} (UTC)"
+    },
+    "showing" : "Opnames van de afgelopen 3 uur weergeven..."
+  },
+  "compare" : {
+    "title" : "Vergelijk BTC, ETH, BCH, LTC, BSV, DASH en DOGE blockchain statistieken",
+    "description" : "Vergelijk cryptocurrencies op gemiddelde tijd tussen blokken, transacties per seconde, vergoedingen, hashrate, aantal nodes en meer",
+    "navigation" : "Vergelijk",
+    "comparison" : "Voeg toe aan vergelijking",
+    "blockchain_stats" : {
+      "caption" : "Blockchain statistieken",
+      "circulation" : "Circulatie",
+      "nodes" : "Netwerk nodes",
+      "blockchain_size" : "Blockchaingrootte"
+    },
+    "24h_stats" : {
+      "caption" : "24u statistieken",
+      "volume_24h" : "On-chain volume",
+      "hashrate_24h" : "Hashrate",
+      "average_tx_fee" : "Gemiddelde transactiekosten",
+      "median_tx_fee" : "Mediane transactiekosten",
+      "average_block_time" : {
+        "caption" : "Gemiddelde tijd tussen blokken",
+        "dimension" : "s."
+      },
+      "inflation_24h" : "Inflatie",
+      "cdd_24h" : "Coindays destroyed"
+    },
+    "mempool_stats" : {
+      "caption" : "Mempool-statistieken",
+      "tps" : "Transacties per seconde",
+      "suggested_transaction_fee" : "Aangeraden vergoeding"
+    },
+    "market_stats" : {
+      "caption" : "Marktstatistieken",
+      "cap" : "Kapitalisatie",
+      "price" : "Prijs",
+      "dominance" : "Dominantie-index"
+    }
+  },
+  "charts" : {
+    "title" : "Grafieken",
+    "description" : "Live cryptocurrency grafieken en diagrammen, marktprijs, mining hashrate-distributie, moeilijkheidsgraad, blockchain grootte, vergoedingen en meer",
+    "navigation" : "Grafieken",
+    "granularity" : {
+      "date" : "Datum",
+      "week" : "Week",
+      "month" : "Maand",
+      "year" : "Jaar",
+      "time" : "Tijd"
+    },
+    "functions" : {
+      "count" : "Aantal",
+      "sum" : "Som",
+      "avg" : "Gemiddelde",
+      "median" : "Mediaan",
+      "min" : "Minimum",
+      "max" : "Maximum"
+    },
+    "dimensions" : {
+      "count" : "Aantal",
+      "bytes" : "Bytes",
+      "kilobytes" : "Kb",
+      "megabytes" : "Mb",
+      "gigabytes" : "Gb",
+      "dd" : "Coindays destroyed",
+      "usd" : "USD",
+      "percentage" : "Percentage",
+      "gwei" : "GWei",
+      "microseconds" : "µs",
+      "miliseconds" : "ms"
+    },
+    "content" : {
+      "see_more" : "Bekijk nog {count} grafieken"
+    }
+  },
+  "broadcast" : {
+    "title" : "Verstuur een onbewerkte transactie",
+    "navigation" : "Versturen",
+    "description" : "Verstuur onbewerkte ondertekende BTC, ETH, BCH, LTC, BSV, DOGE en GRS transacties met privacy in hex",
+    "form" : {
+      "chain" : {
+        "label" : "Selecteer netwerk:",
+        "invalid" : "Selecteer eerst een blockchain."
+      },
+      "hex" : {
+        "label" : "Plak hier een onbewerkte transactie in hex-formaat om deze naar het opgegeven netwerk te verzenden:",
+        "errors" : {
+          "empty" : "Vul een hex waarde in.",
+          "invalid" : "Ongeldige hex!"
+        }
+      },
+      "button" : "Verstuur transactie"
+    },
+    "transaction" : "Bedankt, uw transactie is verstuurd naar de {chain}-blockchain, de hash: {hash}"
+  },
+  "notify" : {
+    "title" : "Informeer mij",
+    "navigation" : {
+      "title" : "Informeer mij"
+    },
+    "content" : {
+      "enable" : "Notificaties aanzetten",
+      "chains" : "Informeer mij als er nieuwe blokken zijn gevonden in de volgende blockchains:"
+    },
+    "notification" : "Nieuw {chain}-blok is gevonden #{id}"
+  },
+  "privacy" : {
+    "title" : "Privacybeleid",
+    "navigation" : "Privacybeleid",
+    "description" : "Ontdek waarom uw privacy in gevaar is bij het gebruik van cryptodiensten en waarom Blockchair de veiligere optie is"
+  },
+  "dumps" : {
+    "title" : "Cryptocurrency datasets",
+    "navigation" : "Dumps",
+    "description" : "Download blok- en transactiedata van BTC, ETH, BCH, LTC, BSV, DOGE en GRS blockchains als TSV-bestand"
+  },
+  "markets" : {
+    "title" : "Markten",
+    "navigation" : "Markten",
+    "description" : "Live cryptocurrency prijzen en marktkapitalisatie, bouw en track uw eigen portfolio",
+    "coins" : "Top 1000",
+    "my_portfolio" : "Mijn portfolio: ({total_profit})",
+    "table" : {
+      "head" : {
+        "coin_name" : "Munt naam",
+        "price" : "Prijs",
+        "search" : "Snel zoeken",
+        "mkt_cap" : "Marktkapitalisatie",
+        "24h_change" : "24u",
+        "dominance" : "Dominantie",
+        "portfolio" : {
+          "amount" : "Bedrag",
+          "profit" : "USD waarde"
+        }
+      },
+      "body" : {
+        "stablecoin" : "Stablecoin",
+        "explore" : "Verken",
+        "portfolio" : {
+          "total_profit" : "Totale portfolio waarde: {total_profit} {profit_change_24h}",
+          "empty_list" : "U heeft geen portfolio.",
+          "start_portfolio" : "Begin een portfolio door munten toe te voegen aan uw favorieten!"
+        },
+        "load_more" : "Toon meer"
+      }
+    },
+    "modal" : {
+      "title" : {
+        "edit" : "Munt aanpassen in uw portfolio",
+        "add" : "Munt toevoegen aan uw portfolio"
+      },
+      "description" : "Deze munt is toegevoegd aan uw favorieten. U kunt nu het aantal munten dat u heeft invoeren of dit venster sluiten.",
+      "placeholder" : "Vul hoeveelheid in",
+      "buttons" : {
+        "edit" : "Aanpassen",
+        "add" : "Toevoegen",
+        "remove" : "Verwijderen"
+      }
+    }
+  },
+  "api" : {
+    "navigation" : "API",
+    "homepage" : {
+      "title" : "Blockchain API",
+      "description" : "Blockchain API"
+    },
+    "docs" : {
+      "title" : "Blockchain API-documentatie",
+      "description" : "API voor ontwikkelaars geeft toegang tot data in 12 blockchains (BTC, ETH, BCH, TON, BSV, XRP, XLM, ERC tokens etc)",
+      "navigation" : "Docs"
+    },
+    "plans" : {
+      "title" : "Tarieven",
+      "navigation" : "Tarieven"
+    }
+  },
+  "pdf" : {
+    "title" : "Transactie ontvangstbewijs in PDF",
+    "navigation" : "PDF-ontvangstbewijzen",
+    "description" : "Genereer prachtig PDF-ontvangstbewijs van uw crypto-transactie",
+    "form" : {
+      "placeholder" : "Vul transactie hash in",
+      "supported_blockchains" : "Ondersteunde blockchains: {bitcoin_link}, {ethereum_link}, {bitcoin_cash_link}, {litecoin_link}, {bitcoin_sv_link}, {dash_link}, {zcash_link}, {dogecoin_link} en {groestlcoin_link}"
+    },
+    "receipt" : {
+      "download_link" : "Download link: {pdf_link}",
+      "no_transaction" : "Er is geen transactie met deze hash gevonden"
+    }
+  },
+  "hints" : {
+    "bitcoin-cash" : "Bitcoin Cash — ook bekend als BCC en XBC",
+    "copy" : "Kopieer",
+    "copied" : "Gekopieerd",
+    "mempool" : "Mempool"
+  },
+  "utils" : {
+    "bool" : {
+      "yes" : "JA",
+      "no" : "NEE"
+    },
+    "coinbase" : {
+      "full" : "💰 Coinbase",
+      "short" : "Coinbase"
+    },
+    "shielded" : {
+      "full" : "🛡 Afgeschermd",
+      "short" : "Afgeschermd"
+    },
+    "contract_creation" : "Contract creatie",
+    "unspent" : "Niet besteed",
+    "thinking" : {
+      "loading" : "Aan het laden...",
+      "progress" : "Ik denk zo snel als ik kan... ({progress}%)"
+    },
+    "genesis" : "💰 Genesis"
+  },
+  "footer" : {
+    "explorers" : "Zoekmachines",
+    "services" : "Diensten",
+    "api" : "API",
+    "sql" : "SQL",
+    "charts" : "Grafieken",
+    "markets" : "Markten & Portfolio",
+    "nodes" : "Node-verkenners",
+    "feed" : "Feed",
+    "broadcast" : "Verstuur transactie",
+    "dumps" : "Database dumps",
+    "dumps_node" : "Full node dumps",
+    "pdf" : "Verkrijg PDF-ontvangstbewijs",
+    "compare" : "Vergelijk crypto",
+    "useful_links" : "Handige links",
+    "about" : "Over ons",
+    "terms" : "Servicevoorwaarden",
+    "about_blockchair" : "Over Blockchair",
+    "privacy" : "Ons privacybeleid",
+    "contacts" : "Neem contact op",
+    "issues" : "Dien een bug of verzoek in",
+    "status" : "Status",
+    "social" : "Sociaal",
+    "language" : "Talen",
+    "copyright" : "© {year} Blockchair",
+    "market_data" : "Markt data van {coin_market_cap_link} en {coin_gecko_link}",
+    "faq" : "Veelgestelde vragen",
+    "referral_program" : "Referral-program",
+    "advertise" : "Adverteren",
+    "whitepaper" : "Whitepaper",
+    "bugbounty" : "Bug bounty programma",
+    "tools" : {
+      "title" : "Tools",
+      "release-monitor" : "Release monitor",
+      "halving-countdown" : "Aftellen tot halvering"
+    },
+    "cryptoanarchyst_corner" : "Crypto-anarchisten hoek",
+    "theme" : {
+      "on" : "Overschakelen naar nachtmodus",
+      "off" : "Overschakelen naar dagmodus"
+    },
+    "ads" : {
+      "on" : "Schakel advertenties op de hele website voor 3 dagen uit",
+      "off" : "Zet advertenties aan"
+    }
+  },
+  "errors" : {
+    "http" : {
+      "payment_required" : "Je verstuurt teveel verzoeken. Probeer het later opnieuw.",
+      "not_found" : "In geen enkele blockchain gevonden 😞"
+    },
+    "ban" : {
+      "row1" : "Wow! Je bent zo'n actieve gebruiker, dat het lijkt alsof je een robot bent 🤖.",
+      "row2" : "Verifiëer dat je geen robot bent door deze captcha op te lossen."
+    }
+  },
+  "faq" : {
+    "title" : "Veelgestelde Vragen",
+    "description" : "We bieden alleen blockchain zoek- en analyseservices aan, geen exchange, bank of wallet",
+    "navigation" : "Veelgestelde vragen"
+  },
+  "advertise" : {
+    "title" : "Adverteren",
+    "description" : "Promoot je product op Blockchair met banners, native buttons of native tekst advertenties",
+    "navigation" : "Adverteren"
+  },
+  "language-proposal" : {
+    "title" : "Deze website is beschikbaar in het Engels, wilt u van taal veranderen?",
+    "yes" : "Ja",
+    "no" : "Nee"
+  },
+  "referral_program" : {
+    "title" : "Referral-program",
+    "navigation" : "Referral-program"},
+  "tools" : {
+    "title" : "Tools",
+    "release-monitor" : {
+      "title" : "Release monitor",
+      "description" : "Track de nieuwste versies van cryptocurrency-clients: Bitcoin Core, Geth, rippled, Bitcoin ABC en anderen",
+      "button" : "Word lid van ons Telegram kanaal en ontvang updates",
+      "version" : "Versie",
+      "time" : "Tijd",
+      "link" : "Link",
+      "show_all" : "Toon alles",
+      "filter_title" : "Filter blockchains"
+    },
+    "halving-countdown" : {
+      "title" : "Aftellen tot halvering",
+      "meta_title" : "Bitcoin 2020 Aftellen tot Halvering",
+      "description" : "Bekijk de datum waarop de halvering zal plaatsvinden in Bitcoin (BTC), Bitcoin Cash (BCH) en Bitcoin SV (BSV) en het effect op de prijs",
+      "item" : {
+        "title" : "aftellen tot halvering",
+        "current_block" : "Huidige blok",
+        "current_reward" : "Huidige blokvergoeding",
+        "halvening_block" : "Halveringsblok",
+        "halvening_reward" : "Blokvergoeding na halvering",
+        "halvening_time_approximate" : "Geschat halveringstijstip",
+        "seconds_left" : "Seconden resterend",
+        "blocks_left" : "Blokken resterend tot de halvering",
+        "button_explorer" : "Ga naar {title} zoekmachine"
+      },
+      "time" : {
+        "days" : "dagen",
+        "hours" : "uren",
+        "minutes" : "minuten"
+      }
+    }
+  },
+  "nojs" : {
+    "disabled_functions" : "Deze functionaliteit is alleen beschikbaar met JavaScript ingeschakeld",
+    "extended_functions" : "Uitgebreide functionaliteit alleen beschikbaar met JavaScript ingeschakeld"
+  },
+  "news" : {
+    "title" : "Blockchair Nieuws",
+    "description" : "Een verzameling van blockchain- en cryptocurrency-nieuws van de meest prominente mediakanalen",
+    "menu_description" : "Blijf op de hoogte van het laatste crypto-nieuws, en bekijk de BTC-prijsgrafiek",
+    "most_recent" : "Meest recent",
+    "more_news" : "Meer nieuws",
+    "homepage_link" : "Meer",
+    "shortcuts" : {
+      "title" : "Toetsenbord-sneltoetsen",
+      "close" : "Sluit",
+      "next" : "Volgende",
+      "prev" : "Vorige"
+    },
+    "unable_to_load" : "Kan het artikel niet laden",
+    "try_to_read_on" : "Probeer het te lezen op",
+    "read_on" : "Lees op",
+    "yesterday" : "Gisteren",
+    "share_title" : "Deel dit artikel",
+    "share" : "Deel",
+    "previous_news" : "Vorige nieuws",
+    "join_telegram" : "Ontvang nieuws op Telegram"
+  },
+  "donut" : {
+    "title" : "Blockchair Donut",
+    "title_navigation" : "Blockchair Donut",
+    "menu_description" : "Doneer crypto aan geweldige non-profitorganisaties en open-sourceprojecten",
+    "description" : "Doneer crypto waar het ertoe doet | Fondsenwervingsplatform voor non-profitorganisaties en open-sourceprojecten die donaties in cryptocurrencies accepteren",
+    "meta" : {
+      "title" : "Blockchair Donut",
+      "description" : "Doneer crypto waar het ertoe doet | Fondsenwervingsplatform voor non-profitorganisaties en open-sourceprojecten die donaties in cryptocurrencies accepteren"
+    },
+    "homepage" : {
+      "cover_title" : "Doneer crypto aan een goed doel",
+      "cover_text" : "Maak een positieve impact op de wereld en help de groei van crypto. Blockchair Donut brengt verhalen van non-profitorganisaties en open-sourceprojecten die streven naar een betere wereld."
+    },
+    "project" : {
+      "title" : "{title} - Doneer crypto op Blockchair Donut"}
+  },
+  "bugbounty" : {
+    "title" : "Bug bounty program"}
+}
