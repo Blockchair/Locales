@@ -2921,7 +2921,17 @@
       "loading" : "Loading...",
       "progress" : "Thinking as fast as I can... ({progress}%)"
     },
-    "genesis" : "💰 Genesis"
+    "genesis" : "💰 Genesis",
+    "numbers" : {
+      "billion" : {
+        "short" : "B",
+        "full" : "Billions"
+      },
+      "million" : {
+        "short" : "M",
+        "full" : "Millions"
+      }
+    }
   },
   "footer" : {
     "explorers" : "Explorers",
@@ -2997,6 +3007,7 @@
   "referral_program" : {
     "title" : "Referral program",
     "navigation" : "Referral program",
+    "navigation_howto" : "How to ",
     "description" : ""
   },
   "tools" : {
