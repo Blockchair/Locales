@@ -11,6 +11,7 @@
     "dash" : "Dash",
     "litecoin" : "Litecoin",
     "ethereum" : "Ethereum",
+    "ethereum/testnet" : "Ethereum Testnet",
     "ripple" : "Ripple",
     "groestlcoin" : "Groestlcoin",
     "stellar" : "Stellar",
@@ -19,7 +20,8 @@
     "cardano" : "Cardano",
     "zcash" : "Zcash",
     "mixin" : "Mixin",
-    "tezos" : "Tezos"
+    "tezos" : "Tezos",
+    "eos" : "EOS"
   },
   "ticker" : {
     "bitcoin" : "BTC",
@@ -30,6 +32,7 @@
     "dash" : "DASH",
     "litecoin" : "LTC",
     "ethereum" : "ETH",
+    "ethereum/testnet" : "TETH",
     "ripple" : "XRP",
     "usd" : "USD",
     "groestlcoin" : "GRS",
@@ -39,7 +42,8 @@
     "cardano" : "ADA",
     "zcash" : "ZEC",
     "mixin" : "XIN",
-    "tezos" : "XTZ"
+    "tezos" : "XTZ",
+    "eos" : "EOS"
   },
   "homepage" : {
     "title" : "Blockchair — Explorateur de blocs et moteur de recherche blockchain universel",
@@ -54,7 +58,8 @@
           "title" : "Scanner le QR-code"
         }
       },
-      "description" : "Blockchair est le meilleur moteur de recherche privé pour {blockchains}. Vous pouvez rechercher {transactions}, {addresses}, {blocks}, et {embedded}.",
+      "description" : "Blockchair est le moteur de recherche pour {blockchains} respectant la confidentialité.",
+      "description_line2" : "Recherchez {transactions}, {addresses}, {blocks} et même {embedded}.",
       "scope" : {
         "transactions" : "transactions",
         "addresses" : "adresses",
@@ -129,7 +134,7 @@
       "api" : {
         "title" : "Une API professionnelle",
         "description" : "Accéder aux données des différentes blockchains avec l'API de Blockchair",
-        "link" : "Notre documentation pour l'API"
+        "link" : "En savoir plus à propos de notre API"
       },
       "charts" : {
         "title" : "Graphiques",
@@ -390,7 +395,8 @@
         },
         "ethereum" : {
           "uncle" : "Oncle",
-          "address" : "Adresse"
+          "address" : "Adresse",
+          "contract" : "Contrat"
         },
         "ripple" : {
           "ledger" : "Registre",
@@ -498,6 +504,12 @@
           "mintings" : "Explorez les mises à jour (récompenses) des nœuds du noyau Mixin (XIN) par des instantanés",
           "nodes" : "Explorez les nœuds du noyau Mixin (XIN). Chaque nœud doit promettre 10000 XIN, donc environ 50 nœuds du noyau pourraient être trouvés",
           "graph" : "Explorez Mixin (XIN) DAG. Le graphique peut être utilisé pour créer des registres qui contournent les besoins du PoW et des blocs"
+        },
+        "zcash" : {
+          "blocks" : "Explorez, triez et filtrez les blocs de Zcash (ZEC) par hauteur, récompense, mineur et plus",
+          "transactions" : "Explorez, triez et filtrez les transactions de Zcash (ZEC) par ID (hachage), valeur, taille, frais et plus",
+          "outputs" : "Explorez, triez et filtrez les sorties de Zcash (ZEC) par valeur, expéditeur, destinataire, adresses, obtenir un ensemble UTXO et plus",
+          "addresses" : "Explorez, triez et filtrez les adresses Zcash (ZEC)"
         }
       },
       "foot" : {
@@ -658,6 +670,7 @@
           },
           "fee_usd" : "Frais (USD)",
           "fee_per_kvb" : "Frais par kVB",
+          "is_rbf" : "Ramplacer par les frais (RBF) activé ?",
           "lock_time" : {
             "short" : "Temps de verrouillage",
             "full" : "Temps de verrouillage (hauteur de bloc ou timestamp)"
@@ -1164,6 +1177,9 @@
             "caption" : "Frais par byte",
             "dimension" : "satoshi"
           },
+          "fee_per_vbyte" : {
+            "caption" : "Frais par vbyte"
+          },
           "raw_transaction" : {
             "title" : "Tx brute",
             "form" : {
@@ -1175,7 +1191,148 @@
           "pdf_receipt" : "Reçu PDF",
           "senders" : "Expéditeurs",
           "recipients" : "Bénéficiaires",
-          "senders_and_recipients" : "Expéditeurs et bénéficiaires"
+          "senders_and_recipients" : "Expéditeurs et bénéficiaires",
+          "privacy-o-meter" : {
+            "title" : "Privacy-o-meter",
+            "heuristic_names" : {
+              "inputs" : "Co-dépense",
+              "script_types" : "Types de scripts",
+              "p2sh_types" : "Types multisig P2SH",
+              "p2wsh_types" : "Types multisig P2WSH",
+              "round_value" : "Valeur à l'arrondi",
+              "recipient_by_value" : "Destinataire par plus grande valeur",
+              "t1-2_bigger_value_25" : "Valeur Output x25",
+              "t1-2_bigger_value_100" : "Valeur Output x100",
+              "t1-2_bigger_value_250" : "Valeur Output x250",
+              "t1-2_bigger_value_1000" : "Valeur Output x1000",
+              "coinbase_known" : "Mineur connu",
+              "coinbase_unknown" : "Mineur inconnu",
+              "coinjoin" : "Coinjoin",
+              "round_fee" : "Frais à l'arrondi",
+              "asc_output_values" : "Valeurs de sortie croissantes",
+              "desc_output_values" : "Valeurs de sortie décroissantes",
+              "asc_output_addresses" : "Adresses de sortie croissantes",
+              "desc_output_addresses" : "Adresses de sortie décroissantes",
+              "asc_input_values" : "Valeurs d'entrée croissantes",
+              "desc_input_values" : "Valeurs d'entrée décroissantes",
+              "asc_input_addresses" : "Adresses d'entrée croissantes",
+              "desc_input_addresses" : "Adresses d'entrée décroissantes",
+              "asc_input_timestamps" : "Horodatages d'entrée croissants",
+              "desc_input_timestamps" : "Horodatages d'entrée décroissants",
+              "asc_output_values_except_first" : "Valeurs de sortie croissantes sauf la première",
+              "asc_output_values_except_last" : "Valeurs de sortie croissantes sauf la dernière",
+              "asc_output_addresses_except_first" : "Adresses de sortie croissantes sauf la première",
+              "asc_output_addresses_except_last" : "Adresses de sortie croissantes sauf la dernière",
+              "desc_output_values_except_first" : "Valeurs de sortie décroissantes sauf la première",
+              "desc_output_values_except_last" : "Valeurs de sortie décroissantes sauf la dernière",
+              "desc_output_addresses_except_last" : "Adresses de sortie décroissantes sauf la dernière",
+              "desc_output_addresses_except_first" : "Adresses de sortie décroissantes sauf la première",
+              "simple_reuse_1-2" : "Réutilisation de l'adresse",
+              "simple_reuse_N-2" : "Réutilisation de l'adresse",
+              "simple_reuse_1-N" : "Réutilisation de l'adresse",
+              "simple_reuse_same_address_in_inputs" : "Même adresse dans les entrées",
+              "sweep_1-1" : "Balayer (1-1)",
+              "sweep_1-1_to_another_type" : "Balayer vers un autre type (1-1)",
+              "sweep_N-1" : "Balayer",
+              "sweep_N-1_to_another_type" : "Balayer vers un autre type",
+              "discrepancy_unnecessary_inputs" : "Écart : entrée inutile",
+              "discrepancy_various_input_types" : "Écart : différents types d'entrée",
+              "discrepancy_script_types_and_round_value" : "Écart entre les types de script et la valeur d'arrondi",
+              "discrepancy_script_types_and_recipient_by_value" : "Écart entre les types de script et le destinataire par valeur",
+              "discrepancy_round_value_and_recipient_by_value" : "Écart entre la valeur du tour et le destinataire en valeur",
+              "discrepancy_p2sh_various_input_types" : "Écart : divers types d'entrées P2SH",
+              "discrepancy_p2wsh_various_input_types" : "Écart : divers types d'entrées P2WSH",
+              "discrepancy_same_address_in_outputs" : "Écart : doublons d'adresse de sortie",
+              "discrepancy_no_output_of_the_same_type_as_inputs" : "Écart : pas de sortie du même type que les entrées",
+              "rare_fingerprint" : "Empreinte rare"
+            },
+            "heuristic_descriptions" : {
+              "inputs" : "Sauf s'il s'agit d'une transaction CoinJoin, il est prudent de supposer que toutes les adresses d'entrée appartiennent à une seule personne",
+              "script_types" : "Si toutes les entrées ont le même type et qu'une seule des sorties n'est pas du même type —  cette sortie peut être considérée comme le destinataire",
+              "p2sh_types" : "Si toutes les entrées sont m de n multisig P2SH, et toutes les sorties sont multisig P2SH, mais que l'une des sorties a une autre structure m de n — cette sortie peut être considérée comme le destinataire",
+              "p2wsh_types" : "Si toutes les entrées sont m de n multisig P2WSH, et toutes les sorties sont multisig P2WSH, mais que l'une des sorties a une autre structure m de n — cette sortie peut être considérée comme le destinataire",
+              "round_value" : "Si l'une des sorties a une valeur arrondie (par exemple 1 BTC exactement) — cette sortie peut être considérée comme le destinataire",
+              "recipient_by_value" : "Si le destinataire est la plus petite sortie, il ne sert à rien d'avoir certaines des entrées",
+              "t1-2_bigger_value_25" : "L'une des deux sorties est 25 fois plus grande que l'autre, ce qui signifie que c'est potentiellement la sortie de changement",
+              "t1-2_bigger_value_100" : "L'une des deux sorties est 100 fois plus grande que l'autre, ce qui signifie que c'est potentiellement la sortie de changement",
+              "t1-2_bigger_value_250" : "L'une des deux sorties est 250 fois plus grande que l'autre, ce qui signifie que c'est potentiellement la sortie de changement",
+              "t1-2_bigger_value_1000" : "L'une des deux sorties est 1000 fois plus grande que l'autre, ce qui signifie que c'est potentiellement la sortie de changement",
+              "coinbase_known" : "Le destinataire est le mineur connu",
+              "coinbase_unknown" : "Le destinataire est le mineur inconnu",
+              "coinjoin" : "Il s'agit d'une transaction CoinJoin. Cela annule toutes les autres heuristiques.",
+              "round_fee" : "La transaction a un montant de frais arrondi, l'expéditeur utilise probablement un logiciel spécifique",
+              "asc_output_values" : "Pour les transactions avec plus de 5 sorties — elles sont classées par valeur croissante — cela peut être dû à l'utilisation d'un logiciel spécifique",
+              "desc_output_values" : "Pour les transactions avec plus de 5 sorties — elles sont classées par valeur décroissante —  cela peut être dû à l'utilisation d'un logiciel spécifique",
+              "asc_output_addresses" : "Pour les transactions avec plus de 5 sorties — elles sont triées par adresses dans l'ordre alphabétique — cela peut être dû à l'utilisation d'un logiciel spécifique",
+              "desc_output_addresses" : "Pour les transactions avec plus de 5 sorties — elles sont triées par adresses dans l'ordre alphabétique — cela peut être dû à l'utilisation d'un logiciel spécifique",
+              "asc_input_values" : "Pour les transactions avec plus de 5 entrées — elles sont classées par valeur croissante — cela peut être dû à l'utilisation d'un logiciel spécifique",
+              "desc_input_values" : "Pour les transactions avec plus de 5 entrées — elles sont classées par valeur décroissante — cela peut être dû à l'utilisation d'un logiciel spécifique",
+              "asc_input_addresses" : "Pour les transactions avec plus de 5 entrées — ils sont classés par adresses dans l'ordre alphabétique — cela peut être dû à l'utilisation d'un logiciel spécifique",
+              "desc_input_addresses" : "Pour les transactions avec plus de 5 entrées — ils sont classés par adresses dans l'ordre alphabétique — cela peut être dû à l'utilisation d'un logiciel spécifique",
+              "asc_input_timestamps" : "Pour les transactions avec plus de 5 entrées —  elles sont classées par âge —  cela peut être dû à l'utilisation d'un logiciel spécifique",
+              "desc_input_timestamps" : "Pour les transactions avec plus de 5 entrées —  elles sont classées par âge —  cela peut être dû à l'utilisation d'un logiciel spécifique",
+              "asc_output_values_except_first" : "Toutes les sorties sont triées par valeur croissante à l'exception de la première, ce qui peut signifier que la première sortie est l'adresse de changement.",
+              "asc_output_values_except_last" : "Toutes les sorties sont triées par valeur croissante à l'exception de la dernière, ce qui peut signifier que la première sortie est l'adresse de changement.",
+              "asc_output_addresses_except_first" : "Toutes les sorties sont triées par adresses dans l'ordre alphabétique sauf pour la première, ce qui peut signifier que la première sortie est l'adresse de changement.",
+              "asc_output_addresses_except_last" : "Toutes les sorties sont triées par adresses dans l'ordre alphabétique à l'exception de la dernière, ce qui peut signifier que la première sortie est l'adresse de changement.",
+              "desc_output_values_except_first" : "Toutes les sorties sont triées par valeur décroissante sauf la première, cela peut signifier que la première sortie est l'adresse de changement\nToutes les sorties sont triées par valeur décroissante sauf la première, cela peut signifier que la première sortie est l'adresse de changement Toutes les sorties sont triées par valeur décroissante sauf pour la première, cela peut signifier que la première sortie est l'adresse de changement\n",
+              "desc_output_values_except_last" : "Toutes les sorties sont triées par valeur décroissante sauf la dernière, cela peut signifier que la dernière sortie est l'adresse de changement",
+              "desc_output_addresses_except_last" : "Toutes les sorties sont triées par adresse alphabétique décroissante sauf la dernière, cela peut signifier que la dernière sortie est l'adresse de changement",
+              "desc_output_addresses_except_first" : "Toutes les sorties sont triées par adresse alphabétique décroissante sauf pour la première, cela peut signifier que la première sortie est l'adresse de changement",
+              "simple_reuse_1-2" : "L'expéditeur utilise la même adresse pour la réception et la modification",
+              "simple_reuse_N-2" : "L'expéditeur utilise la même adresse pour la réception et la modification",
+              "simple_reuse_1-N" : "L'expéditeur (probablement un échange) utilise la même adresse pour la réception et pour la modification",
+              "simple_reuse_same_address_in_inputs" : "Il y a plusieurs occurrences de la même adresse dans les entrées",
+              "sweep_1-1" : "L'expéditeur utilise l'option \"tout envoyer\" pour payer quelqu'un (par exemple, une plateforme d'échange) ou simplement déplacer les fonds vers un autre portefeuille (1 entrée)",
+              "sweep_1-1_to_another_type" : "L'expéditeur utilise l'option \"tout envoyer\" pour payer quelqu'un ou transférer les fonds vers un nouveau type de portefeuille (1 entrée)",
+              "sweep_N-1" : "L'expéditeur utilise l'option \"tout envoyer\" pour payer quelqu'un (par exemple, une plateforme d'échange) ou simplement transférer les fonds vers un autre portefeuille",
+              "sweep_N-1_to_another_type" : "L'expéditeur utilise l'option \"tout envoyer\" pour payer quelqu'un (par exemple, une plateforme d'échange) ou simplement transférer les fonds vers un autre portefeuille d'un autre type que les adresses initiales",
+              "discrepancy_unnecessary_inputs" : "La plus petite entrée n'est pas nécessaire, car quelle que soit la sortie est le destinataire, il n'est pas nécessaire d'inclure cette entrée",
+              "discrepancy_various_input_types" : "Les entrées sont de types différents. Cela signifie que l'expéditeur utilise probablement le logiciel permettant de créer le même type d'adresse pour le changement que le destinataire, en essayant de contourner l'heuristique script_types",
+              "discrepancy_script_types_and_round_value" : "Les heuristiques script_types et round_value donnent des résultats différents",
+              "discrepancy_script_types_and_recipient_by_value" : "Les heuristiques script_types et destinataire par valeur donnent des résultats différents",
+              "discrepancy_round_value_and_recipient_by_value" : "Les heuristiques round_value et destinataire par valeur donnent des résultats différents",
+              "discrepancy_p2sh_various_input_types" : "Les types d'entrée P2SH sont différents (par exemple, l'un est multisig 2-sur-2 et l'autre est 2-sur-3)",
+              "discrepancy_p2wsh_various_input_types" : "Les types d'entrée P2WSH sont différents (par exemple, l'un est multisig 2-sur-2 et l'autre est 2-sur-3)",
+              "discrepancy_same_address_in_outputs" : "Il y a des sorties avec la même adresse — cela n'a aucun sens économique",
+              "discrepancy_no_output_of_the_same_type_as_inputs" : "L'expéditeur utilise probablement un logiciel générant le même type d'adresse de modification que l'adresse du destinataire.",
+              "rare_fingerprint" : "Cette transaction a des caractéristiques techniques assez uniques"
+            },
+            "transaction_types" : {
+              "CB" : "Transaction Coinbase",
+              "N1" : "Transaction avec une seule sortie (soit un balayage vers une autre adresse par le même propriétaire, soit un transfert utilisant une option \"envoyer tout ce que j'ai\")",
+              "N2" : "Transaction avec 2 sorties — la plus courante dans les portefeuilles — où l'une des sorties est le destinataire et l'autre est l'adresse de changement",
+              "NN" : "Transaction avec plus de 2 sorties — la plus courante dans les échanges et les services qui utilisent le traitement par lots des paiements"
+            },
+            "highlight_clusterized" : "Mettre en surbrillance les adresses de l'expéditeur (y compris les modifications) et l'adresse du destinataire",
+            "transaction_type" : "Type",
+            "is_finalized_description" : "Indique si la transaction a le score final (toutes les sorties sont dépensées)",
+            "clusterized_description" : "Adresses pouvant appartenir à une entité en fonction des heuristiques applicables",
+            "privacy_score" : {
+              "title" : "Score de confidentialité",
+              "high" : "Haut",
+              "moderate" : "Modéré",
+              "low" : "Bas"
+            },
+            "fingerprint" : "Empreinte de transaction",
+            "info" : {
+              "title" : "Qu'est-ce ?",
+              "text" : "<p>Alors que Bitcoin est considéré comme un système axé sur la confidentialité, la blockchain est ouverte à être analysée par n'importe qui.</p><p>Le Privacy-o-meter de Blockchair montre si votre transaction est sensible à certaines des heuristiques utilisées par de nombreux outils de traçage de transaction. </p><p>Plus le score est haut, plus il y a de chances qu'ils ne puissent extraire rien d'utile. Un score faible signifie qu'il est probablement trop facile, par exemple, de distinguer l'adresse de changement de l'adresse du destinataire.</p>"
+            },
+            "heuristics" : "Indicateurs",
+            "lock_time" : {
+              "rare" : "Rare",
+              "block_id" : "Hauteur de bloc",
+              "big_value" : "Grande valeur",
+              "timestamp" : "Timestamp"
+            },
+            "legend" : {
+              "sender" : "Adresses d'expédition",
+              "recipient" : "Adresse de réception"
+            },
+            "none" : "Aucune",
+            "read_doc" : "Lire la documentation"
+          }
         },
         "address" : {
           "description" : "Voir l'adresse Bitcoin (BTC) {address}, son solde et ses transactions",
@@ -1338,7 +1495,8 @@
           }
         },
         "address" : {
-          "description" : "Voir l'adresse Ethereum (ETH) ({address}) , son solde et ses transactions",
+          "description" : "Voir l'adresse (ETH) {address}, son solde et ses transactions",
+          "description_contract" : "Voir le contrat (ETH) {address}, son solde et ses transactions",
           "type" : "Type",
           "receiving" : "Réception : {receiving_calls_link}",
           "spending" : "Dépense : {spending_calls_link}",
@@ -1384,6 +1542,7 @@
           "last_ledger_sequence" : "Dernière séquence du registre",
           "source_tag" : "Source du tag",
           "transaction_result" : "Résultat",
+          "transaction_status" : "Statut",
           "type" : {
             "caption" : "Type de données",
             "clear_flag" : "Supprimer l'indicateur",
@@ -1642,7 +1801,113 @@
         }
       },
       "tezos" : {
-        "operations" : "Opérations"
+        "operations" : "Opérations :",
+        "endorsement" : "Approbation",
+        "delegation" : "Délégation",
+        "reveal" : "Révéler",
+        "bulk_transaction" : "Transaction groupée",
+        "block" : {
+          "baker" : "Baker",
+          "cycle" : "Cycle",
+          "level_in_cycle" : "Niveau du cycle",
+          "solvetime" : "Temps de résolution",
+          "fitness" : "Aptitude",
+          "transaction_volume" : "Volume de transactions",
+          "baker_reward" : "Récompense du bloc",
+          "baker_fees" : "Frais du Baker",
+          "burned" : "Brûlés",
+          "activated_supply" : "Alimentation activée",
+          "accounts" : "Comptes nouveaux / financés / compensés",
+          "token_days" : "Token days",
+          "days_destroyed" : "Token days détruits",
+          "priority" : "Priorité",
+          "is_cycle_snapshot" : "Est un instantané du cycle",
+          "predecessor" : "Prédécesseur",
+          "successor" : "Successeur",
+          "block_endorsements" : "Recommandations du bloc",
+          "endorsements" : "Recommandations",
+          "delegations" : "Délégations",
+          "reveals" : "Révèle",
+          "block_operations" : "Opérations du bloc",
+          "description" : "Bloc Tezos: {height}, hash: {hash} - Explorateur Tezos"
+        },
+        "operation" : {
+          "amount_reward" : "Volume / Récompense",
+          "title" : "Opération",
+          "general_info" : "Opération",
+          "volume" : "Volume",
+          "volume_total" : "Volume total",
+          "reward" : "Récompense",
+          "deposit" : "Dépôt"
+        },
+        "account" : {
+          "delegated_balance" : "Solde délégué",
+          "spendable_balance" : "Solde dépensable",
+          "total_delegations" : "Délégations totales",
+          "active_delegations" : "Délégations actives",
+          "rolls_owned" : "Rouleaux possédés",
+          "rank" : "Rang",
+          "operations" : "Opérations",
+          "title" : "Baker"
+        }
+      },
+      "eos" : {
+        "card" : {
+          "irreversible_block" : "Bloc irréversible :",
+          "ram_allocated" : "RAM allouée :",
+          "eos_staked" : "EOS staké :",
+          "latest_block_producer" : "Dernier producteur :"
+        },
+        "homepage" : {
+          "irreversible_block" : "Bloc irréversible",
+          "network_stats" : "Statistiques du réseau"
+        },
+        "updated_tooltip" : "Dernière mise à jour",
+        "account" : {
+          "account_name" : "Nom du compte",
+          "liquid_balance" : "Solde liquide",
+          "head_block_num" : "Bloc de tête",
+          "head_block_time" : "Temps du bloc de tête",
+          "privileged" : "Est privilégié",
+          "net_usage" : "Utilisation du réseau",
+          "cpu_usage" : "Utilisation du processeur",
+          "ram_usage" : "Utilisation de la RAM",
+          "kb" : "kB",
+          "created" : "Créé",
+          "staked_tokens" : "Jetons stakés",
+          "cpu_staked" : "CPU staké",
+          "net_staked" : "Réseau staké",
+          "others_staked" : "Staké par d'autres",
+          "total_rex" : "REX total",
+          "account_actions" : "Actions du compte",
+          "permissions" : "Autorisations du compte (clés)",
+          "accounts" : "Comptes",
+          "title" : "Producteur (compte)",
+          "description" : "Vérifiez le solde du compte {account} producteur EOS et ses transactions"
+        },
+        "transaction" : {
+          "action" : "Action",
+          "actions" : "Actions",
+          "expiration" : "Expiration",
+          "expired" : "Expiré",
+          "quantity_actions" : "Quantité d'actions",
+          "show_expired" : "Montrer les transactions expirées",
+          "volume_actions" : "Volume des actions",
+          "last_irreversible_block" : "Dernier bloc irréversible",
+          "contract" : "Contrat",
+          "authorization" : "Autorisation",
+          "title" : "Opération (Transaction)",
+          "description" : "Vérifiez les détails de l'opération {hash} EOS"
+        },
+        "block" : {
+          "producer" : "Producteur",
+          "producer_signature" : "Signature du producteur",
+          "schedule_version" : "Planifier la version",
+          "transaction_mroot" : "Transaction racine de merkle",
+          "action_mroot" : "Action racine de merkle",
+          "confirmed" : "Confirmé",
+          "description" : "Bloc EOS : {height}, hash: {hash} - Explorateur EOS"
+        }
       }
     },
     "protocol" : {
@@ -1693,6 +1958,7 @@
               "sender" : "Expéditeur",
               "recipient" : "Bénéficiaire",
               "valid" : "Est valide?",
+              "valid_unknown" : "Inconnu. Attendez une confirmation !",
               "amount" : "Montant"
             }
           },
@@ -1700,6 +1966,7 @@
             "property" : {
               "navigation" : "{name} (#{id})",
               "description" : "{name} (#{id}) propriété dans le protocole {ecosystem} Omni Layer",
+              "danger_fraud" : "Attention ! Ce n'est pas le vrai token {name} ! Attention à la fraude !",
               "id" : {
                 "short" : "Id",
                 "full" : "Id de la propriété"
@@ -1718,6 +1985,7 @@
         "general" : {
           "caption" : "Statistiques",
           "circulation" : "Total en circulation :",
+          "circulation_limit" : "Limite du stock en circulation :",
           "difficulty" : "Difficulté :",
           "blockchain_size" : {
             "caption" : "Taille de la blockchain :",
@@ -1739,7 +2007,8 @@
           },
           "tps" : "Transactions par seconde :",
           "average_transaction_fee" : "Frais de transaction moyen :",
-          "median_transaction_fee" : "Frais de transaction médian :"
+          "median_transaction_fee" : "Frais de transaction médian :",
+          "inflation_24h" : "Inflation sur 24h :"
         },
         "mempool" : {
           "caption" : "Mempool"
@@ -1907,6 +2176,10 @@
         "title" : "Explorateur Testnet Bitcoin",
         "description" : "Chercher les blocs du Testnet Bitcoin (TBTC), transactions, adresses, soldes, noeuds, données et protocoles OP_RETURN, statistiques et graphiques de la blockchain"
       },
+      "ethereum/testnet" : {
+        "title" : "Explorateur Ethereum Testnet",
+        "description" : "Chercher les blocs Ethereum Testnet (ETH), transactions, adresses, smart contracts, soldes et statistiques de la blockchain"
+      },
       "bitcoin-cash" : {
         "title" : "Explorateur Bitcoin Cash",
         "description" : "Chercher les blocs Bitcoin Cash (BCH), transactions, adresses, soldes, noeuds, données et protocoles OP_RETURN, statistiques et graphiques de la blockchain",
@@ -1971,7 +2244,16 @@
         "exchanges" : "Plateformes d'échanges",
         "mining_pools" : "Mining pools",
         "explorers" : "Explorateurs",
-        "crypto_processors" : "Processeurs"
+        "crypto_processors" : "Processeurs",
+        "dapps" : "dApps"
+      },
+      "tezos" : {
+        "title" : "Explorateur Tezos",
+        "description" : "Rechercher des blocs Tezos (XTZ), des transactions, des comptes (bakers) et des soldes, des statistiques blockchain"
+      },
+      "eos" : {
+        "title" : "Explorateur EOS",
+        "description" : "Recherchez les blocs EOS, les transactions, les comptes (producteurs) et les soldes, les statistiques blockchain, le bloc irréversible"
       }
     },
     "bitcoin" : {
@@ -2365,7 +2647,7 @@
       "email" : "Email : {email}",
       "twitter" : "Twitter : {twitter_link}",
       "facebook" : "Facebook : {facebook_link}",
-      "telegram" : "Telegram chat : {telegram_link}"
+      "telegram" : "Telegram : {telegram_link}"
     },
     "partners" : {
       "caption" : "Nos partenaires et amis",
@@ -2474,7 +2756,9 @@
       "dd" : "Jours détruits",
       "usd" : "USD",
       "percentage" : "Pourcentage",
-      "gwei" : "GWei"
+      "gwei" : "GWei",
+      "microseconds" : "µs",
+      "miliseconds" : "ms"
     },
     "content" : {
       "see_more" : "Voir {count} graphiques en plus "
@@ -2575,6 +2859,10 @@
       "title" : "Documentation de l'API Blockchair",
       "description" : "API pour les développeurs donnant accès aux données de 12 blockchains (BTC, ETH, BCH, TON, BSV, XRP, XLM, ERC tokens etc)",
       "navigation" : "Documentation"
+    },
+    "plans" : {
+      "title" : "Tarifs",
+      "navigation" : "Tarifs"
     }
   },
   "pdf" : {
@@ -2615,7 +2903,17 @@
       "loading" : "Chargement...",
       "progress" : "Je recherche le plus rapidement possible... ({progress}%)"
     },
-    "genesis" : "💰 Genesis"
+    "genesis" : "💰 Genesis",
+    "numbers" : {
+      "billion" : {
+        "short" : "Mrd",
+        "full" : "Milliards"
+      },
+      "million" : {
+        "short" : "M",
+        "full" : "Millions"
+      }
+    }
   },
   "footer" : {
     "explorers" : "Explorateurs",
@@ -2647,6 +2945,7 @@
     "referral_program" : "Programme de parrainage",
     "advertise" : "Faire votre publicité avec nous",
     "whitepaper" : "Whitepaper",
+    "bugbounty" : "Programme bug bounty",
     "tools" : {
       "title" : "Outils",
       "release-monitor" : "Moniteur de versions",
@@ -2689,7 +2988,8 @@
   },
   "referral_program" : {
     "title" : "Programme de parrainage",
-    "navigation" : "Programme de parrainage"},
+    "navigation" : "Programme de parrainage",
+    "navigation_howto" : "Comment"},
   "tools" : {
     "title" : "Outils",
     "release-monitor" : {
@@ -2728,23 +3028,44 @@
     "disabled_functions" : "Cette fonctionnalité est disponible avec JavaScript activé uniquement",
     "extended_functions" : "Fonctionnalité étendue disponible uniquement avec JavaScript activé"
   },
-  "news": {
-    "title": "Actualités", 
-    "description": "Une agrégation d'actualités sur la blockchain et la crypto-monnaie des principaux médias",
-    "most_recent": "Plus récent",
-    "more_news": "Plus d'actualités",
-    "homepage_link": "Plus",
-    "shortcuts": {
-      "title": "Raccourcis clavier",
-      "close": "Fermer",
-      "next": "Suivant",
-      "prev": "Précédent"
+  "news" : {
+    "title" : "Blockchair News",
+    "description" : "Une agrégation d'actualités sur la blockchain et la crypto-monnaie des principaux médias",
+    "menu_description" : "Tenez-vous au courant des dernières nouvelles crypto, en lien avec l'évolution du prix BTC",
+    "most_recent" : "Plus récent",
+    "more_news" : "Plus d'actualités",
+    "homepage_link" : "Plus",
+    "shortcuts" : {
+      "title" : "Raccourcis clavier",
+      "close" : "Fermer",
+      "next" : "Suivant",
+      "prev" : "Précédent"
     },
-    "unable_to_load": "Impossible de charger l'article",
-    "try_to_read_on": "Essayez de le lire sur",
-    "read_on": "Lire sur",
-    "yesterday": "Hier",
-    "share_title": "Partager cet article",
-    "share": "Partager"
-  }
+    "unable_to_load" : "Impossible de charger l'article",
+    "try_to_read_on" : "Essayez de le lire sur",
+    "read_on" : "Lire sur",
+    "yesterday" : "Hier",
+    "share_title" : "Partager cet article",
+    "share" : "Partager",
+    "previous_news" : "Nouvelles précédentes",
+    "join_telegram" : "Abonnez-vous aux nouvelles sur Telegram"
+  },
+  "donut" : {
+    "title" : "Blockchair Donut",
+    "title_navigation" : "Blockchair Donut",
+    "menu_description" : "Faites un don de crypto à des organisations à but non lucratif et à des projets open source géniaux",
+    "description" : "Faites un don de crypto, là où ça compte | Plateforme de collecte de fonds pour les organisations à but non lucratif et les projets open source recevant des dons en crypto-monnaies",
+    "meta" : {
+      "title" : "Blockchair Donut",
+      "description" : "Faites un don de crypto là où ça compte | Plateforme de collecte de fonds pour les organisations à but non lucratif et les projets open source recevant des dons en crypto-monnaies"
+    },
+    "homepage" : {
+      "cover_title" : "Faites un don de crypto à une bonne cause",
+      "cover_text" : "Ayez un impact positif sur le monde et aidez à la croissance de l'écosystème crypto. Blockchair Donut présente des histoires d'organisations à but non lucratif et de projets open source qui s'efforcent de rendre le monde meilleur."
+    },
+    "project" : {
+      "title" : "{title} - Faites un don de crypto sur Blockchair Donut"}
+  },
+  "bugbounty" : {
+    "title" : "Programme bug bounty"}
 }
