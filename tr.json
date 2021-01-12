@@ -1,0 +1,3071 @@
+{
+  "title" : "Blockchair",
+  "subtitle" : "Blokzincir Gezgini",
+  "description" : "BTC, ETH, XRP, XLM, BCH, LTC, DASH, BSV, DOGE, GRS ve TON için işlem ve adres aramaya, sıralamaya ve filtrelemeye olanak sağlayan en güçlü API ve blok gezginidir.",
+  "chain" : {
+    "bitcoin" : "Bitcoin",
+    "bitcoin/testnet" : "Bitcoin Testnet",
+    "bitcoin-cash" : "Bitcoin Cash",
+    "bitcoin-sv" : "Bitcoin SV",
+    "dogecoin" : "Dogecoin",
+    "dash" : "Dash",
+    "litecoin" : "Litecoin",
+    "ethereum" : "Ethereum",
+    "ethereum/testnet" : "Ethereum Testnet",
+    "ripple" : "Ripple",
+    "groestlcoin" : "Groestlcoin",
+    "stellar" : "Stellar",
+    "ton" : "Telegram Open Network",
+    "monero" : "Monero",
+    "cardano" : "Cardano",
+    "zcash" : "Zcash",
+    "mixin" : "Mixin",
+    "tezos" : "Tezos",
+    "eos" : "EOS"
+  },
+  "ticker" : {
+    "bitcoin" : "BTC",
+    "bitcoin/testnet" : "TBTC",
+    "bitcoin-cash" : "BCH",
+    "bitcoin-sv" : "BSV",
+    "dogecoin" : "DOGE",
+    "dash" : "DASH",
+    "litecoin" : "LTC",
+    "ethereum" : "ETH",
+    "ethereum/testnet" : "TETH",
+    "ripple" : "XRP",
+    "usd" : "USD",
+    "groestlcoin" : "GRS",
+    "stellar" : "XLM",
+    "ton" : "GRAM",
+    "monero" : "XMR",
+    "cardano" : "ADA",
+    "zcash" : "ZEC",
+    "mixin" : "XIN",
+    "tezos" : "XTZ",
+    "eos" : "EOS"
+  },
+  "homepage" : {
+    "title" : "Blockchair — Evrensel blokzincir gezgini ve arama motoru",
+    "portfolio_widget" : {
+      "my_portfolio" : "Portföyüm: {total_profit}"
+    },
+    "screen1" : {
+      "placehodler" : "{count} blokzincirinde arama yapın...",
+      "qrcode" : {
+        "title" : "Bir adresin QR-kodunu tarayın",
+        "modal" : {
+          "title" : "QR-kodu tara"
+        }
+      },
+      "description" : "Blockchair {blockchains} için en özel arama motorudur.",
+      "description_line2" : "{transactions}, {addresses}, {blocks} ve hatta {embedded} arayabilirsiniz.",
+      "scope" : {
+        "transactions" : "işlemler",
+        "addresses" : "adresler",
+        "blocks" : "bloklar",
+        "embedded" : "gömülü metin verisi",
+        "tooltip" : "Arama kutusuna rastgele bir örnek yapıştırmak için tıklayın"
+      }
+    },
+    "screen2" : {
+      "explore_blockchains" : "Blokzincirleri keşfet",
+      "description" : "Filtreleme ve sıralama kullanarak blokzincir veri analizinin detaylarına dalın. Kendi veri kümelerinizi oluşturun ve aktarın. Veritabanı dökümleri de mevcuttur.",
+      "examples" : {
+        "description" : "Blockchair'de ne bulabileceğinizi örneklerle deneyin:",
+        "show_examples" : "Örnekleri göster",
+        "links" : "{btc_largest_txs_link} {etc_contract_creations_link} {bch_biggest_blocks_link}.",
+        "btc_largest_txs" : "Bitcoin'deki en büyük işlemler",
+        "etc_contract_creations" : "Ethereum'da oluşturulan sözleşmeler",
+        "bch_biggest_blocks" : "En büyük Bitcoin Cash blokları"
+      },
+      "card" : {
+        "bitcoin" : {
+          "blocks" : "Bloklar:",
+          "blocks_24h" : "24s bloklar:",
+          "transactions" : "İşlemler:",
+          "outputs" : "Çıktılar:",
+          "mempool_txs" : "Onaylanmamış işlemler:",
+          "mempool_tps" : "Saniye başına işlem:",
+          "best_block" : "Son blok:",
+          "hashrate" : "Hashrate ({algorithm}):",
+          "footer_link" : "{chain} gezginine git"
+        },
+        "ethereum" : {
+          "calls" : "Çağrılar:"
+        },
+        "ripple" : {
+          "ledgers" : "Defterler:",
+          "transactions_24h" : "24s işlemler:",
+          "circulation" : "Sirkülasyon:",
+          "best_ledger" : "En son defter:",
+          "volume_24h" : "24s hacim:"
+        },
+        "stellar" : {
+          "operations_24h" : "24s operasyonlar:",
+          "failed_transactions_24h" : "24s başarısız işlemler:"
+        },
+        "ton" : {
+          "first_block_time" : "Mevcut test ağının başlatıldığı tarih:"
+        },
+        "services" : {
+          "charts" : "Grafikler",
+          "nodes" : "Düğümler",
+          "omni" : "Omni",
+          "compare" : "Karşılaştır",
+          "feed" : "Akış",
+          "stats" : "İstatistikler",
+          "uncles" : "Uncle bloklar",
+          "erc-20" : "ERC-20"
+        },
+        "coming_soon" : "Çok yakında",
+        "mixin" : {
+          "latest_snapshot" : "Son anlık kopya"
+        }
+      },
+      "erc-20" : {
+        "tokens" : "Tokenler:",
+        "explore_all" : "Tüm tokenleri keşfet"
+      }
+    },
+    "screen3" : {
+      "features" : "Özelliklerimizi keşfet",
+      "description" : "Kripto verileriyle çalışmak için harika araçlar: Blockzincir verilerini almak, Grafiklere bakarak trendleri ve aralarındaki ilişkileri keşfetmek, Piyasalar & Portföy ile piyasa trendlerini analiz etmek, işlemleri yayınlamak, geçmiş veri dökümlerini indirmek ve çok daha fazlası için Blockchair API kullanın.",
+      "api" : {
+        "title" : "Profesyonel API",
+        "description" : "Blockchair API ile blokzincir verilerine erişin",
+        "link" : "API hakkında daha fazlası"
+      },
+      "charts" : {
+        "title" : "Grafikler",
+        "chart_name" : "Son 3 aylık Bitcoin fiyatı ",
+        "description" : "120'den fazla grafiğe bakarak en son veri trendlerine genel bir bakış açısı elde edin",
+        "link" : "Grafiklere git"
+      },
+      "markets" : {
+        "title" : "Piyasalar & Portföy",
+        "description" : "En iyi 1000 kripto varlığını görmek ve portföyünüzü oluşturmaya başlamak için tıklayın",
+        "top1000" : "En iyi 1000",
+        "portfolio" : "Portföyüm",
+        "table" : {
+          "name" : "Ad",
+          "price" : "Fiyat",
+          "price_change_24h" : "24 s.",
+          "mcap" : "PDeğeri.",
+          "dominance" : "Piyasa hakimiyeti"
+        },
+        "link" : "Portföyünüzü oluşturun"
+      }
+    },
+    "halving_widget" : {
+      "halving" : "Yarılanma {value}"
+    }
+  },
+  "search" : {
+    "title" : "Blockchair Arama",
+    "description" : "BTC, ETH, BCH, LTC, BSV ve DOGE blokzincirlerinde {query} araması yapın",
+    "status" : {
+      "empty_query" : "Boş sorgu",
+      "empty_request" : "Üzgünüz, sadece İngilizce ve Rusça aramayı destekliyoruz",
+      "server_error" : "Hay aksi! {error}",
+      "showing" : {
+        "no_results" : "Sonuç yok ({time} saniye)",
+        "only_result" : "Tek sonuç gösteriliyor ({time} saniye)",
+        "many_results" : "{total} sonuçtan {showing} tanesi gösteriliyor ({time} saniye)"
+      }
+    },
+    "results" : {
+      "matches" : {
+        "blocks" : {
+          "title" : "Tüm {chain} bloklarını keşfedin",
+          "hint" : "Arama motorumuzu kullanarak {chain} bloklarını 30'dan fazla parametreye göre filtreleyebilirsiniz"
+        },
+        "transactions" : {
+          "title" : "Tüm {chain} işlemlerini keşfedin",
+          "hint" : "Arama motorumuzu kullanarak {chain} işlemlerini 30'dan fazla parametreye göre filtreleyebilirsiniz"
+        },
+        "calls" : {
+          "title" : "Tüm Ethereum çağrılarını keşfedin",
+          "hint" : "Arama motorumuzu kullanarak Ethereum çağrılarını 30'dan fazla parametreye göre filtreleyebilirsiniz"
+        },
+        "uncles" : {
+          "title" : "Tüm Ethereum uncle bloklarını keşfedin",
+          "hint" : "Arama motorumuzu kullanarak Ethereum uncle bloklarını 30'dan fazla parametreye göre filtreleyebilirsiniz"
+        },
+        "mempool" : {
+          "title" : "Tüm {chain} bellek havuzunu keşfedin",
+          "hint" : "Arama motorumuzu kullanarak {chain} bellek havuzu işlemlerini 30'dan fazla parametreye göre filtreleyebilirsiniz"
+        },
+        "unknown_tnx" : {
+          "title" : "Bilinmeyen işlem: {query}",
+          "hint1" : "Bazı borsalar tarafından kullanılan dahili bir işlem kimliği girdiniz (ör. HitBTC, ShapeShift, vb.)",
+          "hint2" : "Bu işlemler blokzincirlerinde saklanmıyor, o yüzden size herhangi bir veri veremiyoruz 😞"
+        }
+      },
+      "coin" : {
+        "price" : "Fiyat: {price} {price_change}",
+        "mcap" : "Piyasa değeri: {cap}"
+      },
+      "bitcoin" : {
+        "coinbase" : {
+          "row" : {
+            "title" : "{chain} blok #{id}",
+            "timestamp" : "Zaman damgası: {time}",
+            "coinbase_data" : "Coinbase verisi: {bin}"
+          }
+        },
+        "outputs" : {
+          "row" : {
+            "title" : "{chain} işlem {hash}",
+            "script_data" : "# {index}. çıktı script verisi: {bin}"
+          }
+        },
+        "address" : {
+          "title" : "{chain} adres {recipient}",
+          "last_seen_receiving" : "Son alış tarihi: {time}",
+          "balance" : "Bakiye: {balance}"
+        },
+        "xpub" : {
+          "title" : "{chain} xpub adres {recipient}"
+        },
+        "block" : {
+          "mined_on" : "Çıkarılma tarihi: {time}",
+          "hash" : "Hash: {hash}"
+        },
+        "transaction" : {
+          "timestamp" : "Zaman damgası: {time}",
+          "included_in_block" : "Eklendiği blok: {block_id}"
+        },
+        "whitepapers" : {
+          "row" : {
+            "size" : "{url} {size} kB"
+          }
+        }
+      },
+      "ethereum" : {
+        "extra_data" : {
+          "row" : {
+            "extra_data" : "Ekstra veri: {bin}"
+          }
+        },
+        "input_data" : {
+          "row" : {
+            "input_data" : "Girdi verisi: {bin}"
+          }
+        },
+        "uncle" : {
+          "title" : "Ethereum uncle {hash}",
+          "parent_block_height" : "Ana blok yüksekliği: {parent_block_id}"
+        },
+        "address" : {
+          "title" : "Ethereum adresi {address}"
+        },
+        "erc_20" : {
+          "transaction_count_30d" : "Geçen ayki işlemler: {transaction_link}"
+        }
+      },
+      "ripple" : {
+        "transaction" : {
+          "account" : "Ripple hesabı: {account}",
+          "type" : "İşlem türü: {type}",
+          "fee" : "Ücret: {fee}"
+        },
+        "account" : {
+          "title" : "Ripple hesabı {account}",
+          "balance" : "Bakiye: {balance}"
+        }
+      },
+      "stellar" : {
+        "transaction" : {
+          "created_at" : "Oluşturulma: {created_at}",
+          "ledger" : "Eklendiği defter: {ledger}",
+          "fee_paid" : "Ödenen ücret: {fee_paid}"
+        },
+        "account" : {
+          "title" : "Stellar hesabı {account}"
+        }
+      },
+      "ton" : {
+        "created_at" : "Oluşturulma: {time}",
+        "workchain" : "Çalışma zinciri: {workchain}",
+        "shard" : "Shard: {shard}"
+      },
+      "mixin" : {
+        "snapshot" : {
+          "title" : "{chain} anlık kopya #{id}"
+        },
+        "round" : {
+          "title" : "{chain} dizi #{id}"
+        }
+      }
+    }
+  },
+  "application" : {
+    "header" : {
+      "menu" : {
+        "caption" : "Menü",
+        "bitcoin" : {
+          "blockchain" : "{chain} Blokzinciri",
+          "layer_2" : "2. Katman",
+          "mempool" : "{chain} Bellek Havuzu",
+          "misc" : "Çeşitli",
+          "object" : {
+            "blocks" : "Bloklar",
+            "transactions" : "İşlemler",
+            "outputs" : "Çıktılar",
+            "addresses" : "Adresler",
+            "omni" : "Omni Layer",
+            "nodes" : "Düğüm gezgini",
+            "testnet" : "Testnet gezgini",
+            "whitepaper" : "Teknik doküman",
+            "snapshots" : "Anlık kopyalar",
+            "rounds" : "Diziler",
+            "graph" : "Grafik",
+            "mintings" : "Para basımları"
+          },
+          "omni" : {
+            "most_used_properties" : "En sık kullanılan özellikler"
+          }
+        },
+        "ethereum" : {
+          "erc-20" : {
+            "homepage" : "ERC-20 gezgini",
+            "tokens" : "ERC-20 tokenler",
+            "transactions" : "ERC-20 işlemleri",
+            "most_used_tokens" : "En sık kullanılan tokenler"
+          },
+          "object" : {
+            "uncles" : "Uncle bloklar",
+            "calls" : "Çağrılar"
+          }
+        },
+        "object" : {
+          "price" : "Fiyat",
+          "charts" : "Grafikler",
+          "broadcast" : "Yayın"
+        },
+        "erc_20_tokens" : "ERC-20 tokenleri",
+        "omni_layer_tokens" : "Omni Layer tokenleri"
+      },
+      "search" : {
+        "desktop" : {
+          "placeholder" : "{Count} blokzincirinde ara ({tickers})"
+        },
+        "mobile" : {
+          "placeholder" : "{Count} blokzincirinde ara"
+        }
+      }
+    },
+    "navigation" : {
+      "mempool" : {
+        "bitcoin" : {
+          "title" : "Bellek Havuzu"
+        },
+        "ethereum" : {
+          "title" : "Onaylanmamış",
+          "hint" : "Bloklar ve işlemler ana veri tabanımıza girene kadar 6 blok bekliyoruz. Onaylanmamış bloklar için ne çağrıları ne de uncle blokları işleme almıyoruz."
+        }
+      },
+      "object" : {
+        "homepage" : "Anasayfa",
+        "blocks" : "Bloklar",
+        "transactions" : "İşlemler",
+        "outputs" : "Çıktılar",
+        "whitepaper" : "Teknik doküman",
+        "price" : "Fiyat",
+        "nodes" : "Düğüm gezgini",
+        "uncles" : "Uncle bloklar",
+        "calls" : "Çağrılar",
+        "omni" : "Omni Layer",
+        "erc-20" : "ERC-20",
+        "charts" : "Grafikler",
+        "addresses" : "Adresler",
+        "snapshots" : "Anlık kopyalar",
+        "rounds" : "Diziler",
+        "mintings" : "Para basımları",
+        "graph" : "Grafik"
+      },
+      "type" : {
+        "bitcoin" : {
+          "testnet" : "Testnet",
+          "block" : "Blok",
+          "transaction" : "İşlem",
+          "address" : "Adres",
+          "xpub" : "Xpub"
+        },
+        "ethereum" : {
+          "uncle" : "Uncle",
+          "address" : "Adres",
+          "contract" : "Sözleşme"
+        },
+        "ripple" : {
+          "ledger" : "Defter",
+          "account" : "Hesap"
+        },
+        "mixin" : {
+          "snapshot" : "Anlık kopya",
+          "node" : "Düğüm",
+          "round" : "Dizi"
+        }
+      },
+      "menu" : {
+        "blockchains" : "Blokzincirler",
+        "bitcoin" : {
+          "blockchain" : "{chain} Blokzinciri",
+          "mempool" : "{chain} Bellek Havuzu",
+          "layer_2" : "2. Katman",
+          "misc" : "Çeşitli"
+        }
+      }
+    },
+    "permalink" : {
+      "caption" : "Kalıcı bağlantı",
+      "tooltip" : "Kalıcı bağlantı sıralamayı, koşulları ve gösterilen sütunların listesini kaydeder. Zaman koşulları olmadıkça veriler değişebilir. Gösterilen sütunların listesini kaydetmeniz gerekmiyorsa, URL'yi adres çubuğundan kopyalayabilirsiniz."
+    },
+    "infinitable" : {
+      "description" : {
+        "bitcoin" : {
+          "blocks" : "Bitcoin (BTC) blokzincirindeki blokları yüksekliğe, ödüle, madenciye ve daha fazlasına göre keşfedin, sıralayın ve filtreleyin",
+          "transactions" : "Bitcoin (BTC) blokzincirindeki işlemleri kimliğe (hash), değere, boyuta, ücrete ve daha fazlasına göre keşfedin, sıralayın ve filtreleyin",
+          "outputs" : "Bitcoin (BTC) blokzincirindeki çıktıları değere, gönderene, alıcıya, adreslere göre keşfedin, sıralayın ve filtreleyin, UTXO setini edinin ve daha fazlasını yapın",
+          "mempool" : {
+            "transactions" : "Bitcoin (BTC) bellek havuzundaki onaylanmamış işlemleri keşfedin",
+            "outputs" : "Bitcoin (BTC) bellek havuzundaki onaylanmamış çıktıları keşfedin"
+          }},
+        "bitcoin/testnet" : {
+          "blocks" : "Bitcoin Testnet (TBTC) blokzincirindeki blokları yükseklik, ödül, madenci ve daha fazlasına göre keşfedin, sıralayın ve filtreleyin",
+          "transactions" : "Bitcoin Testnet (TBTC) blokzincirindeki işlemleri kimliğe (hash), değere, boyuta, ücrete ve daha fazlasına göre keşfedin, sıralayın ve filtreleyin",
+          "outputs" : "Bitcoin Testnet (TBTC) blokzincirindeki çıktıları değere, gönderene, alıcıya, adreslere göre keşfedin, sıralayın ve filtreleyin, UTXO setini edinin ve daha fazlasını yapın",
+          "mempool" : {
+            "transactions" : "Bitcoin Testnet (TBTC) bellek havuzundaki onaylanmamış işlemleri keşfedin",
+            "outputs" : "Bitcoin Testnet (TBTC) bellek havuzundaki onaylanmamış çıktıları keşfedin"
+          }},
+        "bitcoin-cash" : {
+          "blocks" : "Bitcoin Cash (BCH) blokzincirindeki blokları yüksekliğe, ödüle, madenciye ve daha fazlasına göre keşfedin, sıralayın ve filtreleyin",
+          "transactions" : "Bitcoin Cash (BCH) blokzincirindeki işlemleri kimliğe (hash), ücrete, boyuta ve daha fazlasına göre keşfedin, sıralayın ve filtreleyin",
+          "outputs" : "Bitcoin Cash (BCH) blokzincirindeki çıktıları değere, alıcıya (adrese) göre keşfedin, sıralayın ve filtreleyin, UTXO setini edinin ve daha fazlasını yapın",
+          "mempool" : {
+            "transactions" : "Bitcoin Cash (BCH) bellek havuzundaki onaylanmamış işlemleri keşfedin",
+            "outputs" : "Bitcoin Cash (BCH) bellek havuzundaki doğrulanmamış çıktıları keşfedin"
+          }},
+        "bitcoin-sv" : {
+          "blocks" : "Bitcoin SV (BSV) blokzincirindeki blokları yüksekliğe ödüle, madenciye ve daha fazlasına göre keşfedin, sıralayın ve filtreleyin",
+          "transactions" : "Bitcoin SV (BSV) blok zincirindeki işlemleri kimliğe (hash), ücrete, boyuta ve daha fazlasına göre keşfedin, sıralayın ve filtreleyin",
+          "outputs" : "Bitcoin SV (BSV) blokzincirindeki çıktıları değere ve alıcıya (adrese) göre keşfedin, sıralayın ve filtreleyin, UTXO setini edinin ve daha fazlasını yapın",
+          "mempool" : {
+            "transactions" : "Bitcoin SV (BSV) bellek havuzundaki onaylanmamış işlemleri keşfedin",
+            "outputs" : "Bitcoin SV (BSV) bellek havuzundaki onaylanmamış çıktıları keşfedin"
+          }},
+        "dogecoin" : {
+          "blocks" : "Dogecoin (DOGE) blokzincirindeki blokları yüksekliğe, ödüle, madenciye ve daha fazlasına göre keşfedin, sıralayın ve filtreleyin",
+          "transactions" : "Dogecoin (DOGE) blokzincirindeki işlemleri kimliğe (hash), değere, boyuta, ücrete ve daha fazlasına göre keşfedin, sıralayın ve filtreleyin",
+          "outputs" : "Dogecoin (DOGE) blokzincirindeki çıktıları değere, gönderene, alıcıya, adreslere göre keşfedin, sıralayın ve filtreleyin, UTXO setini edinin ve daha fazlasını yapın",
+          "mempool" : {
+            "transactions" : "Dogecoin (DOGE) bellek havuzundaki onaylanmamış işlemleri keşfedin",
+            "outputs" : "Dogecoin (DOGE) bellek havuzundaki onaylanmamış çıktıları keşfedin"
+          }},
+        "dash" : {
+          "blocks" : "Dash (DASH) blokzincirindeki blokları yüksekliğe, ödüle, madenciye ve daha fazlasına göre keşfedin, sıralayın ve filtreleyin",
+          "transactions" : "Dash (DASH) blokzincirindeki işlemleri kimliğe (hash), değere, boyuta, ücrete ve daha fazlasına göre keşfedin, sıralayın ve filtreleyin",
+          "outputs" : "Dash (DASH) blokzincirindeki çıktıları değere, gönderene, alıcıya, adreslere göre keşfedin, sıralayın ve filtreleyin, UTXO setini edinin ve daha fazlasını yapın",
+          "mempool" : {
+            "transactions" : "Dash (DASH) bellek havuzundaki onaylanmamış işlemleri keşfedin",
+            "outputs" : "Dash (DASH) bellek havuzundaki onaylanmamış çıktıları keşfedin"
+          }},
+        "litecoin" : {
+          "blocks" : "Tüm Litecoin (LTC) blokzincirindeki blokları yüksekliğe, ödüle, madenciye ve daha fazlasına göre keşfedin, sıralayın, filtreleyin",
+          "transactions" : "Tüm Litecoin (LTC) blokzincirindeki işlemleri kimliğe (hash), ücrete, boyuta ve daha fazlasına göre keşfedin, sıralayın, filtreleyin",
+          "outputs" : "Tüm Litecoin (LTC) blokzincirindeki çıktıları değere, alıcıya (adres) göre keşfedin, sıralayın, filtreleyin, UTXO setini edinin ve daha fazlasını yapın",
+          "mempool" : {
+            "transactions" : "Litecoin (LTC) bellek havuzundaki işlemleri keşfedin",
+            "outputs" : "Litecoin (LTC) bellek havuzundaki çıktıları keşfedin"
+          }
+        },
+        "groestlcoin" : {
+          "blocks" : "Tüm Groestlcoin (GRS) blokzincirindeki blokları yüksekliğe, ödüle, madenciye ve daha fazlasına göre keşfedin, sıralayın, filtreleyin",
+          "transactions" : "Tüm Groestlcoin (GRS) blokzincirindeki işlemleri kimlik (hash), ücret, boyut ve daha fazlasına göre keşfedin, sıralayın, filtreleyin",
+          "outputs" : "Tüm Groestlcoin (GRS) blokzincirindeki çıktıları değere ve alıcıya (adres) göre keşfedin, sıralayın, filtreleyin, UTXO setini edinin ve daha fazlasını yapın",
+          "mempool" : {
+            "transactions" : "Groestlcoin (GRS) bellek havuzundaki işlemleri keşfedin",
+            "outputs" : "Groestlcoin (GRS) bellek havuzundaki çıktıları keşfedin"
+          }},
+        "ethereum" : {
+          "blocks" : "Ethereum (ETH) blokzincirindeki blokları yükseklik, yakıt, madenci ve daha fazlasına göre keşfedin, sıralayın ve filtreleyin",
+          "uncles" : "Ethereum (ETH) blokzincirindeki uncle blokları yükseklik, ana blok, madenci ve daha fazlasına göre keşfedin, sıralayın ve filtreleyin",
+          "transactions" : "Ethereum (ETH) blokzincirindeki işlemleri ID (hash), değer, gas ve daha fazlasına göre keşfedin, sıralayın ve filtreleyin",
+          "calls" : "Değere, zamana, gönderene, alıcıya ve daha fazlasına göre Ethereum (ETH) blokzincirinden çağrıları (iç transferler) keşfedin, sıralayın ve filtreleyin",
+          "mempool" : {
+            "blocks" : "Ethereum (ETH) blokzincirindeki son 6 bloğu keşfedin",
+            "transactions" : "Ethereum (ETH) bellek havuzundaki doğrulanmamış işlemleri keşfedin"
+          }
+        },
+        "mixin" : {
+          "snapshots" : "Topolojiye (yükseklik) göre Mixin (XIN) blokzincirindeki anlık kopyaları keşfedin ve sıralayın",
+          "mintings" : "Mixin (XIN) çekirdek düğümlerini, basılan paraları (ödülleri) anlık kopyalara göre keşfedin",
+          "nodes" : "Mixin (XIN) kernel düğümlerini keşfedin. Her düğümün 10.000 XIN'i karşılaması gerekir, bu nedenle yaklaşık 50 çekirdek düğümü bulunabilir",
+          "graph" : "Mixin (XIN) DAG'yi keşfedin. PoW ve blok gereksinimlerine gerek kalmadan defter oluşturmak için grafikler kullanılabilir"
+        },
+        "zcash" : {
+          "blocks" : "Zcash (ZEC) blokzincirindeki blokları yüksekliğe, ödüle, madenciye ve daha fazlasına göre keşfedin, sıralayın ve filtreleyin",
+          "transactions" : "Zcash (ZEC) blokzincirindeki işlemleri ID (hash), değer, boyut, ücret ve daha fazlasına göre keşfedin, sıralayın ve filtreleyin",
+          "outputs" : "Zcash (ZEC) blokzincirindeki çıktıları değere, gönderene, alıcıya, adreslere göre keşfedin, sıralayın ve filtreleyin, UTXO setini edinin ve daha fazlasını yapın",
+          "addresses" : "Zcash (ZEC) blokzincirindeki adresleri keşfedin, sıralayın ve filtreleyin"
+        }
+      },
+      "foot" : {
+        "server_error" : "Hay aksi! {error} 😯",
+        "no_results" : "Sonuç bulunamadı 😕",
+        "no_more_results" : "Başka sonuç yok 👐",
+        "explore_list" : "Bu listeyi keşfedin ({difference} satır daha)",
+        "load_more" : "Daha fazla yükle ({difference} sonuç kaldı)",
+        "show_next" : "Sonraki {limit} öğeyi göster ({difference} sonuç kaldı)"
+      },
+      "bitcoin" : {
+        "blocks" : {
+          "id" : {
+            "short" : "Yükseklik",
+            "full" : "Yükseklik (id)"
+          },
+          "hash" : "Hash",
+          "time" : {
+            "full" : "Çıkarıldığı tarih",
+            "short" : "Zaman",
+            "utc" : "(UTC)"
+          },
+          "time_ago" : {
+            "short" : "Önce",
+            "full" : "Geçen süre"
+          },
+          "guessed_miner" : {
+            "short" : "Madenci",
+            "full" : "Varsayılan madenci"
+          },
+          "miner_votes" : {
+            "short" : "Oylar",
+            "full" : "Madenci oyları"
+          },
+          "coinbase_data_bin" : {
+            "bin" : "[bin]",
+            "short" : "Coinbase verisi",
+            "full" : "Coinbase verisi [bin]"
+          },
+          "coinbase_data_hex" : {
+            "hex" : "[hex]",
+            "full" : "Coinbase verisi [hex]"
+          },
+          "transaction_count" : {
+            "short" : "Tx #",
+            "full" : "İşlem sayısı"
+          },
+          "witness_count" : {
+            "short" : "Tanık Tx #",
+            "full" : "Tanık tx sayısı"
+          },
+          "input_count" : {
+            "short" : "Girdiler #",
+            "full" : "Girdi sayısı"
+          },
+          "output_count" : {
+            "short" : "Çıktılar #",
+            "full" : "Çıktı sayısı"
+          },
+          "cdd_total" : {
+            "short" : "Yok edildi",
+            "full" : "Coindays yok edildi",
+            "cd" : "(CD)",
+            "coindays" : "(coindays)"
+          },
+          "input_total" : {
+            "simple" : "Girdi",
+            "full" : "Toplam girdi (satoshi)",
+            "short" : "Girdi toplamı"
+          },
+          "input_total_usd" : "Toplam girdi (USD)",
+          "output_total" : {
+            "simple" : "Çıktı",
+            "full" : "Toplam çıktı (satoshi)",
+            "short" : "Çıktı toplamı"
+          },
+          "output_total_usd" : "Toplam çıktı (USD)",
+          "fee_total" : {
+            "simple" : "Ücretler",
+            "full" : "Toplam ücret (satoshi)",
+            "short" : "Ücret toplamı"
+          },
+          "fee_total_usd" : "Toplam ücret (USD)",
+          "fee_per_kb" : {
+            "simple" : "Ücret/kB",
+            "full" : "kB başına ücret (satoshi)",
+            "short" : "kB başına ücret"
+          },
+          "fee_per_kb_usd" : "kB başına ücret (USD)",
+          "fee_per_kwu" : {
+            "simple" : "Ücret/kWU",
+            "full" : "kWU başına ücret (satoshi)",
+            "short" : "kWU başına ücret"
+          },
+          "fee_per_kwu_usd" : "kWU başına ücret (USD)",
+          "generation" : {
+            "short" : "Üretim",
+            "full" : "Üretim (satoshi)"
+          },
+          "generation_usd" : "Üretim (USD)",
+          "reward" : {
+            "short" : "Ödül",
+            "full" : "Madenci ödülü (satoshi)"
+          },
+          "reward_usd" : "Madenci ödülü (USD)",
+          "size" : {
+            "short" : "Boyut",
+            "full" : "Boyut (kB)",
+            "kb" : "(kB)"
+          },
+          "weight" : {
+            "short" : "Ağırlık",
+            "full" : "Ağırlık (ağırlık birimi)",
+            "kwu" : "(kWU)"
+          },
+          "stripped_size" : {
+            "short" : "Yalın boyut",
+            "full" : "Yalın boyut (kB)"
+          },
+          "version" : {
+            "short" : "Sürüm",
+            "full" : "Sürüm [int]",
+            "int" : "[int]"
+          },
+          "version_hex" : "Sürüm [hex]",
+          "version_bits" : {
+            "bits" : "[bits]",
+            "full" : "Sürüm [bits]"
+          },
+          "median_time" : "Medyan zamanı",
+          "merkle_root" : "Merkle kökü",
+          "nonce" : "Nonce",
+          "bits" : "Bits",
+          "difficulty" : "Zorluk",
+          "chainwork" : "Zincir işi"
+        },
+        "transactions" : {
+          "block_id" : {
+            "short" : "Blok #",
+            "full" : "Blok Id"
+          },
+          "time" : "Zaman (UTC)",
+          "id" : {
+            "short" : "Id",
+            "full" : "Hash (txid)"
+          },
+          "is_coinbase" : {
+            "short" : "Coinbase mi?",
+            "full" : "Coinbase işlemi mi?"
+          },
+          "has_witness" : {
+            "short" : "Tanık?",
+            "full" : "Tanık verisi mevcut mu?"
+          },
+          "fee" : {
+            "short" : "Ücret",
+            "full" : "Ücret (Satoshi)"
+          },
+          "fee_usd" : "Ücret (USD)",
+          "fee_per_kvb" : "kVB başına ücret",
+          "is_rbf" : "Ücretle değiştir (RBF) aktif mi?",
+          "lock_time" : {
+            "short" : "Kilitlenme süresi",
+            "full" : "Kilitlenme süresi (blok yüksekliği veya zaman damgası)"
+          }
+        },
+        "outputs" : {
+          "transaction_id" : {
+            "short" : "Tx id",
+            "full" : "İşlem id"
+          },
+          "transaction_hash" : {
+            "short" : "Tx hash",
+            "full" : "İşlem hash"
+          },
+          "index" : {
+            "short" : "#",
+            "full" : "Dizin"
+          },
+          "is_from_coinbase" : {
+            "short" : "Coinbase'den mi?",
+            "full" : "Coinbase tx'inden mi?"
+          },
+          "value" : {
+            "short" : "Değer",
+            "full" : "Değer (satoshi)"
+          },
+          "value_usd" : "Değer (USD)",
+          "recipient" : {
+            "short" : "Alıcı",
+            "address" : "(adres)",
+            "full" : "Alıcı (adres)"
+          },
+          "script_bin" : {
+            "short" : "Script",
+            "full" : "Script [bin]"
+          },
+          "script_hex" : "Script [hex]",
+          "type" : {
+            "short" : "Tür",
+            "full" : "Çıktı türü"
+          },
+          "is_spendable" : {
+            "short" : "Harcanabilir?",
+            "full" : "Harcanabilir mi?"
+          },
+          "is_spent" : {
+            "short" : "S?",
+            "full" : "Harcandı mı?"
+          },
+          "spending_block_id" : {
+            "short" : "Harcama bloku #",
+            "full" : "Harcama blok kimliği"
+          },
+          "spending_transaction_id" : {
+            "short" : "Harcama tx kimliği",
+            "full" : "Harcama işlem id"
+          },
+          "spending_index" : {
+            "short" : "#",
+            "full" : "Harcama endeksi"
+          },
+          "spending_transaction_hash" : {
+            "short" : "Harcama tx hash",
+            "full" : "Harcama işlem hashi"
+          },
+          "spending_time" : {
+            "short" : "Harc. zamanı",
+            "full" : "Harcama zamanı"
+          },
+          "spending_date" : "Harcama tarihi",
+          "spending_time_ago" : {
+            "short" : "Zaman",
+            "ago" : "(önce)",
+            "full" : "Harcama zamanı (önce)"
+          },
+          "spending_value" : {
+            "short" : "Harc. değeri",
+            "full" : "Harcama değeri"
+          },
+          "spending_value_usd" : "Harcama değeri (USD)",
+          "spending_sequence" : {
+            "short" : "Harc. sırası",
+            "full" : "Harcama sırası"
+          },
+          "spending_signature_bin" : {
+            "short" : "Harc. imzası",
+            "full" : "Harcama imzası"
+          },
+          "spending_signature_hex" : "Harcama imzası [hex]",
+          "spending_witness" : {
+            "short" : "Harc. tanığı",
+            "full" : "Harcama tanığı"
+          },
+          "lifespan" : {
+            "short" : "Yaşam süresi",
+            "full" : "Yaşam süresi (saniye)",
+            "seconds" : "(saniye)"
+          },
+          "left_link" : "İşlem bağlantıları"
+        },
+        "addresses" : {
+          "address" : "Adres",
+          "balance" : {
+            "short" : "Bakiye",
+            "full" : "Bakiye (satoshi)"
+          }
+        }
+      },
+      "dogecoin" : {
+        "blocks" : {
+          "is_aux" : "AuxPoW mu?"
+        }
+      },
+      "dash" : {
+        "blocks" : {
+          "cbtx" : "CbTX"
+        },
+        "transactions" : {
+          "is_special" : "Özel mi?",
+          "special_json" : "Özel JSON",
+          "type" : "Tür",
+          "is_instant_lock" : "Anında kilitlenir mi?"
+        }
+      },
+      "ethereum" : {
+        "blocks" : {
+          "uncle_count" : "Uncle Sayısı",
+          "synthetic_transaction_count" : {
+            "short" : "Sentetik tx sayısı",
+            "full" : "Sentetik işlem sayısı"
+          },
+          "call_count" : {
+            "short" : "Çağrılar #",
+            "full" : "Çağrı sayısı"
+          },
+          "synthetic_call_count" : {
+            "short" : "Sentetik Çağrı #",
+            "full" : "Sentetik çağrı sayısı"
+          },
+          "extra_data_bin" : {
+            "short" : "Ekstra Veri",
+            "full" : "Ekstra Veri [bin]"
+          },
+          "extra_data_hex" : "Ekstra Veri [hex]",
+          "gas_used" : "Kullanılan Gas",
+          "gas_limit" : "Gas limiti",
+          "value_total" : {
+            "short" : "Toplam Değer",
+            "full" : "Toplam değer (ETH)"
+          },
+          "value_total_usd" : "Toplam değer (USD)",
+          "internal_value_total" : {
+            "short" : "İç Değer",
+            "full" : "Toplam iç değer (ETH)"
+          },
+          "internal_value_total_usd" : "Toplam iç değer (USD)",
+          "generation" : "Üretim (ETH)",
+          "uncle_generation" : {
+            "short" : "Uncle Üretimi",
+            "full" : "Uncle üretimi (ETH)"
+          },
+          "uncle_generation_usd" : "Uncle üretimi (USD)",
+          "fee_total" : "Toplam ücret (ETH)",
+          "reward" : "Madenci ödülü (ETH)",
+          "mix_hash" : "Karışık Hash",
+          "receipts_root" : "Okunduların kökü",
+          "sha3_uncles" : "SHA3 Uncle blokları",
+          "state_root" : "Durum Kökü",
+          "transactions_root" : "İşlemlerin kökü",
+          "logs_bloom" : "Kayıtları Genişlet",
+          "total_difficulty" : "Toplam Zorluk"
+        },
+        "transactions" : {
+          "index" : {
+            "short" : "#",
+            "full" : "Bloktaki endeks"
+          },
+          "type" : "Tür",
+          "failed" : "Başarısız?",
+          "sender" : {
+            "short" : "Nereden",
+            "full" : "Gönderici"
+          },
+          "recipient" : {
+            "short" : "Kime",
+            "full" : "Alıcı"
+          },
+          "value" : {
+            "short" : "Değer",
+            "full" : "Değer (ETH)"
+          },
+          "value_usd" : "Değer (USD)",
+          "internal_value" : {
+            "short" : "İç Değer",
+            "full" : "İç değer (ETH)"
+          },
+          "internal_value_usd" : "İç değer (USD)",
+          "fee" : {
+            "short" : "Ücret",
+            "full" : "Ücret (ETH)"
+          },
+          "fee_usd" : "Ücret (USD)",
+          "gas_price" : "Gas ücreti",
+          "input_bin" : {
+            "short" : "Girdi verisi",
+            "full" : "Girdi verisi [bin]"
+          },
+          "input_hex" : "Girdi verisi [hex]"
+        },
+        "uncles" : {
+          "miner" : "Madenci",
+          "parent_block_id" : {
+            "short" : "Ana blok id",
+            "full" : "Ana blok yüksekliği"
+          },
+          "index" : "Üst bloktaki endeks"
+        },
+        "calls" : {
+          "index" : {
+            "short" : "Dizin",
+            "full" : "İşlemdeki endeks"
+          },
+          "depth" : "Derinlik",
+          "child_call_count" : {
+            "short" : "Çocuk Çağrılar",
+            "full" : "Çocuk çağrı sayısı"
+          },
+          "fail_reason" : "Başarısızlık sebebi",
+          "transferred" : {
+            "short" : "Transfer edildi?",
+            "full" : "Transfer edildi?"
+          },
+          "output_bin" : "Çıktı verisi [bin]",
+          "output_hex" : "Çıktı verisi [hex]"
+        }
+      },
+      "mixin" : {
+        "snapshots" : {
+          "topology" : "Topoloji",
+          "round" : "Dizi",
+          "round_self" : "Kendinden önceki dizi",
+          "round_external" : "Dış dizi",
+          "timestamp" : "Zaman damgası",
+          "node" : "Düğüm",
+          "hash" : "Hash",
+          "signatures" : "İmzalar",
+          "version" : "Sürüm"
+        },
+        "transactions" : {
+          "snapshot" : "Anlık kopya",
+          "asset" : "Varlık",
+          "extra" : "Ekstra"
+        },
+        "mintings" : {
+          "amount" : "Miktar",
+          "batch" : "Yığın",
+          "group" : "Grup",
+          "snapshot" : "Anlık kopya",
+          "transaction" : "İşlem",
+          "timestamp" : "Zaman damgası"
+        },
+        "nodes" : {
+          "id" : "Id",
+          "payee" : "Alacaklı",
+          "signer" : "İmzalayan",
+          "state" : "Durum",
+          "transaction" : "İşlem",
+          "timestamp" : "Zaman damgası",
+          "graph" : "Grafik"
+        },
+        "round" : {
+          "start" : "Başlangıç",
+          "end" : "Bitiş",
+          "hash" : "Hash",
+          "node" : "Düğüm",
+          "number" : "Sayı",
+          "references" : "Referanslar",
+          "snapshots" : "Anlık kopyalar"
+        }
+      }
+    },
+    "chessboard" : {
+      "buttons" : {
+        "fields" : "Alanlar",
+        "show_default_fields" : "Geçerli Alanları Göster",
+        "show_all" : "Hepsini Göster",
+        "hide_all" : "Hepsini Gizle",
+        "reset_sorts" : "Sıralamayı sıfırla",
+        "reset_conditions" : "Koşulları Sıfırla",
+        "reset_all" : "Hepsini Sıfırla",
+        "refresh" : "Yenile",
+        "settings" : {
+          "without_expanding" : "Tabloyu genişletmeden yeni sonuçları göster",
+          "table_condensed" : "Tabloyu yoğunlaştır"
+        }
+      },
+      "conditions" : {
+        "alert" : {
+          "limit_of_sorts" : "Aynı anda yalnızca {limit} sıralama ayarlanabilir :(",
+          "limit_of_conditions" : "Aynı anda yalnızca {limit} koşul ayarlanabilir :("
+        },
+        "examples" : "Örnekler:",
+        "notice" : "Duyuru:"
+      },
+      "bitcoin" : {
+        "columns" : {
+          "general" : "Genel",
+          "monetary" : "Parasal",
+          "technical" : "Teknik",
+          "spending" : {
+            "general" : "Harcanıyor...",
+            "continuation" : "Harcanıyor (devam ediyor)..."
+          }
+        },
+        "blocks" : {
+          "id" : {
+            "examples" : {
+              "first_100_blocks" : "İlk 100 blok",
+              "zero_block" : "blok #0"
+            }
+          },
+          "transaction_count" : {
+            "examples" : {
+              "big_blocks" : "büyük bloklar",
+              "coinbase_tx_only" : "yalnızca coinbase tx içeren bloklar"
+            }
+          },
+          "witness_count" : {
+            "examples" : {
+              "more_that_one" : "birden fazla",
+              "just_one" : "sadece bir"
+            }
+          },
+          "input_count" : {
+            "examples" : {
+              "over_10k_inputs" : "10 binden fazla girdi",
+              "just_coinbase_input" : "yalnızca coinbase girdisi"
+            }
+          },
+          "output_count" : {
+            "examples" : {
+              "over_10k_outputs" : "10 binden fazla çıktı",
+              "just_coinbase_output" : "1 çıktılı coinbase işlemleri"
+            }
+          },
+          "cdd_total" : {
+            "examples" : {
+              "largest_spendings" : "en büyük harcamalar",
+              "no_cd" : "hiçbir coindays yok edilmedi"
+            }
+          },
+          "input_total" : {
+            "title" : {
+              "full" : "Toplam girdi ({ticker})"
+            },
+            "examples" : {
+              "over_100" : "100'ün üzerinde {ticker}",
+              "exactly_one" : "tam olarak 1 {ticker}"
+            },
+            "notice" : "lütfen değerleri satoshi olarak girin (1 {ticker} = 100000000 sat.)!"
+          },
+          "input_total_usd" : {
+            "examples" : {
+              "over_one_million_usd" : "1M $'ın üzerinde",
+              "exactly_one_million_usd" : "tam olarak 1 $"
+            }
+          },
+          "output_total" : {
+            "title" : {
+              "full" : "Toplam çıktı ({ticker})"
+            }
+          },
+          "fee_total" : {
+            "title" : {
+              "full" : "Toplam ücret ({ticker})"
+            }
+          },
+          "fee_per_kb" : {
+            "title" : {
+              "full" : "kB başına ücret ({ticker})"
+            },
+            "examples" : {
+              "exactly_one_hundredth" : "tam olarak 0.01 {ticker}"
+            }
+          },
+          "fee_per_kb_usd" : {
+            "examples" : {
+              "exactly_one_hundredth" : "tam olarak 0.01 $ "
+            }
+          },
+          "fee_per_b" : {
+            "title" : {
+              "full" : "Byte başına ücret ({ticker})"
+            }
+          },
+          "generation" : {
+            "title" : {
+              "full" : "Üretim ({ticker})"
+            }
+          },
+          "reward" : {
+            "title" : {
+              "full" : "Madenci ödülü ({ticker})"
+            },
+            "examples" : {
+              "exactly_twelve_and_half" : "tam olarak 12.5 {ticker}"
+            }
+          },
+          "reward_usd" : {
+            "examples" : {
+              "over_25k" : "25b $ üzeri"
+            }
+          },
+          "size" : {
+            "examples" : {
+              "small_blocks" : "küçük bloklar",
+              "exactly_one" : "tam olarak 1 {ticker}"
+            },
+            "notice" : "lütfen değerleri byte cinsinden girin!"
+          },
+          "stripped_size" : {
+            "examples" : {
+              "almost_full_blocks" : "neredeyse dolu bloklar"
+            }
+          }
+        },
+        "transactions" : {
+          "is_coinbase" : {
+            "examples" : {
+              "yes" : "Evet",
+              "no" : "Hayır"
+            }
+          },
+          "fee" : {
+            "title" : {
+              "full" : "Ücret ({ticker})"
+            }
+          }
+        },
+        "outputs" : {
+          "value" : {
+            "title" : {
+              "full" : "Değer ({ticker})"
+            }
+          },
+          "is_spendable" : {
+            "examples" : {
+              "unknown" : "biliinmeyen"
+            }
+          }
+        }
+      },
+      "litecoin" : {
+        "blocks" : {
+          "input_total" : {
+            "notice" : "lütfen değerleri litoshi cinsinden girin (1 {ticker} = 100000000 lit.)!"
+          }
+        }
+      }
+    },
+    "type" : {
+      "bitcoin" : {
+        "block" : {
+          "description" : "Bitcoin (BTC) blok {height}, hash: {hash}, tarih: {date}",
+          "general_info" : "Genel bilgi",
+          "technical_details" : "Teknik detaylar",
+          "see_more" : "Daha fazlasını görmek için tıklayın",
+          "hide_details" : "Detayları gizle",
+          "explorers" : "Alternatif gezginler",
+          "for_developers" : "Geliştiriciler için",
+          "api_docs" : "API dokümanları",
+          "last_transactions" : "Bu bloktaki işlemler"
+        },
+        "transaction" : {
+          "description" : {
+            "general" : "Bitcoin (BTC) işlemini ve değerini kontrol et: {output_total_btc}, tarih: {date}",
+            "coinbase" : "Bitcoin (BTC) coinbase işlemini ve değerini kontrol et: {output_total_btc}, tarih: {date}"
+          },
+          "priority" : "Öncelik: {position}/{count}",
+          "confirmations" : "Onaylanmamış | {count} onay | {count} onay",
+          "protocol" : {
+            "omni" : "Omni Layer işlemi"
+          },
+          "op_return" : {
+            "title" : "OP_RETURN",
+            "memopay_message" : "Memopay mesajı",
+            "protocol" : {
+              "title" : "{name} protokol",
+              "details" : "{Name} üzerinde görüntüle"
+            },
+            "bin" : "Deşifre edildi"
+          },
+          "confirmed_notify" : {
+            "button" : "Beni haberdar et",
+            "modal" : {
+              "title" : "Bu işlem onaylandığında bana haber ver",
+              "description" : "Butona tıklayın ve bu işlem bir bloğa girdiğinde bir bildirim alacaksınız. Lütfen bu sayfadan ayrılmayın (ancak bu pencereyi küçültebilir, tarayıcınızdaki diğer sekmeleri kullanabilirsiniz vb.). Bu özelliği ilk kez kullanıyorsanız tarayıcınız bildirim göndermek için sizden izin isteyebilir.",
+              "enable" : "Bu işlem onaylandığında bana haber ver"
+            },
+            "notification" : "{Chain} işleminiz onaylandı!",
+            "leaving" : "İşlemin onaylandığına dair bir bildirim almayacaksınız. Bu sayfadan ayrılmak istediğinizden emin misiniz?"
+          },
+          "fee_per_byte" : {
+            "caption" : "Byte başına ücret",
+            "dimension" : "satoshi"
+          },
+          "fee_per_vbyte" : {
+            "caption" : "vbyte başına ücret"
+          },
+          "raw_transaction" : {
+            "title" : "Ham tx",
+            "form" : {
+              "hex" : "Ham işlem (hex):",
+              "decoded" : "Çözülmüş ham işlem (json):"
+            },
+            "empty" : "Bu işlem için veri alınamadı (Ya bir genesis işlemidir ya da bu işlem bellek havuzundan çıkarılmıştır)"
+          },
+          "pdf_receipt" : "PDF makbuzu",
+          "senders" : "Göndericiler",
+          "recipients" : "Alıcılar",
+          "senders_and_recipients" : "Göndericiler ve alıcılar",
+          "privacy-o-meter" : {
+            "title" : "Privacy-o-meter",
+            "heuristic_names" : {
+              "inputs" : "Birleşik harcama",
+              "script_types" : "Script türleri",
+              "p2sh_types" : "P2SH çoklu imza türleri ",
+              "p2wsh_types" : "P2WSH çoklu imza türleri",
+              "round_value" : "Yuvarlanmış değer",
+              "recipient_by_value" : "Daha büyük değere göre alıcı",
+              "t1-2_bigger_value_25" : "Çıktı değeri x25",
+              "t1-2_bigger_value_100" : "Çıktı değeri x100",
+              "t1-2_bigger_value_250" : "Çıktı değeri x250",
+              "t1-2_bigger_value_1000" : "Çıktı değeri x1000",
+              "coinbase_known" : "Bilinen madenci",
+              "coinbase_unknown" : "Bilinmeyen madenci",
+              "coinjoin" : "Coinjoin",
+              "round_fee" : "Yuvarlanmış ücret",
+              "asc_output_values" : "Çıktı değerlerine göre artan",
+              "desc_output_values" : "Çıktı değerlerine göre azalan ",
+              "asc_output_addresses" : "Çıktı adreslerine göre artan",
+              "desc_output_addresses" : "Çıktı adreslerine göre azalan",
+              "asc_input_values" : "Girdi değerlerine göre artan",
+              "desc_input_values" : "Girdi değerlerine göre azalan",
+              "asc_input_addresses" : "Girdi adreslerine göre artan",
+              "desc_input_addresses" : "Girdi adreslerine göre azalan",
+              "asc_input_timestamps" : "Girdi zaman damgasına göre artan",
+              "desc_input_timestamps" : "Girdi zaman damgasına göre azalan",
+              "asc_output_values_except_first" : "Çıktı değerlerine göre ilki hariç artan",
+              "asc_output_values_except_last" : "Çıktı değerlerine göre sonuncu hariç artan",
+              "asc_output_addresses_except_first" : "Çıktı adreslerine göre ilki hariç artan",
+              "asc_output_addresses_except_last" : "Çıktı adreslerine göre sonuncu hariç artan",
+              "desc_output_values_except_first" : "Çıktı değerlerine göre ilki hariç azalan",
+              "desc_output_values_except_last" : "Çıktı değerlerine göre sonuncu hariç azalan",
+              "desc_output_addresses_except_last" : "Çıktı adreslerine göre sonuncu hariç azalan",
+              "desc_output_addresses_except_first" : "Çıktı adreslerine göre ilki hariç azalan",
+              "simple_reuse_1-2" : "Adresin yeniden kullanımı",
+              "simple_reuse_N-2" : "Adresin yeniden kullanımı",
+              "simple_reuse_1-N" : "Adresin yeniden kullanımı",
+              "simple_reuse_same_address_in_inputs" : "Girdilerdeki aynı adres",
+              "sweep_1-1" : "Süpürme (1-1)",
+              "sweep_1-1_to_another_type" : "Diğer türlerde süpürme (1-1)",
+              "sweep_N-1" : "Süpür",
+              "sweep_N-1_to_another_type" : "Başka türde süpür",
+              "discrepancy_unnecessary_inputs" : "Tutarsızlık: gereksiz girdi",
+              "discrepancy_various_input_types" : "Tutarsızlık: çeşitli girdi türleri",
+              "discrepancy_script_types_and_round_value" : "Script türleri ile Yuvarlatılmış değerler arasında tutarsızlık",
+              "discrepancy_script_types_and_recipient_by_value" : "Script türleri ile Alıcı arasında değer tutarsızlığı",
+              "discrepancy_round_value_and_recipient_by_value" : "Yuvarlatılmış değer ile Alıcı arasında değer tutarsızlığı",
+              "discrepancy_p2sh_various_input_types" : "Tutarsızlık: çeşitli P2SH girdi türleri",
+              "discrepancy_p2wsh_various_input_types" : "Tutarsızlık: çeşitli P2WSH girdi türleri",
+              "discrepancy_same_address_in_outputs" : "Tutarsızlık: aynı çıktı adresi zaten mevcut",
+              "discrepancy_no_output_of_the_same_type_as_inputs" : "Tutarsızlık: girdiler çıktılarla aynı türde değil",
+              "rare_fingerprint" : "Nadir parmak izi"
+            },
+            "heuristic_descriptions" : {
+              "inputs" : "CoinJoin işlemi olmadığı sürece tüm girdi adreslerinin tek bir kişiye ait olduğunu varsaymak güvenlidir",
+              "script_types" : "Tüm girdiler aynı türdeyse ve çıktılardan tam olarak biri aynı türde değilse — bu çıktı alıcı olarak kabul edilebilir",
+              "p2sh_types" : "Tüm girdiler P2SH m/n çok imzalı ise ve tüm çıktılar P2SH çok imzalı ise, ama çıktılardan tam olarak biri başka bir m/n yapısına sahipse — bu çıktı alıcı olarak düşünülebilir",
+              "p2wsh_types" : "Tüm girdiler m/n P2WSH çok imzalı ve tüm çıktılar P2WSH çok imzalı ise, ancak çıktılardan tam olarak biri başka bir m/n yapısına sahipse — bu çıktı alıcı olarak kabul edilebilir",
+              "round_value" : "Çıktılardan birinin yuvarlatılmış değeri varsa (tam olarak 1 BTC gibi) — bu çıktı alıcı olarak kabul edilebilir",
+              "recipient_by_value" : "Alıcı daha küçük çıktıysa, bazı girdilere sahip olmanın bir anlamı yoktur.",
+              "t1-2_bigger_value_25" : "İki çıktıdan biri diğerinden 25 kat daha büyükse, bunun diğer anlamı potansiyel olarak değişim çıktısıdır",
+              "t1-2_bigger_value_100" : "İki çıktıdan biri diğerinden 100 kat daha büyükse, bunun diğer anlamı potansiyel olarak değişim çıktısıdır",
+              "t1-2_bigger_value_250" : "İki çıktıdan biri diğerinden 250 kat daha büyükse, bunun diğer anlamı potansiyel olarak değişim çıktısıdır",
+              "t1-2_bigger_value_1000" : "İki çıktıdan biri diğerinden 1000 kat daha büyükse, bunun diğer anlamı potansiyel olarak değişim çıktısıdır",
+              "coinbase_known" : "Alıcı bilinen bir madencidir.",
+              "coinbase_unknown" : "Alıcı bilinmeyen bir madencidir.",
+              "coinjoin" : "Bu bir CoinJoin işlemidir. Bu, diğer tüm işlemleri iptal eder.",
+              "round_fee" : "İşlem yuvarlanmış bir ücrete sahiptir, gönderen muhtemelen özel bir yazılım kullanıyor",
+              "asc_output_values" : "5'ten daha fazla çıktı içeren işlemler için — artan değere göre sıralanırlar — bu bazı özel yazılımların kullanımından kaynaklanabilir",
+              "desc_output_values" : "5'ten daha fazla çıktı içeren işlemler için — azalan değere göre sıralanırlar — bu bazı özel yazılımların kullanımından kaynaklanabilir",
+              "asc_output_addresses" : "5'ten daha fazla çıktı içeren işlemler için — adreslere göre alfabetik sırayla sıralanırlar — bu bazı özel yazılımların kullanımından kaynaklanabilir",
+              "desc_output_addresses" : "5'ten daha fazla çıktı içeren işlemler için — adreslere göre alfabetik sırayla sıralanırlar — bu bazı özel yazılımların kullanımından kaynaklanabilir",
+              "asc_input_values" : "5'ten daha fazla girdili işlemler için — artan değere göre sıralanırlar — bu bazı özel yazılımların kullanımından kaynaklanabilir",
+              "desc_input_values" : "5'ten daha fazla girdili işlemler için — azalan değere göre sıralanırlar — bu bazı özel yazılımların kullanımından kaynaklanabilir",
+              "asc_input_addresses" : "5'ten daha fazla girdili işlemler için — adreslere göre alfabetik sırayla sıralanırlar — bu bazı özel yazılımların kullanımından kaynaklanabilir",
+              "desc_input_addresses" : "5'ten daha fazla girdili işlemler için — adreslere göre alfabetik sırayla sıralanırlar — bu bazı özel yazılımların kullanımından kaynaklanabilir",
+              "asc_input_timestamps" : "5'ten daha fazla girdili işlemler için — yaşa göre sıralanır — bu bazı özel yazılımların kullanımından kaynaklanabilir",
+              "desc_input_timestamps" : "5'ten daha fazla girdili işlemler için — yaşa göre sıralanır — bu bazı özel yazılımların kullanımından kaynaklanabilir",
+              "asc_output_values_except_first" : "Birincisi dışında tüm çıktılar artan değere göre sıralanır, bu da ilk çıktının adresinin değiştiği anlamına gelebilir.",
+              "asc_output_values_except_last" : "Sonuncusu dışında tüm çıktılar artan değere göre sıralanır, bu da ilk çıktının adresinin değiştiği anlamına gelebilir.",
+              "asc_output_addresses_except_first" : "İlki hariç tüm çıktılar adreslere göre alfabetik sıraya göre sıralanır, bu da ilk çıktının adresinin değiştiği anlamına gelebilir.",
+              "asc_output_addresses_except_last" : "Sonuncu hariç tüm çıktılar adreslere göre alfabetik sıraya göre sıralanır; bu da ilk çıktının adresinin değiştiği anlamına gelebilir.",
+              "desc_output_values_except_first" : "İlki dışında tüm çıktılar azalan değere göre sıralanır, bu ilk çıktının adresinin değiştiği anlamına gelebilir\nİlki dışında tüm çıktılar azalan değere göre sıralanır, bu ilk çıktının adresinin değiştiği anlamına gelebilir\nİlki hariç tüm çıktılar azalan değere göre sıralanır, bu da ilk çıktının adresinin değiştiği anlamına gelebilir\n",
+              "desc_output_values_except_last" : "Sonuncu hariç tüm çıktılar azalan değere göre sıralanır, bu da son çıktının adresinin değiştiği anlamına gelebilir",
+              "desc_output_addresses_except_last" : "Sonuncu hariç tüm çıktılar, azalan adrese göre sıralanır, bu da son çıktının adresinin değişti anlamına gelebilir",
+              "desc_output_addresses_except_first" : "İlki hariç tüm çıktılar, azalan adrese göre sıralanır, bu da ilk çıktının adresinin değiştiği anlamına gelebilir",
+              "simple_reuse_1-2" : "Gönderen, almak ve değiştirmek için aynı adresi kullanır",
+              "simple_reuse_N-2" : "Gönderen, almak ve değiştirmek için aynı adresi kullanır",
+              "simple_reuse_1-N" : "Gönderen (muhtemelen borsa) almak ve değiştirmek için aynı adresi kullanır",
+              "simple_reuse_same_address_in_inputs" : "Girdilerde aynı adresin birden fazla kere kullanımı vardır.",
+              "sweep_1-1" : "Gönderen, 'her şeyi gönder' seçeneğini birisine ödeme yapmak (örn. borsa) veya sadece fonları başka bir cüzdana taşımak  için kullanır (1 girdi)",
+              "sweep_1-1_to_another_type" : "Gönderen, birine ödeme yapmak veya fonları yeni bir cüzdan türüne taşımak için \"her şeyi gönder\" seçeneğini kullanır (1 girdi)",
+              "sweep_N-1" : "Gönderen, \"her şeyi gönder\" seçeneğini birisine ödeme yapmak (ör. bir borsa) veya yalnızca fonları başka bir cüzdana taşımak için kullanır",
+              "sweep_N-1_to_another_type" : "Gönderen, \"her şeyi gönder\" seçeneğini birisine ödeme yapmak (ör. bir borsa) veya yalnızca fonları ilk adreslerden başka bir türde başka bir cüzdana taşımak için kullanır",
+              "discrepancy_unnecessary_inputs" : "Daha küçük girdi gereksizdir, çünkü çıktılardan hangisi alıcı olursa olsun, bu girdiyi dahil etmeye gerek yoktur",
+              "discrepancy_various_input_types" : "Girdiler farklı tiplerdedir. Bu gönderenin muhtemelen değişiklik için alıcının sahip olduğu aynı adres türünü oluşturmaya izin veren yazılımı kullandığı ve script_types heuristici atlatmaya çalıştığı anlamına gelir.",
+              "discrepancy_script_types_and_round_value" : "script_types ve round_value heuristicleri farklı sonuçlar verir",
+              "discrepancy_script_types_and_recipient_by_value" : "script_types ve değerine göre alıcı heuristicte farklı sonuçlar verir",
+              "discrepancy_round_value_and_recipient_by_value" : "round_value ve değerine göre alıcı heuristicte farklı sonuçlar verir",
+              "discrepancy_p2sh_various_input_types" : "P2SH giriş türleri farklıdır (ör. biri 2-de-2 çok imzalı ve diğeri 2-de-3)",
+              "discrepancy_p2wsh_various_input_types" : "P2WSH giriş türleri farklıdır (ör. biri 2-de-2 çok imzalı ve diğeri 2-de-3)",
+              "discrepancy_same_address_in_outputs" : "Aynı adrese sahip çıktılar var — bu ekonomik bir anlam ifade etmiyor",
+              "discrepancy_no_output_of_the_same_type_as_inputs" : "Muhtemelen gönderen, alıcı adresi ile aynı değişiklik adresine sahip bir yazılım kullanmaktadır.",
+              "rare_fingerprint" : "Bu işlemin oldukça benzersiz teknik özellikleri var"
+            },
+            "transaction_types" : {
+              "CB" : "Coinbase işlemi",
+              "N1" : "Yalnızca 1 çıktılı işlem (ya aynı sahip tarafından başka bir adrese temizleme veya \"sahip olduğum her şeyi gönder\" seçeneği kullanılarak yapılan bir transfer)",
+              "N2" : "2 çıktılı işlem — cüzdanlarda en yaygın olan — çıktılardan biri alıcı, diğeri ise değişiklik adresidir",
+              "NN" : "2'den fazla çıktıya sahip işlem — en yaygın olarak toplu ödeme işlemleri kullanan borsalar ve hizmetlerde kullanılır"
+            },
+            "highlight_clusterized" : "Gönderen adreslerini (değişiklik dahil) ve alıcı adresini öne çıkarın",
+            "transaction_type" : "Tür",
+            "is_finalized_description" : "İşlemin nihai puana sahip olup olmadığını gösterir (tüm çıktılar harcanır)",
+            "clusterized_description" : "Geçerli heuristiclere göre potansiyel olarak bir varlığa ait olan adresler",
+            "privacy_score" : {
+              "title" : "Gizlilik puanı",
+              "high" : "Yüksek",
+              "moderate" : "Orta",
+              "low" : "Düşük"
+            },
+            "fingerprint" : "İşlem parmak izi",
+            "info" : {
+              "title" : "Bu nedir?",
+              "text" : "<p>Bitcoin gizlilik odaklı bir sistem olarak kabul edilirken, block zinciri herkes tarafından analiz edilmeye açıktır.</p><p>Blockchair'ın Privacy-o-meter özelliği, işleminizin çok sayıda işlem izleme aracı tarafından kullanılan bazı buluşsal yöntemlere duyarlı olup olmadığını gösterir.</p><p>Daha yüksek puan — yararlı bir şey çıkaramama şansını daha fazla arttırır. Düşük puansa mesela değişiklik adresini alıcının adresinden ayırt etmenin çok kolay olması anlamına gelir.</p>"
+            },
+            "heuristics" : "İndikatörler",
+            "lock_time" : {
+              "rare" : "Nadir",
+              "block_id" : "Blok yüksekliği",
+              "big_value" : "Büyük değer",
+              "timestamp" : "Zaman damgası"
+            },
+            "legend" : {
+              "sender" : "Gönderici adresleri",
+              "recipient" : "Alıcı adresleri"
+            },
+            "none" : "Hiçbiri",
+            "read_doc" : "Dokümantasyonu oku"
+          }
+        },
+        "address" : {
+          "description" : "Bitcoin (BTC) adres {address} bakiyesini ve işlemlerini kontrol edin",
+          "type" : "Adres türü",
+          "formats" : {
+            "legacy" : "Legacy adres formatı",
+            "cashaddr" : "Nakit adres formatı"
+          },
+          "script" : {
+            "short" : "Script",
+            "bin" : "Script [bin]",
+            "hex" : "Script [hex]"
+          },
+          "unspent_output_count" : "Harcanmamış çıktı sayısı",
+          "monetary_info" : "Parasal bilgi",
+          "last_seen_receiving" : "Son kabul ettiği tarih",
+          "first_last_seen_receiving" : "İlk / son kabul",
+          "first_last_seen_spending" : "İlk / son harcama",
+          "total_received" : "Toplam alınan",
+          "total_spent" : "Toplam harcanan",
+          "total_unspent" : "Bakiye",
+          "protocol" : {
+            "omni" : {
+              "title" : "Omni tokenleri",
+              "token_name" : "Token adı",
+              "balance" : "Bakiye"
+            }
+          },
+          "qr_code" : "QR kodu",
+          "transactions" : {
+            "title" : "Adres içeren işlemler",
+            "id" : "Hash:",
+            "time" : "Zaman damgası:",
+            "no_transactions" : "Henüz işlem yok",
+            "protocol" : {
+              "omni" : "Omni Layer verisi içerir"
+            }
+          }
+        },
+        "xpub" : {
+          "address_count" : "Adres sayısı",
+          "addresses" : {
+            "caption" : "Adresler",
+            "table" : {
+              "unspent_output_count" : "Harcanmamış çıktılar #",
+              "last_seen_receiving" : "Son kabul tarihi",
+              "last_seen_spending" : "Son harcama tarihi"
+            }
+          },
+          "path" : "Yol"
+        }
+      },
+      "bitcoin/testnet" : {
+        "block" : {
+          "description" : "Bitcoin Testnet (TBTC) bloğu {height}, hash: {hash}, tarih: {date}"
+        },
+        "transaction" : {
+          "description" : {
+            "general" : "Bitcoin Testnet (TBTC) işlemini kontrol et, değer: {output_total_btc}, tarih: {date}",
+            "coinbase" : "Bitcoin Testnet (TBTC) coinbase işlemini kontrol et, değer: {output_total_btc}, tarih: {date}"
+          }
+        },
+        "address" : {
+          "description" : "Bitcoin Testnet (TBTC) adres {address} bakiyesini ve işlemlerini kontrol et"
+        }
+      },
+      "bitcoin-cash" : {
+        "block" : {
+          "description" : "Bitcoin Cash (BCH) bloğu {height}, hash: {hash}, tarih: {date}"
+        },
+        "transaction" : {
+          "description" : "Bitcoin Cash (BCH) işlem {hash}, tarih: {date}"
+        },
+        "address" : {
+          "description" : "Bitcoin Cash (BCH) adresini {cash_address} ({legacy_address}), bakiyesini ve işlemlerini kontrol et"
+        }
+      },
+      "bitcoin-sv" : {
+        "block" : {
+          "description" : "Bitcoin SV (BSV) blok {height}, hash: {hash}, tarih: {date}"
+        },
+        "transaction" : {
+          "description" : "Bitcoin SV (BSV) işlem {hash}, tarih: {date}"
+        },
+        "address" : {
+          "description" : "Bitcoin SV (BSV) adresini: {cash_address} ({legacy_address}), bakiyesini ve işlemlerini kontrol et"
+        }
+      },
+      "dogecoin" : {
+        "block" : {
+          "description" : "Dogecoin (DOGE) blok {height}, hash: {hash}, tarih: {date}"
+        },
+        "transaction" : {
+          "description" : {
+            "general" : "Dogecoin (DOGE) işlemini kontrol et, değer: {output_total_doge}, tarih: {date}",
+            "coinbase" : "Dogecoin (DOGE) coinbase işlemini kontrol et, değer: {output_total_doge}, tarih: {date}"
+          }
+        },
+        "address" : {
+          "description" : "Dogecoin (DOGE) adresini {address} bakiyesini ve işlemlerini kontrol et"
+        }
+      },
+      "dash" : {
+        "block" : {
+          "description" : "Dash (DASH) bloğu {height}, hash: {hash}, tarih: {date}"
+        },
+        "transaction" : {
+          "description" : {
+            "general" : "Dash (DASH) işlemini kontrol et, değer: {output_total_dash}, tarih: {date}",
+            "coinbase" : "Dash (DASH) coinbase işlemini kontrol et, değer: {output_total_dash}, tarih: {date}"
+          }
+        },
+        "address" : {
+          "description" : "Dash (DASH) adresini {address} bakiyesini ve işlemlerini kontrol et"
+        }
+      },
+      "litecoin" : {
+        "block" : {
+          "description" : "Litecoin (LTC) blok {height}, hash: {hash}, tarih: {date}"
+        },
+        "transaction" : {
+          "description" : "Litecoin (LTC) işlem {hash}, tarih: {date}"
+        },
+        "address" : {
+          "description" : "Litecoin (LTC) adresini {address}, bakiyesini ve işlemlerini kontrol et"
+        }
+      },
+      "groestlcoin" : {
+        "block" : {
+          "description" : "Groestlcoin (GRS) blok {height}, hash: {hash}, tarih: {date}"
+        },
+        "transaction" : {
+          "description" : "Groestlcoin (GRS) işlem {hash}, tarih: {date}"
+        },
+        "address" : {
+          "description" : "Groestlcoin (GRS) adresini {address}, bakiyesini ve işlemlerini kontrol et"
+        }
+      },
+      "ethereum" : {
+        "block" : {
+          "description" : "Ethereum (ETH) blok {height}, hash: {hash}, tarih: {date}",
+          "coinbase" : "coinbase",
+          "transaction_count" : "{transactions_link} + {coinbase_link} coinbase",
+          "value_total" : "Toplam değer",
+          "internal_value_total" : "Toplam iç tutar",
+          "fee_total" : "Ücret toplamı"
+        },
+        "uncle" : {
+          "description" : "Ethereum (ETH) uncle üst blok yüksekliği: {parent_block_height}, hash: {hash}, zaman: {date}"
+        },
+        "transaction" : {
+          "description" : "Ethereum (ETH) işlem {hash}, zaman: {date}",
+          "included_calls" : "Bu işleme dahil çağrılar",
+          "erc-20" : {
+            "caption" : "ERC-20 token transferleri",
+            "sender" : "Kimden:",
+            "recipient" : "Kime:",
+            "value" : "Değer:",
+            "wait" : "Bu işlem için potansiyel ERC-20 transferleri yine de işlenebilir ve daha sonra görüntülenebilir"
+          }
+        },
+        "address" : {
+          "description" : "Ethereum (ETH) adresini {address}, bakiyesini ve işlemlerini kontrol et",
+          "description_contract" : "Ethereum (ETH) sözleşmesini {address}, bakiyesini ve işlemlerini kontrol et",
+          "type" : "Tür",
+          "receiving" : "Alınıyor: {receiving_calls_link}",
+          "spending" : "Harcanıyor: {spending_calls_link}",
+          "call_count" : "Çağrı sayısı (başarısız olanlar dahil)",
+          "contract_created" : "Sözleşme oluşturuldu?",
+          "contract_destroyed" : "Sözleşme yok edildi?",
+          "contract_code" : {
+            "short" : "Sözleşme kodu",
+            "bin" : "Sözleşme kodu [bin]",
+            "hex" : "Sözleşme kodu [hex]"
+          },
+          "balance" : "Bakiye (tam)",
+          "received" : "Alındı (yaklaşık)",
+          "spent" : "Harcandı (yaklaşık)",
+          "fees" : "Ödenen ücretler (yaklaşık)",
+          "involving_calls" : "Adres içeren çağrılar",
+          "transferred" : "Transfer edildi",
+          "failed" : "Başarısız oldu",
+          "erc-20" : {
+            "caption" : "ERC-20 Token bakiyeleri",
+            "balance" : "Bakiye"
+          }
+        }
+      },
+      "ripple" : {
+        "ledger" : {
+          "description" : "Ripple (XRP) defter: {ledger_id}, hash: {ledger_hash}, zaman: {time}",
+          "ledger_index" : "Defter endeksi",
+          "ledger_hash" : "Defter hashi",
+          "parent_hash" : "Üst hash",
+          "transaction_hash" : "İşlem hash",
+          "close_time" : "Kapanmış",
+          "total_coins" : "Toplam coinler",
+          "last_transactions" : "Bu deftere dahil edilen işlemler"
+        },
+        "transaction" : {
+          "description" : "Ripple (XRP) işlemi : {tx_hash}, zaman: {time}",
+          "transaction_index" : "Defter endeksi",
+          "account" : "Hesap",
+          "sequence" : "Sıra",
+          "account_txn_id" : "Hesap tx id",
+          "flags" : "İşaretler",
+          "last_ledger_sequence" : "Son defter sırası",
+          "source_tag" : "Kaynak etiketi",
+          "transaction_result" : "Sonuç",
+          "transaction_status" : "Durum",
+          "type" : {
+            "caption" : "Veri yazın",
+            "clear_flag" : "İşareti kaldır",
+            "domain" : "Alan adı",
+            "email_hash" : "Alan adı hashi",
+            "message_key" : "Mesaj anahtarı",
+            "set_flag" : "İşaret koy",
+            "transfer_rate" : "Transfer oranı",
+            "check_id" : "id'yi kontrol et",
+            "amount" : "Miktar",
+            "deliver_min" : "Min Teslim",
+            "destination" : "Hedef",
+            "send_max" : "Max Gönder",
+            "destination_tag" : "Hedef etiketi",
+            "expiration" : "Süre sonu",
+            "invoice_id" : "Fatura id",
+            "authorize" : "Yetki ver",
+            "unauthorize" : "Yetkiyi kaldır",
+            "owner" : "Sahip",
+            "offer_sequence" : "Teklif sırası",
+            "cancel_after" : "Sonra iptal et",
+            "finish_after" : "Sonra bitir",
+            "condition" : "Koşul",
+            "fulfillment" : "Yerine getirme",
+            "taker_gets" : "Alıcının alır",
+            "taker_pays" : "Alıcı öder",
+            "channel" : "Kanal",
+            "balance" : "Bakiye",
+            "signature" : "İmza",
+            "public_key" : "Açık anahtar",
+            "settle_delay" : "Erteleme belirle",
+            "regular_key" : "Düzenli anahtar",
+            "signer_quorum" : "İmza yetersayısı",
+            "limit_amount" : "Limit miktarı",
+            "quality_in" : "İçerideki kalite",
+            "quality_out" : "Dışarıdaki kalite"
+          }
+        },
+        "account" : {
+          "description" : "Ripple (XRP) hesap: {account}, bakiye: {balance}",
+          "account_summary" : "Hesap özeti",
+          "previous_txn" : "Son tx",
+          "sequence" : "Sonraki sıra",
+          "balances" : {
+            "caption" : "Token bakiyesi",
+            "account" : "Karşı taraf",
+            "limit" : "Limit"
+          },
+          "transactions" : "Son hesap işlemleri"
+        }
+      },
+      "stellar" : {
+        "ledger" : {
+          "description" : "Stellar (XLM) defteri: {ledger_id}, hash: {ledger_hash}, zaman: {time}",
+          "height" : "Yükseklik",
+          "hash" : "Hash",
+          "closed_at" : "Kapanış",
+          "transaction_count" : "İşlem sayısı",
+          "successful" : "Başarılı: {transaction_count}",
+          "failed" : "Başarısız: {transaction_count}",
+          "operation_count" : "Operasyon sayısı",
+          "fee_pool" : "Havuz ücreti",
+          "base_fee" : "Temel ücret",
+          "base_reserve" : "Temel rezerv",
+          "protocol_version" : "Protokol versiyonu"
+        },
+        "transaction" : {
+          "description" : "Stellar (XLM) işlem: {tx_hash}, zaman: {time}",
+          "hash" : "İşlem hash",
+          "created_at" : "Oluşturuldu",
+          "successful" : "Başarılı?",
+          "ledger" : "Deftere eklendi",
+          "source_account" : "Kaynak hesap",
+          "source_account_sequence" : "Kaynak hesap sırası",
+          "fee_paid" : "Ödenen ücret",
+          "operations" : {
+            "caption" : "Operasyonlar",
+            "type" : "Tür",
+            "id" : "Id",
+            "from" : "Kimden",
+            "to" : "Kime",
+            "amount" : "Miktar",
+            "offer_id" : "Teklif id",
+            "account" : "Hesap",
+            "funder" : "Fon sağlayıcısı",
+            "starting_balance" : "Başlangıç bakiyesi",
+            "selling_asset_code" : "Satan varlık kodu",
+            "selling_asset_issuer" : "Satan varlık üreticisi",
+            "price" : "Fiyat",
+            "buying_asset_code" : "Satın alan varlık kodu",
+            "buying_asset_issuer" : "Satın alan varlık üreticisi",
+            "asset_code" : "Varlık kodu",
+            "asset_issuer" : "Varlık üreticisi",
+            "trustee" : "Vekil hesap",
+            "trustor" : "Emanet vasi hesap",
+            "limit" : "Limit",
+            "home_domain" : "Ana alan adı"
+          },
+          "memo_type" : "Not türü",
+          "memo" : "Not"
+        },
+        "account" : {
+          "description" : "Stellar (XLM) hesap: {account}, bakiye: {balance}",
+          "id" : "Hesap id",
+          "subentry_count" : "Alt giriş sayısı",
+          "inflation_destination" : "Enflasyon hedefi",
+          "last_modified_ledger" : "Son değiştirilen defter",
+          "balances" : {
+            "caption" : "Hesap bakiyeleri"
+          }
+        }
+      },
+      "ton" : {
+        "block" : {
+          "description" : "Telegram Open Network bloğu: {block_id}, iş zinciri: {workchain_id}, parça: {shard}, zaman: {time} – TON Gezgini",
+          "seqno" : "Sırano",
+          "shard_tooltip" : "Shard: ({workchain},{shard})",
+          "shards_count" : "Shard sayısı",
+          "workchain" : "İş zinciri",
+          "shard" : "Shard",
+          "time" : "Oluşturuldu",
+          "created" : "Oluşturuldu",
+          "minted" : "Basıldı",
+          "imported" : "İçe aktarıldı",
+          "exported" : "Dışa aktarıldı",
+          "recovered" : "Kurtarıldı",
+          "fees_collected" : "Toplanan ücretler",
+          "gram_flow" : "Gram akışı",
+          "roothash" : "Kök hash",
+          "filehash" : "Dosya Hashi",
+          "lt" : "Mantıksal zaman",
+          "userfriendly_address" : "Adres",
+          "transactions" : "Bu bloğa dahil işlemler"
+        },
+        "transaction" : {
+          "description" : "Telegram Open Network işlemi {transaction_hash}, hesap: {userfriendly_account}, shard: {shard}",
+          "prev_transaction" : "Önceki işlem",
+          "total_fee" : "Toplam ücret",
+          "account" : "Hesap",
+          "status_change" : "Durum değişikliği",
+          "state_update" : {
+            "old_hash" : "Eski hash",
+            "new_hash" : "Yeni hash"
+          },
+          "included_messages" : "Bu işleme dahil olan mesajlar"
+        },
+        "messages" : {
+          "index" : "Dizin",
+          "total_fee" : "Toplam ücret",
+          "source" : "Kaynak",
+          "destination" : "Hedef",
+          "value_gram" : "Değer (GRAM)",
+          "type" : "Tür"
+        },
+        "account" : {
+          "description" : "Telegram Open Network hesabı: {hex_account}, GRAM bakiye: {balance}",
+          "last_trans" : "Son işlem",
+          "storage_stats" : "Depolama istetistikleri",
+          "bits" : "Bits",
+          "cells" : "Hücreler",
+          "last_paid" : "Son ödeme",
+          "public_cells" : "Herkese açık hücreler"
+        }
+      },
+      "monero" : {
+        "block" : {
+          "description" : "Monero blok: {block_id}, hash: {hash} – Monero Gezgini"
+        },
+        "transaction" : {
+          "description" : "Monero işlemi: {hash} - Monero Gezgini",
+          "mixin" : "İmzacılar",
+          "payment_id" : "Ödeme Id",
+          "tx_fee" : "Ücret (XMR)",
+          "size" : "Boyut (B)",
+          "xmr_outputs" : "Değer (XMR)",
+          "rct_type" : "RingCT Türü"
+        },
+        "check_transaction" : {
+          "title" : "İşlemi ispatla",
+          "decode_outputs" : "Çıktıları çöz",
+          "prove_sending" : "Gönderimi kanıtla",
+          "proved" : "Kanıtlandı",
+          "transaction_key" : "İşlem anahtarı",
+          "view_key" : "Anahtarı görüntüle"
+        },
+        "stats" : {
+          "suggested_transaction_fee_dimension" : "Bayt başına piconero"
+        }
+      },
+      "cardano" : {
+        "block" : {
+          "description" : "Cardano blok: {block_id}, hash: {hash} - Cardano Gezgini",
+          "epoch" : "Epoch",
+          "slot" : "Slot",
+          "total_sent" : "Toplam gönderilen ADA",
+          "fees" : "Ücretler"
+        },
+        "transaction" : {
+          "description" : "Cardano işlemi: {hash} - Cardano Gezgini",
+          "output_total" : "Toplam çıktı (ADA)",
+          "input_total" : "Toplam girdi (ADA)",
+          "fee_total" : "Toplam ücret (ADA)"
+        },
+        "address" : {
+          "description" : "Cardano adresi: {hash} / Bakiye: {balance} – Cardano Gezgini"
+        }
+      },
+      "zcash" : {
+        "block" : {
+          "description" : "Zcash blok: {block_id}, hash: {hash} - Zcash Gezgini"
+        },
+        "transaction" : {
+          "description" : "Zcash işlemi: {hash} – Zcash Gezgin",
+          "senders_and_recipients" : "Gönderici ve alıcılar<small>(herkese açık)</small>",
+          "shielded_transfers" : "Korumalı transferler <small>(özel)</small>",
+          "join_split" : "JoinSplit",
+          "shielded_inputs" : "Korumalı girdiler",
+          "shielded_outputs" : "Korumalı çıktılar",
+          "transfered_from" : "Korumalı havuzdan aktarıldı",
+          "transfered_to" : "Korumalı havuza aktarıldı",
+          "validate" : {
+            "title" : "Korumalı aktarımları görüntüleyin",
+            "paymentdisclosure" : "Ödeme açıklaması",
+            "submit" : "Gönder",
+            "disclosed" : "Açıklanan işlem"
+          }
+        },
+        "address" : {
+          "description" : "Zcash adresi: {hash} / Bakiye: {balance} - Zcash Gezgini"
+        }
+      },
+      "mixin" : {
+        "snapshot" : {
+          "snapshot_info" : "Anlık kopya bilgisi",
+          "references" : "Referanslar",
+          "description" : "Mixin (XIN) anlık kopyası {topoloji}, hash: {hash}, düğüm: {node}"
+        },
+        "transaction" : {
+          "description" : "Mixin (XIN) işlemini {hash} kontrol et, varlık: {asset}",
+          "transaction_info" : "İşlem bilgisi",
+          "outputs_title" : "İşlem girdileri & çıktıları",
+          "keys" : "Anahtarlar",
+          "mask" : "Kalıp",
+          "type" : "Çıktı türü",
+          "script" : "Script",
+          "withdrawal" : "Para çekme"
+        },
+        "node" : {
+          "node_info" : "Düğüm bilgisi",
+          "description" : "Mixin (XIN) çekirdek düğümü {id}"
+        },
+        "round" : {
+          "round_info" : "Yuvarlama bilgisi",
+          "description" : "Mixin (XIN) yuvarlama {number}, {hash}",
+          "round_snapshots" : "Yuvarlama anlık kopyaları"
+        }
+      },
+      "tezos" : {
+        "operations" : "Operasyonlar:",
+        "endorsement" : "Tasdik",
+        "delegation" : "Delegasyon",
+        "reveal" : "Ortaya çıkar",
+        "bulk_transaction" : "Toplu işlem",
+        "block" : {
+          "baker" : "Baker",
+          "cycle" : "Döngü",
+          "level_in_cycle" : "Döngüdeki seviye",
+          "solvetime" : "Çözme zamanı",
+          "fitness" : "Elverişlilik",
+          "transaction_volume" : "İşlemlerin hacmi",
+          "baker_reward" : "Blok ödülü",
+          "baker_fees" : "Baker ücretleri",
+          "burned" : "Yakılan",
+          "activated_supply" : "Etkinleştirilmiş arz",
+          "accounts" : "Yeni / Finanse Edilen / Temizlenen hesaplar",
+          "token_days" : "Token günleri",
+          "days_destroyed" : "Token yakılma günleri",
+          "priority" : "Öncelik",
+          "is_cycle_snapshot" : "Döngü anlık bir kopya mı",
+          "predecessor" : "Önceki",
+          "successor" : "Varis",
+          "block_endorsements" : "Blok destekleri",
+          "endorsements" : "Destekler",
+          "delegations" : "Delegasyonlar",
+          "reveals" : "Ortaya çıkarılanlar",
+          "block_operations" : "Blok operasyonları",
+          "description" : "Tezos blok: {height}, hash: {hash} - Tezos Gezgini"
+        },
+        "operation" : {
+          "amount_reward" : "Hacim / Ödül",
+          "title" : "Operasyon",
+          "general_info" : "Operasyon",
+          "volume" : "Hacim",
+          "volume_total" : "Hacim toplamı",
+          "reward" : "Ödül",
+          "deposit" : "Depozito"
+        },
+        "account" : {
+          "delegated_balance" : "Delege edilmiş bakiye",
+          "spendable_balance" : "Harcanabilir bakiye",
+          "total_delegations" : "Tüm delegasyonlar",
+          "active_delegations" : "Aktif delegasyonlar",
+          "rolls_owned" : "Sahip olunan defterler",
+          "rank" : "Derece",
+          "operations" : "Operasyonlar",
+          "title" : "Baker"
+        }
+      },
+      "eos" : {
+        "card" : {
+          "irreversible_block" : "Geri döndürülemez blok:",
+          "ram_allocated" : "Ayrılan RAM:",
+          "eos_staked" : "Kilitlenmiş EOS:",
+          "latest_block_producer" : "Son yapımcı:"
+        },
+        "homepage" : {
+          "irreversible_block" : "Geri döndürülemez blok",
+          "network_stats" : "Ağ istatistikleri"
+        },
+        "updated_tooltip" : "Son güncelleme",
+        "account" : {
+          "account_name" : "Hesap adı",
+          "liquid_balance" : "Likidite dengesi",
+          "head_block_num" : "Tepe blok",
+          "head_block_time" : "Tepe blok zamanı",
+          "privileged" : "Ayrıcalıklı mı",
+          "net_usage" : "Ağ kullanımı",
+          "cpu_usage" : "CPU kullanımı",
+          "ram_usage" : "RAM kullanımı",
+          "kb" : "kB",
+          "created" : "Oluşturuldu",
+          "staked_tokens" : "Kilitlenmiş tokenler",
+          "cpu_staked" : "Kilitli CPU",
+          "net_staked" : "Kilitli ağ",
+          "others_staked" : "Başkaları tarafından kilitlenmiş",
+          "total_rex" : "Toplam REX",
+          "account_actions" : "Hesap aksiyonları",
+          "permissions" : "Hesap izinleri (anahtarlar)",
+          "accounts" : "Hesaplar",
+          "title" : "Üretici (hesap)",
+          "description" : "EOS üretici hesabını {account} bakiyesini ve işlemlerini kontrol et"
+        },
+        "transaction" : {
+          "action" : "Aksiyon",
+          "actions" : "Aksiyonlar",
+          "expiration" : "Süre sonu",
+          "expired" : "Süresi doldu",
+          "quantity_actions" : "Aksiyonların miktarı",
+          "show_expired" : "Süresi dolan işlemleri göster",
+          "volume_actions" : "Aksiyonların hacmi",
+          "last_irreversible_block" : "Son geri dönülemez blok",
+          "contract" : "Sözleşme",
+          "authorization" : "Yetki",
+          "title" : "Operasyon (İşlem)",
+          "description" : "EOS işlem {hash} detaylarını kontrol et"
+        },
+        "block" : {
+          "producer" : "Üretici",
+          "producer_signature" : "Üretici imzası",
+          "schedule_version" : "Sürümü planla",
+          "transaction_mroot" : "İşlem merkle kökü",
+          "action_mroot" : "Aksiyon merkle kökü",
+          "confirmed" : "Onaylanmış",
+          "description" : "EOS blok: {height}, hash: {hash} - EOS Gezgini"
+        }
+      }
+    },
+    "protocol" : {
+      "bitcoin" : {
+        "omni" : {
+          "navigation" : {
+            "properties" : "Özellikler",
+            "property" : "Mülk"
+          },
+          "homepage" : {
+            "title" : "Omni Layer Gezgini",
+            "description" : "Tether (USDT), MaidSafeCoin (MAID) ve Omni (Mastercoin) gibi Omni Layer (OMNI) işlemlerini ve özelliklerini keşfedin",
+            "stats" : {
+              "title" : "Omni Layer istatistikleri",
+              "properties" : "Özellikler",
+              "mainnet_properties" : "Mainnet özellikleri",
+              "testnet_properties" : "Testnet özellikleri",
+              "transactions" : "İşlemler"
+            },
+            "newest_properties" : "En yeni özellikler",
+            "latest_transactions" : "Son işlemler"
+          },
+          "infinitable" : {
+            "description" : {
+              "properties" : "Tether (USDT), MaidSafeCoin (MAID) ve Omni (Mastercoin) gibi tüm Omni Layer özelliklerini keşfedin"
+            },
+            "foot" : {
+              "explore_list" : "Bu listeyi keşfedin... 👐"
+            },
+            "properties" : {
+              "name" : "İsim",
+              "issuer" : "Üretici",
+              "creation_transaction_hash" : "Oluşturan tx hash",
+              "creation_time" : "Oluşturma zamanı",
+              "creation_block_id" : "Oluşturulan blok id",
+              "is_issuance_fixed" : "üretim sabit mi?",
+              "is_issuance_managed" : "Üretim yönetiliyor mu?",
+              "is_divisible" : "Bölünebilir mi?",
+              "circulation" : "Sirkülasyon",
+              "ecosystem" : "Ekosistem",
+              "category" : "Kategori",
+              "subcategory" : "Alt kategori",
+              "description" : "Açıklama",
+              "url" : "URL"
+            },
+            "transactions" : {
+              "type" : "Tür",
+              "sender" : "Gönderici",
+              "recipient" : "Alıcı",
+              "valid" : "Geçerli mi?",
+              "valid_unknown" : "Bilinmeyen. Onay bekleyin!",
+              "amount" : "Miktar"
+            }
+          },
+          "type" : {
+            "property" : {
+              "navigation" : "{name} (#{id})",
+              "description" : "{name} (#{id}) varlık {ecosystem} Omni Layer protokol",
+              "danger_fraud" : "Uyarı! Bu gerçek {name} tokeni değil! Dolandırıcılığa dikkat edin!",
+              "id" : {
+                "short" : "Id",
+                "full" : "Mülk Kimliği"
+              }
+            }
+          }
+        }
+      }
+    },
+    "homepage" : {
+      "stats" : {
+        "market_data" : {
+          "cap" : "Piyasa değeri: {mcap}",
+          "dominance" : "Hakimiyet: {dominance}"
+        },
+        "general" : {
+          "caption" : "İstatistikler",
+          "circulation" : "Sirkülasyon:",
+          "circulation_limit" : "Sirkülasyon arz limiti:",
+          "difficulty" : "Zorluk:",
+          "blockchain_size" : {
+            "caption" : "Blokzincir boyutu:",
+            "dimension" : "GB"
+          }
+        },
+        "24h_stats" : {
+          "caption" : "24s istatistikler",
+          "volume_24h" : "Zincir üzerindeki hacim:",
+          "hashrate" : {
+            "caption" : "Hashrate:",
+            "dimension" : {
+              "bitcoin" : "Eh/s",
+              "ethereum" : "Th/s",
+              "dash" : "Ph/s",
+              "monero" : "Gh/s",
+              "zcash" : "Gs/s"
+            }
+          },
+          "tps" : "Saniye başına tx:",
+          "average_transaction_fee" : "Ortalama işlem ücreti:",
+          "median_transaction_fee" : "Medyan işlem ücreti:",
+          "inflation_24h" : "24s Enflasyon:"
+        },
+        "mempool" : {
+          "caption" : "Bellek Havuzu"
+        }
+      },
+      "charts" : {
+        "caption" : "Grafikler",
+        "link" : "Tüm tablolara bakın"
+      },
+      "bitcoin" : {
+        "title" : "Bitcoin Gezgini",
+        "description" : "Bitcoin (BTC) bloklarını, işlemlerini, adreslerini, bakiyelerini, düğümlerini, OP_RETURN verilerini ve protokollerini, blokzincir istatistiklerini ve grafiklerini arayın",
+        "stats" : {
+          "blocks" : "Bloklar",
+          "transactions" : "İşlemler",
+          "outputs" : "Çıktılar",
+          "countdowns" : {
+            "reward_halving" : "Yarılanma ödülü",
+            "upcoming_fork" : "Yaklaşan çatal"
+          },
+          "general" : {
+            "next_difficulty_estimate" : "Sonraki tahmini zorluk:",
+            "next_retarget_time_estimate" : "Sonraki yeniden ayarlama:",
+            "best_block" : "Son blok:",
+            "best_block_hash" : "En iyi blok hashi:",
+            "best_block_time" : "En iyi blok süresi:",
+            "nodes" : "Ağ düğümleri:"
+          },
+          "24h_stats" : {
+            "blocks" : "Bloklar:",
+            "average_block_time" : {
+              "caption" : "Bloklar arasındaki ort. süre:",
+              "dimension" : "sn."
+            },
+            "transactions" : "İşlemler:"
+          },
+          "mempool" : {
+            "suggested_transaction_fee" : {
+              "caption" : "Önerilen ücret:",
+              "dimension" : "byte başına satoshi"
+            },
+            "total_fee" : "Ücretlerde:",
+            "size" : {
+              "caption" : "Boyut:",
+              "dimension" : "MB"
+            }
+          }
+        },
+        "latest_blocks" : "Son bloklar",
+        "biggest_txs_24h" : "Son 24 saatteki en büyük işlemler",
+        "menu" : {
+          "caption" : "{chain} menü",
+          "blockchain" : "Blokzincir",
+          "mempool" : "Bellek Havuzu",
+          "mainnet_link" : "mainnet gezginine git",
+          "dag" : "DAG"
+        },
+        "charts" : {
+          "average_block_size" : "Gün ve saate göre ort. blok boyutu (son 3 ay)",
+          "hashrate_distribution" : "Hashrate dağılımı (son 2 hafta)",
+          "segwit_usage" : "SegWit kullanımı (son 3 ay)",
+          "dairy_circulation" : "Günlük sirkülasyon (ABD milyar doları) (son 3 ay)",
+          "median_transaction_fee" : "Ortalama medyan ücreti (USD) (son 3 ay)",
+          "coindays_destroyed" : "Güne göre yok edilen coin günleri (milyonlar) (son 3 ay)",
+          "non_monetary_outputs" : "Parasal olmayan çıktıların yüzdesi (son 3 ay)",
+          "distribution_of_outputs" : "Çıktı türlerinin dağılımı (geçen hafta)",
+          "average_fee" : "Ortalama kB başına ücret (USD) (son 3 ay)"
+        }
+      },
+      "ripple" : {
+        "title" : "Ripple Gezgini",
+        "description" : "Ripple (XRP) defterini, işlemlerini, adreslerini ve bakiyelerini, blokzinciri istatistiklerini ve grafiklerini inceleyin",
+        "stats" : {
+          "ledgers" : "Defterler",
+          "circulation" : "Sirkülasyon",
+          "general" : {
+            "best_ledger" : "Son defter:",
+            "best_ledger_hash" : "En iyi defter hashi:",
+            "best_ledger_time" : "En iyi defter zamanı:"
+          },
+          "24h_stats" : {
+            "ledgers" : "Defterler:",
+            "average_ledger_time" : "Defterler arasındaki ort. süre:"
+          }
+        },
+        "latest_ledgers" : "En son defterler"
+      },
+      "stellar" : {
+        "title" : "Stellar Gezgini",
+        "description" : "Stellar (XLM) defterini, işlemlerini, adreslerini ve bakiyelerini, blokzinciri istatistiklerini ve çizelgelerini inceleyin",
+        "stats" : {
+          "24h_stats" : {
+            "successful_transactions" : "Başarılı işlemler:",
+            "failed_transactions" : "Başarısız işlemler:",
+            "operations" : "Operasyonlar:"
+          }
+        }
+      },
+      "ton" : {
+        "title" : "Telegram Open Network (TON) Gezgini",
+        "description" : "TON blokzinciri gezgini, bloklar, GRAM bakiyeleri, işlemler ve adresler",
+        "stats" : {
+          "general" : {
+            "best_block_file_hash" : "En iyi blok dosya hashi:",
+            "best_block_root_hash" : "En iyi kök blok hashi:"
+          }
+        }
+      },
+      "monero" : {
+        "title" : "Monero Gezgini",
+        "description" : "Monero blok zincir gezgini, bloklar, işlemler ve adresler",
+        "stats" : {
+          "general" : {
+            "best_block_file_hash" : "En iyi blok dosya hashi:",
+            "best_block_root_hash" : "En iyi blok kökü hashi:"
+          },
+          "mempool_dimension" : "kB"
+        }
+      },
+      "cardano" : {
+        "title" : "Cardano Gezgini",
+        "description" : "Cardano blokzincir gezgini, bloklar, işlemler ve adresler",
+        "stats" : {
+          "general" : {
+            "current_epoch" : "Mevcut epoch:",
+            "current_slot" : "Mevcut slot:"
+          }
+        }
+      },
+      "ethereum" : {
+        "title" : "Ethereum Gezgini",
+        "description" : "Ethereum (ETH) bloklarına, işlemlerine, adreslerine, akıllı sözleşmelerine, bakiyelerine ve blokzinciri istatistiklerine bakın",
+        "stats" : {
+          "uncles" : "Uncle bloklar",
+          "calls" : "Çağrılar",
+          "erc-20" : {
+            "tokens" : "ERC-20 tokenleri"
+          },
+          "general" : {
+            "median_gas_price" : {
+              "caption" : "Medyan gas fiyatı:",
+              "dimension" : "Gwei"
+            }
+          },
+          "24h_stats" : {
+            "uncles" : "Uncle bloklar:"
+          },
+          "mempool" : {
+            "total_value" : "Değerinde:"
+          }
+        },
+        "menu" : {
+          "mempool" : "Bellek havuzu ve son 6 blok"
+        },
+        "charts" : {
+          "average_gas_size" : "Gün ve saat bazında ortalama gas kullanımı (son 3 ay)",
+          "average_gas_limit" : "Ortalama gas limiti (son 3 ay)",
+          "mining_difficulty" : "Madencilik zorluğu (son 3 ay)",
+          "new_contract_count" : "Yeni sözleşme sayısı (son 3 ay)",
+          "distribution_of_tx_types" : "Tx türlerinin dağılımı (son 3 ay)",
+          "average_gas_price" : "Ortalama gas fiyatı (GWei) (son 3 ay)"
+        }
+      },
+      "bitcoin/testnet" : {
+        "title" : "Bitcoin Testnet Gezgini",
+        "description" : "Bitcoin Testnet (TBTC) bloklarını, işlemlerini, adreslerini, bakiyelerini, düğümlerini, OP_RETURN verilerini ve protokollerini, blokzinciri istatistiklerini ve çizelgelerini inceleyin"
+      },
+      "ethereum/testnet" : {
+        "title" : "Ethereum Testnet Gezgini",
+        "description" : "Ethereum Testnet (ETH) bloklarını, işlemleri, adresleri, akıllı sözleşmeleri, bakiyeleri ve blokzinciri istatistiklerini inceleyin"
+      },
+      "bitcoin-cash" : {
+        "title" : "Bitcoin Cash Gezgini",
+        "description" : "Bitcoin Cash (BCH) bloklarını, işlemlerini, adreslerini, bakiyelerini, düğümlerini, OP_RETURN verilerini ve protokollerini, blokzinciri istatistiklerini ve çizelgelerini inceleyin",
+        "charts" : {
+          "voting_of_scalability" : "Ölçeklenebilirlik için oylama"
+        }
+      },
+      "bitcoin-sv" : {
+        "title" : "Bitcoin SV Gezgini",
+        "description" : "Bitcoin SV (BSV) bloklarını, işlemlerini, adreslerini, bakiyelerini, düğümlerini, OP_RETURN verilerini ve protokollerini, blokzinciri istatistiklerini ve çizelgelerini inceleyin"
+      },
+      "dogecoin" : {
+        "title" : "Dogecoin Gezgini",
+        "description" : "Dogecoin (DOGE) bloklarını, işlemlerini, adreslerini, dengelerini, düğümlerini, OP_RETURN verilerini ve protokollerini, blokzinciri istatistiklerini ve çizelgelerini inceleyin"
+      },
+      "dash" : {
+        "title" : "Dash Gezgini",
+        "description" : "Dash (DASH) bloklarını, işlemlerini, adreslerini, bakiyelerini, OP_RETURN verilerini ve protokollerini, blokzinciri istatistiklerini ve çizelgelerini inceleyin"
+      },
+      "litecoin" : {
+        "title" : "Litecoin Gezgini",
+        "description" : "Litecoin (LTC) bloklarını, işlemlerini, adreslerini, bakiyelerini, düğümlerini, blokzinciri istatistiklerini ve çizelgelerini inceleyin"
+      },
+      "groestlcoin" : {
+        "title" : "Groestlcoin Gezgini",
+        "description" : "Groestlcoin (GRS) bloklarını, işlemlerini, adreslerini, bakiyelerini, düğümlerini, blokzinciri istatistiklerini ve çizelgelerini inceleyin"
+      },
+      "zcash" : {
+        "title" : "Zcash Gezgini",
+        "description" : "Zcash (ZEC) bloklarını, işlemlerini, adreslerini, dengelerini, düğümlerini ve protokollerini, blokzinciri istatistiklerini ve çizelgelerini keşfedin",
+        "stats" : {
+          "mempool" : {
+            "suggested_transaction_fee" : {
+              "dimension" : "İşlem başına ZEC",
+              "dimension_short" : "zatoshi"
+            }
+          }
+        }
+      },
+      "mixin" : {
+        "title" : "Mixin Gezgini",
+        "description" : "Mixin (XIN) anlık kopyalarını, işlemlerini, varlıklarını, düğümlerini ve blokzinciri (DAG) istatistiklerini arayın",
+        "stats" : {
+          "best_snapshot_height" : "En iyi anlık kopya yüksekliği",
+          "best_snapshot_time" : "En iyi anlık kopya süresi",
+          "best_snapshot_hash" : "En iyi anlık kopya hashi",
+          "snapshots" : "Anlık kopyalar",
+          "mintings" : "Para basımları",
+          "accepted_nodes" : "Aktif düğümler"
+        },
+        "24h_stats" : {
+          "snapshots" : "Anlık kopyalar:"
+        },
+        "latest_snapshots" : "En son anlık kopyalar"
+      },
+      "useful_links" : {
+        "caption" : "Faydalı bağlantılar",
+        "description" : "Web sitelerinde halihazırda Blockchair kullanan ortaklar",
+        "wallets" : "Cüzdanlar",
+        "hardware_wallets" : "Donanım cüzdanları",
+        "market_data" : "Piyasa verileri",
+        "exchanges" : "Borsalar",
+        "mining_pools" : "Madencilik havuzları",
+        "explorers" : "Gezginler",
+        "crypto_processors" : "Ödeme işlemcileri",
+        "dapps" : "dApps"
+      },
+      "tezos" : {
+        "title" : "Tezos Gezgini",
+        "description" : "Tezos (XTZ) bloklarını, işlemlerini, hesaplarını (bakerlar) ve bakiyelerini, blokzinciri istatistiklerini arayın"
+      },
+      "eos" : {
+        "title" : "EOS Gezgini",
+        "description" : "EOS bloklarını, işlemlerini, hesaplarını (üreticileri) ve bakiyelerini, blokzinciri istatistiklerini, geri döndürülemez bloğu arayın"
+      }
+    },
+    "bitcoin" : {
+      "nodes" : {
+        "description" : "Erişilebilir tüm düğümlerini, ülkelerini, uygulamalarını, sürümlerini ve konsensüs kurallarını arayarak Bitcoin ağını keşfedin",
+        "other_nodes" : "Diğer düğümler",
+        "last_updated" : "Son güncelleme:",
+        "versions" : {
+          "caption" : "Düğüm versiyonları:",
+          "user_agent" : "Kullanıcı aracısı",
+          "count" : "Sayı"
+        },
+        "heights" : "Blok yükseklikleri:",
+        "charts" : {
+          "total_nodes" : "Toplam düğüm: {total}",
+          "by_countries" : "Ülkelere göre",
+          "by_implementations" : "Uygulamalara göre",
+          "by_heights" : "Yüksekliklere göre"
+        }
+      },
+      "whitepaper" : {
+        "description" : "Tutarlılık için Satoshi Nakamoto'nun teknik dokümanını farklı web sitelerinde ve Bitcoin çıktılarından kontrol edin",
+        "last_check" : "Son kontrol:",
+        "icon" : "İkon",
+        "site" : "Site",
+        "url" : "URL",
+        "hash" : "Hash",
+        "status" : "Durum",
+        "footer" : {
+          "what_is" : {
+            "caption" : "Bu sayfa nedir?",
+            "description1" : "Bu sayfa, farklı Bitcoin sitelerinin orijinal Bitcoin teknik incelemesini mi yoksa düzenlenmiş bir sürümünü mü sunduğunu gösterir. Her saat başı dosyaların SHA-256 hash değerlerini hesaplıyoruz ve bunları orijinal teknik dokümanın hashleri ile karşılaştırıyoruz (o da şu <span class='word--break'> b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553</span>).",
+            "description2" : "Bitcoin.org'da barındırılan teknik dokümanı değiştirmek için bazı öneriler var (örneğin, {github_issue_link} hala açık). Birilerinin ticari çıkarları için akademik bir makaleyi değiştirmenin ve Bitcoin tarihini yeniden yazmanın düpedüz kabul edilemez olduğuna inanıyoruz.",
+            "github_issue" : "GitHub Sorun # 1325"
+          },
+          "where_find" : {
+            "caption" : "Teknik dokümanı Bitcoin blokzincirinde nerede bulabilirim?",
+            "description1" : "Her şeyden önce, hash'i düz metin olarak içeren bazı boş veri çıktıları vardır. Bunları {outputs_table_link} linkinden bulabilirsiniz. Örnekler: {transaction1_link}, {transaction2_link}, {transaction3_link}",
+            "outputs_table" : "çıktılar tablosunda bir filtre kullanımı",
+            "description2" : "Ayrıca hash'i hex olarak içeren boş veri çıktıları vardır. Arama motorumuzun şu anki sürümü, scriptleri hex değerlerine göre filtrelemek için henüz desteğe sahip değil, ancak hex değeri ikili metin olarak gösterilebildiğinden, bu metni {outputs_table_search_link}  linki şeklinde yapabiliriz. Örnekler: {transaction1_link}, {transaction2_link}, {transaction3_link}",
+            "outputs_table_search" : "alfanümerik parçalara göre arama",
+            "description3" : "Daha da önemlisi, pdf dosyasının kendisini içeren {transaction_link} işlemi var. İşte burada {bitcoin_stackexchange_link}. Teknik dokümanı bazı web sitelerinde düzenlemek mümkün olabilir, ancak blokzincirini değiştirmek mümkün değildir.",
+            "bitcoin_stackexchange" : "nasıl ayrıştırılacağına dair bir talimat"
+          }
+        }
+      }
+    },
+    "bitcoin-cash" : {
+      "nodes" : {
+        "description" : "Tüm erişilebilir düğümlerini, ülkelerini, uygulamalarını, sürümlerini ve konsensüs kurallarını inceleyerek Bitcoin Cash ağını keşfedin"
+      }
+    },
+    "bitcoin-sv" : {
+      "nodes" : {
+        "description" : "Tüm erişilebilir düğümlerini, ülkelerini, uygulamalarını, sürümlerini ve konsensüs kurallarını inceleyerek Bitcoin SV ağını keşfedin"
+      }
+    },
+    "dogecoin" : {
+      "nodes" : {
+        "description" : "Tüm erişilebilir düğümlerini, ülkelerini, uygulamalarını, sürümlerini ve konsensüs kurallarını inceleyerek Dogecoin ağını keşfedin"
+      }
+    },
+    "litecoin" : {
+      "nodes" : {
+        "description" : "Tüm erişilebilir düğümlerini, ülkelerini, uygulamalarını, sürümlerini ve konsensüs kurallarını inceleyerek Litecoin ağını keşfedin"
+      }
+    },
+    "dash" : {
+      "nodes" : {
+        "description" : "Tüm erişilebilir düğümlerini, ülkelerini, uygulamalarını, sürümlerini ve konsensüs kurallarını inceleyerek Dash ağını keşfedin"
+      }
+    },
+    "groestlcoin" : {
+      "nodes" : {
+        "description" : "Tüm erişilebilir düğümlerini, ülkelerini, uygulamalarını, sürümlerini ve konsensüs kurallarını inceleyerek Groestlcoin ağını keşfedin"
+      }
+    },
+    "zcash" : {
+      "nodes" : {
+        "description" : "Tüm erişilebilir düğümlerini, ülkelerini, uygulamalarını, sürümlerini ve konsensüs kurallarını inceleyerek Zcash ağını keşfedin"
+      }
+    },
+    "ethereum" : {
+      "erc-20" : {
+        "navigation" : {
+          "object" : {
+            "tokens" : "Tokenler",
+            "transactions" : "İşlemler"
+          }
+        },
+        "homepage" : {
+          "title" : "Ethereum ERC-20 Gezgini",
+          "description" : "ERC-20 tokenlerini (USDT gibi), işlemlerini, bakiyelerini, yeni sözleşmelerin listesine bakın",
+          "stats" : {
+            "title" : "ERC-20 istatistikleri",
+            "tokens" : "Tüm tokenler",
+            "transactions" : "Tüm işlemler",
+            "tokens_24h" : "Yeni tokenler 24s",
+            "transactions_24h" : "Yeni işlemler 24s"
+          },
+          "most_used_tokens" : "Geçen ay en çok kullanılan tokenler",
+          "latest_tokens" : "En yeni tokenler",
+          "latest_transactions" : "Son işlemler"
+        },
+        "infinitable" : {
+          "title" : {
+            "tokens" : "ERC-20 Token Listesi",
+            "transactions" : "ERC-20 İşlem Listesi"
+          },
+          "description" : {
+            "tokens" : "En popüler ve en yeni ERC-20 tokenlerini (USDT gibi) arayın, bunları yılına, blok id'sine ve adına göre sıralayın ve filtreleyin",
+            "transactions" : "En son ERC-20 (USDT gibi) işlemlerine bakın, bunları yılına, blok id'sine ve değerine göre sıralayın ve filtreleyin"
+          },
+          "tokens" : {
+            "address" : "Adres",
+            "id" : "Id",
+            "time" : "Oluşturuldu",
+            "name" : "İsim",
+            "symbol" : "Sembol",
+            "decimals" : "Ondalık sayılar",
+            "creating_block_id" : "Oluşturan blok id",
+            "creating_transaction_hash" : "Oluşturan tx hash"
+          },
+          "transactions" : {
+            "block_id" : "Blok Id",
+            "id" : "İşlem Id",
+            "transaction_hash" : "İşlem hash",
+            "token_address" : "Token adresi",
+            "token_name" : "Token adı",
+            "token_symbol" : "Token sembolü",
+            "token_decimals" : "Token ondalıkları",
+            "value" : "Değer"
+          }
+        },
+        "token" : {
+          "title" : "{token_name} ({token_symbol}) Gezgin",
+          "description" : "{token_name} ({token_symbol}) için en son işlemleri, adresleri ve bakiyeleri bulun",
+          "navigation" : "Token",
+          "stats" : {
+            "time" : "Oluşturuldu:",
+            "creating_block_id" : "Oluşturan blok id:",
+            "creating_transaction_hash" : "Oluşturan İşlem hash:",
+            "transactions" : "İşlemler:",
+            "transactions_24h" : "İşlemler 24s:",
+            "volume_24h" : "Hacim 24s:"
+          },
+          "latest_transactions" : "En son token işlemleri"
+        }
+      }
+    },
+    "charts" : {
+      "title" : "Grafikler",
+      "description" : "{chain} grafikleri, {ticker} fiyatı, geçmiş ve canlı grafikleri ve diğer kripto para görselleştirmeleri",
+      "content" : {
+        "sections" : {
+          "monetary_stats" : "Parasal istatistikler",
+          "blocks" : "Bloklar",
+          "transactions" : "İşlemler",
+          "misc" : "Çeşitli"
+        }
+      },
+      "bitcoin" : {
+        "names" : {
+          "blockchain-size" : {
+            "title" : "{chain} blokzincir boyut grafiği",
+            "name" : "Blokzincir boyutu",
+            "description" : "Başlangıç bloğundan şimdiye kadarki {chain} tam düğüm boyutunun gigabayt cinsinden büyüme oranı"
+          },
+          "price-usd" : {
+            "title" : "{chain} fiyatı ({ticker}/USD)",
+            "name" : "{chain} fiyatı (USD)",
+            "description" : "{chain} döviz kuru grafiğini alın, {chain} borsalarındaki geçmiş piyasa verileri dahil olmak üzere canlı {ticker} / USD fiyatını kontrol edin"
+          },
+          "circulation" : {
+            "title" : "{chain} sirkülasyon grafiği",
+            "name" : "Sirkülasyon",
+            "description" : "Hali hazırda ne kadar {ticker} çıkarıldı? {ticker} arzını temsil eden grafiği izleyin"
+          },
+          "average-block-size" : {
+            "title" : "{chain} ortalama blok boyutu grafiği",
+            "name" : "Ortalama blok boyutu",
+            "description" : "{chain} geçmiş ortalama blok boyutu grafiğine bakın"
+          },
+          "median-block-size" : {
+            "title" : "{chain} medyan blok boyutu grafiği",
+            "name" : "Medyan blok boyutu",
+            "description" : "{chain} geçmiş medyan blok boyutu grafiğini alın"
+          },
+          "difficulty" : {
+            "title" : "{chain} zorluk tablosu",
+            "name" : "Zorluk",
+            "description" : "{ticker} zorluk tablosu, genel madencilik hash oranına bağlı bir parametre"
+          },
+          "transaction-count" : {
+            "title" : "{chain} işlem sayısı grafiği",
+            "name" : "İşlem sayısı",
+            "description" : "Günlük kaç {ticker} işlemi oluyor? Güne/haftaya/aya göre onaylanan {chain} işlemlerinin sayısı"
+          },
+          "total-transaction-count" : {
+            "title" : "{chain} toplam işlem sayısı grafiği",
+            "name" : "Toplam işlem sayısı",
+            "description" : "Kaç {ticker} işlemi gerçekleştirildi? {chain} blok zincirinde toplam onaylanmış işlem sayısı"
+          },
+          "transaction-volume" : {
+            "title" : "{chain} işlem hacmi grafiği",
+            "name" : "İşlem hacmi ({ticker})",
+            "description" : "Günlük taşınan {ticker} sayısını kontrol edin"
+          },
+          "average-transaction-amount" : {
+            "title" : "{chain} ortalama işlem tutarı grafiği",
+            "name" : "Ortalama işlem tutarı ({ticker})",
+            "description" : "Gün/hafta/ay/yıl bazında {ticker} cinsinden {chain} ortalama işlem tutarını alın"
+          },
+          "median-transaction-amount" : {
+            "title" : "{chain} medyan işlem tutarı grafiği",
+            "name" : "Ortalama işlem tutarı ({ticker})",
+            "description" : "Gün/hafta/ay/yıl bazında {ticker} cinsinden {chain} medyan işlem tutarını alın"
+          },
+          "average-transaction-fee" : {
+            "title" : "{chain} ortalama işlem ücreti grafiği",
+            "name" : "Ortalama işlem ücreti ({ticker})",
+            "description" : "{ticker} cinsinden {chain} ortalama tx ücretini kontrol edin"
+          },
+          "median-transaction-fee" : {
+            "title" : "{chain} medyan işlem ücreti grafiği",
+            "name" : "Medyan işlem ücreti ({ticker})",
+            "description" : "{ticker} cinsinden {chain} medyan tx ücretini kontrol edin"
+          },
+          "transaction-volume-usd" : {
+            "title" : "{chain} işlem hacmi (USD) grafiği",
+            "name" : "İşlem hacmi (USD)",
+            "description" : "USD cinsinden günlük taşınan {ticker} sayısını kontrol edin"
+          },
+          "average-transaction-fee-usd" : {
+            "title" : "{chain} ortalama işlem ücreti (USD) grafiği",
+            "name" : "Ortalama işlem ücreti (USD)",
+            "description" : "USD cinsinden {chain} ortalama tx ücretini kontrol edin"
+          },
+          "median-transaction-fee-usd" : {
+            "title" : "{chain} medyan işlem ücreti (USD) grafiği",
+            "name" : "Medyan işlem ücreti (USD)",
+            "description" : "USD cinsinden {chain} medyan tx ücretini kontrol edin"
+          },
+          "average-transaction-amount-usd" : {
+            "title" : "{chain} ortalama işlem tutarı (USD) grafiği",
+            "name" : "Ortalama işlem tutarı (USD)",
+            "description" : "Gün/hafta/ay/yıl bazında USD cinsinden {chain} ortalama tx tutarını alın"
+          },
+          "median-transaction-amount-usd" : {
+            "title" : "{chain} medyan işlem tutarı (USD) grafiği",
+            "name" : "Ortalama işlem tutarı (USD)",
+            "description" : "Gün/hafta/ay/yıl bazında USD cinsinden {chain} medyan tx tutarını alın"
+          },
+          "inflation-usd" : {
+            "title" : "{chain} enflasyon (USD) grafiği",
+            "name" : "Enflasyon (USD)",
+            "description" : "USD cinsinden günlük olarak çıkarılan/üretilen {ticker} sayısı. {chain} enflasyon oranı eğrisi"
+          },
+          "transactions-in-block" : {
+            "title" : "{chain} bloğundaki işlemlerin grafiği",
+            "name" : "Bloktaki işlemler",
+            "description" : "Blok dağılım grafiğine göre {chain} işlem sayısı"
+          },
+          "coindays-destroyed" : {
+            "title" : "{chain} coindays destroyed grafiği",
+            "name" : "Coindays destroyed",
+            "description" : "Grafik, eski koinlerin taşınmasıyla kaç {chain} coindays destroyed işleminin gerçekleştiğini gösteriyor"
+          },
+          "hashrate-distribution" : {
+            "title" : "{chain} hashrate dağılımı",
+            "name" : "Hashrate dağılımı",
+            "description" : "Hashrate dağıtım pasta grafiğindeki en büyük {chain} madencilerini ve havuzlarını bulun"
+          },
+          "transactions-per-second" : {
+            "title" : "Saniye başına {chain} işlem grafiği",
+            "name" : "Saniyedeki işlem sayısı",
+            "description" : "Tx/sn, iyi bir {chain} ölçeklenebilirlik ölçüsüdür. Günlük olarak nasıl değiştiğini kontrol edin"
+          },
+          "segwit-usage" : {
+            "title" : "{chain} SegWit kullanım grafiği",
+            "name" : "SegWit kullanımı",
+            "description" : "{chain} cinsinden SegWit işlemlerinin yüzdesi"
+          },
+          "percentage-of-non-monetary-outputs" : {
+            "title" : "Parasal olmayan {chain} çıktılarının yüzdesel grafiği",
+            "name" : "Parasal olmayan çıktıların yüzdesi",
+            "description" : "Herhangi bir {ticker} hareket ettirmemiş {ticker} çıktılarının yüzdesi"
+          },
+          "distribution-of-outputs-types-over-two-weeks" : {
+            "title" : "{Chain} çıktı türleri dağılımı grafiği",
+            "name" : "Çıktı türlerinin dağılımı",
+            "description" : "Pasta grafikte son 2 hafta için en popüler {chain} çıktı türlerini kontrol edin"
+          }
+        }
+      },
+      "dogecoin" : {
+        "names" : {
+          "aux-pow" : {
+            "title" : "Dogecoin AuxPoW kullanım grafiği",
+            "name" : "AuxPoW kullanımı",
+            "description" : "Birleştirilmiş madencilikle onaylanan Dogecoin bloklarının yüzdesi"
+          }
+        }
+      },
+      "ethereum" : {
+        "names" : {
+          "number-of-new-contracts" : {
+            "title" : "Yeni Ethereum sözleşme sayısı grafiği",
+            "name" : "Yeni sözleşme sayısı",
+            "description" : "Ethereum'da günlük olarak oluşturulan yeni akıllı sözleşmelerin sayısını öğrenin"
+          },
+          "number-of-destroyed-contracts" : {
+            "title" : "Yok edilen Ethereum sözleşmeleri sayısı grafigi ",
+            "name" : "Yok edilen sözleşmelerin sayısı",
+            "description" : "Yok edilen günlük Ethereum akıllı sözleşmelerinin sayısını öğrenin"
+          },
+          "uncle-rate" : {
+            "title" : "Ethereum uncle oranı",
+            "name" : "Uncle oranı",
+            "description" : "Ethereum'daki uncle blokların yüzdesi"
+          },
+          "average-gas-price" : {
+            "title" : "Ethereum ortalama gas fiyat grafiği",
+            "name" : "Ortalama gas fiyatı",
+            "description" : "GWei'deki tarihsel ETH ortalama gas fiyatını kontrol edin"
+          },
+          "median-gas-price" : {
+            "title" : "Ethereum medyan gas fiyat tablosu",
+            "name" : "Medyan gas fiyatı",
+            "description" : "GWei'deki tarihsel ETH medyan gas fiyatını kontrol edin"
+          },
+          "average-gas-limit" : {
+            "title" : "Ethereum ortalama gas limit grafiği",
+            "name" : "Ortalama gas limiti",
+            "description" : "Geçmiş ETH ortalama gas limitini kontrol edin"
+          },
+          "median-gas-limit" : {
+            "title" : "Ethereum medyan gas limit grafiği ",
+            "name" : "Ortalama gas limiti",
+            "description" : "Geçmiş ETH medyan gas limitini kontrol edin"
+          },
+          "new-contracts-ratio" : {
+            "title" : "Ethereum yeni sözleşme oran grafiği ",
+            "name" : "Yeni sözleşme oranı",
+            "description" : "SELFDESTRUCT tarafından yok edilenlere kıyasla Ethereum yeni sözleşmelerinin oranı"
+          }
+        }
+      },
+      "name" : {
+        "options" : {
+          "compare" : "Beraber karşılaştır",
+          "interval" : {
+            "caption" : "Aralık",
+            "1m" : "Geçen ay",
+            "3m" : "Son 3 ay",
+            "full" : "Başlangıçtan beri"
+          },
+          "granularity" : "Ayrıntı düzeyi",
+          "export" : "Dışarı aktar",
+          "related_charts" : "İlgili grafikler",
+          "other_coins" : "Diğer koinler için aynı grafik"
+        }
+      }
+    }},
+  "nodes" : {
+    "title" : "Düğümler",
+    "description" : "Uygulamalara, sürümlere ve ülkelere göre blokzincirlerin düğüm dağılımını inceleyin",
+    "navigation" : "Düğümler",
+    "card" : {
+      "bitcoin" : {
+        "total_nodes" : "Toplam düğüm: {total_count}",
+        "footer_link" : "{chain} düğüm gezginine git"
+      }
+    }
+  },
+  "about" : {
+    "title" : "Hakkında",
+    "description" : "Blockchair ekibi, ortakları ve iletişim bilgileri",
+    "navigation" : "Hakkında",
+    "what_is" : {
+      "caption" : "Blockchair nedir?",
+      "description1" : "{service}, {blockchains_links} için bir blokzincir arama ve analiz motorudur veya bunun blokzincir gezginlerinden oluşan steroidli bir motor olduğunu da söyleyebilirsiniz. Blokları, işlemleri ve içeriklerini çeşitli farklı kriterlere göre filtreleyebilir ve sıralayabilir, ayrıca blokzincirler üzerinde tam metin araması yapabilirsiniz.",
+      "description2" : "Arama motorumuzun neler yapabildiğini anlamak için {search_bitcoin_link} aramayı deneyebilir, {major_bitcoin_cash_blocks_link} sayfasına bakabilir veya {homepage_link} adresinde öne çıkan diğer örneklerden herhangi birini deneyebilirsiniz.",
+      "biggest_bitcoin_cash_blocks" : "en büyük Bitcoin Cash blokları",
+      "homepage" : "ana sayfamız",
+      "description3" : "Blockzincirler için Google olmayı hedefliyoruz. Bir sonraki önceliğimiz, IPFS ve SWARM gibi daha fazla merkezi olmayan projelerde arama yapma olanağı getirmek. Ek olarak, araştırmacılara blokzincirlerinden verileri toplu olarak dışa aktarmanın bir yolunu sunuyoruz."
+    },
+    "our_team" : "Takımımız",
+    "contacts" : {
+      "caption" : "Bize Ulaşın",
+      "email" : "E-posta: {email}",
+      "twitter" : "Twitter: {twitter_link}",
+      "facebook" : "Facebook: {facebook_link}",
+      "telegram" : "Telegram: {telegram_link}"
+    },
+    "partners" : {
+      "caption" : "Ortaklarımız ve arkadaşlarımız",
+      "general" : "Genel ortaklar",
+      "wallets" : "Blockchair kullanan cüzdanlar",
+      "hardware_wallets" : "Blockchair kullanan donanım cüzdanları",
+      "exchanges" : "Blockchair kullanan borsalar",
+      "mining_pools" : "Blockchair kullanan madencilik havuzları",
+      "explorers" : "Blockchair kullanan gezginler",
+      "market_data" : "Blockchair kullanan piyasa veri sağlayıcıları",
+      "crypto_processors" : "Blockchair kullanan kripto işlemciler",
+      "dapps" : "Blockchair kullanan dApp'ler",
+      "media" : "Medya ortakları",
+      "academic" : "Akademik ortaklar"
+    }
+  },
+  "terms" : {
+    "title" : "Kullanım Şartları",
+    "description" : "Hizmetler, Blockchair Yasal anlaşması ile sağlanır",
+    "navigation" : "Kullanım şartları",
+    "content" : {
+      "caption" : "Blockchair hizmet şartları",
+      "api" : "API hizmet şartları",
+      "ads" : "Reklam hizmet şartları"
+    }
+  },
+  "feed" : {
+    "title" : "Mesaj akışı",
+    "description" : "Kripto para blokzincirlerinde depolanan şifreli mesajları okuyun",
+    "navigation" : {
+      "title" : "Akış",
+      "hint" : "Blockchair Akışı; hem Bitcoin hem de Bitcoin Cash blok zincirlerinde OP_RETURN işlemlerinin yanı sıra, giriş alanında okunabilir veriler içeren Ethereum blok zincirindeki işlemleri de gösterir.",
+      "tps" : {
+        "title" : "Yeni girişler için üç blokzinciri dinleniyor",
+        "bitcoin" : "Saniyede Bitcoin {tps} txs",
+        "bitcoin-cash" : "Saniyede Bitcoin Cash {tps} txs",
+        "ethereum" : "Saniyede Ethereum {tps} txs"
+      }
+    },
+    "entry" : {
+      "time" : "{time} (UTC)"
+    },
+    "showing" : "Son 3 saate ait girişler gösteriliyor..."
+  },
+  "compare" : {
+    "title" : "BTC, ETH, BCH, LTC, BSV, DASH ve DOGE blokzincir istatistiklerini karşılaştırın",
+    "description" : "Kripto para birimlerini bloklar arasındaki ortalama süreye, saniyedeki işlemlere, ücretlere, hashrate, düğüm sayısına ve daha fazlasına göre karşılaştırın",
+    "navigation" : "Karşılaştır",
+    "comparison" : "Karşılaştırmaya ekle",
+    "blockchain_stats" : {
+      "caption" : "Blokzincir istatistikleri",
+      "circulation" : "Sirkülasyon",
+      "nodes" : "Ağ düğümleri",
+      "blockchain_size" : "Blokzincir boyutu"
+    },
+    "24h_stats" : {
+      "caption" : "24s istatistikler",
+      "volume_24h" : "Zincir üzerindeki hacim",
+      "hashrate_24h" : "Hashrate",
+      "average_tx_fee" : "Ortalama işlem ücreti",
+      "median_tx_fee" : "Medyan işlem ücreti",
+      "average_block_time" : {
+        "caption" : "Bloklar arasındaki ortalama süre",
+        "dimension" : "sn."
+      },
+      "inflation_24h" : "Enflasyon",
+      "cdd_24h" : "Coindays destroyed"
+    },
+    "mempool_stats" : {
+      "caption" : "Bellek havuzu istatistikleri",
+      "tps" : "Saniyedeki işlem sayısı",
+      "suggested_transaction_fee" : "Önerilen ücret"
+    },
+    "market_stats" : {
+      "caption" : "Piyasa istatistikleri",
+      "cap" : "Kapitalizasyon",
+      "price" : "Fiyat",
+      "dominance" : "Hakimiyet endeksi"
+    }
+  },
+  "charts" : {
+    "title" : "Grafikler",
+    "description" : "Kripto paralar için canlı çizelgeler ve grafikler, piyasa fiyatı, madencilik hashrate dağılımı, zorluk, blokzincir boyutu, ücretler ve daha fazlası",
+    "navigation" : "Grafikler",
+    "granularity" : {
+      "date" : "Tarih",
+      "week" : "Hafta",
+      "month" : "Ay",
+      "year" : "Yıl",
+      "time" : "Zaman"
+    },
+    "functions" : {
+      "count" : "Sayı",
+      "sum" : "Toplam",
+      "avg" : "Ortalama",
+      "median" : "Medyan",
+      "min" : "Minimum",
+      "max" : "Maksimum"
+    },
+    "dimensions" : {
+      "count" : "Sayı",
+      "bytes" : "Byte",
+      "kilobytes" : "Kb",
+      "megabytes" : "Mb",
+      "gigabytes" : "Gb",
+      "dd" : "Yok edilen günler",
+      "usd" : "USD",
+      "percentage" : "Yüzde",
+      "gwei" : "GWei",
+      "microseconds" : "µs",
+      "miliseconds" : "ms"
+    },
+    "content" : {
+      "see_more" : "{count} tane daha grafiğe bakın"
+    }
+  },
+  "broadcast" : {
+    "title" : "Ham işlemleri destekleyin ve yayınlayın ",
+    "navigation" : "Duyuru",
+    "description" : "BTC, ETH, BCH, LTC, BSV, DOGE ve GRS'in ham imzalı işlemini hex biçiminde özel olarak yayınlayın",
+    "form" : {
+      "chain" : {
+        "label" : "Ağ seçin:",
+        "invalid" : "Önce bir blokzincir seçmeniz gerekiyor!"
+      },
+      "hex" : {
+        "label" : "Özel ağ üzerinden yayınlamak için buraya hex formatında ham bir işlem yapıştırın:",
+        "errors" : {
+          "empty" : "Hex bir değer girmeniz gerekiyor!",
+          "invalid" : "Geçersiz hex!"
+        }
+      },
+      "button" : "İşlem yayınla"
+    },
+    "transaction" : "Teşekkürler, işleminiz {chain} blokzincirinde yayınlandı, hash değeri: {hash}"
+  },
+  "notify" : {
+    "title" : "Haber ver",
+    "navigation" : {
+      "title" : "Haber ver"
+    },
+    "content" : {
+      "enable" : "Bildirimleri etkinleştirin",
+      "chains" : "Aşağıdaki zincirlerde yeni bloklar bulunduğunda bana haber ver:"
+    },
+    "notification" : "Yeni {chain} bloğu bulundu # {id}"
+  },
+  "privacy" : {
+    "title" : "Gizlilik politikası",
+    "navigation" : "Gizlilik politikası",
+    "description" : "Kripto hizmetlerini kullanırken gizliliğinizin neden risk altında olduğunu ve Blockchair'ın neden daha güvenli seçenek olduğunu öğrenin"
+  },
+  "dumps" : {
+    "title" : "Kripto para veri kümeleri",
+    "navigation" : "Dökümler",
+    "description" : "BTC, ETH, BCH, LTC, BSV, DOGE ve GRS blok zincirlerinden blok ve işlem verilerini TSV formatında indirin"
+  },
+  "markets" : {
+    "title" : "Piyasalar",
+    "navigation" : "Piyasalar",
+    "description" : "Canlı kripto para fiyatları ve piyasa değerleri, kendi portföyünüzü oluşturun ve takip edin",
+    "coins" : "En iyi 1000",
+    "my_portfolio" : "Portföyüm: ({total_profit})",
+    "table" : {
+      "head" : {
+        "coin_name" : "Coin Adı",
+        "price" : "Fiyat",
+        "search" : "Hızlı arama",
+        "mkt_cap" : "Piyasa Değeri",
+        "24h_change" : "24s",
+        "dominance" : "Hakimiyet",
+        "portfolio" : {
+          "amount" : "Miktar",
+          "profit" : "USD değeri"
+        }
+      },
+      "body" : {
+        "stablecoin" : "Stabilcoin",
+        "explore" : "Keşfet",
+        "portfolio" : {
+          "total_profit" : "Toplam portföy değeri: {total_profit} {snow_change_24h}",
+          "empty_list" : "Hiç portföyünüz yok.",
+          "start_portfolio" : "Favorilerinize koinler ekleyerek bir portföy oluşturun!"
+        },
+        "load_more" : "Daha fazla yükle"
+      }
+    },
+    "modal" : {
+      "title" : {
+        "edit" : "Portföyünüzdeki koini düzenleyin",
+        "add" : "Portföyünüze koin ekleyin"
+      },
+      "description" : "Bu koin favorilerinize eklendi. Şimdi sahip olduğunuz koin miktarını girebilir veya bu pencereyi kapatabilirsiniz.",
+      "placeholder" : "Miktarı girin",
+      "buttons" : {
+        "edit" : "Düzenle",
+        "add" : "Ekle",
+        "remove" : "Kaldır"
+      }
+    }
+  },
+  "api" : {
+    "navigation" : "API",
+    "homepage" : {
+      "title" : "Blokzincir API",
+      "description" : "Blokzincir API"
+    },
+    "docs" : {
+      "title" : "Blokzincir API dokümanları",
+      "description" : "API geliştiriciler için 12 blokzincirindeki verilere erişim sağlar (BTC, ETH, BCH, TON, BSV, XRP, XLM, ERC tokenleri vb.) ",
+      "navigation" : "Dokümanlar"
+    },
+    "plans" : {
+      "title" : "Fiyatlandırma planları",
+      "navigation" : "Fiyatlandırma planları"
+    }
+  },
+  "pdf" : {
+    "title" : "İşlem PDF makbuzu",
+    "navigation" : "PDF makbuzları",
+    "description" : "Kripto işleminiz için güzel, banka benzeri PDF makbuzu oluşturun",
+    "form" : {
+      "placeholder" : "İşlem hash'i girin",
+      "supported_blockchains" : "Desteklenen blokzincirler: {bitcoin_link}, {ethereum_link}, {bitcoin_cash_link}, {litecoin_link}, {bitcoin_sv_link}, {dash_link}, {zcash_link}, {dogecoin_link} ve {groestlcoin_link}"
+    },
+    "receipt" : {
+      "download_link" : "İndirme bağlantısı: {pdf_link}",
+      "no_transaction" : "Böyle bir hash ile hiçbir işlem bulunamadı"
+    }
+  },
+  "hints" : {
+    "bitcoin-cash" : "Bitcoin Cash — BCC ve XBC olarak da bilinir",
+    "copy" : "Kopyala",
+    "copied" : "Kopyalandı",
+    "mempool" : "Bellek Havuzu"
+  },
+  "utils" : {
+    "bool" : {
+      "yes" : "EVET",
+      "no" : "HAYIR"
+    },
+    "coinbase" : {
+      "full" : "💰 Coinbase",
+      "short" : "Coinbase"
+    },
+    "shielded" : {
+      "full" : "🛡 Korumalı",
+      "short" : "Korumalı"
+    },
+    "contract_creation" : "Sözleşme oluşturma",
+    "unspent" : "Harcanmamış",
+    "thinking" : {
+      "loading" : "Yükleniyor...",
+      "progress" : "Olabildiğince hızlı düşünüyorum ... (% {progress})"
+    },
+    "genesis" : "💰 Genesis",
+    "numbers" : {
+      "billion" : {
+        "short" : "Milyar",
+        "full" : "Milyar"
+      },
+      "million" : {
+        "short" : "Milyon",
+        "full" : "Milyon"
+      }
+    }
+  },
+  "footer" : {
+    "explorers" : "Gezginler",
+    "services" : "Hizmetler",
+    "api" : "API",
+    "sql" : "SQL",
+    "charts" : "Grafikler",
+    "markets" : "Piyasalar & Portföy",
+    "nodes" : "Düğüm gezginleri",
+    "feed" : "Akış",
+    "broadcast" : "İşlem yayınla",
+    "dumps" : "Veritabanı dökümleri",
+    "dumps_node" : "Tam düğüm dökümleri",
+    "pdf" : "PDF makbuzu alın",
+    "compare" : "Kripto karşılaştırın",
+    "useful_links" : "Faydalı bağlantılar",
+    "about" : "Hakkında",
+    "terms" : "Kullanım şartları",
+    "about_blockchair" : "Blockchair hakkında",
+    "privacy" : "Gizlilik politikamız",
+    "contacts" : "Bize ulaşın",
+    "issues" : "Bir hata / istek gönderin",
+    "status" : "Durum",
+    "social" : "Sosyal",
+    "language" : "Diller",
+    "copyright" : "© {year} Blockchair",
+    "market_data" : "{Coin_market_cap_link} ve {coin_gecko_link} bazında piyasa verisi",
+    "faq" : "SSS",
+    "referral_program" : "Referans programı",
+    "advertise" : "Bize reklam verin",
+    "whitepaper" : "Teknik doküman",
+    "bugbounty" : "Hata ödül programı",
+    "tools" : {
+      "title" : "Araçlar",
+      "release-monitor" : "Güncelleme izleme",
+      "halving-countdown" : "Yarılanma geri sayımı"
+    },
+    "cryptoanarchyst_corner" : "Kripto-anarşist köşesi",
+    "theme" : {
+      "on" : "Gece moduna geç",
+      "off" : "Gündüz moduna geç"
+    },
+    "ads" : {
+      "on" : "Web sitesindeki reklamları 3 gün süreyle kapatın",
+      "off" : "Reklamları açın"
+    }
+  },
+  "errors" : {
+    "http" : {
+      "payment_required" : "Çok fazla istek gönderiyorsunuz. Lütfen daha sonra tekrar deneyiniz.",
+      "not_found" : "Herhangi bir blokzincirde bulunamadı 😞"
+    },
+    "ban" : {
+      "row1" : "Vaov! O kadar aktif bir kullanıcısın ki, bir robot gibi gözüküyorsun 🤖.",
+      "row2" : "Lütfen captcha'yı çözerek robot olmadığınızı doğrulayın."
+    }
+  },
+  "faq" : {
+    "title" : "Sıkça Sorulan Sorular",
+    "description" : "Borsa, banka veya cüzdan değil, yalnızca blokzinciri arama ve analiz hizmetleri sağlıyoruz",
+    "navigation" : "SSS"
+  },
+  "advertise" : {
+    "title" : "Reklam Ver",
+    "description" : "Afişlerle, butonlarla ve metinlerle Blockchair üzerinde kendi ürününüzü tanıtın",
+    "navigation" : "Reklam Ver"
+  },
+  "language-proposal" : {
+    "title" : "Bu site Türkçe olarak mevcut, dil değiştirilsin mi?",
+    "yes" : "Evet",
+    "no" : "Hayır"
+  },
+  "referral_program" : {
+    "title" : "Referans programı",
+    "navigation" : "Referans programı",
+    "navigation_howto" : "Nasıl"},
+  "tools" : {
+    "title" : "Araçlar",
+    "release-monitor" : {
+      "title" : "Güncelleme izleme",
+      "description" : "Kripto para istemcilerinin en son sürümlerini izleyin: Bitcoin Core, Geth, rippled, Bitcoin ABC ve diğerleri",
+      "button" : "Güncellemeleri almak için Telegram kanalımıza katılın",
+      "version" : "Sürüm",
+      "time" : "Zaman",
+      "link" : "Bağlantı",
+      "show_all" : "Hepsini Göster",
+      "filter_title" : "Zincirleri filtrele"
+    },
+    "halving-countdown" : {
+      "title" : "Yarılanma geri sayımı",
+      "meta_title" : "Bitcoin 2020 Yarılanma Geri Sayımı",
+      "description" : "Bitcoin (BTC), Bitcoin Cash (BCH) ve Bitcoin SV'de (BSV) yarılanmanın gerçekleşeceği tarihi ve bunun fiyat üzerindeki etkisini kontrol edin",
+      "item" : {
+        "title" : "yarılanma geri sayımı",
+        "current_block" : "Mevcut blok",
+        "current_reward" : "Mevcut blok ödülü",
+        "halvening_block" : "Yarılanma bloğu",
+        "halvening_reward" : "Yarılanmadan sonraki blok ödülü ",
+        "halvening_time_approximate" : "Yaklaşık yarılanma süresi",
+        "seconds_left" : "Saniye kaldı",
+        "blocks_left" : "Yarılanmaya kadar kalan bloklar",
+        "button_explorer" : "{Title} gezginine gidin"
+      },
+      "time" : {
+        "days" : "gün",
+        "hours" : "saat",
+        "minutes" : "dakika"
+      }
+    }
+  },
+  "nojs" : {
+    "disabled_functions" : "Bu işlev yalnızca JavaScript etkinken kullanılabilir",
+    "extended_functions" : "Yalnızca JavaScript'in etkinleştirildiği genişletilmiş işlevsellik"
+  },
+  "news" : {
+    "title" : "Blockchair Haberleri",
+    "description" : "En önde gelen medya kuruluşlarının blokzincir ve kripto para haberlerinin bir koleksiyonu",
+    "menu_description" : "BTC fiyat grafiği ile geliştirilmiş en son kripto haberlerini takip edin",
+    "most_recent" : "En yeni",
+    "more_news" : "Daha fazla haber",
+    "homepage_link" : "Daha",
+    "shortcuts" : {
+      "title" : "Klavye kısayolları",
+      "close" : "Kapalı",
+      "next" : "Sonraki",
+      "prev" : "Önceki"
+    },
+    "unable_to_load" : "Makale yüklenemiyor",
+    "try_to_read_on" : "Okumayı dene",
+    "read_on" : "Okumaya devam et",
+    "yesterday" : "Dün",
+    "share_title" : "Bu makaleyi paylaş",
+    "share" : "Paylaş",
+    "previous_news" : "Önceki haber",
+    "join_telegram" : "Telegram'daki Haberlere Abone Olun"
+  },
+  "donut" : {
+    "title" : "Blockchair Donut",
+    "title_navigation" : "Blockchair Donut",
+    "menu_description" : "Kar amacı gütmeyen harika kuruluşlara ve açık kaynaklı projelere kripto bağışlayın",
+    "description" : "İhtiyacı olan yere kripto bağışlayın | Kripto para birimlerinde bağış alan kâr amacı gütmeyen kuruluşlar ve açık kaynaklı projeler için para toplama platformu",
+    "meta" : {
+      "title" : "Blockchair Donut",
+      "description" : "İhtiyacı olan yere kripto bağışlayın | Kripto para birimlerinde bağış alan kâr amacı gütmeyen kuruluşlar ve açık kaynaklı projeler için para toplama platformu"
+    },
+    "homepage" : {
+      "cover_title" : "İyi bir amaç için kripto bağışlayın",
+      "cover_text" : "Dünya üzerinde olumlu bir etki yaratın ve kriptonun büyümesine yardımcı olun. Blockchair Donut, dünyayı daha iyi bir yer haline getirmeye çalışan, kâr amacı gütmeyen kuruluşların ve açık kaynaklı projelerin hikayelerini size ulaştırıyor."
+    },
+    "project" : {
+      "title" : "{title} - Blockchair Donut ile kripto bağışlayın"}
+  },
+  "bugbounty" : {
+    "title" : "Hata ödül programı"}
+}
