@@ -1,0 +1,3071 @@
+{
+  "title" : "Blockchair",
+  "subtitle" : "Blockchain Penjelajah",
+  "description" : "Block penjelajah dan API paling kuat untuk BTC, ETH, XRP, XLM, BCH, LTC, DASH, BSV, DOGE, GRS dan TON yang memungkinkan Anda menemukan, menyortir, dan menyaring transaksi dan alamat.",
+  "chain" : {
+    "bitcoin" : "Bitcoin",
+    "bitcoin/testnet" : "Bitcoin Testnet",
+    "bitcoin-cash" : "Bitcoin Cash",
+    "bitcoin-sv" : "Bitcoin SV",
+    "dogecoin" : "Dogecoin",
+    "dash" : "Dash",
+    "litecoin" : "Litecoin",
+    "ethereum" : "Ethereum",
+    "ethereum/testnet" : "Ethereum Testnet",
+    "ripple" : "Ripple",
+    "groestlcoin" : "Groestlcoin",
+    "stellar" : "Stellar",
+    "ton" : "Jaringan Terbuka Telegram",
+    "monero" : "Monero",
+    "cardano" : "Cardano",
+    "zcash" : "Zcash",
+    "mixin" : "Mixin",
+    "tezos" : "Tezos",
+    "eos" : "EOS"
+  },
+  "ticker" : {
+    "bitcoin" : "BTC",
+    "bitcoin/testnet" : "TBTC",
+    "bitcoin-cash" : "BCH",
+    "bitcoin-sv" : "BSV",
+    "dogecoin" : "DOGE",
+    "dash" : "DASH",
+    "litecoin" : "LTC",
+    "ethereum" : "ETH",
+    "ethereum/testnet" : "TETH",
+    "ripple" : "XRP",
+    "usd" : "USD",
+    "groestlcoin" : "GRS",
+    "stellar" : "XLM",
+    "ton" : "GRAM",
+    "monero" : "XMR",
+    "cardano" : "ADA",
+    "zcash" : "ZEC",
+    "mixin" : "XIN",
+    "tezos" : "XTZ",
+    "eos" : "EOS"
+  },
+  "homepage" : {
+    "title" : "Blockchair — Penjelajah blockchain universal dan mesin pencari",
+    "portfolio_widget" : {
+      "my_portfolio" : "Portofolio saya: {total_profit}"
+    },
+    "screen1" : {
+      "placehodler" : "Pencarian di {count} blockchain…",
+      "qrcode" : {
+        "title" : "Pindai kode QR dari sebuah alamat",
+        "modal" : {
+          "title" : "Pindai kode-QR"
+        }
+      },
+      "description" : "Blockchair adalah mesin pencari paling aman untuk {blockchains}.",
+      "description_line2" : "Pencarian {transactions}, {addresses}, {blocks}, dan bahkan {embedded}.",
+      "scope" : {
+        "transactions" : "transaksi",
+        "addresses" : "alamat",
+        "blocks" : "blok",
+        "embedded" : "data teks tersemat",
+        "tooltip" : "Klik untuk menempelkan contoh acak ke dalam kotak pencarian"
+      }
+    },
+    "screen2" : {
+      "explore_blockchains" : "Jelajahi blockchain",
+      "description" : "Selami analisis data blockchain yang menerapkan penyaringan dan penyortiran. Buat dan ekstrak set data Anda sendiri. Dump database juga tersedia.",
+      "examples" : {
+        "description" : "Cobalah contoh yang dapat Anda temukan di Blockchair:",
+        "show_examples" : "Tunjukkan contoh",
+        "links" : "{btc_largest_txs_link} {etc_contract_creations_link} {bch_biggest_blocks_link}.",
+        "btc_largest_txs" : "transaksi terbesar dalam Bitcoin",
+        "etc_contract_creations" : "pembuatan kontrak di Ethereum",
+        "bch_biggest_blocks" : "blok Bitcoin Cash terbesar"
+      },
+      "card" : {
+        "bitcoin" : {
+          "blocks" : "blok:",
+          "blocks_24h" : "Blok 24 jam:",
+          "transactions" : "Transaksi:",
+          "outputs" : "Keluaran:",
+          "mempool_txs" : "Txs belum dikonfirmasi:",
+          "mempool_tps" : "Txs per detik:",
+          "best_block" : "Blok terbaru:",
+          "hashrate" : "Hashrate ({algorithm}):",
+          "footer_link" : "Buka penjelajah {chain}"
+        },
+        "ethereum" : {
+          "calls" : "Panggilan:"
+        },
+        "ripple" : {
+          "ledgers" : "Ledgers:",
+          "transactions_24h" : "Transaksi 24 jam:",
+          "circulation" : "Peredaran:",
+          "best_ledger" : "Ledger terbaru:",
+          "volume_24h" : "Volume 24 jam:"
+        },
+        "stellar" : {
+          "operations_24h" : "Operasi 24 jam:",
+          "failed_transactions_24h" : "Txs gagal 24jam:"
+        },
+        "ton" : {
+          "first_block_time" : "Testnet saat ini diluncurkan pada:"
+        },
+        "services" : {
+          "charts" : "Grafik",
+          "nodes" : "Node",
+          "omni" : "Omni",
+          "compare" : "Membandingkan",
+          "feed" : "Umpan",
+          "stats" : "Statistik",
+          "uncles" : "Paman",
+          "erc-20" : "ERC-20"
+        },
+        "coming_soon" : "Segera akan datang",
+        "mixin" : {
+          "latest_snapshot" : "Snapshot terbaru"
+        }
+      },
+      "erc-20" : {
+        "tokens" : "Token:",
+        "explore_all" : "Jelajahi semua token"
+      }
+    },
+    "screen3" : {
+      "features" : "Temukan fitur kami",
+      "description" : "Alat yang hebat untuk bekerja dengan data kripto: meminta API Blockchair untuk mendapatkan data blockchain, menjelajahi tren dan korelasi dengan melihat Grafik, menganalisis tren pasar dengan Pasar & Portofolio, menyiarkan transaksi, mengunduh sampah dengan data historis, dan banyak lagi.",
+      "api" : {
+        "title" : "API Profesional",
+        "description" : "Akses data blockchain dengan Blockchair API",
+        "link" : "Baca lebih lanjut tentang API"
+      },
+      "charts" : {
+        "title" : "Grafik",
+        "chart_name" : "Harga Bitcoin pada 3 bulan terakhir",
+        "description" : "Dapatkan gambaran umum tentang tren data terbaru dengan melihat pada lebih dari 120 grafik",
+        "link" : "Pergi ke grafik"
+      },
+      "markets" : {
+        "title" : "Pasar & Portofolio",
+        "description" : "Klik untuk melihat 1000 aset kripto teratas dan mulai buat portofolio Anda",
+        "top1000" : "1000 teratas",
+        "portfolio" : "Portofolio saya",
+        "table" : {
+          "name" : "Nama",
+          "price" : "Harga",
+          "price_change_24h" : "24 jam.",
+          "mcap" : "MCap.",
+          "dominance" : "Dominasi"
+        },
+        "link" : "Siapkan portofolio Anda"
+      }
+    },
+    "halving_widget" : {
+      "halving" : "Halving {value}"
+    }
+  },
+  "search" : {
+    "title" : "Pencarian Blockchair",
+    "description" : "Cari {query} di blockchain BTC, ETH, BCH, LTC, BSV, dan DOGE",
+    "status" : {
+      "empty_query" : "Kueri kosong",
+      "empty_request" : "Maaf, kami mendukung penelusuran hanya dalam bahasa Inggris dan Rusia",
+      "server_error" : "Oh noez! {error}",
+      "showing" : {
+        "no_results" : "Tidak ada hasil ({time} detik)",
+        "only_result" : "Menampilkan satu-satunya hasil ({time} detik)",
+        "many_results" : "Menampilkan {showing} hasil dari {total} ({time} detik)"
+      }
+    },
+    "results" : {
+      "matches" : {
+        "blocks" : {
+          "title" : "Jelajahi semua blok {chain}",
+          "hint" : "Dengan menggunakan mesin kami Anda dapat menyaring {chain} blok dengan lebih dari 30 parameter"
+        },
+        "transactions" : {
+          "title" : "Jelajahi semua transaksi {chain}",
+          "hint" : "Dengan menggunakan mesin kami Anda dapat menyaring transaksi {chain} dengan lebih dari 30 parameter"
+        },
+        "calls" : {
+          "title" : "Jelajahi semua panggilan Ethereum",
+          "hint" : "Dengan menggunakan mesin kami, Anda dapat menyaring panggilan Ethereum dengan lebih dari 30 parameter"
+        },
+        "uncles" : {
+          "title" : "Jelajahi semua paman Ethereum",
+          "hint" : "Dengan menggunakan mesin kami, Anda dapat menyaring paman Ethereum dengan lebih dari 30 parameter"
+        },
+        "mempool" : {
+          "title" : "Jelajahi seluruh {chain} mempool",
+          "hint" : "Dengan menggunakan mesin kami Anda dapat menyaring {chain} transaksi mempool dengan lebih dari 30 parameter"
+        },
+        "unknown_tnx" : {
+          "title" : "Transaksi tidak diketahui: {query}",
+          "hint1" : "Anda telah memasukkan id transaksi internal yang digunakan oleh beberapa bursa (mis. HitBTC, ShapeShift, dll.)",
+          "hint2" : "Transaksi ini tidak disimpan dalam blockchain, jadi kami tidak dapat memberikan Anda data apa pun 😞"
+        }
+      },
+      "coin" : {
+        "price" : "Harga: {price} {price_change}",
+        "mcap" : "Kapitalisasi pasar: {cap}"
+      },
+      "bitcoin" : {
+        "coinbase" : {
+          "row" : {
+            "title" : "{chain} blok #{id}",
+            "timestamp" : "Stempel waktu: {time}",
+            "coinbase_data" : "Data Coinbase: {bin}"
+          }
+        },
+        "outputs" : {
+          "row" : {
+            "title" : "{chain} transaksi {hash}",
+            "script_data" : "Keluaran #{index} data skrip: {bin}"
+          }
+        },
+        "address" : {
+          "title" : "{chain} alamat {recipient}",
+          "last_seen_receiving" : "Terakhir terlihat menerima: {time}",
+          "balance" : "Saldo: {balance}"
+        },
+        "xpub" : {
+          "title" : "{chain} alamat xpub {recipient}"
+        },
+        "block" : {
+          "mined_on" : "Ditambang pada: {time}",
+          "hash" : "Hash: {hash}"
+        },
+        "transaction" : {
+          "timestamp" : "Stempel waktu: {time}",
+          "included_in_block" : "Termasuk dalam blok: {block_id}"
+        },
+        "whitepapers" : {
+          "row" : {
+            "size" : "{url} {size} kB"
+          }
+        }
+      },
+      "ethereum" : {
+        "extra_data" : {
+          "row" : {
+            "extra_data" : "Data tambahan: {bin}"
+          }
+        },
+        "input_data" : {
+          "row" : {
+            "input_data" : "Data masukan: {bin}"
+          }
+        },
+        "uncle" : {
+          "title" : "Paman Ethereum {hash}",
+          "parent_block_height" : "Tinggi blok induk: {parent_block_id}"
+        },
+        "address" : {
+          "title" : "Alamat Ethereum {address}"
+        },
+        "erc_20" : {
+          "transaction_count_30d" : "Transaksi selama sebulan terakhir: {transaction_link}"
+        }
+      },
+      "ripple" : {
+        "transaction" : {
+          "account" : "Akun Ripple: {account}",
+          "type" : "Jenis tx: {type}",
+          "fee" : "Biaya: {fee}"
+        },
+        "account" : {
+          "title" : "Akun Ripple {account}",
+          "balance" : "Saldo: {balance}"
+        }
+      },
+      "stellar" : {
+        "transaction" : {
+          "created_at" : "Dibuat pada: {create_at}",
+          "ledger" : "Disertakan dalam ledger: {ledger}",
+          "fee_paid" : "Biaya yang dibayarkan: {fee_paid}"
+        },
+        "account" : {
+          "title" : "Akun Stellar {account}"
+        }
+      },
+      "ton" : {
+        "created_at" : "Dibuat pada: {time}",
+        "workchain" : "Workchain: {workchain}",
+        "shard" : "Shard: {shard}"
+      },
+      "mixin" : {
+        "snapshot" : {
+          "title" : "{chain} snapshot # {id}"
+        },
+        "round" : {
+          "title" : "{chain} putaran #{id}"
+        }
+      }
+    }
+  },
+  "application" : {
+    "header" : {
+      "menu" : {
+        "caption" : "Menu",
+        "bitcoin" : {
+          "blockchain" : "{chain} Blockchain",
+          "layer_2" : "Layer 2",
+          "mempool" : "{chain} Mempool",
+          "misc" : "Lain-lain",
+          "object" : {
+            "blocks" : "Blok",
+            "transactions" : "Transaksi",
+            "outputs" : "Keluaran",
+            "addresses" : "Alamat",
+            "omni" : "Omni Layer",
+            "nodes" : "Penjelajah node",
+            "testnet" : "Penjelajah Testnet",
+            "whitepaper" : "Laporan resmi",
+            "snapshots" : "Snapshots",
+            "rounds" : "Putaran",
+            "graph" : "Grafik",
+            "mintings" : "Minting"
+          },
+          "omni" : {
+            "most_used_properties" : "Properti yang paling sering digunakan"
+          }
+        },
+        "ethereum" : {
+          "erc-20" : {
+            "homepage" : "Penjelajah ERC-20",
+            "tokens" : "Token ERC-20",
+            "transactions" : "transaksi ERC-20",
+            "most_used_tokens" : "Token yang paling banyak digunakan"
+          },
+          "object" : {
+            "uncles" : "Paman",
+            "calls" : "Panggilan"
+          }
+        },
+        "object" : {
+          "price" : "Harga",
+          "charts" : "Grafik",
+          "broadcast" : "Siaran"
+        },
+        "erc_20_tokens" : "Token ERC-20",
+        "omni_layer_tokens" : "Token Omni Layer"
+      },
+      "search" : {
+        "desktop" : {
+          "placeholder" : "Pencarian di {count} blockchain ({tickers})"
+        },
+        "mobile" : {
+          "placeholder" : "Pencarian di {count} blockchain"
+        }
+      }
+    },
+    "navigation" : {
+      "mempool" : {
+        "bitcoin" : {
+          "title" : "Mempool"
+        },
+        "ethereum" : {
+          "title" : "Belum dikonfirmasi",
+          "hint" : "Kami menunggu 6 blok hingga blok dan transaksi masuk ke database utama kami. Kami tidak memproses panggilan atau paman untuk blok yang belum dikonfirmasi."
+        }
+      },
+      "object" : {
+        "homepage" : "Beranda",
+        "blocks" : "Blok",
+        "transactions" : "Transaksi",
+        "outputs" : "Keluaran",
+        "whitepaper" : "Laporan resmi",
+        "price" : "Harga",
+        "nodes" : "Penjelajah node",
+        "uncles" : "Paman",
+        "calls" : "Panggilan",
+        "omni" : "Omni Layer",
+        "erc-20" : "ERC-20",
+        "charts" : "Grafik",
+        "addresses" : "Alamat",
+        "snapshots" : "Snapshots",
+        "rounds" : "Putaran",
+        "mintings" : "Minting",
+        "graph" : "Grafik"
+      },
+      "type" : {
+        "bitcoin" : {
+          "testnet" : "Testnet",
+          "block" : "Blok",
+          "transaction" : "Transaksi",
+          "address" : "Alamat",
+          "xpub" : "Xpub"
+        },
+        "ethereum" : {
+          "uncle" : "Paman",
+          "address" : "Alamat",
+          "contract" : "Kontrak"
+        },
+        "ripple" : {
+          "ledger" : "Ledger",
+          "account" : "Akun"
+        },
+        "mixin" : {
+          "snapshot" : "Snapshot",
+          "node" : "Node",
+          "round" : "Putaran"
+        }
+      },
+      "menu" : {
+        "blockchains" : "Blockchain",
+        "bitcoin" : {
+          "blockchain" : "{chain} Blockchain",
+          "mempool" : "{chain} Mempool",
+          "layer_2" : "Layer 2",
+          "misc" : "Lain-lain"
+        }
+      }
+    },
+    "permalink" : {
+      "caption" : "Tautan permanen",
+      "tooltip" : "Tautan permanen menyimpan urutan, kondisi, dan daftar kolom yang diperlihatkan. Kecuali ada pengaturan kondisi waktu, data bisa berubah. Jika Anda tidak perlu menyimpan daftar kolom yang ditampilkan, Anda cukup menyalin URL dari baris alamat."
+    },
+    "infinitable" : {
+      "description" : {
+        "bitcoin" : {
+          "blocks" : "Jelajahi, urutkan, dan saring blok dari blockchain Bitcoin (BTC) berdasarkan tinggi, hadiah, penambang, dan lainnya",
+          "transactions" : "Jelajahi, urutkan, dan saring transaksi dari blockchain Bitcoin (BTC) berdasarkan ID (hash), nilai, ukuran, biaya, dan lainnya",
+          "outputs" : "Jelajahi, urutkan, dan saring keluaran dari blockchain Bitcoin (BTC) berdasarkan nilai, pengirim, penerima, alamat, dapatkan set UTXO, dan banyak lagi",
+          "mempool" : {
+            "transactions" : "Jelajahi transaksi yang belum dikonfirmasi dari Bitcoin (BTC) mempool",
+            "outputs" : "Jelajahi keluaran yang belum dikonfirmasi dari Bitcoin (BTC) mempool"
+          }},
+        "bitcoin/testnet" : {
+          "blocks" : "Jelajahi, urutkan, dan saring blok dari blockchain Bitcoin Testnet (TBTC) berdasarkan tinggi, upah, penambang, dan lainnya",
+          "transactions" : "Jelajahi, urutkan, dan saring transaksi dari blockchain Bitcoin Testnet (TBTC) berdasarkan ID (hash), nilai, ukuran, biaya, dan lainnya",
+          "outputs" : "Jelajahi, urutkan, dan saring keluaran dari blockchain Bitcoin Testnet (TBTC) berdasarkan nilai, pengirim, penerima, alamat, dapatkan set UTXO, dan lainnya",
+          "mempool" : {
+            "transactions" : "Jelajahi transaksi yang belum dikonfirmasi dari Bitcoin Testnet (TBTC) mempool",
+            "outputs" : "Jelajahi keluaran yang belum dikonfirmasi dari Bitcoin Testnet (TBTC) mempool"
+          }},
+        "bitcoin-cash" : {
+          "blocks" : "Jelajahi, urutkan, dan saring blok dari blockchain Bitcoin Cash (BCH) berdasarkan tinggi, hadiah, penambang, dan lainnya",
+          "transactions" : "Jelajahi, urutkan, dan saring transaksi dari blockchain Bitcoin Cash (BCH) berdasarkan ID (hash), biaya, ukuran, dan lainnya",
+          "outputs" : "Jelajahi, urutkan, dan saring keluaran dari blockchain Bitcoin Cash (BCH) berdasarkan nilai, penerima (alamat), dapatkan set UTXO dan banyak lagi",
+          "mempool" : {
+            "transactions" : "Telusuri transaksi yang belum dikonfirmasi di Bitcoin Cash (BCH) mempool",
+            "outputs" : "Jelajahi keluaran yang belum dikonfirmasi dalam mempool Bitcoin Cash (BCH)"
+          }},
+        "bitcoin-sv" : {
+          "blocks" : "Jelajahi, urutkan, dan saring blok dari blockchain Bitcoin SV (BSV) berdasarkan tinggi, upah, penambang, dan lainnya",
+          "transactions" : "Jelajahi, urutkan, dan saring transaksi dari blockchain Bitcoin SV (BSV) berdasarkan ID (hash), biaya, ukuran, dan lainnya",
+          "outputs" : "Jelajahi, urutkan, dan saring keluaran dari blockchain Bitcoin SV (BSV) berdasarkan nilai, penerima (alamat), dapatkan set UTXO dan banyak lagi",
+          "mempool" : {
+            "transactions" : "Telusuri transaksi yang belum dikonfirmasi di Bitcoin SV (BSV) mempool",
+            "outputs" : "Jelajahi keluaran yang belum dikonfirmasi dalam mempool Bitcoin SV (BSV)"
+          }},
+        "dogecoin" : {
+          "blocks" : "Jelajahi, urutkan, dan saring blok dari blockchain Dogecoin (DOGE) berdasarkan tinggi, upah, penambang, dan lainnya",
+          "transactions" : "Jelajahi, urutkan, dan saring transaksi dari blockchain Dogecoin (DOGE) berdasarkan ID (hash), nilai, ukuran, biaya, dan lainnya",
+          "outputs" : "Jelajahi, urutkan, dan saring keluaran dari blockchain Dogecoin (DOGE) berdasarkan nilai, pengirim, penerima, alamat, dapatkan set UTXO dan banyak lagi",
+          "mempool" : {
+            "transactions" : "Telusuri transaksi yang belum dikonfirmasi dari Dogecoin (DOGE) mempool",
+            "outputs" : "Jelajahi keluaran yang belum dikonfirmasi dari Dogecoin (DOGE) mempool"
+          }},
+        "dash" : {
+          "blocks" : "Jelajahi, urutkan, dan saring blok dari blockchain Dash (DASH) berdasarkan tinggi, upah, penambang, dan lainnya",
+          "transactions" : "Jelajahi, urutkan, dan saring transaksi dari blockchain Dash (DASH) berdasarkan ID (hash), nilai, ukuran, biaya, dan lainnya",
+          "outputs" : "Jelajahi, urutkan, dan saring keluaran dari blockchain Dash (DASH) berdasarkan nilai, pengirim, penerima, alamat, dapatkan set UTXO dan banyak lagi",
+          "mempool" : {
+            "transactions" : "Telusuri transaksi yang belum dikonfirmasi dari Dash (DASH) mempool",
+            "outputs" : "Jelajahi keluaran yang belum dikonfirmasi dari Dash (DASH) mempool"
+          }},
+        "litecoin" : {
+          "blocks" : "Jelajahi, urutkan, saring blok dari seluruh blockchain Litecoin (LTC) berdasarkan tinggi, hadiah, penambang, dan lainnya",
+          "transactions" : "Jelajahi, urutkan, saring transaksi dari seluruh blockchain Litecoin (LTC) berdasarkan ID (hash), biaya, ukuran, dan lainnya",
+          "outputs" : "Jelajahi, urutkan, saring output dari seluruh blockchain Litecoin (LTC) berdasarkan nilai, penerima (alamat), dapatkan set UTXO dan banyak lagi",
+          "mempool" : {
+            "transactions" : "Telusuri transaksi dari Litecoin (LTC) mempool",
+            "outputs" : "Jelajahi keluaran dari mempool Litecoin (LTC)"
+          }
+        },
+        "groestlcoin" : {
+          "blocks" : "Jelajahi, urutkan, saring blok dari seluruh blockchain Groestlcoin (GRS) berdasarkan tinggi, upah, penambang, dan lainnya",
+          "transactions" : "Jelajahi, urutkan, saring transaksi dari seluruh blockchain Groestlcoin (GRS) berdasarkan ID (hash), biaya, ukuran, dan lainnya",
+          "outputs" : "Jelajahi, urutkan, saring keluaran dari seluruh blockchain Groestlcoin (GRS) berdasarkan nilai, penerima (alamat), dapatkan set UTXO dan banyak lagi",
+          "mempool" : {
+            "transactions" : "Telusuri transaksi dari Groestlcoin (GRS) mempool",
+            "outputs" : "Jelajahi keluaran dari mempool Groestlcoin (GRS)"
+          }},
+        "ethereum" : {
+          "blocks" : "Jelajahi, urutkan, dan saring blok dari blockchain Ethereum (ETH) berdasarkan ketinggian, gas, penambang, dan lainnya",
+          "uncles" : "Jelajahi, urutkan, dan saring paman dari blockchain Ethereum (ETH) berdasarkan tinggi, blok induk, penambang, dan lainnya",
+          "transactions" : "Jelajahi, urutkan, dan saring transaksi dari blockchain Ethereum (ETH) berdasarkan ID (hash), nilai, gas, dan lainnya",
+          "calls" : "Jelajahi, urutkan, dan saring panggilan (transfer internal) dari blockchain Ethereum (ETH) berdasarkan nilai, waktu, pengirim, penerima, dan lainnya",
+          "mempool" : {
+            "blocks" : "Jelajahi 6 blok terbaru di blockchain Ethereum (ETH)",
+            "transactions" : "Telusuri transaksi yang belum dikonfirmasi di Ethereum (ETH) mempool"
+          }
+        },
+        "mixin" : {
+          "snapshots" : "Jelajahi dan urutkan snapshot dari blockchain Mixin (XIN) berdasarkan topologi (tinggi)",
+          "mintings" : "Jelajahi pembuatan node kernel Mixin (XIN) (hadiah) dengan snapshot",
+          "nodes" : "Jelajahi node kernel Mixin (XIN). Setiap node perlu menjanjikan 10.000 XIN, jadi sekitar 50 node kernel dapat ditemukan",
+          "graph" : "Jelajahi Mixin (XIN) DAG. Grafik dapat digunakan untuk membangun buku besar yang melewati kebutuhan PoW dan blok"
+        },
+        "zcash" : {
+          "blocks" : "Jelajahi, urutkan, dan saring blok dari Zcash (ZEC) blockchain berdasarkan tinggi, upah, penambang, dan lainnya",
+          "transactions" : "Jelajahi, urutkan, dan saring transaksi dari blockchain Zcash (ZEC) berdasarkan ID (hash), nilai, ukuran, biaya, dan lainnya",
+          "outputs" : "Jelajahi, urutkan, dan saring keluaran dari Zcash (ZEC) blockchain berdasarkan nilai, pengirim, penerima, alamat, dapatkan set UTXO dan banyak lagi",
+          "addresses" : "Jelajahi, urutkan, dan saring alamat dari blockchain Zcash (ZEC)"
+        }
+      },
+      "foot" : {
+        "server_error" : "Oh tidak! {error} 😯",
+        "no_results" : "Tidak ada hasil 😕",
+        "no_more_results" : "Tidak ada hasil lainnya 👐",
+        "explore_list" : "Jelajahi daftar ini ({difference} baris lainnya)",
+        "load_more" : "Muat lebih banyak ({difference} hasil tersisa)",
+        "show_next" : "Perlihatkan {limit} item berikutnya ({difference} hasil tersisa)"
+      },
+      "bitcoin" : {
+        "blocks" : {
+          "id" : {
+            "short" : "Tinggi",
+            "full" : "Tinggi (id)"
+          },
+          "hash" : "Hash",
+          "time" : {
+            "full" : "Ditambang",
+            "short" : "Waktu",
+            "utc" : "(UTC)"
+          },
+          "time_ago" : {
+            "short" : "Lalu",
+            "full" : "Waktu yang telah berlalu"
+          },
+          "guessed_miner" : {
+            "short" : "Penambang",
+            "full" : "Penambang yang ditebak"
+          },
+          "miner_votes" : {
+            "short" : "Jumlah suara",
+            "full" : "Suara Penambang"
+          },
+          "coinbase_data_bin" : {
+            "bin" : "[bin]",
+            "short" : "Data Coinbase",
+            "full" : "Data Coinbase [bin]"
+          },
+          "coinbase_data_hex" : {
+            "hex" : "[hex]",
+            "full" : "Data Coinbase [hex]"
+          },
+          "transaction_count" : {
+            "short" : "# tx",
+            "full" : "Hitungan transaksi"
+          },
+          "witness_count" : {
+            "short" : "# saksi tx",
+            "full" : "Jumlah saksi tx"
+          },
+          "input_count" : {
+            "short" : "Masukan #",
+            "full" : "Jumlah masukan"
+          },
+          "output_count" : {
+            "short" : "Keluaran #",
+            "full" : "Jumlah keluaran"
+          },
+          "cdd_total" : {
+            "short" : "Hancur",
+            "full" : "Harikoin hancur",
+            "cd" : "(CD)",
+            "coindays" : "(Harikoin)"
+          },
+          "input_total" : {
+            "simple" : "masukan",
+            "full" : "Total masukan (satoshi)",
+            "short" : "Total masukan"
+          },
+          "input_total_usd" : "Masukan total (USD)",
+          "output_total" : {
+            "simple" : "Keluaran",
+            "full" : "Keluaran total (satoshi)",
+            "short" : "Total keluaran"
+          },
+          "output_total_usd" : "Keluaran total (USD)",
+          "fee_total" : {
+            "simple" : "Biaya",
+            "full" : "Biaya total (satoshi)",
+            "short" : "Total biaya"
+          },
+          "fee_total_usd" : "Biaya total (USD)",
+          "fee_per_kb" : {
+            "simple" : "Biaya/kB",
+            "full" : "Biaya per kB (satoshi)",
+            "short" : "Biaya per kB"
+          },
+          "fee_per_kb_usd" : "Biaya per kB (USD)",
+          "fee_per_kwu" : {
+            "simple" : "Biaya/kWU",
+            "full" : "Biaya per kWU (satoshi)",
+            "short" : "Biaya per kWH"
+          },
+          "fee_per_kwu_usd" : "Biaya per kWU (USD)",
+          "generation" : {
+            "short" : "Generasi",
+            "full" : "Generasi (satoshi)"
+          },
+          "generation_usd" : "Generasi (USD)",
+          "reward" : {
+            "short" : "Upah",
+            "full" : "Upah penambang (satoshi)"
+          },
+          "reward_usd" : "Upah penambang (USD)",
+          "size" : {
+            "short" : "Ukuran",
+            "full" : "Ukuran (kB)",
+            "kb" : "(kB)"
+          },
+          "weight" : {
+            "short" : "Berat",
+            "full" : "Berat (unit berat)",
+            "kwu" : "(kWU)"
+          },
+          "stripped_size" : {
+            "short" : "Ukuran dilucuti",
+            "full" : "Ukuran dilucuti (kB)"
+          },
+          "version" : {
+            "short" : "Versi",
+            "full" : "Versi [int]",
+            "int" : "[int]"
+          },
+          "version_hex" : "Versi [hex]",
+          "version_bits" : {
+            "bits" : "[bits]",
+            "full" : "Versi [bits]"
+          },
+          "median_time" : "Waktu median",
+          "merkle_root" : "Merkle root",
+          "nonce" : "Nonce",
+          "bits" : "Bits",
+          "difficulty" : "Kesulitan",
+          "chainwork" : "Chainwork"
+        },
+        "transactions" : {
+          "block_id" : {
+            "short" : "Blok #",
+            "full" : "Blok Id"
+          },
+          "time" : "Waktu (UTC)",
+          "id" : {
+            "short" : "Id",
+            "full" : "Hash (txid)"
+          },
+          "is_coinbase" : {
+            "short" : "Apakah coinbase?",
+            "full" : "Apakah ini transaksi coinbase? "
+          },
+          "has_witness" : {
+            "short" : "Saksi?",
+            "full" : "Punya data saksi?"
+          },
+          "fee" : {
+            "short" : "Biaya",
+            "full" : "Biaya (Satoshi)"
+          },
+          "fee_usd" : "Biaya (USD)",
+          "fee_per_kvb" : "Biaya per kVB",
+          "is_rbf" : "Replace-by-fee (RBF) diaktifkan?",
+          "lock_time" : {
+            "short" : "Kunci waktu",
+            "full" : "Kunci waktu (tinggi blok atau cap waktu)"
+          }
+        },
+        "outputs" : {
+          "transaction_id" : {
+            "short" : "id tx",
+            "full" : "ID transaksi"
+          },
+          "transaction_hash" : {
+            "short" : "hash tx",
+            "full" : "Hash transaksi"
+          },
+          "index" : {
+            "short" : "#",
+            "full" : "Indeks"
+          },
+          "is_from_coinbase" : {
+            "short" : "Apakah dari coinbase?",
+            "full" : "Dari tx coinbase?"
+          },
+          "value" : {
+            "short" : "Nilai",
+            "full" : "Nilai (satoshi)"
+          },
+          "value_usd" : "Nilai (USD)",
+          "recipient" : {
+            "short" : "Penerima",
+            "address" : "(alamat)",
+            "full" : "Penerima (alamat)"
+          },
+          "script_bin" : {
+            "short" : "Script",
+            "full" : "Script [bin]"
+          },
+          "script_hex" : "Script [hex]",
+          "type" : {
+            "short" : "Tipe",
+            "full" : "Tipe keluaran"
+          },
+          "is_spendable" : {
+            "short" : "Dapat dibelanjakan?",
+            "full" : "Apakah bisa dibelanjakan?"
+          },
+          "is_spent" : {
+            "short" : "S?",
+            "full" : "Apakah dibelanjakan?"
+          },
+          "spending_block_id" : {
+            "short" : "Blok pengeluaran #",
+            "full" : "Id blok pengeluaran"
+          },
+          "spending_transaction_id" : {
+            "short" : "id tx pembelanjaan ",
+            "full" : "ID transaksi pengeluaran"
+          },
+          "spending_index" : {
+            "short" : "#",
+            "full" : "Indeks pengeluaran"
+          },
+          "spending_transaction_hash" : {
+            "short" : "hash tx pembelanjaan",
+            "full" : "Hash transaksi pengeluaran"
+          },
+          "spending_time" : {
+            "short" : "Waktu pembelanjaan",
+            "full" : "Pengeluaran waktu"
+          },
+          "spending_date" : "Tanggal pengeluaran",
+          "spending_time_ago" : {
+            "short" : "Waktu",
+            "ago" : "(lalu)",
+            "full" : "Pengeluaran waktu (lalu)"
+          },
+          "spending_value" : {
+            "short" : "Nilai pembelanjaan",
+            "full" : "Nilai pengeluaran"
+          },
+          "spending_value_usd" : "Nilai pengeluaran (USD)",
+          "spending_sequence" : {
+            "short" : "Urutan pembelanjaan",
+            "full" : "Urutan pengeluaran"
+          },
+          "spending_signature_bin" : {
+            "short" : "Tanda tangan pembelanjaan",
+            "full" : "Tanda tangan pembelanjaan"
+          },
+          "spending_signature_hex" : "Tanda tangan pembelanjaan [hex]",
+          "spending_witness" : {
+            "short" : "Saksi pembelanjaan",
+            "full" : "Saksi pengeluaran"
+          },
+          "lifespan" : {
+            "short" : "Umur",
+            "full" : "Umur (detik)",
+            "seconds" : "(detik)"
+          },
+          "left_link" : "Tautan ke transaksi"
+        },
+        "addresses" : {
+          "address" : "Alamat",
+          "balance" : {
+            "short" : "Saldo",
+            "full" : "Saldo (satoshi)"
+          }
+        }
+      },
+      "dogecoin" : {
+        "blocks" : {
+          "is_aux" : "Apakah AuxPoW?"
+        }
+      },
+      "dash" : {
+        "blocks" : {
+          "cbtx" : "CbTX"
+        },
+        "transactions" : {
+          "is_special" : "Apakah spesial?",
+          "special_json" : "JSON spesial",
+          "type" : "Tipe",
+          "is_instant_lock" : "Apakah kunci instan?"
+        }
+      },
+      "ethereum" : {
+        "blocks" : {
+          "uncle_count" : "Jumlah paman",
+          "synthetic_transaction_count" : {
+            "short" : "Jumlah tx sintetis",
+            "full" : "Jumlah transaksi sintetis"
+          },
+          "call_count" : {
+            "short" : "# panggilan",
+            "full" : "Jumlah panggilan"
+          },
+          "synthetic_call_count" : {
+            "short" : "# Panggilan sintentis",
+            "full" : "Jumlah panggilan sintetis"
+          },
+          "extra_data_bin" : {
+            "short" : "Data Ekstra",
+            "full" : "Data ekstra [bin]"
+          },
+          "extra_data_hex" : "Data ekstra [hex]",
+          "gas_used" : "Gas digunakan",
+          "gas_limit" : "Batas gas",
+          "value_total" : {
+            "short" : "Nilai total",
+            "full" : "Nilai total (ETH)"
+          },
+          "value_total_usd" : "Nilai total (USD)",
+          "internal_value_total" : {
+            "short" : "Nilai Internal",
+            "full" : "Total nilai internal (ETH)"
+          },
+          "internal_value_total_usd" : "Total nilai internal (USD)",
+          "generation" : "Generasi (ETH)",
+          "uncle_generation" : {
+            "short" : "Generasi Paman",
+            "full" : "Generasi paman (ETH)"
+          },
+          "uncle_generation_usd" : "Generasi paman (USD)",
+          "fee_total" : "Biaya total (ETH)",
+          "reward" : "Upah penambang (ETH)",
+          "mix_hash" : "Campuran Hash",
+          "receipts_root" : "Root Resi",
+          "sha3_uncles" : "Paman SHA3",
+          "state_root" : "Root State",
+          "transactions_root" : "Root transaksi",
+          "logs_bloom" : "Logs Bloom",
+          "total_difficulty" : "Kesulitan Total"
+        },
+        "transactions" : {
+          "index" : {
+            "short" : "#",
+            "full" : "Indeks di blok"
+          },
+          "type" : "Tipe",
+          "failed" : "Gagal?",
+          "sender" : {
+            "short" : "Dari",
+            "full" : "Pengirim"
+          },
+          "recipient" : {
+            "short" : "Untuk",
+            "full" : "Penerima"
+          },
+          "value" : {
+            "short" : "Nilai",
+            "full" : "Nilai (ETH)"
+          },
+          "value_usd" : "Nilai (USD)",
+          "internal_value" : {
+            "short" : "Nilai Internal",
+            "full" : "Nilai internal (ETH)"
+          },
+          "internal_value_usd" : "Nilai internal (USD)",
+          "fee" : {
+            "short" : "Biaya",
+            "full" : "Biaya (ETH)"
+          },
+          "fee_usd" : "Biaya (USD)",
+          "gas_price" : "Harga gas",
+          "input_bin" : {
+            "short" : "Masukan data",
+            "full" : "Masukan data [bin]"
+          },
+          "input_hex" : "Masukan data [hex]"
+        },
+        "uncles" : {
+          "miner" : "Penambang",
+          "parent_block_id" : {
+            "short" : "ID blok induk",
+            "full" : "Tinggi blok induk"
+          },
+          "index" : "Indeks di blok induk"
+        },
+        "calls" : {
+          "index" : {
+            "short" : "Indeks",
+            "full" : "Indeks dalam transaksi"
+          },
+          "depth" : "Kedalaman",
+          "child_call_count" : {
+            "short" : "Panggilan Anak",
+            "full" : "Jumlah panggilan anak"
+          },
+          "fail_reason" : "Alasan gagal",
+          "transferred" : {
+            "short" : "Xferred?",
+            "full" : "Ditransfer?"
+          },
+          "output_bin" : "Keluaran data [bin]",
+          "output_hex" : "Keluaran data [hex]"
+        }
+      },
+      "mixin" : {
+        "snapshots" : {
+          "topology" : "Topologi",
+          "round" : "Putaran",
+          "round_self" : "Putaran sendiri sebelumnya",
+          "round_external" : "Putaran luar",
+          "timestamp" : "Stempel waktu",
+          "node" : "Node",
+          "hash" : "Hash",
+          "signatures" : "Tanda tangan",
+          "version" : "Versi"
+        },
+        "transactions" : {
+          "snapshot" : "Snapshot",
+          "asset" : "Aset",
+          "extra" : "Tambahan"
+        },
+        "mintings" : {
+          "amount" : "Jumlah",
+          "batch" : "Batch",
+          "group" : "Kelompok",
+          "snapshot" : "Snapshot",
+          "transaction" : "Transaksi",
+          "timestamp" : "Stempel waktu"
+        },
+        "nodes" : {
+          "id" : "Id",
+          "payee" : "Penerima pembayaran",
+          "signer" : "Penandatangan",
+          "state" : "Negara",
+          "transaction" : "Transaksi",
+          "timestamp" : "Stempel waktu",
+          "graph" : "Grafik"
+        },
+        "round" : {
+          "start" : "Mulai",
+          "end" : "Akhir",
+          "hash" : "Hash",
+          "node" : "Node",
+          "number" : "Nomor",
+          "references" : "Referensi",
+          "snapshots" : "Snapshots"
+        }
+      }
+    },
+    "chessboard" : {
+      "buttons" : {
+        "fields" : "Bidang",
+        "show_default_fields" : "Tampilkan Bidang Default",
+        "show_all" : "Tunjukkan semua",
+        "hide_all" : "Sembunyikan semua",
+        "reset_sorts" : "Atur ulang urutan",
+        "reset_conditions" : "Atur Ulang Ketentuan",
+        "reset_all" : "Atur Ulang Semua",
+        "refresh" : "Menyegarkan",
+        "settings" : {
+          "without_expanding" : "Perlihatkan hasil baru tanpa memperbesar tabel",
+          "table_condensed" : "Padatkan tabel"
+        }
+      },
+      "conditions" : {
+        "alert" : {
+          "limit_of_sorts" : "Hanya {limit} pengaturan dapat disetel pada saat yang sama :(",
+          "limit_of_conditions" : "Hanya {limit} ketentuan dapat disetel pada saat yang sama :("
+        },
+        "examples" : "Contoh:",
+        "notice" : "Perhatian:"
+      },
+      "bitcoin" : {
+        "columns" : {
+          "general" : "Umum",
+          "monetary" : "Keuangan",
+          "technical" : "Teknis",
+          "spending" : {
+            "general" : "Pengeluaran...",
+            "continuation" : "Pengeluaran (lanjutan) ..."
+          }
+        },
+        "blocks" : {
+          "id" : {
+            "examples" : {
+              "first_100_blocks" : "100 blok pertama",
+              "zero_block" : "blok #0"
+            }
+          },
+          "transaction_count" : {
+            "examples" : {
+              "big_blocks" : "blok besar",
+              "coinbase_tx_only" : "blok yg hanya berisi tx coinbase"
+            }
+          },
+          "witness_count" : {
+            "examples" : {
+              "more_that_one" : "lebih dari satu",
+              "just_one" : "hanya satu"
+            }
+          },
+          "input_count" : {
+            "examples" : {
+              "over_10k_inputs" : "lebih dari 10k masukan",
+              "just_coinbase_input" : "hanya masukan coinbase"
+            }
+          },
+          "output_count" : {
+            "examples" : {
+              "over_10k_outputs" : "lebih dari 10k keluaran",
+              "just_coinbase_output" : "transaksi coinbase dengan 1 keluaran"
+            }
+          },
+          "cdd_total" : {
+            "examples" : {
+              "largest_spendings" : "pengeluaran terbesar",
+              "no_cd" : "tidak ada haricoin yang hancur"
+            }
+          },
+          "input_total" : {
+            "title" : {
+              "full" : "Total masukan ({ticker})"
+            },
+            "examples" : {
+              "over_100" : "lebih dari 100 {ticker}",
+              "exactly_one" : "tepat 1 {ticker}"
+            },
+            "notice" : "masukkan nilai dalam satoshi (1 {ticker} = 100000000 sat.)!"
+          },
+          "input_total_usd" : {
+            "examples" : {
+              "over_one_million_usd" : "lebih dari $1juta ",
+              "exactly_one_million_usd" : "tepat $1"
+            }
+          },
+          "output_total" : {
+            "title" : {
+              "full" : "Keluaran total ({ticker})"
+            }
+          },
+          "fee_total" : {
+            "title" : {
+              "full" : "Biaya total ({ticker})"
+            }
+          },
+          "fee_per_kb" : {
+            "title" : {
+              "full" : "Biaya per kB ({ticker})"
+            },
+            "examples" : {
+              "exactly_one_hundredth" : "tepat 0.01 {ticker}"
+            }
+          },
+          "fee_per_kb_usd" : {
+            "examples" : {
+              "exactly_one_hundredth" : "tepat $ 0.01"
+            }
+          },
+          "fee_per_b" : {
+            "title" : {
+              "full" : "Biaya per byte ({ticker})"
+            }
+          },
+          "generation" : {
+            "title" : {
+              "full" : "Generasi ({ticker})"
+            }
+          },
+          "reward" : {
+            "title" : {
+              "full" : "Hadiah penambang ({ticker})"
+            },
+            "examples" : {
+              "exactly_twelve_and_half" : "tepat 12.5 {ticker}"
+            }
+          },
+          "reward_usd" : {
+            "examples" : {
+              "over_25k" : "lebih dari $25ribu"
+            }
+          },
+          "size" : {
+            "examples" : {
+              "small_blocks" : "blok kecil",
+              "exactly_one" : "tepat 1 {ticker}"
+            },
+            "notice" : "masukkan nilai dalam byte!"
+          },
+          "stripped_size" : {
+            "examples" : {
+              "almost_full_blocks" : "blok hampir penuh"
+            }
+          }
+        },
+        "transactions" : {
+          "is_coinbase" : {
+            "examples" : {
+              "yes" : "Iya",
+              "no" : "Tidak"
+            }
+          },
+          "fee" : {
+            "title" : {
+              "full" : "Biaya ({ticker})"
+            }
+          }
+        },
+        "outputs" : {
+          "value" : {
+            "title" : {
+              "full" : "Nilai ({ticker})"
+            }
+          },
+          "is_spendable" : {
+            "examples" : {
+              "unknown" : "tidak diketahui"
+            }
+          }
+        }
+      },
+      "litecoin" : {
+        "blocks" : {
+          "input_total" : {
+            "notice" : "masukkan nilai dalam litoshi (1 {ticker} = 100000000 lit.)!"
+          }
+        }
+      }
+    },
+    "type" : {
+      "bitcoin" : {
+        "block" : {
+          "description" : "Bitcoin (BTC) blok {height}, hash: {hash}, tanggal: {date}",
+          "general_info" : "Informasi Umum",
+          "technical_details" : "Detail teknis",
+          "see_more" : "Klik untuk melihat lebih banyak",
+          "hide_details" : "Sembunyikan detail",
+          "explorers" : "Penjelajah alternatif",
+          "for_developers" : "Untuk pengembang",
+          "api_docs" : "Dokumen API",
+          "last_transactions" : "Transaksi dalam blok ini"
+        },
+        "transaction" : {
+          "description" : {
+            "general" : "Cek transaksi Bitcoin (BTC), nilai: {output_total_btc}, tanggal: {date}",
+            "coinbase" : "Periksa transaksi coinbase Bitcoin (BTC), nilai: {output_total_btc}, tanggal: {date}"
+          },
+          "priority" : "Prioritas: {position}/{count}",
+          "confirmations" : "Belum dikonfirmasi | {count} konfirmasi | {count} konfirmasi",
+          "protocol" : {
+            "omni" : "Transaksi Omni Layer"
+          },
+          "op_return" : {
+            "title" : "OP_RETURN",
+            "memopay_message" : "Pesan Memopay",
+            "protocol" : {
+              "title" : "protokol {name}",
+              "details" : "Lihat di {name}"
+            },
+            "bin" : "Diterjemahkan"
+          },
+          "confirmed_notify" : {
+            "button" : "Beritahu saya",
+            "modal" : {
+              "title" : "Beri tahu saya jika transaksi ini dikonfirmasi",
+              "description" : "Tekan tombol ini dan Anda akan menerima pemberitahuan ketika transaksi ini diblok. Harap jangan meninggalkan halaman ini (tetapi Anda dapat meminimalkan jendela ini, menggunakan tab lain di browser Anda, dll.). Browser Anda mungkin meminta izin untuk mengirim pemberitahuan jika Anda menggunakan fitur ini untuk pertama kali.",
+              "enable" : "Beri tahu saya jika transaksi ini dikonfirmasi"
+            },
+            "notification" : "Transaksi {chain} Anda telah dikonfirmasi!",
+            "leaving" : "Anda tidak akan menerima notifikasi bahwa transaksi telah dikonfirmasi. Anda yakin ingin meninggalkan halaman ini?"
+          },
+          "fee_per_byte" : {
+            "caption" : "Biaya per byte",
+            "dimension" : "satoshi"
+          },
+          "fee_per_vbyte" : {
+            "caption" : "Biaya per vbyte"
+          },
+          "raw_transaction" : {
+            "title" : "Tx mentah",
+            "form" : {
+              "hex" : "Transaksi mentah (hex):",
+              "decoded" : "Transaksi mentah yang diterjemahkan (json):"
+            },
+            "empty" : "Tidak dapat mengambil data untuk transaksi ini (mungkin ini adalah transaksi asal atau transaksi ini telah dihapus dari mempool)"
+          },
+          "pdf_receipt" : "Tanda terima PDF",
+          "senders" : "Pengirim",
+          "recipients" : "Penerima",
+          "senders_and_recipients" : "Pengirim dan penerima",
+          "privacy-o-meter" : {
+            "title" : "Privasi-o-meter",
+            "heuristic_names" : {
+              "inputs" : "Co-spending",
+              "script_types" : "Jenis script",
+              "p2sh_types" : "Jenis multisig P2SH",
+              "p2wsh_types" : "Jenis multisig P2WSH",
+              "round_value" : "Nilai putaran",
+              "recipient_by_value" : "Penerima dengan nilai yang lebih besar",
+              "t1-2_bigger_value_25" : "Nilai keluaran x25",
+              "t1-2_bigger_value_100" : "Nilai keluaran x100",
+              "t1-2_bigger_value_250" : "Nilai keluaran x250",
+              "t1-2_bigger_value_1000" : "Nilai keluaran x1000",
+              "coinbase_known" : "Penambang yang dikenal",
+              "coinbase_unknown" : "Penambang tidak dikenal",
+              "coinjoin" : "Koin bergabung",
+              "round_fee" : "Biaya putaran",
+              "asc_output_values" : "Nilai keluaran naik",
+              "desc_output_values" : "Nilai keluaran menurun",
+              "asc_output_addresses" : "Alamat keluaran menaik",
+              "desc_output_addresses" : "Alamat keluaran menurun",
+              "asc_input_values" : "Nilai masukan naik",
+              "desc_input_values" : "Nilai masukan menurun",
+              "asc_input_addresses" : "Alamat masukan menaik",
+              "desc_input_addresses" : "Alamat masukan menurun",
+              "asc_input_timestamps" : "Stempel waktu masukan naik",
+              "desc_input_timestamps" : "Stempel waktu masukan menurun",
+              "asc_output_values_except_first" : "Nilai keluaran naik kecuali pertama",
+              "asc_output_values_except_last" : "Nilai keluaran naik kecuali yang terakhir",
+              "asc_output_addresses_except_first" : "Alamat keluaran naik kecuali yang pertama",
+              "asc_output_addresses_except_last" : "Alamat keluaran naik kecuali yang terakhir",
+              "desc_output_values_except_first" : "Nilai keluaran turun kecuali pertama",
+              "desc_output_values_except_last" : "Nilai keluaran menurun kecuali yang terakhir",
+              "desc_output_addresses_except_last" : "Alamat keluaran menurun kecuali yang terakhir",
+              "desc_output_addresses_except_first" : "Alamat keluaran turun kecuali pertama",
+              "simple_reuse_1-2" : "Alamat digunakan kembali",
+              "simple_reuse_N-2" : "Alamat digunakan kembali",
+              "simple_reuse_1-N" : "Alamat digunakan kembali",
+              "simple_reuse_same_address_in_inputs" : "Alamat yang sama di masukan",
+              "sweep_1-1" : "Sweep (1-1)",
+              "sweep_1-1_to_another_type" : "Sweep ke tipe lain (1-1)",
+              "sweep_N-1" : "Sweep",
+              "sweep_N-1_to_another_type" : "Sapu ke jenis lain",
+              "discrepancy_unnecessary_inputs" : "Diskrepansi: masukan yang tidak perlu",
+              "discrepancy_various_input_types" : "Diskrepansi: berbagai jenis masukan",
+              "discrepancy_script_types_and_round_value" : "Diskrepansi antara jenis script dan nilai putaran",
+              "discrepancy_script_types_and_recipient_by_value" : "Diskrepansi antara jenis Script dan Penerima berdasarkan nilai",
+              "discrepancy_round_value_and_recipient_by_value" : "Diskrepansi antara nilai putaran dan penerima berdasarkan nilai",
+              "discrepancy_p2sh_various_input_types" : "Diskrepansi: berbagai jenis masukan P2SH",
+              "discrepancy_p2wsh_various_input_types" : "Diskrepansi: berbagai jenis masukan P2WSH",
+              "discrepancy_same_address_in_outputs" : "Diskrepansi: duplikat alamat keluaran",
+              "discrepancy_no_output_of_the_same_type_as_inputs" : "Diskrepansi: tidak ada keluaran dengan jenis yang sama dengan masukan",
+              "rare_fingerprint" : "Sidik jari langka"
+            },
+            "heuristic_descriptions" : {
+              "inputs" : "Kecuali untuk transaksi CoinJoin, aman untuk mengasumsikan bahwa semua alamat masukan adalah milik satu orang",
+              "script_types" : "Jika semua masukan memiliki tipe yang sama, dan salah satu keluaran tidak berjenis sama — keluaran ini dapat dianggap sebagai penerima",
+              "p2sh_types" : "Jika semua masukan adalah m dari n multisig P2SH, dan semua keluaran adalah multisig P2SH, tetapi salah satu keluaran memiliki m dari n struktur — keluaran ini dapat dianggap sebagai penerima",
+              "p2wsh_types" : "Jika semua masukan adalah m dari n multisig P2WSH, dan semua keluaran adalah multisig P2WSH, tetapi salah satu keluaran memiliki m dari n struktur — keluaran ini dapat dianggap sebagai penerima",
+              "round_value" : "Jika salah satu keluaran memiliki nilai bulat (seperti tepat 1 BTC) — keluaran ini dapat dianggap sebagai penerima",
+              "recipient_by_value" : "Jika penerima adalah keluaran yang lebih kecil, tidak ada gunanya memiliki beberapa masukan",
+              "t1-2_bigger_value_25" : "Salah satu dari dua keluaran tersebut berukuran 25 kali lebih besar dari keluaran yang lain, artinya keluaran ini mungkin merupakan keluaran kembalian",
+              "t1-2_bigger_value_100" : "Salah satu dari dua keluaran tersebut berukuran 100 kali lebih besar dari keluaran yang lain, artinya keluaran ini mungkin merupakan keluaran kembalian",
+              "t1-2_bigger_value_250" : "Salah satu dari dua keluaran tersebut berukuran 250 kali lebih besar dari keluaran yang lain, artinya keluaran ini mungkin merupakan keluaran kembalian",
+              "t1-2_bigger_value_1000" : "Salah satu dari dua keluaran tersebut berukuran 1000 kali lebih besar dari keluaran yang lain, artinya keluaran ini mungkin merupakan keluaran kembalian",
+              "coinbase_known" : "Penerima adalah penambang yang dikenal",
+              "coinbase_unknown" : "Penerima adalah penambang yang tidak dikenal",
+              "coinjoin" : "Ini adalah transaksi CoinJoin. Ini membatalkan semua heuristik lainnya.",
+              "round_fee" : "Transaksi memiliki jumlah biaya bulat, pengirim mungkin menggunakan beberapa perangkat lunak tertentu",
+              "asc_output_values" : "Untuk transaksi dengan lebih dari 5 keluaran — keluaran diurutkan berdasarkan nilai menaik — ini mungkin disebabkan oleh penggunaan beberapa perangkat lunak tertentu",
+              "desc_output_values" : "Untuk transaksi dengan lebih dari 5 keluaran — keluaran diurutkan berdasarkan nilai menurun — ini mungkin disebabkan oleh penggunaan beberapa perangkat lunak tertentu",
+              "asc_output_addresses" : "Untuk transaksi dengan lebih dari 5 keluaran — keluaran diurutkan berdasarkan alamat sesuai urutan abjad — ini mungkin disebabkan oleh penggunaan beberapa perangkat lunak tertentu",
+              "desc_output_addresses" : "Untuk transaksi dengan lebih dari 5 keluaran — keluaran diurutkan berdasarkan alamat sesuai urutan abjad — ini mungkin disebabkan oleh penggunaan beberapa perangkat lunak tertentu",
+              "asc_input_values" : "Untuk transaksi dengan lebih dari 5 masukan — masukan diurutkan berdasarkan nilai menaik — ini mungkin disebabkan oleh penggunaan beberapa perangkat lunak tertentu",
+              "desc_input_values" : "Untuk transaksi dengan lebih dari 5 masukan — masukan diurutkan berdasarkan nilai menurun — ini mungkin disebabkan oleh penggunaan beberapa perangkat lunak tertentu",
+              "asc_input_addresses" : "Untuk transaksi dengan lebih dari 5 masukan — mereka diurutkan berdasarkan alamat sesuai urutan abjad — ini mungkin disebabkan oleh penggunaan beberapa perangkat lunak tertentu",
+              "desc_input_addresses" : "Untuk transaksi dengan lebih dari 5 masukan — masukan diurutkan berdasarkan alamat dalam urutan abjad — ini mungkin disebabkan oleh penggunaan beberapa perangkat lunak tertentu",
+              "asc_input_timestamps" : "Untuk transaksi dengan lebih dari 5 masukan — masukan diurutkan berdasarkan usia — ini mungkin disebabkan oleh penggunaan beberapa perangkat lunak tertentu",
+              "desc_input_timestamps" : "Untuk transaksi dengan lebih dari 5 masukan — masukan diurutkan berdasarkan usia — ini mungkin disebabkan oleh penggunaan beberapa perangkat lunak tertentu",
+              "asc_output_values_except_first" : "Semua keluaran diurutkan berdasarkan nilai naik kecuali yang pertama, yang mungkin berarti bahwa keluaran pertama adalah alamat kembalian.",
+              "asc_output_values_except_last" : "Semua keluaran diurutkan berdasarkan nilai naik kecuali yang terakhir, yang mungkin berarti bahwa keluaran pertama adalah alamat kembalian.",
+              "asc_output_addresses_except_first" : "Semua keluaran diurutkan berdasarkan alamat sesuai urutan abjad kecuali yang pertama, itu berarti keluaran pertama adalah alamat perubahan.",
+              "asc_output_addresses_except_last" : "Semua keluaran diurutkan berdasarkan alamat sesuai urutan abjad kecuali yang terakhir, yang mungkin berarti bahwa keluaran pertama adalah alamat kembalian.",
+              "desc_output_values_except_first" : "Semua keluaran diurutkan berdasarkan nilai yang menurun kecuali yang pertama, itu mungkin berarti bahwa keluaran pertama adalah alamat kembalian\nSemua keluaran diurutkan berdasarkan nilai menurun kecuali yang pertama, itu mungkin berarti bahwa keluaran pertama adalah alamat kembalian. Keluaran diurutkan berdasarkan nilai menurun kecuali yang pertama, itu mungkin berarti bahwa keluaran pertama adalah alamat kembalian\n",
+              "desc_output_values_except_last" : "Semua keluaran diurutkan berdasarkan nilai menurun kecuali yang terakhir, itu berarti bahwa keluaran terakhir adalah alamat kembalian",
+              "desc_output_addresses_except_last" : "Semua keluaran diurutkan berdasarkan alamat secara alfabetis menurun kecuali yang terakhir, itu mungkin berarti bahwa keluaran terakhir adalah alamat kembalian",
+              "desc_output_addresses_except_first" : "Semua keluaran diurutkan berdasarkan alamat secara alfabetis menurun kecuali yang pertama, itu mungkin berarti bahwa keluaran pertama adalah alamat kembalian",
+              "simple_reuse_1-2" : "Pengirim menggunakan alamat yang sama untuk penerimaan dan untuk kembalian",
+              "simple_reuse_N-2" : "Pengirim menggunakan alamat yang sama untuk penerimaan dan untuk kembalian",
+              "simple_reuse_1-N" : "Pengirim (mungkin bursa) menggunakan alamat yang sama untuk penerimaan dan untuk kembalian",
+              "simple_reuse_same_address_in_inputs" : "Ada lebih dari satu alamat yang sama di masukan",
+              "sweep_1-1" : "Pengirim menggunakan opsi 'kirim semuanya' untuk membayar seseorang (misalnya sebuah bursa) atau hanya memindahkan dana ke dompet lain (1 masukan)",
+              "sweep_1-1_to_another_type" : "Pengirim menggunakan opsi \"kirim semuanya\" untuk membayar seseorang atau memindahkan dana ke jenis dompet baru (1 masukan)",
+              "sweep_N-1" : "Pengirim menggunakan opsi \"kirim semuanya\" untuk membayar seseorang (misalnya sebuah bursa) atau hanya memindahkan dana ke dompet lain",
+              "sweep_N-1_to_another_type" : "Pengirim menggunakan opsi \"kirim semuanya\" untuk membayar seseorang (misalnya sebuah bursa) atau hanya memindahkan dana ke dompet lain yang jenisnya berbeda dari alamat awal",
+              "discrepancy_unnecessary_inputs" : "Masukan yang lebih kecil tidak diperlukan, karena keluaran mana pun yang merupakan penerima, tidak perlu menyertakan masukan itu",
+              "discrepancy_various_input_types" : "Jenis masukan berbeda. Itu berarti pengirim mungkin menggunakan perangkat lunak yang memungkinkan untuk membuat jenis alamat yang sama untuk kembalian seperti yang dimiliki penerima, mencoba menghindari heuristik script_types",
+              "discrepancy_script_types_and_round_value" : "script_tipe dan putaran_nilai heuristics memberikan hasil yang berbeda",
+              "discrepancy_script_types_and_recipient_by_value" : "script_tipe dan penerima berdasarkan heuristik nilai menghasilkan hasil yang berbeda",
+              "discrepancy_round_value_and_recipient_by_value" : "round_value dan penerima berdasarkan nilai heuristik menghasilkan hasil yang berbeda",
+              "discrepancy_p2sh_various_input_types" : "Jenis masukan P2SH berbeda (misalnya satu adalah 2-dari-2 multisig, dan yang lainnya adalah 2-dari-3)",
+              "discrepancy_p2wsh_various_input_types" : "Jenis masukan P2WSH berbeda (misalnya satu adalah 2-dari-2 multisig, dan yang lainnya adalah 2-dari-3)",
+              "discrepancy_same_address_in_outputs" : "Ada keluaran dengan alamat yang sama — ini tidak masuk akal secara ekonomis",
+              "discrepancy_no_output_of_the_same_type_as_inputs" : "Mungkin pengirim menggunakan perangkat lunak yang menghasilkan jenis alamat kembalian yang sama dengan alamat penerima",
+              "rare_fingerprint" : "Transaksi ini memiliki karakteristik teknis yang cukup unik"
+            },
+            "transaction_types" : {
+              "CB" : "Transaksi Coinbase",
+              "N1" : "Transaksi hanya dengan 1 keluaran (baik sapuan ke alamat lain oleh pemilik yang sama, atau transfer menggunakan opsi \"kirim semua yang saya miliki\")",
+              "N2" : "Transaksi dengan 2 keluaran — paling umum di dompet — di mana salah satu keluaran adalah penerima, dan yang lainnya adalah alamat kembalian",
+              "NN" : "Transaksi dengan lebih dari 2 keluaran — paling umum di bursa dan layanan yang menggunakan pengelompokan pembayaran"
+            },
+            "highlight_clusterized" : "Sorot alamat pengirim (termasuk perubahan), dan alamat penerima",
+            "transaction_type" : "Tipe",
+            "is_finalized_description" : "Menunjukkan apakah transaksi memiliki skor akhir (semua keluaran dibelanjakan)",
+            "clusterized_description" : "Alamat yang berpotensi menjadi milik satu entitas berdasarkan heuristik yang berlaku",
+            "privacy_score" : {
+              "title" : "Skor privasi",
+              "high" : "Tinggi",
+              "moderate" : "Moderat",
+              "low" : "Rendah"
+            },
+            "fingerprint" : "Sidik jari transaksi",
+            "info" : {
+              "title" : "Apa ini?",
+              "text" : "<p>Meskipun Bitcoin dianggap sebagai sistem yang berorientasi pada privasi, blockchain terbuka untuk dianalisis oleh siapa saja.</p><p>Privasi-o-meter oleh Blockchair menunjukkan apakah transaksi Anda rentan terhadap beberapa heuristik yang digunakan oleh banyak alat pelacakan transaksi.</p><p>Semakin tinggi skor — semakin tinggi kemungkinan mereka tidak dapat mengekstrak apa pun yang berguna. Skor rendah berarti mungkin terlalu mudah untuk, misalnya, membedakan alamat kembalian dari alamat penerima.</p>"
+            },
+            "heuristics" : "Indikator",
+            "lock_time" : {
+              "rare" : "Langka",
+              "block_id" : "Tinggi blok",
+              "big_value" : "Nilai besar",
+              "timestamp" : "Stempel waktu"
+            },
+            "legend" : {
+              "sender" : "Alamat pengirim",
+              "recipient" : "Alamat penerima"
+            },
+            "none" : "Tidak ada",
+            "read_doc" : "Baca dokumentasi"
+          }
+        },
+        "address" : {
+          "description" : "Periksa saldo Bitcoin (BTC) alamat {alamat} dan transaksinya",
+          "type" : "Tipe alamat",
+          "formats" : {
+            "legacy" : "Format alamat lama",
+            "cashaddr" : "Format alamat tunai"
+          },
+          "script" : {
+            "short" : "Script",
+            "bin" : "Script [bin]",
+            "hex" : "Script [hex]"
+          },
+          "unspent_output_count" : "Jumlah keluaran yang tidak terbelanjakan",
+          "monetary_info" : "Info moneter",
+          "last_seen_receiving" : "Terakhir terlihat menerima",
+          "first_last_seen_receiving" : "Pertama / terakhir terlihat menerima",
+          "first_last_seen_spending" : "Pengeluaran pertama / terakhir terlihat",
+          "total_received" : "Total diterima",
+          "total_spent" : "Total yang dibelanjakan",
+          "total_unspent" : "Saldo",
+          "protocol" : {
+            "omni" : {
+              "title" : "Token Omni",
+              "token_name" : "Nama Token",
+              "balance" : "Saldo"
+            }
+          },
+          "qr_code" : "Kode QR",
+          "transactions" : {
+            "title" : "Transaksi yang melibatkan alamat",
+            "id" : "Hash:",
+            "time" : "Stempel waktu:",
+            "no_transactions" : "Belum ada transaksi",
+            "protocol" : {
+              "omni" : "Berisi data Omni Layer"
+            }
+          }
+        },
+        "xpub" : {
+          "address_count" : "Jumlah alamat",
+          "addresses" : {
+            "caption" : "Alamat",
+            "table" : {
+              "unspent_output_count" : "# keluaran tidak terbelanjakan",
+              "last_seen_receiving" : "Terakhir terlihat menerima",
+              "last_seen_spending" : "Pengeluaran terakhir terlihat"
+            }
+          },
+          "path" : "Path"
+        }
+      },
+      "bitcoin/testnet" : {
+        "block" : {
+          "description" : "Bitcoin Testnet (TBTC) blok {height}, hash: {hash}, tanggal: {date}"
+        },
+        "transaction" : {
+          "description" : {
+            "general" : "Cek transaksi Bitcoin Testnet (TBTC), nilai: {output_total_btc}, tanggal: {date}",
+            "coinbase" : "Periksa transaksi coinbase Bitcoin Testnet (TBTC), nilai: {output_total_btc}, tanggal: {date}"
+          }
+        },
+        "address" : {
+          "description" : "Periksa saldo Bitcoin Testnet (TBTC) alamat {address} dan transaksinya"
+        }
+      },
+      "bitcoin-cash" : {
+        "block" : {
+          "description" : "Bitcoin Cash (BCH) blok {height}, hash: {hash}, tanggal: {date}"
+        },
+        "transaction" : {
+          "description" : "Transaksi Bitcoin Cash (BCH) {hash}, tanggal: {date}"
+        },
+        "address" : {
+          "description" : "Periksa alamat Bitcoin Cash (BCH) {cash_address} ({legacy_address}), saldo dan transaksinya"
+        }
+      },
+      "bitcoin-sv" : {
+        "block" : {
+          "description" : "Bitcoin SV (BSV) blok {height}, hash: {hash}, tanggal: {date}"
+        },
+        "transaction" : {
+          "description" : "Transaksi Bitcoin SV (BSV) {hash}, tanggal: {date}"
+        },
+        "address" : {
+          "description" : "Periksa alamat Bitcoin SV (BSV): {cash_address} ({legacy_address}), saldo dan transaksinya"
+        }
+      },
+      "dogecoin" : {
+        "block" : {
+          "description" : "Dogecoin (DOGE) blok {height}, hash: {hash}, tanggal: {date}"
+        },
+        "transaction" : {
+          "description" : {
+            "general" : "Cek transaksi Dogecoin (DOGE), nilai: {output_total_doge}, tanggal: {date}",
+            "coinbase" : "Periksa transaksi coinbase Dogecoin (DOGE), nilai: {output_total_doge}, tanggal: {date}"
+          }
+        },
+        "address" : {
+          "description" : "Periksa saldo alamat Dogecoin (DOGE) {alamat} dan transaksinya"
+        }
+      },
+      "dash" : {
+        "block" : {
+          "description" : "Dash (DASH) blok {height}, hash: {hash}, date: {date}"
+        },
+        "transaction" : {
+          "description" : {
+            "general" : "Cek Dash (DASH) transaksi, nilai: {output_total_dash}, tanggal: {date}",
+            "coinbase" : "Cek Dash (DASH) coinbase transaksi, nilai: {output_total_dash}, tanggal: {date}"
+          }
+        },
+        "address" : {
+          "description" : "Cek saldo Dash (DASH) alamat {address} dan transaksinya"
+        }
+      },
+      "litecoin" : {
+        "block" : {
+          "description" : "Litecoin (LTC) blok {height}, hash: {hash}, tanggal: {date}"
+        },
+        "transaction" : {
+          "description" : "Transaksi Litecoin (LTC) {hash}, tanggal: {date}"
+        },
+        "address" : {
+          "description" : "Cek alamat Litecoin (LTC) {alamat}, saldo dan transaksinya"
+        }
+      },
+      "groestlcoin" : {
+        "block" : {
+          "description" : "Groestlcoin (GRS) blok {height}, hash: {hash}, tanggal: {date}"
+        },
+        "transaction" : {
+          "description" : "Groestlcoin (GRS) Transaksi {hash}, tanggal: {date}"
+        },
+        "address" : {
+          "description" : "Periksa alamat Groestlcoin (GRS) {alamat}, saldo dan transaksinya"
+        }
+      },
+      "ethereum" : {
+        "block" : {
+          "description" : "Ethereum (ETH) blok {height}, hash: {hash}, tanggal: {date}",
+          "coinbase" : "coinbase",
+          "transaction_count" : "{transactions_link} + {coinbase_link} coinbase",
+          "value_total" : "Jumlah total",
+          "internal_value_total" : "Jumlah total internal",
+          "fee_total" : "Total biaya"
+        },
+        "uncle" : {
+          "description" : "Tinggi blok induk paman Ethereum (ETH): {parent_block_height}, hash: {hash}, date: {date}"
+        },
+        "transaction" : {
+          "description" : "Transaksi Ethereum (ETH) {hash}, tanggal: {date}",
+          "included_calls" : "Panggilan termasuk dalam transaksi ini",
+          "erc-20" : {
+            "caption" : "Transfer token ERC-20",
+            "sender" : "Dari:",
+            "recipient" : "Untuk:",
+            "value" : "Nilai:",
+            "wait" : "Potensi transfer ERC-20 untuk transaksi ini mungkin masih diproses dan ditampilkan nanti"
+          }
+        },
+        "address" : {
+          "description" : "Periksa alamat Ethereum (ETH) {address}, saldo dan transaksinya",
+          "description_contract" : "Periksa kontrak Ethereum (ETH) {address}, saldo dan transaksinya",
+          "type" : "Tipe",
+          "receiving" : "Menerima: {accept_calls_link}",
+          "spending" : "Pembelanjaan: {spending_calls_link}",
+          "call_count" : "Jumlah panggilan (termasuk. gagal)",
+          "contract_created" : "Kontrak dibuat?",
+          "contract_destroyed" : "Kontrak hancur?",
+          "contract_code" : {
+            "short" : "Kode kontrak",
+            "bin" : "Kode kontrak [bin]",
+            "hex" : "Kode kontrak [hex]"
+          },
+          "balance" : "Saldo (persis)",
+          "received" : "Diterima (perkiraan)",
+          "spent" : "Dibelanjakan (perkiraan)",
+          "fees" : "Biaya dibayar (perkiraan)",
+          "involving_calls" : "Panggilan yang melibatkan alamat",
+          "transferred" : "Ditransfer",
+          "failed" : "Gagal",
+          "erc-20" : {
+            "caption" : "ERC-20 saldo Token",
+            "balance" : "Saldo"
+          }
+        }
+      },
+      "ripple" : {
+        "ledger" : {
+          "description" : "Ripple (XRP) ledger: {ledger_id}, hash: {ledger_hash}, tanggal: {time}",
+          "ledger_index" : "Indeks ledger",
+          "ledger_hash" : "Ledger hash",
+          "parent_hash" : "Hash induk",
+          "transaction_hash" : "Hash transaksi",
+          "close_time" : "Ditutup pada",
+          "total_coins" : "Total koin",
+          "last_transactions" : "Transaksi termasuk dalam ledger ini"
+        },
+        "transaction" : {
+          "description" : "Transaksi Ripple (XRP): {tx_hash}, tanggal: {time}",
+          "transaction_index" : "Indeks dalam ledger",
+          "account" : "Akun",
+          "sequence" : "Urutan",
+          "account_txn_id" : "ID akun tx",
+          "flags" : "Tanda",
+          "last_ledger_sequence" : "Urutan ledger terakhir",
+          "source_tag" : "Tag sumber",
+          "transaction_result" : "Hasil",
+          "transaction_status" : "Status",
+          "type" : {
+            "caption" : "Tipe data",
+            "clear_flag" : "Hapus tanda",
+            "domain" : "Domain",
+            "email_hash" : "Domain hash",
+            "message_key" : "Kunci pesan",
+            "set_flag" : "Tandai",
+            "transfer_rate" : "Kecepatan transfer",
+            "check_id" : "Periksa id",
+            "amount" : "Jumlah",
+            "deliver_min" : "Kirim min",
+            "destination" : "Tujuan",
+            "send_max" : "Kirim max",
+            "destination_tag" : "Tanda tujuan",
+            "expiration" : "Kedaluwarsa",
+            "invoice_id" : "ID faktur",
+            "authorize" : "Izinkan",
+            "unauthorize" : "Tidak izinkan",
+            "owner" : "Pemilik",
+            "offer_sequence" : "Urutan penawaran",
+            "cancel_after" : "Batalkan setelah",
+            "finish_after" : "Selesaikan setelah",
+            "condition" : "Ketentuan",
+            "fulfillment" : "Pemenuhan",
+            "taker_gets" : "Pengambil mendapat",
+            "taker_pays" : "Pengambil membayar",
+            "channel" : "Channel",
+            "balance" : "Saldo",
+            "signature" : "Tanda tangan",
+            "public_key" : "Kunci publik",
+            "settle_delay" : "Selesaikan penundaan",
+            "regular_key" : "Kunci reguler",
+            "signer_quorum" : "Kuorum penandatangan",
+            "limit_amount" : "Batasi jumlah",
+            "quality_in" : "Kualitas dalam",
+            "quality_out" : "Kualitas luar"
+          }
+        },
+        "account" : {
+          "description" : "Akun Ripple (XRP): {account}, saldo: {balance}",
+          "account_summary" : "Ringkasan akun",
+          "previous_txn" : "Tx terakhir",
+          "sequence" : "Urutan selanjutnya",
+          "balances" : {
+            "caption" : "Saldo token",
+            "account" : "Counterparty",
+            "limit" : "Batas"
+          },
+          "transactions" : "Transaksi akun terakhir"
+        }
+      },
+      "stellar" : {
+        "ledger" : {
+          "description" : "Stellar (XLM) ledger: {ledger_id}, hash: {ledger_hash}, tanggal: {time}",
+          "height" : "Tinggi",
+          "hash" : "Hash",
+          "closed_at" : "Ditutup pada",
+          "transaction_count" : "Jumlah transaksi",
+          "successful" : "Berhasil: {transaction_count}",
+          "failed" : "Gagal: {transaction_count}",
+          "operation_count" : "Jumlah operasi",
+          "fee_pool" : "Kumpulan biaya",
+          "base_fee" : "Biaya dasar",
+          "base_reserve" : "Cadangan dasar",
+          "protocol_version" : "Versi protokol"
+        },
+        "transaction" : {
+          "description" : "Transaksi Stellar (XLM): {tx_hash}, tanggal: {time}",
+          "hash" : "Hash transaksi",
+          "created_at" : "Dibuat pada",
+          "successful" : "Berhasil?",
+          "ledger" : "Termasuk dalam ledger",
+          "source_account" : "Akun sumber",
+          "source_account_sequence" : "Urutan akun sumber",
+          "fee_paid" : "Biaya dibayar",
+          "operations" : {
+            "caption" : "Operasi",
+            "type" : "Tipe",
+            "id" : "Id",
+            "from" : "Dari",
+            "to" : "Untuk",
+            "amount" : "Jumlah",
+            "offer_id" : "id penawaran",
+            "account" : "Akun",
+            "funder" : "Pendana",
+            "starting_balance" : "Saldo awal",
+            "selling_asset_code" : "Kode aset penjualan",
+            "selling_asset_issuer" : "Aset penerbit penjualan",
+            "price" : "Harga",
+            "buying_asset_code" : "Kode aset pembelian",
+            "buying_asset_issuer" : "Aset penerbit pembelian",
+            "asset_code" : "Kode aset",
+            "asset_issuer" : "Penerbit aset",
+            "trustee" : "Akun wali",
+            "trustor" : "Akun trustor",
+            "limit" : "Batas",
+            "home_domain" : "Domain rumah"
+          },
+          "memo_type" : "Tipe Memo",
+          "memo" : "Memo"
+        },
+        "account" : {
+          "description" : "Akun Stellar (XLM): {account}, saldo: {balance}",
+          "id" : "Id akun",
+          "subentry_count" : "Jumlah subentry",
+          "inflation_destination" : "Tujuan inflasi",
+          "last_modified_ledger" : "Ledger terakhir yang dimodifikasi",
+          "balances" : {
+            "caption" : "Saldo akun"
+          }
+        }
+      },
+      "ton" : {
+        "block" : {
+          "description" : "Blok Telegram Open Network: {block_id}, rantai kerja: {workchain_id}, shard: {shard}, tanggal: {time} –Penjelajah TON",
+          "seqno" : "kode nomor urut",
+          "shard_tooltip" : "Shard: ({workchain},{shard})",
+          "shards_count" : "Jumlah shard",
+          "workchain" : "Workchain",
+          "shard" : "Shard",
+          "time" : "Dibuat",
+          "created" : "Dibuat",
+          "minted" : "Dicetak",
+          "imported" : "Diimpor",
+          "exported" : "Diekspor",
+          "recovered" : "Dipulihkan",
+          "fees_collected" : "Biaya dikumpulkan",
+          "gram_flow" : "Gram flow",
+          "roothash" : "Roothash",
+          "filehash" : "Filehash",
+          "lt" : "Waktu logis",
+          "userfriendly_address" : "Alamat",
+          "transactions" : "Transaksi termasuk dalam blok ini"
+        },
+        "transaction" : {
+          "description" : "Transaksi Telegram Open Network {transaction_hash}, akun: {userfriendly_account}, shard: {shard}",
+          "prev_transaction" : "Transaksi sebelumnya",
+          "total_fee" : "Biaya total",
+          "account" : "Akun",
+          "status_change" : "Perubahan status",
+          "state_update" : {
+            "old_hash" : "Hash lama",
+            "new_hash" : "Hash baru"
+          },
+          "included_messages" : "Pesan dalam transaksi ini"
+        },
+        "messages" : {
+          "index" : "Indeks",
+          "total_fee" : "Biaya total",
+          "source" : "Sumber",
+          "destination" : "Tujuan",
+          "value_gram" : "Nilai (GRAM)",
+          "type" : "Tipe"
+        },
+        "account" : {
+          "description" : "Akun Telegram Open Network: {hex_account}, saldo GRAM: {balance}",
+          "last_trans" : "Transaksi terakhir",
+          "storage_stats" : "Statistik penyimpanan",
+          "bits" : "Bits",
+          "cells" : "Sel",
+          "last_paid" : "Pembayaran terakhir",
+          "public_cells" : "Sel publik"
+        }
+      },
+      "monero" : {
+        "block" : {
+          "description" : "Blok monero: {block_id}, hash: {hash} – Monero Explorer"
+        },
+        "transaction" : {
+          "description" : "Transaksi Monero: {hash} - Monero Explorer",
+          "mixin" : "Penandatangan",
+          "payment_id" : "Id Pembayaran",
+          "tx_fee" : "Biaya (XMR)",
+          "size" : "Ukuran (B)",
+          "xmr_outputs" : "Nilai (XMR)",
+          "rct_type" : "Tipe RingCT"
+        },
+        "check_transaction" : {
+          "title" : "Buktikan transaksi",
+          "decode_outputs" : "Terjemahkan keluaran",
+          "prove_sending" : "Buktikan pengiriman",
+          "proved" : "Terbukti",
+          "transaction_key" : "Kunci transaksi",
+          "view_key" : "Lihat kunci"
+        },
+        "stats" : {
+          "suggested_transaction_fee_dimension" : "piconero per byte"
+        }
+      },
+      "cardano" : {
+        "block" : {
+          "description" : "Blok Cardano: {block_id}, hash: {hash} - Cardano Penjelajah",
+          "epoch" : "Epoch",
+          "slot" : "Slot",
+          "total_sent" : "Total ADA terkirim",
+          "fees" : "Biaya"
+        },
+        "transaction" : {
+          "description" : "Transaksi Cardano: {hash} - Cardano Penjelajah",
+          "output_total" : "Total keluaran (ADA)",
+          "input_total" : "Total masukan (ADA)",
+          "fee_total" : "Biaya total (ADA)"
+        },
+        "address" : {
+          "description" : "Alamat Cardano: {hash} / Saldo: {balance} – Cardano Penjelajah"
+        }
+      },
+      "zcash" : {
+        "block" : {
+          "description" : "Blok Zcash: {block_id}, hash: {hash} - Zcash Penjelajah"
+        },
+        "transaction" : {
+          "description" : "Transaksi Zcash: {hash} – Zcash Penjelajah",
+          "senders_and_recipients" : "Pengirim dan penerima <small>(publik)</small>",
+          "shielded_transfers" : "Transfer terlindung <small>(pribadi)</small>",
+          "join_split" : "JoinSplit",
+          "shielded_inputs" : "Masukan terlindung",
+          "shielded_outputs" : "Keluaran terlindung",
+          "transfered_from" : "Ditransfer dari pool terlindung",
+          "transfered_to" : "Ditransfer ke pool terlindung",
+          "validate" : {
+            "title" : "Lihat transfer terlindung",
+            "paymentdisclosure" : "Pengungkapan pembayaran",
+            "submit" : "Kirim",
+            "disclosed" : "Transaksi yang diungkapkan"
+          }
+        },
+        "address" : {
+          "description" : "Alamat Zcash: {hash} / Balance: {balance} - Zcash Penjelajah"
+        }
+      },
+      "mixin" : {
+        "snapshot" : {
+          "snapshot_info" : "Info snapshot",
+          "references" : "Referensi",
+          "description" : "Snapshot Mixin (XIN) {topology}, hash: {hash}, node: {node}"
+        },
+        "transaction" : {
+          "description" : "Periksa transaksi Mixin (XIN) {hash}, aset: {asset}",
+          "transaction_info" : "Info transaksi",
+          "outputs_title" : "Masukan & keluaran transaksi",
+          "keys" : "Kunci",
+          "mask" : "Mask",
+          "type" : "Jenis keluaran",
+          "script" : "Script",
+          "withdrawal" : "Penarikan"
+        },
+        "node" : {
+          "node_info" : "Info node",
+          "description" : "Node kernel Mixin (XIN) {id}"
+        },
+        "round" : {
+          "round_info" : "Info putaran",
+          "description" : "Putaran Mixin (XIN) {number}, {hash}",
+          "round_snapshots" : "Snapshot putaran"
+        }
+      },
+      "tezos" : {
+        "operations" : "Operasi",
+        "endorsement" : "Dukungan",
+        "delegation" : "Delegasi",
+        "reveal" : "Mengungkapkan",
+        "bulk_transaction" : "Transaksi bulk",
+        "block" : {
+          "baker" : "Baker",
+          "cycle" : "Siklus",
+          "level_in_cycle" : "Level dalam siklus",
+          "solvetime" : "Solvetime",
+          "fitness" : "Kebugaran",
+          "transaction_volume" : "Volume transaksi",
+          "baker_reward" : "Upah blok",
+          "baker_fees" : "Biaya baker",
+          "burned" : "Dibakar",
+          "activated_supply" : "Pasokan yang diaktifkan",
+          "accounts" : "Akun Baru / Didanai / Dibersihkan",
+          "token_days" : "Hari token",
+          "days_destroyed" : "Hari token dihancurkan",
+          "priority" : "Prioritas",
+          "is_cycle_snapshot" : "Apakah snapshot siklus",
+          "predecessor" : "Pendahulu",
+          "successor" : "Penerus",
+          "block_endorsements" : "Dukungan blok",
+          "endorsements" : "Dukungan",
+          "delegations" : "Delegasi",
+          "reveals" : "Mengungkapkan",
+          "block_operations" : "Operasi blok",
+          "description" : "Blok Tezos: {height}, hash: {hash} - Tezos Penjelajah"
+        },
+        "operation" : {
+          "amount_reward" : "Volume / Upah",
+          "title" : "Operasi",
+          "general_info" : "Operasi",
+          "volume" : "Volume",
+          "volume_total" : "Total volume",
+          "reward" : "Upah",
+          "deposit" : "Setoran"
+        },
+        "account" : {
+          "delegated_balance" : "Saldo yang didelegasikan",
+          "spendable_balance" : "Saldo yang bisa dibelanjakan",
+          "total_delegations" : "Total delegasi",
+          "active_delegations" : "Delegasi aktif",
+          "rolls_owned" : "Gulungan dimiliki",
+          "rank" : "Peringkat",
+          "operations" : "Operasi",
+          "title" : "Baker"
+        }
+      },
+      "eos" : {
+        "card" : {
+          "irreversible_block" : "Blok yang tidak dapat diubah:",
+          "ram_allocated" : "RAM dialokasikan:",
+          "eos_staked" : "EOS mempertaruhkan:",
+          "latest_block_producer" : "Produser terakhir:"
+        },
+        "homepage" : {
+          "irreversible_block" : "Blok yang tidak dapat diubah",
+          "network_stats" : "Statistik jaringan"
+        },
+        "updated_tooltip" : "Terakhir diperbarui",
+        "account" : {
+          "account_name" : "Nama akun",
+          "liquid_balance" : "Saldo liquiditas",
+          "head_block_num" : "Blok kepala",
+          "head_block_time" : "Waktu blok kepala",
+          "privileged" : "Diistimewakan",
+          "net_usage" : "Penggunaan jaringan",
+          "cpu_usage" : "penggunaan CPU",
+          "ram_usage" : "Penggunaan RAM",
+          "kb" : "kB",
+          "created" : "Dibuat",
+          "staked_tokens" : "Token yang dipertaruhkan",
+          "cpu_staked" : "CPU dipertaruhkan",
+          "net_staked" : "Jaringan dipertaruhkan",
+          "others_staked" : "Dipertaruhkan oleh orang lain",
+          "total_rex" : "Total REX",
+          "account_actions" : "Tindakan akun",
+          "permissions" : "Izin akun (kunci)",
+          "accounts" : "Akun",
+          "title" : "Produser (akun)",
+          "description" : "Periksa saldo akun produsen EOS {account} dan transaksinya"
+        },
+        "transaction" : {
+          "action" : "Tindakan",
+          "actions" : "Tindakan",
+          "expiration" : "Kadaluwarsa",
+          "expired" : "Kadaluwarsa",
+          "quantity_actions" : "Kuantitas tindakan",
+          "show_expired" : "Tunjukkan transaksi kadaluarsa",
+          "volume_actions" : "Volume tindakan",
+          "last_irreversible_block" : "Blok terakhir yang tidak dapat diubah",
+          "contract" : "Kontrak",
+          "authorization" : "Otorisasi",
+          "title" : "Operasi (Transaksi)",
+          "description" : "Periksa detail {hash} operasi EOS "
+        },
+        "block" : {
+          "producer" : "Produsen",
+          "producer_signature" : "Tanda tangan produsen",
+          "schedule_version" : "Jadwalkan versi",
+          "transaction_mroot" : "Transaksi merkle root",
+          "action_mroot" : "Tindakan merkle root",
+          "confirmed" : "Dikonfirmasi",
+          "description" : "Blok EOS: {height}, hash: {hash} - EOS Penjelajah"
+        }
+      }
+    },
+    "protocol" : {
+      "bitcoin" : {
+        "omni" : {
+          "navigation" : {
+            "properties" : "Properti",
+            "property" : "Properti"
+          },
+          "homepage" : {
+            "title" : "Penjelajah Omni Layer",
+            "description" : "Jelajahi transaksi dan properti Omni Layer (OMNI), seperti Tether (USDT), MaidSafeCoin (MAID) dan Omni (Mastercoin)",
+            "stats" : {
+              "title" : "Statistik Omni Layer",
+              "properties" : "Properti",
+              "mainnet_properties" : "Properti Mainnet",
+              "testnet_properties" : "Properti testnet",
+              "transactions" : "Transaksi"
+            },
+            "newest_properties" : "Properti terbaru",
+            "latest_transactions" : "Transaksi terbaru"
+          },
+          "infinitable" : {
+            "description" : {
+              "properties" : "Jelajahi semua properti Omni Layer, seperti Tether (USDT), MaidSafeCoin (MAID) dan Omni (Mastercoin)"
+            },
+            "foot" : {
+              "explore_list" : "Jelajahi daftar ini ... 👐"
+            },
+            "properties" : {
+              "name" : "Nama",
+              "issuer" : "Penerbit",
+              "creation_transaction_hash" : "Membuat tx hash",
+              "creation_time" : "Waktu pembuatan",
+              "creation_block_id" : "ID blok pembuatan",
+              "is_issuance_fixed" : "Apakah penerbitan sudah diperbaiki?",
+              "is_issuance_managed" : "Apakah penerbitan dikelola?",
+              "is_divisible" : "Apakah dapat dibagi?",
+              "circulation" : "Peredaran",
+              "ecosystem" : "Ekosistem",
+              "category" : "Kategori",
+              "subcategory" : "Subkategori",
+              "description" : "Deskripsi",
+              "url" : "URL"
+            },
+            "transactions" : {
+              "type" : "Tipe",
+              "sender" : "Pengirim",
+              "recipient" : "Penerima",
+              "valid" : "Adalah sah?",
+              "valid_unknown" : "Tidak diketahui. Tunggu konfirmasi!",
+              "amount" : "Jumlah"
+            }
+          },
+          "type" : {
+            "property" : {
+              "navigation" : "{name} (#{id})",
+              "description" : "Properti {name} (#{id}) di {ecosystem} protokol Omni Layer",
+              "danger_fraud" : "Peringatan! Ini bukan token {name} yang asli! Waspadalah terhadap penipuan! ",
+              "id" : {
+                "short" : "Id",
+                "full" : "ID Properti"
+              }
+            }
+          }
+        }
+      }
+    },
+    "homepage" : {
+      "stats" : {
+        "market_data" : {
+          "cap" : "Kapitalisasi pasar: {mcap}",
+          "dominance" : "Dominasi: {dominance}"
+        },
+        "general" : {
+          "caption" : "Statistik",
+          "circulation" : "Peredaran:",
+          "circulation_limit" : "Batas suplai peredaran:",
+          "difficulty" : "Kesulitan:",
+          "blockchain_size" : {
+            "caption" : "Ukuran blockchain:",
+            "dimension" : "GB"
+          }
+        },
+        "24h_stats" : {
+          "caption" : "Statistik 24 jam",
+          "volume_24h" : "Volume di rantai:",
+          "hashrate" : {
+            "caption" : "Hashrate:",
+            "dimension" : {
+              "bitcoin" : "Eh/s",
+              "ethereum" : "Th/s",
+              "dash" : "Ph/s",
+              "monero" : "Gh/s",
+              "zcash" : "Gs/s"
+            }
+          },
+          "tps" : "Txs per detik:",
+          "average_transaction_fee" : "Biaya transaksi rata-rata:",
+          "median_transaction_fee" : "Biaya transaksi median:",
+          "inflation_24h" : "Inflasi 24 jam:"
+        },
+        "mempool" : {
+          "caption" : "Mempool"
+        }
+      },
+      "charts" : {
+        "caption" : "Grafik",
+        "link" : "Lihat semua grafik"
+      },
+      "bitcoin" : {
+        "title" : "Penjelajah Bitcoin",
+        "description" : "Cari blok Bitcoin (BTC), transaksi, alamat, saldo, node, data dan protokol OP_RETURN, statistik dan grafik blockchain",
+        "stats" : {
+          "blocks" : "Blok",
+          "transactions" : "Transaksi",
+          "outputs" : "Keluaran",
+          "countdowns" : {
+            "reward_halving" : "Upah halving",
+            "upcoming_fork" : "Fork yang akan datang"
+          },
+          "general" : {
+            "next_difficulty_estimate" : "Perkiraan kesulitan berikutnya:",
+            "next_retarget_time_estimate" : "Penyesuaian ulang berikutnya:",
+            "best_block" : "Blok terbaru:",
+            "best_block_hash" : "Hash blok terbaik:",
+            "best_block_time" : "Waktu blok terbaik:",
+            "nodes" : "Node jaringan:"
+          },
+          "24h_stats" : {
+            "blocks" : "blok:",
+            "average_block_time" : {
+              "caption" : "Rata-rata waktu antar blok:",
+              "dimension" : "detik"
+            },
+            "transactions" : "Transaksi:"
+          },
+          "mempool" : {
+            "suggested_transaction_fee" : {
+              "caption" : "Biaya yang direkomendasikan:",
+              "dimension" : "satoshi per byte"
+            },
+            "total_fee" : "Dalam biaya:",
+            "size" : {
+              "caption" : "Ukuran:",
+              "dimension" : "MB"
+            }
+          }
+        },
+        "latest_blocks" : "Blok terbaru",
+        "biggest_txs_24h" : "Transaksi terbesar selama 24 jam terakhir",
+        "menu" : {
+          "caption" : "menu {chain}",
+          "blockchain" : "Blockchain",
+          "mempool" : "Mempool",
+          "mainnet_link" : "Buka penjelajah mainnet",
+          "dag" : "DAG"
+        },
+        "charts" : {
+          "average_block_size" : "Rata-rata ukuran blok menurut hari dan jam (3 bulan terakhir)",
+          "hashrate_distribution" : "Distribusi hashrate (2 minggu terakhir)",
+          "segwit_usage" : "Penggunaan SegWit (3 bulan terakhir)",
+          "dairy_circulation" : "Peredaran harian (miliar USD) (3 bulan terakhir)",
+          "median_transaction_fee" : "Biaya transaksi median (USD) (3 bulan terakhir)",
+          "coindays_destroyed" : "Coindays yang dihancurkan (jutaan) per hari (3 bulan terakhir)",
+          "non_monetary_outputs" : "Persentase keluaran non-moneter (3 bulan terakhir)",
+          "distribution_of_outputs" : "Distribusi jenis keluaran (minggu lalu)",
+          "average_fee" : "Biaya rata-rata per kB (USD) (3 bulan terakhir)"
+        }
+      },
+      "ripple" : {
+        "title" : "Penjelajah Ripple",
+        "description" : "Cari ledgers Ripple (XRP), transaksi, alamat dan saldo, statistik dan grafik blockchain",
+        "stats" : {
+          "ledgers" : "Ledgers",
+          "circulation" : "Peredaran",
+          "general" : {
+            "best_ledger" : "Ledger terbaru:",
+            "best_ledger_hash" : "Hash ledger terbaik:",
+            "best_ledger_time" : "Waktu ledger terbaik:"
+          },
+          "24h_stats" : {
+            "ledgers" : "Ledger:",
+            "average_ledger_time" : "Rata-rata waktu antara ledger:"
+          }
+        },
+        "latest_ledgers" : "Ledger terbaru"
+      },
+      "stellar" : {
+        "title" : "Penjelajah Stellar",
+        "description" : "Cari ledger Stellar (XLM), transaksi, alamat dan saldo, statistik dan grafik blockchain",
+        "stats" : {
+          "24h_stats" : {
+            "successful_transactions" : "Transaksi yang berhasil:",
+            "failed_transactions" : "Transaksi gagal:",
+            "operations" : "Operasi"
+          }
+        }
+      },
+      "ton" : {
+        "title" : "Penjelajah Telegram Open Network (TON)",
+        "description" : "Penjelajah blockchain TON, blok, saldo GRAM, transaksi dan alamat",
+        "stats" : {
+          "general" : {
+            "best_block_file_hash" : "Hash file blok terbaik:",
+            "best_block_root_hash" : "Hash root blok terbaik:"
+          }
+        }
+      },
+      "monero" : {
+        "title" : "Penjelajah Monero",
+        "description" : "Penjelajah, blok, transaksi, dan alamat blockchain Monero",
+        "stats" : {
+          "general" : {
+            "best_block_file_hash" : "Hash file blok terbaik:",
+            "best_block_root_hash" : "Hash root blok terbaik:"
+          },
+          "mempool_dimension" : "kB"
+        }
+      },
+      "cardano" : {
+        "title" : "Penjelajah Cardano",
+        "description" : "Penjelajah, blok, transaksi, dan alamat Cardano blockchain",
+        "stats" : {
+          "general" : {
+            "current_epoch" : "Epoch saat ini:",
+            "current_slot" : "Slot saat ini:"
+          }
+        }
+      },
+      "ethereum" : {
+        "title" : "Penjelajah Ethereum",
+        "description" : "Cari blok Ethereum (ETH), transaksi, alamat, kontrak pintar, saldo, dan statistik blockchain",
+        "stats" : {
+          "uncles" : "Paman",
+          "calls" : "Panggilan",
+          "erc-20" : {
+            "tokens" : "Token ERC-20"
+          },
+          "general" : {
+            "median_gas_price" : {
+              "caption" : "Harga gas median:",
+              "dimension" : "Gwei"
+            }
+          },
+          "24h_stats" : {
+            "uncles" : "Paman:"
+          },
+          "mempool" : {
+            "total_value" : "Dalam nilai:"
+          }
+        },
+        "menu" : {
+          "mempool" : "Mempool dan 6 blok terakhir"
+        },
+        "charts" : {
+          "average_gas_size" : "Rata-rata penggunaan gas per hari dan jam (3 bulan terakhir)",
+          "average_gas_limit" : "Batas gas rata-rata (3 bulan terakhir)",
+          "mining_difficulty" : "Kesulitan menambang (3 bulan terakhir)",
+          "new_contract_count" : "Jumlah kontrak baru (3 bulan terakhir)",
+          "distribution_of_tx_types" : "Distribusi jenis transaksi (3 bulan terakhir)",
+          "average_gas_price" : "Harga gas rata-rata (GWei) (3 bulan terakhir)"
+        }
+      },
+      "bitcoin/testnet" : {
+        "title" : "Penjelajah Bitcoin Testnet",
+        "description" : "Cari blok Bitcoin Testnet (TBTC), transaksi, alamat, saldo, node, data dan protokol OP_RETURN, statistik dan grafik blockchain"
+      },
+      "ethereum/testnet" : {
+        "title" : "Penjelajah Ethereum Testnet",
+        "description" : "Cari blok Ethereum Testnet (ETH), transaksi, alamat, kontrak pintar, saldo, dan statistik blockchain"
+      },
+      "bitcoin-cash" : {
+        "title" : "Penjelajah Bitcoin Cash",
+        "description" : "Cari blok Bitcoin Cash (BCH), transaksi, alamat, saldo, node, data dan protokol OP_RETURN, statistik dan grafik blockchain",
+        "charts" : {
+          "voting_of_scalability" : "Voting tentang skalabilitas"
+        }
+      },
+      "bitcoin-sv" : {
+        "title" : "Penjelajah Bitcoin SV",
+        "description" : "Cari blok Bitcoin SV (BSV), transaksi, alamat, saldo, node, data dan protokol OP_RETURN, statistik dan grafik blockchain"
+      },
+      "dogecoin" : {
+        "title" : "Penjelajah Dogecoin",
+        "description" : "Cari blok Dogecoin (DOGE), transaksi, alamat, saldo, node, data dan protokol OP_RETURN, statistik dan grafik blockchain"
+      },
+      "dash" : {
+        "title" : "Penjelajah Dash",
+        "description" : "Cari blok Dash (DASH), transaksi, alamat, saldo, data dan protokol OP_RETURN, statistik dan grafik blockchain"
+      },
+      "litecoin" : {
+        "title" : "Penjelajah Litecoin",
+        "description" : "Cari blok Litecoin (LTC), transaksi, alamat, saldo, node, statistik dan grafik blockchain"
+      },
+      "groestlcoin" : {
+        "title" : "Penjelajah Groestlcoin",
+        "description" : "Cari blok Groestlcoin (GRS), transaksi, alamat, saldo, node, statistik dan grafik blockchain"
+      },
+      "zcash" : {
+        "title" : "Penjelajah Zcash",
+        "description" : "Jelajahi blok, transaksi, alamat, saldo, node dan protokol Zcash (ZEC), statistik dan grafik blockchain",
+        "stats" : {
+          "mempool" : {
+            "suggested_transaction_fee" : {
+              "dimension" : "ZEC per transaksi",
+              "dimension_short" : "zatoshi"
+            }
+          }
+        }
+      },
+      "mixin" : {
+        "title" : "Penjelajah Mixin",
+        "description" : "Cari snapshot Mixin (XIN), transaksi, aset, node, dan statistik blockchain (DAG)",
+        "stats" : {
+          "best_snapshot_height" : "Tinggi snapshot terbaik",
+          "best_snapshot_time" : "Waktu snapshot terbaik",
+          "best_snapshot_hash" : "Hash snapshot terbaik",
+          "snapshots" : "Snapshot",
+          "mintings" : "Mintings",
+          "accepted_nodes" : "Node aktif"
+        },
+        "24h_stats" : {
+          "snapshots" : "Snapshot:"
+        },
+        "latest_snapshots" : "Snapshot terbaru"
+      },
+      "useful_links" : {
+        "caption" : "Link yang berguna",
+        "description" : "Mitra yang sudah menggunakan Blockchair di situs web mereka",
+        "wallets" : "Dompet",
+        "hardware_wallets" : "Dompet perangkat keras",
+        "market_data" : "Data pasar",
+        "exchanges" : "Pertukaran",
+        "mining_pools" : "Pools penambangan",
+        "explorers" : "Penjelajah",
+        "crypto_processors" : "Prosesor",
+        "dapps" : "dApps"
+      },
+      "tezos" : {
+        "title" : "Penjelajah Tezos",
+        "description" : "Cari blok Tezos (XTZ), transaksi, akun (pembuat roti) dan saldo, statistik blockchain"
+      },
+      "eos" : {
+        "title" : "Penjelajah EOS",
+        "description" : "Cari blok EOS, transaksi, akun (produsen) dan saldo, statistik blockchain, blok yang tidak dapat diubah"
+      }
+    },
+    "bitcoin" : {
+      "nodes" : {
+        "description" : "Jelajahi jaringan Bitcoin dengan mencari semua node yang dapat diakses, negara mereka, implementasi, versi, dan aturan konsensus",
+        "other_nodes" : "Node lainnya",
+        "last_updated" : "Terakhir diperbarui:",
+        "versions" : {
+          "caption" : "Versi node:",
+          "user_agent" : "Agen pengguna",
+          "count" : "Jumlah"
+        },
+        "heights" : "Ketinggian blok:",
+        "charts" : {
+          "total_nodes" : "Node total: {total}",
+          "by_countries" : "Berdasarkan negara",
+          "by_implementations" : "Bedasarkan implementasi",
+          "by_heights" : "Berdasarkan ketinggian"
+        }
+      },
+      "whitepaper" : {
+        "description" : "Periksa whitepaper Satoshi Nakamoto untuk konsistensi menurut hash di berbagai situs web dan dari keluaran Bitcoin",
+        "last_check" : "Pemeriksaan terakhir:",
+        "icon" : "Ikon",
+        "site" : "Situs",
+        "url" : "URL",
+        "hash" : "Hash",
+        "status" : "Status",
+        "footer" : {
+          "what_is" : {
+            "caption" : "Halaman apa ini?",
+            "description1" : "Halaman ini menunjukkan apakah situs Bitcoin yang berbeda menyajikan laporan resmi Bitcoin asli atau versi yang diredaksi. Setiap satu jam kami menghitung hash SHA-256 file dan membandingkannya dengan hash dari laporan resmi asli (yaitu <span class='word--break'>b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553</span>).",
+            "description2" : "Ada beberapa saran untuk mengubah whitepaper yang dihosting di bitcoin.org (mis. {Github_issue_link} masih terbuka). Kami percaya bahwa meredaksi makalah akademis dan menulis ulang sejarah Bitcoin untuk mengakomodasi kepentingan bisnis seseorang benar-benar tidak dapat diterima.",
+            "github_issue" : "Masalah GitHub #1325"
+          },
+          "where_find" : {
+            "caption" : "Di mana saya dapat menemukan laporan resmi di blockchain Bitcoin?",
+            "description1" : "Pertama-tama, ada beberapa keluaran data null yang berisi hash sebagai teks biasa. Anda dapat menemukannya {outputs_table_link}. Contoh: {transaction1_link}, {transaction2_link}, {transaction3_link}",
+            "outputs_table" : "menggunakan penyaringan pada tabel keluaran",
+            "description2" : "Ada juga keluaran data null yang berisi hash sebagai hex. Versi mesin telusur kami saat ini belum memiliki dukungan untuk menyaring script berdasarkan nilai hex, tetapi karena nilai hex dapat direpresentasikan sebagai teks biner, kami dapat {outputs_table_search_link} dari teks ini. Contoh: {transaction1_link}, {transaction2_link}, {transaction3_link}",
+            "outputs_table_search" : "cari berdasarkan bagian alfanumerik",
+            "description3" : "Lebih penting lagi, ada transaksi {transaction_link} yang berisi file pdf itu sendiri. Ini dia {bitcoin_stackexchange_link}. Mungkin saja untuk meredaksi laporan resmi di beberapa situs web, tetapi blockchain tidak dapat diubah.",
+            "bitcoin_stackexchange" : "instruksi tentang cara menguraikannya"
+          }
+        }
+      }
+    },
+    "bitcoin-cash" : {
+      "nodes" : {
+        "description" : "Jelajahi jaringan Bitcoin Cash dengan mencari semua node yang dapat diakses, negaranya, implementasi, versi, dan aturan konsensusnya"
+      }
+    },
+    "bitcoin-sv" : {
+      "nodes" : {
+        "description" : "Jelajahi jaringan Bitcoin SV dengan mencari semua node yang dapat diakses, negara mereka, implementasi, versi dan aturan konsensus"
+      }
+    },
+    "dogecoin" : {
+      "nodes" : {
+        "description" : "Jelajahi jaringan Dogecoin dengan mencari semua node yang dapat diakses, negara, implementasi, versi, dan aturan konsensusnya"
+      }
+    },
+    "litecoin" : {
+      "nodes" : {
+        "description" : "Jelajahi jaringan Litecoin dengan mencari semua node yang dapat diakses, negara, implementasi, versi, dan aturan konsensusnya"
+      }
+    },
+    "dash" : {
+      "nodes" : {
+        "description" : "Jelajahi jaringan Dash dengan mencari semua node yang dapat diakses, negara mereka, implementasi, versi dan aturan konsensus"
+      }
+    },
+    "groestlcoin" : {
+      "nodes" : {
+        "description" : "Jelajahi jaringan Groestlcoin dengan mencari semua node yang dapat diakses, negara, implementasi, versi, dan aturan konsensusnya"
+      }
+    },
+    "zcash" : {
+      "nodes" : {
+        "description" : "Jelajahi jaringan Zcash dengan mencari semua node yang dapat diakses, negara, implementasi, versi, dan aturan konsensusnya"
+      }
+    },
+    "ethereum" : {
+      "erc-20" : {
+        "navigation" : {
+          "object" : {
+            "tokens" : "Token",
+            "transactions" : "Transaksi"
+          }
+        },
+        "homepage" : {
+          "title" : "Penjelajah Ethereum ERC-20",
+          "description" : "Cari token ERC-20 (sebagai USDT), transaksi, saldo, daftar kontrak baru",
+          "stats" : {
+            "title" : "Statistik ERC-20",
+            "tokens" : "Token total",
+            "transactions" : "Total transaksi",
+            "tokens_24h" : "Token baru 24jam",
+            "transactions_24h" : "Transaksi baru 24 jam"
+          },
+          "most_used_tokens" : "Token yang paling banyak digunakan selama sebulan terakhir",
+          "latest_tokens" : "Token terbaru",
+          "latest_transactions" : "Transaksi terbaru"
+        },
+        "infinitable" : {
+          "title" : {
+            "tokens" : "Daftar Token ERC-20",
+            "transactions" : "Daftar Transaksi ERC-20"
+          },
+          "description" : {
+            "tokens" : "Cari ERC-20 (sebagai USDT) token paling populer dan terbaru, urutkan dan saring berdasarkan usia, blok ID dan nama",
+            "transactions" : "Cari ERC-20 (sebagai USDT) transaksi terbaru, urutkan dan saring berdasarkan usia, blok ID dan nilai"
+          },
+          "tokens" : {
+            "address" : "Alamat",
+            "id" : "Id",
+            "time" : "Dibuat di",
+            "name" : "Nama",
+            "symbol" : "Simbol",
+            "decimals" : "Desimal",
+            "creating_block_id" : "Membuat ID blok",
+            "creating_transaction_hash" : "Membuat hash tx"
+          },
+          "transactions" : {
+            "block_id" : "Blok Id",
+            "id" : "ID transaksi",
+            "transaction_hash" : "Hash transaksi",
+            "token_address" : "Alamat token",
+            "token_name" : "Nama Token",
+            "token_symbol" : "Simbol token",
+            "token_decimals" : "Token desimal",
+            "value" : "Nilai"
+          }
+        },
+        "token" : {
+          "title" : "Penjelajah {token_name} ({token_symbol})",
+          "description" : "Cari transaksi, alamat, dan saldo terbaru {token_name} ({token_symbol})",
+          "navigation" : "Token",
+          "stats" : {
+            "time" : "Dibuat di:",
+            "creating_block_id" : "Membuat ID blok:",
+            "creating_transaction_hash" : "Membuat hash transaksi:",
+            "transactions" : "Transaksi:",
+            "transactions_24h" : "Transaksi 24 jam:",
+            "volume_24h" : "Volume 24 jam:"
+          },
+          "latest_transactions" : "Transaksi token terbaru"
+        }
+      }
+    },
+    "charts" : {
+      "title" : "Grafik",
+      "description" : "Grafik {chain}, harga {ticker}, grafik historis dan live, serta visualisasi mata uang kripto lainnya",
+      "content" : {
+        "sections" : {
+          "monetary_stats" : "Statistik moneter",
+          "blocks" : "Blok",
+          "transactions" : "Transaksi",
+          "misc" : "Lain-lain"
+        }
+      },
+      "bitcoin" : {
+        "names" : {
+          "blockchain-size" : {
+            "title" : "Grafik ukuran blockchain {chain}",
+            "name" : "Ukuran blockchain",
+            "description" : "Laju pertumbuhan ukuran node penuh {chain} dalam gigabyte dari blok genesis sampai sekarang"
+          },
+          "price-usd" : {
+            "title" : "{chain} harga ({ticker}/USD)",
+            "name" : "{chain} harga (USD)",
+            "description" : "Dapatkan {chain} grafik nilai tukar, lihat langsung harga {ticker} / USD, termasuk data pasar historis di seluruh bursa {chain}"
+          },
+          "circulation" : {
+            "title" : "Grafik peredaran {chain}",
+            "name" : "Peredaran",
+            "description" : "Berapa banyak {ticker} yang telah ditambang? Perhatikan grafik yang mewakili pasokan {ticker}"
+          },
+          "average-block-size" : {
+            "title" : "Grafik ukuran blok rata-rata {chain}",
+            "name" : "Ukuran blok rata-rata",
+            "description" : "Lihat grafik ukuran blok {chain} rata-rata historis"
+          },
+          "median-block-size" : {
+            "title" : "Grafik ukuran blok median {chain}",
+            "name" : "Ukuran blok median",
+            "description" : "Dapatkan grafik ukuran blok {chain} median historis"
+          },
+          "difficulty" : {
+            "title" : "Grafik kesulitan {chain}",
+            "name" : "Kesulitan",
+            "description" : "Grafik kesulitan {ticker}, parameter yang bergantung pada hashrate penambangan secara keseluruhan"
+          },
+          "transaction-count" : {
+            "title" : "Grafik jumlah transaksi {chain}",
+            "name" : "Jumlah transaksi",
+            "description" : "Berapa banyak transaksi {ticker} yang terjadi setiap hari? Jumlah transaksi {chain} yang dikonfirmasi menurut hari/minggu/bulan"
+          },
+          "total-transaction-count" : {
+            "title" : "Grafik jumlah transaksi {chain} total",
+            "name" : "Jumlah total transaksi",
+            "description" : "Berapa banyak transaksi {ticker} yang diproses? Jumlah total transaksi yang dikonfirmasi di {chain} blockchain"
+          },
+          "transaction-volume" : {
+            "title" : "Grafik volume transaksi {chain}",
+            "name" : "Volume transaksi ({ticker})",
+            "description" : "Periksa jumlah {ticker} yang dipindahkan setiap hari"
+          },
+          "average-transaction-amount" : {
+            "title" : "Grafik jumlah transaksi rata-rata {chain}",
+            "name" : "Jumlah transaksi rata-rata ({ticker})",
+            "description" : "Dapatkan {chain} jumlah transaksi rata-rata di {ticker} menurut hari/minggu/bulan/tahun"
+          },
+          "median-transaction-amount" : {
+            "title" : "Grafik jumlah transaksi median {chain}",
+            "name" : "Jumlah transaksi median ({ticker})",
+            "description" : "Dapatkan {chain} jumlah transaksi median di {ticker} menurut hari/minggu/bulan/tahun"
+          },
+          "average-transaction-fee" : {
+            "title" : "Grafik biaya transaksi rata-rata {chain}",
+            "name" : "Biaya transaksi rata-rata ({ticker})",
+            "description" : "Periksa {chain} biaya tx rata-rata di {ticker}"
+          },
+          "median-transaction-fee" : {
+            "title" : "Grafik biaya transaksi median {chain}",
+            "name" : "Biaya transaksi median ({ticker})",
+            "description" : "Periksa {chain} biaya median tx di {ticker}"
+          },
+          "transaction-volume-usd" : {
+            "title" : "Grafik {chain} volume transaksi (USD)",
+            "name" : "Volume transaksi (USD)",
+            "description" : "Periksa jumlah {ticker} yang dipindahkan setiap hari dalam USD"
+          },
+          "average-transaction-fee-usd" : {
+            "title" : "Grafik {chain} biaya transaksi rata-rata (USD)",
+            "name" : "Biaya transaksi rata-rata (USD)",
+            "description" : "Lihat biaya tx rata-rata {chain} dalam USD"
+          },
+          "median-transaction-fee-usd" : {
+            "title" : "Grafik {chain} biaya transaksi median (USD)",
+            "name" : "Biaya transaksi median (USD)",
+            "description" : "Lihat biaya median tx {chain} dalam USD"
+          },
+          "average-transaction-amount-usd" : {
+            "title" : "Grafik {chain} jumlah transaksi rata-rata (USD)",
+            "name" : "Jumlah transaksi rata-rata (USD)",
+            "description" : "Dapatkan {chain} jumlah tx rata-rata dalam USD berdasarkan hari/minggu/bulan/tahun"
+          },
+          "median-transaction-amount-usd" : {
+            "title" : "Grafik {chain} jumlah transaksi median (USD)",
+            "name" : "Jumlah transaksi median (USD)",
+            "description" : "Dapatkan jumlah {chain} tx median dalam USD berdasarkan hari/minggu/bulan/tahun"
+          },
+          "inflation-usd" : {
+            "title" : "Grafik inflasi {chain} (USD)",
+            "name" : "Inflasi (USD)",
+            "description" : "Jumlah {ticker} yang ditambang/dibuat setiap hari dalam USD. kurva tingkat inflasi {chain}"
+          },
+          "transactions-in-block" : {
+            "title" : "Transaksi dalam diagram blok {chain}",
+            "name" : "Transaksi di blok",
+            "description" : "Jumlah transaksi {chain} dengan plot pencar blok"
+          },
+          "coindays-destroyed" : {
+            "title" : "{chain} harikoin grafik hancur",
+            "name" : "Coindays dihancurkan",
+            "description" : "Grafik menunjukkan berapa banyak {chain} koin yang dihancurkan dengan memindahkan koin lama"
+          },
+          "hashrate-distribution" : {
+            "title" : "Distribusi hashrate {chain}",
+            "name" : "Distribusi hashrate",
+            "description" : "Temukan penambang dan kumpulan {chain} terbesar di diagram lingkaran distribusi hashrate"
+          },
+          "transactions-per-second" : {
+            "title" : "{chain} transaksi per grafik detik",
+            "name" : "Transaksi per detik",
+            "description" : "Tx/detik adalah ukuran skalabilitas {chain} yang baik. Periksa bagaimana itu berubah setiap hari"
+          },
+          "segwit-usage" : {
+            "title" : "{chain} Grafik penggunaan SegWit",
+            "name" : "Penggunaan SegWit",
+            "description" : "Persentase transaksi SegWit di {chain}"
+          },
+          "percentage-of-non-monetary-outputs" : {
+            "title" : "% grafik keluaran {chain} non-moneter",
+            "name" : "% dari keluaran non moneter",
+            "description" : "Persentase keluaran {ticker} yang belum pindah {ticker}"
+          },
+          "distribution-of-outputs-types-over-two-weeks" : {
+            "title" : "Distribusi jenis grafik keluaran {chain}",
+            "name" : "Distribusi jenis keluaran",
+            "description" : "Periksa jenis keluaran {chain} paling populer selama 2 minggu terakhir di grafik lingkaran"
+          }
+        }
+      },
+      "dogecoin" : {
+        "names" : {
+          "aux-pow" : {
+            "title" : "Grafik penggunaan Dogecoin AuxPoW",
+            "name" : "Penggunaan AuxPoW",
+            "description" : "Persentase blok Dogecoin yang dikonfirmasi oleh penambangan gabungan"
+          }
+        }
+      },
+      "ethereum" : {
+        "names" : {
+          "number-of-new-contracts" : {
+            "title" : "Jumlah grafik kontrak Ethereum baru",
+            "name" : "Jumlah kontrak baru",
+            "description" : "Dapatkan jumlah kontrak pintar baru yang dibuat setiap hari di Ethereum"
+          },
+          "number-of-destroyed-contracts" : {
+            "title" : "Jumlah Grafik kontrak Ethereum yang hancur",
+            "name" : "Jumlah kontrak yang hancur",
+            "description" : "Dapatkan jumlah kontrak pintar Ethereum yang dihancurkan setiap hari"
+          },
+          "uncle-rate" : {
+            "title" : "Tingkat paman Ethereum",
+            "name" : "Tingkat paman",
+            "description" : "Persentase blok paman di Ethereum"
+          },
+          "average-gas-price" : {
+            "title" : "Grafik harga gas rata-rata Ethereum",
+            "name" : "Harga gas rata-rata",
+            "description" : "Periksa harga gas rata-rata ETH historis di GWei"
+          },
+          "median-gas-price" : {
+            "title" : "Grafik harga gas median Ethereum",
+            "name" : "Harga gas median",
+            "description" : "Periksa harga gas median ETH historis di GWei"
+          },
+          "average-gas-limit" : {
+            "title" : "Grafik batas gas rata-rata Ethereum",
+            "name" : "Batas gas rata-rata",
+            "description" : "Periksa batas gas rata-rata ETH historis"
+          },
+          "median-gas-limit" : {
+            "title" : "Grafik batas gas median Ethereum",
+            "name" : "Batas gas median",
+            "description" : "Periksa batas gas median ETH historis"
+          },
+          "new-contracts-ratio" : {
+            "title" : "Grafik rasio kontrak baru Ethereum",
+            "name" : "Rasio kontrak baru",
+            "description" : "Rasio kontrak baru Ethereum dibandingkan dengan yang dihancurkan oleh SELFDESTRUCT"
+          }
+        }
+      },
+      "name" : {
+        "options" : {
+          "compare" : "Dibandingkan dengan",
+          "interval" : {
+            "caption" : "Interval",
+            "1m" : "Bulan lalu",
+            "3m" : "3 bulan terakhir",
+            "full" : "Sejak awal"
+          },
+          "granularity" : "Granularitas",
+          "export" : "Ekspor",
+          "related_charts" : "Grafik terkait",
+          "other_coins" : "Grafik yang sama untuk koin lain"
+        }
+      }
+    }},
+  "nodes" : {
+    "title" : "Node",
+    "description" : "Cari distribusi node blockchain berdasarkan implementasi, versi, dan negara",
+    "navigation" : "Node",
+    "card" : {
+      "bitcoin" : {
+        "total_nodes" : "Node total: {total_count}",
+        "footer_link" : "Buka penjelajah node {chain}"
+      }
+    }
+  },
+  "about" : {
+    "title" : "Tentang",
+    "description" : "Tim Blockchair, mitra dan kontak",
+    "navigation" : "Tentang",
+    "what_is" : {
+      "caption" : "Apa itu Blockchair?",
+      "description1" : "{service} adalah mesin pencari dan analitik blockchain untuk {blockchains_links} atau Anda juga dapat mengatakan itu adalah mesin yang terdiri dari penjelajah blockchain pada steroid. Anda dapat menyaring dan mengurutkan blok, transaksi, dan isinya dengan berbagai kriteria berbeda, serta melakukan pencarian teks lengkap melalui blockchain.",
+      "description2" : "Untuk memahami kemampuan mesin pencari kami, Anda dapat mencoba mencari {search_bitcoin_link}, melihat {biggest_bitcoin_cash_blocks_link}, atau mencoba contoh lain yang ditampilkan di {homepage_link}.",
+      "biggest_bitcoin_cash_blocks" : "blok Bitcoin Cash terbesar",
+      "homepage" : "beranda kami",
+      "description3" : "Kami bertujuan menjadi Google untuk blockchain. Prioritas kami berikutnya adalah menghadirkan kemampuan untuk mencari lebih banyak proyek terdesentralisasi lainnya seperti IPFS dan SWARM. Selain itu, kami memberi peneliti cara untuk mengumpulkan data ekspor dari blockchain."
+    },
+    "our_team" : "Tim kami",
+    "contacts" : {
+      "caption" : "Hubungi kami",
+      "email" : "Email: {email}",
+      "twitter" : "Twitter: {twitter_link}",
+      "facebook" : "Facebook: {facebook_link}",
+      "telegram" : "Telegram: {telegram_link}"
+    },
+    "partners" : {
+      "caption" : "Mitra dan teman kami",
+      "general" : "Mitra umum",
+      "wallets" : "Dompet dengan fitur Blockchair",
+      "hardware_wallets" : "Dompet perangkat keras dengan fitur Blockchair",
+      "exchanges" : "Pertukaran menampilkan Blockchair",
+      "mining_pools" : "Pools penambangan dengan Blockchair",
+      "explorers" : "Penjelajah dengan Blockchair",
+      "market_data" : "Penyedia data pasar yang menampilkan Blockchair",
+      "crypto_processors" : "Prosesor Crypto dengan fitur Blockchair",
+      "dapps" : "dApps menampilkan Blockchair",
+      "media" : "Mitra media",
+      "academic" : "Mitra akademis"
+    }
+  },
+  "terms" : {
+    "title" : "Persyaratan Layanan",
+    "description" : "Layanan disediakan oleh perjanjian legal Blockchair",
+    "navigation" : "Persyaratan layanan",
+    "content" : {
+      "caption" : "Persyaratan layanan Blockchair",
+      "api" : "Persyaratan layanan API",
+      "ads" : "Persyaratan layanan iklan"
+    }
+  },
+  "feed" : {
+    "title" : "Umpan pesan",
+    "description" : "Baca pesan yang disandikan yang disimpan dalam blockchain cryptocurrency",
+    "navigation" : {
+      "title" : "Umpan",
+      "hint" : "Umpan Blockchair menunjukkan transaksi OP_RETURN baik di blockchain Bitcoin dan Bitcoin Cash serta transaksi di blockchain Ethereum yang berisi data yang dapat dibaca di bidang masukan.",
+      "tps" : {
+        "title" : "Mendengarkan tiga blockchain untuk entri baru",
+        "bitcoin" : "Bitcoin dengan kecepatan {tps} txs per detik",
+        "bitcoin-cash" : "Bitcoin Cash dengan kecepatan {tps} txs per detik",
+        "ethereum" : "Ethereum dengan kecepatan {tps} txs per detik"
+      }
+    },
+    "entry" : {
+      "time" : "{time} (UTC)"
+    },
+    "showing" : "Menampilkan entri selama 3 jam terakhir ..."
+  },
+  "compare" : {
+    "title" : "Bandingkan statistik blockchain BTC, ETH, BCH, LTC, BSV, DASH dan DOGE",
+    "description" : "Bandingkan cryptocurrency dengan waktu rata-rata antara blok, transaksi per detik, biaya, hashrate, jumlah node dan banyak lagi",
+    "navigation" : "Bandingkan",
+    "comparison" : "Tambahkan ke perbandingan",
+    "blockchain_stats" : {
+      "caption" : "Statistik blockchain",
+      "circulation" : "Peredaran",
+      "nodes" : "Node jaringan",
+      "blockchain_size" : "Ukuran blockchain"
+    },
+    "24h_stats" : {
+      "caption" : "Statistik 24 jam",
+      "volume_24h" : "Volume di rantai",
+      "hashrate_24h" : "Hashrate",
+      "average_tx_fee" : "Biaya transaksi rata-rata",
+      "median_tx_fee" : "Biaya transaksi median",
+      "average_block_time" : {
+        "caption" : "Waktu rata-rata antar blok",
+        "dimension" : "detik"
+      },
+      "inflation_24h" : "Inflasi",
+      "cdd_24h" : "Coindays hancur"
+    },
+    "mempool_stats" : {
+      "caption" : "Statistik Mempool",
+      "tps" : "Transaksi per detik",
+      "suggested_transaction_fee" : "Biaya yang direkomendasikan"
+    },
+    "market_stats" : {
+      "caption" : "Statistik pasar",
+      "cap" : "Kapitalisasi",
+      "price" : "Harga",
+      "dominance" : "Indeks dominasi"
+    }
+  },
+  "charts" : {
+    "title" : "Grafik",
+    "description" : "Statistik dan grafik live Cryptocurrency, harga pasar, distribusi hashrate penambangan, kesulitan, ukuran blockchain, biaya dan banyak lagi",
+    "navigation" : "Grafik",
+    "granularity" : {
+      "date" : "Tanggal",
+      "week" : "Minggu",
+      "month" : "Bulan",
+      "year" : "Tahun",
+      "time" : "Waktu"
+    },
+    "functions" : {
+      "count" : "Jumlah",
+      "sum" : "Jumlah",
+      "avg" : "Rata-rata",
+      "median" : "Median",
+      "min" : "Minimum",
+      "max" : "Maksimum"
+    },
+    "dimensions" : {
+      "count" : "Jumlah",
+      "bytes" : "Byte",
+      "kilobytes" : "Kb",
+      "megabytes" : "Mb",
+      "gigabytes" : "Gb",
+      "dd" : "Hari-hari yang hancur",
+      "usd" : "USD",
+      "percentage" : "Persentase",
+      "gwei" : "GWei",
+      "microseconds" : "µs",
+      "miliseconds" : "ms"
+    },
+    "content" : {
+      "see_more" : "Lihat {count} grafik lainnya"
+    }
+  },
+  "broadcast" : {
+    "title" : "Push dan siarkan transaksi mentah",
+    "navigation" : "Siaran",
+    "description" : "Secara pribadi menyiarkan BTC, ETH, BCH, LTC, BSV, DOGE dan GRS transaksi mentah yang ditandatangani dalam hex",
+    "form" : {
+      "chain" : {
+        "label" : "Pilih jaringan:",
+        "invalid" : "Anda harus memilih blockchain terlebih dahulu!"
+      },
+      "hex" : {
+        "label" : "Tempel transaksi mentah di sini dalam format hex untuk menyiarkannya melalui jaringan yang ditentukan:",
+        "errors" : {
+          "empty" : "Anda harus memasukkan nilai hex!",
+          "invalid" : "Hex tidak valid!"
+        }
+      },
+      "button" : "Transaksi siaran"
+    },
+    "transaction" : "Terima kasih, transaksi Anda telah disiarkan ke blockchain {chain}, dengan hash: {hash}"
+  },
+  "notify" : {
+    "title" : "Memberitahukan",
+    "navigation" : {
+      "title" : "Memberitahukan"
+    },
+    "content" : {
+      "enable" : "Aktifkan notifikasi",
+      "chains" : "Beri tahu saya jika blok baru ditemukan di rantai berikut:"
+    },
+    "notification" : "Blok {chain} baru telah ditemukan #{id}"
+  },
+  "privacy" : {
+    "title" : "Kebijakan privasi",
+    "navigation" : "Kebijakan privasi",
+    "description" : "Pelajari mengapa privasi Anda berisiko saat menggunakan layanan kripto, dan mengapa Blockchair adalah opsi yang lebih aman"
+  },
+  "dumps" : {
+    "title" : "Set data Cryptocurrency",
+    "navigation" : "Dumps",
+    "description" : "Unduh data blok dan transaksi dari BTC, ETH, BCH, LTC, BSV, DOGE, dan GRS blockchain dalam format TSV"
+  },
+  "markets" : {
+    "title" : "Pasar",
+    "navigation" : "Pasar",
+    "description" : "Harga cryptocurrency langsung dan kapitalisasi pasar, bangun dan lacak portofolio Anda sendiri",
+    "coins" : "1000 teratas",
+    "my_portfolio" : "Portofolio saya: ({total_profit})",
+    "table" : {
+      "head" : {
+        "coin_name" : "Nama koin",
+        "price" : "Harga",
+        "search" : "Pencarian cepat",
+        "mkt_cap" : "Kapitalisasi Pasar",
+        "24h_change" : "24 jam",
+        "dominance" : "Dominasi",
+        "portfolio" : {
+          "amount" : "Jumlah",
+          "profit" : "Nilai USD"
+        }
+      },
+      "body" : {
+        "stablecoin" : "Koin stabil",
+        "explore" : "Jelajahi",
+        "portfolio" : {
+          "total_profit" : "Nilai portofolio total: {total_profit} {profit_change_24h}",
+          "empty_list" : "Anda tidak memiliki portofolio.",
+          "start_portfolio" : "Mulai portofolio dengan menambahkan koin ke favorit Anda!"
+        },
+        "load_more" : "Muat lebih banyak"
+      }
+    },
+    "modal" : {
+      "title" : {
+        "edit" : "Edit koin dalam portofolio Anda",
+        "add" : "Tambahkan koin ke portofolio Anda"
+      },
+      "description" : "Koin ini telah ditambahkan ke favorit Anda. Sekarang Anda dapat memasukkan jumlah koin yang Anda miliki atau menutup jendela ini.",
+      "placeholder" : "Masukan jumlah",
+      "buttons" : {
+        "edit" : "Redaksi",
+        "add" : "Menambahkan",
+        "remove" : "Menghapus"
+      }
+    }
+  },
+  "api" : {
+    "navigation" : "API",
+    "homepage" : {
+      "title" : "API Blockchain",
+      "description" : "API Blockchain"
+    },
+    "docs" : {
+      "title" : "Dokumentasi API Blockchain",
+      "description" : "API untuk pengembang memberikan akses ke data dalam 12 blockchain (BTC, ETH, BCH, TON, BSV, XRP, XLM, token ERC dll)",
+      "navigation" : "Dokumentasi"
+    },
+    "plans" : {
+      "title" : "Paket harga",
+      "navigation" : "Paket harga"
+    }
+  },
+  "pdf" : {
+    "title" : "Tanda terima PDF transaksi",
+    "navigation" : "Resi PDF",
+    "description" : "Hasilkan resi PDF yang cantik seperti dari bank untuk transaksi crypto Anda",
+    "form" : {
+      "placeholder" : "Masukkan hash transaksi",
+      "supported_blockchains" : "Blockchain yang didukung: {bitcoin_link}, {ethereum_link}, {bitcoin_cash_link}, {litecoin_link}, {bitcoin_sv_link}, {dash_link}, {zcash_link}, {dogecoin_link} dan {groestlcoin_link}"
+    },
+    "receipt" : {
+      "download_link" : "Tautan unduhan: {pdf_link}",
+      "no_transaction" : "Tidak ada transaksi dengan hash seperti itu yang ditemukan"
+    }
+  },
+  "hints" : {
+    "bitcoin-cash" : "Bitcoin Cash — juga dikenal sebagai BCC dan XBC",
+    "copy" : "Salin",
+    "copied" : "Disalin",
+    "mempool" : "Mempool"
+  },
+  "utils" : {
+    "bool" : {
+      "yes" : "IYA",
+      "no" : "TIDAK"
+    },
+    "coinbase" : {
+      "full" : "💰 Coinbase",
+      "short" : "Coinbase"
+    },
+    "shielded" : {
+      "full" : "🛡 Terlindung",
+      "short" : "Terlindung"
+    },
+    "contract_creation" : "Pembuatan kontrak",
+    "unspent" : "Tidak terbelanjakan",
+    "thinking" : {
+      "loading" : "Memuat...",
+      "progress" : "Berpikir secepat yang saya bisa... ({progress}%)"
+    },
+    "genesis" : "💰 Genesis",
+    "numbers" : {
+      "billion" : {
+        "short" : "B",
+        "full" : "Miliaran"
+      },
+      "million" : {
+        "short" : "M",
+        "full" : "Jutaan"
+      }
+    }
+  },
+  "footer" : {
+    "explorers" : "Penjelajah",
+    "services" : "Jasa",
+    "api" : "API",
+    "sql" : "SQL",
+    "charts" : "Grafik",
+    "markets" : "Pasar & Portofolio",
+    "nodes" : "Penjelajah node",
+    "feed" : "Umpan",
+    "broadcast" : "Transaksi siaran",
+    "dumps" : "Database dumps",
+    "dumps_node" : "Node penuh dump",
+    "pdf" : "Dapatkan tanda terima PDF",
+    "compare" : "Bandingkan crypto",
+    "useful_links" : "Link yang berguna",
+    "about" : "Tentang",
+    "terms" : "Persyaratan layanan",
+    "about_blockchair" : "Tentang Blockchair",
+    "privacy" : "Kebijakan privasi kami",
+    "contacts" : "Hubungi kami",
+    "issues" : "Kirimkan bug / permintaan",
+    "status" : "Status",
+    "social" : "Sosial",
+    "language" : "Bahasa",
+    "copyright" : "© {year} Blockchair",
+    "market_data" : "Data pasar oleh {coin_market_cap_link} dan {coin_gecko_link}",
+    "faq" : "FAQ",
+    "referral_program" : "Program rujukan",
+    "advertise" : "Beriklan dengan kami",
+    "whitepaper" : "Laporan resmi",
+    "bugbounty" : "Program bug bounty",
+    "tools" : {
+      "title" : "Alat",
+      "release-monitor" : "Lepaskan monitor",
+      "halving-countdown" : "Menghitung mundur Halving"
+    },
+    "cryptoanarchyst_corner" : "Pojokan Crypto-anarchist",
+    "theme" : {
+      "on" : "Beralih ke mode malam",
+      "off" : "Beralih ke mode hari"
+    },
+    "ads" : {
+      "on" : "Matikan iklan di seluruh situs web selama 3 hari",
+      "off" : "Aktifkan iklan"
+    }
+  },
+  "errors" : {
+    "http" : {
+      "payment_required" : "Anda mengirim terlalu banyak permintaan. Silakan coba lagi nanti.",
+      "not_found" : "Tidak ditemukan di blockchain mana pun 😞"
+    },
+    "ban" : {
+      "row1" : "Wow! Anda adalah pengguna yang sangat aktif, kami curiga Anda adalah robot 🤖.",
+      "row2" : "Harap verifikasi bahwa Anda bukan robot dengan menyelesaikan captcha"
+    }
+  },
+  "faq" : {
+    "title" : "Pertanyaan yang Sering Diajukan",
+    "description" : "Kami hanya menyediakan pencarian blockchain dan layanan analitik, bukan bursa, bank atau dompet",
+    "navigation" : "FAQ"
+  },
+  "advertise" : {
+    "title" : "Beriklan",
+    "description" : "Promosikan produk Anda sendiri di Blockchair dengan spanduk, tombol, dan teks native",
+    "navigation" : "Mengiklankan"
+  },
+  "language-proposal" : {
+    "title" : "Situs ini tersedia dalam bahasa Indonesia, ganti bahasanya?",
+    "yes" : "Iya",
+    "no" : "Tidak"
+  },
+  "referral_program" : {
+    "title" : "Program rujukan",
+    "navigation" : "Program rujukan",
+    "navigation_howto" : "Bagaimana caranya "},
+  "tools" : {
+    "title" : "Alat",
+    "release-monitor" : {
+      "title" : "Lepaskan monitor",
+      "description" : "Lacak versi terbaru klien cryptocurrency: Bitcoin Core, Geth, rippled, Bitcoin ABC, dan lainnya",
+      "button" : "Bergabunglah dengan channel Telegram kami untuk menerima pembaruan",
+      "version" : "Versi",
+      "time" : "Waktu",
+      "link" : "Tautan",
+      "show_all" : "Tunjukkan semua",
+      "filter_title" : "Rantai penyaringan"
+    },
+    "halving-countdown" : {
+      "title" : "Menghitung mundur Halving",
+      "meta_title" : "Hitung mundur Halving Bitcoin 2020",
+      "description" : "Periksa tanggal ketika halving akan terjadi di Bitcoin (BTC), Bitcoin Cash (BCH) dan Bitcoin SV (BSV) dan pengaruhnya terhadap harga",
+      "item" : {
+        "title" : "hitung mundur halving",
+        "current_block" : "Blok saat ini",
+        "current_reward" : "Upah blok saat ini",
+        "halvening_block" : "Blok halving",
+        "halvening_reward" : "Upah blok setelah halving",
+        "halvening_time_approximate" : "Perkiraan waktu halving",
+        "seconds_left" : "Detik tersisa",
+        "blocks_left" : "Blok tersisa sampai halving",
+        "button_explorer" : "Buka penjelajah {title}"
+      },
+      "time" : {
+        "days" : "hari",
+        "hours" : "jam",
+        "minutes" : "menit"
+      }
+    }
+  },
+  "nojs" : {
+    "disabled_functions" : "Fungsionalitas ini hanya tersedia jika JavaScript diaktifkan",
+    "extended_functions" : "Fungsionalitas yang diperluas hanya tersedia dengan JavaScript diaktifkan"
+  },
+  "news" : {
+    "title" : "Berita Blockchair",
+    "description" : "Agregasi berita blockchain dan cryptocurrency dari outlet media paling terkemuka",
+    "menu_description" : "Ikuti berita crypto terbaru yang disertai dengan grafik harga BTC",
+    "most_recent" : "Terbaru",
+    "more_news" : "Lebih banyak berita",
+    "homepage_link" : "Lebih",
+    "shortcuts" : {
+      "title" : "Pintasan keyboard",
+      "close" : "Tutup",
+      "next" : "Lanjut",
+      "prev" : "Sebelumnya"
+    },
+    "unable_to_load" : "Tidak dapat memuat artikel",
+    "try_to_read_on" : "Cobalah untuk terus membaca",
+    "read_on" : "Lanjutkan membaca",
+    "yesterday" : "Kemarin",
+    "share_title" : "Bagikan artikel ini",
+    "share" : "Bagikan",
+    "previous_news" : "Berita sebelumnya",
+    "join_telegram" : "Berlangganan Berita di Telegram"
+  },
+  "donut" : {
+    "title" : "Blockchair Donut",
+    "title_navigation" : "Blockchair Donut",
+    "menu_description" : "Donasikan crypto ke organisasi nonprofit dan proyek open source yang mengagumkan",
+    "description" : "Donasi crypto untuk yang memerlukan | Platform penggalangan dana untuk organisasi nirlaba dan proyek sumber terbuka yang menerima donasi dalam cryptocurrency",
+    "meta" : {
+      "title" : "Blockchair Donut",
+      "description" : "Donasi crypto untuk yang memerlukan | Platform penggalangan dana untuk organisasi nirlaba dan proyek sumber terbuka yang menerima donasi dalam cryptocurrency"
+    },
+    "homepage" : {
+      "cover_title" : "Donasikan crypto untuk tujuan yang baik",
+      "cover_text" : "Buat dampak positif pada dunia dan bantu pertumbuhan crypto. Blockchair Donut menghadirkan cerita tentang organisasi nirlaba dan proyek sumber terbuka yang berjuang dan menjadikan dunia tempat yang lebih baik."
+    },
+    "project" : {
+      "title" : "{title} - Donasikan crypto di Blockchair Donut"}
+  },
+  "bugbounty" : {
+    "title" : "Program bug bounty"}
+}
