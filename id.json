@@ -81,7 +81,7 @@
       },
       "card" : {
         "bitcoin" : {
-          "blocks" : "blok:",
+          "blocks" : "Blok:",
           "blocks_24h" : "Blok 24 jam:",
           "transactions" : "Transaksi:",
           "outputs" : "Keluaran:",
@@ -129,7 +129,7 @@
       }
     },
     "screen3" : {
-      "features" : "Temukan fitur kami",
+      "features" : "Jelajahi fitur kami",
       "description" : "Alat yang hebat untuk bekerja dengan data kripto: meminta API Blockchair untuk mendapatkan data blockchain, menjelajahi tren dan korelasi dengan melihat Grafik, menganalisis tren pasar dengan Pasar & Portofolio, menyiarkan transaksi, mengunduh sampah dengan data historis, dan banyak lagi.",
       "api" : {
         "title" : "API Profesional",
@@ -2038,7 +2038,7 @@
             "nodes" : "Node jaringan:"
           },
           "24h_stats" : {
-            "blocks" : "blok:",
+            "blocks" : "Blok:",
             "average_block_time" : {
               "caption" : "Rata-rata waktu antar blok:",
               "dimension" : "detik"
@@ -3033,7 +3033,7 @@
     "description" : "Agregasi berita blockchain dan cryptocurrency dari outlet media paling terkemuka",
     "menu_description" : "Ikuti berita crypto terbaru yang disertai dengan grafik harga BTC",
     "most_recent" : "Terbaru",
-    "more_news" : "Lebih banyak berita",
+    "more_news" : "Beirita lainnya",
     "homepage_link" : "Lebih",
     "shortcuts" : {
       "title" : "Pintasan keyboard",
