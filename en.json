@@ -7,7 +7,7 @@
         "bitcoin\/testnet": "Bitcoin Testnet",
         "bitcoin-testnet": "Bitcoin Testnet",
         "bitcoin-cash": "Bitcoin Cash",
-        "bitcoin-abc": "Bitcoin ABC",
+        "ecash": "eCash",
         "bitcoin-sv": "Bitcoin SV",
         "dogecoin": "Dogecoin",
         "dash": "Dash",
@@ -53,6 +53,7 @@
         "tokens": "Tokens",
         "erc-20": "ERC-20",
         "erc-20_tokens": "ERC-20 tokens",
+        "erc-20_token": "ERC-20 token",
         "erc-20_transactions": "ERC-20 transactions",
         "operation": "Operation",
         "operations": "Operations",
@@ -101,12 +102,14 @@
         "call": "{chain} call",
         "calls": "{chain} calls",
         "omni": {
-            "properties": "{chain} Omni Layer Properties"
-        }
+            "properties": "{chain} Omni Layer properties"
+        },
+        "release_monitor": "Release monitor"
     },
     "ui": {
         "yes": "Yes",
         "no": "No",
+        "close": "Close",
         "coming_soon": "Coming soon",
         "explorers": "Explorers",
         "dashboard": "Dashboard",
@@ -114,7 +117,7 @@
         "other": "Other",
         "blockchain": "Blockchain",
         "dag": "DAG",
-        "explore_blockchains": "Explore Blockchains",
+        "explore_blockchains": "Explore blockchains",
         "mempool": "Mempool",
         "loading": "Loading...",
         "stat_24h": "24h statistics",
@@ -130,6 +133,7 @@
         "usd_last_3m": "USD, last 3 months",
         "daily_transactions": "Daily transactions",
         "biggest_mining_pools": "Biggest mining pools",
+        "last_1m": "Last month",
         "last_2w": "Last 2 weeks",
         "last_24h": "Last 24h",
         "alternative_explorers": "Alternative explorers",
@@ -143,7 +147,11 @@
         "all_chain_charts": "All {chain} charts",
         "node_explorer": "Node explorer",
         "whitepaper": "Whitepaper",
+        "broadcast": "Broadcast",
         "broadcast_transaction": "Broadcast transaction",
+        "broadcast_transactions": "Broadcast transactions",
+        "choose_any_blockchain": "Choose any blockchain",
+        "insert_transaction_hash": "Insert your transaction hash",
         "testnet_explorer": "Testnet explorer",
         "charts": "Charts",
         "erc-20_explorer": "ERC-20 explorer",
@@ -161,13 +169,29 @@
             "erc_20": "ERC-20 Token balances",
             "assets": "Asset balances"
         },
-        "show_all": "Show All",
+        "show_all": "Show all",
         "load_more": "Load more",
+        "no_results": "No results",
+        "new_contract": "New contract",
+        "more_rows": "more rows",
+        "reset_sorts": "Reset sorts",
+        "reset_conditions": "Reset conditions",
+        "table_fields": "Table fields",
+        "apply_and_close": "Apply & close",
+        "add_all": "Add all",
+        "add_field": "Add field",
+        "show_default_only": "Show default only",
+        "ascending": "Ascending",
+        "descending": "Descending",
+        "show_more": "Show more",
         "additional_info": "Additional info",
         "services": "Services",
         "products": "Products",
         "for_partners": "For partners",
         "for_developers": "For developers",
+        "raw_tx": "Raw tx",
+        "raw_tx_hex": "Raw transaction (hex):",
+        "raw_tx_decoded": "Decoded raw transaction (json):",
         "partners": "Partners",
         "developers": "Developers",
         "social": "Social",
@@ -199,17 +223,23 @@
             "contract_interaction": "Contract interaction",
             "swap": "Swap"
         },
+        "reason": "Reason",
+        "transaction_fail_reasons": {
+            "out_of_gas": "Out of gas"
+        },
         "transfer": "transfer",
         "approval": "Approval",
         "approved_for_trade": "Approved for trade",
         "approved_for_all": "Approved for all",
         "contract_interaction": "Contract interaction",
+        "contract_creation": "Contract creation",
         "all_event_actions": "All event actions",
         "at": "at",
         "swap": "Swap",
         "for": "For",
         "on": "On",
         "logs": "Logs",
+        "tools": "Tools",
         "calls_included": "Calls included",
         "load_calls": "Load calls",
         "load_call": "Load child call",
@@ -277,7 +307,7 @@
         "total_blocks": "Total blocks",
         "total_transactions": "Total transactions",
         "total_outputs": "Total outputs",
-        "time_to_confirmation_": "Est. time to confirmation:",
+        "time_to_confirmation_": "Est. time to 1 confirmation:",
         "position_": "Position:",
         "queue_": "Queue:",
         "most_recent": "Most recent",
@@ -331,10 +361,11 @@
         "explore_erc20_tokens": "Explore <span>ERC-20<\/span> tokens",
         "news_section_title": "Blockchair Crypto News",
         "more_news": "More news",
-        "subscribe_news_tg": "Subscibe to News in Telegram",
+        "subscribe_news_tg": "Subscibe to News on Telegram",
         "menu": {
             "api": "API",
-            "api_docs": "API Documentation",
+            "api_docs": "API documentation",
+            "careers": "Careers",
             "sql": "SQL",
             "database_dumps": "Database dumps",
             "full_node_dumps": "Full node dumps",
@@ -365,7 +396,12 @@
             "onion_v2": "Blockchair Onion v2 URL",
             "onion_v3": "Blockchair Onion v3 URL",
             "status": "Status",
-            "bug_bounty": "Bug bounty program"
+            "bug_bounty": "Bug bounty program",
+            "themes": {
+                "day": "Day Mode",
+                "night": "Night Mode",
+                "system": "System Preferred"
+            }
         },
         "no_trackers": "No third-party trackers",
         "no_js": "Works without JavaScript",
@@ -388,11 +424,16 @@
             "name": "Your name",
             "email": "Contact e-mail",
             "company": "Company name",
-            "your_title": "What is your title in company?",
+            "your_title": "What is your title in the company",
             "company_url": "Company website",
             "message": "Your message to us",
             "get_offer": "Get acquainted with the offer",
-            "send": "Send email"
+            "send": "Send email",
+            "ok_title": "Hooray!<br\/>We have received your request",
+            "ok_text": "We will contact you via the email you provided in the contact form. We usually respond within 48 hours of receiving the request.",
+            "ok_caption": "⚠️ We only contact via corporate emails, ending with @blockchair.com",
+            "err_title": "Oops!<br\/>Errors occured while processing your form",
+            "err_text": "Please fix these errors and try again:"
         },
         "explore_erc20_tokens_inline": "Explore ERC-20 tokens",
         "shielded": "Shielded",
@@ -402,6 +443,7 @@
         "bin": "Bin",
         "hex": "Hex",
         "reset": "Reset",
+        "apply": "Apply",
         "payment_disclosure_another_tx": "The entered payment disclosure unlocks shielded info for another transaction.",
         "go_to_transaction": "Go to transaction",
         "payment_disclosure_error": "The entered payment disclosure is incorrect. Try again.",
@@ -434,7 +476,48 @@
         "edit": "Edit",
         "add": "Add",
         "total_portfolio_value_": "Total portfolio value:",
-        "remove_all": "Remove all"
+        "remove_all": "Remove all",
+        "portfolio_show_full_value": "Show full value on navbar",
+        "portfolio_manage": "Manage portfolio",
+        "portfolio_empty": "Portfolio is empty",
+        "get_browser_extension": "Get browser extension",
+        "notify_tx_title": "Blockchair<br\/>extension notification",
+        "notify_tx_description": "Freely close Blockchair website and receive notification in your browser when the status of transaction changes.",
+        "js": {
+            "turn_off": "Turn off JavaScript",
+            "turn_on": "Turn on JavaScript"
+        },
+        "gwei_options": {
+            "title": "Gas price tracker",
+            "slow": "Slow",
+            "normal": "Normal",
+            "fast": "Fast",
+            "cheetah": "Uber",
+            "sentence": "{percent} of the transactions confirmed in the last 10 min had the gas price {price} {unit} or lower"
+        },
+        "ads": {
+            "sponsored": "Sponsored",
+            "turn_off": "Turn off ads",
+            "turn_on": "Turn on ads",
+            "turn_off_tooltip": "Turn off ads across the website for 3 days"
+        },
+        "icon": "Icon",
+        "website": "Website",
+        "data": "Data",
+        "node_info": "Node info",
+        "transaction_info": "Transaction info",
+        "round_info": "Round info",
+        "attack51": {
+            "title": "The {chain} network is under a 51% attack.",
+            "caption": "Until this is resolved, it is advised not to accept any payments as they may be double spent."
+        },
+        "api_url": {
+            "request_uri": "Request URI",
+            "copy_uri": "Copy request URI",
+            "open_uri": "Open URI in new tab",
+            "docs": "Documentation",
+            "tip": "Press {key} key to open the URI in a new tab"
+        }
     },
     "fields": {
         "id": "Id",
@@ -451,6 +534,7 @@
         "market_cap": "Market cap",
         "coinbase_tx": "Coinbase tx?",
         "market_dominance": "Dominance",
+        "price_change": "Price change",
         "transactions_per_sec": "Transactions per second",
         "mempool_transactions_per_sec": "Transactions per second",
         "average_time_between_blocks": "Avg. time between blocks",
@@ -473,6 +557,7 @@
         "generation": "Generation",
         "generated_value": "Generated value",
         "transaction_id": "Transaction id",
+        "token_decimals": "Token decimals",
         "reward": "Reward",
         "next_difficulty_estimate": "Next estimated difficulty",
         "next_retarget_time_estimate": "Next readjustment",
@@ -482,6 +567,7 @@
         "closed_on": "Closed on",
         "miner": "Miner",
         "transaction_count": "Transaction count",
+        "address_count": "Address count",
         "witness_count": "Witness tx count",
         "input_count": "Input count",
         "output_count": "Output count",
@@ -497,6 +583,7 @@
         "coindays_destroyed": "Coindays destroyed",
         "amount_transacted": "Amount transacted",
         "is_coinbase": "Is coinbase?",
+        "is_contract": "Is contract?",
         "has_witness": "Has witness data?",
         "lock_time": "Lock time",
         "join_split_raw": "JoinSplit",
@@ -505,6 +592,7 @@
         "version": "Version",
         "version_bits": "Version [bits]",
         "type": "Type",
+        "type_data": "Type data",
         "first_balance_change": "First balance change",
         "last_balance_change": "Last balance change",
         "balance": "Balance",
@@ -540,6 +628,7 @@
         "taker_gets": "Taker gets",
         "taker_pays": "Taker pays",
         "destination": "Destination",
+        "destination_tag": "Destination tag",
         "result": "Result",
         "ledger_index": "Ledger index",
         "index_in_ledger": "Index in ledger",
@@ -625,6 +714,7 @@
         "offer_id": "Offer id",
         "amount": "Amount",
         "asset": "Asset",
+        "asset_type": "Asset type",
         "asset_code": "Asset code",
         "asset_issuer": "Asset issuer",
         "issuer": "Issuer",
@@ -637,6 +727,7 @@
         "buying_liabilities": "Buying liabilities",
         "selling_liabilities": "Selling liabilities",
         "created_at": "Created at",
+        "signer": "Signer",
         "signers": "Signers",
         "payment_id": "Payment Id",
         "rct_type": "RingCT Type",
@@ -703,6 +794,7 @@
         "parent_block": "Parent block",
         "mix_hash": "Mix hash",
         "state_root": "State root",
+        "state": "State",
         "sha3_uncles": "SHA3 uncles",
         "transactions_root": "Transactions root",
         "transferred_to_shielded_pool": "Transferred to shielded pool",
@@ -743,7 +835,47 @@
         "token_address": "Token address",
         "batch": "Batch",
         "group": "Group",
-        "timestamp": "Timestamp"
+        "timestamp": "Timestamp",
+        "path": "Path",
+        "last_seen_receiving": "Last seen receiving",
+        "last_seen_spending": "Last seen spending",
+        "authorization": "Authorization",
+        "permission": "Permission",
+        "bump_to": "Bump to",
+        "claimant": "Claimant",
+        "balance_id": "Balance Id",
+        "account_id": "Accound Id",
+        "funder": "Funder",
+        "account": "Account",
+        "into": "Into",
+        "from": "From",
+        "to": "To",
+        "since": "Since",
+        "exact": "Exact",
+        "between": "Between",
+        "starting_balance": "Starting balance",
+        "trustee": "Trustee",
+        "trustor": "Trustor",
+        "authorize": "Authorize",
+        "authorize_to_maintain_liabilities": "Authorize to maintain liablities",
+        "buying_asset_type": "Buying asset type",
+        "buying_asset_issuer": "Buying asset issuer",
+        "selling_asset_code": "Selling asset code",
+        "selling_asset_type": "Selling asset type",
+        "selling_asset_issuer": "Selling asset issuer",
+        "sponsor": "Sponsor",
+        "sponsored_id": "Sponsored id",
+        "begin_sponsor": "Begin sponsor",
+        "signer_key": "Signer key",
+        "signer_weight": "Signer weight",
+        "low_threshold": "Low threshold",
+        "med_threshold": "Medium threshold",
+        "high_threshold": "High threshold",
+        "source_asset_type": "Source asset type",
+        "source_amount": "Source amount",
+        "destination_min": "Destination min",
+        "limit": "Limit",
+        "payee": "Payee"
     },
     "units": {
         "satoshi_per_byte": "satoshi per byte",
@@ -769,15 +901,15 @@
         "copied": "Copied",
         "transaction_statuses": {
             "unconfirmed": "The transaction is waiting to be processed by miners.",
-            "confirmed": "It takes over {count} confirmations for transactions to be considered irreversible on the {Chain} blockchain.",
-            "completed": "The transaction is considered completed and irreversible because it has been confirmed more than {count} times."
+            "confirmed": "It takes over {count} confirmations for transactions to be considered fully confirmed on the {Chain} blockchain.",
+            "completed": "The transaction is considered completed because it has been confirmed more than {count} times."
         },
-        "time_to_confirmation": "Miners process transactions with a higher transaction fee first",
+        "time_to_confirmation": "Miners process transactions with a higher transaction fee first. Click to learn more",
         "transaction_pom": {
-            "critical": "{count} of critical issues identified for the privacy of the involved addresses.",
-            "low": "{count} vulnerabilities discovered for the privacy of the involved addresses.",
-            "moderate": "{count} vulnerabilities discovered for the privacy of the involved addresses.",
-            "high": "The privacy issues found are negligible.",
+            "critical": "{count} of critical issues identified for the privacy of the involved addresses. Click to learn more.",
+            "low": "{count} vulnerabilities discovered for the privacy of the involved addresses. Click to learn more.",
+            "moderate": "{count} vulnerabilities discovered for the privacy of the involved addresses. Click to learn more.",
+            "high": "The privacy issues found are negligible. Click to learn more.",
             "healthy": "No issues found. Click to analyze the privacy of other transactions."
         },
         "change": "Most likely it is the sender’s change address",
@@ -792,12 +924,36 @@
         "portfolio_add": "Click to add to Portfolio Tracker",
         "fraud_usdt": "Warning! This is not the real USDT token! Beware of fraud!",
         "buying_liabilities": "The total aggregate amount of an asset offered to buy.",
-        "selling_liabilities": "The total aggregate amount of an asset offered to sell."
+        "selling_liabilities": "The total aggregate amount of an asset offered to sell.",
+        "current_value": "Current USD value",
+        "transaction_value": "USD value at the time of transaction",
+        "internal_value": "The sum of value transfers which were initiated during the contract interaction"
     },
     "meta": {
+        "faq": {
+            "title": "Frequently Asked Questions",
+            "description": "We only provide blockchain search and analytics services, not an exchange, bank or a wallet",
+            "why": {
+                "title": "Why is my transaction not arriving"
+            }
+        },
+        "news": {
+            "aggregator": {
+                "title": "Blockchair News",
+                "description": "An aggregation of blockchain and cryptocurrency news of the most prominent media outlets"
+            },
+            "item": {
+                "title": "{title} — Blockchair News",
+                "description": "{source}: {description}"
+            }
+        },
         "welcome": {
             "title": "Blockchair — Universal blockchain explorer and search engine",
             "description": "Block explorer and the most powerful API for BTC, ETH, XRP, XLM, BCH, LTC, DASH, BSV, DOGE, GRS and TON that allow you to find, sort and filter transactions and addresses."
+        },
+        "careers": {
+            "title": "Careers | Blockchair",
+            "description": "Check our open vacancies and join the Blockchair team"
         },
         "bitcoin": {
             "dashboard": {
@@ -821,6 +977,12 @@
             },
             "outputs": {
                 "description": "Explore, sort and filter outputs from Bitcoin (BTC) blockchain by value, sender, recipient, addresses, get UTXO set and more"
+            },
+            "addresses": {
+                "description": "Explore, sort and filter addresses from Bitcoin (BTC) blockchain"
+            },
+            "nodes": {
+                "description": "Explore Bitcoin network by looking for all accessible nodes, their countries, implementations, versions and consensus rules"
             }
         },
         "bitcoin\/testnet": {
@@ -845,6 +1007,9 @@
             },
             "outputs": {
                 "description": "Explore, sort and filter outputs from Bitcoin Testnet (TBTC) blockchain by value, sender, recipient, addresses, get UTXO set and more"
+            },
+            "addresses": {
+                "description": "Explore, sort and filter addresses from from Bitcoin Testnet (TBTC) blockchain"
             }
         },
         "ethereum": {
@@ -862,7 +1027,7 @@
                 "description": "Ethereum (ETH) uncle parent block height: {parent_block_height}, hash: {hash}, date: {date}"
             },
             "address": {
-                "description": "Check Ethereum (ETH) address {address}, its balance and transactions"
+                "description": "Check Ethereum (ETH) {type} {address}, its balance and transactions"
             },
             "blocks": {
                 "description": "Explore, sort and filter blocks from Ethereum (ETH) blockchain by height, gas, miner and more"
@@ -883,12 +1048,57 @@
                 "transactions": {
                     "description": "Explore unconfirmed transactions in Ethereum (ETH) mempool"
                 }
+            },
+            "erc-20": {
+                "description": "Look up ERC-20 (as USDT) tokens, transactions, balances, new contracts list",
+                "tokens": {
+                    "description": "Look up ERC-20 (as USDT) most popular and newest tokens, sort and filter them by age, block ID and name"
+                },
+                "transactions": {
+                    "description": "Look up ERC-20 (as USDT) latest transactions, sort and filter them by age, block ID and value"
+                },
+                "token": {
+                    "description": "Look up Uniswap V2 (UNI-V2) latest transactions, addresses and balances"
+                }
             }
         },
         "ethereum\/testnet": {
+            "address": {
+                "description": "Ethereum Testnet (TETH) {type} {address}, its balance and transactions"
+            },
+            "block": {
+                "description": "Ethereum Testnet (TETH) block {height}, hash: {hash}, date: {date}"
+            },
             "dashboard": {
                 "title": "Ethereum Testnet Explorer",
-                "description": "Look up Ethereum Testnet (ETH) blocks, transactions, addresses, smart contracts, balances and blockchain stats"
+                "description": "Look up Ethereum Testnet (TETH) blocks, transactions, addresses, smart contracts, balances and blockchain stats"
+            },
+            "transaction": {
+                "description": "Ethereum Testnet (TETH) transaction {hash}, date: {date}"
+            },
+            "blocks": {
+                "description": "Explore, sort and filter blocks from Ethereum Testnet (TETH) blockchain by height, gas, miner and more"
+            },
+            "uncles": {
+                "description": "Explore, sort and filter uncles from Ethereum Testnet (TETH) blockchain by height, parent block, miner and more"
+            },
+            "transactions": {
+                "description": "Explore, sort and filter transactions from Ethereum Testnet (TETH) blockchain by ID (hash), value, gas and more"
+            },
+            "calls": {
+                "description": "Explore, sort and filter calls (internal transfers) from Ethereum Testnet (TETH) blockchain by value, time, sender, recipient and more"
+            },
+            "erc-20": {
+                "description": "Look up ERC-20 (as USDT) tokens, transactions, balances, new contracts list",
+                "tokens": {
+                    "description": "Look up ERC-20 (as USDT) most popular and newest tokens, sort and filter them by age, block ID and name"
+                },
+                "transactions": {
+                    "description": "Look up ERC-20 (as USDT) latest transactions, sort and filter them by age, block ID and value"
+                },
+                "token": {
+                    "description": "Look up Uniswap V2 (UNI-V2) latest transactions, addresses and balances"
+                }
             }
         },
         "bitcoin-cash": {
@@ -900,7 +1110,7 @@
                 "description": "Bitcoin Cash (BCH) block {height}, hash: {hash}, date: {date}"
             },
             "address": {
-                "description": "Check Bitcoin Cash (BCH) address {cash_address} ({legacy_address}), its balance and transactions"
+                "description": "Check Bitcoin Cash (BCH) address {address} ({legacy_address}), its balance and transactions"
             },
             "blocks": {
                 "description": "Explore, sort and filter blocks from Bitcoin Cash (BCH) blockchain by height, reward, miner and more"
@@ -913,6 +1123,12 @@
             },
             "outputs": {
                 "description": "Explore, sort and filter outputs from Bitcoin Cash (BCH) blockchain by value, recipient (address), get UTXO set and more"
+            },
+            "addresses": {
+                "description": "Explore, sort and filter addresses from Bitcoin Cash (BCH) blockchain"
+            },
+            "nodes": {
+                "description": "Explore Bitcoin network by looking for all accessible nodes, their countries, implementations, versions and consensus rules"
             }
         },
         "bitcoin-sv": {
@@ -924,7 +1140,10 @@
                 "description": "Bitcoin SV (BSV) block {height}, hash: {hash}, date: {date}"
             },
             "address": {
-                "description": "Check Bitcoin SV (BSV) address: {cash_address} ({legacy_address}), its balance and transactions"
+                "description": "Check Bitcoin SV (BSV) address: {address}, its balance and transactions"
+            },
+            "transaction": {
+                "description": "Check Bitcoin SV (BSV) transaction, value: {value}, date: {date}"
             },
             "blocks": {
                 "description": "Explore, sort and filter blocks from Bitcoin SV (BSV) blockchain by height, reward, miner and more"
@@ -934,6 +1153,12 @@
             },
             "outputs": {
                 "description": "Explore, sort and filter outputs from Bitcoin SV (BSV) blockchain by value, recipient (address), get UTXO set and more"
+            },
+            "addresses": {
+                "description": "Explore, sort and filter addresses from Bitcoin SV (BSV) blockchain"
+            },
+            "nodes": {
+                "description": "Explore Bitcoin SV (BSV) network by looking for all accessible nodes, their countries, implementations, versions and consensus rules"
             }
         },
         "dogecoin": {
@@ -945,7 +1170,7 @@
                 "description": "Dogecoin (DOGE) block {height}, hash: {hash}, date: {date}"
             },
             "transaction": {
-                "description": "Check Dogecoin (DOGE) transaction, value: {output_total_doge}, date: {date}"
+                "description": "Check Dogecoin (DOGE) transaction, value: {value}, date: {date}"
             },
             "address": {
                 "description": "Check Dogecoin (DOGE) address {address} balance and its transactions"
@@ -958,6 +1183,12 @@
             },
             "outputs": {
                 "description": "Explore, sort and filter outputs from Dogecoin (DOGE) blockchain by value, sender, recipient, addresses, get UTXO set and more"
+            },
+            "addresses": {
+                "description": "Explore, sort and filter addresses from Dogecoin (DOGE) blockchain"
+            },
+            "nodes": {
+                "description": "Explore Dogecoin (DOGE) network by looking for all accessible nodes, their countries, implementations, versions and consensus rules"
             }
         },
         "dash": {
@@ -969,7 +1200,7 @@
                 "description": "Dash (DASH) block {height}, hash: {hash}, date: {date}"
             },
             "transaction": {
-                "description": "Check Dash (DASH) transaction, value: {output_total_dash}, date: {date}"
+                "description": "Check Dash (DASH) transaction, value: {value}, date: {date}"
             },
             "address": {
                 "description": "Check Dash (DASH) address {address} balance and its transactions"
@@ -982,6 +1213,12 @@
             },
             "outputs": {
                 "description": "Explore, sort and filter outputs from Dogecoin (DOGE) blockchain by value, sender, recipient, addresses, get UTXO set and more"
+            },
+            "addresses": {
+                "description": "Explore, sort and filter addresses from Dogecoin (DOGE) blockchain"
+            },
+            "nodes": {
+                "description": "Explore Dogecoin (DOGE) network by looking for all accessible nodes, their countries, implementations, versions and consensus rules"
             }
         },
         "litecoin": {
@@ -995,6 +1232,9 @@
             "address": {
                 "description": "Check Litecoin (LTC) address {address}, its balance and transactions"
             },
+            "transaction": {
+                "description": "Check Litecoin (LTC) transaction, value: {value}, date: {date}"
+            },
             "blocks": {
                 "description": "Explore, sort, filter blocks from the entire Litecoin (LTC) blockchain by height, reward, miner and more"
             },
@@ -1003,6 +1243,12 @@
             },
             "outputs": {
                 "description": "Explore, sort, filter outputs from the entire Litecoin (LTC) blockchain by value, recipient (address), get UTXO set and more"
+            },
+            "addresses": {
+                "description": "Explore, sort and filter addresses from Litecoin (LTC) blockchain"
+            },
+            "nodes": {
+                "description": "Explore Litecoin (LTC) network by looking for all accessible nodes, their countries, implementations, versions and consensus rules"
             }
         },
         "groestlcoin": {
@@ -1016,6 +1262,9 @@
             "address": {
                 "description": "Check Groestlcoin (GRS) address {address}, its balance and transactions"
             },
+            "transaction": {
+                "description": "Check Groestlcoin (GRS) transaction {hash}, value: {value}, date: {date}"
+            },
             "blocks": {
                 "description": "Explore, sort, filter blocks from the entire Groestlcoin (GRS) blockchain by height, reward, miner and more"
             },
@@ -1024,6 +1273,12 @@
             },
             "outputs": {
                 "description": "Explore, sort, filter outputs from the entire Groestlcoin (GRS) blockchain by value, recipient (address), get UTXO set and more"
+            },
+            "addresses": {
+                "description": "Explore, sort and filter addresses from Groestlcoin (GRS) blockchain"
+            },
+            "nodes": {
+                "description": "Explore Groestlcoin (GRS) network by looking for all accessible nodes, their countries, implementations, versions and consensus rules"
             }
         },
         "zcash": {
@@ -1034,8 +1289,11 @@
             "block": {
                 "description": "Zcash block: {block_id}, hash: {hash} - Zcash Explorer"
             },
+            "transaction": {
+                "description": "Zcash transaction: {hash} – Zcash Explorer"
+            },
             "address": {
-                "description": "Zcash address: {hash} \/ Balance: {balance} - Zcash Explorer"
+                "description": "Zcash address: {address} \/ Balance: {balance} - Zcash Explorer"
             },
             "blocks": {
                 "description": "Explore, sort and filter blocks from Zcash (ZEC) blockchain by height, reward, miner and more"
@@ -1048,6 +1306,9 @@
             },
             "addresses": {
                 "description": "Explore, sort and filter addresses from Zcash (ZEC) blockchain"
+            },
+            "nodes": {
+                "description": "Explore Zcash (ZEC) network by looking for all accessible nodes, their countries, implementations, versions and consensus rules"
             }
         },
         "mixin": {
@@ -1086,13 +1347,16 @@
                 "description": "Look up Tezos (XTZ) blocks, transactions, accounts (bakers) and balances, blockchain stats"
             },
             "block": {
-                "description": "Zcash block: {block_id}, hash: {hash} - Zcash Explorer"
+                "description": "Tezos (XTZ) block: {block_id}, hash: {hash} - Tezos Explorer"
             },
             "account": {
                 "description": "Check Tezos (XTZ) account {account}, its balance and operations"
             },
             "operation": {
                 "description": "Check Tezos (XTZ) operation {hash}"
+            },
+            "blocks": {
+                "description": "Explore, sort and filter blocks from Tezos (XTZ) blockchain by height, reward, miner and more"
             }
         },
         "ripple": {
@@ -1149,7 +1413,7 @@
                 "description": "Cardano transaction: {hash} - Cardano Explorer"
             },
             "address": {
-                "description": "Cardano address: {hash} \/ Balance: {balance} – Cardano Explorer"
+                "description": "Cardano address: {address} \/ Balance: {balance} – Cardano Explorer"
             }
         },
         "stellar": {
@@ -1158,16 +1422,46 @@
                 "description": "Look up Stellar (XLM) ledgers, transactions, addresses and balances, blockchain stats and charts"
             },
             "block": {
-                "description": "Monero block: {block_id}, hash: {hash} – Monero Explorer"
+                "description": "Stellar (XLM) block: {block_id}, hash: {hash} – Stellar Explorer"
             },
             "ledger": {
                 "description": "Stellar (XLM) ledger: {ledger_id}, hash: {hash}, date: {time}"
             },
             "transaction": {
-                "description": "Stellar (XLM) transaction: {hash}, date: {time}"
+                "description": "Stellar (XLM) transaction: {hash}, date: {date}"
             },
             "account": {
                 "description": "Stellar (XLM) account: {account}, balance: {balance}"
+            }
+        },
+        "ecash": {
+            "dashboard": {
+                "title": "eCash Explorer",
+                "description": "Look up eCash (XEC) blocks, transactions, addresses, balances, blockchain stats and charts"
+            },
+            "block": {
+                "description": "eCash (XEC) block {height}, hash: {hash}, date: {date}"
+            },
+            "transaction": {
+                "description": "Check eCash (XEC) transaction, value: {value}, date: {date}"
+            },
+            "address": {
+                "description": "Check eCash (XEC) address {address} balance and its transactions"
+            },
+            "blocks": {
+                "description": "Explore, sort and filter blocks from eCash (XEC) blockchain by height, reward, miner and more"
+            },
+            "transactions": {
+                "description": "Explore, sort and filter transactions from eCash (XEC) blockchain by ID (hash), value, size, fee and more"
+            },
+            "outputs": {
+                "description": "Explore, sort and filter outputs from eCash (XEC) blockchain by value, sender, recipient, addresses and more"
+            },
+            "addresses": {
+                "description": "Explore, sort and filter addresses from eCash (XEC) blockchain"
+            },
+            "nodes": {
+                "description": "Explore eCash network by looking for all accessible nodes, their countries, implementations, versions and consensus rules"
             }
         }
     },
@@ -1280,6 +1574,14 @@
         "new_website": {
             "main": "New Blockchair is here!",
             "caption": "Beta release"
+        },
+        "whitepaper": {
+            "caption": "Learn which sites show the original Bitcoin whitepaper and which have altered it"
+        },
+        "cobranded": {
+            "title": "NEW! Customizable co-branded explorers",
+            "subtitle": "Build a co-branded explorer with Blockchair which allows you to adjust our interface for your audience",
+            "cta": "Check the offer"
         }
     },
     "errors": {
@@ -1304,15 +1606,19 @@
     },
     "search": {
         "results_for_": "Results for:",
-        "no_results_for_": "Oops! We couldn`t find “<span class=\"c-txt-accent\">{query}<\/span>” among the information stored on blockchains.<br\/>Recheck the phrase and try again.",
+        "unknown_result_type": "Unknown result type",
+        "no_results_for_": "Oops! We couldn`t find “<span v-pre class=\"c-txt-accent wb-ba\">{query}<\/span>” among the information stored on blockchains.<br\/>Recheck the phrase and try again.",
         "empty_query": "Oops! You haven`t entered anything into the search field.<br\/>Please enter a transaction or address hash, a block number or a text data stored on blockchains.",
         "found_x_results": "Found {count} results ({seconds} seconds)",
+        "trx_over_last_month_": "Transactions over the last month:",
         "groups": {
             "block": "Blocks",
             "transaction": "Transactions",
             "address": "Addresses",
-            "coin": "Coins",
-            "snapshot": "Snapshots"
+            "coins": "Coins",
+            "snapshot": "Snapshots",
+            "tokens": "Tokens",
+            "xpub": "Xpubs"
         }
     },
     "faq": [
@@ -1397,7 +1703,7 @@
             {
                 "q": "Why are transactions being processed slowly?",
                 "a": [
-                    "<p>Transactions on blockchain networks are processed in blocks and every block has a <a href=\"\/bitcoin\/charts\/median-block-size\">block limit<\/a> (Bitcoin) or <a href=\"\/ethereum\/charts\/median-gas-limit\">gas limit<\/a> (Ethereum). This limits the number of transactions that can be processed in a block. In the Bitcoin network, approximately every 10 minutes a new block is processed, with approximately <a href=\"\/bitcoin\/charts\/transactions-in-block\">3,000<\/a> transactions in them. In the Ethereum network, approximately every 13 seconds a new block is processed, with currently a maximum of <a href=\"\/ethereum\/charts\/transactions-in-block\">590 transactions<\/a> in them.<\/p>",
+                    "<p>Transactions on blockchain networks are processed in blocks and every block has a <a href=\"\/bitcoin\/charts\/median-block-size\">block limit<\/a> (Bitcoin) or <a href=\"\/ethereum\/charts\/median-gas-limit\">gas limit<\/a> (Ethereum). This limits the number of transactions that can be processed in a block. In the Bitcoin network, approximately every 10 minutes a new block is processed, with approximately 3,000 transactions in them. In the Ethereum network, approximately every 13 seconds a new block is processed, with currently a maximum of 590 transactions in them.<\/p>",
                     "<p>Currently, there are {bitcoin_transactions} transactions in the Bitcoin network waiting to be processed and {ethereum_transactions} transactions in the Ethereum network. The place where non-processed transactions are stored is called the mempool.<\/p>",
                     "<p>To have your transaction prioritized by miners over other transactions, you can attach a transaction fee to your transaction that incentivizes miners to include your transaction in a block quicker. If you have been waiting for a long period for your transaction to be processed, the most likely reason is a low transaction fee.<\/p>",
                     "<cite>Blockchair does not process transactions, so we are unable to prioritize processing your transaction over other transactions.<\/cite>"
@@ -1720,7 +2026,7 @@
             },
             "discrepancy_round_value_and_recipient_by_value": {
                 "title": "Discrepancy between Round value and Recipient by value",
-                "description": "[round_value] and [recipient by value heuristics] yield different results."
+                "description": "[round_value] and [recipient by value] heuristics yield different results."
             },
             "discrepancy_p2sh_various_input_types": {
                 "title": "Discrepancy: various P2SH input types",
@@ -1737,8 +2043,7 @@
             },
             "discrepancy_no_output_of_the_same_type_as_inputs": {
                 "title": "Discrepancy: no output of the same type as inputs",
-                "description": "The sender probably uses software generating the same change address type as the recipient address has.",
-                "suggestion": "???????"
+                "description": "The sender probably uses software generating the same change address type as the recipient address has."
             }
         },
         "how_to_improve": "How to improve?",
@@ -1749,7 +2054,7 @@
         "title": "Become a Blockchair Partner",
         "caption": "Refer users to the classic or customized Blockchair Explorer <br\/>and enjoy great benefits and discounts",
         "title_cta-button": "Contact us now",
-        "title_cta-link": "How-to refer to Blockchair?",
+        "title_cta-link": "How to refer to Blockchair?",
         "title_points-title": "Do you need Blockchair?",
         "title_points": [
             "Are you a wallet, exchange, or a similar crypto service?",
@@ -1784,9 +2089,9 @@
         "points": [
             "The first block explorer that combines the most popular cryptocurrencies",
             "Simple, neat, and convenient platform interface your users understand and love",
-            "Support for 17 blockchains and thousands of ERC-20 tokens in one place",
+            "Support for {blockchains_count} blockchains and thousands of ERC-20 tokens in one place",
             "Only the info users need, no address scripts and child calls",
-            "Platform available in 11 languages. Translated by specialists for the convenience of your users.",
+            "Platform available in {languages_count} languages. Translated by specialists for the convenience of your users.",
             "Created keeping newbies in mind. Super-easy to understand the status of user’s transaction "
         ],
         "middle": [
@@ -1799,29 +2104,30 @@
                 "text": "As decentralization matters to us, we include links to other block explorers so our users can double-check their transactions. We believe users shouldn’t be tied just to one source of information, that’s why we encourage app developers to include links to block explorers such as ours."
             }
         ],
-        "how-to_title": "How-to refer to Blockchair",
+        "how-to_title": "How to refer to Blockchair",
         "how-to_caption": "Depending on the size of the referral traffic, we offer 3 options for the partnership:",
         "how-to_points": [
             {
                 "title": "Redirect users to Blockchair Explorer",
                 "text": "<p>By embedding the referral links to Blockchair you'll help your users get a clear view of what is going on with their transaction, whether it got to the mempool, or was confirmed already.<\/p><p>We will also add you to our Useful links section on the most visited pages on Blockchair.<\/p>",
-                "cta-link": "How-to refer to Blockchair?",
+                "cta-link": "How to refer to Blockchair?",
                 "cta-link_href": "\/partnerships\/how-to"
             },
             {
                 "title": "Redirect users<br\/>to the Сo-branded explorer",
-                "text": "<p>If you have an app or a service with lots of users and are interested in expanding your brand, we recommend you to reach out to us. We will build a co-branded explorer for you, which helps in creating a stronger brand image, and increases the user’s trust level.<\/p><p>In the explorer itself we can add your logo to the site’s header, or change some colors.<\/p>",
+                "text": "<p>If you have an app or a service with lots of users and are interested in expanding your brand, we recommend you to reach out to us. We will build a co-branded explorer for you, which helps in creating a stronger brand image, and increases the user’s trust level.<\/p><p>In the explorer itself, we can add your logo to the site’s header, or change some colors. You will also have the possibility to adjust the number of confirmations for each blockchain (e.g. the default for Bitcoin is 6, but your service may only wait for 3 confirmations), as well as to hide the Privacy-o-meter from the interface for Bitcoin blockchain.<\/p>",
                 "cta-button": "Contact us"
             },
             {
                 "title": "💰 Earn for each referred user<br\/>+ Co-branded explorer",
-                "text": "<p>Do you have the ability to refer lots of users to Blockchair’s explorer? Refer to Blockchair by installing backlinks to us and earn referral revenue. Receive the referral revenue each 3 months for being an awesome partner.<\/p><p>We will build a Co-branded explorer for you, with your logo and colors as well, free of charge.<\/p>",
+                "text": "<p>Do you have the ability to refer lots of users to Blockchair’s explorer? Refer to Blockchair by installing backlinks to us and earn referral revenue. Receive the referral revenue each 3 months for being an awesome partner.<\/p><p>We will build a Co-branded explorer for you, with your logo and colors, and you`ll have the possibility to adjust the number of confirmations for each blockchain (e.g. the default for Bitcoin is 6, but your service may only wait for 3 confirmations), as well as to hide the Privacy-o-meter from the interface for Bitcoin blockchain. All of this, free of charge.<\/p>",
                 "cta-button": "Contact us"
             }
         ],
         "how_to_bch_address": "It`s possible to use both legacy address format and CashAddr",
         "how_to_eth_tx": "Hash should start with",
-        "how_to_eth_address": "Address shoud start with <pre>0x<\/pre>, supported both simple accounts and contracts"
+        "how_to_eth_address": "Address shoud start with <pre>0x<\/pre>, supported both simple accounts and contracts",
+        "discuss_title": "To discuss partnership and cooperation<br\/>opportunities please contact our team"
     },
     "dumps": {
         "db_title": "Database Dumps",
