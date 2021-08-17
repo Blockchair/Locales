@@ -110,6 +110,7 @@
         "yes": "Yes",
         "no": "No",
         "close": "Close",
+        "check": "Check",
         "coming_soon": "Coming soon",
         "explorers": "Explorers",
         "dashboard": "Dashboard",
@@ -157,6 +158,8 @@
         "erc-20_explorer": "ERC-20 explorer",
         "omni_layer": "Omni Layer",
         "layer_2": "Layer 2",
+        "valid": "Valid",
+        "invalid": "Invalid",
         "misc": "Misc",
         "transaction_statuses": {
             "unconfirmed": "Waiting for confirmations",
@@ -174,6 +177,7 @@
         "no_results": "No results",
         "new_contract": "New contract",
         "more_rows": "more rows",
+        "more_tokens_": "and {count} more tokens...",
         "reset_sorts": "Reset sorts",
         "reset_conditions": "Reset conditions",
         "table_fields": "Table fields",
@@ -233,7 +237,7 @@
         "approved_for_all": "Approved for all",
         "contract_interaction": "Contract interaction",
         "contract_creation": "Contract creation",
-        "all_event_actions": "All event actions",
+        "all_event_actions": "All events",
         "at": "at",
         "swap": "Swap",
         "for": "For",
@@ -355,6 +359,7 @@
         "number_new_contracts": "Number of new contracts on Ethereum",
         "number_destroyed_contracts": "Number of destroyed contracts on Ethereum",
         "new_contracts_ratio": "New contracts ratio",
+        "contract_destroyed": "Contract destroyed",
         "uncle_rate": "Uncle rate",
         "your_answer": "Your answer",
         "submit": "Submit",
@@ -362,6 +367,8 @@
         "news_section_title": "Blockchair Crypto News",
         "more_news": "More news",
         "subscribe_news_tg": "Subscibe to News on Telegram",
+        "simple": "Simple",
+        "advanced": "Advanced",
         "menu": {
             "api": "API",
             "api_docs": "API documentation",
@@ -448,6 +455,7 @@
         "go_to_transaction": "Go to transaction",
         "payment_disclosure_error": "The entered payment disclosure is incorrect. Try again.",
         "account_actions": "Account actions",
+        "account_permissions": "Account permissions (keys)",
         "home": "Home",
         "suffix": "Suffix",
         "endpoint": "Endpoint",
@@ -517,6 +525,10 @@
             "open_uri": "Open URI in new tab",
             "docs": "Documentation",
             "tip": "Press {key} key to open the URI in a new tab"
+        },
+        "tx_slp": {
+            "title": "Simple Ledger Protocol",
+            "text": "This transaction contains Simple Ledger Protocol (SLP) data, explore it on {link}"
         }
     },
     "fields": {
@@ -546,7 +558,7 @@
         "recommended_transaction_fee": "recommended transaction fee",
         "average_simple_transaction_fee": "Average simple transfer fee",
         "median_simple_transaction_fee": "Median simple transfer fee",
-        "gas_price_recommended": "gas price recommended",
+        "gas_price_recommended": "recommended gas price",
         "volume": "Volume",
         "hashrate": "Hashrate",
         "in_fees": "Fees",
@@ -617,6 +629,7 @@
         "largest_transaction": "Largest transaction",
         "total_coins": "Total coins",
         "transaction_hash": "Transaction hash",
+        "transaction_hash_": "Transaction hash:",
         "parent_hash": "Parent hash",
         "sequence": "Sequence",
         "offer_sequence": "Offer sequence",
@@ -927,7 +940,10 @@
         "selling_liabilities": "The total aggregate amount of an asset offered to sell.",
         "current_value": "Current USD value",
         "transaction_value": "USD value at the time of transaction",
-        "internal_value": "The sum of value transfers which were initiated during the contract interaction"
+        "internal_value": "The sum of value transfers which were initiated during the contract interaction",
+        "funds_spent_on": "The funds were spent on {time} UTC. Go to the transaction",
+        "funds_recieved_on": "The funds were received on {time} UTC. Go to the transaction",
+        "go_to_the_tx": "Go to the transaction"
     },
     "meta": {
         "faq": {
@@ -1628,7 +1644,7 @@
                 "<p>If you have been waiting for a long period for your transaction to be processed, the most likely reason is a low transaction fee.<\/p>",
                 "<p>Miners process transactions based on the transaction fee attached to a transaction. It can take quite some time before your transaction is processed: several minutes, hours, sometimes several days, and in some cases, it seems your transaction will never be processed!<\/p>",
                 "<p>If your transaction fee is low, it might take some time before the transaction is included in a block. To have your transaction prioritized by miners over other transactions, you can attach a higher transaction fee to your transaction, incentivizing miners to include your transaction in a block quicker.<\/p>",
-                "<blockquote><p><strong>Some wallets support functionality to increase the transaction fee.<\/strong>Please reach out to your wallet or exchange to find out what you can do to have your transaction processed faster.<\/p><\/blockquote>",
+                "<blockquote><span><strong>Some wallets support functionality to increase the transaction fee.<\/strong><br\/>Please reach out to your wallet or exchange to find out what you can do to have your transaction processed faster.<\/span><\/blockquote>",
                 "<cite>Blockchair does not process transactions, so we are unable to prioritize processing your transaction over other transactions.<\/cite>"
             ]
         },
@@ -1897,7 +1913,7 @@
             },
             "rare_fingerprint": {
                 "title": "Rare fingerprint",
-                "description": "This transaction has quite unique technical characteristics.\t"
+                "description": "This transaction has quite unique technical characteristics."
             },
             "asc_output_values": {
                 "title": "Ascending output values",
