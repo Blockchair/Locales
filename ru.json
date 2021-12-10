@@ -1,7 +1,8 @@
 {
   "title":"Blockchair",
-  "description":"Обозреватель блоков и API для криптовалют BTC, ETH, BCH, LTC, DASH, BSV и DOGE, позволяющие находить, сортировать и фильтровать транзакции и адреса.",
-  "chain":{
+  "subtitle": "Blockchain обозреватель",
+  "description":"Обозреватель блоков и самый мощный API для BTC, ETH, XRP, XLM, BCH, LTC, DASH, BSV, DOGE, GRS и TON, позволяющие находить, сортировать и фильтровать транзакции и адреса.",
+  "chain": {
     "bitcoin":"Bitcoin",
     "bitcoin-cash":"Bitcoin Cash",
     "bitcoin-sv":"Bitcoin SV",
